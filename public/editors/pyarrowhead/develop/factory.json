@@ -1,0 +1,218 @@
+{
+  "Xa0S{Y(4C-a6IzfwL*|E": {
+    "type": "factory_base",
+    "id": "Xa0S{Y(4C-a6IzfwL*|E",
+    "x": 109,
+    "y": 23,
+    "extraState": {
+      "connections": "NONE"
+    },
+    "fields": {
+      "NAME": "local_cloud",
+      "INLINE": "AUTO",
+      "CONNECTIONS": "NONE"
+    },
+    "inputs": {
+      "INPUTS": {
+        "block": {
+          "id": "U$VJfDgGn@?scjIfsG#f"
+        }
+      },
+      "COLOUR": {
+        "block": {
+          "id": "M+N6QSCALe{?%$SqT`m-"
+        }
+      }
+    }
+  },
+  "`J??==%4rnZ7YsxdC$cp": {
+    "type": "factory_base",
+    "id": "`J??==%4rnZ7YsxdC$cp",
+    "x": 112,
+    "y": 365,
+    "extraState": {
+      "connections": "BOTH"
+    },
+    "fields": {
+      "NAME": "add_client",
+      "INLINE": "AUTO",
+      "CONNECTIONS": "BOTH"
+    },
+    "inputs": {
+      "INPUTS": {
+        "block": {
+          "id": "]]LH7PiQI^nqQEgnJ_g."
+        }
+      },
+      "TOPTYPE": {
+        "shadow": {
+          "type": "type_null",
+          "id": "51n6.O;351Fx9NtHE[._"
+        }
+      },
+      "BOTTOMTYPE": {
+        "shadow": {
+          "type": "type_null",
+          "id": "sQ.)m#32UTqO2zwwx!D!"
+        }
+      },
+      "COLOUR": {
+        "block": {
+          "id": "[IZTfr%xO:dE(rzhh-H!"
+        }
+      }
+    }
+  },
+  "U$VJfDgGn@?scjIfsG#f": {
+    "type": "input_dummy",
+    "id": "U$VJfDgGn@?scjIfsG#f",
+    "x": 169,
+    "y": 49,
+    "fields": {
+      "ALIGN": "LEFT"
+    },
+    "inputs": {
+      "FIELDS": {
+        "block": {
+          "id": "z4Lql@lRnwub)Ki0FHe*"
+        }
+      }
+    },
+    "next": {
+      "block": {
+        "id": "Da9e[kgxYk2l;){C1|9l"
+      }
+    }
+  },
+  "M+N6QSCALe{?%$SqT`m-": {
+    "type": "colour_hue",
+    "id": "M+N6QSCALe{?%$SqT`m-",
+    "x": 259,
+    "y": 321,
+    "extraState": {
+      "colour": "#5ba58c"
+    },
+    "fields": {
+      "HUE": 160
+    }
+  },
+  "]]LH7PiQI^nqQEgnJ_g.": {
+    "type": "input_dummy",
+    "id": "]]LH7PiQI^nqQEgnJ_g.",
+    "x": 172,
+    "y": 391,
+    "fields": {
+      "ALIGN": "LEFT"
+    },
+    "inputs": {
+      "FIELDS": {
+        "block": {
+          "id": "4Zgt?jt_tqe?krK=Dlme"
+        }
+      }
+    }
+  },
+  "51n6.O;351Fx9NtHE[._": {
+    "type": "type_null",
+    "id": "51n6.O;351Fx9NtHE[._",
+    "x": 317,
+    "y": 588
+  },
+  "sQ.)m#32UTqO2zwwx!D!": {
+    "type": "type_null",
+    "id": "sQ.)m#32UTqO2zwwx!D!",
+    "x": 317,
+    "y": 614
+  },
+  "[IZTfr%xO:dE(rzhh-H!": {
+    "type": "colour_hue",
+    "id": "[IZTfr%xO:dE(rzhh-H!",
+    "x": 317,
+    "y": 640,
+    "extraState": {
+      "colour": "#5ba58c"
+    },
+    "fields": {
+      "HUE": 160
+    }
+  },
+  "z4Lql@lRnwub)Ki0FHe*": {
+    "type": "field_label_serializable",
+    "id": "z4Lql@lRnwub)Ki0FHe*",
+    "x": 270,
+    "y": 75,
+    "fields": {
+      "TEXT": "Cloud name",
+      "FIELDNAME": "NAME_DESCRIPTION"
+    },
+    "next": {
+      "block": {
+        "id": "T^qKtBSNv~noRB=#o;*W"
+      }
+    }
+  },
+  "Da9e[kgxYk2l;){C1|9l": {
+    "type": "input_statement",
+    "id": "Da9e[kgxYk2l;){C1|9l",
+    "x": 169,
+    "y": 140,
+    "fields": {
+      "INPUTNAME": "STATEMENTS",
+      "ALIGN": "LEFT"
+    },
+    "inputs": {
+      "TYPE": {
+        "shadow": {
+          "type": "type_null",
+          "id": "oY!@G{n-rhPD!G@5bZBT"
+        }
+      }
+    }
+  },
+  "4Zgt?jt_tqe?krK=Dlme": {
+    "type": "field_label_serializable",
+    "id": "4Zgt?jt_tqe?krK=Dlme",
+    "x": 273,
+    "y": 417,
+    "fields": {
+      "TEXT": "Client",
+      "FIELDNAME": "NAME_DESCRIPTION"
+    },
+    "next": {
+      "block": {
+        "id": "f?mU=%cKR3mzhL8W#Y/s"
+      }
+    }
+  },
+  "T^qKtBSNv~noRB=#o;*W": {
+    "type": "field_input",
+    "id": "T^qKtBSNv~noRB=#o;*W",
+    "x": 270,
+    "y": 101,
+    "fields": {
+      "TEXT": "local-cloud.world",
+      "FIELDNAME": "NAME"
+    }
+  },
+  "oY!@G{n-rhPD!G@5bZBT": {
+    "type": "type_null",
+    "id": "oY!@G{n-rhPD!G@5bZBT",
+    "x": 397,
+    "y": 189
+  },
+  "f?mU=%cKR3mzhL8W#Y/s": {
+    "type": "field_input",
+    "id": "f?mU=%cKR3mzhL8W#Y/s",
+    "x": 273,
+    "y": 443,
+    "fields": {
+      "TEXT": "consumer",
+      "FIELDNAME": "NAME"
+    }
+  },
+  "top_blocks": [
+    "Xa0S{Y(4C-a6IzfwL*|E",
+    "`J??==%4rnZ7YsxdC$cp"
+  ],
+  "mergeable": true
+}

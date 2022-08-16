@@ -1,0 +1,5551 @@
+{
+  "3[adPLXGhSF,+`1FiVP_": {
+    "type": "generate_code",
+    "id": "3[adPLXGhSF,+`1FiVP_",
+    "x": 0,
+    "y": 0,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "Angle",
+              "id": "vZ*rfG=?GD|*Gn4oz;JW"
+            },
+            {
+              "text": "Color",
+              "id": "blIsv=~Rz/7sRHw/${vi"
+            },
+            {
+              "text": "Color_alpha",
+              "id": "?dorq2fvz3c]0-A~G9[r"
+            },
+            {
+              "text": "Cross",
+              "id": "b/2lGci;ufIhs^$a32rc"
+            },
+            {
+              "text": "Distance",
+              "id": ".{DRto-9LaZpw5_b_~iD"
+            },
+            {
+              "text": "Quaternion",
+              "id": "[~9.*?!}FIsH%7*EiC[s"
+            },
+            {
+              "text": "Quaternion_euler",
+              "id": "Zo!9.lh|?T?P5;PmeV]O"
+            },
+            {
+              "text": "Spot",
+              "id": "cZxVgiajJ}?NM]pRe6!D"
+            },
+            {
+              "text": "Vector3",
+              "id": "abe^{M%AnvU}8e_S*J+i"
+            },
+            {
+              "text": "Vector3_static",
+              "id": "a11pyOATl.zRx2+?zbPY"
+            },
+            {
+              "text": "clearInterval",
+              "id": "osYr0JHK.BzG/wPjHVp0"
+            },
+            {
+              "text": "forAllSpots",
+              "id": "tihVLK_zM!}T`s$i.*4o"
+            },
+            {
+              "text": "getCamera",
+              "id": "F==8Y8Fm0_,E/10YCjS{"
+            },
+            {
+              "text": "getSpot",
+              "id": "TJ#gZ6y{:#sp_=@}rrSh"
+            },
+            {
+              "text": "getSpotById",
+              "id": "dMMEzce{eoN;:~CQ5$GD"
+            },
+            {
+              "text": "get_spot_property",
+              "id": "Ae{5^C6e*gM:j%as^#r5"
+            },
+            {
+              "text": "log",
+              "id": "QW/VB6d$u*3w]E_W0Ro`"
+            },
+            {
+              "text": "log_text",
+              "id": "k_[?iPs.NF=do3Y#Ywz8"
+            },
+            {
+              "text": "move_to",
+              "id": "#e+g({up3N`p:DScZGOd"
+            },
+            {
+              "text": "onClick",
+              "id": "#|S1@P=jYv!3LJr+3Lw~"
+            },
+            {
+              "text": "onEvent",
+              "id": "Sx0[XW3xz44t8aCQ%_:*"
+            },
+            {
+              "text": "reset_space",
+              "id": ".NPG1dhgB(pq37Nj5g?i"
+            },
+            {
+              "text": "setInterval",
+              "id": "dhV!tx/KxSEgV7R_6Qn)"
+            },
+            {
+              "text": "show_hideSpot",
+              "id": "(YtXA]8b(chPt{bkMM%R"
+            },
+            {
+              "text": "show_hideSpotVariable",
+              "id": "{JxcGN0~#oUF!}tlW/#;"
+            },
+            {
+              "text": "spot_set_prop",
+              "id": ")pRsNnyexLQp%/,S$X{+"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "Javascript",
+      "TYPE": "abe^{M%AnvU}8e_S*J+i"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "-~{P)VHNr~py]szPbl0B"
+        }
+      }
+    }
+  },
+  "hau5d`d|uT~k9e18NXa~": {
+    "type": "generate_code",
+    "id": "hau5d`d|uT~k9e18NXa~",
+    "x": 0,
+    "y": 245,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "Angle",
+              "id": "vZ*rfG=?GD|*Gn4oz;JW"
+            },
+            {
+              "text": "Color",
+              "id": "blIsv=~Rz/7sRHw/${vi"
+            },
+            {
+              "text": "Color_alpha",
+              "id": "?dorq2fvz3c]0-A~G9[r"
+            },
+            {
+              "text": "Cross",
+              "id": "b/2lGci;ufIhs^$a32rc"
+            },
+            {
+              "text": "Distance",
+              "id": ".{DRto-9LaZpw5_b_~iD"
+            },
+            {
+              "text": "Quaternion",
+              "id": "[~9.*?!}FIsH%7*EiC[s"
+            },
+            {
+              "text": "Quaternion_euler",
+              "id": "Zo!9.lh|?T?P5;PmeV]O"
+            },
+            {
+              "text": "Spot",
+              "id": "cZxVgiajJ}?NM]pRe6!D"
+            },
+            {
+              "text": "Vector3",
+              "id": "abe^{M%AnvU}8e_S*J+i"
+            },
+            {
+              "text": "Vector3_static",
+              "id": "a11pyOATl.zRx2+?zbPY"
+            },
+            {
+              "text": "clearInterval",
+              "id": "osYr0JHK.BzG/wPjHVp0"
+            },
+            {
+              "text": "forAllSpots",
+              "id": "tihVLK_zM!}T`s$i.*4o"
+            },
+            {
+              "text": "getCamera",
+              "id": "F==8Y8Fm0_,E/10YCjS{"
+            },
+            {
+              "text": "getSpot",
+              "id": "TJ#gZ6y{:#sp_=@}rrSh"
+            },
+            {
+              "text": "getSpotById",
+              "id": "dMMEzce{eoN;:~CQ5$GD"
+            },
+            {
+              "text": "get_spot_property",
+              "id": "Ae{5^C6e*gM:j%as^#r5"
+            },
+            {
+              "text": "log",
+              "id": "QW/VB6d$u*3w]E_W0Ro`"
+            },
+            {
+              "text": "log_text",
+              "id": "k_[?iPs.NF=do3Y#Ywz8"
+            },
+            {
+              "text": "move_to",
+              "id": "#e+g({up3N`p:DScZGOd"
+            },
+            {
+              "text": "onClick",
+              "id": "#|S1@P=jYv!3LJr+3Lw~"
+            },
+            {
+              "text": "onEvent",
+              "id": "Sx0[XW3xz44t8aCQ%_:*"
+            },
+            {
+              "text": "reset_space",
+              "id": ".NPG1dhgB(pq37Nj5g?i"
+            },
+            {
+              "text": "setInterval",
+              "id": "dhV!tx/KxSEgV7R_6Qn)"
+            },
+            {
+              "text": "show_hideSpot",
+              "id": "(YtXA]8b(chPt{bkMM%R"
+            },
+            {
+              "text": "show_hideSpotVariable",
+              "id": "{JxcGN0~#oUF!}tlW/#;"
+            },
+            {
+              "text": "spot_set_prop",
+              "id": ")pRsNnyexLQp%/,S$X{+"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "Javascript",
+      "TYPE": "blIsv=~Rz/7sRHw/${vi"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "0CL-5?nJfrsQ~Jh+Azmz"
+        }
+      }
+    }
+  },
+  "lfE~by.lIYlYc(KLlq|o": {
+    "type": "generate_code",
+    "id": "lfE~by.lIYlYc(KLlq|o",
+    "x": 0,
+    "y": 386,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "Angle",
+              "id": "vZ*rfG=?GD|*Gn4oz;JW"
+            },
+            {
+              "text": "Color",
+              "id": "blIsv=~Rz/7sRHw/${vi"
+            },
+            {
+              "text": "Color_alpha",
+              "id": "?dorq2fvz3c]0-A~G9[r"
+            },
+            {
+              "text": "Cross",
+              "id": "b/2lGci;ufIhs^$a32rc"
+            },
+            {
+              "text": "Distance",
+              "id": ".{DRto-9LaZpw5_b_~iD"
+            },
+            {
+              "text": "Quaternion",
+              "id": "[~9.*?!}FIsH%7*EiC[s"
+            },
+            {
+              "text": "Quaternion_euler",
+              "id": "Zo!9.lh|?T?P5;PmeV]O"
+            },
+            {
+              "text": "Spot",
+              "id": "cZxVgiajJ}?NM]pRe6!D"
+            },
+            {
+              "text": "Vector3",
+              "id": "abe^{M%AnvU}8e_S*J+i"
+            },
+            {
+              "text": "Vector3_static",
+              "id": "a11pyOATl.zRx2+?zbPY"
+            },
+            {
+              "text": "clearInterval",
+              "id": "osYr0JHK.BzG/wPjHVp0"
+            },
+            {
+              "text": "forAllSpots",
+              "id": "tihVLK_zM!}T`s$i.*4o"
+            },
+            {
+              "text": "getCamera",
+              "id": "F==8Y8Fm0_,E/10YCjS{"
+            },
+            {
+              "text": "getSpot",
+              "id": "TJ#gZ6y{:#sp_=@}rrSh"
+            },
+            {
+              "text": "getSpotById",
+              "id": "dMMEzce{eoN;:~CQ5$GD"
+            },
+            {
+              "text": "get_spot_property",
+              "id": "Ae{5^C6e*gM:j%as^#r5"
+            },
+            {
+              "text": "log",
+              "id": "QW/VB6d$u*3w]E_W0Ro`"
+            },
+            {
+              "text": "log_text",
+              "id": "k_[?iPs.NF=do3Y#Ywz8"
+            },
+            {
+              "text": "move_to",
+              "id": "#e+g({up3N`p:DScZGOd"
+            },
+            {
+              "text": "onClick",
+              "id": "#|S1@P=jYv!3LJr+3Lw~"
+            },
+            {
+              "text": "onEvent",
+              "id": "Sx0[XW3xz44t8aCQ%_:*"
+            },
+            {
+              "text": "reset_space",
+              "id": ".NPG1dhgB(pq37Nj5g?i"
+            },
+            {
+              "text": "setInterval",
+              "id": "dhV!tx/KxSEgV7R_6Qn)"
+            },
+            {
+              "text": "show_hideSpot",
+              "id": "(YtXA]8b(chPt{bkMM%R"
+            },
+            {
+              "text": "show_hideSpotVariable",
+              "id": "{JxcGN0~#oUF!}tlW/#;"
+            },
+            {
+              "text": "spot_set_prop",
+              "id": ")pRsNnyexLQp%/,S$X{+"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "Javascript",
+      "TYPE": "?dorq2fvz3c]0-A~G9[r"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "_lLa#lzoO[KKpg!1s?DY"
+        }
+      }
+    }
+  },
+  "Z6@ma?-bjE(?YFkgl0Z!": {
+    "type": "generate_code",
+    "id": "Z6@ma?-bjE(?YFkgl0Z!",
+    "x": 0,
+    "y": 579,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "Angle",
+              "id": "vZ*rfG=?GD|*Gn4oz;JW"
+            },
+            {
+              "text": "Color",
+              "id": "blIsv=~Rz/7sRHw/${vi"
+            },
+            {
+              "text": "Color_alpha",
+              "id": "?dorq2fvz3c]0-A~G9[r"
+            },
+            {
+              "text": "Cross",
+              "id": "b/2lGci;ufIhs^$a32rc"
+            },
+            {
+              "text": "Distance",
+              "id": ".{DRto-9LaZpw5_b_~iD"
+            },
+            {
+              "text": "Quaternion",
+              "id": "[~9.*?!}FIsH%7*EiC[s"
+            },
+            {
+              "text": "Quaternion_euler",
+              "id": "Zo!9.lh|?T?P5;PmeV]O"
+            },
+            {
+              "text": "Spot",
+              "id": "cZxVgiajJ}?NM]pRe6!D"
+            },
+            {
+              "text": "Vector3",
+              "id": "abe^{M%AnvU}8e_S*J+i"
+            },
+            {
+              "text": "Vector3_static",
+              "id": "a11pyOATl.zRx2+?zbPY"
+            },
+            {
+              "text": "clearInterval",
+              "id": "osYr0JHK.BzG/wPjHVp0"
+            },
+            {
+              "text": "forAllSpots",
+              "id": "tihVLK_zM!}T`s$i.*4o"
+            },
+            {
+              "text": "getCamera",
+              "id": "F==8Y8Fm0_,E/10YCjS{"
+            },
+            {
+              "text": "getSpot",
+              "id": "TJ#gZ6y{:#sp_=@}rrSh"
+            },
+            {
+              "text": "getSpotById",
+              "id": "dMMEzce{eoN;:~CQ5$GD"
+            },
+            {
+              "text": "get_spot_property",
+              "id": "Ae{5^C6e*gM:j%as^#r5"
+            },
+            {
+              "text": "log",
+              "id": "QW/VB6d$u*3w]E_W0Ro`"
+            },
+            {
+              "text": "log_text",
+              "id": "k_[?iPs.NF=do3Y#Ywz8"
+            },
+            {
+              "text": "move_to",
+              "id": "#e+g({up3N`p:DScZGOd"
+            },
+            {
+              "text": "onClick",
+              "id": "#|S1@P=jYv!3LJr+3Lw~"
+            },
+            {
+              "text": "reset_space",
+              "id": ".NPG1dhgB(pq37Nj5g?i"
+            },
+            {
+              "text": "setInterval",
+              "id": "dhV!tx/KxSEgV7R_6Qn)"
+            },
+            {
+              "text": "show_hideSpot",
+              "id": "(YtXA]8b(chPt{bkMM%R"
+            },
+            {
+              "text": "show_hideSpotVariable",
+              "id": "{JxcGN0~#oUF!}tlW/#;"
+            },
+            {
+              "text": "spot_set_prop",
+              "id": ")pRsNnyexLQp%/,S$X{+"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "Javascript",
+      "TYPE": "cZxVgiajJ}?NM]pRe6!D"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "@SEjW[D=s7ygGWKsb:.A"
+        }
+      }
+    }
+  },
+  "X*mxu?EBDHn1^7.L@_-/": {
+    "type": "generate_code_variable",
+    "id": "X*mxu?EBDHn1^7.L@_-/",
+    "x": 0,
+    "y": 668,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "variables_get",
+              "id": "variables_get"
+            },
+            {
+              "text": "variables_set",
+              "id": "variables_set"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "Javascript",
+      "TYPE": "variables_get"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "S761/}^0Po903SGyS@fF"
+        }
+      }
+    }
+  },
+  "8WUcC]qe7D+jDQhF@7B^": {
+    "type": "generate_code",
+    "id": "8WUcC]qe7D+jDQhF@7B^",
+    "x": 0,
+    "y": 783,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "Angle",
+              "id": "vZ*rfG=?GD|*Gn4oz;JW"
+            },
+            {
+              "text": "Color",
+              "id": "blIsv=~Rz/7sRHw/${vi"
+            },
+            {
+              "text": "Color_alpha",
+              "id": "?dorq2fvz3c]0-A~G9[r"
+            },
+            {
+              "text": "Cross",
+              "id": "b/2lGci;ufIhs^$a32rc"
+            },
+            {
+              "text": "Distance",
+              "id": ".{DRto-9LaZpw5_b_~iD"
+            },
+            {
+              "text": "Quaternion",
+              "id": "[~9.*?!}FIsH%7*EiC[s"
+            },
+            {
+              "text": "Quaternion_euler",
+              "id": "Zo!9.lh|?T?P5;PmeV]O"
+            },
+            {
+              "text": "Spot",
+              "id": "cZxVgiajJ}?NM]pRe6!D"
+            },
+            {
+              "text": "Vector3",
+              "id": "abe^{M%AnvU}8e_S*J+i"
+            },
+            {
+              "text": "Vector3_static",
+              "id": "a11pyOATl.zRx2+?zbPY"
+            },
+            {
+              "text": "clearInterval",
+              "id": "osYr0JHK.BzG/wPjHVp0"
+            },
+            {
+              "text": "forAllSpots",
+              "id": "tihVLK_zM!}T`s$i.*4o"
+            },
+            {
+              "text": "getCamera",
+              "id": "F==8Y8Fm0_,E/10YCjS{"
+            },
+            {
+              "text": "getSpot",
+              "id": "TJ#gZ6y{:#sp_=@}rrSh"
+            },
+            {
+              "text": "getSpotById",
+              "id": "dMMEzce{eoN;:~CQ5$GD"
+            },
+            {
+              "text": "get_spot_property",
+              "id": "Ae{5^C6e*gM:j%as^#r5"
+            },
+            {
+              "text": "log",
+              "id": "QW/VB6d$u*3w]E_W0Ro`"
+            },
+            {
+              "text": "log_text",
+              "id": "k_[?iPs.NF=do3Y#Ywz8"
+            },
+            {
+              "text": "move_to",
+              "id": "#e+g({up3N`p:DScZGOd"
+            },
+            {
+              "text": "onClick",
+              "id": "#|S1@P=jYv!3LJr+3Lw~"
+            },
+            {
+              "text": "reset_space",
+              "id": ".NPG1dhgB(pq37Nj5g?i"
+            },
+            {
+              "text": "setInterval",
+              "id": "dhV!tx/KxSEgV7R_6Qn)"
+            },
+            {
+              "text": "show_hideSpot",
+              "id": "(YtXA]8b(chPt{bkMM%R"
+            },
+            {
+              "text": "show_hideSpotVariable",
+              "id": "{JxcGN0~#oUF!}tlW/#;"
+            },
+            {
+              "text": "spot_set_prop",
+              "id": ")pRsNnyexLQp%/,S$X{+"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "Javascript",
+      "TYPE": "tihVLK_zM!}T`s$i.*4o"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "ReqTCrUaOhMRj#REG]`s"
+        }
+      }
+    }
+  },
+  "CSyoqi07:W!UBj;@fznT": {
+    "type": "generate_code",
+    "id": "CSyoqi07:W!UBj;@fznT",
+    "x": 30,
+    "y": 968,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "Angle",
+              "id": "vZ*rfG=?GD|*Gn4oz;JW"
+            },
+            {
+              "text": "Color",
+              "id": "blIsv=~Rz/7sRHw/${vi"
+            },
+            {
+              "text": "Color_alpha",
+              "id": "?dorq2fvz3c]0-A~G9[r"
+            },
+            {
+              "text": "Cross",
+              "id": "b/2lGci;ufIhs^$a32rc"
+            },
+            {
+              "text": "Distance",
+              "id": ".{DRto-9LaZpw5_b_~iD"
+            },
+            {
+              "text": "Quaternion",
+              "id": "[~9.*?!}FIsH%7*EiC[s"
+            },
+            {
+              "text": "Quaternion_euler",
+              "id": "Zo!9.lh|?T?P5;PmeV]O"
+            },
+            {
+              "text": "Spot",
+              "id": "cZxVgiajJ}?NM]pRe6!D"
+            },
+            {
+              "text": "Vector3",
+              "id": "abe^{M%AnvU}8e_S*J+i"
+            },
+            {
+              "text": "Vector3_static",
+              "id": "a11pyOATl.zRx2+?zbPY"
+            },
+            {
+              "text": "clearInterval",
+              "id": "osYr0JHK.BzG/wPjHVp0"
+            },
+            {
+              "text": "forAllSpots",
+              "id": "tihVLK_zM!}T`s$i.*4o"
+            },
+            {
+              "text": "getCamera",
+              "id": "F==8Y8Fm0_,E/10YCjS{"
+            },
+            {
+              "text": "getSpot",
+              "id": "TJ#gZ6y{:#sp_=@}rrSh"
+            },
+            {
+              "text": "getSpotById",
+              "id": "dMMEzce{eoN;:~CQ5$GD"
+            },
+            {
+              "text": "get_spot_property",
+              "id": "Ae{5^C6e*gM:j%as^#r5"
+            },
+            {
+              "text": "log",
+              "id": "QW/VB6d$u*3w]E_W0Ro`"
+            },
+            {
+              "text": "log_text",
+              "id": "k_[?iPs.NF=do3Y#Ywz8"
+            },
+            {
+              "text": "move_to",
+              "id": "#e+g({up3N`p:DScZGOd"
+            },
+            {
+              "text": "onClick",
+              "id": "#|S1@P=jYv!3LJr+3Lw~"
+            },
+            {
+              "text": "onEvent",
+              "id": "Sx0[XW3xz44t8aCQ%_:*"
+            },
+            {
+              "text": "reset_space",
+              "id": ".NPG1dhgB(pq37Nj5g?i"
+            },
+            {
+              "text": "setInterval",
+              "id": "dhV!tx/KxSEgV7R_6Qn)"
+            },
+            {
+              "text": "show_hideSpot",
+              "id": "(YtXA]8b(chPt{bkMM%R"
+            },
+            {
+              "text": "show_hideSpotVariable",
+              "id": "{JxcGN0~#oUF!}tlW/#;"
+            },
+            {
+              "text": "spot_set_prop",
+              "id": ")pRsNnyexLQp%/,S$X{+"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "Javascript",
+      "TYPE": "a11pyOATl.zRx2+?zbPY"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "?h|;@C:;`lpEwi@uBHY9"
+        }
+      }
+    }
+  },
+  "=HH_icwgzw^F(g20Q^Kx": {
+    "type": "generate_code",
+    "id": "=HH_icwgzw^F(g20Q^Kx",
+    "x": 0,
+    "y": 1065,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "Angle",
+              "id": "vZ*rfG=?GD|*Gn4oz;JW"
+            },
+            {
+              "text": "Color",
+              "id": "blIsv=~Rz/7sRHw/${vi"
+            },
+            {
+              "text": "Color_alpha",
+              "id": "?dorq2fvz3c]0-A~G9[r"
+            },
+            {
+              "text": "Cross",
+              "id": "b/2lGci;ufIhs^$a32rc"
+            },
+            {
+              "text": "Distance",
+              "id": ".{DRto-9LaZpw5_b_~iD"
+            },
+            {
+              "text": "Quaternion",
+              "id": "[~9.*?!}FIsH%7*EiC[s"
+            },
+            {
+              "text": "Quaternion_euler",
+              "id": "Zo!9.lh|?T?P5;PmeV]O"
+            },
+            {
+              "text": "Spot",
+              "id": "cZxVgiajJ}?NM]pRe6!D"
+            },
+            {
+              "text": "Vector3",
+              "id": "abe^{M%AnvU}8e_S*J+i"
+            },
+            {
+              "text": "Vector3_static",
+              "id": "a11pyOATl.zRx2+?zbPY"
+            },
+            {
+              "text": "clearInterval",
+              "id": "osYr0JHK.BzG/wPjHVp0"
+            },
+            {
+              "text": "forAllSpots",
+              "id": "tihVLK_zM!}T`s$i.*4o"
+            },
+            {
+              "text": "getCamera",
+              "id": "F==8Y8Fm0_,E/10YCjS{"
+            },
+            {
+              "text": "getSpot",
+              "id": "TJ#gZ6y{:#sp_=@}rrSh"
+            },
+            {
+              "text": "getSpotById",
+              "id": "dMMEzce{eoN;:~CQ5$GD"
+            },
+            {
+              "text": "get_spot_property",
+              "id": "Ae{5^C6e*gM:j%as^#r5"
+            },
+            {
+              "text": "log",
+              "id": "QW/VB6d$u*3w]E_W0Ro`"
+            },
+            {
+              "text": "log_text",
+              "id": "k_[?iPs.NF=do3Y#Ywz8"
+            },
+            {
+              "text": "move_to",
+              "id": "#e+g({up3N`p:DScZGOd"
+            },
+            {
+              "text": "onClick",
+              "id": "#|S1@P=jYv!3LJr+3Lw~"
+            },
+            {
+              "text": "reset_space",
+              "id": ".NPG1dhgB(pq37Nj5g?i"
+            },
+            {
+              "text": "setInterval",
+              "id": "dhV!tx/KxSEgV7R_6Qn)"
+            },
+            {
+              "text": "show_hideSpot",
+              "id": "(YtXA]8b(chPt{bkMM%R"
+            },
+            {
+              "text": "show_hideSpotVariable",
+              "id": "{JxcGN0~#oUF!}tlW/#;"
+            },
+            {
+              "text": "spot_set_prop",
+              "id": ")pRsNnyexLQp%/,S$X{+"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "Javascript",
+      "TYPE": "{JxcGN0~#oUF!}tlW/#;"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "3n^q@EHSOH)_kibFvQhN"
+        }
+      }
+    }
+  },
+  "aQxKDbr2[k%H]@d6:=!L": {
+    "type": "generate_code_variable",
+    "id": "aQxKDbr2[k%H]@d6:=!L",
+    "x": 0,
+    "y": 1232,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "variables_get",
+              "id": "variables_get"
+            },
+            {
+              "text": "variables_set",
+              "id": "variables_set"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "Javascript",
+      "TYPE": "variables_set"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "6Ld6_]?=aUa%jC~oJNn5"
+        }
+      }
+    }
+  },
+  "Gr7#q9L1SNrB;{_fxqmu": {
+    "type": "generate_code",
+    "id": "Gr7#q9L1SNrB;{_fxqmu",
+    "x": 0,
+    "y": 1399,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "Angle",
+              "id": "vZ*rfG=?GD|*Gn4oz;JW"
+            },
+            {
+              "text": "Color",
+              "id": "blIsv=~Rz/7sRHw/${vi"
+            },
+            {
+              "text": "Color_alpha",
+              "id": "?dorq2fvz3c]0-A~G9[r"
+            },
+            {
+              "text": "Cross",
+              "id": "b/2lGci;ufIhs^$a32rc"
+            },
+            {
+              "text": "Distance",
+              "id": ".{DRto-9LaZpw5_b_~iD"
+            },
+            {
+              "text": "Quaternion",
+              "id": "[~9.*?!}FIsH%7*EiC[s"
+            },
+            {
+              "text": "Quaternion_euler",
+              "id": "Zo!9.lh|?T?P5;PmeV]O"
+            },
+            {
+              "text": "Spot",
+              "id": "cZxVgiajJ}?NM]pRe6!D"
+            },
+            {
+              "text": "Vector3",
+              "id": "abe^{M%AnvU}8e_S*J+i"
+            },
+            {
+              "text": "Vector3_static",
+              "id": "a11pyOATl.zRx2+?zbPY"
+            },
+            {
+              "text": "clearInterval",
+              "id": "osYr0JHK.BzG/wPjHVp0"
+            },
+            {
+              "text": "forAllSpots",
+              "id": "tihVLK_zM!}T`s$i.*4o"
+            },
+            {
+              "text": "getCamera",
+              "id": "F==8Y8Fm0_,E/10YCjS{"
+            },
+            {
+              "text": "getSpot",
+              "id": "TJ#gZ6y{:#sp_=@}rrSh"
+            },
+            {
+              "text": "getSpotById",
+              "id": "dMMEzce{eoN;:~CQ5$GD"
+            },
+            {
+              "text": "get_spot_property",
+              "id": "Ae{5^C6e*gM:j%as^#r5"
+            },
+            {
+              "text": "log",
+              "id": "QW/VB6d$u*3w]E_W0Ro`"
+            },
+            {
+              "text": "log_text",
+              "id": "k_[?iPs.NF=do3Y#Ywz8"
+            },
+            {
+              "text": "move_to",
+              "id": "#e+g({up3N`p:DScZGOd"
+            },
+            {
+              "text": "onClick",
+              "id": "#|S1@P=jYv!3LJr+3Lw~"
+            },
+            {
+              "text": "onEvent",
+              "id": "Sx0[XW3xz44t8aCQ%_:*"
+            },
+            {
+              "text": "reset_space",
+              "id": ".NPG1dhgB(pq37Nj5g?i"
+            },
+            {
+              "text": "setInterval",
+              "id": "dhV!tx/KxSEgV7R_6Qn)"
+            },
+            {
+              "text": "show_hideSpot",
+              "id": "(YtXA]8b(chPt{bkMM%R"
+            },
+            {
+              "text": "show_hideSpotVariable",
+              "id": "{JxcGN0~#oUF!}tlW/#;"
+            },
+            {
+              "text": "spot_set_prop",
+              "id": ")pRsNnyexLQp%/,S$X{+"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "Javascript",
+      "TYPE": "[~9.*?!}FIsH%7*EiC[s"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "F,,Qz?%]~Ds;n/)%wPeg"
+        }
+      }
+    }
+  },
+  "jPM_t[b~$l2g3T)qoRm_": {
+    "type": "generate_code",
+    "id": "jPM_t[b~$l2g3T)qoRm_",
+    "x": 0,
+    "y": 1644,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "Angle",
+              "id": "vZ*rfG=?GD|*Gn4oz;JW"
+            },
+            {
+              "text": "Color",
+              "id": "blIsv=~Rz/7sRHw/${vi"
+            },
+            {
+              "text": "Color_alpha",
+              "id": "?dorq2fvz3c]0-A~G9[r"
+            },
+            {
+              "text": "Cross",
+              "id": "b/2lGci;ufIhs^$a32rc"
+            },
+            {
+              "text": "Distance",
+              "id": ".{DRto-9LaZpw5_b_~iD"
+            },
+            {
+              "text": "Quaternion",
+              "id": "[~9.*?!}FIsH%7*EiC[s"
+            },
+            {
+              "text": "Quaternion_euler",
+              "id": "Zo!9.lh|?T?P5;PmeV]O"
+            },
+            {
+              "text": "Spot",
+              "id": "cZxVgiajJ}?NM]pRe6!D"
+            },
+            {
+              "text": "Vector3",
+              "id": "abe^{M%AnvU}8e_S*J+i"
+            },
+            {
+              "text": "Vector3_static",
+              "id": "a11pyOATl.zRx2+?zbPY"
+            },
+            {
+              "text": "clearInterval",
+              "id": "osYr0JHK.BzG/wPjHVp0"
+            },
+            {
+              "text": "forAllSpots",
+              "id": "tihVLK_zM!}T`s$i.*4o"
+            },
+            {
+              "text": "getCamera",
+              "id": "F==8Y8Fm0_,E/10YCjS{"
+            },
+            {
+              "text": "getSpot",
+              "id": "TJ#gZ6y{:#sp_=@}rrSh"
+            },
+            {
+              "text": "getSpotById",
+              "id": "dMMEzce{eoN;:~CQ5$GD"
+            },
+            {
+              "text": "get_spot_property",
+              "id": "Ae{5^C6e*gM:j%as^#r5"
+            },
+            {
+              "text": "log",
+              "id": "QW/VB6d$u*3w]E_W0Ro`"
+            },
+            {
+              "text": "log_text",
+              "id": "k_[?iPs.NF=do3Y#Ywz8"
+            },
+            {
+              "text": "move_to",
+              "id": "#e+g({up3N`p:DScZGOd"
+            },
+            {
+              "text": "onClick",
+              "id": "#|S1@P=jYv!3LJr+3Lw~"
+            },
+            {
+              "text": "reset_space",
+              "id": ".NPG1dhgB(pq37Nj5g?i"
+            },
+            {
+              "text": "setInterval",
+              "id": "dhV!tx/KxSEgV7R_6Qn)"
+            },
+            {
+              "text": "show_hideSpot",
+              "id": "(YtXA]8b(chPt{bkMM%R"
+            },
+            {
+              "text": "show_hideSpotVariable",
+              "id": "{JxcGN0~#oUF!}tlW/#;"
+            },
+            {
+              "text": "spot_set_prop",
+              "id": ")pRsNnyexLQp%/,S$X{+"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "Javascript",
+      "TYPE": "(YtXA]8b(chPt{bkMM%R"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "wPrkw_jMK6~3},dCJ*(G"
+        }
+      }
+    }
+  },
+  "#I0HO0]41=I+i.B-.ik)": {
+    "type": "generate_code",
+    "id": "#I0HO0]41=I+i.B-.ik)",
+    "x": 0,
+    "y": 1837,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "Angle",
+              "id": "vZ*rfG=?GD|*Gn4oz;JW"
+            },
+            {
+              "text": "Color",
+              "id": "blIsv=~Rz/7sRHw/${vi"
+            },
+            {
+              "text": "Color_alpha",
+              "id": "?dorq2fvz3c]0-A~G9[r"
+            },
+            {
+              "text": "Cross",
+              "id": "b/2lGci;ufIhs^$a32rc"
+            },
+            {
+              "text": "Distance",
+              "id": ".{DRto-9LaZpw5_b_~iD"
+            },
+            {
+              "text": "Quaternion",
+              "id": "[~9.*?!}FIsH%7*EiC[s"
+            },
+            {
+              "text": "Quaternion_euler",
+              "id": "Zo!9.lh|?T?P5;PmeV]O"
+            },
+            {
+              "text": "Spot",
+              "id": "cZxVgiajJ}?NM]pRe6!D"
+            },
+            {
+              "text": "Vector3",
+              "id": "abe^{M%AnvU}8e_S*J+i"
+            },
+            {
+              "text": "Vector3_static",
+              "id": "a11pyOATl.zRx2+?zbPY"
+            },
+            {
+              "text": "clearInterval",
+              "id": "osYr0JHK.BzG/wPjHVp0"
+            },
+            {
+              "text": "forAllSpots",
+              "id": "tihVLK_zM!}T`s$i.*4o"
+            },
+            {
+              "text": "getCamera",
+              "id": "F==8Y8Fm0_,E/10YCjS{"
+            },
+            {
+              "text": "getSpot",
+              "id": "TJ#gZ6y{:#sp_=@}rrSh"
+            },
+            {
+              "text": "getSpotById",
+              "id": "dMMEzce{eoN;:~CQ5$GD"
+            },
+            {
+              "text": "get_spot_property",
+              "id": "Ae{5^C6e*gM:j%as^#r5"
+            },
+            {
+              "text": "log",
+              "id": "QW/VB6d$u*3w]E_W0Ro`"
+            },
+            {
+              "text": "log_text",
+              "id": "k_[?iPs.NF=do3Y#Ywz8"
+            },
+            {
+              "text": "move_to",
+              "id": "#e+g({up3N`p:DScZGOd"
+            },
+            {
+              "text": "onClick",
+              "id": "#|S1@P=jYv!3LJr+3Lw~"
+            },
+            {
+              "text": "reset_space",
+              "id": ".NPG1dhgB(pq37Nj5g?i"
+            },
+            {
+              "text": "setInterval",
+              "id": "dhV!tx/KxSEgV7R_6Qn)"
+            },
+            {
+              "text": "show_hideSpot",
+              "id": "(YtXA]8b(chPt{bkMM%R"
+            },
+            {
+              "text": "show_hideSpotVariable",
+              "id": "{JxcGN0~#oUF!}tlW/#;"
+            },
+            {
+              "text": "spot_set_prop",
+              "id": ")pRsNnyexLQp%/,S$X{+"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "Javascript",
+      "TYPE": "TJ#gZ6y{:#sp_=@}rrSh"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "Trk_S_{6C:]AX{N[OM45"
+        }
+      }
+    }
+  },
+  "!pFWuCNO]ffR}yRlv`$~": {
+    "type": "generate_code",
+    "id": "!pFWuCNO]ffR}yRlv`$~",
+    "x": 0,
+    "y": 1978,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "Angle",
+              "id": "vZ*rfG=?GD|*Gn4oz;JW"
+            },
+            {
+              "text": "Color",
+              "id": "blIsv=~Rz/7sRHw/${vi"
+            },
+            {
+              "text": "Color_alpha",
+              "id": "?dorq2fvz3c]0-A~G9[r"
+            },
+            {
+              "text": "Cross",
+              "id": "b/2lGci;ufIhs^$a32rc"
+            },
+            {
+              "text": "Distance",
+              "id": ".{DRto-9LaZpw5_b_~iD"
+            },
+            {
+              "text": "Quaternion",
+              "id": "[~9.*?!}FIsH%7*EiC[s"
+            },
+            {
+              "text": "Quaternion_euler",
+              "id": "Zo!9.lh|?T?P5;PmeV]O"
+            },
+            {
+              "text": "Spot",
+              "id": "cZxVgiajJ}?NM]pRe6!D"
+            },
+            {
+              "text": "Vector3",
+              "id": "abe^{M%AnvU}8e_S*J+i"
+            },
+            {
+              "text": "Vector3_static",
+              "id": "a11pyOATl.zRx2+?zbPY"
+            },
+            {
+              "text": "clearInterval",
+              "id": "osYr0JHK.BzG/wPjHVp0"
+            },
+            {
+              "text": "forAllSpots",
+              "id": "tihVLK_zM!}T`s$i.*4o"
+            },
+            {
+              "text": "getCamera",
+              "id": "F==8Y8Fm0_,E/10YCjS{"
+            },
+            {
+              "text": "getSpot",
+              "id": "TJ#gZ6y{:#sp_=@}rrSh"
+            },
+            {
+              "text": "getSpotById",
+              "id": "dMMEzce{eoN;:~CQ5$GD"
+            },
+            {
+              "text": "get_spot_property",
+              "id": "Ae{5^C6e*gM:j%as^#r5"
+            },
+            {
+              "text": "log",
+              "id": "QW/VB6d$u*3w]E_W0Ro`"
+            },
+            {
+              "text": "log_text",
+              "id": "k_[?iPs.NF=do3Y#Ywz8"
+            },
+            {
+              "text": "move_to",
+              "id": "#e+g({up3N`p:DScZGOd"
+            },
+            {
+              "text": "onClick",
+              "id": "#|S1@P=jYv!3LJr+3Lw~"
+            },
+            {
+              "text": "reset_space",
+              "id": ".NPG1dhgB(pq37Nj5g?i"
+            },
+            {
+              "text": "setInterval",
+              "id": "dhV!tx/KxSEgV7R_6Qn)"
+            },
+            {
+              "text": "show_hideSpot",
+              "id": "(YtXA]8b(chPt{bkMM%R"
+            },
+            {
+              "text": "show_hideSpotVariable",
+              "id": "{JxcGN0~#oUF!}tlW/#;"
+            },
+            {
+              "text": "spot_set_prop",
+              "id": ")pRsNnyexLQp%/,S$X{+"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "YAML",
+      "TYPE": "vZ*rfG=?GD|*Gn4oz;JW"
+    }
+  },
+  "Oxg3i57hYEv,vUDdl3u|": {
+    "type": "generate_code",
+    "id": "Oxg3i57hYEv,vUDdl3u|",
+    "x": 0,
+    "y": 2062,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "Angle",
+              "id": "vZ*rfG=?GD|*Gn4oz;JW"
+            },
+            {
+              "text": "Color",
+              "id": "blIsv=~Rz/7sRHw/${vi"
+            },
+            {
+              "text": "Color_alpha",
+              "id": "?dorq2fvz3c]0-A~G9[r"
+            },
+            {
+              "text": "Cross",
+              "id": "b/2lGci;ufIhs^$a32rc"
+            },
+            {
+              "text": "Distance",
+              "id": ".{DRto-9LaZpw5_b_~iD"
+            },
+            {
+              "text": "Quaternion",
+              "id": "[~9.*?!}FIsH%7*EiC[s"
+            },
+            {
+              "text": "Quaternion_euler",
+              "id": "Zo!9.lh|?T?P5;PmeV]O"
+            },
+            {
+              "text": "Spot",
+              "id": "cZxVgiajJ}?NM]pRe6!D"
+            },
+            {
+              "text": "Vector3",
+              "id": "abe^{M%AnvU}8e_S*J+i"
+            },
+            {
+              "text": "Vector3_static",
+              "id": "a11pyOATl.zRx2+?zbPY"
+            },
+            {
+              "text": "clearInterval",
+              "id": "osYr0JHK.BzG/wPjHVp0"
+            },
+            {
+              "text": "forAllSpots",
+              "id": "tihVLK_zM!}T`s$i.*4o"
+            },
+            {
+              "text": "getCamera",
+              "id": "F==8Y8Fm0_,E/10YCjS{"
+            },
+            {
+              "text": "getSpot",
+              "id": "TJ#gZ6y{:#sp_=@}rrSh"
+            },
+            {
+              "text": "getSpotById",
+              "id": "dMMEzce{eoN;:~CQ5$GD"
+            },
+            {
+              "text": "get_spot_property",
+              "id": "Ae{5^C6e*gM:j%as^#r5"
+            },
+            {
+              "text": "log",
+              "id": "QW/VB6d$u*3w]E_W0Ro`"
+            },
+            {
+              "text": "log_text",
+              "id": "k_[?iPs.NF=do3Y#Ywz8"
+            },
+            {
+              "text": "move_to",
+              "id": "#e+g({up3N`p:DScZGOd"
+            },
+            {
+              "text": "onClick",
+              "id": "#|S1@P=jYv!3LJr+3Lw~"
+            },
+            {
+              "text": "reset_space",
+              "id": ".NPG1dhgB(pq37Nj5g?i"
+            },
+            {
+              "text": "setInterval",
+              "id": "dhV!tx/KxSEgV7R_6Qn)"
+            },
+            {
+              "text": "show_hideSpot",
+              "id": "(YtXA]8b(chPt{bkMM%R"
+            },
+            {
+              "text": "show_hideSpotVariable",
+              "id": "{JxcGN0~#oUF!}tlW/#;"
+            },
+            {
+              "text": "spot_set_prop",
+              "id": ")pRsNnyexLQp%/,S$X{+"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "Javascript",
+      "TYPE": "dMMEzce{eoN;:~CQ5$GD"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "#pZ|vQm{b3k^FA,^KF~O"
+        }
+      }
+    }
+  },
+  "dwSj,GFS?I|rAb*:@6U`": {
+    "type": "generate_code",
+    "id": "dwSj,GFS?I|rAb*:@6U`",
+    "x": 0,
+    "y": 2203,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "Angle",
+              "id": "vZ*rfG=?GD|*Gn4oz;JW"
+            },
+            {
+              "text": "Color",
+              "id": "blIsv=~Rz/7sRHw/${vi"
+            },
+            {
+              "text": "Color_alpha",
+              "id": "?dorq2fvz3c]0-A~G9[r"
+            },
+            {
+              "text": "Cross",
+              "id": "b/2lGci;ufIhs^$a32rc"
+            },
+            {
+              "text": "Distance",
+              "id": ".{DRto-9LaZpw5_b_~iD"
+            },
+            {
+              "text": "Quaternion",
+              "id": "[~9.*?!}FIsH%7*EiC[s"
+            },
+            {
+              "text": "Quaternion_euler",
+              "id": "Zo!9.lh|?T?P5;PmeV]O"
+            },
+            {
+              "text": "Spot",
+              "id": "cZxVgiajJ}?NM]pRe6!D"
+            },
+            {
+              "text": "Vector3",
+              "id": "abe^{M%AnvU}8e_S*J+i"
+            },
+            {
+              "text": "Vector3_static",
+              "id": "a11pyOATl.zRx2+?zbPY"
+            },
+            {
+              "text": "clearInterval",
+              "id": "osYr0JHK.BzG/wPjHVp0"
+            },
+            {
+              "text": "forAllSpots",
+              "id": "tihVLK_zM!}T`s$i.*4o"
+            },
+            {
+              "text": "getCamera",
+              "id": "F==8Y8Fm0_,E/10YCjS{"
+            },
+            {
+              "text": "getSpot",
+              "id": "TJ#gZ6y{:#sp_=@}rrSh"
+            },
+            {
+              "text": "getSpotById",
+              "id": "dMMEzce{eoN;:~CQ5$GD"
+            },
+            {
+              "text": "get_spot_property",
+              "id": "Ae{5^C6e*gM:j%as^#r5"
+            },
+            {
+              "text": "log",
+              "id": "QW/VB6d$u*3w]E_W0Ro`"
+            },
+            {
+              "text": "log_text",
+              "id": "k_[?iPs.NF=do3Y#Ywz8"
+            },
+            {
+              "text": "move_to",
+              "id": "#e+g({up3N`p:DScZGOd"
+            },
+            {
+              "text": "onClick",
+              "id": "#|S1@P=jYv!3LJr+3Lw~"
+            },
+            {
+              "text": "reset_space",
+              "id": ".NPG1dhgB(pq37Nj5g?i"
+            },
+            {
+              "text": "setInterval",
+              "id": "dhV!tx/KxSEgV7R_6Qn)"
+            },
+            {
+              "text": "show_hideSpot",
+              "id": "(YtXA]8b(chPt{bkMM%R"
+            },
+            {
+              "text": "show_hideSpotVariable",
+              "id": "{JxcGN0~#oUF!}tlW/#;"
+            },
+            {
+              "text": "spot_set_prop",
+              "id": ")pRsNnyexLQp%/,S$X{+"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "Javascript",
+      "TYPE": "F==8Y8Fm0_,E/10YCjS{"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "n;xVliU.x=zEc`vzuscK"
+        }
+      }
+    }
+  },
+  "@QPre+7k_SJG{m[jOe]P": {
+    "type": "generate_code",
+    "id": "@QPre+7k_SJG{m[jOe]P",
+    "x": 0,
+    "y": 2292,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "Angle",
+              "id": "vZ*rfG=?GD|*Gn4oz;JW"
+            },
+            {
+              "text": "Color",
+              "id": "blIsv=~Rz/7sRHw/${vi"
+            },
+            {
+              "text": "Color_alpha",
+              "id": "?dorq2fvz3c]0-A~G9[r"
+            },
+            {
+              "text": "Cross",
+              "id": "b/2lGci;ufIhs^$a32rc"
+            },
+            {
+              "text": "Distance",
+              "id": ".{DRto-9LaZpw5_b_~iD"
+            },
+            {
+              "text": "Quaternion",
+              "id": "[~9.*?!}FIsH%7*EiC[s"
+            },
+            {
+              "text": "Quaternion_euler",
+              "id": "Zo!9.lh|?T?P5;PmeV]O"
+            },
+            {
+              "text": "Spot",
+              "id": "cZxVgiajJ}?NM]pRe6!D"
+            },
+            {
+              "text": "Vector3",
+              "id": "abe^{M%AnvU}8e_S*J+i"
+            },
+            {
+              "text": "Vector3_static",
+              "id": "a11pyOATl.zRx2+?zbPY"
+            },
+            {
+              "text": "clearInterval",
+              "id": "osYr0JHK.BzG/wPjHVp0"
+            },
+            {
+              "text": "forAllSpots",
+              "id": "tihVLK_zM!}T`s$i.*4o"
+            },
+            {
+              "text": "getCamera",
+              "id": "F==8Y8Fm0_,E/10YCjS{"
+            },
+            {
+              "text": "getSpot",
+              "id": "TJ#gZ6y{:#sp_=@}rrSh"
+            },
+            {
+              "text": "getSpotById",
+              "id": "dMMEzce{eoN;:~CQ5$GD"
+            },
+            {
+              "text": "get_spot_property",
+              "id": "Ae{5^C6e*gM:j%as^#r5"
+            },
+            {
+              "text": "log",
+              "id": "QW/VB6d$u*3w]E_W0Ro`"
+            },
+            {
+              "text": "log_text",
+              "id": "k_[?iPs.NF=do3Y#Ywz8"
+            },
+            {
+              "text": "move_to",
+              "id": "#e+g({up3N`p:DScZGOd"
+            },
+            {
+              "text": "onClick",
+              "id": "#|S1@P=jYv!3LJr+3Lw~"
+            },
+            {
+              "text": "reset_space",
+              "id": ".NPG1dhgB(pq37Nj5g?i"
+            },
+            {
+              "text": "setInterval",
+              "id": "dhV!tx/KxSEgV7R_6Qn)"
+            },
+            {
+              "text": "show_hideSpot",
+              "id": "(YtXA]8b(chPt{bkMM%R"
+            },
+            {
+              "text": "show_hideSpotVariable",
+              "id": "{JxcGN0~#oUF!}tlW/#;"
+            },
+            {
+              "text": "spot_set_prop",
+              "id": ")pRsNnyexLQp%/,S$X{+"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "Javascript",
+      "TYPE": "dhV!tx/KxSEgV7R_6Qn)"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "ZTYEB3Y[pzc`:7sL2SaB"
+        }
+      }
+    }
+  },
+  "bW?DPvauT$O7ZZS:^R?y": {
+    "type": "generate_code",
+    "id": "bW?DPvauT$O7ZZS:^R?y",
+    "x": 0,
+    "y": 2485,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "Angle",
+              "id": "vZ*rfG=?GD|*Gn4oz;JW"
+            },
+            {
+              "text": "Color",
+              "id": "blIsv=~Rz/7sRHw/${vi"
+            },
+            {
+              "text": "Color_alpha",
+              "id": "?dorq2fvz3c]0-A~G9[r"
+            },
+            {
+              "text": "Cross",
+              "id": "b/2lGci;ufIhs^$a32rc"
+            },
+            {
+              "text": "Distance",
+              "id": ".{DRto-9LaZpw5_b_~iD"
+            },
+            {
+              "text": "Quaternion",
+              "id": "[~9.*?!}FIsH%7*EiC[s"
+            },
+            {
+              "text": "Quaternion_euler",
+              "id": "Zo!9.lh|?T?P5;PmeV]O"
+            },
+            {
+              "text": "Spot",
+              "id": "cZxVgiajJ}?NM]pRe6!D"
+            },
+            {
+              "text": "Vector3",
+              "id": "abe^{M%AnvU}8e_S*J+i"
+            },
+            {
+              "text": "Vector3_static",
+              "id": "a11pyOATl.zRx2+?zbPY"
+            },
+            {
+              "text": "clearInterval",
+              "id": "osYr0JHK.BzG/wPjHVp0"
+            },
+            {
+              "text": "forAllSpots",
+              "id": "tihVLK_zM!}T`s$i.*4o"
+            },
+            {
+              "text": "getCamera",
+              "id": "F==8Y8Fm0_,E/10YCjS{"
+            },
+            {
+              "text": "getSpot",
+              "id": "TJ#gZ6y{:#sp_=@}rrSh"
+            },
+            {
+              "text": "getSpotById",
+              "id": "dMMEzce{eoN;:~CQ5$GD"
+            },
+            {
+              "text": "get_spot_property",
+              "id": "Ae{5^C6e*gM:j%as^#r5"
+            },
+            {
+              "text": "log",
+              "id": "QW/VB6d$u*3w]E_W0Ro`"
+            },
+            {
+              "text": "log_text",
+              "id": "k_[?iPs.NF=do3Y#Ywz8"
+            },
+            {
+              "text": "move_to",
+              "id": "#e+g({up3N`p:DScZGOd"
+            },
+            {
+              "text": "onClick",
+              "id": "#|S1@P=jYv!3LJr+3Lw~"
+            },
+            {
+              "text": "reset_space",
+              "id": ".NPG1dhgB(pq37Nj5g?i"
+            },
+            {
+              "text": "setInterval",
+              "id": "dhV!tx/KxSEgV7R_6Qn)"
+            },
+            {
+              "text": "show_hideSpot",
+              "id": "(YtXA]8b(chPt{bkMM%R"
+            },
+            {
+              "text": "show_hideSpotVariable",
+              "id": "{JxcGN0~#oUF!}tlW/#;"
+            },
+            {
+              "text": "spot_set_prop",
+              "id": ")pRsNnyexLQp%/,S$X{+"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "Javascript",
+      "TYPE": "osYr0JHK.BzG/wPjHVp0"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "Z-#jqKeD`P!1=|ItHR2P"
+        }
+      }
+    }
+  },
+  "0pgLJAdi)+zZ(vynN5Z:": {
+    "type": "generate_code",
+    "id": "0pgLJAdi)+zZ(vynN5Z:",
+    "x": 0,
+    "y": 2574,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "Angle",
+              "id": "vZ*rfG=?GD|*Gn4oz;JW"
+            },
+            {
+              "text": "Color",
+              "id": "blIsv=~Rz/7sRHw/${vi"
+            },
+            {
+              "text": "Color_alpha",
+              "id": "?dorq2fvz3c]0-A~G9[r"
+            },
+            {
+              "text": "Cross",
+              "id": "b/2lGci;ufIhs^$a32rc"
+            },
+            {
+              "text": "Distance",
+              "id": ".{DRto-9LaZpw5_b_~iD"
+            },
+            {
+              "text": "Quaternion",
+              "id": "[~9.*?!}FIsH%7*EiC[s"
+            },
+            {
+              "text": "Quaternion_euler",
+              "id": "Zo!9.lh|?T?P5;PmeV]O"
+            },
+            {
+              "text": "Spot",
+              "id": "cZxVgiajJ}?NM]pRe6!D"
+            },
+            {
+              "text": "Vector3",
+              "id": "abe^{M%AnvU}8e_S*J+i"
+            },
+            {
+              "text": "Vector3_static",
+              "id": "a11pyOATl.zRx2+?zbPY"
+            },
+            {
+              "text": "clearInterval",
+              "id": "osYr0JHK.BzG/wPjHVp0"
+            },
+            {
+              "text": "forAllSpots",
+              "id": "tihVLK_zM!}T`s$i.*4o"
+            },
+            {
+              "text": "getCamera",
+              "id": "F==8Y8Fm0_,E/10YCjS{"
+            },
+            {
+              "text": "getSpot",
+              "id": "TJ#gZ6y{:#sp_=@}rrSh"
+            },
+            {
+              "text": "getSpotById",
+              "id": "dMMEzce{eoN;:~CQ5$GD"
+            },
+            {
+              "text": "get_spot_property",
+              "id": "Ae{5^C6e*gM:j%as^#r5"
+            },
+            {
+              "text": "log",
+              "id": "QW/VB6d$u*3w]E_W0Ro`"
+            },
+            {
+              "text": "log_text",
+              "id": "k_[?iPs.NF=do3Y#Ywz8"
+            },
+            {
+              "text": "move_to",
+              "id": "#e+g({up3N`p:DScZGOd"
+            },
+            {
+              "text": "onClick",
+              "id": "#|S1@P=jYv!3LJr+3Lw~"
+            },
+            {
+              "text": "reset_space",
+              "id": ".NPG1dhgB(pq37Nj5g?i"
+            },
+            {
+              "text": "setInterval",
+              "id": "dhV!tx/KxSEgV7R_6Qn)"
+            },
+            {
+              "text": "show_hideSpot",
+              "id": "(YtXA]8b(chPt{bkMM%R"
+            },
+            {
+              "text": "show_hideSpotVariable",
+              "id": "{JxcGN0~#oUF!}tlW/#;"
+            },
+            {
+              "text": "spot_set_prop",
+              "id": ")pRsNnyexLQp%/,S$X{+"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "Javascript",
+      "TYPE": ".NPG1dhgB(pq37Nj5g?i"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "l*pt7:9JS@W-u2)15skG"
+        }
+      }
+    }
+  },
+  "w8(yI/={OuJMBFt0/5?.": {
+    "type": "generate_code",
+    "id": "w8(yI/={OuJMBFt0/5?.",
+    "x": 0,
+    "y": 2663,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "Angle",
+              "id": "vZ*rfG=?GD|*Gn4oz;JW"
+            },
+            {
+              "text": "Color",
+              "id": "blIsv=~Rz/7sRHw/${vi"
+            },
+            {
+              "text": "Color_alpha",
+              "id": "?dorq2fvz3c]0-A~G9[r"
+            },
+            {
+              "text": "Cross",
+              "id": "b/2lGci;ufIhs^$a32rc"
+            },
+            {
+              "text": "Distance",
+              "id": ".{DRto-9LaZpw5_b_~iD"
+            },
+            {
+              "text": "Quaternion",
+              "id": "[~9.*?!}FIsH%7*EiC[s"
+            },
+            {
+              "text": "Quaternion_euler",
+              "id": "Zo!9.lh|?T?P5;PmeV]O"
+            },
+            {
+              "text": "Spot",
+              "id": "cZxVgiajJ}?NM]pRe6!D"
+            },
+            {
+              "text": "Vector3",
+              "id": "abe^{M%AnvU}8e_S*J+i"
+            },
+            {
+              "text": "Vector3_static",
+              "id": "a11pyOATl.zRx2+?zbPY"
+            },
+            {
+              "text": "clearInterval",
+              "id": "osYr0JHK.BzG/wPjHVp0"
+            },
+            {
+              "text": "forAllSpots",
+              "id": "tihVLK_zM!}T`s$i.*4o"
+            },
+            {
+              "text": "getCamera",
+              "id": "F==8Y8Fm0_,E/10YCjS{"
+            },
+            {
+              "text": "getSpot",
+              "id": "TJ#gZ6y{:#sp_=@}rrSh"
+            },
+            {
+              "text": "getSpotById",
+              "id": "dMMEzce{eoN;:~CQ5$GD"
+            },
+            {
+              "text": "get_spot_property",
+              "id": "Ae{5^C6e*gM:j%as^#r5"
+            },
+            {
+              "text": "log",
+              "id": "QW/VB6d$u*3w]E_W0Ro`"
+            },
+            {
+              "text": "log_text",
+              "id": "k_[?iPs.NF=do3Y#Ywz8"
+            },
+            {
+              "text": "move_to",
+              "id": "#e+g({up3N`p:DScZGOd"
+            },
+            {
+              "text": "onClick",
+              "id": "#|S1@P=jYv!3LJr+3Lw~"
+            },
+            {
+              "text": "reset_space",
+              "id": ".NPG1dhgB(pq37Nj5g?i"
+            },
+            {
+              "text": "setInterval",
+              "id": "dhV!tx/KxSEgV7R_6Qn)"
+            },
+            {
+              "text": "show_hideSpot",
+              "id": "(YtXA]8b(chPt{bkMM%R"
+            },
+            {
+              "text": "show_hideSpotVariable",
+              "id": "{JxcGN0~#oUF!}tlW/#;"
+            },
+            {
+              "text": "spot_set_prop",
+              "id": ")pRsNnyexLQp%/,S$X{+"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "Javascript",
+      "TYPE": "#|S1@P=jYv!3LJr+3Lw~"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "0XCh.uu/v4?IPxpj?nP6"
+        }
+      }
+    }
+  },
+  "^kEUJwWQNV.j=3M}QvrS": {
+    "type": "generate_code",
+    "id": "^kEUJwWQNV.j=3M}QvrS",
+    "x": 0,
+    "y": 2882,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "Angle",
+              "id": "vZ*rfG=?GD|*Gn4oz;JW"
+            },
+            {
+              "text": "Color",
+              "id": "blIsv=~Rz/7sRHw/${vi"
+            },
+            {
+              "text": "Color_alpha",
+              "id": "?dorq2fvz3c]0-A~G9[r"
+            },
+            {
+              "text": "Cross",
+              "id": "b/2lGci;ufIhs^$a32rc"
+            },
+            {
+              "text": "Distance",
+              "id": ".{DRto-9LaZpw5_b_~iD"
+            },
+            {
+              "text": "Quaternion",
+              "id": "[~9.*?!}FIsH%7*EiC[s"
+            },
+            {
+              "text": "Quaternion_euler",
+              "id": "Zo!9.lh|?T?P5;PmeV]O"
+            },
+            {
+              "text": "Spot",
+              "id": "cZxVgiajJ}?NM]pRe6!D"
+            },
+            {
+              "text": "Vector3",
+              "id": "abe^{M%AnvU}8e_S*J+i"
+            },
+            {
+              "text": "Vector3_static",
+              "id": "a11pyOATl.zRx2+?zbPY"
+            },
+            {
+              "text": "clearInterval",
+              "id": "osYr0JHK.BzG/wPjHVp0"
+            },
+            {
+              "text": "forAllSpots",
+              "id": "tihVLK_zM!}T`s$i.*4o"
+            },
+            {
+              "text": "getCamera",
+              "id": "F==8Y8Fm0_,E/10YCjS{"
+            },
+            {
+              "text": "getSpot",
+              "id": "TJ#gZ6y{:#sp_=@}rrSh"
+            },
+            {
+              "text": "getSpotById",
+              "id": "dMMEzce{eoN;:~CQ5$GD"
+            },
+            {
+              "text": "get_spot_property",
+              "id": "Ae{5^C6e*gM:j%as^#r5"
+            },
+            {
+              "text": "log",
+              "id": "QW/VB6d$u*3w]E_W0Ro`"
+            },
+            {
+              "text": "log_text",
+              "id": "k_[?iPs.NF=do3Y#Ywz8"
+            },
+            {
+              "text": "move_to",
+              "id": "#e+g({up3N`p:DScZGOd"
+            },
+            {
+              "text": "onClick",
+              "id": "#|S1@P=jYv!3LJr+3Lw~"
+            },
+            {
+              "text": "reset_space",
+              "id": ".NPG1dhgB(pq37Nj5g?i"
+            },
+            {
+              "text": "setInterval",
+              "id": "dhV!tx/KxSEgV7R_6Qn)"
+            },
+            {
+              "text": "show_hideSpot",
+              "id": "(YtXA]8b(chPt{bkMM%R"
+            },
+            {
+              "text": "show_hideSpotVariable",
+              "id": "{JxcGN0~#oUF!}tlW/#;"
+            },
+            {
+              "text": "spot_set_prop",
+              "id": ")pRsNnyexLQp%/,S$X{+"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "Javascript",
+      "TYPE": ")pRsNnyexLQp%/,S$X{+"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "1`ZDa=G/aU6UBthjoNkK"
+        }
+      }
+    }
+  },
+  "/5wg47yv:P0%lL:H/$8;": {
+    "type": "generate_code",
+    "id": "/5wg47yv:P0%lL:H/$8;",
+    "x": 0,
+    "y": 3101,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "Angle",
+              "id": "vZ*rfG=?GD|*Gn4oz;JW"
+            },
+            {
+              "text": "Color",
+              "id": "blIsv=~Rz/7sRHw/${vi"
+            },
+            {
+              "text": "Color_alpha",
+              "id": "?dorq2fvz3c]0-A~G9[r"
+            },
+            {
+              "text": "Cross",
+              "id": "b/2lGci;ufIhs^$a32rc"
+            },
+            {
+              "text": "Distance",
+              "id": ".{DRto-9LaZpw5_b_~iD"
+            },
+            {
+              "text": "Quaternion",
+              "id": "[~9.*?!}FIsH%7*EiC[s"
+            },
+            {
+              "text": "Quaternion_euler",
+              "id": "Zo!9.lh|?T?P5;PmeV]O"
+            },
+            {
+              "text": "Spot",
+              "id": "cZxVgiajJ}?NM]pRe6!D"
+            },
+            {
+              "text": "Vector3",
+              "id": "abe^{M%AnvU}8e_S*J+i"
+            },
+            {
+              "text": "Vector3_static",
+              "id": "a11pyOATl.zRx2+?zbPY"
+            },
+            {
+              "text": "clearInterval",
+              "id": "osYr0JHK.BzG/wPjHVp0"
+            },
+            {
+              "text": "forAllSpots",
+              "id": "tihVLK_zM!}T`s$i.*4o"
+            },
+            {
+              "text": "getCamera",
+              "id": "F==8Y8Fm0_,E/10YCjS{"
+            },
+            {
+              "text": "getSpot",
+              "id": "TJ#gZ6y{:#sp_=@}rrSh"
+            },
+            {
+              "text": "getSpotById",
+              "id": "dMMEzce{eoN;:~CQ5$GD"
+            },
+            {
+              "text": "get_spot_property",
+              "id": "Ae{5^C6e*gM:j%as^#r5"
+            },
+            {
+              "text": "log",
+              "id": "QW/VB6d$u*3w]E_W0Ro`"
+            },
+            {
+              "text": "log_text",
+              "id": "k_[?iPs.NF=do3Y#Ywz8"
+            },
+            {
+              "text": "move_to",
+              "id": "#e+g({up3N`p:DScZGOd"
+            },
+            {
+              "text": "onClick",
+              "id": "#|S1@P=jYv!3LJr+3Lw~"
+            },
+            {
+              "text": "onEvent",
+              "id": "Sx0[XW3xz44t8aCQ%_:*"
+            },
+            {
+              "text": "reset_space",
+              "id": ".NPG1dhgB(pq37Nj5g?i"
+            },
+            {
+              "text": "setInterval",
+              "id": "dhV!tx/KxSEgV7R_6Qn)"
+            },
+            {
+              "text": "show_hideSpot",
+              "id": "(YtXA]8b(chPt{bkMM%R"
+            },
+            {
+              "text": "show_hideSpotVariable",
+              "id": "{JxcGN0~#oUF!}tlW/#;"
+            },
+            {
+              "text": "spot_set_prop",
+              "id": ")pRsNnyexLQp%/,S$X{+"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "Javascript",
+      "TYPE": "Zo!9.lh|?T?P5;PmeV]O"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "#C(wUg#H7;;maj601?.;"
+        }
+      }
+    }
+  },
+  ":|$c)7G]LK[k?^qGlW0J": {
+    "type": "generate_code",
+    "id": ":|$c)7G]LK[k?^qGlW0J",
+    "x": 0,
+    "y": 3372,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "Angle",
+              "id": "vZ*rfG=?GD|*Gn4oz;JW"
+            },
+            {
+              "text": "Color",
+              "id": "blIsv=~Rz/7sRHw/${vi"
+            },
+            {
+              "text": "Color_alpha",
+              "id": "?dorq2fvz3c]0-A~G9[r"
+            },
+            {
+              "text": "Cross",
+              "id": "b/2lGci;ufIhs^$a32rc"
+            },
+            {
+              "text": "Distance",
+              "id": ".{DRto-9LaZpw5_b_~iD"
+            },
+            {
+              "text": "Quaternion",
+              "id": "[~9.*?!}FIsH%7*EiC[s"
+            },
+            {
+              "text": "Quaternion_euler",
+              "id": "Zo!9.lh|?T?P5;PmeV]O"
+            },
+            {
+              "text": "Spot",
+              "id": "cZxVgiajJ}?NM]pRe6!D"
+            },
+            {
+              "text": "Vector3",
+              "id": "abe^{M%AnvU}8e_S*J+i"
+            },
+            {
+              "text": "Vector3_static",
+              "id": "a11pyOATl.zRx2+?zbPY"
+            },
+            {
+              "text": "clearInterval",
+              "id": "osYr0JHK.BzG/wPjHVp0"
+            },
+            {
+              "text": "forAllSpots",
+              "id": "tihVLK_zM!}T`s$i.*4o"
+            },
+            {
+              "text": "getCamera",
+              "id": "F==8Y8Fm0_,E/10YCjS{"
+            },
+            {
+              "text": "getSpot",
+              "id": "TJ#gZ6y{:#sp_=@}rrSh"
+            },
+            {
+              "text": "getSpotById",
+              "id": "dMMEzce{eoN;:~CQ5$GD"
+            },
+            {
+              "text": "get_spot_property",
+              "id": "Ae{5^C6e*gM:j%as^#r5"
+            },
+            {
+              "text": "log",
+              "id": "QW/VB6d$u*3w]E_W0Ro`"
+            },
+            {
+              "text": "log_text",
+              "id": "k_[?iPs.NF=do3Y#Ywz8"
+            },
+            {
+              "text": "move_to",
+              "id": "#e+g({up3N`p:DScZGOd"
+            },
+            {
+              "text": "onClick",
+              "id": "#|S1@P=jYv!3LJr+3Lw~"
+            },
+            {
+              "text": "onEvent",
+              "id": "Sx0[XW3xz44t8aCQ%_:*"
+            },
+            {
+              "text": "reset_space",
+              "id": ".NPG1dhgB(pq37Nj5g?i"
+            },
+            {
+              "text": "setInterval",
+              "id": "dhV!tx/KxSEgV7R_6Qn)"
+            },
+            {
+              "text": "show_hideSpot",
+              "id": "(YtXA]8b(chPt{bkMM%R"
+            },
+            {
+              "text": "show_hideSpotVariable",
+              "id": "{JxcGN0~#oUF!}tlW/#;"
+            },
+            {
+              "text": "spot_set_prop",
+              "id": ")pRsNnyexLQp%/,S$X{+"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "Javascript",
+      "TYPE": "Ae{5^C6e*gM:j%as^#r5"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "$j8spKfW@deSy[jW.m@P"
+        }
+      }
+    }
+  },
+  "(afwK1[arFf.#bz#YBrG": {
+    "type": "generate_code",
+    "id": "(afwK1[arFf.#bz#YBrG",
+    "x": 0,
+    "y": 3513,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "Angle",
+              "id": "vZ*rfG=?GD|*Gn4oz;JW"
+            },
+            {
+              "text": "Color",
+              "id": "blIsv=~Rz/7sRHw/${vi"
+            },
+            {
+              "text": "Color_alpha",
+              "id": "?dorq2fvz3c]0-A~G9[r"
+            },
+            {
+              "text": "Cross",
+              "id": "b/2lGci;ufIhs^$a32rc"
+            },
+            {
+              "text": "Distance",
+              "id": ".{DRto-9LaZpw5_b_~iD"
+            },
+            {
+              "text": "Quaternion",
+              "id": "[~9.*?!}FIsH%7*EiC[s"
+            },
+            {
+              "text": "Quaternion_euler",
+              "id": "Zo!9.lh|?T?P5;PmeV]O"
+            },
+            {
+              "text": "Spot",
+              "id": "cZxVgiajJ}?NM]pRe6!D"
+            },
+            {
+              "text": "Vector3",
+              "id": "abe^{M%AnvU}8e_S*J+i"
+            },
+            {
+              "text": "Vector3_static",
+              "id": "a11pyOATl.zRx2+?zbPY"
+            },
+            {
+              "text": "clearInterval",
+              "id": "osYr0JHK.BzG/wPjHVp0"
+            },
+            {
+              "text": "forAllSpots",
+              "id": "tihVLK_zM!}T`s$i.*4o"
+            },
+            {
+              "text": "getCamera",
+              "id": "F==8Y8Fm0_,E/10YCjS{"
+            },
+            {
+              "text": "getSpot",
+              "id": "TJ#gZ6y{:#sp_=@}rrSh"
+            },
+            {
+              "text": "getSpotById",
+              "id": "dMMEzce{eoN;:~CQ5$GD"
+            },
+            {
+              "text": "get_spot_property",
+              "id": "Ae{5^C6e*gM:j%as^#r5"
+            },
+            {
+              "text": "log",
+              "id": "QW/VB6d$u*3w]E_W0Ro`"
+            },
+            {
+              "text": "log_text",
+              "id": "k_[?iPs.NF=do3Y#Ywz8"
+            },
+            {
+              "text": "move_to",
+              "id": "#e+g({up3N`p:DScZGOd"
+            },
+            {
+              "text": "onClick",
+              "id": "#|S1@P=jYv!3LJr+3Lw~"
+            },
+            {
+              "text": "reset_space",
+              "id": ".NPG1dhgB(pq37Nj5g?i"
+            },
+            {
+              "text": "setInterval",
+              "id": "dhV!tx/KxSEgV7R_6Qn)"
+            },
+            {
+              "text": "show_hideSpot",
+              "id": "(YtXA]8b(chPt{bkMM%R"
+            },
+            {
+              "text": "show_hideSpotVariable",
+              "id": "{JxcGN0~#oUF!}tlW/#;"
+            },
+            {
+              "text": "spot_set_prop",
+              "id": ")pRsNnyexLQp%/,S$X{+"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "Javascript",
+      "TYPE": "QW/VB6d$u*3w]E_W0Ro`"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "h.pqd^Nm5E%]E4$;US}M"
+        }
+      }
+    }
+  },
+  "o4+(Apog+_+2p^+DnX6?": {
+    "type": "generate_code",
+    "id": "o4+(Apog+_+2p^+DnX6?",
+    "x": 0,
+    "y": 3654,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "Angle",
+              "id": "vZ*rfG=?GD|*Gn4oz;JW"
+            },
+            {
+              "text": "Color",
+              "id": "blIsv=~Rz/7sRHw/${vi"
+            },
+            {
+              "text": "Color_alpha",
+              "id": "?dorq2fvz3c]0-A~G9[r"
+            },
+            {
+              "text": "Cross",
+              "id": "b/2lGci;ufIhs^$a32rc"
+            },
+            {
+              "text": "Distance",
+              "id": ".{DRto-9LaZpw5_b_~iD"
+            },
+            {
+              "text": "Quaternion",
+              "id": "[~9.*?!}FIsH%7*EiC[s"
+            },
+            {
+              "text": "Quaternion_euler",
+              "id": "Zo!9.lh|?T?P5;PmeV]O"
+            },
+            {
+              "text": "Spot",
+              "id": "cZxVgiajJ}?NM]pRe6!D"
+            },
+            {
+              "text": "Vector3",
+              "id": "abe^{M%AnvU}8e_S*J+i"
+            },
+            {
+              "text": "Vector3_static",
+              "id": "a11pyOATl.zRx2+?zbPY"
+            },
+            {
+              "text": "clearInterval",
+              "id": "osYr0JHK.BzG/wPjHVp0"
+            },
+            {
+              "text": "forAllSpots",
+              "id": "tihVLK_zM!}T`s$i.*4o"
+            },
+            {
+              "text": "getCamera",
+              "id": "F==8Y8Fm0_,E/10YCjS{"
+            },
+            {
+              "text": "getSpot",
+              "id": "TJ#gZ6y{:#sp_=@}rrSh"
+            },
+            {
+              "text": "getSpotById",
+              "id": "dMMEzce{eoN;:~CQ5$GD"
+            },
+            {
+              "text": "get_spot_property",
+              "id": "Ae{5^C6e*gM:j%as^#r5"
+            },
+            {
+              "text": "log",
+              "id": "QW/VB6d$u*3w]E_W0Ro`"
+            },
+            {
+              "text": "log_text",
+              "id": "k_[?iPs.NF=do3Y#Ywz8"
+            },
+            {
+              "text": "move_to",
+              "id": "#e+g({up3N`p:DScZGOd"
+            },
+            {
+              "text": "onClick",
+              "id": "#|S1@P=jYv!3LJr+3Lw~"
+            },
+            {
+              "text": "reset_space",
+              "id": ".NPG1dhgB(pq37Nj5g?i"
+            },
+            {
+              "text": "setInterval",
+              "id": "dhV!tx/KxSEgV7R_6Qn)"
+            },
+            {
+              "text": "show_hideSpot",
+              "id": "(YtXA]8b(chPt{bkMM%R"
+            },
+            {
+              "text": "show_hideSpotVariable",
+              "id": "{JxcGN0~#oUF!}tlW/#;"
+            },
+            {
+              "text": "spot_set_prop",
+              "id": ")pRsNnyexLQp%/,S$X{+"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "Javascript",
+      "TYPE": "k_[?iPs.NF=do3Y#Ywz8"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "(?$*`eTfh#y$DSv[~tu`"
+        }
+      }
+    }
+  },
+  "meRQ9QT$u7}`On/Hj%{I": {
+    "type": "generate_code",
+    "id": "meRQ9QT$u7}`On/Hj%{I",
+    "x": 0,
+    "y": 3795,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "Angle",
+              "id": "vZ*rfG=?GD|*Gn4oz;JW"
+            },
+            {
+              "text": "Color",
+              "id": "blIsv=~Rz/7sRHw/${vi"
+            },
+            {
+              "text": "Color_alpha",
+              "id": "?dorq2fvz3c]0-A~G9[r"
+            },
+            {
+              "text": "Cross",
+              "id": "b/2lGci;ufIhs^$a32rc"
+            },
+            {
+              "text": "Distance",
+              "id": ".{DRto-9LaZpw5_b_~iD"
+            },
+            {
+              "text": "Quaternion",
+              "id": "[~9.*?!}FIsH%7*EiC[s"
+            },
+            {
+              "text": "Quaternion_euler",
+              "id": "Zo!9.lh|?T?P5;PmeV]O"
+            },
+            {
+              "text": "Spot",
+              "id": "cZxVgiajJ}?NM]pRe6!D"
+            },
+            {
+              "text": "Vector3",
+              "id": "abe^{M%AnvU}8e_S*J+i"
+            },
+            {
+              "text": "Vector3_static",
+              "id": "a11pyOATl.zRx2+?zbPY"
+            },
+            {
+              "text": "clearInterval",
+              "id": "osYr0JHK.BzG/wPjHVp0"
+            },
+            {
+              "text": "forAllSpots",
+              "id": "tihVLK_zM!}T`s$i.*4o"
+            },
+            {
+              "text": "getCamera",
+              "id": "F==8Y8Fm0_,E/10YCjS{"
+            },
+            {
+              "text": "getSpot",
+              "id": "TJ#gZ6y{:#sp_=@}rrSh"
+            },
+            {
+              "text": "getSpotById",
+              "id": "dMMEzce{eoN;:~CQ5$GD"
+            },
+            {
+              "text": "get_spot_property",
+              "id": "Ae{5^C6e*gM:j%as^#r5"
+            },
+            {
+              "text": "log",
+              "id": "QW/VB6d$u*3w]E_W0Ro`"
+            },
+            {
+              "text": "log_text",
+              "id": "k_[?iPs.NF=do3Y#Ywz8"
+            },
+            {
+              "text": "move_to",
+              "id": "#e+g({up3N`p:DScZGOd"
+            },
+            {
+              "text": "onClick",
+              "id": "#|S1@P=jYv!3LJr+3Lw~"
+            },
+            {
+              "text": "onEvent",
+              "id": "Sx0[XW3xz44t8aCQ%_:*"
+            },
+            {
+              "text": "reset_space",
+              "id": ".NPG1dhgB(pq37Nj5g?i"
+            },
+            {
+              "text": "setInterval",
+              "id": "dhV!tx/KxSEgV7R_6Qn)"
+            },
+            {
+              "text": "show_hideSpot",
+              "id": "(YtXA]8b(chPt{bkMM%R"
+            },
+            {
+              "text": "show_hideSpotVariable",
+              "id": "{JxcGN0~#oUF!}tlW/#;"
+            },
+            {
+              "text": "spot_set_prop",
+              "id": ")pRsNnyexLQp%/,S$X{+"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "Javascript",
+      "TYPE": "vZ*rfG=?GD|*Gn4oz;JW"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "JO)8hJ6q|aiy.)0hm`{J"
+        }
+      }
+    }
+  },
+  "QT-aP.[%OI+toifv]pM(": {
+    "type": "generate_code",
+    "id": "QT-aP.[%OI+toifv]pM(",
+    "x": 0,
+    "y": 3988,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "Angle",
+              "id": "vZ*rfG=?GD|*Gn4oz;JW"
+            },
+            {
+              "text": "Color",
+              "id": "blIsv=~Rz/7sRHw/${vi"
+            },
+            {
+              "text": "Color_alpha",
+              "id": "?dorq2fvz3c]0-A~G9[r"
+            },
+            {
+              "text": "Cross",
+              "id": "b/2lGci;ufIhs^$a32rc"
+            },
+            {
+              "text": "Distance",
+              "id": ".{DRto-9LaZpw5_b_~iD"
+            },
+            {
+              "text": "Quaternion",
+              "id": "[~9.*?!}FIsH%7*EiC[s"
+            },
+            {
+              "text": "Quaternion_euler",
+              "id": "Zo!9.lh|?T?P5;PmeV]O"
+            },
+            {
+              "text": "Spot",
+              "id": "cZxVgiajJ}?NM]pRe6!D"
+            },
+            {
+              "text": "Vector3",
+              "id": "abe^{M%AnvU}8e_S*J+i"
+            },
+            {
+              "text": "Vector3_static",
+              "id": "a11pyOATl.zRx2+?zbPY"
+            },
+            {
+              "text": "clearInterval",
+              "id": "osYr0JHK.BzG/wPjHVp0"
+            },
+            {
+              "text": "forAllSpots",
+              "id": "tihVLK_zM!}T`s$i.*4o"
+            },
+            {
+              "text": "getCamera",
+              "id": "F==8Y8Fm0_,E/10YCjS{"
+            },
+            {
+              "text": "getSpot",
+              "id": "TJ#gZ6y{:#sp_=@}rrSh"
+            },
+            {
+              "text": "getSpotById",
+              "id": "dMMEzce{eoN;:~CQ5$GD"
+            },
+            {
+              "text": "get_spot_property",
+              "id": "Ae{5^C6e*gM:j%as^#r5"
+            },
+            {
+              "text": "log",
+              "id": "QW/VB6d$u*3w]E_W0Ro`"
+            },
+            {
+              "text": "log_text",
+              "id": "k_[?iPs.NF=do3Y#Ywz8"
+            },
+            {
+              "text": "move_to",
+              "id": "#e+g({up3N`p:DScZGOd"
+            },
+            {
+              "text": "onClick",
+              "id": "#|S1@P=jYv!3LJr+3Lw~"
+            },
+            {
+              "text": "onEvent",
+              "id": "Sx0[XW3xz44t8aCQ%_:*"
+            },
+            {
+              "text": "reset_space",
+              "id": ".NPG1dhgB(pq37Nj5g?i"
+            },
+            {
+              "text": "setInterval",
+              "id": "dhV!tx/KxSEgV7R_6Qn)"
+            },
+            {
+              "text": "show_hideSpot",
+              "id": "(YtXA]8b(chPt{bkMM%R"
+            },
+            {
+              "text": "show_hideSpotVariable",
+              "id": "{JxcGN0~#oUF!}tlW/#;"
+            },
+            {
+              "text": "spot_set_prop",
+              "id": ")pRsNnyexLQp%/,S$X{+"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "Javascript",
+      "TYPE": ".{DRto-9LaZpw5_b_~iD"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "D@Qh?_+F5veB1B)d-_3L"
+        }
+      }
+    }
+  },
+  "BS{IH;[NwSbUFH$yC%Vv": {
+    "type": "generate_code",
+    "id": "BS{IH;[NwSbUFH$yC%Vv",
+    "x": 0,
+    "y": 4181,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "Angle",
+              "id": "vZ*rfG=?GD|*Gn4oz;JW"
+            },
+            {
+              "text": "Color",
+              "id": "blIsv=~Rz/7sRHw/${vi"
+            },
+            {
+              "text": "Color_alpha",
+              "id": "?dorq2fvz3c]0-A~G9[r"
+            },
+            {
+              "text": "Cross",
+              "id": "b/2lGci;ufIhs^$a32rc"
+            },
+            {
+              "text": "Distance",
+              "id": ".{DRto-9LaZpw5_b_~iD"
+            },
+            {
+              "text": "Quaternion",
+              "id": "[~9.*?!}FIsH%7*EiC[s"
+            },
+            {
+              "text": "Quaternion_euler",
+              "id": "Zo!9.lh|?T?P5;PmeV]O"
+            },
+            {
+              "text": "Spot",
+              "id": "cZxVgiajJ}?NM]pRe6!D"
+            },
+            {
+              "text": "Vector3",
+              "id": "abe^{M%AnvU}8e_S*J+i"
+            },
+            {
+              "text": "Vector3_static",
+              "id": "a11pyOATl.zRx2+?zbPY"
+            },
+            {
+              "text": "clearInterval",
+              "id": "osYr0JHK.BzG/wPjHVp0"
+            },
+            {
+              "text": "forAllSpots",
+              "id": "tihVLK_zM!}T`s$i.*4o"
+            },
+            {
+              "text": "getCamera",
+              "id": "F==8Y8Fm0_,E/10YCjS{"
+            },
+            {
+              "text": "getSpot",
+              "id": "TJ#gZ6y{:#sp_=@}rrSh"
+            },
+            {
+              "text": "getSpotById",
+              "id": "dMMEzce{eoN;:~CQ5$GD"
+            },
+            {
+              "text": "get_spot_property",
+              "id": "Ae{5^C6e*gM:j%as^#r5"
+            },
+            {
+              "text": "log",
+              "id": "QW/VB6d$u*3w]E_W0Ro`"
+            },
+            {
+              "text": "log_text",
+              "id": "k_[?iPs.NF=do3Y#Ywz8"
+            },
+            {
+              "text": "move_to",
+              "id": "#e+g({up3N`p:DScZGOd"
+            },
+            {
+              "text": "onClick",
+              "id": "#|S1@P=jYv!3LJr+3Lw~"
+            },
+            {
+              "text": "onEvent",
+              "id": "Sx0[XW3xz44t8aCQ%_:*"
+            },
+            {
+              "text": "reset_space",
+              "id": ".NPG1dhgB(pq37Nj5g?i"
+            },
+            {
+              "text": "setInterval",
+              "id": "dhV!tx/KxSEgV7R_6Qn)"
+            },
+            {
+              "text": "show_hideSpot",
+              "id": "(YtXA]8b(chPt{bkMM%R"
+            },
+            {
+              "text": "show_hideSpotVariable",
+              "id": "{JxcGN0~#oUF!}tlW/#;"
+            },
+            {
+              "text": "spot_set_prop",
+              "id": ")pRsNnyexLQp%/,S$X{+"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "Javascript",
+      "TYPE": "b/2lGci;ufIhs^$a32rc"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "XQV2sw=AOq#c}-aQ%c/r"
+        }
+      }
+    }
+  },
+  "-~{P)VHNr~py]szPbl0B": {
+    "type": "generate_token",
+    "id": "-~{P)VHNr~py]szPbl0B",
+    "x": 21,
+    "y": 26,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "new Vector3("
+    },
+    "next": {
+      "block": {
+        "id": "xtzB,B@,R#ee$+gXw4T|"
+      }
+    }
+  },
+  "0CL-5?nJfrsQ~Jh+Azmz": {
+    "type": "generate_token",
+    "id": "0CL-5?nJfrsQ~Jh+Azmz",
+    "x": 21,
+    "y": 271,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "new Color("
+    },
+    "next": {
+      "block": {
+        "id": "(8=ti83td0RzSvy4bGNb"
+      }
+    }
+  },
+  "_lLa#lzoO[KKpg!1s?DY": {
+    "type": "generate_token",
+    "id": "_lLa#lzoO[KKpg!1s?DY",
+    "x": 21,
+    "y": 412,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "new Color("
+    },
+    "next": {
+      "block": {
+        "id": "c?N({@:}/FO5=l^LKBWO"
+      }
+    }
+  },
+  "@SEjW[D=s7ygGWKsb:.A": {
+    "type": "generate_token",
+    "id": "@SEjW[D=s7ygGWKsb:.A",
+    "x": 21,
+    "y": 605,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "new Spot("
+    }
+  },
+  "S761/}^0Po903SGyS@fF": {
+    "type": "generate_javascript",
+    "id": "S761/}^0Po903SGyS@fF",
+    "x": 21,
+    "y": 694,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "JAVASCRIPT": "var name = block.getField('VAR').getVariable().name"
+    },
+    "next": {
+      "block": {
+        "id": "itQJ7K`UET9Kj7+(`7n."
+      }
+    }
+  },
+  "ReqTCrUaOhMRj#REG]`s": {
+    "type": "generate_token",
+    "id": "ReqTCrUaOhMRj#REG]`s",
+    "x": 21,
+    "y": 809,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "for (let i = 0; i < Space.spots.length; i++) {\\n"
+    },
+    "next": {
+      "block": {
+        "id": "Wn8VyHBZJYN^kZ?tlaIo"
+      }
+    }
+  },
+  "?h|;@C:;`lpEwi@uBHY9": {
+    "type": "generate_token",
+    "id": "?h|;@C:;`lpEwi@uBHY9",
+    "x": 51,
+    "y": 994,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "Vector3."
+    },
+    "next": {
+      "block": {
+        "id": ",1M.RT5+jdVULVKVDXw2"
+      }
+    }
+  },
+  "3n^q@EHSOH)_kibFvQhN": {
+    "type": "generate_values2",
+    "id": "3n^q@EHSOH)_kibFvQhN",
+    "x": 21,
+    "y": 1091,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "VALUE",
+          "options": [
+            {
+              "text": "SPOT",
+              "id": "6|I1D+lv,fwRj;2uj-44"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "VALUE": "6|I1D+lv,fwRj;2uj-44"
+    },
+    "next": {
+      "block": {
+        "id": "8,uU6].=.Z`=w=FajDPm"
+      }
+    }
+  },
+  "6Ld6_]?=aUa%jC~oJNn5": {
+    "type": "generate_javascript",
+    "id": "6Ld6_]?=aUa%jC~oJNn5",
+    "x": 21,
+    "y": 1258,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "JAVASCRIPT": "var name = block.getField('VAR').getVariable().name"
+    },
+    "next": {
+      "block": {
+        "id": "QQfyQ8Y(uz~lB$6V?R!^"
+      }
+    }
+  },
+  "F,,Qz?%]~Ds;n/)%wPeg": {
+    "type": "generate_token",
+    "id": "F,,Qz?%]~Ds;n/)%wPeg",
+    "x": 21,
+    "y": 1425,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "new Quaternion("
+    },
+    "next": {
+      "block": {
+        "id": "?`hDCYWskRszkYX?Y60f"
+      }
+    }
+  },
+  "wPrkw_jMK6~3},dCJ*(G": {
+    "type": "generate_token",
+    "id": "wPrkw_jMK6~3},dCJ*(G",
+    "x": 21,
+    "y": 1670,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "Space."
+    },
+    "next": {
+      "block": {
+        "id": "#wU4,yg+`Q^8oPe]RQ+o"
+      }
+    }
+  },
+  "Trk_S_{6C:]AX{N[OM45": {
+    "type": "generate_token",
+    "id": "Trk_S_{6C:]AX{N[OM45",
+    "x": 21,
+    "y": 1863,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "Space.getSpot(\""
+    },
+    "next": {
+      "block": {
+        "id": "j%bUkxD9;1?OG}S{=E]K"
+      }
+    }
+  },
+  "#pZ|vQm{b3k^FA,^KF~O": {
+    "type": "generate_token",
+    "id": "#pZ|vQm{b3k^FA,^KF~O",
+    "x": 21,
+    "y": 2088,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "Space.getSpotById(\""
+    },
+    "next": {
+      "block": {
+        "id": "QbNjAtp$2(l6GuI4H/E)"
+      }
+    }
+  },
+  "n;xVliU.x=zEc`vzuscK": {
+    "type": "generate_token",
+    "id": "n;xVliU.x=zEc`vzuscK",
+    "x": 21,
+    "y": 2229,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "Space.camera"
+    }
+  },
+  "ZTYEB3Y[pzc`:7sL2SaB": {
+    "type": "generate_token",
+    "id": "ZTYEB3Y[pzc`:7sL2SaB",
+    "x": 21,
+    "y": 2318,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "var intervalHandler = setInterval(() => {\\n"
+    },
+    "next": {
+      "block": {
+        "id": "Zya2.fePW/nXnm|9P_r-"
+      }
+    }
+  },
+  "Z-#jqKeD`P!1=|ItHR2P": {
+    "type": "generate_token",
+    "id": "Z-#jqKeD`P!1=|ItHR2P",
+    "x": 21,
+    "y": 2511,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "clearInterval(intervalHandler);"
+    }
+  },
+  "l*pt7:9JS@W-u2)15skG": {
+    "type": "generate_token",
+    "id": "l*pt7:9JS@W-u2)15skG",
+    "x": 21,
+    "y": 2600,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "Space.reset();\\n"
+    }
+  },
+  "0XCh.uu/v4?IPxpj?nP6": {
+    "type": "generate_token",
+    "id": "0XCh.uu/v4?IPxpj?nP6",
+    "x": 21,
+    "y": 2689,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "function onClick(eventParams) { \\n"
+    },
+    "next": {
+      "block": {
+        "id": "v_p)K,E5/92q;Za9JCjm"
+      }
+    }
+  },
+  "1`ZDa=G/aU6UBthjoNkK": {
+    "type": "generate_field_value2",
+    "id": "1`ZDa=G/aU6UBthjoNkK",
+    "x": 21,
+    "y": 2908,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "NAME",
+              "id": "9r90s`Kvgv`SHs$zO:~B0"
+            },
+            {
+              "text": "PROPERTY",
+              "id": "ExI|m2mgez,Ie|GD]tPO0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "9r90s`Kvgv`SHs$zO:~B0"
+    },
+    "next": {
+      "block": {
+        "id": "6aU2=+JYyeOjk}C_OF@^"
+      }
+    }
+  },
+  "#C(wUg#H7;;maj601?.;": {
+    "type": "generate_values2",
+    "id": "#C(wUg#H7;;maj601?.;",
+    "x": 21,
+    "y": 3127,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "VALUE",
+          "options": [
+            {
+              "text": "INPUT",
+              "id": "%P]^kgOWLs;nJsWC0qHL"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "VALUE": "%P]^kgOWLs;nJsWC0qHL"
+    },
+    "next": {
+      "block": {
+        "id": "+l?|:laRVZcKk)x7XSR2"
+      }
+    }
+  },
+  "$j8spKfW@deSy[jW.m@P": {
+    "type": "generate_values2",
+    "id": "$j8spKfW@deSy[jW.m@P",
+    "x": 21,
+    "y": 3398,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "VALUE",
+          "options": [
+            {
+              "text": "INPUT",
+              "id": "MbMOlqD.6;b$[(jD2c*`"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "VALUE": "MbMOlqD.6;b$[(jD2c*`"
+    },
+    "next": {
+      "block": {
+        "id": "~pn{;q-:)RpJZ]/zbz$s"
+      }
+    }
+  },
+  "h.pqd^Nm5E%]E4$;US}M": {
+    "type": "generate_token",
+    "id": "h.pqd^Nm5E%]E4$;US}M",
+    "x": 21,
+    "y": 3539,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "log("
+    },
+    "next": {
+      "block": {
+        "id": "G[f-NX}:2E`IGl|04k~b"
+      }
+    }
+  },
+  "(?$*`eTfh#y$DSv[~tu`": {
+    "type": "generate_token",
+    "id": "(?$*`eTfh#y$DSv[~tu`",
+    "x": 21,
+    "y": 3680,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "log(\""
+    },
+    "next": {
+      "block": {
+        "id": ";r7,.#,tE+.l{WQ[_WW0"
+      }
+    }
+  },
+  "JO)8hJ6q|aiy.)0hm`{J": {
+    "type": "generate_token",
+    "id": "JO)8hJ6q|aiy.)0hm`{J",
+    "x": 21,
+    "y": 3821,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "Angle("
+    },
+    "next": {
+      "block": {
+        "id": "#j.X*@#FR:k7*Lwf9gUO"
+      }
+    }
+  },
+  "D@Qh?_+F5veB1B)d-_3L": {
+    "type": "generate_token",
+    "id": "D@Qh?_+F5veB1B)d-_3L",
+    "x": 21,
+    "y": 4014,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "Angle("
+    },
+    "next": {
+      "block": {
+        "id": "Qs,rLtB:Ts4]|@*{w7.9"
+      }
+    }
+  },
+  "XQV2sw=AOq#c}-aQ%c/r": {
+    "type": "generate_token",
+    "id": "XQV2sw=AOq#c}-aQ%c/r",
+    "x": 21,
+    "y": 4207,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "Cross("
+    },
+    "next": {
+      "block": {
+        "id": "i7vY}^s!eE#kELZxzG~e"
+      }
+    }
+  },
+  "xtzB,B@,R#ee$+gXw4T|": {
+    "type": "generate_field_value2",
+    "id": "xtzB,B@,R#ee$+gXw4T|",
+    "x": 21,
+    "y": 52,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "X",
+              "id": "zB.U?P:rLCj;IW}s}V#50"
+            },
+            {
+              "text": "Y",
+              "id": "K7i$L9G~iu+S8,9y%nJJ0"
+            },
+            {
+              "text": "Z",
+              "id": "V`N+![xlE%~2!+x!k,K%0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "zB.U?P:rLCj;IW}s}V#50"
+    },
+    "next": {
+      "block": {
+        "id": "jwC?xs.G!KorPkc87[J{"
+      }
+    }
+  },
+  "(8=ti83td0RzSvy4bGNb": {
+    "type": "generate_field_value2",
+    "id": "(8=ti83td0RzSvy4bGNb",
+    "x": 21,
+    "y": 297,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "NAME",
+              "id": "?2=gwx8,*^DX_L;JxLy20"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "?2=gwx8,*^DX_L;JxLy20"
+    },
+    "next": {
+      "block": {
+        "id": "WKF3j#%M;We1ylNiGKX]"
+      }
+    }
+  },
+  "c?N({@:}/FO5=l^LKBWO": {
+    "type": "generate_field_value2",
+    "id": "c?N({@:}/FO5=l^LKBWO",
+    "x": 21,
+    "y": 438,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "ALPHA",
+              "id": "-p__;2Ef6}.p,t=`cxwR0"
+            },
+            {
+              "text": "NAME",
+              "id": "?2=gwx8,*^DX_L;JxLy20"
+            },
+            {
+              "text": "NAME",
+              "id": "rgfA`UUw%C:L2k@W,7By0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "?2=gwx8,*^DX_L;JxLy20"
+    },
+    "next": {
+      "block": {
+        "id": "Ff6N*eR,c|]JLU_!+]Qd"
+      }
+    }
+  },
+  "itQJ7K`UET9Kj7+(`7n.": {
+    "type": "generate_javascript",
+    "id": "itQJ7K`UET9Kj7+(`7n.",
+    "x": 21,
+    "y": 720,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "JAVASCRIPT": "code += name"
+    }
+  },
+  "Wn8VyHBZJYN^kZ?tlaIo": {
+    "type": "generate_token",
+    "id": "Wn8VyHBZJYN^kZ?tlaIo",
+    "x": 21,
+    "y": 835,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "  var "
+    },
+    "next": {
+      "block": {
+        "id": "ADv%o[tn=KkaJz}dvAdg"
+      }
+    }
+  },
+  ",1M.RT5+jdVULVKVDXw2": {
+    "type": "generate_field_value2",
+    "id": ",1M.RT5+jdVULVKVDXw2",
+    "x": 51,
+    "y": 1020,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "VECTOR",
+              "id": "K$Bbb[B|^cW{2b/3vPF@0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "K$Bbb[B|^cW{2b/3vPF@0"
+    }
+  },
+  "8,uU6].=.Z`=w=FajDPm": {
+    "type": "generate_token",
+    "id": "8,uU6].=.Z`=w=FajDPm",
+    "x": 21,
+    "y": 1117,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "."
+    },
+    "next": {
+      "block": {
+        "id": "Sr]R]wyB$jCx*Ip_rM*9"
+      }
+    }
+  },
+  "QQfyQ8Y(uz~lB$6V?R!^": {
+    "type": "generate_javascript",
+    "id": "QQfyQ8Y(uz~lB$6V?R!^",
+    "x": 21,
+    "y": 1284,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "JAVASCRIPT": "code += name + \" = \" "
+    },
+    "next": {
+      "block": {
+        "id": "H|bO1FnotT2:9rwz*JC!"
+      }
+    }
+  },
+  "?`hDCYWskRszkYX?Y60f": {
+    "type": "generate_field_value2",
+    "id": "?`hDCYWskRszkYX?Y60f",
+    "x": 21,
+    "y": 1451,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "W",
+              "id": "f)wSF#`_anW`J$L]SCiQ0"
+            },
+            {
+              "text": "X",
+              "id": "2QhDgZ.*^~Jx9,?m]Wd;0"
+            },
+            {
+              "text": "X",
+              "id": "zB.U?P:rLCj;IW}s}V#50"
+            },
+            {
+              "text": "Y",
+              "id": "K7i$L9G~iu+S8,9y%nJJ0"
+            },
+            {
+              "text": "Y",
+              "id": "j#G?X(s`V*CNX0#!-Emd0"
+            },
+            {
+              "text": "Z",
+              "id": "V`N+![xlE%~2!+x!k,K%0"
+            },
+            {
+              "text": "Z",
+              "id": "|PVhNB9`)njf{nrv{PW/0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "zB.U?P:rLCj;IW}s}V#50"
+    },
+    "next": {
+      "block": {
+        "id": "gKhyTC+Z1hh7Zn1pGZ.9"
+      }
+    }
+  },
+  "#wU4,yg+`Q^8oPe]RQ+o": {
+    "type": "generate_field_text",
+    "id": "#wU4,yg+`Q^8oPe]RQ+o",
+    "x": 21,
+    "y": 1696,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "NAME",
+              "id": "6EjZTaDVoaLANXn]Ro/O"
+            },
+            {
+              "text": "NAME",
+              "id": "YV;]%mAnL5:lSt~xd;/@"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "=~+J$),WM{;^82[t*R,4"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "F/H[:Udw[eL!)}H|EA,E"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "F/H[:Udw[eL!)}H|EA,E"
+    },
+    "next": {
+      "block": {
+        "id": "6OKJ$!X-~$%e,MrO*1rs"
+      }
+    }
+  },
+  "j%bUkxD9;1?OG}S{=E]K": {
+    "type": "generate_field_value2",
+    "id": "j%bUkxD9;1?OG}S{=E]K",
+    "x": 21,
+    "y": 1889,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "NAME",
+              "id": "/rz!F0CJQbt%.3`Xpkc`0"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "uvQ_CwgP{J9^Gp8!!_g=0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "/rz!F0CJQbt%.3`Xpkc`0"
+    },
+    "next": {
+      "block": {
+        "id": "Sp.Hk=DPug!vr.Xx;nL?"
+      }
+    }
+  },
+  "QbNjAtp$2(l6GuI4H/E)": {
+    "type": "generate_field_value2",
+    "id": "QbNjAtp$2(l6GuI4H/E)",
+    "x": 21,
+    "y": 2114,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "ID",
+              "id": "PR50djFXdO$7=/pGAj1@0"
+            },
+            {
+              "text": "NAME",
+              "id": "/rz!F0CJQbt%.3`Xpkc`0"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "tNx=zzBF;60O7/#8dP4N0"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "uvQ_CwgP{J9^Gp8!!_g=0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "PR50djFXdO$7=/pGAj1@0"
+    },
+    "next": {
+      "block": {
+        "id": "5uBV3YGJH6-?2oB,qj}#"
+      }
+    }
+  },
+  "Zya2.fePW/nXnm|9P_r-": {
+    "type": "generate_statements2",
+    "id": "Zya2.fePW/nXnm|9P_r-",
+    "x": 21,
+    "y": 2344,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "STATEMENTS",
+          "options": [
+            {
+              "text": "STATEMENTS",
+              "id": ".^Z/IQh|;qyZ2jjY3Rys"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "STATEMENTS": ".^Z/IQh|;qyZ2jjY3Rys"
+    },
+    "next": {
+      "block": {
+        "id": "[UMUX-8Lk}CGNbJ%55{^"
+      }
+    }
+  },
+  "v_p)K,E5/92q;Za9JCjm": {
+    "type": "generate_token",
+    "id": "v_p)K,E5/92q;Za9JCjm",
+    "x": 21,
+    "y": 2715,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "  var "
+    },
+    "next": {
+      "block": {
+        "id": "?qb[%MdB($hRH?yEVufG"
+      }
+    }
+  },
+  "6aU2=+JYyeOjk}C_OF@^": {
+    "type": "generate_token",
+    "id": "6aU2=+JYyeOjk}C_OF@^",
+    "x": 21,
+    "y": 2934,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "."
+    },
+    "next": {
+      "block": {
+        "id": "ojF4W@415Ae#,fPe?e:C"
+      }
+    }
+  },
+  "+l?|:laRVZcKk)x7XSR2": {
+    "type": "generate_token",
+    "id": "+l?|:laRVZcKk)x7XSR2",
+    "x": 21,
+    "y": 3153,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": ".euler("
+    },
+    "next": {
+      "block": {
+        "id": "$X`0gI=8b_)HIYIXA~1J"
+      }
+    }
+  },
+  "~pn{;q-:)RpJZ]/zbz$s": {
+    "type": "generate_token",
+    "id": "~pn{;q-:)RpJZ]/zbz$s",
+    "x": 21,
+    "y": 3424,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "."
+    },
+    "next": {
+      "block": {
+        "id": "f6!`L{HK~0JW_PK45rMq"
+      }
+    }
+  },
+  "G[f-NX}:2E`IGl|04k~b": {
+    "type": "generate_values2",
+    "id": "G[f-NX}:2E`IGl|04k~b",
+    "x": 21,
+    "y": 3565,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "VALUE",
+          "options": [
+            {
+              "text": "NAME",
+              "id": "ttUcTLHnBwjhX9yDyVdo"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "VALUE": "ttUcTLHnBwjhX9yDyVdo"
+    },
+    "next": {
+      "block": {
+        "id": "sQ8hJiqACl[{{3RcbcPW"
+      }
+    }
+  },
+  ";r7,.#,tE+.l{WQ[_WW0": {
+    "type": "generate_field_value2",
+    "id": ";r7,.#,tE+.l{WQ[_WW0",
+    "x": 21,
+    "y": 3706,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "NAME",
+              "id": "[]7TLa;oo-f$aD?}l:*V0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "[]7TLa;oo-f$aD?}l:*V0"
+    },
+    "next": {
+      "block": {
+        "id": "rI=zFp9FhtjCt,/L5m0z"
+      }
+    }
+  },
+  "#j.X*@#FR:k7*Lwf9gUO": {
+    "type": "generate_values2",
+    "id": "#j.X*@#FR:k7*Lwf9gUO",
+    "x": 21,
+    "y": 3847,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "VALUE",
+          "options": [
+            {
+              "text": "FROM",
+              "id": "Sy,,~|x[V?a*$4N1$t:g"
+            },
+            {
+              "text": "TO",
+              "id": "_B%(~54Q5#)_Q7,bd0qU"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "VALUE": "Sy,,~|x[V?a*$4N1$t:g"
+    },
+    "next": {
+      "block": {
+        "id": "`RSC,u0R;[+dJ8^`:5+r"
+      }
+    }
+  },
+  "Qs,rLtB:Ts4]|@*{w7.9": {
+    "type": "generate_values2",
+    "id": "Qs,rLtB:Ts4]|@*{w7.9",
+    "x": 21,
+    "y": 4040,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "VALUE",
+          "options": [
+            {
+              "text": "FROM",
+              "id": "PNhvG.~!kMPAdeDYfu71"
+            },
+            {
+              "text": "FROM",
+              "id": "Sy,,~|x[V?a*$4N1$t:g"
+            },
+            {
+              "text": "TO",
+              "id": "_B%(~54Q5#)_Q7,bd0qU"
+            },
+            {
+              "text": "TO",
+              "id": "_RT/`o8:%/7bs;tGvIlK"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "VALUE": "Sy,,~|x[V?a*$4N1$t:g"
+    },
+    "next": {
+      "block": {
+        "id": "U$JdBL~(M[2!=ngxG93V"
+      }
+    }
+  },
+  "i7vY}^s!eE#kELZxzG~e": {
+    "type": "generate_values2",
+    "id": "i7vY}^s!eE#kELZxzG~e",
+    "x": 21,
+    "y": 4233,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "VALUE",
+          "options": [
+            {
+              "text": "FROM",
+              "id": "Sy,,~|x[V?a*$4N1$t:g"
+            },
+            {
+              "text": "LHS",
+              "id": "Pp*p@3c72UJKv3Y3nSe("
+            },
+            {
+              "text": "RHS",
+              "id": "3N]0.f:6YkmT;:1Q,qs;"
+            },
+            {
+              "text": "TO",
+              "id": "_B%(~54Q5#)_Q7,bd0qU"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "VALUE": "Sy,,~|x[V?a*$4N1$t:g"
+    },
+    "next": {
+      "block": {
+        "id": "8TBA?BN5+/gl!b+(c*dv"
+      }
+    }
+  },
+  "jwC?xs.G!KorPkc87[J{": {
+    "type": "generate_token",
+    "id": "jwC?xs.G!KorPkc87[J{",
+    "x": 21,
+    "y": 78,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": ", "
+    },
+    "next": {
+      "block": {
+        "id": "~*U9K6Us):.!1sY,~}3%"
+      }
+    }
+  },
+  "WKF3j#%M;We1ylNiGKX]": {
+    "type": "generate_token",
+    "id": "WKF3j#%M;We1ylNiGKX]",
+    "x": 21,
+    "y": 323,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": ")"
+    }
+  },
+  "Ff6N*eR,c|]JLU_!+]Qd": {
+    "type": "generate_token",
+    "id": "Ff6N*eR,c|]JLU_!+]Qd",
+    "x": 21,
+    "y": 464,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": ","
+    },
+    "next": {
+      "block": {
+        "id": "-zlaVXusCEL_p%XUf/4`"
+      }
+    }
+  },
+  "ADv%o[tn=KkaJz}dvAdg": {
+    "type": "generate_field_value2",
+    "id": "ADv%o[tn=KkaJz}dvAdg",
+    "x": 21,
+    "y": 861,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "NAME",
+              "id": "dQQkW9o3GCZI0tX:~wi,0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "dQQkW9o3GCZI0tX:~wi,0"
+    },
+    "next": {
+      "block": {
+        "id": "K4U5N7QyK6g{lV#C7S%5"
+      }
+    }
+  },
+  "Sr]R]wyB$jCx*Ip_rM*9": {
+    "type": "generate_field_text",
+    "id": "Sr]R]wyB$jCx*Ip_rM*9",
+    "x": 21,
+    "y": 1143,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "NAME",
+              "id": "6EjZTaDVoaLANXn]Ro/O"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "=~+J$),WM{;^82[t*R,4"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "=~+J$),WM{;^82[t*R,4"
+    },
+    "next": {
+      "block": {
+        "id": "87eH(|{GBr*C~s1CV,rW"
+      }
+    }
+  },
+  "H|bO1FnotT2:9rwz*JC!": {
+    "type": "generate_javascript",
+    "id": "H|bO1FnotT2:9rwz*JC!",
+    "x": 21,
+    "y": 1310,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "JAVASCRIPT": "code += Blockly.Javascript.valueToCode(block, 'VALUE', Blockly.Javascript.ORDER_ATOMIC);"
+    },
+    "next": {
+      "block": {
+        "id": "f/-$6vl4QqJE[`M[h?MV"
+      }
+    }
+  },
+  "gKhyTC+Z1hh7Zn1pGZ.9": {
+    "type": "generate_token",
+    "id": "gKhyTC+Z1hh7Zn1pGZ.9",
+    "x": 21,
+    "y": 1477,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": ", "
+    },
+    "next": {
+      "block": {
+        "id": "Gg,~O99Y5O0BbHoA%T?A"
+      }
+    }
+  },
+  "6OKJ$!X-~$%e,MrO*1rs": {
+    "type": "generate_token",
+    "id": "6OKJ$!X-~$%e,MrO*1rs",
+    "x": 21,
+    "y": 1722,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "(\""
+    },
+    "next": {
+      "block": {
+        "id": "Bufo$8zcy5DVoAkTb8sm"
+      }
+    }
+  },
+  "Sp.Hk=DPug!vr.Xx;nL?": {
+    "type": "generate_token",
+    "id": "Sp.Hk=DPug!vr.Xx;nL?",
+    "x": 21,
+    "y": 1915,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "\")"
+    }
+  },
+  "5uBV3YGJH6-?2oB,qj}#": {
+    "type": "generate_token",
+    "id": "5uBV3YGJH6-?2oB,qj}#",
+    "x": 21,
+    "y": 2140,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "\")"
+    }
+  },
+  "[UMUX-8Lk}CGNbJ%55{^": {
+    "type": "generate_token",
+    "id": "[UMUX-8Lk}CGNbJ%55{^",
+    "x": 21,
+    "y": 2370,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "\\n}, "
+    },
+    "next": {
+      "block": {
+        "id": "HSEIWsPm[=R?*uv-7!3C"
+      }
+    }
+  },
+  "?qb[%MdB($hRH?yEVufG": {
+    "type": "generate_field_value2",
+    "id": "?qb[%MdB($hRH?yEVufG",
+    "x": 21,
+    "y": 2741,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "NAME",
+              "id": "Tch%flW43J3G_#9u7{=C0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "Tch%flW43J3G_#9u7{=C0"
+    },
+    "next": {
+      "block": {
+        "id": "#5-`8zsnd]~2@G(#|QKf"
+      }
+    }
+  },
+  "ojF4W@415Ae#,fPe?e:C": {
+    "type": "generate_field_value2",
+    "id": "ojF4W@415Ae#,fPe?e:C",
+    "x": 21,
+    "y": 2960,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "NAME",
+              "id": "9r90s`Kvgv`SHs$zO:~B0"
+            },
+            {
+              "text": "PROPERTY",
+              "id": "ExI|m2mgez,Ie|GD]tPO0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "ExI|m2mgez,Ie|GD]tPO0"
+    },
+    "next": {
+      "block": {
+        "id": "rif5t_@mzq}Q0Yyd)XqD"
+      }
+    }
+  },
+  "$X`0gI=8b_)HIYIXA~1J": {
+    "type": "generate_field_value2",
+    "id": "$X`0gI=8b_)HIYIXA~1J",
+    "x": 21,
+    "y": 3179,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "X",
+              "id": "Q$Q^z*^1FD5!~C)TD_F30"
+            },
+            {
+              "text": "Y",
+              "id": "ct-9aP6^1@I(a_DIr67U0"
+            },
+            {
+              "text": "Z",
+              "id": "9{2+?||$u*J/8SiB}4F20"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "Q$Q^z*^1FD5!~C)TD_F30"
+    },
+    "next": {
+      "block": {
+        "id": "E6,z1rQfh=up^0OSRb?1"
+      }
+    }
+  },
+  "f6!`L{HK~0JW_PK45rMq": {
+    "type": "generate_field_text",
+    "id": "f6!`L{HK~0JW_PK45rMq",
+    "x": 21,
+    "y": 3450,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "OPERATOR",
+              "id": "bgGQia1(li=6b3WLp!2y"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "bgGQia1(li=6b3WLp!2y"
+    }
+  },
+  "sQ8hJiqACl[{{3RcbcPW": {
+    "type": "generate_token",
+    "id": "sQ8hJiqACl[{{3RcbcPW",
+    "x": 21,
+    "y": 3591,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": ");\\n"
+    }
+  },
+  "rI=zFp9FhtjCt,/L5m0z": {
+    "type": "generate_token",
+    "id": "rI=zFp9FhtjCt,/L5m0z",
+    "x": 21,
+    "y": 3732,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "\");\\n"
+    }
+  },
+  "`RSC,u0R;[+dJ8^`:5+r": {
+    "type": "generate_token",
+    "id": "`RSC,u0R;[+dJ8^`:5+r",
+    "x": 21,
+    "y": 3873,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": ", "
+    },
+    "next": {
+      "block": {
+        "id": "h^jpY2/7GF?a,F|o*s8:"
+      }
+    }
+  },
+  "U$JdBL~(M[2!=ngxG93V": {
+    "type": "generate_token",
+    "id": "U$JdBL~(M[2!=ngxG93V",
+    "x": 21,
+    "y": 4066,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": ", "
+    },
+    "next": {
+      "block": {
+        "id": "|nv59W^~|:qsE{*,k]4O"
+      }
+    }
+  },
+  "8TBA?BN5+/gl!b+(c*dv": {
+    "type": "generate_token",
+    "id": "8TBA?BN5+/gl!b+(c*dv",
+    "x": 21,
+    "y": 4259,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": ", "
+    },
+    "next": {
+      "block": {
+        "id": "5Pj|^l3]7G,8}k-8X8A?"
+      }
+    }
+  },
+  "~*U9K6Us):.!1sY,~}3%": {
+    "type": "generate_field_value2",
+    "id": "~*U9K6Us):.!1sY,~}3%",
+    "x": 21,
+    "y": 104,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "X",
+              "id": "zB.U?P:rLCj;IW}s}V#50"
+            },
+            {
+              "text": "Y",
+              "id": "K7i$L9G~iu+S8,9y%nJJ0"
+            },
+            {
+              "text": "Z",
+              "id": "V`N+![xlE%~2!+x!k,K%0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "K7i$L9G~iu+S8,9y%nJJ0"
+    },
+    "next": {
+      "block": {
+        "id": "4(-3KfL|5)}Vv?go9CFC"
+      }
+    }
+  },
+  "-zlaVXusCEL_p%XUf/4`": {
+    "type": "generate_field_value2",
+    "id": "-zlaVXusCEL_p%XUf/4`",
+    "x": 21,
+    "y": 490,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "ALPHA",
+              "id": "-p__;2Ef6}.p,t=`cxwR0"
+            },
+            {
+              "text": "NAME",
+              "id": "rgfA`UUw%C:L2k@W,7By0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "-p__;2Ef6}.p,t=`cxwR0"
+    },
+    "next": {
+      "block": {
+        "id": "3Ig,Z6t}1GP`r%|pqL,%"
+      }
+    }
+  },
+  "K4U5N7QyK6g{lV#C7S%5": {
+    "type": "generate_token",
+    "id": "K4U5N7QyK6g{lV#C7S%5",
+    "x": 21,
+    "y": 887,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": " = Space.spots[i];\\n"
+    },
+    "next": {
+      "block": {
+        "id": "jvQZ)*MACIP}MJ+;`K*8"
+      }
+    }
+  },
+  "87eH(|{GBr*C~s1CV,rW": {
+    "type": "generate_token",
+    "id": "87eH(|{GBr*C~s1CV,rW",
+    "x": 21,
+    "y": 1169,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": ";\\n"
+    }
+  },
+  "f/-$6vl4QqJE[`M[h?MV": {
+    "type": "generate_token",
+    "id": "f/-$6vl4QqJE[`M[h?MV",
+    "x": 21,
+    "y": 1336,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": ";"
+    }
+  },
+  "Gg,~O99Y5O0BbHoA%T?A": {
+    "type": "generate_field_value2",
+    "id": "Gg,~O99Y5O0BbHoA%T?A",
+    "x": 21,
+    "y": 1503,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "W",
+              "id": "f)wSF#`_anW`J$L]SCiQ0"
+            },
+            {
+              "text": "X",
+              "id": "2QhDgZ.*^~Jx9,?m]Wd;0"
+            },
+            {
+              "text": "X",
+              "id": "zB.U?P:rLCj;IW}s}V#50"
+            },
+            {
+              "text": "Y",
+              "id": "K7i$L9G~iu+S8,9y%nJJ0"
+            },
+            {
+              "text": "Y",
+              "id": "j#G?X(s`V*CNX0#!-Emd0"
+            },
+            {
+              "text": "Z",
+              "id": "V`N+![xlE%~2!+x!k,K%0"
+            },
+            {
+              "text": "Z",
+              "id": "|PVhNB9`)njf{nrv{PW/0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "j#G?X(s`V*CNX0#!-Emd0"
+    },
+    "next": {
+      "block": {
+        "id": "/.v#N:_^Buj/fO)dJ!0f"
+      }
+    }
+  },
+  "Bufo$8zcy5DVoAkTb8sm": {
+    "type": "generate_field_text",
+    "id": "Bufo$8zcy5DVoAkTb8sm",
+    "x": 21,
+    "y": 1748,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "NAME",
+              "id": "6EjZTaDVoaLANXn]Ro/O"
+            },
+            {
+              "text": "NAME",
+              "id": "YV;]%mAnL5:lSt~xd;/@"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "=~+J$),WM{;^82[t*R,4"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "F/H[:Udw[eL!)}H|EA,E"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "YV;]%mAnL5:lSt~xd;/@"
+    },
+    "next": {
+      "block": {
+        "id": "gPD..`[vN/qx|*(A9J(1"
+      }
+    }
+  },
+  "HSEIWsPm[=R?*uv-7!3C": {
+    "type": "generate_field_value2",
+    "id": "HSEIWsPm[=R?*uv-7!3C",
+    "x": 21,
+    "y": 2396,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "INTERVAL",
+              "id": "IInB[NkxigGrAt.[s3e-0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "IInB[NkxigGrAt.[s3e-0"
+    },
+    "next": {
+      "block": {
+        "id": "XL`Iy}|aPs/O][zaxN3U"
+      }
+    }
+  },
+  "#5-`8zsnd]~2@G(#|QKf": {
+    "type": "generate_token",
+    "id": "#5-`8zsnd]~2@G(#|QKf",
+    "x": 21,
+    "y": 2767,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": " = eventParams.spot;\\n"
+    },
+    "next": {
+      "block": {
+        "id": "gbblWqQh8C~XOm(6YIYm"
+      }
+    }
+  },
+  "rif5t_@mzq}Q0Yyd)XqD": {
+    "type": "generate_token",
+    "id": "rif5t_@mzq}Q0Yyd)XqD",
+    "x": 21,
+    "y": 2986,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": " = "
+    },
+    "next": {
+      "block": {
+        "id": "c_qsJSg3hO.h$vkmrk5p"
+      }
+    }
+  },
+  "E6,z1rQfh=up^0OSRb?1": {
+    "type": "generate_token",
+    "id": "E6,z1rQfh=up^0OSRb?1",
+    "x": 21,
+    "y": 3205,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": ", "
+    },
+    "next": {
+      "block": {
+        "id": "cG#]UM8wO;?Nq{1h;9{6"
+      }
+    }
+  },
+  "h^jpY2/7GF?a,F|o*s8:": {
+    "type": "generate_values2",
+    "id": "h^jpY2/7GF?a,F|o*s8:",
+    "x": 21,
+    "y": 3899,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "VALUE",
+          "options": [
+            {
+              "text": "FROM",
+              "id": "Sy,,~|x[V?a*$4N1$t:g"
+            },
+            {
+              "text": "TO",
+              "id": "_B%(~54Q5#)_Q7,bd0qU"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "VALUE": "_B%(~54Q5#)_Q7,bd0qU"
+    },
+    "next": {
+      "block": {
+        "id": "-`M?)ty7_-,-HMSmsT%W"
+      }
+    }
+  },
+  "|nv59W^~|:qsE{*,k]4O": {
+    "type": "generate_values2",
+    "id": "|nv59W^~|:qsE{*,k]4O",
+    "x": 21,
+    "y": 4092,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "VALUE",
+          "options": [
+            {
+              "text": "FROM",
+              "id": "PNhvG.~!kMPAdeDYfu71"
+            },
+            {
+              "text": "FROM",
+              "id": "Sy,,~|x[V?a*$4N1$t:g"
+            },
+            {
+              "text": "TO",
+              "id": "_B%(~54Q5#)_Q7,bd0qU"
+            },
+            {
+              "text": "TO",
+              "id": "_RT/`o8:%/7bs;tGvIlK"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "VALUE": "_RT/`o8:%/7bs;tGvIlK"
+    },
+    "next": {
+      "block": {
+        "id": "5c:9IIm]b6o/uvgL=7Yn"
+      }
+    }
+  },
+  "5Pj|^l3]7G,8}k-8X8A?": {
+    "type": "generate_values2",
+    "id": "5Pj|^l3]7G,8}k-8X8A?",
+    "x": 21,
+    "y": 4285,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "VALUE",
+          "options": [
+            {
+              "text": "FROM",
+              "id": "Sy,,~|x[V?a*$4N1$t:g"
+            },
+            {
+              "text": "LHS",
+              "id": "Pp*p@3c72UJKv3Y3nSe("
+            },
+            {
+              "text": "RHS",
+              "id": "3N]0.f:6YkmT;:1Q,qs;"
+            },
+            {
+              "text": "TO",
+              "id": "_B%(~54Q5#)_Q7,bd0qU"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "VALUE": "_B%(~54Q5#)_Q7,bd0qU"
+    },
+    "next": {
+      "block": {
+        "id": "[}g6r,NK:(?(,)xvay/p"
+      }
+    }
+  },
+  "4(-3KfL|5)}Vv?go9CFC": {
+    "type": "generate_token",
+    "id": "4(-3KfL|5)}Vv?go9CFC",
+    "x": 21,
+    "y": 130,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": ", "
+    },
+    "next": {
+      "block": {
+        "id": "xj~JRe#U%nAd}9+ff7p/"
+      }
+    }
+  },
+  "3Ig,Z6t}1GP`r%|pqL,%": {
+    "type": "generate_token",
+    "id": "3Ig,Z6t}1GP`r%|pqL,%",
+    "x": 21,
+    "y": 516,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": ")"
+    }
+  },
+  "jvQZ)*MACIP}MJ+;`K*8": {
+    "type": "generate_statements2",
+    "id": "jvQZ)*MACIP}MJ+;`K*8",
+    "x": 21,
+    "y": 913,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "STATEMENTS",
+          "options": [
+            {
+              "text": "STATEMENTS",
+              "id": "J3X[G^qB|mZi(Gj*8b:."
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "STATEMENTS": "J3X[G^qB|mZi(Gj*8b:."
+    },
+    "next": {
+      "block": {
+        "id": "/QDj7+1FG/,hzXu48n~Q"
+      }
+    }
+  },
+  "/.v#N:_^Buj/fO)dJ!0f": {
+    "type": "generate_token",
+    "id": "/.v#N:_^Buj/fO)dJ!0f",
+    "x": 21,
+    "y": 1529,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": ", "
+    },
+    "next": {
+      "block": {
+        "id": "8@yhe1yMjd4V^0gx5=C{"
+      }
+    }
+  },
+  "gPD..`[vN/qx|*(A9J(1": {
+    "type": "generate_token",
+    "id": "gPD..`[vN/qx|*(A9J(1",
+    "x": 21,
+    "y": 1774,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "\");\\n"
+    }
+  },
+  "XL`Iy}|aPs/O][zaxN3U": {
+    "type": "generate_token",
+    "id": "XL`Iy}|aPs/O][zaxN3U",
+    "x": 21,
+    "y": 2422,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": ");\\n"
+    }
+  },
+  "gbblWqQh8C~XOm(6YIYm": {
+    "type": "generate_statements2",
+    "id": "gbblWqQh8C~XOm(6YIYm",
+    "x": 21,
+    "y": 2793,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "STATEMENTS",
+          "options": [
+            {
+              "text": "STATEMENTS",
+              "id": "tm9f)-q_kKyK:Ds`pnOx"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "STATEMENTS": "tm9f)-q_kKyK:Ds`pnOx"
+    },
+    "next": {
+      "block": {
+        "id": "r?VI4^Oo~thGYdnmzK%1"
+      }
+    }
+  },
+  "c_qsJSg3hO.h$vkmrk5p": {
+    "type": "generate_values2",
+    "id": "c_qsJSg3hO.h$vkmrk5p",
+    "x": 21,
+    "y": 3012,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "VALUE",
+          "options": [
+            {
+              "text": "INPUT",
+              "id": "U/8TKD{b}SkuVf,66:9_"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "VALUE": "U/8TKD{b}SkuVf,66:9_"
+    },
+    "next": {
+      "block": {
+        "id": "7sr2rK?BXP1x8QwMML[J"
+      }
+    }
+  },
+  "cG#]UM8wO;?Nq{1h;9{6": {
+    "type": "generate_field_value2",
+    "id": "cG#]UM8wO;?Nq{1h;9{6",
+    "x": 21,
+    "y": 3231,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "X",
+              "id": "Q$Q^z*^1FD5!~C)TD_F30"
+            },
+            {
+              "text": "Y",
+              "id": "ct-9aP6^1@I(a_DIr67U0"
+            },
+            {
+              "text": "Z",
+              "id": "9{2+?||$u*J/8SiB}4F20"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "ct-9aP6^1@I(a_DIr67U0"
+    },
+    "next": {
+      "block": {
+        "id": "CO[[*$g,Va1M%H]8u:`4"
+      }
+    }
+  },
+  "-`M?)ty7_-,-HMSmsT%W": {
+    "type": "generate_token",
+    "id": "-`M?)ty7_-,-HMSmsT%W",
+    "x": 21,
+    "y": 3925,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": ")\\n"
+    }
+  },
+  "5c:9IIm]b6o/uvgL=7Yn": {
+    "type": "generate_token",
+    "id": "5c:9IIm]b6o/uvgL=7Yn",
+    "x": 21,
+    "y": 4118,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": ")\\n"
+    }
+  },
+  "[}g6r,NK:(?(,)xvay/p": {
+    "type": "generate_token",
+    "id": "[}g6r,NK:(?(,)xvay/p",
+    "x": 21,
+    "y": 4311,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": ")\\n"
+    }
+  },
+  "xj~JRe#U%nAd}9+ff7p/": {
+    "type": "generate_field_value2",
+    "id": "xj~JRe#U%nAd}9+ff7p/",
+    "x": 21,
+    "y": 156,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "X",
+              "id": "zB.U?P:rLCj;IW}s}V#50"
+            },
+            {
+              "text": "Y",
+              "id": "K7i$L9G~iu+S8,9y%nJJ0"
+            },
+            {
+              "text": "Z",
+              "id": "V`N+![xlE%~2!+x!k,K%0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "V`N+![xlE%~2!+x!k,K%0"
+    },
+    "next": {
+      "block": {
+        "id": "aQFU)a]%Xj(DK:nOK`ij"
+      }
+    }
+  },
+  "/QDj7+1FG/,hzXu48n~Q": {
+    "type": "generate_token",
+    "id": "/QDj7+1FG/,hzXu48n~Q",
+    "x": 21,
+    "y": 939,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "};\\n"
+    }
+  },
+  "8@yhe1yMjd4V^0gx5=C{": {
+    "type": "generate_field_value2",
+    "id": "8@yhe1yMjd4V^0gx5=C{",
+    "x": 21,
+    "y": 1555,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "W",
+              "id": "f)wSF#`_anW`J$L]SCiQ0"
+            },
+            {
+              "text": "X",
+              "id": "2QhDgZ.*^~Jx9,?m]Wd;0"
+            },
+            {
+              "text": "X",
+              "id": "zB.U?P:rLCj;IW}s}V#50"
+            },
+            {
+              "text": "Y",
+              "id": "K7i$L9G~iu+S8,9y%nJJ0"
+            },
+            {
+              "text": "Y",
+              "id": "j#G?X(s`V*CNX0#!-Emd0"
+            },
+            {
+              "text": "Z",
+              "id": "V`N+![xlE%~2!+x!k,K%0"
+            },
+            {
+              "text": "Z",
+              "id": "|PVhNB9`)njf{nrv{PW/0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "|PVhNB9`)njf{nrv{PW/0"
+    },
+    "next": {
+      "block": {
+        "id": "~0xmNy!7yV]#%GvZAa7z"
+      }
+    }
+  },
+  "r?VI4^Oo~thGYdnmzK%1": {
+    "type": "generate_token",
+    "id": "r?VI4^Oo~thGYdnmzK%1",
+    "x": 21,
+    "y": 2819,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "};\\n"
+    }
+  },
+  "7sr2rK?BXP1x8QwMML[J": {
+    "type": "generate_token",
+    "id": "7sr2rK?BXP1x8QwMML[J",
+    "x": 21,
+    "y": 3038,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": ";\\n"
+    }
+  },
+  "CO[[*$g,Va1M%H]8u:`4": {
+    "type": "generate_token",
+    "id": "CO[[*$g,Va1M%H]8u:`4",
+    "x": 21,
+    "y": 3257,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": ", "
+    },
+    "next": {
+      "block": {
+        "id": "jQ_A|80;sN+C,+E?/+hU"
+      }
+    }
+  },
+  "aQFU)a]%Xj(DK:nOK`ij": {
+    "type": "generate_token",
+    "id": "aQFU)a]%Xj(DK:nOK`ij",
+    "x": 21,
+    "y": 182,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": ")"
+    }
+  },
+  "~0xmNy!7yV]#%GvZAa7z": {
+    "type": "generate_token",
+    "id": "~0xmNy!7yV]#%GvZAa7z",
+    "x": 21,
+    "y": 1581,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": ")"
+    }
+  },
+  "jQ_A|80;sN+C,+E?/+hU": {
+    "type": "generate_field_value2",
+    "id": "jQ_A|80;sN+C,+E?/+hU",
+    "x": 21,
+    "y": 3283,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "X",
+              "id": "Q$Q^z*^1FD5!~C)TD_F30"
+            },
+            {
+              "text": "Y",
+              "id": "ct-9aP6^1@I(a_DIr67U0"
+            },
+            {
+              "text": "Z",
+              "id": "9{2+?||$u*J/8SiB}4F20"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "9{2+?||$u*J/8SiB}4F20"
+    },
+    "next": {
+      "block": {
+        "id": "^Yd2JwB_Nb:L.Y$Zz{M."
+      }
+    }
+  },
+  "^Yd2JwB_Nb:L.Y$Zz{M.": {
+    "type": "generate_token",
+    "id": "^Yd2JwB_Nb:L.Y$Zz{M.",
+    "x": 21,
+    "y": 3309,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": ");"
+    }
+  },
+  "top_blocks": [
+    "3[adPLXGhSF,+`1FiVP_",
+    "hau5d`d|uT~k9e18NXa~",
+    "lfE~by.lIYlYc(KLlq|o",
+    "Z6@ma?-bjE(?YFkgl0Z!",
+    "X*mxu?EBDHn1^7.L@_-/",
+    "8WUcC]qe7D+jDQhF@7B^",
+    "CSyoqi07:W!UBj;@fznT",
+    "=HH_icwgzw^F(g20Q^Kx",
+    "aQxKDbr2[k%H]@d6:=!L",
+    "Gr7#q9L1SNrB;{_fxqmu",
+    "jPM_t[b~$l2g3T)qoRm_",
+    "#I0HO0]41=I+i.B-.ik)",
+    "!pFWuCNO]ffR}yRlv`$~",
+    "Oxg3i57hYEv,vUDdl3u|",
+    "dwSj,GFS?I|rAb*:@6U`",
+    "@QPre+7k_SJG{m[jOe]P",
+    "bW?DPvauT$O7ZZS:^R?y",
+    "0pgLJAdi)+zZ(vynN5Z:",
+    "w8(yI/={OuJMBFt0/5?.",
+    "^kEUJwWQNV.j=3M}QvrS",
+    "/5wg47yv:P0%lL:H/$8;",
+    ":|$c)7G]LK[k?^qGlW0J",
+    "(afwK1[arFf.#bz#YBrG",
+    "o4+(Apog+_+2p^+DnX6?",
+    "meRQ9QT$u7}`On/Hj%{I",
+    "QT-aP.[%OI+toifv]pM(",
+    "BS{IH;[NwSbUFH$yC%Vv"
+  ],
+  "mergeable": true
+}

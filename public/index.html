@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Code Generation </title>
+
+  <link rel="stylesheet" href="custom.css" />
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/themes/base/jquery-ui.css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 40%;
+    padding: 10px;
+    
+  }
+  .small_column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  </style>
+
+<style> 
+div.column {
+  border: 2px solid;
+  padding: 10px; 
+ 
+  resize: both;
+  overflow: hidden;
+}
+div.small_column {
+  border: 2px solid;
+  padding: 10px; 
+ 
+  resize: both;
+  overflow: hidden;
+	
+}
+
+/* CSS */
+.button-12 {
+
+  margin-right: 5px;
+  margin-bottom: 5px;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  border: none;
+
+  background: #6E6D70;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+  color: #DFDEDF;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-12:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
+
+</style>
+</head>
+
+<!-- HTML !-->
+
+<input class="button-12" type="button" id="loadZip" value="Load Editor (zip)" onclick="document.getElementById('load').click();" />
+<input class="button-12" type="file" style="display:none;" id="load" name="file"/>
+<button class="button-12" id="save">Save Editor (zip)</button>
+<button class="button-12" id="load_direct" title="Select a directory for all editors">Load Editor (direct)</button>
+<button class="button-12" id="save_direct" title="Select a directory for all editors">Save Editor (direct)</button>
+
+Examples:
+<select name="example" id="example">
+        <option value="basic"> Basic</option>
+        <option value="google_workflow">Google Workflow</option>
+        <option value="svox">Smooth Voxel</option>
+        <option value="jenkins">Jenkins</option>
+</select>
+
+<button class="button-12" id="loadEditor" title="Load Example">Load Example (website)</button>
+
+Generate concrete code language:
+<select id="language">
+<option value="none">No Language available</option>
+</select>
+
+<i>Works better with zoom level 75%</i>
+
+<body mode="maker">
+    <div class="blockly-editor">
+		<div class="row" id="firstRow">
+		  <div class="column" id="blocklyFactoryArea">
+		    <div style="height: 50vh">
+		      <div id="blocklyFactoryDiv" style="position=absolute"></div>
+		    </div>
+		  </div>  
+		  <div class="small_column" id="blocklyToolboxArea">
+		    <div style="height: 50vh"> 
+	          <div id="blocklyToolboxDiv" style="position=absolute"></div>
+	        </div>
+	      </div>
+		  <div class="column" id="blocklyConcreteArea">
+		    <div style="height: 50vh">
+		     <div id="blocklyConcreteDiv" style="position=absolute"></div>
+	        </div>
+	      </div>
+	    </div>
+		<div class="row">
+	     <div class="column" id="blocklyGeneratorArea">
+	        <div style="height: 38vh; width: 100%; "> 
+	          <div id="blocklyGeneratorDiv" style="position=absolute"></div>
+	        </div>
+	     </div>
+	    </div>
+    </div>
+
+
+
+
+
+   <xml xmlns="https://developers.google.com/blockly/xml" id="blockfactory_toolbox" class="toolbox" style="display: none">
+    <category name="Block">
+      <block type="factory_base">
+      </block>
+      <block type="text">
+      </block>
+    </category>
+    <category name="Input">
+      <block type="input_value">
+        <value name="TYPE">
+          <shadow type="type_null"></shadow>
+        </value>
+      </block>
+      <block type="input_statement">
+        <value name="TYPE">
+          <shadow type="type_null"></shadow>
+        </value>
+      </block>
+      <block type="input_dummy"></block>
+    </category>
+    <category name="Field">
+      <block type="field_static"></block>
+      <block type="field_label_serializable"></block>
+      <block type="field_input"></block>
+      <block type="field_number"></block>
+      <block type="field_angle"></block>
+      <block type="field_dropdown"></block>
+      <block type="field_dropdown_statement"></block>
+      <block type="field_dropdown_fixed_item"></block>
+      <block type="field_dropdown_function"></block>
+      <block type="field_dropdown_workspaces"></block>
+      <block type="field_dropdown_url"></block>
+      <block type="field_dropdown_url_split"></block>
+      <block type="field_checkbox"></block>
+      <block type="field_colour"></block>
+      <block type="field_variable"></block>
+      <block type="field_image"></block>
+    </category>
+    <category name="Type">
+      <block type="type_group"></block>
+      <block type="type_null"></block>
+      <block type="type_boolean"></block>
+      <block type="type_number"></block>
+      <block type="type_string"></block>
+      <block type="type_list"></block>
+      <block type="type_other"></block>
+    </category>
+    <category name="Colour" id="colourCategory">
+      <block type="colour_hue"><mutation colour="20"></mutation><field name="HUE">20</field></block>
+      <block type="colour_hue"><mutation colour="65"></mutation><field name="HUE">65</field></block>
+      <block type="colour_hue"><mutation colour="120"></mutation><field name="HUE">120</field></block>
+      <block type="colour_hue"><mutation colour="160"></mutation><field name="HUE">160</field></block>
+      <block type="colour_hue"><mutation colour="210"></mutation><field name="HUE">210</field></block>
+      <block type="colour_hue"><mutation colour="230"></mutation><field name="HUE">230</field></block>
+      <block type="colour_hue"><mutation colour="260"></mutation><field name="HUE">260</field></block>
+      <block type="colour_hue"><mutation colour="290"></mutation><field name="HUE">290</field></block>
+      <block type="colour_hue"><mutation colour="330"></mutation><field name="HUE">330</field></block>
+    </category>
+  </xml>
+
+
+
+
+
+<script type="module" src='./index.js'></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+
+
+
+<div id="factory_code_content" class="ui-widget-content" onmousedown="textareaFocus('factory_code_content');" ontouchstart="textareaFocus('factory_code_content');">
+  <div class="ui-widget-header">
+    <span >Factory Code</span>
+  </div>
+  <div class="update_code">
+    <textarea id="factory_code" class="textarea_content" spellcheck="false"></textarea>
+  </div>	
+</div>
+
+<div id="concrete_json_content" class="ui-widget-content" onmousedown="textareaFocus('concrete_json_content');" ontouchstart="textareaFocus('concrete_json_content');">
+  <div class="ui-widget-header">
+    <span >Concrete JSON</span>
+  </div>
+  <div class="update_code">
+    <textarea id="concrete_json" class="textarea_content" spellcheck="false"></textarea>
+  </div>	
+</div>
+
+
+
+<div id="code_generation_content" class="ui-widget-content" onmousedown="textareaFocus('code_generation_content');" ontouchstart="textareaFocus('code_generation_content');">
+  <div class="ui-widget-header">
+    <span >Code Generation</span>
+  </div>
+  <div class="update_code">
+    <textarea id="generator_code" class="textarea_content" spellcheck="false"></textarea>
+  </div>	
+</div>
+
+<div id="toolbox_javascript_content" class="ui-widget-content" onmousedown="textareaFocus('toolbox_javascript_content');" ontouchstart="textareaFocus('toolbox_javascript_content');">
+  <div class="ui-widget-header">
+    <span >Toolbox JSON</span>
+  </div>
+  <div class="update_code">
+    <textarea id="toolbox_javascript" class="textarea_content" spellcheck="false"></textarea>
+  </div>	
+</div>
+
+<div id="concrete_generation_content" class="ui-widget-content" onmousedown="textareaFocus('concrete_generation_content');" ontouchstart="textareaFocus('concrete_generation_content');">
+  <div class="ui-widget-header">
+    <span >Concrete Code</span>
+  </div>
+  <div class="update_code">
+    <textarea id="concrete_code" class="textarea_content" spellcheck="false"></textarea>
+  </div>	
+</div>
+
+
+<script>
+  $( "#factory_code_content" ).draggable();
+  $( "#factory_code_content" ).resizable();		
+
+  $( "#code_generation_content" ).draggable();
+  $( "#code_generation_content" ).resizable();		
+  $( "#concrete_generation_content" ).draggable();
+  $( "#concrete_generation_content  " ).resizable();		
+  $( "#toolbox_javascript_content" ).draggable();
+  $( "#toolbox_javascript_content  " ).resizable();	
+  $( "#concrete_json_content" ).draggable();
+  $( "#concrete_json_content  " ).resizable();		
+  
+  	
+  var contents = ['factory_code_content','concrete_json_content','concrete_generation_content','toolbox_javascript_content', 'code_generation_content'];
+  function textareaFocus(id) {
+	for (var i in contents) {
+		const content = document.getElementById(contents[i]);
+		content.style.zIndex = (contents[i]==id)?"999999":"999998";
+	}
+  }
+  textareaFocus('all')
+  
+</script>
+</body>
+</html>
+    

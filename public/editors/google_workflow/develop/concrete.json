@@ -1,0 +1,271 @@
+{
+  "-L6v?;SFs@VV`gCs4y^2": {
+    "type": "main",
+    "id": "-L6v?;SFs@VV`gCs4y^2",
+    "x": 89,
+    "y": -536,
+    "extraState": {
+      "dropdowns": []
+    },
+    "inputs": {
+      "STEPS": {
+        "block": {
+          "id": "!C~q^2gY5T~vee*.Cww}"
+        }
+      }
+    }
+  },
+  "!C~q^2gY5T~vee*.Cww}": {
+    "type": "call_step",
+    "id": "!C~q^2gY5T~vee*.Cww}",
+    "x": 159,
+    "y": -476,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "NEXT",
+          "options": [
+            {
+              "text": "Friday",
+              "id": "$V3/D,Kncxru2[W;@{.4"
+            },
+            {
+              "text": "Weekend",
+              "id": "1.*:^E8GE_Vr$do4rYPr"
+            },
+            {
+              "text": "Workday",
+              "id": "dxMZoPqh=91.Pl@gGD^0"
+            },
+            {
+              "text": "conditionalSwitch",
+              "id": "lj9RZ.%cUc1=-/Ku;,Gl"
+            },
+            {
+              "text": "get_current_time",
+              "id": "!C~q^2gY5T~vee*.Cww}"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "NAME": "get_current_time",
+      "FUNCTION": "http.get",
+      "RESULT": "currentTime",
+      "NEXT": "lj9RZ.%cUc1=-/Ku;,Gl"
+    },
+    "inputs": {
+      "ARGS": {
+        "block": {
+          "id": "C1`F8|wr;oXuS]YNmr-b"
+        }
+      }
+    },
+    "next": {
+      "block": {
+        "id": "lj9RZ.%cUc1=-/Ku;,Gl"
+      }
+    }
+  },
+  "C1`F8|wr;oXuS]YNmr-b": {
+    "type": "arg",
+    "id": "C1`F8|wr;oXuS]YNmr-b",
+    "x": 208,
+    "y": -424,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "VARIABLE_NAME": "url",
+      "VALUE": "https://us-central1-workflowsample.cloudfunctions.net/datetime"
+    }
+  },
+  "lj9RZ.%cUc1=-/Ku;,Gl": {
+    "type": "condition_step",
+    "id": "lj9RZ.%cUc1=-/Ku;,Gl",
+    "x": 159,
+    "y": -344,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "NEXT",
+          "options": [
+            {
+              "text": "Friday",
+              "id": "$V3/D,Kncxru2[W;@{.4"
+            },
+            {
+              "text": "Weekend",
+              "id": "1.*:^E8GE_Vr$do4rYPr"
+            },
+            {
+              "text": "Workday",
+              "id": "dxMZoPqh=91.Pl@gGD^0"
+            },
+            {
+              "text": "conditionalSwitch",
+              "id": "lj9RZ.%cUc1=-/Ku;,Gl"
+            },
+            {
+              "text": "get_current_time",
+              "id": "!C~q^2gY5T~vee*.Cww}"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "NAME": "conditionalSwitch",
+      "NEXT": "dxMZoPqh=91.Pl@gGD^0"
+    },
+    "inputs": {
+      "CONDITIONS": {
+        "block": {
+          "id": "PRsspOs.B8]pZ`n7U`*T"
+        }
+      }
+    },
+    "next": {
+      "block": {
+        "id": "$V3/D,Kncxru2[W;@{.4"
+      }
+    }
+  },
+  "PRsspOs.B8]pZ`n7U`*T": {
+    "type": "condition_next",
+    "id": "PRsspOs.B8]pZ`n7U`*T",
+    "x": 180,
+    "y": -318,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "NEXT",
+          "options": [
+            {
+              "text": "Friday",
+              "id": "$V3/D,Kncxru2[W;@{.4"
+            },
+            {
+              "text": "Weekend",
+              "id": "1.*:^E8GE_Vr$do4rYPr"
+            },
+            {
+              "text": "Workday",
+              "id": "dxMZoPqh=91.Pl@gGD^0"
+            },
+            {
+              "text": "conditionalSwitch",
+              "id": "lj9RZ.%cUc1=-/Ku;,Gl"
+            },
+            {
+              "text": "get_current_time",
+              "id": "!C~q^2gY5T~vee*.Cww}"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "CONDITION": "currentTime.body.dayOfTheWeek  == \"Friday\"",
+      "NEXT": "$V3/D,Kncxru2[W;@{.4"
+    },
+    "next": {
+      "block": {
+        "id": "Qs}P6/7iAuP,bR]$p859"
+      }
+    }
+  },
+  "$V3/D,Kncxru2[W;@{.4": {
+    "type": "return_step",
+    "id": "$V3/D,Kncxru2[W;@{.4",
+    "x": 159,
+    "y": -186,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "NAME": "Friday",
+      "MESSAGE": "Almost weekend"
+    },
+    "next": {
+      "block": {
+        "id": "1.*:^E8GE_Vr$do4rYPr"
+      }
+    }
+  },
+  "Qs}P6/7iAuP,bR]$p859": {
+    "type": "condition_next",
+    "id": "Qs}P6/7iAuP,bR]$p859",
+    "x": 180,
+    "y": -266,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "NEXT",
+          "options": [
+            {
+              "text": "Friday",
+              "id": "$V3/D,Kncxru2[W;@{.4"
+            },
+            {
+              "text": "Weekend",
+              "id": "1.*:^E8GE_Vr$do4rYPr"
+            },
+            {
+              "text": "Workday",
+              "id": "dxMZoPqh=91.Pl@gGD^0"
+            },
+            {
+              "text": "conditionalSwitch",
+              "id": "lj9RZ.%cUc1=-/Ku;,Gl"
+            },
+            {
+              "text": "get_current_time",
+              "id": "!C~q^2gY5T~vee*.Cww}"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "CONDITION": "currentTime.body.dayOfTheWeek == \"Saturday\" OR currentTime.body.dayOfTheWeek == \"Sunday\"",
+      "NEXT": "1.*:^E8GE_Vr$do4rYPr"
+    }
+  },
+  "1.*:^E8GE_Vr$do4rYPr": {
+    "type": "return_step",
+    "id": "1.*:^E8GE_Vr$do4rYPr",
+    "x": 159,
+    "y": -134,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "NAME": "Weekend",
+      "MESSAGE": "Weekend!"
+    },
+    "next": {
+      "block": {
+        "id": "dxMZoPqh=91.Pl@gGD^0"
+      }
+    }
+  },
+  "dxMZoPqh=91.Pl@gGD^0": {
+    "type": "return_step",
+    "id": "dxMZoPqh=91.Pl@gGD^0",
+    "x": 159,
+    "y": -82,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "NAME": "Workday",
+      "MESSAGE": "Workday..."
+    }
+  },
+  "top_blocks": [
+    "-L6v?;SFs@VV`gCs4y^2"
+  ],
+  "mergeable": true
+}

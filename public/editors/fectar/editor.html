@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>fectar Editor</title>
+  <body onload="start();">
+  
+<input type="button" id="loadFileXml" value="Load JSON" onclick="document.getElementById('input').click();" />
+<input type="file" style="display:none;" id="input" name="file"/>
+<button id="save">Save JSON</button>
+<div id="error" value="error"></div>
+
+ <div id="blocklyDiv" style="height: 480px; width: 100%;"></div>
+ <textarea id="codeDiv" style="height: 350px; width: 100%"></textarea>
+
+
+
+<script src="https://unpkg.com/blockly/blockly.min.js"></script>
+<script src="https://unpkg.com/@blockly/plugin-workspace-search@5.0.3/dist/index.js"></script>
+<script src='./editor.js'></script>
+
+</body>
+</html>
+ 

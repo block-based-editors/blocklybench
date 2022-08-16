@@ -1,0 +1,419 @@
+{
+  "NxLv[NoHGt6(uQAWf;5=": {
+    "type": "generate_code",
+    "id": "NxLv[NoHGt6(uQAWf;5=",
+    "x": 76,
+    "y": 43,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "add_client",
+              "id": "`J??==%4rnZ7YsxdC$cp"
+            },
+            {
+              "text": "local_cloud",
+              "id": "Xa0S{Y(4C-a6IzfwL*|E"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "Python",
+      "TYPE": "Xa0S{Y(4C-a6IzfwL*|E"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "nc]w=DJ@~OrE-M[RJHBh"
+        }
+      }
+    }
+  },
+  "iPGKg$WPoC$@Q$JKF!:+": {
+    "type": "generate_code",
+    "id": "iPGKg$WPoC$@Q$JKF!:+",
+    "x": 108,
+    "y": 385,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "add_client",
+              "id": "`J??==%4rnZ7YsxdC$cp"
+            },
+            {
+              "text": "local_cloud",
+              "id": "Xa0S{Y(4C-a6IzfwL*|E"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "Python",
+      "TYPE": "`J??==%4rnZ7YsxdC$cp"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "/]8_D?#+)}A]m#wP3l-o"
+        }
+      }
+    }
+  },
+  "nc]w=DJ@~OrE-M[RJHBh": {
+    "type": "generate_token",
+    "id": "nc]w=DJ@~OrE-M[RJHBh",
+    "x": 97,
+    "y": 69,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "pyrrowhead cloud create "
+    },
+    "next": {
+      "block": {
+        "id": "#mYtL6c%FqvyED10Gqoi"
+      }
+    }
+  },
+  "/]8_D?#+)}A]m#wP3l-o": {
+    "type": "generate_token",
+    "id": "/]8_D?#+)}A]m#wP3l-o",
+    "x": 129,
+    "y": 411,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "pyrrowhead cloud client-add -n "
+    },
+    "next": {
+      "block": {
+        "id": "K`|?-%v3US.!FCmP7qcW"
+      }
+    }
+  },
+  "#mYtL6c%FqvyED10Gqoi": {
+    "type": "generate_field_value2",
+    "id": "#mYtL6c%FqvyED10Gqoi",
+    "x": 97,
+    "y": 95,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "NAME",
+              "id": "T^qKtBSNv~noRB=#o;*W0"
+            },
+            {
+              "text": "NAME",
+              "id": "f?mU=%cKR3mzhL8W#Y/s0"
+            },
+            {
+              "text": "NAME_DESCRIPTION",
+              "id": "4Zgt?jt_tqe?krK=Dlme0"
+            },
+            {
+              "text": "NAME_DESCRIPTION",
+              "id": "z4Lql@lRnwub)Ki0FHe*0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "T^qKtBSNv~noRB=#o;*W0"
+    },
+    "next": {
+      "block": {
+        "id": "`aIq-bD|wZinMY=7jp5;"
+      }
+    }
+  },
+  "K`|?-%v3US.!FCmP7qcW": {
+    "type": "generate_field_value2",
+    "id": "K`|?-%v3US.!FCmP7qcW",
+    "x": 129,
+    "y": 437,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "NAME",
+              "id": "T^qKtBSNv~noRB=#o;*W0"
+            },
+            {
+              "text": "NAME",
+              "id": "f?mU=%cKR3mzhL8W#Y/s0"
+            },
+            {
+              "text": "NAME_DESCRIPTION",
+              "id": "4Zgt?jt_tqe?krK=Dlme0"
+            },
+            {
+              "text": "NAME_DESCRIPTION",
+              "id": "z4Lql@lRnwub)Ki0FHe*0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "T^qKtBSNv~noRB=#o;*W0"
+    },
+    "next": {
+      "block": {
+        "id": "Q%;WH%okl}WwEZS2UXL$"
+      }
+    }
+  },
+  "`aIq-bD|wZinMY=7jp5;": {
+    "type": "generate_token",
+    "id": "`aIq-bD|wZinMY=7jp5;",
+    "x": 97,
+    "y": 121,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "\\n\\n"
+    },
+    "next": {
+      "block": {
+        "id": "$SxPNF3#yL`rxrcJO+kh"
+      }
+    }
+  },
+  "Q%;WH%okl}WwEZS2UXL$": {
+    "type": "generate_token",
+    "id": "Q%;WH%okl}WwEZS2UXL$",
+    "x": 129,
+    "y": 463,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "\\n\\n"
+    }
+  },
+  "$SxPNF3#yL`rxrcJO+kh": {
+    "type": "generate_statements3",
+    "id": "$SxPNF3#yL`rxrcJO+kh",
+    "x": 97,
+    "y": 147,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "STATEMENTS",
+          "options": [
+            {
+              "text": "STATEMENTS",
+              "id": "Da9e[kgxYk2l;){C1|9l"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "STATEMENTS": "Da9e[kgxYk2l;){C1|9l",
+      "INDENT": false
+    },
+    "next": {
+      "block": {
+        "id": "/CBwq(dcj.WK}P^C:ARi"
+      }
+    }
+  },
+  "/CBwq(dcj.WK}P^C:ARi": {
+    "type": "generate_token",
+    "id": "/CBwq(dcj.WK}P^C:ARi",
+    "x": 97,
+    "y": 173,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "pyrrowhead cloud install "
+    },
+    "next": {
+      "block": {
+        "id": "D6cd}l;aaDz2qUp[mD}9"
+      }
+    }
+  },
+  "D6cd}l;aaDz2qUp[mD}9": {
+    "type": "generate_field_value2",
+    "id": "D6cd}l;aaDz2qUp[mD}9",
+    "x": 97,
+    "y": 199,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "NAME",
+              "id": "T^qKtBSNv~noRB=#o;*W0"
+            },
+            {
+              "text": "NAME",
+              "id": "f?mU=%cKR3mzhL8W#Y/s0"
+            },
+            {
+              "text": "NAME_DESCRIPTION",
+              "id": "4Zgt?jt_tqe?krK=Dlme0"
+            },
+            {
+              "text": "NAME_DESCRIPTION",
+              "id": "z4Lql@lRnwub)Ki0FHe*0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "T^qKtBSNv~noRB=#o;*W0"
+    },
+    "next": {
+      "block": {
+        "id": "!DlGLv6W00+E6Ihrp;yR"
+      }
+    }
+  },
+  "!DlGLv6W00+E6Ihrp;yR": {
+    "type": "generate_token",
+    "id": "!DlGLv6W00+E6Ihrp;yR",
+    "x": 97,
+    "y": 225,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "\\n\\n"
+    },
+    "next": {
+      "block": {
+        "id": "t5gsZITyht2FsUlHVMjU"
+      }
+    }
+  },
+  "t5gsZITyht2FsUlHVMjU": {
+    "type": "generate_token",
+    "id": "t5gsZITyht2FsUlHVMjU",
+    "x": 97,
+    "y": 251,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "pyrrowhead cloud up "
+    },
+    "next": {
+      "block": {
+        "id": "w$7,Z1WTyTZ,0sxO@ghK"
+      }
+    }
+  },
+  "w$7,Z1WTyTZ,0sxO@ghK": {
+    "type": "generate_field_value2",
+    "id": "w$7,Z1WTyTZ,0sxO@ghK",
+    "x": 97,
+    "y": 277,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "NAME",
+              "id": "T^qKtBSNv~noRB=#o;*W0"
+            },
+            {
+              "text": "NAME",
+              "id": "f?mU=%cKR3mzhL8W#Y/s0"
+            },
+            {
+              "text": "NAME_DESCRIPTION",
+              "id": "4Zgt?jt_tqe?krK=Dlme0"
+            },
+            {
+              "text": "NAME_DESCRIPTION",
+              "id": "z4Lql@lRnwub)Ki0FHe*0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "T^qKtBSNv~noRB=#o;*W0"
+    },
+    "next": {
+      "block": {
+        "id": "4D97$!DD7gAEXo(cVVB]"
+      }
+    }
+  },
+  "4D97$!DD7gAEXo(cVVB]": {
+    "type": "generate_token",
+    "id": "4D97$!DD7gAEXo(cVVB]",
+    "x": 97,
+    "y": 303,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "\\n\\n"
+    },
+    "next": {
+      "block": {
+        "id": "V=+x)o/sa?DvqbEpgbbp"
+      }
+    }
+  },
+  "V=+x)o/sa?DvqbEpgbbp": {
+    "type": "generate_token",
+    "id": "V=+x)o/sa?DvqbEpgbbp",
+    "x": 97,
+    "y": 329,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "pyrrowhead systems list"
+    },
+    "next": {
+      "block": {
+        "id": "xt]MTxgU.*=U`!wRE~Y,"
+      }
+    }
+  },
+  "xt]MTxgU.*=U`!wRE~Y,": {
+    "type": "generate_token",
+    "id": "xt]MTxgU.*=U`!wRE~Y,",
+    "x": 97,
+    "y": 355,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "\\n\\n"
+    }
+  },
+  "top_blocks": [
+    "NxLv[NoHGt6(uQAWf;5=",
+    "iPGKg$WPoC$@Q$JKF!:+"
+  ],
+  "mergeable": true
+}

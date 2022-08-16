@@ -1,0 +1,744 @@
+{
+  "blocks": {
+    "languageVersion": 0,
+    "blocks": [
+      {
+        "type": "generate_code",
+        "id": "gSVs4OAaUgP(`D*#nN]N",
+        "x": 44,
+        "y": 47,
+        "extraState": {
+          "dropdowns": [
+            {
+              "field": "TYPE",
+              "options": [
+                {
+                  "text": "booleanDefinition",
+                  "id": "aCIx|5.H8@ZahO7Xl_wU"
+                },
+                {
+                  "text": "definitions",
+                  "id": ".}uX;_xN~$[c=KQT]owh"
+                },
+                {
+                  "text": "groupDefinition",
+                  "id": "7g#HcEA,1e!Rjq?@M,3e"
+                }
+              ]
+            }
+          ]
+        },
+        "fields": {
+          "LANGUAGE": "JSON",
+          "TYPE": ".}uX;_xN~$[c=KQT]owh"
+        },
+        "inputs": {
+          "CODE": {
+            "block": {
+              "type": "generate_token",
+              "id": "/jKvs+SEGq,H/`Im*lv~",
+              "extraState": {
+                "dropdowns": []
+              },
+              "fields": {
+                "TOKEN": "{\\n  \"DefinitionVersion\" : 1, \\n  \"Definitions\" : [\\n"
+              },
+              "next": {
+                "block": {
+                  "type": "generate_statements2",
+                  "id": ":KTM,3Pf4GtVXbE+)uHV",
+                  "extraState": {
+                    "dropdowns": [
+                      {
+                        "field": "STATEMENTS",
+                        "options": [
+                          {
+                            "text": "DEFINITIONS",
+                            "id": "2wK3f^UjJq9=[(HLEIU("
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "fields": {
+                    "STATEMENTS": "2wK3f^UjJq9=[(HLEIU("
+                  },
+                  "next": {
+                    "block": {
+                      "type": "generate_token",
+                      "id": "%4*Mj@1#M!pf^T885:-u",
+                      "extraState": {
+                        "dropdowns": []
+                      },
+                      "fields": {
+                        "TOKEN": "\\n  ]\\n}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "generate_code",
+        "id": "9WM46wVnC[#:k@#UMwik",
+        "x": 70,
+        "y": 228,
+        "extraState": {
+          "dropdowns": [
+            {
+              "field": "TYPE",
+              "options": [
+                {
+                  "text": "booleanDefinition",
+                  "id": "aCIx|5.H8@ZahO7Xl_wU"
+                },
+                {
+                  "text": "definitions",
+                  "id": ".}uX;_xN~$[c=KQT]owh"
+                },
+                {
+                  "text": "groupDefinition",
+                  "id": "7g#HcEA,1e!Rjq?@M,3e"
+                }
+              ]
+            }
+          ]
+        },
+        "fields": {
+          "LANGUAGE": "JSON",
+          "TYPE": "aCIx|5.H8@ZahO7Xl_wU"
+        },
+        "inputs": {
+          "CODE": {
+            "block": {
+              "type": "generate_token",
+              "id": "?=W!ja{WT}W!A)Ml2j_n",
+              "extraState": {
+                "dropdowns": []
+              },
+              "fields": {
+                "TOKEN": " {\\n  \"type\" : \"Group\",\\n"
+              },
+              "next": {
+                "block": {
+                  "type": "generate_token",
+                  "id": "_%sRp]|4igbh`5.e-Lh$",
+                  "extraState": {
+                    "dropdowns": []
+                  },
+                  "fields": {
+                    "TOKEN": "  \"Category\" : \""
+                  },
+                  "next": {
+                    "block": {
+                      "type": "generate_field_value2",
+                      "id": "HE1.5{EZUkZ`f@VPRL-`",
+                      "extraState": {
+                        "dropdowns": [
+                          {
+                            "field": "FIELDS",
+                            "options": [
+                              {
+                                "text": "CATEGORY",
+                                "id": "HzM5*F@X1_@cU3;q?)E["
+                              },
+                              {
+                                "text": "CATEGORY_LABEL",
+                                "id": "o;-f*![hB[*BTZJ}[6Xd"
+                              },
+                              {
+                                "text": "DEFINITION",
+                                "id": "lsR,:hkD2?ali.jv7Ut["
+                              },
+                              {
+                                "text": "DISPLAY_NAME",
+                                "id": "C~D/uh#093)Z?))^=kuE"
+                              },
+                              {
+                                "text": "DISPLAY_NAME_LABEL",
+                                "id": ")Za?%r_o:%IPl;$ANUEu"
+                              },
+                              {
+                                "text": "MULTISELECT",
+                                "id": "]K##48:,Wbo#X!!SMqvl"
+                              },
+                              {
+                                "text": "MULTISELECT_LABEL",
+                                "id": "|qUEYT@P3,!R2z1GuoO3"
+                              },
+                              {
+                                "text": "NAME",
+                                "id": "W]78?0UQ6o;vM?p=MasL"
+                              },
+                              {
+                                "text": "NAME_LABEL",
+                                "id": "|y~6S#p$+c[0PsQOk$R|"
+                              },
+                              {
+                                "text": "SEARCHABLE",
+                                "id": "*g9^%VYvIs*z7I!,hHD("
+                              },
+                              {
+                                "text": "SEARCHABLE_LABEL",
+                                "id": "TONs/yKi?xOW-NT~s^f_"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "fields": {
+                        "FIELDS": "HzM5*F@X1_@cU3;q?)E["
+                      },
+                      "next": {
+                        "block": {
+                          "type": "generate_token",
+                          "id": "4[H1?cQjiyDbbj3:,-3z",
+                          "extraState": {
+                            "dropdowns": []
+                          },
+                          "fields": {
+                            "TOKEN": "\",\\n  \"Name\" : \""
+                          },
+                          "next": {
+                            "block": {
+                              "type": "generate_field_value2",
+                              "id": "d8Ngd5z#gopX+0uRI_lR",
+                              "extraState": {
+                                "dropdowns": [
+                                  {
+                                    "field": "FIELDS",
+                                    "options": [
+                                      {
+                                        "text": "CATEGORY",
+                                        "id": "HzM5*F@X1_@cU3;q?)E["
+                                      },
+                                      {
+                                        "text": "CATEGORY_LABEL",
+                                        "id": "o;-f*![hB[*BTZJ}[6Xd"
+                                      },
+                                      {
+                                        "text": "DEFINITION",
+                                        "id": "lsR,:hkD2?ali.jv7Ut["
+                                      },
+                                      {
+                                        "text": "DISPLAY_NAME",
+                                        "id": "C~D/uh#093)Z?))^=kuE"
+                                      },
+                                      {
+                                        "text": "DISPLAY_NAME_LABEL",
+                                        "id": ")Za?%r_o:%IPl;$ANUEu"
+                                      },
+                                      {
+                                        "text": "MULTISELECT",
+                                        "id": "]K##48:,Wbo#X!!SMqvl"
+                                      },
+                                      {
+                                        "text": "MULTISELECT_LABEL",
+                                        "id": "|qUEYT@P3,!R2z1GuoO3"
+                                      },
+                                      {
+                                        "text": "NAME",
+                                        "id": "W]78?0UQ6o;vM?p=MasL"
+                                      },
+                                      {
+                                        "text": "NAME_LABEL",
+                                        "id": "|y~6S#p$+c[0PsQOk$R|"
+                                      },
+                                      {
+                                        "text": "SEARCHABLE",
+                                        "id": "*g9^%VYvIs*z7I!,hHD("
+                                      },
+                                      {
+                                        "text": "SEARCHABLE_LABEL",
+                                        "id": "TONs/yKi?xOW-NT~s^f_"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              "fields": {
+                                "FIELDS": "W]78?0UQ6o;vM?p=MasL"
+                              },
+                              "next": {
+                                "block": {
+                                  "type": "generate_token",
+                                  "id": "=$Pt=}_K*k_|cM3;lVw:",
+                                  "extraState": {
+                                    "dropdowns": []
+                                  },
+                                  "fields": {
+                                    "TOKEN": "\",\\n  \"Multiselect\" : \""
+                                  },
+                                  "next": {
+                                    "block": {
+                                      "type": "generate_field_value2",
+                                      "id": "@)uJcF?#Q{A7)E;u@SHH",
+                                      "extraState": {
+                                        "dropdowns": [
+                                          {
+                                            "field": "FIELDS",
+                                            "options": [
+                                              {
+                                                "text": "CATEGORY",
+                                                "id": "HzM5*F@X1_@cU3;q?)E["
+                                              },
+                                              {
+                                                "text": "CATEGORY_LABEL",
+                                                "id": "o;-f*![hB[*BTZJ}[6Xd"
+                                              },
+                                              {
+                                                "text": "DEFINITION",
+                                                "id": "lsR,:hkD2?ali.jv7Ut["
+                                              },
+                                              {
+                                                "text": "DISPLAY_NAME",
+                                                "id": "C~D/uh#093)Z?))^=kuE"
+                                              },
+                                              {
+                                                "text": "DISPLAY_NAME_LABEL",
+                                                "id": ")Za?%r_o:%IPl;$ANUEu"
+                                              },
+                                              {
+                                                "text": "MULTISELECT",
+                                                "id": "]K##48:,Wbo#X!!SMqvl"
+                                              },
+                                              {
+                                                "text": "MULTISELECT_LABEL",
+                                                "id": "|qUEYT@P3,!R2z1GuoO3"
+                                              },
+                                              {
+                                                "text": "NAME",
+                                                "id": "W]78?0UQ6o;vM?p=MasL"
+                                              },
+                                              {
+                                                "text": "NAME_LABEL",
+                                                "id": "|y~6S#p$+c[0PsQOk$R|"
+                                              },
+                                              {
+                                                "text": "SEARCHABLE",
+                                                "id": "*g9^%VYvIs*z7I!,hHD("
+                                              },
+                                              {
+                                                "text": "SEARCHABLE_LABEL",
+                                                "id": "TONs/yKi?xOW-NT~s^f_"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      "fields": {
+                                        "FIELDS": "]K##48:,Wbo#X!!SMqvl"
+                                      },
+                                      "next": {
+                                        "block": {
+                                          "type": "generate_token",
+                                          "id": "1]8q3^vU@-n7z3b-1UbI",
+                                          "extraState": {
+                                            "dropdowns": []
+                                          },
+                                          "fields": {
+                                            "TOKEN": "\",\\n  \"Searchable\" : \""
+                                          },
+                                          "next": {
+                                            "block": {
+                                              "type": "generate_field_value2",
+                                              "id": "PHjfg*6oPJROtY?JLn0P",
+                                              "extraState": {
+                                                "dropdowns": [
+                                                  {
+                                                    "field": "FIELDS",
+                                                    "options": [
+                                                      {
+                                                        "text": "CATEGORY",
+                                                        "id": "HzM5*F@X1_@cU3;q?)E["
+                                                      },
+                                                      {
+                                                        "text": "CATEGORY_LABEL",
+                                                        "id": "o;-f*![hB[*BTZJ}[6Xd"
+                                                      },
+                                                      {
+                                                        "text": "DEFINITION",
+                                                        "id": "lsR,:hkD2?ali.jv7Ut["
+                                                      },
+                                                      {
+                                                        "text": "DISPLAY_NAME",
+                                                        "id": "C~D/uh#093)Z?))^=kuE"
+                                                      },
+                                                      {
+                                                        "text": "DISPLAY_NAME_LABEL",
+                                                        "id": ")Za?%r_o:%IPl;$ANUEu"
+                                                      },
+                                                      {
+                                                        "text": "MULTISELECT",
+                                                        "id": "]K##48:,Wbo#X!!SMqvl"
+                                                      },
+                                                      {
+                                                        "text": "MULTISELECT_LABEL",
+                                                        "id": "|qUEYT@P3,!R2z1GuoO3"
+                                                      },
+                                                      {
+                                                        "text": "NAME",
+                                                        "id": "W]78?0UQ6o;vM?p=MasL"
+                                                      },
+                                                      {
+                                                        "text": "NAME_LABEL",
+                                                        "id": "|y~6S#p$+c[0PsQOk$R|"
+                                                      },
+                                                      {
+                                                        "text": "SEARCHABLE",
+                                                        "id": "*g9^%VYvIs*z7I!,hHD("
+                                                      },
+                                                      {
+                                                        "text": "SEARCHABLE_LABEL",
+                                                        "id": "TONs/yKi?xOW-NT~s^f_"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              "fields": {
+                                                "FIELDS": "*g9^%VYvIs*z7I!,hHD("
+                                              },
+                                              "next": {
+                                                "block": {
+                                                  "type": "generate_token",
+                                                  "id": "xh[tfImbLr-4(^`()6`q",
+                                                  "extraState": {
+                                                    "dropdowns": []
+                                                  },
+                                                  "fields": {
+                                                    "TOKEN": "\",\\n  \"DisplayName\" : \""
+                                                  },
+                                                  "next": {
+                                                    "block": {
+                                                      "type": "generate_field_value2",
+                                                      "id": "3)N/X/9E-/+K8ZA-(dG9",
+                                                      "extraState": {
+                                                        "dropdowns": [
+                                                          {
+                                                            "field": "FIELDS",
+                                                            "options": [
+                                                              {
+                                                                "text": "CATEGORY",
+                                                                "id": "HzM5*F@X1_@cU3;q?)E["
+                                                              },
+                                                              {
+                                                                "text": "CATEGORY_LABEL",
+                                                                "id": "o;-f*![hB[*BTZJ}[6Xd"
+                                                              },
+                                                              {
+                                                                "text": "DEFINITION",
+                                                                "id": "lsR,:hkD2?ali.jv7Ut["
+                                                              },
+                                                              {
+                                                                "text": "DISPLAY_NAME",
+                                                                "id": "C~D/uh#093)Z?))^=kuE"
+                                                              },
+                                                              {
+                                                                "text": "DISPLAY_NAME_LABEL",
+                                                                "id": ")Za?%r_o:%IPl;$ANUEu"
+                                                              },
+                                                              {
+                                                                "text": "MULTISELECT",
+                                                                "id": "]K##48:,Wbo#X!!SMqvl"
+                                                              },
+                                                              {
+                                                                "text": "MULTISELECT_LABEL",
+                                                                "id": "|qUEYT@P3,!R2z1GuoO3"
+                                                              },
+                                                              {
+                                                                "text": "NAME",
+                                                                "id": "W]78?0UQ6o;vM?p=MasL"
+                                                              },
+                                                              {
+                                                                "text": "NAME_LABEL",
+                                                                "id": "|y~6S#p$+c[0PsQOk$R|"
+                                                              },
+                                                              {
+                                                                "text": "SEARCHABLE",
+                                                                "id": "*g9^%VYvIs*z7I!,hHD("
+                                                              },
+                                                              {
+                                                                "text": "SEARCHABLE_LABEL",
+                                                                "id": "TONs/yKi?xOW-NT~s^f_"
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      },
+                                                      "fields": {
+                                                        "FIELDS": "C~D/uh#093)Z?))^=kuE"
+                                                      },
+                                                      "next": {
+                                                        "block": {
+                                                          "type": "generate_token",
+                                                          "id": "qP`nPjXWDb[S|J{I$Fi3",
+                                                          "extraState": {
+                                                            "dropdowns": []
+                                                          },
+                                                          "fields": {
+                                                            "TOKEN": "\"\\n },\\n"
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "generate_code",
+        "id": "]}q/9x#aNXtt;%P)p#^c",
+        "x": 75,
+        "y": 585,
+        "extraState": {
+          "dropdowns": [
+            {
+              "field": "TYPE",
+              "options": [
+                {
+                  "text": "booleanDefinition",
+                  "id": "aCIx|5.H8@ZahO7Xl_wU"
+                },
+                {
+                  "text": "definitions",
+                  "id": ".}uX;_xN~$[c=KQT]owh"
+                },
+                {
+                  "text": "groupDefinition",
+                  "id": "7g#HcEA,1e!Rjq?@M,3e"
+                }
+              ]
+            }
+          ]
+        },
+        "fields": {
+          "LANGUAGE": "JSON",
+          "TYPE": "7g#HcEA,1e!Rjq?@M,3e"
+        },
+        "inputs": {
+          "CODE": {
+            "block": {
+              "type": "generate_token",
+              "id": "PMjt[x[dp)XQ98^w3YD0",
+              "extraState": {
+                "dropdowns": []
+              },
+              "fields": {
+                "TOKEN": " {\\n  \"type\" : \"Group"
+              },
+              "next": {
+                "block": {
+                  "type": "generate_token",
+                  "id": "380I,(@:oIVWN}.bvVr!",
+                  "extraState": {
+                    "dropdowns": []
+                  },
+                  "fields": {
+                    "TOKEN": "\",\\n  \"Name\" : \""
+                  },
+                  "next": {
+                    "block": {
+                      "type": "generate_field_value2",
+                      "id": "ch3uo)[Xa2EPVv:*`-7z",
+                      "extraState": {
+                        "dropdowns": [
+                          {
+                            "field": "FIELDS",
+                            "options": [
+                              {
+                                "text": "DEFINITION",
+                                "id": "GdAn3F~|gky$7nljY#{q"
+                              },
+                              {
+                                "text": "DESCRIPTION",
+                                "id": "A{Px7{DafA0hEOA-l__/"
+                              },
+                              {
+                                "text": "DESCRIPTION_LABEL",
+                                "id": "RQZ-zn3k%L*Kybc99PSt"
+                              },
+                              {
+                                "text": "DISPLAY_NAME",
+                                "id": "Ha+qc%UaTx]riszq/)^W"
+                              },
+                              {
+                                "text": "DISPLAY_NAME_LABEL",
+                                "id": "U!scf.o;!;~AzmkUuH?t"
+                              },
+                              {
+                                "text": "NAME",
+                                "id": "[4W;HT:$rVfzoOMu5fHc"
+                              },
+                              {
+                                "text": "NAME_LABEL",
+                                "id": "ZE%`GcDOS@p/u9{/-$7x"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "fields": {
+                        "FIELDS": "[4W;HT:$rVfzoOMu5fHc"
+                      },
+                      "next": {
+                        "block": {
+                          "type": "generate_token",
+                          "id": "1u%/nC3SZ%nytI~LKMUL",
+                          "extraState": {
+                            "dropdowns": []
+                          },
+                          "fields": {
+                            "TOKEN": "\",\\n  \"DisplayName\" : \""
+                          },
+                          "next": {
+                            "block": {
+                              "type": "generate_field_value2",
+                              "id": "z,N/o#rzF#e_)E+6q,d,",
+                              "extraState": {
+                                "dropdowns": [
+                                  {
+                                    "field": "FIELDS",
+                                    "options": [
+                                      {
+                                        "text": "DEFINITION",
+                                        "id": "GdAn3F~|gky$7nljY#{q"
+                                      },
+                                      {
+                                        "text": "DESCRIPTION",
+                                        "id": "A{Px7{DafA0hEOA-l__/"
+                                      },
+                                      {
+                                        "text": "DESCRIPTION_LABEL",
+                                        "id": "RQZ-zn3k%L*Kybc99PSt"
+                                      },
+                                      {
+                                        "text": "DISPLAY_NAME",
+                                        "id": "Ha+qc%UaTx]riszq/)^W"
+                                      },
+                                      {
+                                        "text": "DISPLAY_NAME_LABEL",
+                                        "id": "U!scf.o;!;~AzmkUuH?t"
+                                      },
+                                      {
+                                        "text": "NAME",
+                                        "id": "[4W;HT:$rVfzoOMu5fHc"
+                                      },
+                                      {
+                                        "text": "NAME_LABEL",
+                                        "id": "ZE%`GcDOS@p/u9{/-$7x"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              "fields": {
+                                "FIELDS": "Ha+qc%UaTx]riszq/)^W"
+                              },
+                              "next": {
+                                "block": {
+                                  "type": "generate_token",
+                                  "id": "Kmf66C3K_(XHdAgpHZP|",
+                                  "extraState": {
+                                    "dropdowns": []
+                                  },
+                                  "fields": {
+                                    "TOKEN": "\",\\n  \"Description\" : \""
+                                  },
+                                  "next": {
+                                    "block": {
+                                      "type": "generate_field_value2",
+                                      "id": "|$R.w}exT{A[PN;Cym8P",
+                                      "extraState": {
+                                        "dropdowns": [
+                                          {
+                                            "field": "FIELDS",
+                                            "options": [
+                                              {
+                                                "text": "DEFINITION",
+                                                "id": "GdAn3F~|gky$7nljY#{q"
+                                              },
+                                              {
+                                                "text": "DESCRIPTION",
+                                                "id": "A{Px7{DafA0hEOA-l__/"
+                                              },
+                                              {
+                                                "text": "DESCRIPTION_LABEL",
+                                                "id": "RQZ-zn3k%L*Kybc99PSt"
+                                              },
+                                              {
+                                                "text": "DISPLAY_NAME",
+                                                "id": "Ha+qc%UaTx]riszq/)^W"
+                                              },
+                                              {
+                                                "text": "DISPLAY_NAME_LABEL",
+                                                "id": "U!scf.o;!;~AzmkUuH?t"
+                                              },
+                                              {
+                                                "text": "NAME",
+                                                "id": "[4W;HT:$rVfzoOMu5fHc"
+                                              },
+                                              {
+                                                "text": "NAME_LABEL",
+                                                "id": "ZE%`GcDOS@p/u9{/-$7x"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      "fields": {
+                                        "FIELDS": "A{Px7{DafA0hEOA-l__/"
+                                      },
+                                      "next": {
+                                        "block": {
+                                          "type": "generate_token",
+                                          "id": "PI2uu#G?:b;H,zY`[D1Y",
+                                          "extraState": {
+                                            "dropdowns": []
+                                          },
+                                          "fields": {
+                                            "TOKEN": "\"\\n },\\n"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

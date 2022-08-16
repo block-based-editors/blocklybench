@@ -1,0 +1,987 @@
+{
+  "blocks": {
+    "languageVersion": 0,
+    "blocks": [
+      {
+        "type": "factory_base",
+        "id": "y]1$^*%::)M+67))#=QZ",
+        "x": 0,
+        "y": 0,
+        "extraState": {
+          "connections": "BOTH"
+        },
+        "fields": {
+          "NAME": "toolbox_seperator",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "BOTH"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_dummy",
+              "id": "_U*F^!qD;oU2EdXb9DN[",
+              "fields": {
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_static",
+                    "id": "KSEf.wkzcB2}vKPgY-9C",
+                    "fields": {
+                      "TEXT": "Gap"
+                    },
+                    "next": {
+                      "block": {
+                        "type": "field_input",
+                        "id": "Ul?c|L`;abgVYeedNg:t",
+                        "fields": {
+                          "TEXT": "24",
+                          "FIELDNAME": "GAP"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "TOPTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "(,nb%e/#kwN-zpQ~zqww"
+            },
+            "block": {
+              "type": "type_other",
+              "id": "{$Qj/0F/u4Ouq.qO!=U^",
+              "fields": {
+                "TYPE": "block"
+              }
+            }
+          },
+          "BOTTOMTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "PuIykNT;t-c%@d3~R3w%"
+            },
+            "block": {
+              "type": "type_other",
+              "id": "GPhVL~0zqeFABR?aO_{}",
+              "fields": {
+                "TYPE": "block"
+              }
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "Rr#`)2vJ.r5Y=:S2scF/",
+              "extraState": {
+                "colour": "#a55b93"
+              },
+              "fields": {
+                "HUE": 315
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": "KY@F+%SQ`ivNM844@ik+",
+        "x": 349,
+        "y": 124,
+        "extraState": {
+          "connections": "BOTH"
+        },
+        "fields": {
+          "NAME": "toolbox_label",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "BOTH"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_dummy",
+              "id": "D?UnwvG?)fu,t+)Hx8Jw",
+              "fields": {
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_static",
+                    "id": "%DQYe*4IX4s|v7Akr$r_",
+                    "fields": {
+                      "TEXT": "Label"
+                    },
+                    "next": {
+                      "block": {
+                        "type": "field_input",
+                        "id": "M:F~MdYEVH~Mp8F,}2Gh",
+                        "fields": {
+                          "TEXT": "Label",
+                          "FIELDNAME": "TEXT"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "TOPTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "(,nb%e/#kwN-zpQ~zqww"
+            },
+            "block": {
+              "type": "type_other",
+              "id": "dZ3!WJ{{%djzOV#ob;B5",
+              "fields": {
+                "TYPE": "block"
+              }
+            }
+          },
+          "BOTTOMTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "PuIykNT;t-c%@d3~R3w%"
+            },
+            "block": {
+              "type": "type_other",
+              "id": "FNh0M!ap[ckkHZ38hr@A",
+              "fields": {
+                "TYPE": "block"
+              }
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "`0(6PsGyk2uLv3v)f0%F",
+              "extraState": {
+                "colour": "#a55b93"
+              },
+              "fields": {
+                "HUE": 315
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": "rk/^b/MJQ9w^v|-#]+#!",
+        "x": 0,
+        "y": 329,
+        "extraState": {
+          "connections": "BOTH"
+        },
+        "fields": {
+          "NAME": "toolbox_variable_category",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "BOTH"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_dummy",
+              "id": "HTCP+:^Xp(5v-M|0.COp",
+              "fields": {
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_static",
+                    "id": "vcfE:rs}?ETh.Q,rtWks",
+                    "fields": {
+                      "TEXT": "Category Variables"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "TOPTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "te{GmJc?BaJnPtYZbaRK"
+            },
+            "block": {
+              "type": "type_other",
+              "id": "lapj;SEp5NF[i9~*#9Gp",
+              "fields": {
+                "TYPE": "category"
+              }
+            }
+          },
+          "BOTTOMTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "Qi/Fr7x0tqjz5UmB3T!!"
+            },
+            "block": {
+              "type": "type_other",
+              "id": "R5fB7I`?Zy(uoS`}2W64",
+              "fields": {
+                "TYPE": "category"
+              }
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "s}9VNy},#yKUO{dq4?%]",
+              "extraState": {
+                "colour": "#a55b93"
+              },
+              "fields": {
+                "HUE": 315
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": "]o@m4-nTKq8Y:)Zp=)v.",
+        "x": 0,
+        "y": 632,
+        "extraState": {
+          "connections": "BOTH"
+        },
+        "fields": {
+          "NAME": "toolbox_block_json",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "BOTH"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_dummy",
+              "id": "OYUX{x8uzngE7WG[3v;H",
+              "fields": {
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_static",
+                    "id": "!iNN8V]XW@%bw/VgdU/]",
+                    "fields": {
+                      "TEXT": "Block"
+                    },
+                    "next": {
+                      "block": {
+                        "type": "field_dropdown_function",
+                        "id": "e7I:EiZIClAvb3CIDgYG",
+                        "fields": {
+                          "FIELDNAME": "TYPE",
+                          "FIELD": "NAME",
+                          "WORKSPACE": "Factory"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "next": {
+                "block": {
+                  "type": "input_statement",
+                  "id": "_OpLTgO!DM2x4qzRw/et",
+                  "fields": {
+                    "INPUTNAME": "FIELDS",
+                    "ALIGN": "LEFT"
+                  },
+                  "inputs": {
+                    "FIELDS": {
+                      "block": {
+                        "type": "field_static",
+                        "id": "v;JbKPNi$Rd^I1J#9?Z{",
+                        "fields": {
+                          "TEXT": "Fields"
+                        }
+                      }
+                    },
+                    "TYPE": {
+                      "shadow": {
+                        "type": "type_null",
+                        "id": "?8[@lT}R,YSUrlOJDmSl"
+                      },
+                      "block": {
+                        "type": "type_other",
+                        "id": "jo[sLeIY5kq.lMix6Q*p",
+                        "fields": {
+                          "TYPE": "field"
+                        }
+                      }
+                    }
+                  },
+                  "next": {
+                    "block": {
+                      "type": "input_statement",
+                      "id": "i:fVP]Pb`PrGjMR0,Z6c",
+                      "fields": {
+                        "INPUTNAME": "INPUTS",
+                        "ALIGN": "LEFT"
+                      },
+                      "inputs": {
+                        "FIELDS": {
+                          "block": {
+                            "type": "field_static",
+                            "id": "8hPBq*`|-US!2?()fY2*",
+                            "fields": {
+                              "TEXT": "Inputs"
+                            }
+                          }
+                        },
+                        "TYPE": {
+                          "shadow": {
+                            "type": "type_null",
+                            "id": "dBPn(QYmiPM_-{oL%2Nt"
+                          },
+                          "block": {
+                            "type": "type_other",
+                            "id": "+L}jW%wSWbh@jCiqH1#-",
+                            "fields": {
+                              "TYPE": "input"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "TOPTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "N/sQn)Jp0!Y45rxSIcJF"
+            },
+            "block": {
+              "type": "type_other",
+              "id": ".Qz^OT-d^B~TGwG1#on0",
+              "fields": {
+                "TYPE": "block"
+              }
+            }
+          },
+          "BOTTOMTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "UFuft[~6fiaH`@~^K7To"
+            },
+            "block": {
+              "type": "type_other",
+              "id": "V-JC,Ujnhdm^[Fk3[oQ3",
+              "fields": {
+                "TYPE": "block"
+              }
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "zB%{x;TcwI$}74/@c.?s",
+              "extraState": {
+                "colour": "#a55b93"
+              },
+              "fields": {
+                "HUE": 315
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": "sh)oVYDB0$1E5g4Ck^IK",
+        "x": 0,
+        "y": 1121,
+        "extraState": {
+          "connections": "BOTH"
+        },
+        "fields": {
+          "NAME": "toolbox_block_json_input",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "BOTH"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_dummy",
+              "id": "GqGqR=5Yty^c?HYJz|bz",
+              "fields": {
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_static",
+                    "id": "}G%N+Fi0,de;?psX3wn_",
+                    "fields": {
+                      "TEXT": "Input"
+                    },
+                    "next": {
+                      "block": {
+                        "type": "field_dropdown_function",
+                        "id": "FU2@Bwss1d@w%fKadWXU",
+                        "fields": {
+                          "FIELDNAME": "NAME",
+                          "FIELD": "INPUTNAME",
+                          "WORKSPACE": "Factory"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "next": {
+                "block": {
+                  "type": "input_statement",
+                  "id": "/%:Hv=E`@VZBT]Tva(@O",
+                  "fields": {
+                    "INPUTNAME": "BLOCKS",
+                    "ALIGN": "LEFT"
+                  },
+                  "inputs": {
+                    "TYPE": {
+                      "shadow": {
+                        "type": "type_null",
+                        "id": "^`(N,x~,=ckORn10usju"
+                      },
+                      "block": {
+                        "type": "type_other",
+                        "id": "/1$Ymn5#AJNAPr*xm{LD",
+                        "fields": {
+                          "TYPE": "block"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "TOPTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "@db+v-a*nN?h`b/MK`:t"
+            },
+            "block": {
+              "type": "type_other",
+              "id": "6pU4,r*$~]Ox%1PnNnO1",
+              "fields": {
+                "TYPE": "input"
+              }
+            }
+          },
+          "BOTTOMTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "41{_rz(,5Y%by!NRk_t["
+            },
+            "block": {
+              "type": "type_other",
+              "id": "Q9XlJS`?19`4Mk*QZC;L",
+              "fields": {
+                "TYPE": "input"
+              }
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "eUE)x;-!sUGN=T/NB0^v",
+              "extraState": {
+                "colour": "#a55b93"
+              },
+              "fields": {
+                "HUE": 315
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": "`$x2j8A^O6PW.ZB3D_S?",
+        "x": 0,
+        "y": 1525,
+        "extraState": {
+          "connections": "BOTH"
+        },
+        "fields": {
+          "NAME": "toolbox_block_json_field",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "BOTH"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_dummy",
+              "id": "(,:*r[e8iXDJ-O:viAIJ",
+              "fields": {
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_static",
+                    "id": "^Lk}Sr@Ee8kL#|w+bHb0",
+                    "fields": {
+                      "TEXT": "Field"
+                    },
+                    "next": {
+                      "block": {
+                        "type": "field_dropdown_function",
+                        "id": ":#!%|W!eLhdtDPVjPI7u",
+                        "fields": {
+                          "FIELDNAME": "NAME",
+                          "FIELD": "FIELDNAME",
+                          "WORKSPACE": "Factory"
+                        },
+                        "next": {
+                          "block": {
+                            "type": "field_input",
+                            "id": "lmsS1lI1i|Qk2XNxUdwq",
+                            "fields": {
+                              "TEXT": "value",
+                              "FIELDNAME": "VALUE"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "TOPTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "X,7.w)Qn6h#,~S[s/4l4"
+            },
+            "block": {
+              "type": "type_other",
+              "id": "CQr%W8qyn;*l_D_l_`bR",
+              "fields": {
+                "TYPE": "field"
+              }
+            }
+          },
+          "BOTTOMTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "y{-@+ZmpkpT/LNvYg((F"
+            },
+            "block": {
+              "type": "type_other",
+              "id": "m{uChIRZ[w)$Gh2Qu$ob",
+              "fields": {
+                "TYPE": "field"
+              }
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "7ez-k(L]/BF^OaxkfKXH",
+              "extraState": {
+                "colour": "#a55b93"
+              },
+              "fields": {
+                "HUE": 315
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": ")pT5.tKmg]A7?o%JG9F0",
+        "x": 0,
+        "y": 1880,
+        "extraState": {
+          "connections": "NONE"
+        },
+        "fields": {
+          "NAME": "toolbox_blocks",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "NONE"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_dummy",
+              "id": "pr67AD5VVh11AHY9wwdQ",
+              "fields": {
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_static",
+                    "id": "?3.ZIvZFoaPdvNaZCcjF",
+                    "fields": {
+                      "TEXT": "Toolbox (blocks)"
+                    }
+                  }
+                }
+              },
+              "next": {
+                "block": {
+                  "type": "input_statement",
+                  "id": "/#tqk^;!DBw6$,?M5Oss",
+                  "fields": {
+                    "INPUTNAME": "LIST",
+                    "ALIGN": "LEFT"
+                  },
+                  "inputs": {
+                    "TYPE": {
+                      "shadow": {
+                        "type": "type_null",
+                        "id": "rpU}}xja.3,,4#y9cV=T"
+                      },
+                      "block": {
+                        "type": "type_other",
+                        "id": "H3SA{wm1oNf38*LTEaZ.",
+                        "fields": {
+                          "TYPE": "block"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "5p;S*nOI@OU6].Uscw;P",
+              "extraState": {
+                "colour": "#a55b93"
+              },
+              "fields": {
+                "HUE": 315
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": "@}@4`E(EDclQ^%lG[_eJ",
+        "x": 0,
+        "y": 2206,
+        "extraState": {
+          "connections": "BOTH"
+        },
+        "fields": {
+          "NAME": "toolbox_block",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "BOTH"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_dummy",
+              "id": "|L{|2Igm?1qVJ2yP6b=!",
+              "fields": {
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_static",
+                    "id": ":FuJsx5X$+XKC^@n_~Z_",
+                    "fields": {
+                      "TEXT": "Block"
+                    },
+                    "next": {
+                      "block": {
+                        "type": "field_dropdown_function",
+                        "id": "rlUV{lIht-ZM-Ow2/U9#",
+                        "fields": {
+                          "FIELDNAME": "TYPE",
+                          "FIELD": "NAME",
+                          "WORKSPACE": "Factory"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "TOPTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "ksJaa?L`XZ?$084FljUl"
+            },
+            "block": {
+              "type": "type_other",
+              "id": "+G8NC4zvf`VX$g+SO`;-",
+              "fields": {
+                "TYPE": "block"
+              }
+            }
+          },
+          "BOTTOMTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "GxiC0bD-}ABdM(i(A4xI"
+            },
+            "block": {
+              "type": "type_other",
+              "id": "j:ocjYGnoB,qYm6-$|]L",
+              "fields": {
+                "TYPE": "block"
+              }
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "T8L+gc`}DM4ET{!tJMLt",
+              "extraState": {
+                "colour": "#a55b93"
+              },
+              "fields": {
+                "HUE": 315
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": "W2MV#7=+J/@J{!#GfYDM",
+        "x": 0,
+        "y": 2535,
+        "extraState": {
+          "connections": "NONE"
+        },
+        "fields": {
+          "NAME": "toolbox_categories",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "NONE"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_dummy",
+              "id": "$cF6R~/KCA4U::^g/d]D",
+              "fields": {
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_static",
+                    "id": "UZ*86ZRfUOFJx$1CFXe=",
+                    "fields": {
+                      "TEXT": "Toolbox (categories)"
+                    }
+                  }
+                }
+              },
+              "next": {
+                "block": {
+                  "type": "input_statement",
+                  "id": "WErQreF}r?iV[@$,+]*_",
+                  "fields": {
+                    "INPUTNAME": "LIST",
+                    "ALIGN": "LEFT"
+                  },
+                  "inputs": {
+                    "TYPE": {
+                      "shadow": {
+                        "type": "type_null",
+                        "id": "-n5Jp$f[J3+o93D|i`a2"
+                      },
+                      "block": {
+                        "type": "type_other",
+                        "id": "XRMe~LKdV8N+4-58AyYp",
+                        "fields": {
+                          "TYPE": "category"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "7w6q2@Y=d@d`Vw74%+@J",
+              "extraState": {
+                "colour": "#a55b93"
+              },
+              "fields": {
+                "HUE": 315
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": "[zsY.7A0O.=b9@oD%=6_",
+        "x": 0,
+        "y": 2861,
+        "extraState": {
+          "connections": "BOTH"
+        },
+        "fields": {
+          "NAME": "toolbox_category",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "BOTH"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_dummy",
+              "id": "6[X8wc]WgkMk~U?t98op",
+              "fields": {
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_static",
+                    "id": "l}.6;`LU0t~,9jF{RRP]",
+                    "fields": {
+                      "TEXT": "Category"
+                    },
+                    "next": {
+                      "block": {
+                        "type": "field_input",
+                        "id": ")J[a`h~u(-w%pmK73Zx4",
+                        "fields": {
+                          "TEXT": "name",
+                          "FIELDNAME": "NAME"
+                        },
+                        "next": {
+                          "block": {
+                            "type": "field_colour",
+                            "id": "0,;I#g.gc]2(]o0f3~~.",
+                            "fields": {
+                              "COLOUR": "#3366ff",
+                              "FIELDNAME": "COLOUR"
+                            },
+                            "next": {
+                              "block": {
+                                "type": "field_checkbox",
+                                "id": "pM,d]53-4JrT9^sS+2(n",
+                                "fields": {
+                                  "CHECKED": false,
+                                  "FIELDNAME": "EXPAND"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "next": {
+                "block": {
+                  "type": "input_statement",
+                  "id": "J@c+.Dy.U=Z{RP[z9Dt3",
+                  "fields": {
+                    "INPUTNAME": "LIST",
+                    "ALIGN": "LEFT"
+                  },
+                  "inputs": {
+                    "TYPE": {
+                      "shadow": {
+                        "type": "type_null",
+                        "id": "yXv5~M0`lY!t0*(_Z:3E"
+                      },
+                      "block": {
+                        "type": "type_group",
+                        "id": "3tj?ed7`p~6J/O;[yFt=",
+                        "extraState": {
+                          "types": 2
+                        },
+                        "inputs": {
+                          "TYPE0": {
+                            "block": {
+                              "type": "type_other",
+                              "id": "8,}_zmX83m5X!?#?7UB.",
+                              "fields": {
+                                "TYPE": "block"
+                              }
+                            }
+                          },
+                          "TYPE1": {
+                            "block": {
+                              "type": "type_other",
+                              "id": "cn**[{a-W6603`zoTF=+",
+                              "fields": {
+                                "TYPE": "category"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "TOPTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "zZGq9C`t_R7DbF[_OzV/"
+            },
+            "block": {
+              "type": "type_other",
+              "id": "nEA.(VkvZtK/vT,cvF(I",
+              "fields": {
+                "TYPE": "category"
+              }
+            }
+          },
+          "BOTTOMTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "=yC(Jf%Hh-irK!Rj^k%="
+            },
+            "block": {
+              "type": "type_other",
+              "id": "?[P(%9Se,cB~FefElh}]",
+              "fields": {
+                "TYPE": "category"
+              }
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": ",^!sL%cNM3nzZh4N@rRN",
+              "extraState": {
+                "colour": "#a55b93"
+              },
+              "fields": {
+                "HUE": 315
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

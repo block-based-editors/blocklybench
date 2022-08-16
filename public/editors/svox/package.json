@@ -1,0 +1,14 @@
+{
+  "name": "blockly-editor-generator",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "http-server": "^13.0.1"
+  },
+  "scripts": {
+    "test": "http-server -c-1",
+	"start": "http-server -c-1"
+  },
+  "devDependencies": {
+  }
+}

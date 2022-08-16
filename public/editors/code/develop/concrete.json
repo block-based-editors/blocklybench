@@ -1,0 +1,29 @@
+{
+  "blocks": {
+    "languageVersion": 0,
+    "blocks": [
+      {
+        "type": "generate_list_length",
+        "id": "t)$[z{xF9:attFs1!((K",
+        "x": 83,
+        "y": 52,
+        "extraState": {
+          "dropdowns": [
+            {
+              "field": "STATEMENTS",
+              "options": [
+                {
+                  "text": "CODE",
+                  "id": "hNV`zgbU3Re8Xc,Awk~("
+                }
+              ]
+            }
+          ]
+        },
+        "fields": {
+          "STATEMENTS": "hNV`zgbU3Re8Xc,Awk~("
+        }
+      }
+    ]
+  }
+}

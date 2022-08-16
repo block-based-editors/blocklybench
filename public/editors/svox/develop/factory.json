@@ -1,0 +1,2477 @@
+{
+  "blocks": {
+    "languageVersion": 0,
+    "blocks": [
+      {
+        "type": "factory_base",
+        "id": "s,5Ao*tTs+AGG.J6q*/}",
+        "x": 0,
+        "y": 0,
+        "extraState": {
+          "connections": "BOTH"
+        },
+        "fields": {
+          "NAME": "texture",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "BOTH"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_dummy",
+              "id": "AcWV];6D8|4Q{}y9I;6%",
+              "fields": {
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_label_serializable",
+                    "id": "]7].?`5{%rm[#N#H]|E/",
+                    "fields": {
+                      "TEXT": "Texture",
+                      "FIELDNAME": "TEXTURE_LABEL"
+                    },
+                    "next": {
+                      "block": {
+                        "type": "field_input",
+                        "id": "q0UoHUO67T2tQ(%s~(?Q",
+                        "fields": {
+                          "TEXT": "id",
+                          "FIELDNAME": "ID"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "next": {
+                "block": {
+                  "type": "input_dummy",
+                  "id": "c`s!LTzX9{%[j@i)(AH9",
+                  "fields": {
+                    "ALIGN": "LEFT"
+                  },
+                  "inputs": {
+                    "FIELDS": {
+                      "block": {
+                        "type": "field_label_serializable",
+                        "id": "pOEM),ccH-~!UjY!3iqd",
+                        "fields": {
+                          "TEXT": "cube",
+                          "FIELDNAME": "CUBE_LABEL"
+                        },
+                        "next": {
+                          "block": {
+                            "type": "field_checkbox",
+                            "id": "9bX_n.^;8(T}phP^yK_B",
+                            "fields": {
+                              "CHECKED": true,
+                              "FIELDNAME": "CUBE"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "next": {
+                    "block": {
+                      "type": "input_dummy",
+                      "id": "l]Z{cm4[MHY:,b6qaBO9",
+                      "fields": {
+                        "ALIGN": "LEFT"
+                      },
+                      "inputs": {
+                        "FIELDS": {
+                          "block": {
+                            "type": "field_label_serializable",
+                            "id": "Dk#)tFB#s-H59C4;NhqA",
+                            "fields": {
+                              "TEXT": "image",
+                              "FIELDNAME": "IMAGE_LABEL"
+                            },
+                            "next": {
+                              "block": {
+                                "type": "field_input",
+                                "id": "j2=gi*]brnZF64u(Sz)V",
+                                "fields": {
+                                  "TEXT": "data:image....",
+                                  "FIELDNAME": "IMAGE"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "HELPURL": {
+            "block": {
+              "type": "text",
+              "id": "SRQz:r]%_mI2X;YhE$28",
+              "fields": {
+                "TEXT": "https://svox.glitch.me/#Textures"
+              }
+            }
+          },
+          "TOPTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": ".D/c$Y_=!u`p)|W)uRy3"
+            }
+          },
+          "BOTTOMTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "7`x/Ue,E(.%5(8]=NlY8"
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "f^/D)v=PBdrGMxRv*$[Q",
+              "extraState": {
+                "colour": "#5ba55b"
+              },
+              "fields": {
+                "HUE": 120
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": "Ck3iT09(f~RAsoUpt6UX",
+        "x": 0,
+        "y": 511,
+        "extraState": {
+          "connections": "BOTH"
+        },
+        "fields": {
+          "NAME": "light_point",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "BOTH"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_dummy",
+              "id": "|5@##M86S.J_~J[#7DV7",
+              "fields": {
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_label_serializable",
+                    "id": "M.cjp;Bxpys3.L~5m[cc",
+                    "fields": {
+                      "TEXT": "Point Light",
+                      "FIELDNAME": "LABEL"
+                    }
+                  }
+                }
+              },
+              "next": {
+                "block": {
+                  "type": "input_dummy",
+                  "id": "j|,5r8hm-0Qcaa~ve{7p",
+                  "fields": {
+                    "ALIGN": "LEFT"
+                  },
+                  "inputs": {
+                    "FIELDS": {
+                      "block": {
+                        "type": "field_label_serializable",
+                        "id": ".hGuPS6Qd.*cDTrBuiPo",
+                        "fields": {
+                          "TEXT": "color",
+                          "FIELDNAME": "COLOR_LABEL"
+                        },
+                        "next": {
+                          "block": {
+                            "type": "field_colour",
+                            "id": "Hy.hv,s).P]3LQYEE3en",
+                            "fields": {
+                              "COLOUR": "#ff0000",
+                              "FIELDNAME": "COLOR"
+                            },
+                            "next": {
+                              "block": {
+                                "type": "field_label_serializable",
+                                "id": "F!T~XY=@;bm$^1H.UZP7",
+                                "fields": {
+                                  "TEXT": "strength",
+                                  "FIELDNAME": "STRENGTH_LABEL"
+                                },
+                                "next": {
+                                  "block": {
+                                    "type": "field_number",
+                                    "id": "j-P}9_r`*1WylDweXVI=",
+                                    "fields": {
+                                      "VALUE": 0.33,
+                                      "FIELDNAME": "STRENGTH",
+                                      "MIN": 0,
+                                      "MAX": 1,
+                                      "PRECISION": 0
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "next": {
+                    "block": {
+                      "type": "input_dummy",
+                      "id": "yCQ*2-@u]Ng6-c)OU7d}",
+                      "fields": {
+                        "ALIGN": "LEFT"
+                      },
+                      "inputs": {
+                        "FIELDS": {
+                          "block": {
+                            "type": "field_label_serializable",
+                            "id": "jw7ugYXI|zuy/}_8s.{*",
+                            "icons": {
+                              "comment": {
+                                "text": "Position x,y,z in scene coordinates.",
+                                "pinned": false,
+                                "height": 80,
+                                "width": 160
+                              }
+                            },
+                            "fields": {
+                              "TEXT": "position",
+                              "FIELDNAME": "POSITION_LABEL"
+                            },
+                            "next": {
+                              "block": {
+                                "type": "field_number",
+                                "id": "Jo#r4gybFfES._YBYK#W",
+                                "fields": {
+                                  "VALUE": 0,
+                                  "FIELDNAME": "X",
+                                  "MIN": null,
+                                  "MAX": null,
+                                  "PRECISION": 0
+                                },
+                                "next": {
+                                  "block": {
+                                    "type": "field_number",
+                                    "id": "w9uy`x?-]5.@;B,!;{C4",
+                                    "fields": {
+                                      "VALUE": 0,
+                                      "FIELDNAME": "Y",
+                                      "MIN": null,
+                                      "MAX": null,
+                                      "PRECISION": 0
+                                    },
+                                    "next": {
+                                      "block": {
+                                        "type": "field_number",
+                                        "id": "CY~+J;Y{H:K^IH6%ZG;o",
+                                        "fields": {
+                                          "VALUE": 0,
+                                          "FIELDNAME": "Z",
+                                          "MIN": null,
+                                          "MAX": null,
+                                          "PRECISION": 0
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "next": {
+                        "block": {
+                          "type": "input_dummy",
+                          "id": "39{G3`{_Y.q:!fts9r#N",
+                          "fields": {
+                            "ALIGN": "LEFT"
+                          },
+                          "inputs": {
+                            "FIELDS": {
+                              "block": {
+                                "type": "field_label_serializable",
+                                "id": "cDA}xJ=zQ:@!OA3s]xA6",
+                                "fields": {
+                                  "TEXT": "distance",
+                                  "FIELDNAME": "DISTANCE_LABEL"
+                                },
+                                "next": {
+                                  "block": {
+                                    "type": "field_number",
+                                    "id": "_}ja*B=iGbD2`7EhtGGe",
+                                    "fields": {
+                                      "VALUE": 0.5,
+                                      "FIELDNAME": "DISTANCE",
+                                      "MIN": null,
+                                      "MAX": null,
+                                      "PRECISION": 0
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "next": {
+                            "block": {
+                              "type": "input_dummy",
+                              "id": "plkPR{SSL24lt+6Tc*;F",
+                              "fields": {
+                                "ALIGN": "LEFT"
+                              },
+                              "inputs": {
+                                "FIELDS": {
+                                  "block": {
+                                    "type": "field_label_serializable",
+                                    "id": "Bq`6ZFIoO18pI::`N#rV",
+                                    "fields": {
+                                      "TEXT": "detail",
+                                      "FIELDNAME": "DETAIL_LABEL"
+                                    },
+                                    "next": {
+                                      "block": {
+                                        "type": "field_dropdown",
+                                        "id": "Ka9.RJZ`{G.!d=$-QGxZ",
+                                        "extraState": {
+                                          "options": "[\"text\",\"text\",\"text\",\"text\"]"
+                                        },
+                                        "fields": {
+                                          "FIELDNAME": "DETAIL",
+                                          "USER0": "octahedron",
+                                          "CPU0": "0",
+                                          "USER1": "spheres 32",
+                                          "CPU1": "1",
+                                          "USER2": "spheres 128",
+                                          "CPU2": "2",
+                                          "USER3": "spheres 512",
+                                          "CPU3": "3"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "TOOLTIP": {
+            "block": {
+              "type": "text",
+              "id": "I-?fgir/rYca;4THjj$U",
+              "fields": {
+                "TEXT": ""
+              }
+            }
+          },
+          "HELPURL": {
+            "block": {
+              "type": "text",
+              "id": "FxtLd(j[Y8L:DF9d.ObN",
+              "fields": {
+                "TEXT": "https://svox.glitch.me/#Lights"
+              }
+            }
+          },
+          "TOPTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "#UT~T_d#qo`Y2q4`w:;{"
+            }
+          },
+          "BOTTOMTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "cb?U%s(tM$2(D`bA5Mow"
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "ig!U}PS.6?UwZ}}i0_+-",
+              "extraState": {
+                "colour": "#5ba55b"
+              },
+              "fields": {
+                "HUE": 120
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": "+M~ep=D~DV#zD;v8Dyx,",
+        "x": 0,
+        "y": 1516,
+        "extraState": {
+          "connections": "BOTH"
+        },
+        "fields": {
+          "NAME": "color",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "BOTH"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_dummy",
+              "id": "yn1r^EXo[:v8TrWTZa`[",
+              "fields": {
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_label_serializable",
+                    "id": "0v[r!F66ve~YI(8?26w^",
+                    "fields": {
+                      "TEXT": "Color",
+                      "FIELDNAME": "ID_LABEL"
+                    },
+                    "next": {
+                      "block": {
+                        "type": "field_input",
+                        "id": "^2+wwG/f^OuZNN*1}#fC",
+                        "fields": {
+                          "TEXT": "R",
+                          "FIELDNAME": "COLOR_ID"
+                        },
+                        "next": {
+                          "block": {
+                            "type": "field_colour",
+                            "id": "eo*7+bufH3a(Y%VJjLP:",
+                            "fields": {
+                              "COLOUR": "#ff0000",
+                              "FIELDNAME": "COLOR"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "TOPTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "NSBBqE6rO%u(Gi?*a@/U"
+            }
+          },
+          "BOTTOMTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "==B8,uowBoWUS;t?a*+O"
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "Jy:L|L+nX5Q6(xrG@0DE",
+              "extraState": {
+                "colour": "#9fa55b"
+              },
+              "fields": {
+                "HUE": 65
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": "rKvtcXy;/TKKzRrAEMF5",
+        "x": 0,
+        "y": 1871,
+        "extraState": {
+          "connections": "BOTH"
+        },
+        "fields": {
+          "NAME": "material",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "BOTH"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_dummy",
+              "id": "oc+wK9a}+/J0q3WtzLLY",
+              "fields": {
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_label_serializable",
+                    "id": "6|#j}n1P}E;+7HCu:1;e",
+                    "fields": {
+                      "TEXT": "Material",
+                      "FIELDNAME": "MATERIAL_LABEL"
+                    }
+                  }
+                }
+              },
+              "next": {
+                "block": {
+                  "type": "input_dummy",
+                  "id": "%v7JbKrk51v^?f2[?h:v",
+                  "fields": {
+                    "ALIGN": "LEFT"
+                  },
+                  "inputs": {
+                    "FIELDS": {
+                      "block": {
+                        "type": "field_label_serializable",
+                        "id": "HnNrd5u+I`q6Q?%[)!y!",
+                        "fields": {
+                          "TEXT": "lighting",
+                          "FIELDNAME": "LIGHTING_LABEL"
+                        },
+                        "next": {
+                          "block": {
+                            "type": "field_dropdown",
+                            "id": "kNR57+Db^xd!_^fWI9qy",
+                            "extraState": {
+                              "options": "[\"text\",\"text\",\"text\"]"
+                            },
+                            "icons": {
+                              "comment": {
+                                "text": "1. flat makes the faces look flat.\n2. smooth makes the faces look smooth (often combined with roughness < 0.5)\n3. both makes the faces look smooth, but flattened and clamped sides look flat.",
+                                "pinned": false,
+                                "height": 80,
+                                "width": 160
+                              }
+                            },
+                            "fields": {
+                              "FIELDNAME": "LIGHTING",
+                              "USER0": "flat",
+                              "CPU0": "flat",
+                              "USER1": "smooth",
+                              "CPU1": "smooth",
+                              "USER2": "both",
+                              "CPU2": "both"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "next": {
+                    "block": {
+                      "type": "input_dummy",
+                      "id": ";#/#*7pSR]+h0LoqbEIA",
+                      "fields": {
+                        "ALIGN": "LEFT"
+                      },
+                      "inputs": {
+                        "FIELDS": {
+                          "block": {
+                            "type": "field_label_serializable",
+                            "id": "hg+eZv,)[?5+WWwBaW9z",
+                            "fields": {
+                              "TEXT": "roughness",
+                              "FIELDNAME": "ROUGHNESS_LABEL"
+                            },
+                            "next": {
+                              "block": {
+                                "type": "field_number",
+                                "id": "zBr6#?|+ZUOzNaaxDA)d",
+                                "fields": {
+                                  "VALUE": 0.1,
+                                  "FIELDNAME": "ROUGHNESS",
+                                  "MIN": 0,
+                                  "MAX": 1,
+                                  "PRECISION": 0
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "next": {
+                        "block": {
+                          "type": "input_statement",
+                          "id": "Nn1u7(:mrPK:^0C5+=C_",
+                          "fields": {
+                            "INPUTNAME": "PROPERTIES",
+                            "ALIGN": "LEFT"
+                          },
+                          "inputs": {
+                            "FIELDS": {
+                              "block": {
+                                "type": "field_label_serializable",
+                                "id": "lLtFYdd^S4*|8Ibcvl8m",
+                                "fields": {
+                                  "TEXT": "properties",
+                                  "FIELDNAME": "PROPERTIES_LABEL"
+                                }
+                              }
+                            },
+                            "TYPE": {
+                              "shadow": {
+                                "type": "type_null",
+                                "id": "frX3OwDo}nNfM;]J_3WK"
+                              }
+                            }
+                          },
+                          "next": {
+                            "block": {
+                              "type": "input_statement",
+                              "id": "@VDW.VfJCK,jJd`(u8bk",
+                              "fields": {
+                                "INPUTNAME": "COLORS",
+                                "ALIGN": "LEFT"
+                              },
+                              "inputs": {
+                                "FIELDS": {
+                                  "block": {
+                                    "type": "field_label_serializable",
+                                    "id": ",}d.cW60P:oP(f6Ps8?l",
+                                    "fields": {
+                                      "TEXT": "colors",
+                                      "FIELDNAME": "COLORS_LABEL"
+                                    }
+                                  }
+                                },
+                                "TYPE": {
+                                  "shadow": {
+                                    "type": "type_null",
+                                    "id": "ajC6*_bP`m2rG_0gvzcX"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "TOPTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "yfa}N6onu*yl1V3P#+dF"
+            }
+          },
+          "BOTTOMTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "HAtzSP9Y]cP0uuOn*.w."
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": ";*Vbh8^jb?XtPFwOMn6s",
+              "extraState": {
+                "colour": "#5ba58c"
+              },
+              "fields": {
+                "HUE": 160
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": "R@F#umgx47~{|4[69PXJ",
+        "x": 0,
+        "y": 2620,
+        "extraState": {
+          "connections": "BOTH"
+        },
+        "fields": {
+          "NAME": "lights_on_off",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "BOTH"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_dummy",
+              "id": "2]Z1?6L^nD}TshsUwbQ4",
+              "fields": {
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_label_serializable",
+                    "id": ";x_Rx9?mbCsKmvUu+W5a",
+                    "icons": {
+                      "comment": {
+                        "text": "between 0 and 1, where smaller means more transparent and higher more opaque",
+                        "pinned": false,
+                        "height": 80,
+                        "width": 160
+                      }
+                    },
+                    "fields": {
+                      "TEXT": "affected by light",
+                      "FIELDNAME": "LABEL"
+                    },
+                    "next": {
+                      "block": {
+                        "type": "field_checkbox",
+                        "id": "u/PE;]#RG|1H(+IIG*~S",
+                        "fields": {
+                          "CHECKED": false,
+                          "FIELDNAME": "VALUE"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "TOPTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "Q9PiGiSpw/BpJ%tUjdEq"
+            }
+          },
+          "BOTTOMTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "$r^B8rddtdg|K)jMIDuj"
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "]A,kJ}t=Z#LIE/?c}MRy",
+              "extraState": {
+                "colour": "#5ba58c"
+              },
+              "fields": {
+                "HUE": 160
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": "1CANkbd#3PjuWZUrA)[E",
+        "x": 0,
+        "y": 2949,
+        "extraState": {
+          "connections": "BOTH"
+        },
+        "fields": {
+          "NAME": "fade",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "BOTH"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_dummy",
+              "id": "_urxNoi-em]b{kg)H.T?",
+              "fields": {
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_label_serializable",
+                    "id": "[x*b!gU|s4}3@pzHgq#P",
+                    "fields": {
+                      "TEXT": "fade",
+                      "FIELDNAME": "LABEL"
+                    },
+                    "next": {
+                      "block": {
+                        "type": "field_checkbox",
+                        "id": ";2{~@.:CWLkylK;rb=jX",
+                        "fields": {
+                          "CHECKED": true,
+                          "FIELDNAME": "VALUE"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "TOPTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "1qe)OfdWw~!d?Iedxk#y"
+            }
+          },
+          "BOTTOMTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "1,k~z)#fy]q{hWFjw2(;"
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "@:+Zf-Ek=^-662Aen_0)",
+              "extraState": {
+                "colour": "#5ba58c"
+              },
+              "fields": {
+                "HUE": 160
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": "5qM8jqC7=nSW^gBDF0Fs",
+        "x": 0,
+        "y": 3278,
+        "extraState": {
+          "connections": "BOTH"
+        },
+        "fields": {
+          "NAME": "auto_resize",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "BOTH"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_dummy",
+              "id": "CYCRzs*H]iX4ox`,^}.-",
+              "fields": {
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_label_serializable",
+                    "id": "z%4@tRcmF4VCc_A^)+~s",
+                    "fields": {
+                      "TEXT": "auto resize",
+                      "FIELDNAME": "LABEL"
+                    },
+                    "next": {
+                      "block": {
+                        "type": "field_checkbox",
+                        "id": "Kr.I|N(ybu[C83L,OZIp",
+                        "fields": {
+                          "CHECKED": true,
+                          "FIELDNAME": "VALUE"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "TOPTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "Q/Pa#MOJKiz#Hn]G@P@("
+            }
+          },
+          "BOTTOMTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "1I*p|jvFbg:fa!u+!i/p"
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "{0a:1{Mm3zA.PmBz7}#]",
+              "extraState": {
+                "colour": "#9fa55b"
+              },
+              "fields": {
+                "HUE": 65
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": "7}X6r!WJvniQ-prk,iX-",
+        "x": 0,
+        "y": 3607,
+        "extraState": {
+          "connections": "BOTH"
+        },
+        "fields": {
+          "NAME": "opacity",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "BOTH"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_dummy",
+              "id": "G{`{3C+SX^64B+[K+M7@",
+              "fields": {
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_label_serializable",
+                    "id": "5c0`[g0AIHeFtfFX,Ym2",
+                    "icons": {
+                      "comment": {
+                        "text": "between 0 and 1, where smaller means more transparent and higher more opaque",
+                        "pinned": false,
+                        "height": 80,
+                        "width": 160
+                      }
+                    },
+                    "fields": {
+                      "TEXT": "opacity",
+                      "FIELDNAME": "LABEL"
+                    },
+                    "next": {
+                      "block": {
+                        "type": "field_number",
+                        "id": "Gh3Y?le}?Z-1v,J8sZ-R",
+                        "fields": {
+                          "VALUE": 0.1,
+                          "FIELDNAME": "OPACITY",
+                          "MIN": 0,
+                          "MAX": 1,
+                          "PRECISION": 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "TOPTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "}TY+{tTa@Ic,,bg;oH}|"
+            }
+          },
+          "BOTTOMTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "/[)Z?|F[,pZ[S4-md?]!"
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "[yhmX{/%QiY!0}yTYW_`",
+              "extraState": {
+                "colour": "#5ba58c"
+              },
+              "fields": {
+                "HUE": 160
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": "gp|o*Pw_%tSHOyKH*R2u",
+        "x": 0,
+        "y": 3962,
+        "extraState": {
+          "connections": "BOTH"
+        },
+        "fields": {
+          "NAME": "deform",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "BOTH"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_dummy",
+              "id": "LsR46mFR$2]n{W=JS*P[",
+              "fields": {
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_label_serializable",
+                    "id": "v/)|K]Rph9VWR*%${K:V",
+                    "fields": {
+                      "TEXT": "deform",
+                      "FIELDNAME": "LABEL"
+                    },
+                    "next": {
+                      "block": {
+                        "type": "field_label_serializable",
+                        "id": "DRtws!~O3sZ[D3W.YPWk",
+                        "fields": {
+                          "TEXT": "count",
+                          "FIELDNAME": "COUNT_LABEL"
+                        },
+                        "next": {
+                          "block": {
+                            "type": "field_number",
+                            "id": "a++@F@9+VB`6iby4,PSa",
+                            "fields": {
+                              "VALUE": 0.1,
+                              "FIELDNAME": "COUNT",
+                              "MIN": -100,
+                              "MAX": 100,
+                              "PRECISION": 0
+                            },
+                            "next": {
+                              "block": {
+                                "type": "field_label_serializable",
+                                "id": "g`EIgTxe/ESO]Vj:}SmM",
+                                "fields": {
+                                  "TEXT": "strenght",
+                                  "FIELDNAME": "STRENGHT_LABEL"
+                                },
+                                "next": {
+                                  "block": {
+                                    "type": "field_number",
+                                    "id": "zePL=H,dpEpvk%?qmK4g",
+                                    "fields": {
+                                      "VALUE": 1,
+                                      "FIELDNAME": "STRENGTH",
+                                      "MIN": -100,
+                                      "MAX": 100,
+                                      "PRECISION": 0
+                                    },
+                                    "next": {
+                                      "block": {
+                                        "type": "field_label_serializable",
+                                        "id": "9(xtMnOdns+Ol,k1[Toy",
+                                        "fields": {
+                                          "TEXT": "damping",
+                                          "FIELDNAME": "DAMPING_LABEL"
+                                        },
+                                        "next": {
+                                          "block": {
+                                            "type": "field_number",
+                                            "id": "#JI)aG~m$DZ1ia?MuraG",
+                                            "fields": {
+                                              "VALUE": 1,
+                                              "FIELDNAME": "DAMPING",
+                                              "MIN": -100,
+                                              "MAX": 100,
+                                              "PRECISION": 0
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "TOPTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "p,0SM|uQPEZxpU]s;L)F"
+            }
+          },
+          "BOTTOMTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": ",bdpmidzP/H,R#U}R3G$"
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "k}=i)kdA!_m$OJ6(.XLX",
+              "extraState": {
+                "colour": "#5ba58c"
+              },
+              "fields": {
+                "HUE": 160
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": "Shl.+h5Q_qnw}]TEsNmL",
+        "x": 0,
+        "y": 4499,
+        "extraState": {
+          "connections": "BOTH"
+        },
+        "fields": {
+          "NAME": "metalness",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "BOTH"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_dummy",
+              "id": "S7gJ$8JAR)/!-ja=W#MQ",
+              "fields": {
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_label_serializable",
+                    "id": "rsa@B4IAxKA^-RBp!@lO",
+                    "fields": {
+                      "TEXT": "metalness",
+                      "FIELDNAME": "LABEL"
+                    },
+                    "next": {
+                      "block": {
+                        "type": "field_number",
+                        "id": "vfjB=NHG{qQ^H=nbdWNE",
+                        "fields": {
+                          "VALUE": 0.1,
+                          "FIELDNAME": "METALNESS",
+                          "MIN": 0,
+                          "MAX": 1,
+                          "PRECISION": 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "TOPTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "UwX9s`XW%7I~-k{kDFv`"
+            }
+          },
+          "BOTTOMTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "G(Q%en=M0yuMia?@IH0~"
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "FQ)CmG;_b[{2s(h_@8wn",
+              "extraState": {
+                "colour": "#5ba58c"
+              },
+              "fields": {
+                "HUE": 160
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": "wM50mZin%x$%6j:NSvca",
+        "x": 0,
+        "y": 4854,
+        "extraState": {
+          "connections": "BOTH"
+        },
+        "fields": {
+          "NAME": "side",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "BOTH"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_dummy",
+              "id": "1ISr0:z6msYL%HmwA!qB",
+              "fields": {
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_label_serializable",
+                    "id": "xrM,9XwB7(4WeFaD[kqP",
+                    "fields": {
+                      "TEXT": "side",
+                      "FIELDNAME": "LABEL"
+                    },
+                    "next": {
+                      "block": {
+                        "type": "field_dropdown",
+                        "id": "o46}me[N8.QDN{XTh0e`",
+                        "extraState": {
+                          "options": "[\"text\",\"text\",\"text\"]"
+                        },
+                        "fields": {
+                          "FIELDNAME": "VALUE",
+                          "USER0": "front",
+                          "CPU0": "FRONT",
+                          "USER1": "back",
+                          "CPU1": "BACK",
+                          "USER2": "both",
+                          "CPU2": "BOTH"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "TOPTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "21Dnl9dCc-pkXJDgPFE+"
+            }
+          },
+          "BOTTOMTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "0HWyiiAPc36ZoEk*dwTr"
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "OhwQ*RzO:bsp!Hx(inS#",
+              "extraState": {
+                "colour": "#5ba58c"
+              },
+              "fields": {
+                "HUE": 160
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": "^mE;MyLQy}(z4$NNTBrF",
+        "x": 0,
+        "y": 5261,
+        "extraState": {
+          "connections": "BOTH"
+        },
+        "fields": {
+          "NAME": "orgiin",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "BOTH"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_dummy",
+              "id": "B-)t4k9@XtJI_m2,E_D~",
+              "fields": {
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_label_serializable",
+                    "id": "S2^.v{Z0H)@K0Qrqz}M#",
+                    "fields": {
+                      "TEXT": "origin",
+                      "FIELDNAME": "LABEL"
+                    },
+                    "next": {
+                      "block": {
+                        "type": "field_dropdown",
+                        "id": "T1Ll;HF5;|`;)Z#gGxd[",
+                        "extraState": {
+                          "options": "[\"text\",\"text\",\"text\",\"text\",\"text\",\"text\",\"text\",\"text\",\"text\"]"
+                        },
+                        "fields": {
+                          "FIELDNAME": "ORIGIN",
+                          "USER0": "x",
+                          "CPU0": "x",
+                          "USER1": "-x",
+                          "CPU1": "-x",
+                          "USER2": "+x",
+                          "CPU2": "+x",
+                          "USER3": "y",
+                          "CPU3": "y",
+                          "USER4": "-y",
+                          "CPU4": "--y",
+                          "USER5": "+y",
+                          "CPU5": "+y",
+                          "USER6": "z",
+                          "CPU6": "z",
+                          "USER7": "-z",
+                          "CPU7": "-z",
+                          "USER8": "+z",
+                          "CPU8": "+z"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "TOPTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "VTDbq`.};YiXZE)PMxeH"
+            }
+          },
+          "BOTTOMTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "6Q19AdsufQwASl#{z3Li"
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "qPRJMqgsBvTl.2a=wv(s",
+              "extraState": {
+                "colour": "#9fa55b"
+              },
+              "fields": {
+                "HUE": 65
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": "A@HK2yNBL4zY{2aov*EW",
+        "x": 0,
+        "y": 5824,
+        "extraState": {
+          "connections": "BOTH"
+        },
+        "fields": {
+          "NAME": "light_directional",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "BOTH"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_dummy",
+              "id": "Bkf#5^gny|#2ObyQ}/.k",
+              "fields": {
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_label_serializable",
+                    "id": "cn:43^OaZ)W`^4bP8`?~",
+                    "fields": {
+                      "TEXT": "Directional Light",
+                      "FIELDNAME": "LABEL"
+                    }
+                  }
+                }
+              },
+              "next": {
+                "block": {
+                  "type": "input_dummy",
+                  "id": "_TS`F:r0OyR%${f@[hxk",
+                  "fields": {
+                    "ALIGN": "LEFT"
+                  },
+                  "inputs": {
+                    "FIELDS": {
+                      "block": {
+                        "type": "field_label_serializable",
+                        "id": "U{R~oerqbD!5whyqK[(S",
+                        "fields": {
+                          "TEXT": "color",
+                          "FIELDNAME": "COLOR_LABEL"
+                        },
+                        "next": {
+                          "block": {
+                            "type": "field_colour",
+                            "id": "weGW}nJ:;e$Je-TJ-)Xj",
+                            "fields": {
+                              "COLOUR": "#ff0000",
+                              "FIELDNAME": "COLOR"
+                            },
+                            "next": {
+                              "block": {
+                                "type": "field_label_serializable",
+                                "id": "{o`duJEh!GdotVeg-DZ2",
+                                "fields": {
+                                  "TEXT": "strength",
+                                  "FIELDNAME": "STRENGTH_LABEL"
+                                },
+                                "next": {
+                                  "block": {
+                                    "type": "field_number",
+                                    "id": "o`/:y]PXB)8o7!|:*bft",
+                                    "fields": {
+                                      "VALUE": 0.33,
+                                      "FIELDNAME": "STRENGTH",
+                                      "MIN": 0,
+                                      "MAX": 1,
+                                      "PRECISION": 0
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "next": {
+                    "block": {
+                      "type": "input_dummy",
+                      "id": "[A3E(v)D6/^X`y}+l,R9",
+                      "fields": {
+                        "ALIGN": "LEFT"
+                      },
+                      "inputs": {
+                        "FIELDS": {
+                          "block": {
+                            "type": "field_label_serializable",
+                            "id": "s`Z3=+]GR+t#[^;EuxqV",
+                            "icons": {
+                              "comment": {
+                                "text": "Position x,y,z in scene coordinates.",
+                                "pinned": false,
+                                "height": 80,
+                                "width": 160
+                              }
+                            },
+                            "fields": {
+                              "TEXT": "direction",
+                              "FIELDNAME": "DIRECTION_LABEL"
+                            },
+                            "next": {
+                              "block": {
+                                "type": "field_number",
+                                "id": "3!-`c:_m=@d:UFs4*})u",
+                                "fields": {
+                                  "VALUE": -1,
+                                  "FIELDNAME": "X",
+                                  "MIN": -1,
+                                  "MAX": 1,
+                                  "PRECISION": 1
+                                },
+                                "next": {
+                                  "block": {
+                                    "type": "field_number",
+                                    "id": "v+iM0SduJaAM[zjGrA4L",
+                                    "fields": {
+                                      "VALUE": 0,
+                                      "FIELDNAME": "Y",
+                                      "MIN": -1,
+                                      "MAX": 1,
+                                      "PRECISION": 1
+                                    },
+                                    "next": {
+                                      "block": {
+                                        "type": "field_number",
+                                        "id": "R]PqXR~BKKrX9RRbS*QW",
+                                        "fields": {
+                                          "VALUE": -1,
+                                          "FIELDNAME": "Z",
+                                          "MIN": -1,
+                                          "MAX": 1,
+                                          "PRECISION": 1
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "TOOLTIP": {
+            "block": {
+              "type": "text",
+              "id": "cf[J,Ksx^{f?g;:zEy6u",
+              "fields": {
+                "TEXT": ""
+              }
+            }
+          },
+          "HELPURL": {
+            "block": {
+              "type": "text",
+              "id": "^qvzbn#!y;$+a}99q6}P",
+              "fields": {
+                "TEXT": "https://svox.glitch.me/#Lights"
+              }
+            }
+          },
+          "TOPTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "KYs|d3f9tKC0:oiU+o:v"
+            }
+          },
+          "BOTTOMTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "%QX9:XfqKd0Ntt?*([%+"
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "$=/,oJuljDeO@GQX5R$b",
+              "extraState": {
+                "colour": "#5ba55b"
+              },
+              "fields": {
+                "HUE": 120
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": "LkThlQ+gz1ry^^3GR#)9",
+        "x": 0,
+        "y": 6517,
+        "extraState": {
+          "connections": "BOTH"
+        },
+        "fields": {
+          "NAME": "colors",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "BOTH"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_statement",
+              "id": "?..Wu4z~u1Z`/pAON3?B",
+              "fields": {
+                "INPUTNAME": "COLORS",
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_label_serializable",
+                    "id": "gI?4=E#HFxi:vsq^`joZ",
+                    "fields": {
+                      "TEXT": "Color",
+                      "FIELDNAME": "ID_LABEL"
+                    }
+                  }
+                },
+                "TYPE": {
+                  "shadow": {
+                    "type": "type_null",
+                    "id": "aVe}q1`GaL*m{e};S^#r"
+                  }
+                }
+              }
+            }
+          },
+          "TOPTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "w%bi9lPalI4q2/^SUQ+x"
+            }
+          },
+          "BOTTOMTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "m87#th^cghHg`n4$A-rc"
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "P#8#VRhII*i*JW^;4sY^",
+              "extraState": {
+                "colour": "#9fa55b"
+              },
+              "fields": {
+                "HUE": 65
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": "De},K=IX9FMMYWmalYG`",
+        "x": 0,
+        "y": 6835,
+        "extraState": {
+          "connections": "LEFT"
+        },
+        "fields": {
+          "NAME": "voxel_7",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "LEFT"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_value",
+              "id": "TD+onzRlg4_qUh8YhjZq",
+              "fields": {
+                "INPUTNAME": "NAME",
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_dropdown_function",
+                    "id": "4!6Qz=DoyuIBvXZg.E6l",
+                    "fields": {
+                      "FIELDNAME": "COLUMN_1",
+                      "FIELD": "COLOR_ID",
+                      "WORKSPACE": "Concrete"
+                    },
+                    "next": {
+                      "block": {
+                        "type": "field_dropdown_function",
+                        "id": "OF5z?%36fpGBjFsfmS0m",
+                        "fields": {
+                          "FIELDNAME": "COLUMN_2",
+                          "FIELD": "COLOR_ID",
+                          "WORKSPACE": "Concrete"
+                        },
+                        "next": {
+                          "block": {
+                            "type": "field_dropdown_function",
+                            "id": ".JFY(/3v)liw[XNKu^sy",
+                            "fields": {
+                              "FIELDNAME": "COLUMN_3",
+                              "FIELD": "COLOR_ID",
+                              "WORKSPACE": "Concrete"
+                            },
+                            "next": {
+                              "block": {
+                                "type": "field_dropdown_function",
+                                "id": "S7Y*z[BGz2jGF]!5Vw91",
+                                "fields": {
+                                  "FIELDNAME": "COLUMN_4",
+                                  "FIELD": "COLOR_ID",
+                                  "WORKSPACE": "Concrete"
+                                },
+                                "next": {
+                                  "block": {
+                                    "type": "field_dropdown_function",
+                                    "id": "S@uqN}.11-)Yo7Y%(]w]",
+                                    "fields": {
+                                      "FIELDNAME": "COLUMN_5",
+                                      "FIELD": "COLOR_ID",
+                                      "WORKSPACE": "Concrete"
+                                    },
+                                    "next": {
+                                      "block": {
+                                        "type": "field_dropdown_function",
+                                        "id": "GeR.]08YCxB@ctr`}rPs",
+                                        "fields": {
+                                          "FIELDNAME": "COLUMN_6",
+                                          "FIELD": "COLOR_ID",
+                                          "WORKSPACE": "Concrete"
+                                        },
+                                        "next": {
+                                          "block": {
+                                            "type": "field_dropdown_function",
+                                            "id": "lP~n*-OQ6otqVow|]L$|",
+                                            "fields": {
+                                              "FIELDNAME": "COLUMN_7",
+                                              "FIELD": "COLOR_ID",
+                                              "WORKSPACE": "Concrete"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "TYPE": {
+                  "shadow": {
+                    "type": "type_null",
+                    "id": "6hp]+G6SxxG{$4:7~!8w"
+                  }
+                }
+              }
+            }
+          },
+          "OUTPUTTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "bU,*`B$mv`[j:3.#wahQ"
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "[2N1gq5cJ_.F0bu)5zke",
+              "extraState": {
+                "colour": "#995ba5"
+              },
+              "fields": {
+                "HUE": 290
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": "VxKLk0H(l4Y~SU0#rUN.",
+        "x": 0,
+        "y": 7283,
+        "extraState": {
+          "connections": "LEFT"
+        },
+        "fields": {
+          "NAME": "voxel_repeat",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "LEFT"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_value",
+              "id": "WUPzHF{9o4Iz!lg9]wTG",
+              "fields": {
+                "INPUTNAME": "NAME",
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_number",
+                    "id": "fNYLXFto~ro19g)SYG~+",
+                    "fields": {
+                      "VALUE": 1,
+                      "FIELDNAME": "REPEAT",
+                      "MIN": null,
+                      "MAX": null,
+                      "PRECISION": 1
+                    }
+                  }
+                },
+                "TYPE": {
+                  "shadow": {
+                    "type": "type_null",
+                    "id": "0g@n-}ZE-e-tjfoP1M}("
+                  }
+                }
+              }
+            }
+          },
+          "OUTPUTTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "~)9%Pa$j^9Z3hm6w8PVl"
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "(GE{bSdq$VYzDQX(X[}h",
+              "extraState": {
+                "colour": "#995ba5"
+              },
+              "fields": {
+                "HUE": 290
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": "y:Bx1F#ZRvY#@?of^9P3",
+        "x": 0,
+        "y": 7601,
+        "extraState": {
+          "connections": "LEFT"
+        },
+        "fields": {
+          "NAME": "voxel_text",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "LEFT"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_value",
+              "id": "z|(*Fr;#h9bkcq[$ap-8",
+              "fields": {
+                "INPUTNAME": "NAME",
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_input",
+                    "id": "pvIqU]WErPi(u*(q6,Y|",
+                    "fields": {
+                      "TEXT": "default",
+                      "FIELDNAME": "TEXT"
+                    }
+                  }
+                },
+                "TYPE": {
+                  "shadow": {
+                    "type": "type_null",
+                    "id": "nCBy]zc]7|hTCV*949Z{"
+                  }
+                }
+              }
+            }
+          },
+          "OUTPUTTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "aeXWNhV@JQtA:(nqnND_"
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "9p*=E|nIpk~!FwKLL?$j",
+              "extraState": {
+                "colour": "#995ba5"
+              },
+              "fields": {
+                "HUE": 290
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": "hYevjC~gY/|P$Y{+VW}^",
+        "x": 0,
+        "y": 7893,
+        "extraState": {
+          "connections": "BOTH"
+        },
+        "fields": {
+          "NAME": "voxel_start",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "BOTH"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_value",
+              "id": ",%{]*F_rUW$4Z7MHAOs0",
+              "fields": {
+                "INPUTNAME": "NAME",
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "TYPE": {
+                  "shadow": {
+                    "type": "type_null",
+                    "id": "OqgucHJQyH(!ZEzg|}V2"
+                  }
+                }
+              }
+            }
+          },
+          "TOPTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "5[W;!XYY=WxYY0z$6Y_6"
+            }
+          },
+          "BOTTOMTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "tkIUK:1rgmF/Hr:%P_XR"
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "tqhBe55Z3muwCgcbZt4R",
+              "extraState": {
+                "colour": "#995ba5"
+              },
+              "fields": {
+                "HUE": 290
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": "f+:oa`W4}MJPIEg,`zNc",
+        "x": 0,
+        "y": 8206,
+        "extraState": {
+          "connections": "BOTH"
+        },
+        "fields": {
+          "NAME": "voxels",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "BOTH"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_statement",
+              "id": "2PWs[^|rM[;@dr,$cqRU",
+              "fields": {
+                "INPUTNAME": "LAYERS",
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_label_serializable",
+                    "id": "~=|p8$COlepOxDEIPp~K",
+                    "fields": {
+                      "TEXT": "Voxels",
+                      "FIELDNAME": "VOXELS_LABEL"
+                    }
+                  }
+                },
+                "TYPE": {
+                  "shadow": {
+                    "type": "type_null",
+                    "id": "aa:%yX6fS-]O:U6*^tu*"
+                  }
+                }
+              }
+            }
+          },
+          "TOPTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "$wcf`.9#BQ`jLQ!*]2E_"
+            }
+          },
+          "BOTTOMTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "*Nf=vM$,NCQe/N(S8.u-"
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "(V0(d--m*Fw=OhP?}gwX",
+              "extraState": {
+                "colour": "#995ba5"
+              },
+              "fields": {
+                "HUE": 290
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": "P)O:2E1Em[]5XN@oK?Bj",
+        "x": 0,
+        "y": 8524,
+        "extraState": {
+          "connections": "BOTH"
+        },
+        "fields": {
+          "NAME": "light_ambient",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "BOTH"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_dummy",
+              "id": "mf{s22jNK(uXiW7kyV(^",
+              "fields": {
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_label_serializable",
+                    "id": "}u`yu`sJh:0(,PwLtguR",
+                    "fields": {
+                      "TEXT": "Ambient Light",
+                      "FIELDNAME": "LABEL"
+                    }
+                  }
+                }
+              },
+              "next": {
+                "block": {
+                  "type": "input_dummy",
+                  "id": "XZWT%a##wrAf]M=)GXEg",
+                  "fields": {
+                    "ALIGN": "LEFT"
+                  },
+                  "inputs": {
+                    "FIELDS": {
+                      "block": {
+                        "type": "field_label_serializable",
+                        "id": "@t;IHu-q=XA*D5u7],,y",
+                        "fields": {
+                          "TEXT": "color",
+                          "FIELDNAME": "COLOR_LABEL"
+                        },
+                        "next": {
+                          "block": {
+                            "type": "field_colour",
+                            "id": "F5-)yoM_olbSZ#_L`fgL",
+                            "fields": {
+                              "COLOUR": "#ffffff",
+                              "FIELDNAME": "COLOR"
+                            },
+                            "next": {
+                              "block": {
+                                "type": "field_label_serializable",
+                                "id": "s#qB)c7g1@#mzp!FbSzL",
+                                "fields": {
+                                  "TEXT": "strength",
+                                  "FIELDNAME": "STRENGTH_LABEL"
+                                },
+                                "next": {
+                                  "block": {
+                                    "type": "field_number",
+                                    "id": "@a4hE#k9WJQ48n8$JNuT",
+                                    "fields": {
+                                      "VALUE": 0.33,
+                                      "FIELDNAME": "STRENGTH",
+                                      "MIN": 0,
+                                      "MAX": 1,
+                                      "PRECISION": 0
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "TOOLTIP": {
+            "block": {
+              "type": "text",
+              "id": "S`C]J[{Eu0|{r6VZ@v[F",
+              "fields": {
+                "TEXT": ""
+              }
+            }
+          },
+          "HELPURL": {
+            "block": {
+              "type": "text",
+              "id": "0kdnA}o.SMW-A+b86m,(",
+              "fields": {
+                "TEXT": "https://svox.glitch.me/#Lights"
+              }
+            }
+          },
+          "TOPTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "sKd@JA%[*2Phw,_I{ndc"
+            }
+          },
+          "BOTTOMTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "5?CeVj=Y`ByVzO75oD0C"
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "w,,-^,$Fea|+6^i4nv~e",
+              "extraState": {
+                "colour": "#5ba55b"
+              },
+              "fields": {
+                "HUE": 120
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": "l[bLGkR:0DNT_A8c|}zY",
+        "x": 0,
+        "y": 8996,
+        "extraState": {
+          "connections": "BOTTOM"
+        },
+        "fields": {
+          "NAME": "model",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "BOTTOM"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_dummy",
+              "id": "UF}_#`@KibE+L+Ck@ee(",
+              "fields": {
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_label_serializable",
+                    "id": "/ZBHn;h%ouuiA^{L=dla",
+                    "fields": {
+                      "TEXT": "Model",
+                      "FIELDNAME": "MODEL_LABEL"
+                    },
+                    "next": {
+                      "block": {
+                        "type": "field_number",
+                        "id": "{?nw;SFC-KQzrnYj_lw{",
+                        "fields": {
+                          "VALUE": 7,
+                          "FIELDNAME": "X",
+                          "MIN": null,
+                          "MAX": null,
+                          "PRECISION": 1
+                        },
+                        "next": {
+                          "block": {
+                            "type": "field_number",
+                            "id": "z]!oFFfK8d|x$,[OOAD^",
+                            "fields": {
+                              "VALUE": 7,
+                              "FIELDNAME": "Y",
+                              "MIN": null,
+                              "MAX": null,
+                              "PRECISION": 1
+                            },
+                            "next": {
+                              "block": {
+                                "type": "field_number",
+                                "id": "]D5uI)vxL^p$$c-[Ap#c",
+                                "fields": {
+                                  "VALUE": 7,
+                                  "FIELDNAME": "Z",
+                                  "MIN": null,
+                                  "MAX": null,
+                                  "PRECISION": 1
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "next": {
+                "block": {
+                  "type": "input_statement",
+                  "id": "MCpRwx2YIgrJVzXBKLK,",
+                  "fields": {
+                    "INPUTNAME": "PROPERTIES",
+                    "ALIGN": "LEFT"
+                  },
+                  "inputs": {
+                    "TYPE": {
+                      "shadow": {
+                        "type": "type_null",
+                        "id": "L=LwECNA4=1=|s@6WJ],"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "BOTTOMTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "SAVH%;c*YvW1Q,O|/z8*"
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "G`RS^f~]K])G_GDl%+iC",
+              "extraState": {
+                "colour": "#9fa55b"
+              },
+              "fields": {
+                "HUE": 65
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": "#DJF$0JzB4RcfAEt=kZX",
+        "x": 0,
+        "y": 9504,
+        "extraState": {
+          "connections": "BOTH"
+        },
+        "fields": {
+          "NAME": "rotation",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "BOTH"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_dummy",
+              "id": "+ouAbuyjO$JY)CPVy;U,",
+              "fields": {
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_label_serializable",
+                    "id": "wkckKP^KM6GlCT4U=J?!",
+                    "fields": {
+                      "TEXT": "rotation",
+                      "FIELDNAME": "LABEL"
+                    },
+                    "next": {
+                      "block": {
+                        "type": "field_number",
+                        "id": "cF)q8ntr1)s%1iPJlAW9",
+                        "fields": {
+                          "VALUE": 0,
+                          "FIELDNAME": "X",
+                          "MIN": null,
+                          "MAX": null,
+                          "PRECISION": 0
+                        },
+                        "next": {
+                          "block": {
+                            "type": "field_number",
+                            "id": "HX!bJ0MRoRT4i/i-ya/u",
+                            "fields": {
+                              "VALUE": 180,
+                              "FIELDNAME": "Y",
+                              "MIN": null,
+                              "MAX": null,
+                              "PRECISION": 0
+                            },
+                            "next": {
+                              "block": {
+                                "type": "field_number",
+                                "id": "L@K6t(8Z~r@BDBBE%((?",
+                                "fields": {
+                                  "VALUE": 0,
+                                  "FIELDNAME": "Z",
+                                  "MIN": null,
+                                  "MAX": null,
+                                  "PRECISION": 0
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "TOPTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "C(U%K|zR$ypTL8}8{im`"
+            }
+          },
+          "BOTTOMTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "c][{z0iDhy/%^h}w~IMp"
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "3v6hMit7dpc#b.`]+t[2",
+              "extraState": {
+                "colour": "#9fa55b"
+              },
+              "fields": {
+                "HUE": 65
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": "w6N?iT9n]6)HzfdzDIGZ",
+        "x": 0,
+        "y": 9963,
+        "extraState": {
+          "connections": "BOTH"
+        },
+        "fields": {
+          "NAME": "scale",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "BOTH"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_dummy",
+              "id": "%Mk:#kFzEG.nW5Ze5U_{",
+              "fields": {
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_label_serializable",
+                    "id": "~:|H/_8c8tVJE2!DoFUp",
+                    "fields": {
+                      "TEXT": "scale",
+                      "FIELDNAME": "SCALE_LABEL"
+                    },
+                    "next": {
+                      "block": {
+                        "type": "field_number",
+                        "id": "RM/T]+p-7n)^zB-PeU4B",
+                        "fields": {
+                          "VALUE": 0.03,
+                          "FIELDNAME": "X",
+                          "MIN": null,
+                          "MAX": null,
+                          "PRECISION": 0
+                        },
+                        "next": {
+                          "block": {
+                            "type": "field_number",
+                            "id": "-tmEj}xNd3$OKg8AV^6,",
+                            "fields": {
+                              "VALUE": 0.03,
+                              "FIELDNAME": "Y",
+                              "MIN": null,
+                              "MAX": null,
+                              "PRECISION": 0
+                            },
+                            "next": {
+                              "block": {
+                                "type": "field_number",
+                                "id": "Lz1Rc/h]1|fp$z*nQg~J",
+                                "fields": {
+                                  "VALUE": 0.03,
+                                  "FIELDNAME": "Z",
+                                  "MIN": null,
+                                  "MAX": null,
+                                  "PRECISION": 0
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "TOPTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "s|/Xx}Q**4u5;TCJ9)nM"
+            }
+          },
+          "BOTTOMTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "Ka][2#]5g-2*H/7hajGn"
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "Lr1c.VhMXs;r,v{RVDvg",
+              "extraState": {
+                "colour": "#9fa55b"
+              },
+              "fields": {
+                "HUE": 65
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

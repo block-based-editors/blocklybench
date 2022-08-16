@@ -1,0 +1,83 @@
+{
+  "blocks": {
+    "languageVersion": 0,
+    "blocks": [
+      {
+        "type": "definitions",
+        "id": "qzkXq;q56V.A=cJ|I$HZ",
+        "x": 17,
+        "y": 45,
+        "extraState": {
+          "dropdowns": []
+        },
+        "fields": {
+          "DEFINITIONS_LABEL": "Definitions"
+        },
+        "inputs": {
+          "DEFINITIONS": {
+            "block": {
+              "type": "booleanDefinition",
+              "id": "+8~:om/KB#@[Iyo)}0O.",
+              "extraState": {
+                "dropdowns": [
+                  {
+                    "field": "CATEGORY",
+                    "options": [
+                      {
+                        "text": "Informative",
+                        "id": "Informative"
+                      },
+                      {
+                        "text": "Write",
+                        "id": "Write"
+                      },
+                      {
+                        "text": "Read",
+                        "id": "Read"
+                      },
+                      {
+                        "text": "ReadWrite",
+                        "id": "ReadWrite"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "fields": {
+                "DEFINITION": "Boolean",
+                "CATEGORY_LABEL": "Category",
+                "CATEGORY": "Informative",
+                "NAME_LABEL": "Name",
+                "NAME": "name",
+                "MULTISELECT_LABEL": "Multiselect",
+                "MULTISELECT": false,
+                "SEARCHABLE_LABEL": "Searchable",
+                "SEARCHABLE": false,
+                "DISPLAY_NAME_LABEL": "Display Name",
+                "DISPLAY_NAME": "name"
+              },
+              "next": {
+                "block": {
+                  "type": "groupDefinition",
+                  "id": "cUVgM#m}]ge@kr+A%Lwl",
+                  "extraState": {
+                    "dropdowns": []
+                  },
+                  "fields": {
+                    "DEFINITION": "Group",
+                    "NAME_LABEL": "Name",
+                    "NAME": "name",
+                    "DISPLAY_NAME_LABEL": "Display Name",
+                    "DISPLAY_NAME": "name",
+                    "DESCRIPTION_LABEL": "Description",
+                    "DESCRIPTION": "description"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

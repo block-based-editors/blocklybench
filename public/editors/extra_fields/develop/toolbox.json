@@ -1,0 +1,108 @@
+{
+  "blocks": {
+    "languageVersion": 0,
+    "blocks": [
+      {
+        "type": "toolbox_blocks",
+        "id": "WkTN^Y}_9$k0u9yun`4@",
+        "x": 62,
+        "y": 52,
+        "extraState": {
+          "dropdowns": []
+        },
+        "inputs": {
+          "LIST": {
+            "block": {
+              "type": "toolbox_block",
+              "id": "N?:%A#A;G;pVoAXpXZ?t",
+              "extraState": {
+                "dropdowns": [
+                  {
+                    "field": "TYPE",
+                    "options": [
+                      {
+                        "text": "booleanDefinition",
+                        "id": "aCIx|5.H8@ZahO7Xl_wU"
+                      },
+                      {
+                        "text": "definitions",
+                        "id": ".}uX;_xN~$[c=KQT]owh"
+                      },
+                      {
+                        "text": "groupDefinition",
+                        "id": "7g#HcEA,1e!Rjq?@M,3e"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "fields": {
+                "TYPE": ".}uX;_xN~$[c=KQT]owh"
+              },
+              "next": {
+                "block": {
+                  "type": "toolbox_block",
+                  "id": "r9/[8)5447Y8zZl.K})`",
+                  "extraState": {
+                    "dropdowns": [
+                      {
+                        "field": "TYPE",
+                        "options": [
+                          {
+                            "text": "booleanDefinition",
+                            "id": "aCIx|5.H8@ZahO7Xl_wU"
+                          },
+                          {
+                            "text": "definitions",
+                            "id": ".}uX;_xN~$[c=KQT]owh"
+                          },
+                          {
+                            "text": "groupDefinition",
+                            "id": "7g#HcEA,1e!Rjq?@M,3e"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "fields": {
+                    "TYPE": "aCIx|5.H8@ZahO7Xl_wU"
+                  },
+                  "next": {
+                    "block": {
+                      "type": "toolbox_block",
+                      "id": "%r;6`mNz`E*s=~1,ROM6",
+                      "extraState": {
+                        "dropdowns": [
+                          {
+                            "field": "TYPE",
+                            "options": [
+                              {
+                                "text": "booleanDefinition",
+                                "id": "aCIx|5.H8@ZahO7Xl_wU"
+                              },
+                              {
+                                "text": "definitions",
+                                "id": ".}uX;_xN~$[c=KQT]owh"
+                              },
+                              {
+                                "text": "groupDefinition",
+                                "id": "7g#HcEA,1e!Rjq?@M,3e"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "fields": {
+                        "TYPE": "7g#HcEA,1e!Rjq?@M,3e"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

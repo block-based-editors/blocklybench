@@ -1,0 +1,689 @@
+{
+  "blocks": {
+    "languageVersion": 0,
+    "blocks": [
+      {
+        "type": "model",
+        "id": "dkz:a/)-7aF(XtrNx-Ha",
+        "x": 92,
+        "y": 23,
+        "extraState": {
+          "dropdowns": []
+        },
+        "icons": {
+          "comment": {
+            "text": "First attempt of a nice model",
+            "pinned": false,
+            "height": 80,
+            "width": 160
+          }
+        },
+        "fields": {
+          "MODEL_LABEL": "Model",
+          "X": 5,
+          "Y": 7,
+          "Z": 3
+        },
+        "inputs": {
+          "PROPERTIES": {
+            "block": {
+              "type": "scale",
+              "id": "M!-~t/G#YY^OcEY|5$79",
+              "extraState": {
+                "dropdowns": []
+              },
+              "fields": {
+                "SCALE_LABEL": "scale",
+                "X": 0.15,
+                "Y": 0.19,
+                "Z": 0.15
+              },
+              "next": {
+                "block": {
+                  "type": "orgiin",
+                  "id": "(xkI_fXzT{L2h6CXKP{C",
+                  "extraState": {
+                    "dropdowns": [
+                      {
+                        "field": "ORIGIN",
+                        "options": [
+                          {
+                            "text": "x",
+                            "id": "x"
+                          },
+                          {
+                            "text": "-x",
+                            "id": "-x"
+                          },
+                          {
+                            "text": "+x",
+                            "id": "+x"
+                          },
+                          {
+                            "text": "y",
+                            "id": "y"
+                          },
+                          {
+                            "text": "-y",
+                            "id": "--y"
+                          },
+                          {
+                            "text": "+y",
+                            "id": "+y"
+                          },
+                          {
+                            "text": "z",
+                            "id": "z"
+                          },
+                          {
+                            "text": "-z",
+                            "id": "-z"
+                          },
+                          {
+                            "text": "+z",
+                            "id": "+z"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "fields": {
+                    "LABEL": "origin",
+                    "ORIGIN": "--y"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "next": {
+          "block": {
+            "type": "material",
+            "id": "ylUcO|If@$eEsp`G4+@n",
+            "extraState": {
+              "dropdowns": [
+                {
+                  "field": "LIGHTING",
+                  "options": [
+                    {
+                      "text": "flat",
+                      "id": "flat"
+                    },
+                    {
+                      "text": "smooth",
+                      "id": "smooth"
+                    },
+                    {
+                      "text": "both",
+                      "id": "both"
+                    }
+                  ]
+                }
+              ]
+            },
+            "fields": {
+              "MATERIAL_LABEL": "Material",
+              "LIGHTING_LABEL": "lighting",
+              "LIGHTING": "smooth",
+              "ROUGHNESS_LABEL": "roughness",
+              "ROUGHNESS": 1,
+              "PROPERTIES_LABEL": "properties",
+              "COLORS_LABEL": "colors"
+            },
+            "inputs": {
+              "PROPERTIES": {
+                "block": {
+                  "type": "metalness",
+                  "id": "t;_w1*$O#?o2[?w1c{%I",
+                  "extraState": {
+                    "dropdowns": []
+                  },
+                  "fields": {
+                    "LABEL": "metalness",
+                    "METALNESS": 0
+                  },
+                  "next": {
+                    "block": {
+                      "type": "opacity",
+                      "id": "d0$+n[1aMl~3D{|0gYS+",
+                      "extraState": {
+                        "dropdowns": []
+                      },
+                      "fields": {
+                        "LABEL": "opacity",
+                        "OPACITY": 1
+                      },
+                      "next": {
+                        "block": {
+                          "type": "deform",
+                          "id": ",:4~]dI]GD}dMLvmI,`e",
+                          "extraState": {
+                            "dropdowns": []
+                          },
+                          "fields": {
+                            "LABEL": "deform",
+                            "VALUE": 1
+                          },
+                          "next": {
+                            "block": {
+                              "type": "fade",
+                              "id": "Upnk3jN]uTpiy^:R/L#{",
+                              "extraState": {
+                                "dropdowns": []
+                              },
+                              "fields": {
+                                "LABEL": "fade",
+                                "VALUE": true
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "COLORS": {
+                "block": {
+                  "type": "color",
+                  "id": "*g.E2}7@F/0G+7yJrgUZ",
+                  "extraState": {
+                    "dropdowns": []
+                  },
+                  "fields": {
+                    "ID_LABEL": "Color",
+                    "COLOR_ID": "-",
+                    "COLOR": "#ffffff"
+                  },
+                  "next": {
+                    "block": {
+                      "type": "color",
+                      "id": "7Qa.NK!BKDI.BmL(u4UU",
+                      "extraState": {
+                        "dropdowns": []
+                      },
+                      "fields": {
+                        "ID_LABEL": "Color",
+                        "COLOR_ID": "A",
+                        "COLOR": "#ffcc66"
+                      },
+                      "next": {
+                        "block": {
+                          "type": "color",
+                          "id": "b7m3v=iK(62O/Qoa-gMY",
+                          "extraState": {
+                            "dropdowns": []
+                          },
+                          "fields": {
+                            "ID_LABEL": "Color",
+                            "COLOR_ID": "B",
+                            "COLOR": "#663333"
+                          },
+                          "next": {
+                            "block": {
+                              "type": "color",
+                              "id": "q1LK)uX~0}N$9aq!oM.w",
+                              "extraState": {
+                                "dropdowns": []
+                              },
+                              "fields": {
+                                "ID_LABEL": "Color",
+                                "COLOR_ID": "C",
+                                "COLOR": "#006600"
+                              },
+                              "next": {
+                                "block": {
+                                  "type": "color",
+                                  "id": "KzkDK?6itk{Wj8*|C!.Q",
+                                  "extraState": {
+                                    "dropdowns": []
+                                  },
+                                  "fields": {
+                                    "ID_LABEL": "Color",
+                                    "COLOR_ID": "D",
+                                    "COLOR": "#ffffff"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "next": {
+              "block": {
+                "type": "material",
+                "id": "B]HvzE+mZz_1YgN?T##X",
+                "extraState": {
+                  "dropdowns": [
+                    {
+                      "field": "LIGHTING",
+                      "options": [
+                        {
+                          "text": "flat",
+                          "id": "flat"
+                        },
+                        {
+                          "text": "smooth",
+                          "id": "smooth"
+                        },
+                        {
+                          "text": "both",
+                          "id": "both"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "fields": {
+                  "MATERIAL_LABEL": "Material",
+                  "LIGHTING_LABEL": "lighting",
+                  "LIGHTING": "smooth",
+                  "ROUGHNESS_LABEL": "roughness",
+                  "ROUGHNESS": 1,
+                  "PROPERTIES_LABEL": "properties",
+                  "COLORS_LABEL": "colors"
+                },
+                "inputs": {
+                  "PROPERTIES": {
+                    "block": {
+                      "type": "deform",
+                      "id": ":$.~hp^S,PO`CzS1^[pm",
+                      "extraState": {
+                        "dropdowns": []
+                      },
+                      "fields": {
+                        "LABEL": "deform",
+                        "VALUE": 2
+                      },
+                      "next": {
+                        "block": {
+                          "type": "fade",
+                          "id": "0xL9^,IGt2CkL?/!X;@I",
+                          "extraState": {
+                            "dropdowns": []
+                          },
+                          "fields": {
+                            "LABEL": "fade",
+                            "VALUE": true
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "COLORS": {
+                    "block": {
+                      "type": "color",
+                      "id": "-C^!5TwDco+Q$aDS.XN9",
+                      "extraState": {
+                        "dropdowns": []
+                      },
+                      "fields": {
+                        "ID_LABEL": "Color",
+                        "COLOR_ID": "E",
+                        "COLOR": "#996633"
+                      },
+                      "next": {
+                        "block": {
+                          "type": "color",
+                          "id": "AlxGYt#kCi{qb+kAoKoS",
+                          "extraState": {
+                            "dropdowns": []
+                          },
+                          "fields": {
+                            "ID_LABEL": "Color",
+                            "COLOR_ID": "F",
+                            "COLOR": "#663300"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "next": {
+                  "block": {
+                    "type": "voxels",
+                    "id": "Zyb8FP|LRAhqa+8mgOj|",
+                    "extraState": {
+                      "dropdowns": []
+                    },
+                    "fields": {
+                      "VOXELS_LABEL": "Voxels"
+                    },
+                    "inputs": {
+                      "LAYERS": {
+                        "block": {
+                          "type": "voxel_start",
+                          "id": ".*c_gAn;Z#$oHUlLNH`i",
+                          "extraState": {
+                            "dropdowns": []
+                          },
+                          "inputs": {
+                            "NAME": {
+                              "block": {
+                                "type": "voxel_text",
+                                "id": "J59^ON:iA|+Y_%M8MJvW",
+                                "extraState": {
+                                  "dropdowns": []
+                                },
+                                "fields": {
+                                  "TEXT": "AAAAA"
+                                },
+                                "inputs": {
+                                  "NAME": {
+                                    "block": {
+                                      "type": "voxel_text",
+                                      "id": "{^4x$w8E4h?`OK,bEK1E",
+                                      "extraState": {
+                                        "dropdowns": []
+                                      },
+                                      "fields": {
+                                        "TEXT": "-----"
+                                      },
+                                      "inputs": {
+                                        "NAME": {
+                                          "block": {
+                                            "type": "voxel_text",
+                                            "id": "]idH|k!-,ueyzHdTE@Fi",
+                                            "extraState": {
+                                              "dropdowns": []
+                                            },
+                                            "fields": {
+                                              "TEXT": "-----"
+                                            },
+                                            "inputs": {
+                                              "NAME": {
+                                                "block": {
+                                                  "type": "voxel_text",
+                                                  "id": "cuf%d0MIO0}oo8R9DY/H",
+                                                  "extraState": {
+                                                    "dropdowns": []
+                                                  },
+                                                  "fields": {
+                                                    "TEXT": "--C--"
+                                                  },
+                                                  "inputs": {
+                                                    "NAME": {
+                                                      "block": {
+                                                        "type": "voxel_text",
+                                                        "id": "MKp[+FH]4,2f^|9%]9FS",
+                                                        "extraState": {
+                                                          "dropdowns": []
+                                                        },
+                                                        "fields": {
+                                                          "TEXT": "-CCC-"
+                                                        },
+                                                        "inputs": {
+                                                          "NAME": {
+                                                            "block": {
+                                                              "type": "voxel_text",
+                                                              "id": "?MTwK3{ws=1SK]={B/K$",
+                                                              "extraState": {
+                                                                "dropdowns": []
+                                                              },
+                                                              "fields": {
+                                                                "TEXT": "--C--"
+                                                              },
+                                                              "inputs": {
+                                                                "NAME": {
+                                                                  "block": {
+                                                                    "type": "voxel_text",
+                                                                    "id": "^{$twP~]GuN}#:![b3sX",
+                                                                    "extraState": {
+                                                                      "dropdowns": []
+                                                                    },
+                                                                    "fields": {
+                                                                      "TEXT": "-----"
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "next": {
+                            "block": {
+                              "type": "voxel_start",
+                              "id": "0dK4EA`~ig1,(iLU_DG:",
+                              "extraState": {
+                                "dropdowns": []
+                              },
+                              "inputs": {
+                                "NAME": {
+                                  "block": {
+                                    "type": "voxel_text",
+                                    "id": "=C+1OSZ[arAkU[K-{,_c",
+                                    "extraState": {
+                                      "dropdowns": []
+                                    },
+                                    "fields": {
+                                      "TEXT": "AAAAA"
+                                    },
+                                    "inputs": {
+                                      "NAME": {
+                                        "block": {
+                                          "type": "voxel_text",
+                                          "id": "1N=l?jF]VdxcxA.Sm8Cb",
+                                          "extraState": {
+                                            "dropdowns": []
+                                          },
+                                          "fields": {
+                                            "TEXT": "--B--"
+                                          },
+                                          "inputs": {
+                                            "NAME": {
+                                              "block": {
+                                                "type": "voxel_text",
+                                                "id": "#)*nDB-rhsaU:@KHrW#1",
+                                                "extraState": {
+                                                  "dropdowns": []
+                                                },
+                                                "fields": {
+                                                  "TEXT": "--B--"
+                                                },
+                                                "inputs": {
+                                                  "NAME": {
+                                                    "block": {
+                                                      "type": "voxel_text",
+                                                      "id": "C]VnfAf`T;db);$gcW]D",
+                                                      "extraState": {
+                                                        "dropdowns": []
+                                                      },
+                                                      "fields": {
+                                                        "TEXT": "-CCC-"
+                                                      },
+                                                      "inputs": {
+                                                        "NAME": {
+                                                          "block": {
+                                                            "type": "voxel_text",
+                                                            "id": "p/4[7QXq+m2QYF)LFD_r",
+                                                            "extraState": {
+                                                              "dropdowns": []
+                                                            },
+                                                            "fields": {
+                                                              "TEXT": "-CCC-"
+                                                            },
+                                                            "inputs": {
+                                                              "NAME": {
+                                                                "block": {
+                                                                  "type": "voxel_text",
+                                                                  "id": "OS88AS`*-#mFe_r]Ew#}",
+                                                                  "extraState": {
+                                                                    "dropdowns": []
+                                                                  },
+                                                                  "fields": {
+                                                                    "TEXT": "-CCC-"
+                                                                  },
+                                                                  "inputs": {
+                                                                    "NAME": {
+                                                                      "block": {
+                                                                        "type": "voxel_text",
+                                                                        "id": "dxUqCzuOKix(fyC4Hck{",
+                                                                        "extraState": {
+                                                                          "dropdowns": []
+                                                                        },
+                                                                        "fields": {
+                                                                          "TEXT": "-----"
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "next": {
+                                "block": {
+                                  "type": "voxel_start",
+                                  "id": "P(#F]||JMzgRE0rgmAGV",
+                                  "extraState": {
+                                    "dropdowns": []
+                                  },
+                                  "inputs": {
+                                    "NAME": {
+                                      "block": {
+                                        "type": "voxel_text",
+                                        "id": "~ZXhQaqke`6vSIkSr[7=",
+                                        "extraState": {
+                                          "dropdowns": []
+                                        },
+                                        "fields": {
+                                          "TEXT": "AAAAA"
+                                        },
+                                        "inputs": {
+                                          "NAME": {
+                                            "block": {
+                                              "type": "voxel_text",
+                                              "id": "fU7x*8!DmkY$`d3(%:J!",
+                                              "extraState": {
+                                                "dropdowns": []
+                                              },
+                                              "fields": {
+                                                "TEXT": "-----"
+                                              },
+                                              "inputs": {
+                                                "NAME": {
+                                                  "block": {
+                                                    "type": "voxel_text",
+                                                    "id": "KTSsv@Z2@k)X7,vcapj_",
+                                                    "extraState": {
+                                                      "dropdowns": []
+                                                    },
+                                                    "fields": {
+                                                      "TEXT": "-----"
+                                                    },
+                                                    "inputs": {
+                                                      "NAME": {
+                                                        "block": {
+                                                          "type": "voxel_text",
+                                                          "id": "F=LEsfRSd*m_9EB/ODX$",
+                                                          "extraState": {
+                                                            "dropdowns": []
+                                                          },
+                                                          "fields": {
+                                                            "TEXT": "--C--"
+                                                          },
+                                                          "inputs": {
+                                                            "NAME": {
+                                                              "block": {
+                                                                "type": "voxel_text",
+                                                                "id": "1m[y[QJp*m}}Mxs!qx?7",
+                                                                "extraState": {
+                                                                  "dropdowns": []
+                                                                },
+                                                                "fields": {
+                                                                  "TEXT": "-CCC-"
+                                                                },
+                                                                "inputs": {
+                                                                  "NAME": {
+                                                                    "block": {
+                                                                      "type": "voxel_text",
+                                                                      "id": "/Tv+@l?2~=}:L8qnm%O,",
+                                                                      "extraState": {
+                                                                        "dropdowns": []
+                                                                      },
+                                                                      "fields": {
+                                                                        "TEXT": "--C--"
+                                                                      },
+                                                                      "inputs": {
+                                                                        "NAME": {
+                                                                          "block": {
+                                                                            "type": "voxel_text",
+                                                                            "id": "i?,rp*UfmxFrc3/J|3w+",
+                                                                            "extraState": {
+                                                                              "dropdowns": []
+                                                                            },
+                                                                            "fields": {
+                                                                              "TEXT": "-----"
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

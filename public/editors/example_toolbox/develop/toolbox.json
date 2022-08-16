@@ -1,0 +1,155 @@
+{
+  "blocks": {
+    "languageVersion": 0,
+    "blocks": [
+      {
+        "type": "toolbox_blocks",
+        "id": "Q{}@xjI1KHaO6/$_fiD7",
+        "x": 31,
+        "y": 353,
+        "extraState": {
+          "dropdowns": []
+        },
+        "inputs": {
+          "LIST": {
+            "block": {
+              "type": "toolbox_block",
+              "id": "-*B0|~LY(Vg2znj-ZB%}",
+              "extraState": {
+                "dropdowns": [
+                  {
+                    "field": "TYPE",
+                    "options": [
+                      {
+                        "text": "controls_for",
+                        "id": "lV(hR=,CJr2I)#XUtvV|"
+                      },
+                      {
+                        "text": "value",
+                        "id": "@XTEUJcf]IARmR1o8M;E"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "fields": {
+                "TYPE": "@XTEUJcf]IARmR1o8M;E"
+              },
+              "next": {
+                "block": {
+                  "type": "toolbox_block_json",
+                  "id": "F?r`p4vJGm[FewW7Vn%l",
+                  "extraState": {
+                    "dropdowns": [
+                      {
+                        "field": "TYPE",
+                        "options": [
+                          {
+                            "text": "controls_for",
+                            "id": "lV(hR=,CJr2I)#XUtvV|"
+                          },
+                          {
+                            "text": "value",
+                            "id": "@XTEUJcf]IARmR1o8M;E"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "fields": {
+                    "TYPE": "lV(hR=,CJr2I)#XUtvV|"
+                  },
+                  "inputs": {
+                    "INPUTS": {
+                      "block": {
+                        "type": "toolbox_block_json_input",
+                        "id": "G-tr6MwmSS#6n#4VU.*B",
+                        "extraState": {
+                          "dropdowns": [
+                            {
+                              "field": "NAME",
+                              "options": [
+                                {
+                                  "text": "BY",
+                                  "id": "B@.+bKchqe/QzaptwJQS"
+                                },
+                                {
+                                  "text": "FROM",
+                                  "id": "Glm9CYBWLV8xwpyNOEMh"
+                                },
+                                {
+                                  "text": "TO",
+                                  "id": "o37~`5[/#:XG{wr;]uw5"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        "fields": {
+                          "NAME": "Glm9CYBWLV8xwpyNOEMh"
+                        },
+                        "inputs": {
+                          "BLOCKS": {
+                            "block": {
+                              "type": "toolbox_block_json",
+                              "id": "%QjgsRE[~cL$eVb2N_}n",
+                              "extraState": {
+                                "dropdowns": [
+                                  {
+                                    "field": "TYPE",
+                                    "options": [
+                                      {
+                                        "text": "controls_for",
+                                        "id": "lV(hR=,CJr2I)#XUtvV|"
+                                      },
+                                      {
+                                        "text": "value",
+                                        "id": "@XTEUJcf]IARmR1o8M;E"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              "fields": {
+                                "TYPE": "@XTEUJcf]IARmR1o8M;E"
+                              },
+                              "inputs": {
+                                "FIELDS": {
+                                  "block": {
+                                    "type": "toolbox_block_json_field",
+                                    "id": "jO4|r1P8#iO7I#%tmA(}",
+                                    "extraState": {
+                                      "dropdowns": [
+                                        {
+                                          "field": "NAME",
+                                          "options": [
+                                            {
+                                              "text": "NAME",
+                                              "id": "^n6riPrw1mhRoYld4hfO"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    "fields": {
+                                      "NAME": "^n6riPrw1mhRoYld4hfO",
+                                      "VALUE": "3"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,1353 @@
+{
+  "blocks": {
+    "languageVersion": 0,
+    "blocks": [
+      {
+        "type": "generate_code",
+        "id": "h}|:O@$_Z5.?JEz^nV2Z",
+        "x": 7,
+        "y": -58,
+        "extraState": {
+          "dropdowns": [
+            {
+              "field": "TYPE",
+              "options": [
+                {
+                  "text": "basic_dict",
+                  "id": "iu:$Vy7-dhl}xstPqoMQ"
+                },
+                {
+                  "text": "basic_key_dict",
+                  "id": "C$Y8k*DqvbR+yVPAlo.%"
+                },
+                {
+                  "text": "basic_key_list",
+                  "id": "$eM%jHb-hh{-,kXt@O1v"
+                },
+                {
+                  "text": "basic_key_value",
+                  "id": "Qc5=TlK_KK9ckuKA;gN:"
+                },
+                {
+                  "text": "basic_list",
+                  "id": "|Hdbn~~`G]T$HEtlKif7"
+                },
+                {
+                  "text": "basic_list_value",
+                  "id": ",myNku6J-AYAi?W|X+8O"
+                },
+                {
+                  "text": "code_block_type",
+                  "id": "h_E[#,]|hxo}apo}jPTj"
+                },
+                {
+                  "text": "model_cpd_name_value",
+                  "id": "Yq$kt|UHqq3nw%,ga^+b"
+                }
+              ]
+            }
+          ]
+        },
+        "fields": {
+          "LANGUAGE": "JSON",
+          "TYPE": "C$Y8k*DqvbR+yVPAlo.%"
+        },
+        "inputs": {
+          "CODE": {
+            "block": {
+              "type": "generate_token",
+              "id": ".G2k#:eqNL/x{H4$:e)s",
+              "extraState": {
+                "dropdowns": []
+              },
+              "fields": {
+                "TOKEN": "\""
+              },
+              "next": {
+                "block": {
+                  "type": "generate_field_value2",
+                  "id": "joGAKW^BNWO*W]8%brMZ",
+                  "extraState": {
+                    "dropdowns": [
+                      {
+                        "field": "FIELDS",
+                        "options": [
+                          {
+                            "text": "KEY",
+                            "id": ";h`@LxSBtu[93:j=EKD*"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "fields": {
+                    "FIELDS": ";h`@LxSBtu[93:j=EKD*"
+                  },
+                  "next": {
+                    "block": {
+                      "type": "generate_token",
+                      "id": "ycs/92D{4F$K(F6hXj@~",
+                      "extraState": {
+                        "dropdowns": []
+                      },
+                      "fields": {
+                        "TOKEN": "\" : \""
+                      },
+                      "next": {
+                        "block": {
+                          "type": "generate_block_type",
+                          "id": "2=dbUMzZZJ9EXSZaH[v=",
+                          "extraState": {
+                            "dropdowns": []
+                          },
+                          "next": {
+                            "block": {
+                              "type": "generate_token",
+                              "id": "qGUNdjWR#Qn_ORBbxJUq",
+                              "extraState": {
+                                "dropdowns": []
+                              },
+                              "fields": {
+                                "TOKEN": "\", \\n"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "generate_code",
+        "id": "{^Z|Q8jb#LO|BbI0WZl`",
+        "x": 0,
+        "y": 199,
+        "extraState": {
+          "dropdowns": [
+            {
+              "field": "TYPE",
+              "options": [
+                {
+                  "text": "basic_dict",
+                  "id": "iu:$Vy7-dhl}xstPqoMQ"
+                },
+                {
+                  "text": "basic_key_dict",
+                  "id": "C$Y8k*DqvbR+yVPAlo.%"
+                },
+                {
+                  "text": "basic_key_list",
+                  "id": "$eM%jHb-hh{-,kXt@O1v"
+                },
+                {
+                  "text": "basic_key_value",
+                  "id": "Qc5=TlK_KK9ckuKA;gN:"
+                },
+                {
+                  "text": "basic_list",
+                  "id": "|Hdbn~~`G]T$HEtlKif7"
+                },
+                {
+                  "text": "basic_list_value",
+                  "id": ",myNku6J-AYAi?W|X+8O"
+                },
+                {
+                  "text": "code_block_type",
+                  "id": "h_E[#,]|hxo}apo}jPTj"
+                },
+                {
+                  "text": "model_cpd_name_value",
+                  "id": "Yq$kt|UHqq3nw%,ga^+b"
+                }
+              ]
+            }
+          ]
+        },
+        "fields": {
+          "LANGUAGE": "JSON",
+          "TYPE": "$eM%jHb-hh{-,kXt@O1v"
+        },
+        "inputs": {
+          "CODE": {
+            "block": {
+              "type": "generate_token",
+              "id": "]qfTw?uvMWMGnlqK[mgC",
+              "extraState": {
+                "dropdowns": []
+              },
+              "fields": {
+                "TOKEN": "\""
+              },
+              "next": {
+                "block": {
+                  "type": "generate_field_value2",
+                  "id": "2C2%t~5hJR,IOEdTn%.#",
+                  "extraState": {
+                    "dropdowns": [
+                      {
+                        "field": "FIELDS",
+                        "options": [
+                          {
+                            "text": "KEY",
+                            "id": "hb~z!4Z6x,%o6AOIjWRB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "fields": {
+                    "FIELDS": "hb~z!4Z6x,%o6AOIjWRB"
+                  },
+                  "next": {
+                    "block": {
+                      "type": "generate_token",
+                      "id": "rTGnLUpFK9A8},|/rB|0",
+                      "extraState": {
+                        "dropdowns": []
+                      },
+                      "fields": {
+                        "TOKEN": "\" : \""
+                      },
+                      "next": {
+                        "block": {
+                          "type": "generate_block_type",
+                          "id": "GzbH*7[Z_Z3CM!+39PU:",
+                          "extraState": {
+                            "dropdowns": []
+                          },
+                          "next": {
+                            "block": {
+                              "type": "generate_token",
+                              "id": "V`F%}~,PucdA[9R7]9#K",
+                              "extraState": {
+                                "dropdowns": []
+                              },
+                              "fields": {
+                                "TOKEN": ",\" # key_value with KEY = \""
+                              },
+                              "next": {
+                                "block": {
+                                  "type": "generate_field_value2",
+                                  "id": "I5LxXQ:oE#muBZT|7ew}",
+                                  "extraState": {
+                                    "dropdowns": [
+                                      {
+                                        "field": "FIELDS",
+                                        "options": [
+                                          {
+                                            "text": "KEY",
+                                            "id": "hb~z!4Z6x,%o6AOIjWRB"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  "fields": {
+                                    "FIELDS": "hb~z!4Z6x,%o6AOIjWRB"
+                                  },
+                                  "next": {
+                                    "block": {
+                                      "type": "generate_token",
+                                      "id": "O)?5h{i|L+D|U:#2z}4`",
+                                      "extraState": {
+                                        "dropdowns": []
+                                      },
+                                      "fields": {
+                                        "TOKEN": "\" should create block with type: "
+                                      },
+                                      "next": {
+                                        "block": {
+                                          "type": "generate_block_type",
+                                          "id": "QZjNJIQsqb8@wbL,!K;~",
+                                          "extraState": {
+                                            "dropdowns": []
+                                          },
+                                          "next": {
+                                            "block": {
+                                              "type": "generate_token",
+                                              "id": "2YtSh4bc(M!j)*+5ZWU[",
+                                              "extraState": {
+                                                "dropdowns": []
+                                              },
+                                              "fields": {
+                                                "TOKEN": "\\n"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "generate_code",
+        "id": "y+SS[0x;(ZpObRO?oxT2",
+        "x": 0,
+        "y": 506,
+        "extraState": {
+          "dropdowns": [
+            {
+              "field": "TYPE",
+              "options": [
+                {
+                  "text": "basic_dict",
+                  "id": "iu:$Vy7-dhl}xstPqoMQ"
+                },
+                {
+                  "text": "basic_key_dict",
+                  "id": "C$Y8k*DqvbR+yVPAlo.%"
+                },
+                {
+                  "text": "basic_key_list",
+                  "id": "$eM%jHb-hh{-,kXt@O1v"
+                },
+                {
+                  "text": "basic_key_value",
+                  "id": "Qc5=TlK_KK9ckuKA;gN:"
+                },
+                {
+                  "text": "basic_list",
+                  "id": "|Hdbn~~`G]T$HEtlKif7"
+                },
+                {
+                  "text": "basic_list_value",
+                  "id": ",myNku6J-AYAi?W|X+8O"
+                },
+                {
+                  "text": "code_block_type",
+                  "id": "h_E[#,]|hxo}apo}jPTj"
+                },
+                {
+                  "text": "model_cpd_name_value",
+                  "id": "Yq$kt|UHqq3nw%,ga^+b"
+                }
+              ]
+            }
+          ]
+        },
+        "fields": {
+          "LANGUAGE": "JSON",
+          "TYPE": "iu:$Vy7-dhl}xstPqoMQ"
+        },
+        "inputs": {
+          "CODE": {
+            "block": {
+              "type": "generate_statements2",
+              "id": "Zt[eY08v2z-X@N*hOIh+",
+              "extraState": {
+                "dropdowns": [
+                  {
+                    "field": "STATEMENTS",
+                    "options": [
+                      {
+                        "text": "LIST",
+                        "id": "+FJoGo46L1Eo$6)IK_}O"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "fields": {
+                "STATEMENTS": "+FJoGo46L1Eo$6)IK_}O"
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "generate_code",
+        "id": "2F%N=NZg~AWl7i[B|}_+",
+        "x": 0,
+        "y": 597,
+        "extraState": {
+          "dropdowns": [
+            {
+              "field": "TYPE",
+              "options": [
+                {
+                  "text": "basic_dict",
+                  "id": "iu:$Vy7-dhl}xstPqoMQ"
+                },
+                {
+                  "text": "basic_key_dict",
+                  "id": "C$Y8k*DqvbR+yVPAlo.%"
+                },
+                {
+                  "text": "basic_key_list",
+                  "id": "$eM%jHb-hh{-,kXt@O1v"
+                },
+                {
+                  "text": "basic_key_value",
+                  "id": "Qc5=TlK_KK9ckuKA;gN:"
+                },
+                {
+                  "text": "basic_list",
+                  "id": "|Hdbn~~`G]T$HEtlKif7"
+                },
+                {
+                  "text": "basic_list_value",
+                  "id": ",myNku6J-AYAi?W|X+8O"
+                },
+                {
+                  "text": "code_block_type",
+                  "id": "h_E[#,]|hxo}apo}jPTj"
+                },
+                {
+                  "text": "model_cpd_name_value",
+                  "id": "Yq$kt|UHqq3nw%,ga^+b"
+                }
+              ]
+            }
+          ]
+        },
+        "fields": {
+          "LANGUAGE": "YAML",
+          "TYPE": "iu:$Vy7-dhl}xstPqoMQ"
+        },
+        "inputs": {
+          "CODE": {
+            "block": {
+              "type": "generate_statements2",
+              "id": "/vx|FM?glYW~UxwJpl?7",
+              "extraState": {
+                "dropdowns": [
+                  {
+                    "field": "STATEMENTS",
+                    "options": [
+                      {
+                        "text": "LIST",
+                        "id": "+FJoGo46L1Eo$6)IK_}O"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "fields": {
+                "STATEMENTS": "+FJoGo46L1Eo$6)IK_}O"
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "generate_code",
+        "id": "uD%bs}t9*/BY]1JF%oo{",
+        "x": 0,
+        "y": 688,
+        "extraState": {
+          "dropdowns": [
+            {
+              "field": "TYPE",
+              "options": [
+                {
+                  "text": "basic_dict",
+                  "id": "iu:$Vy7-dhl}xstPqoMQ"
+                },
+                {
+                  "text": "basic_key_dict",
+                  "id": "C$Y8k*DqvbR+yVPAlo.%"
+                },
+                {
+                  "text": "basic_key_list",
+                  "id": "$eM%jHb-hh{-,kXt@O1v"
+                },
+                {
+                  "text": "basic_key_value",
+                  "id": "Qc5=TlK_KK9ckuKA;gN:"
+                },
+                {
+                  "text": "basic_list",
+                  "id": "|Hdbn~~`G]T$HEtlKif7"
+                },
+                {
+                  "text": "basic_list_value",
+                  "id": ",myNku6J-AYAi?W|X+8O"
+                },
+                {
+                  "text": "code_block_type",
+                  "id": "h_E[#,]|hxo}apo}jPTj"
+                },
+                {
+                  "text": "model_cpd_name_value",
+                  "id": "Yq$kt|UHqq3nw%,ga^+b"
+                }
+              ]
+            }
+          ]
+        },
+        "fields": {
+          "LANGUAGE": "JSON",
+          "TYPE": "Qc5=TlK_KK9ckuKA;gN:"
+        },
+        "inputs": {
+          "CODE": {
+            "block": {
+              "type": "generate_token",
+              "id": ";nra4OqZ|.mg0(X7,o4h",
+              "extraState": {
+                "dropdowns": []
+              },
+              "fields": {
+                "TOKEN": "\""
+              },
+              "next": {
+                "block": {
+                  "type": "generate_field_value2",
+                  "id": "9)v^}+1}dW}^i^@{kfo-",
+                  "extraState": {
+                    "dropdowns": [
+                      {
+                        "field": "FIELDS",
+                        "options": [
+                          {
+                            "text": "KEY",
+                            "id": "tk~0VxSH1`FU^U#YV4+P"
+                          },
+                          {
+                            "text": "VALUE",
+                            "id": "jYD`3~/knZJeg]?9,](q"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "fields": {
+                    "FIELDS": "tk~0VxSH1`FU^U#YV4+P"
+                  },
+                  "next": {
+                    "block": {
+                      "type": "generate_token",
+                      "id": "d`MX$ymy(XUS5!*020$n",
+                      "extraState": {
+                        "dropdowns": []
+                      },
+                      "fields": {
+                        "TOKEN": "\" : \""
+                      },
+                      "next": {
+                        "block": {
+                          "type": "generate_block_type",
+                          "id": "]r@i/zr$Did6ti+T.|37",
+                          "extraState": {
+                            "dropdowns": []
+                          },
+                          "next": {
+                            "block": {
+                              "type": "generate_token",
+                              "id": "Ql{kgpqd}UrTVtm^]cKQ",
+                              "extraState": {
+                                "dropdowns": []
+                              },
+                              "fields": {
+                                "TOKEN": "\", "
+                              },
+                              "next": {
+                                "block": {
+                                  "type": "generate_token",
+                                  "id": "5!w*D0O3RL{[F5N9W1Fr",
+                                  "extraState": {
+                                    "dropdowns": []
+                                  },
+                                  "fields": {
+                                    "TOKEN": "\\n"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "generate_code",
+        "id": "%M0mN@$(TcpeD:gZ]{V_",
+        "x": 0,
+        "y": 914,
+        "extraState": {
+          "dropdowns": [
+            {
+              "field": "TYPE",
+              "options": [
+                {
+                  "text": "basic_dict",
+                  "id": "iu:$Vy7-dhl}xstPqoMQ"
+                },
+                {
+                  "text": "basic_key_dict",
+                  "id": "C$Y8k*DqvbR+yVPAlo.%"
+                },
+                {
+                  "text": "basic_key_list",
+                  "id": "$eM%jHb-hh{-,kXt@O1v"
+                },
+                {
+                  "text": "basic_key_value",
+                  "id": "Qc5=TlK_KK9ckuKA;gN:"
+                },
+                {
+                  "text": "basic_list",
+                  "id": "|Hdbn~~`G]T$HEtlKif7"
+                },
+                {
+                  "text": "basic_list_value",
+                  "id": ",myNku6J-AYAi?W|X+8O"
+                },
+                {
+                  "text": "code_block_type",
+                  "id": "h_E[#,]|hxo}apo}jPTj"
+                },
+                {
+                  "text": "model_cpd_name_value",
+                  "id": "Yq$kt|UHqq3nw%,ga^+b"
+                }
+              ]
+            }
+          ]
+        },
+        "fields": {
+          "LANGUAGE": "YAML",
+          "TYPE": "Qc5=TlK_KK9ckuKA;gN:"
+        },
+        "inputs": {
+          "CODE": {
+            "block": {
+              "type": "generate_field_value2",
+              "id": "*[Kyd`dovn4p4W@oZXK(",
+              "extraState": {
+                "dropdowns": [
+                  {
+                    "field": "FIELDS",
+                    "options": [
+                      {
+                        "text": "KEY",
+                        "id": "tk~0VxSH1`FU^U#YV4+P"
+                      },
+                      {
+                        "text": "VALUE",
+                        "id": "jYD`3~/knZJeg]?9,](q"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "fields": {
+                "FIELDS": "tk~0VxSH1`FU^U#YV4+P"
+              },
+              "next": {
+                "block": {
+                  "type": "generate_token",
+                  "id": "yzE5IFylduJRgK]bJs{J",
+                  "extraState": {
+                    "dropdowns": []
+                  },
+                  "fields": {
+                    "TOKEN": " : "
+                  },
+                  "next": {
+                    "block": {
+                      "type": "generate_field_value2",
+                      "id": ":3Pf!jamnSa3VCKzG}(8",
+                      "extraState": {
+                        "dropdowns": [
+                          {
+                            "field": "FIELDS",
+                            "options": [
+                              {
+                                "text": "KEY",
+                                "id": "tk~0VxSH1`FU^U#YV4+P"
+                              },
+                              {
+                                "text": "VALUE",
+                                "id": "jYD`3~/knZJeg]?9,](q"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "fields": {
+                        "FIELDS": "jYD`3~/knZJeg]?9,](q"
+                      },
+                      "next": {
+                        "block": {
+                          "type": "generate_token",
+                          "id": "a4/Tc(Ns45dGlj2pYb)=",
+                          "extraState": {
+                            "dropdowns": []
+                          },
+                          "fields": {
+                            "TOKEN": "\\n"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "generate_code",
+        "id": "al:d}E=PPq7rlEX`Fs#+",
+        "x": 0,
+        "y": 1086,
+        "extraState": {
+          "dropdowns": [
+            {
+              "field": "TYPE",
+              "options": [
+                {
+                  "text": "basic_dict",
+                  "id": "iu:$Vy7-dhl}xstPqoMQ"
+                },
+                {
+                  "text": "basic_key_dict",
+                  "id": "C$Y8k*DqvbR+yVPAlo.%"
+                },
+                {
+                  "text": "basic_key_list",
+                  "id": "$eM%jHb-hh{-,kXt@O1v"
+                },
+                {
+                  "text": "basic_key_value",
+                  "id": "Qc5=TlK_KK9ckuKA;gN:"
+                },
+                {
+                  "text": "basic_list",
+                  "id": "|Hdbn~~`G]T$HEtlKif7"
+                },
+                {
+                  "text": "basic_list_value",
+                  "id": ",myNku6J-AYAi?W|X+8O"
+                },
+                {
+                  "text": "code_block_type",
+                  "id": "h_E[#,]|hxo}apo}jPTj"
+                },
+                {
+                  "text": "model_cpd_name_value",
+                  "id": "Yq$kt|UHqq3nw%,ga^+b"
+                }
+              ]
+            }
+          ]
+        },
+        "fields": {
+          "LANGUAGE": "YAML",
+          "TYPE": "C$Y8k*DqvbR+yVPAlo.%"
+        },
+        "inputs": {
+          "CODE": {
+            "block": {
+              "type": "generate_field_value2",
+              "id": "v:0:_T,OJe2/VQtw!^Fd",
+              "extraState": {
+                "dropdowns": [
+                  {
+                    "field": "FIELDS",
+                    "options": [
+                      {
+                        "text": "KEY",
+                        "id": ";h`@LxSBtu[93:j=EKD*"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "fields": {
+                "FIELDS": ";h`@LxSBtu[93:j=EKD*"
+              },
+              "next": {
+                "block": {
+                  "type": "generate_token",
+                  "id": "RLlx^y*D$p6]ph:-7M:{",
+                  "extraState": {
+                    "dropdowns": []
+                  },
+                  "fields": {
+                    "TOKEN": ":\\n"
+                  },
+                  "next": {
+                    "block": {
+                      "type": "generate_statements2",
+                      "id": "UXrk#V5-ZTXCBsY;FMVS",
+                      "extraState": {
+                        "dropdowns": [
+                          {
+                            "field": "STATEMENTS",
+                            "options": [
+                              {
+                                "text": "LIST",
+                                "id": "55gy5F0aeE$*?bW{/+:m"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "fields": {
+                        "STATEMENTS": "55gy5F0aeE$*?bW{/+:m"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "generate_code",
+        "id": "AtEkq+VD*(8(c~,m/HFK",
+        "x": 0,
+        "y": 1231,
+        "extraState": {
+          "dropdowns": [
+            {
+              "field": "TYPE",
+              "options": [
+                {
+                  "text": "basic_dict",
+                  "id": "iu:$Vy7-dhl}xstPqoMQ"
+                },
+                {
+                  "text": "basic_key_dict",
+                  "id": "C$Y8k*DqvbR+yVPAlo.%"
+                },
+                {
+                  "text": "basic_key_list",
+                  "id": "$eM%jHb-hh{-,kXt@O1v"
+                },
+                {
+                  "text": "basic_key_value",
+                  "id": "Qc5=TlK_KK9ckuKA;gN:"
+                },
+                {
+                  "text": "basic_list",
+                  "id": "|Hdbn~~`G]T$HEtlKif7"
+                },
+                {
+                  "text": "basic_list_value",
+                  "id": ",myNku6J-AYAi?W|X+8O"
+                },
+                {
+                  "text": "code_block_type",
+                  "id": "h_E[#,]|hxo}apo}jPTj"
+                },
+                {
+                  "text": "model_cpd_name_value",
+                  "id": "Yq$kt|UHqq3nw%,ga^+b"
+                }
+              ]
+            }
+          ]
+        },
+        "fields": {
+          "LANGUAGE": "YAML",
+          "TYPE": "$eM%jHb-hh{-,kXt@O1v"
+        },
+        "inputs": {
+          "CODE": {
+            "block": {
+              "type": "generate_field_value2",
+              "id": "vJebI3Xo5qwU1_7}hdX[",
+              "extraState": {
+                "dropdowns": [
+                  {
+                    "field": "FIELDS",
+                    "options": [
+                      {
+                        "text": "KEY",
+                        "id": "hb~z!4Z6x,%o6AOIjWRB"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "fields": {
+                "FIELDS": "hb~z!4Z6x,%o6AOIjWRB"
+              },
+              "next": {
+                "block": {
+                  "type": "generate_token",
+                  "id": "`9%s%9E[Yo5tAO40Hn[o",
+                  "extraState": {
+                    "dropdowns": []
+                  },
+                  "fields": {
+                    "TOKEN": ":\\n"
+                  },
+                  "next": {
+                    "block": {
+                      "type": "generate_statements2",
+                      "id": "MtiAL2Xob-qk;tdOT#AX",
+                      "extraState": {
+                        "dropdowns": [
+                          {
+                            "field": "STATEMENTS",
+                            "options": [
+                              {
+                                "text": "LIST",
+                                "id": "gsB*yIiM_,[J].kgrmRN"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "fields": {
+                        "STATEMENTS": "gsB*yIiM_,[J].kgrmRN"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "generate_code",
+        "id": "H/%Qfh;-zTA=p{O[?S!1",
+        "x": 0,
+        "y": 1376,
+        "extraState": {
+          "dropdowns": [
+            {
+              "field": "TYPE",
+              "options": [
+                {
+                  "text": "basic_dict",
+                  "id": "iu:$Vy7-dhl}xstPqoMQ"
+                },
+                {
+                  "text": "basic_key_dict",
+                  "id": "C$Y8k*DqvbR+yVPAlo.%"
+                },
+                {
+                  "text": "basic_key_list",
+                  "id": "$eM%jHb-hh{-,kXt@O1v"
+                },
+                {
+                  "text": "basic_key_value",
+                  "id": "Qc5=TlK_KK9ckuKA;gN:"
+                },
+                {
+                  "text": "basic_list",
+                  "id": "|Hdbn~~`G]T$HEtlKif7"
+                },
+                {
+                  "text": "basic_list_value",
+                  "id": ",myNku6J-AYAi?W|X+8O"
+                },
+                {
+                  "text": "code_block_type",
+                  "id": "h_E[#,]|hxo}apo}jPTj"
+                },
+                {
+                  "text": "model_cpd_name_value",
+                  "id": "Yq$kt|UHqq3nw%,ga^+b"
+                }
+              ]
+            }
+          ]
+        },
+        "fields": {
+          "LANGUAGE": "JSON",
+          "TYPE": "|Hdbn~~`G]T$HEtlKif7"
+        },
+        "inputs": {
+          "CODE": {
+            "block": {
+              "type": "generate_statements2",
+              "id": "YK|g$VU9K@y#fHH[*Ibq",
+              "extraState": {
+                "dropdowns": [
+                  {
+                    "field": "STATEMENTS",
+                    "options": [
+                      {
+                        "text": "LIST",
+                        "id": ")(fT_4jzPntp,wUr7+5L"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "fields": {
+                "STATEMENTS": ")(fT_4jzPntp,wUr7+5L"
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "generate_code",
+        "id": "J:332ZZi0b.9/zl^[o7t",
+        "x": 0,
+        "y": 1467,
+        "extraState": {
+          "dropdowns": [
+            {
+              "field": "TYPE",
+              "options": [
+                {
+                  "text": "basic_dict",
+                  "id": "iu:$Vy7-dhl}xstPqoMQ"
+                },
+                {
+                  "text": "basic_key_dict",
+                  "id": "C$Y8k*DqvbR+yVPAlo.%"
+                },
+                {
+                  "text": "basic_key_list",
+                  "id": "$eM%jHb-hh{-,kXt@O1v"
+                },
+                {
+                  "text": "basic_key_value",
+                  "id": "Qc5=TlK_KK9ckuKA;gN:"
+                },
+                {
+                  "text": "basic_list",
+                  "id": "|Hdbn~~`G]T$HEtlKif7"
+                },
+                {
+                  "text": "basic_list_value",
+                  "id": ",myNku6J-AYAi?W|X+8O"
+                },
+                {
+                  "text": "code_block_type",
+                  "id": "h_E[#,]|hxo}apo}jPTj"
+                },
+                {
+                  "text": "model_cpd_name_value",
+                  "id": "Yq$kt|UHqq3nw%,ga^+b"
+                }
+              ]
+            }
+          ]
+        },
+        "fields": {
+          "LANGUAGE": "YAML",
+          "TYPE": "|Hdbn~~`G]T$HEtlKif7"
+        },
+        "inputs": {
+          "CODE": {
+            "block": {
+              "type": "generate_statements2",
+              "id": "LNjzuVWN]hf.RxA/l5Kk",
+              "extraState": {
+                "dropdowns": [
+                  {
+                    "field": "STATEMENTS",
+                    "options": [
+                      {
+                        "text": "LIST",
+                        "id": ")(fT_4jzPntp,wUr7+5L"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "fields": {
+                "STATEMENTS": ")(fT_4jzPntp,wUr7+5L"
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "generate_code",
+        "id": "KfgWuR7uwXw/J7,r44q5",
+        "x": 0,
+        "y": 1558,
+        "extraState": {
+          "dropdowns": [
+            {
+              "field": "TYPE",
+              "options": [
+                {
+                  "text": "basic_dict",
+                  "id": "iu:$Vy7-dhl}xstPqoMQ"
+                },
+                {
+                  "text": "basic_key_dict",
+                  "id": "C$Y8k*DqvbR+yVPAlo.%"
+                },
+                {
+                  "text": "basic_key_list",
+                  "id": "$eM%jHb-hh{-,kXt@O1v"
+                },
+                {
+                  "text": "basic_key_value",
+                  "id": "Qc5=TlK_KK9ckuKA;gN:"
+                },
+                {
+                  "text": "basic_list",
+                  "id": "|Hdbn~~`G]T$HEtlKif7"
+                },
+                {
+                  "text": "basic_list_value",
+                  "id": ",myNku6J-AYAi?W|X+8O"
+                },
+                {
+                  "text": "code_block_type",
+                  "id": "h_E[#,]|hxo}apo}jPTj"
+                },
+                {
+                  "text": "model_cpd_name_value",
+                  "id": "Yq$kt|UHqq3nw%,ga^+b"
+                }
+              ]
+            }
+          ]
+        },
+        "fields": {
+          "LANGUAGE": "YAML",
+          "TYPE": ",myNku6J-AYAi?W|X+8O"
+        },
+        "inputs": {
+          "CODE": {
+            "block": {
+              "type": "generate_token",
+              "id": "fXdLY3m7XJQ0Aj*~#2{k",
+              "extraState": {
+                "dropdowns": []
+              },
+              "fields": {
+                "TOKEN": "- "
+              },
+              "next": {
+                "block": {
+                  "type": "generate_field_value2",
+                  "id": "uLDWBM|Mk7%bdIy1lq*b",
+                  "extraState": {
+                    "dropdowns": [
+                      {
+                        "field": "FIELDS",
+                        "options": [
+                          {
+                            "text": "VALUE",
+                            "id": "zl?A~ejU_+H*4PQCk|SK"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "fields": {
+                    "FIELDS": "zl?A~ejU_+H*4PQCk|SK"
+                  },
+                  "next": {
+                    "block": {
+                      "type": "generate_token",
+                      "id": "!W_{4[#)[t*fQDq?Z/7N",
+                      "extraState": {
+                        "dropdowns": []
+                      },
+                      "fields": {
+                        "TOKEN": "\\n"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "generate_code",
+        "id": "zQ}fGW#E@ag8nJ?FWuhN",
+        "x": 0,
+        "y": 1703,
+        "extraState": {
+          "dropdowns": [
+            {
+              "field": "TYPE",
+              "options": [
+                {
+                  "text": "basic_dict",
+                  "id": "iu:$Vy7-dhl}xstPqoMQ"
+                },
+                {
+                  "text": "basic_key_dict",
+                  "id": "C$Y8k*DqvbR+yVPAlo.%"
+                },
+                {
+                  "text": "basic_key_list",
+                  "id": "$eM%jHb-hh{-,kXt@O1v"
+                },
+                {
+                  "text": "basic_key_value",
+                  "id": "Qc5=TlK_KK9ckuKA;gN:"
+                },
+                {
+                  "text": "basic_list",
+                  "id": "|Hdbn~~`G]T$HEtlKif7"
+                },
+                {
+                  "text": "basic_list_value",
+                  "id": ",myNku6J-AYAi?W|X+8O"
+                },
+                {
+                  "text": "code_block_type",
+                  "id": "h_E[#,]|hxo}apo}jPTj"
+                },
+                {
+                  "text": "model_cpd_name_value",
+                  "id": "Yq$kt|UHqq3nw%,ga^+b"
+                }
+              ]
+            }
+          ]
+        },
+        "fields": {
+          "LANGUAGE": "JavaScript",
+          "TYPE": ",myNku6J-AYAi?W|X+8O"
+        },
+        "inputs": {
+          "CODE": {
+            "block": {
+              "type": "generate_token",
+              "id": "VFMVEv-eQ{G8;#_(AlEY",
+              "extraState": {
+                "dropdowns": []
+              },
+              "fields": {
+                "TOKEN": "- "
+              },
+              "next": {
+                "block": {
+                  "type": "generate_field_value2",
+                  "id": "gCF(9;P5b^_M=ZfC7~pE",
+                  "extraState": {
+                    "dropdowns": [
+                      {
+                        "field": "FIELDS",
+                        "options": [
+                          {
+                            "text": "VALUE",
+                            "id": "zl?A~ejU_+H*4PQCk|SK"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "fields": {
+                    "FIELDS": "zl?A~ejU_+H*4PQCk|SK"
+                  },
+                  "next": {
+                    "block": {
+                      "type": "generate_token",
+                      "id": "uz}qU6Z]qTxKT[e{rd%!",
+                      "extraState": {
+                        "dropdowns": []
+                      },
+                      "fields": {
+                        "TOKEN": "\\n"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "generate_code",
+        "id": "ZUU(Wzf~mB7+Q_OhS]n2",
+        "x": 0,
+        "y": 1848,
+        "extraState": {
+          "dropdowns": [
+            {
+              "field": "TYPE",
+              "options": [
+                {
+                  "text": "basic_dict",
+                  "id": "iu:$Vy7-dhl}xstPqoMQ"
+                },
+                {
+                  "text": "basic_key_dict",
+                  "id": "C$Y8k*DqvbR+yVPAlo.%"
+                },
+                {
+                  "text": "basic_key_list",
+                  "id": "$eM%jHb-hh{-,kXt@O1v"
+                },
+                {
+                  "text": "basic_key_value",
+                  "id": "Qc5=TlK_KK9ckuKA;gN:"
+                },
+                {
+                  "text": "basic_list",
+                  "id": "|Hdbn~~`G]T$HEtlKif7"
+                },
+                {
+                  "text": "basic_list_value",
+                  "id": ",myNku6J-AYAi?W|X+8O"
+                },
+                {
+                  "text": "code_block_type",
+                  "id": "h_E[#,]|hxo}apo}jPTj"
+                },
+                {
+                  "text": "model_cpd_name_value",
+                  "id": "Yq$kt|UHqq3nw%,ga^+b"
+                }
+              ]
+            }
+          ]
+        },
+        "fields": {
+          "LANGUAGE": "JSON",
+          "TYPE": "h_E[#,]|hxo}apo}jPTj"
+        },
+        "inputs": {
+          "CODE": {
+            "block": {
+              "type": "generate_javascript",
+              "id": "^)o)i0/Z21P|}*v,?Z].",
+              "extraState": {
+                "dropdowns": []
+              },
+              "fields": {
+                "JAVASCRIPT": "code += block.getSurroundParent().type"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "editor": {
+    "editor": "factory/Code",
+    "version": 1,
+    "url": "https://cidt.asml.com/editors/latest/factory/?editor=basic&load=1"
+  }
+}

@@ -1,0 +1,9 @@
+#factory_code_content        { width: calc(43vw); height: 300px; left: calc(41vw); top:calc(84vh - 260px); padding: 0em; position: absolute !important; font-size: 14px !important;}
+#concrete_json_content       { width: calc(43vw); height: 300px; left: calc(43vw); top:calc(86vh - 260px); padding: 0em; position: absolute !important; font-size: 14px !important;}
+#code_generation_content     { width: calc(43vw); height: 300px; left: calc(45vw); top:calc(88vh - 260px); padding: 0em; position: absolute !important; font-size: 14px !important;}
+#toolbox_javascript_content  { width: calc(43vw); height: 300px; left: calc(47vw); top:calc(90vh - 260px); padding: 0em; position: absolute !important; font-size: 14px !important;}
+#concrete_generation_content { width: calc(43vw); height: 300px; left: calc(49vw); top:calc(92vh - 260px); padding: 0em; position: absolute !important; font-size: 14px !important;}
+.update_code { width: 100%; height:200px; padding:0px; background:white; border: 0px solid #8E8E8E;}
+
+.textarea_content { width: 100%; height: calc(100% - 40px); white-space:nowrap; padding:0px; background:white; border: 0px solid #8E8E8E; resize: none; overflow: scroll; position:absolute
+

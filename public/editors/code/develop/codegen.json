@@ -1,0 +1,364 @@
+{
+  "blocks": {
+    "languageVersion": 0,
+    "blocks": [
+      {
+        "type": "generate_code",
+        "id": "2l3%H2KMtPM1Bgvn%00#",
+        "x": 20,
+        "y": 118,
+        "extraState": {
+          "dropdowns": [
+            {
+              "field": "TYPE",
+              "options": [
+                {
+                  "text": "generate_block_type",
+                  "id": "#4OvA*:`]xIm~vMT4Mlh"
+                },
+                {
+                  "text": "generate_code",
+                  "id": "V9H!^_3{~CrGy7ja+eIl"
+                },
+                {
+                  "text": "generate_comment",
+                  "id": "fvzU7gcaY2]~)82V3NN/"
+                },
+                {
+                  "text": "generate_field_text",
+                  "id": "poEkYGzs;l*7uGT=IM[:"
+                },
+                {
+                  "text": "generate_field_value2",
+                  "id": ")18([W*:S#Cb@T*,XXXt"
+                },
+                {
+                  "text": "generate_javascript",
+                  "id": "5GZ:!?w+,5Px!84;1yYa"
+                },
+                {
+                  "text": "generate_list_index",
+                  "id": "]U,PmB3PNod~=2j?[]!{"
+                },
+                {
+                  "text": "generate_list_length",
+                  "id": "w8^cC4IqtV55j!wCe+8H"
+                },
+                {
+                  "text": "generate_statements2",
+                  "id": "8Bh0n@]:|(Fu(pc5/A/I"
+                },
+                {
+                  "text": "generate_token",
+                  "id": "#r-+LmT!38fi;}SKXqC5"
+                },
+                {
+                  "text": "generate_values2",
+                  "id": ":{0nD0iSF#7NmO}nXOr!"
+                }
+              ]
+            }
+          ]
+        },
+        "fields": {
+          "LANGUAGE": "Code",
+          "TYPE": "fvzU7gcaY2]~)82V3NN/"
+        },
+        "inputs": {
+          "CODE": {
+            "block": {
+              "type": "generate_token",
+              "id": "@xc~z4U_2y:Ob;*rN^?w",
+              "extraState": {
+                "dropdowns": []
+              },
+              "fields": {
+                "TOKEN": "if (block.getCommentText()) { code += block.getCommentText()    }      "
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "generate_code",
+        "id": "P9TP!!r_dW)sT/B~b-O,",
+        "x": 32,
+        "y": 221,
+        "extraState": {
+          "dropdowns": [
+            {
+              "field": "TYPE",
+              "options": [
+                {
+                  "text": "generate_block_type",
+                  "id": "#4OvA*:`]xIm~vMT4Mlh"
+                },
+                {
+                  "text": "generate_code",
+                  "id": "V9H!^_3{~CrGy7ja+eIl"
+                },
+                {
+                  "text": "generate_comment",
+                  "id": "fvzU7gcaY2]~)82V3NN/"
+                },
+                {
+                  "text": "generate_field_text",
+                  "id": "poEkYGzs;l*7uGT=IM[:"
+                },
+                {
+                  "text": "generate_field_value2",
+                  "id": ")18([W*:S#Cb@T*,XXXt"
+                },
+                {
+                  "text": "generate_javascript",
+                  "id": "5GZ:!?w+,5Px!84;1yYa"
+                },
+                {
+                  "text": "generate_list_index",
+                  "id": "]U,PmB3PNod~=2j?[]!{"
+                },
+                {
+                  "text": "generate_list_length",
+                  "id": "w8^cC4IqtV55j!wCe+8H"
+                },
+                {
+                  "text": "generate_statements2",
+                  "id": "8Bh0n@]:|(Fu(pc5/A/I"
+                },
+                {
+                  "text": "generate_token",
+                  "id": "#r-+LmT!38fi;}SKXqC5"
+                },
+                {
+                  "text": "generate_values2",
+                  "id": ":{0nD0iSF#7NmO}nXOr!"
+                }
+              ]
+            }
+          ]
+        },
+        "fields": {
+          "LANGUAGE": "Code",
+          "TYPE": "]U,PmB3PNod~=2j?[]!{"
+        },
+        "inputs": {
+          "CODE": {
+            "block": {
+              "type": "generate_token",
+              "id": "=`A:jrsw9k+su6@Ig12Q",
+              "extraState": {
+                "dropdowns": []
+              },
+              "fields": {
+                "TOKEN": "code += block.getSurroundParent().getDescendants().indexOf(block)-1;     "
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "generate_code",
+        "id": "Gyk$VEryg,b^MgW3Z[m1",
+        "x": 75,
+        "y": 303,
+        "extraState": {
+          "dropdowns": [
+            {
+              "field": "TYPE",
+              "options": [
+                {
+                  "text": "generate_block_type",
+                  "id": "#4OvA*:`]xIm~vMT4Mlh"
+                },
+                {
+                  "text": "generate_code",
+                  "id": "V9H!^_3{~CrGy7ja+eIl"
+                },
+                {
+                  "text": "generate_comment",
+                  "id": "fvzU7gcaY2]~)82V3NN/"
+                },
+                {
+                  "text": "generate_field_text",
+                  "id": "poEkYGzs;l*7uGT=IM[:"
+                },
+                {
+                  "text": "generate_field_value2",
+                  "id": ")18([W*:S#Cb@T*,XXXt"
+                },
+                {
+                  "text": "generate_javascript",
+                  "id": "5GZ:!?w+,5Px!84;1yYa"
+                },
+                {
+                  "text": "generate_list_index",
+                  "id": "]U,PmB3PNod~=2j?[]!{"
+                },
+                {
+                  "text": "generate_list_length",
+                  "id": "w8^cC4IqtV55j!wCe+8H"
+                },
+                {
+                  "text": "generate_statements2",
+                  "id": "8Bh0n@]:|(Fu(pc5/A/I"
+                },
+                {
+                  "text": "generate_token",
+                  "id": "#r-+LmT!38fi;}SKXqC5"
+                },
+                {
+                  "text": "generate_values2",
+                  "id": ":{0nD0iSF#7NmO}nXOr!"
+                }
+              ]
+            }
+          ]
+        },
+        "fields": {
+          "LANGUAGE": "Code",
+          "TYPE": "w8^cC4IqtV55j!wCe+8H"
+        },
+        "inputs": {
+          "CODE": {
+            "block": {
+              "type": "generate_token",
+              "id": "arA@g,?Mi7i=r7cm+DAP",
+              "extraState": {
+                "dropdowns": []
+              },
+              "fields": {
+                "TOKEN": "var target = block.getInputTargetBlock(\""
+              },
+              "next": {
+                "block": {
+                  "type": "generate_field_value2",
+                  "id": "TI~rz#p|=(|,A.~GMwD+",
+                  "extraState": {
+                    "dropdowns": [
+                      {
+                        "field": "FIELDS",
+                        "options": [
+                          {
+                            "text": "FIELDS",
+                            "id": "Xj10cRN@NBRn)GU-GaF$"
+                          },
+                          {
+                            "text": "FIELDS",
+                            "id": "vk|~2[V8C7ez!wWtBhdt"
+                          },
+                          {
+                            "text": "JAVASCRIPT",
+                            "id": "X4?o%WT/Yp|VFADhYix4"
+                          },
+                          {
+                            "text": "LANGUAGE",
+                            "id": "Aw_3D^G2[PFBYKv%4U-{"
+                          },
+                          {
+                            "text": "STATEMENTS",
+                            "id": "`GAft(}~!ob_KUTmcHS|"
+                          },
+                          {
+                            "text": "STATEMENTS",
+                            "id": "kXJu)VQLTj1GF#U0XO#:"
+                          },
+                          {
+                            "text": "TOKEN",
+                            "id": ".iLI_zwq^49Oq)4|s`Qp"
+                          },
+                          {
+                            "text": "TYPE",
+                            "id": "}.S6Np{AH2P3Jvom4E,N"
+                          },
+                          {
+                            "text": "VALUE",
+                            "id": "x/ub%Xxs[t(hL3$sIC$!"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "fields": {
+                    "FIELDS": "`GAft(}~!ob_KUTmcHS|"
+                  },
+                  "next": {
+                    "block": {
+                      "type": "generate_token",
+                      "id": "TZms:X(^(|Z;Xxhd]85j",
+                      "extraState": {
+                        "dropdowns": []
+                      },
+                      "fields": {
+                        "TOKEN": "\");\\n"
+                      },
+                      "next": {
+                        "block": {
+                          "type": "generate_token",
+                          "id": "PP9BI%|i0bjB!H[(S8T-",
+                          "extraState": {
+                            "dropdowns": []
+                          },
+                          "fields": {
+                            "TOKEN": "if (target) {\\n "
+                          },
+                          "next": {
+                            "block": {
+                              "type": "generate_token",
+                              "id": "vM0#kjF(_DV`U!#FT([y",
+                              "extraState": {
+                                "dropdowns": []
+                              },
+                              "fields": {
+                                "TOKEN": "  code += target.getDescendants().length\\n"
+                              },
+                              "next": {
+                                "block": {
+                                  "type": "generate_token",
+                                  "id": "]vU[gxgBq.E]BvjM5O``",
+                                  "extraState": {
+                                    "dropdowns": []
+                                  },
+                                  "fields": {
+                                    "TOKEN": "} else {\\n "
+                                  },
+                                  "next": {
+                                    "block": {
+                                      "type": "generate_token",
+                                      "id": "K0QuT{xtE|+IKAp98XM/",
+                                      "extraState": {
+                                        "dropdowns": []
+                                      },
+                                      "fields": {
+                                        "TOKEN": "  code += \"0\"\\n"
+                                      },
+                                      "next": {
+                                        "block": {
+                                          "type": "generate_token",
+                                          "id": "?/5?In8K}Lv~^lYXX-nL",
+                                          "extraState": {
+                                            "dropdowns": []
+                                          },
+                                          "fields": {
+                                            "TOKEN": "}\\n"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

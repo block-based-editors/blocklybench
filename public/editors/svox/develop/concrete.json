@@ -1,0 +1,167 @@
+{
+  "blocks": {
+    "languageVersion": 0,
+    "blocks": [
+      {
+        "type": "model",
+        "id": ",pp,am|l#W[X(;#.2V#l",
+        "x": 78,
+        "y": 84,
+        "extraState": {
+          "dropdowns": []
+        },
+        "fields": {
+          "MODEL_LABEL": "Model",
+          "X": 7,
+          "Y": 7,
+          "Z": 7
+        },
+        "inputs": {
+          "PROPERTIES": {
+            "block": {
+              "type": "scale",
+              "id": "ZDpXtA.F%c=0k$qT~%1]",
+              "extraState": {
+                "dropdowns": []
+              },
+              "fields": {
+                "SCALE_LABEL": "scale",
+                "X": 0.03,
+                "Y": 0.03,
+                "Z": 0.03
+              },
+              "next": {
+                "block": {
+                  "type": "rotation",
+                  "id": "1?a6aoFtpe46zb?87#UN",
+                  "extraState": {
+                    "dropdowns": []
+                  },
+                  "fields": {
+                    "LABEL": "rotation",
+                    "X": 0,
+                    "Y": 180,
+                    "Z": 0
+                  },
+                  "next": {
+                    "block": {
+                      "type": "auto_resize",
+                      "id": "$b?*Og)T-Cl8tOpDy]JH",
+                      "extraState": {
+                        "dropdowns": []
+                      },
+                      "fields": {
+                        "LABEL": "auto resize",
+                        "VALUE": true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "next": {
+          "block": {
+            "type": "material",
+            "id": "N]jdS5)i2RW4YiQg%:k$",
+            "extraState": {
+              "dropdowns": [
+                {
+                  "field": "LIGHTING",
+                  "options": [
+                    {
+                      "text": "flat",
+                      "id": "flat"
+                    },
+                    {
+                      "text": "smooth",
+                      "id": "smooth"
+                    },
+                    {
+                      "text": "both",
+                      "id": "both"
+                    }
+                  ]
+                }
+              ]
+            },
+            "fields": {
+              "MATERIAL_LABEL": "Material",
+              "LIGHTING_LABEL": "lighting",
+              "LIGHTING": "flat",
+              "ROUGHNESS_LABEL": "roughness",
+              "ROUGHNESS": 0.1,
+              "PROPERTIES_LABEL": "properties",
+              "COLORS_LABEL": "colors"
+            },
+            "inputs": {
+              "PROPERTIES": {
+                "block": {
+                  "type": "deform",
+                  "id": "vy^xW[%Q|TB=;LBhtZ?F",
+                  "extraState": {
+                    "dropdowns": []
+                  },
+                  "fields": {
+                    "LABEL": "deform",
+                    "COUNT_LABEL": "count",
+                    "COUNT": 0.1,
+                    "STRENGHT_LABEL": "strenght",
+                    "STRENGTH": 1,
+                    "DAMPING_LABEL": "damping",
+                    "DAMPING": 1
+                  },
+                  "next": {
+                    "block": {
+                      "type": "metalness",
+                      "id": "fbykO=8MSh:}vLeX8!j;",
+                      "extraState": {
+                        "dropdowns": []
+                      },
+                      "fields": {
+                        "LABEL": "metalness",
+                        "METALNESS": 0.1
+                      },
+                      "next": {
+                        "block": {
+                          "type": "side",
+                          "id": "zAe5ekh:F2SF%[r`Id^o",
+                          "extraState": {
+                            "dropdowns": [
+                              {
+                                "field": "VALUE",
+                                "options": [
+                                  {
+                                    "text": "front",
+                                    "id": "FRONT"
+                                  },
+                                  {
+                                    "text": "back",
+                                    "id": "BACK"
+                                  },
+                                  {
+                                    "text": "both",
+                                    "id": "BOTH"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          "fields": {
+                            "LABEL": "side",
+                            "VALUE": "FRONT"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

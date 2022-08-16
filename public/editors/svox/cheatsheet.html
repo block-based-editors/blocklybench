@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Smooth Voxels</title>
+    <meta name="description" content="Smooth Voxels Cheat Sheet">
+    
+    <!-- Force page to HTTPS -->
+    <script>
+        if (location.protocol != 'https:') {
+         location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+        }
+    </script>
+        
+    <link rel="stylesheet" type="text/css" href="smoothvoxels.css">
+    
+    <link rel="icon"       type="image/png" href="https://cdn.glitch.com/7426b469-4cb2-4027-abe8-f01d443ec980%2FFavicon.png?v=1622324946073">  
+    
+  </head>
+  <body>
+
+  <div class="full">
+
+  <h1>
+    Smooth Voxels Cheat Sheet      
+  </h1>
+
+<pre class="cheatsheetcode"><h3>texture</h3>
+  id        = &lt;textureid&gt;                                  <span class="comment">// The id/name of the texture</span>
+  cube      = {true|false}                                 <span class="comment">// Whether this is a cube texture</span> 
+  image     = data:image/&lt;type&gt;;base64,&lt;base64imagedata&gt;   <span class="comment">// Add images with the playground</span>
+
+<h3>light</h3>
+  color     = &lt;color&gt; &lt;float:strength&gt;                     <span class="comment">// All lights</span>
+  direction = &lt;float:x&gt; &lt;float:y&gt; &lt;float:z&gt;                <span class="comment">// Directional lights</span>
+  position  = &lt;float:x&gt; &lt;float:y&gt; &lt;float:z&gt;                <span class="comment">// Positional lights</span>
+  distance  = &lt;float&gt;                                      <span class="comment">// How far the light works, Positional lights</span>
+  detail    = {0|1|2|3}                                    <span class="comment">// The sphere detail, Positional lights</span>
+
+<h3>model</h3>
+  size      = &lt;int:x-size&gt; &lt;int:y-size&gt; &lt;int:z-size&gt;       <span class="comment">// The size of the voxel matrix</span>
+  origin    = -x x +x -y y +y -z z +z                      <span class="comment">// Specify origin (one x, y and z component)</span>
+  scale     = &lt;float:x&gt; &lt;float:y&gt; &lt;float:z&gt;                <span class="comment">// The scale of the voxels</span>
+  autoresize = {true|false}                                <span class="comment">// Resize so the model fills the original boundaries</span>
+  rotation  = &lt;float:x&gt; &lt;float:y &lt;float:z&gt;                 <span class="comment">// Rotation around axes in degrees</span>
+  position  = &lt;float:x&gt; &lt;float:y&gt; &lt;float:z&gt;                <span class="comment">// Moves the final model (if origin is not enough)</span>
+  flatten   = -x x +x -y y +y -z z +z                      <span class="comment">// Flattens as if a part is cut off</span>
+  clamp     = -x x +x -y y +y -z z +z                      <span class="comment">// Flattens with peripendicular sides</span>
+  skip      = -x x +x -y y +y -z z +z                      <span class="comment">// Do not create these faces</span>
+  tile      = x y z                                        <span class="comment">// Don't warp or scatter these model edges for tiling</span>
+  wireframe = {true|false}                                 <span class="comment">// Make all materials wireframe</span>
+  ao        = &lt;color&gt; &lt;float:maxDistance&gt; &lt;float:strength&gt; <span class="comment">// Ambient Occlusion</span>
+  aosides   = -x +x -y +y -z +z                            <span class="comment">// Which sides are occluded by walls / floors, etc.</span>
+  shell     = &lt;colorId&gt; &lt;float:distance&gt; ...               <span class="comment">// Shell for the model, colorId determines the material</span>
+<h3>material</h3>
+  type      = {standard|phong|lambert|basic|toon|matcap|normal}   <span class="comment">// The type of material</span>
+  lighting  = {flat|smooth|both}                           <span class="comment">// Flat or smooth faces, or both when flattened/clamped</span>
+  roughness = &lt;float&gt;                                      <span class="comment">// How rough the material looks</span>
+  metalness = &lt;float&gt;                                      <span class="comment">// How metallic the material looks, (standard material)</span>
+  opacity   = &lt;float&gt;                                      <span class="comment">// How opaque/transparent the material is</span>
+  transparent = {true|false}                               <span class="comment">// Set when using transparent textures</span>
+  alphatest = &lt;float&gt;                                      <span class="comment">// Solves many transparent texture issues (0.0 - 1.0)</span>
+  emissive  = &lt;color&gt; &lt;float:intensity&gt;                    <span class="comment">// Emissive materials give light</span>
+  wireframe = {true|false}                                 <span class="comment">// Makes this material wireframe</span>
+  fade      = {true|false}                                 <span class="comment">// Whether voxel colors of this material will fade</span>
+  fog       = {true|false}                                 <span class="comment">// Whether the material is affected by fog</span>
+  lights    = {true|false}                                 <span class="comment">// Whether the material is affected by SVOX lights</span>
+  side      = {front|back|double}                          <span class="comment">// Show the front, back or both sides of faces</span>
+  ao        = &lt;color&gt; &lt;float:maxDistance&gt; &lt;float:strength&gt; <span class="comment">// Ambient Occlusion</span>
+  deform    = &lt;int:count&gt; &lt;float:strength&gt; &lt;float:damping&gt; <span class="comment">// Deforms the voxels by means of vertex averaging</span>
+  warp      = &lt;float:strength&gt; &lt;float:frequency&gt;           <span class="comment">// Warps the voxels, both parameters in voxels</span>
+  scatter   = &lt;float:strength&gt;                             <span class="comment">// Scatters the vertices, in voxels</span>
+  flatten   = -x x +x -y y +y -z z +z | none               <span class="comment">// Flattens as if a part is cut off</span>
+  clamp     = -x x +x -y y +y -z z +z | none               <span class="comment">// Flattens with peripendicular sides</span>
+  skip      = -x x +x -y y +y -z z +z | none               <span class="comment">// Do not create these faces</span>
+  map          = &lt;textureid&gt;                               <span class="comment">// Use a texture (add images with the playground)</span>
+  normalmap    = &lt;textureid&gt;                               <span class="comment">// Use a normal map</span>
+  roughnessmap = &lt;textureid&gt;                               <span class="comment">// Use a roughness map</span>
+  metalnessmap = &lt;textureid&gt;                               <span class="comment">// Use a metalness map</span>
+  emissivemap  = &lt;textureid&gt;                               <span class="comment">// Use an emissive map</span>
+  maptransform = &lt;width&gt; &lt;height&gt; &lt;xoffset&gt; &lt;yoffset&gt; &lt;rotation&gt;   <span class="comment">// Shift, scale or rotate the textures</span>
+  shell     = &lt;colorId&gt; &lt;float:distance&gt; ... | none        <span class="comment">// Material shell, or 'none' for no shell</span>
+  colors    = A:#08F B:#FF8800 ...                         <span class="comment">// Colors are #RGB or #RRGGBB</span>        
+    </pre>      
+    
+    </div>
+
+  </body>
+  
+</html>

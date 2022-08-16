@@ -1,0 +1,2502 @@
+{
+  "blocks": {
+    "languageVersion": 0,
+    "blocks": [
+      {
+        "type": "toolbox_categories",
+        "id": ";eJm~@i3SjGKu;]#4_!m",
+        "x": 54,
+        "y": 24,
+        "extraState": {
+          "dropdowns": []
+        },
+        "inputs": {
+          "LIST": {
+            "block": {
+              "type": "toolbox_category",
+              "id": ",06Dor]6WROeukhV`h{*",
+              "extraState": {
+                "dropdowns": []
+              },
+              "fields": {
+                "NAME": "Lights",
+                "COLOUR": "#ffcc00",
+                "EXPAND": false
+              },
+              "inputs": {
+                "LIST": {
+                  "block": {
+                    "type": "toolbox_block",
+                    "id": "J3(gg$r$2C(gn{8!t:07",
+                    "extraState": {
+                      "dropdowns": [
+                        {
+                          "field": "TYPE",
+                          "options": [
+                            {
+                              "text": "auto_resize",
+                              "id": "5qM8jqC7=nSW^gBDF0Fs"
+                            },
+                            {
+                              "text": "color",
+                              "id": "+M~ep=D~DV#zD;v8Dyx,"
+                            },
+                            {
+                              "text": "colors",
+                              "id": "LkThlQ+gz1ry^^3GR#)9"
+                            },
+                            {
+                              "text": "deform",
+                              "id": "gp|o*Pw_%tSHOyKH*R2u"
+                            },
+                            {
+                              "text": "fade",
+                              "id": "1CANkbd#3PjuWZUrA)[E"
+                            },
+                            {
+                              "text": "light_ambient",
+                              "id": "P)O:2E1Em[]5XN@oK?Bj"
+                            },
+                            {
+                              "text": "light_directional",
+                              "id": "A@HK2yNBL4zY{2aov*EW"
+                            },
+                            {
+                              "text": "light_point",
+                              "id": "Ck3iT09(f~RAsoUpt6UX"
+                            },
+                            {
+                              "text": "lights_on_off",
+                              "id": "R@F#umgx47~{|4[69PXJ"
+                            },
+                            {
+                              "text": "material",
+                              "id": "rKvtcXy;/TKKzRrAEMF5"
+                            },
+                            {
+                              "text": "metalness",
+                              "id": "Shl.+h5Q_qnw}]TEsNmL"
+                            },
+                            {
+                              "text": "model",
+                              "id": "l[bLGkR:0DNT_A8c|}zY"
+                            },
+                            {
+                              "text": "opacity",
+                              "id": "7}X6r!WJvniQ-prk,iX-"
+                            },
+                            {
+                              "text": "orgiin",
+                              "id": "^mE;MyLQy}(z4$NNTBrF"
+                            },
+                            {
+                              "text": "rotation",
+                              "id": "#DJF$0JzB4RcfAEt=kZX"
+                            },
+                            {
+                              "text": "scale",
+                              "id": "w6N?iT9n]6)HzfdzDIGZ"
+                            },
+                            {
+                              "text": "side",
+                              "id": "wM50mZin%x$%6j:NSvca"
+                            },
+                            {
+                              "text": "texture",
+                              "id": "s,5Ao*tTs+AGG.J6q*/}"
+                            },
+                            {
+                              "text": "voxel_7",
+                              "id": "De},K=IX9FMMYWmalYG`"
+                            },
+                            {
+                              "text": "voxel_repeat",
+                              "id": "VxKLk0H(l4Y~SU0#rUN."
+                            },
+                            {
+                              "text": "voxel_start",
+                              "id": "hYevjC~gY/|P$Y{+VW}^"
+                            },
+                            {
+                              "text": "voxel_text",
+                              "id": "y:Bx1F#ZRvY#@?of^9P3"
+                            },
+                            {
+                              "text": "voxels",
+                              "id": "f+:oa`W4}MJPIEg,`zNc"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "fields": {
+                      "TYPE": "Ck3iT09(f~RAsoUpt6UX"
+                    },
+                    "next": {
+                      "block": {
+                        "type": "toolbox_block",
+                        "id": "zPBnND5O_v])w^[x!oIg",
+                        "extraState": {
+                          "dropdowns": [
+                            {
+                              "field": "TYPE",
+                              "options": [
+                                {
+                                  "text": "auto_resize",
+                                  "id": "5qM8jqC7=nSW^gBDF0Fs"
+                                },
+                                {
+                                  "text": "color",
+                                  "id": "+M~ep=D~DV#zD;v8Dyx,"
+                                },
+                                {
+                                  "text": "colors",
+                                  "id": "LkThlQ+gz1ry^^3GR#)9"
+                                },
+                                {
+                                  "text": "deform",
+                                  "id": "gp|o*Pw_%tSHOyKH*R2u"
+                                },
+                                {
+                                  "text": "fade",
+                                  "id": "1CANkbd#3PjuWZUrA)[E"
+                                },
+                                {
+                                  "text": "light_ambient",
+                                  "id": "P)O:2E1Em[]5XN@oK?Bj"
+                                },
+                                {
+                                  "text": "light_directional",
+                                  "id": "A@HK2yNBL4zY{2aov*EW"
+                                },
+                                {
+                                  "text": "light_point",
+                                  "id": "Ck3iT09(f~RAsoUpt6UX"
+                                },
+                                {
+                                  "text": "lights_on_off",
+                                  "id": "R@F#umgx47~{|4[69PXJ"
+                                },
+                                {
+                                  "text": "material",
+                                  "id": "rKvtcXy;/TKKzRrAEMF5"
+                                },
+                                {
+                                  "text": "metalness",
+                                  "id": "Shl.+h5Q_qnw}]TEsNmL"
+                                },
+                                {
+                                  "text": "model",
+                                  "id": "l[bLGkR:0DNT_A8c|}zY"
+                                },
+                                {
+                                  "text": "opacity",
+                                  "id": "7}X6r!WJvniQ-prk,iX-"
+                                },
+                                {
+                                  "text": "orgiin",
+                                  "id": "^mE;MyLQy}(z4$NNTBrF"
+                                },
+                                {
+                                  "text": "rotation",
+                                  "id": "#DJF$0JzB4RcfAEt=kZX"
+                                },
+                                {
+                                  "text": "scale",
+                                  "id": "w6N?iT9n]6)HzfdzDIGZ"
+                                },
+                                {
+                                  "text": "side",
+                                  "id": "wM50mZin%x$%6j:NSvca"
+                                },
+                                {
+                                  "text": "texture",
+                                  "id": "s,5Ao*tTs+AGG.J6q*/}"
+                                },
+                                {
+                                  "text": "voxel_7",
+                                  "id": "De},K=IX9FMMYWmalYG`"
+                                },
+                                {
+                                  "text": "voxel_repeat",
+                                  "id": "VxKLk0H(l4Y~SU0#rUN."
+                                },
+                                {
+                                  "text": "voxel_start",
+                                  "id": "hYevjC~gY/|P$Y{+VW}^"
+                                },
+                                {
+                                  "text": "voxel_text",
+                                  "id": "y:Bx1F#ZRvY#@?of^9P3"
+                                },
+                                {
+                                  "text": "voxels",
+                                  "id": "f+:oa`W4}MJPIEg,`zNc"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        "fields": {
+                          "TYPE": "P)O:2E1Em[]5XN@oK?Bj"
+                        },
+                        "next": {
+                          "block": {
+                            "type": "toolbox_block",
+                            "id": "iesYXdFv_;*r+du#m.].",
+                            "extraState": {
+                              "dropdowns": [
+                                {
+                                  "field": "TYPE",
+                                  "options": [
+                                    {
+                                      "text": "auto_resize",
+                                      "id": "5qM8jqC7=nSW^gBDF0Fs"
+                                    },
+                                    {
+                                      "text": "color",
+                                      "id": "+M~ep=D~DV#zD;v8Dyx,"
+                                    },
+                                    {
+                                      "text": "colors",
+                                      "id": "LkThlQ+gz1ry^^3GR#)9"
+                                    },
+                                    {
+                                      "text": "deform",
+                                      "id": "gp|o*Pw_%tSHOyKH*R2u"
+                                    },
+                                    {
+                                      "text": "fade",
+                                      "id": "1CANkbd#3PjuWZUrA)[E"
+                                    },
+                                    {
+                                      "text": "light_ambient",
+                                      "id": "P)O:2E1Em[]5XN@oK?Bj"
+                                    },
+                                    {
+                                      "text": "light_directional",
+                                      "id": "A@HK2yNBL4zY{2aov*EW"
+                                    },
+                                    {
+                                      "text": "light_point",
+                                      "id": "Ck3iT09(f~RAsoUpt6UX"
+                                    },
+                                    {
+                                      "text": "lights_on_off",
+                                      "id": "R@F#umgx47~{|4[69PXJ"
+                                    },
+                                    {
+                                      "text": "material",
+                                      "id": "rKvtcXy;/TKKzRrAEMF5"
+                                    },
+                                    {
+                                      "text": "metalness",
+                                      "id": "Shl.+h5Q_qnw}]TEsNmL"
+                                    },
+                                    {
+                                      "text": "model",
+                                      "id": "l[bLGkR:0DNT_A8c|}zY"
+                                    },
+                                    {
+                                      "text": "opacity",
+                                      "id": "7}X6r!WJvniQ-prk,iX-"
+                                    },
+                                    {
+                                      "text": "orgiin",
+                                      "id": "^mE;MyLQy}(z4$NNTBrF"
+                                    },
+                                    {
+                                      "text": "rotation",
+                                      "id": "#DJF$0JzB4RcfAEt=kZX"
+                                    },
+                                    {
+                                      "text": "scale",
+                                      "id": "w6N?iT9n]6)HzfdzDIGZ"
+                                    },
+                                    {
+                                      "text": "side",
+                                      "id": "wM50mZin%x$%6j:NSvca"
+                                    },
+                                    {
+                                      "text": "texture",
+                                      "id": "s,5Ao*tTs+AGG.J6q*/}"
+                                    },
+                                    {
+                                      "text": "voxel_7",
+                                      "id": "De},K=IX9FMMYWmalYG`"
+                                    },
+                                    {
+                                      "text": "voxel_repeat",
+                                      "id": "VxKLk0H(l4Y~SU0#rUN."
+                                    },
+                                    {
+                                      "text": "voxel_start",
+                                      "id": "hYevjC~gY/|P$Y{+VW}^"
+                                    },
+                                    {
+                                      "text": "voxel_text",
+                                      "id": "y:Bx1F#ZRvY#@?of^9P3"
+                                    },
+                                    {
+                                      "text": "voxels",
+                                      "id": "f+:oa`W4}MJPIEg,`zNc"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            "fields": {
+                              "TYPE": "A@HK2yNBL4zY{2aov*EW"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "next": {
+                "block": {
+                  "type": "toolbox_category",
+                  "id": "Z2X-Q[RKK0a4Bt}?Ix]}",
+                  "extraState": {
+                    "dropdowns": []
+                  },
+                  "fields": {
+                    "NAME": "Model",
+                    "COLOUR": "#cc9933",
+                    "EXPAND": false
+                  },
+                  "inputs": {
+                    "LIST": {
+                      "block": {
+                        "type": "toolbox_block",
+                        "id": "3cLMNSD0wUfrlf8i})V@",
+                        "extraState": {
+                          "dropdowns": [
+                            {
+                              "field": "TYPE",
+                              "options": [
+                                {
+                                  "text": "auto_resize",
+                                  "id": "5qM8jqC7=nSW^gBDF0Fs"
+                                },
+                                {
+                                  "text": "color",
+                                  "id": "+M~ep=D~DV#zD;v8Dyx,"
+                                },
+                                {
+                                  "text": "colors",
+                                  "id": "LkThlQ+gz1ry^^3GR#)9"
+                                },
+                                {
+                                  "text": "deform",
+                                  "id": "gp|o*Pw_%tSHOyKH*R2u"
+                                },
+                                {
+                                  "text": "fade",
+                                  "id": "1CANkbd#3PjuWZUrA)[E"
+                                },
+                                {
+                                  "text": "light_ambient",
+                                  "id": "P)O:2E1Em[]5XN@oK?Bj"
+                                },
+                                {
+                                  "text": "light_directional",
+                                  "id": "A@HK2yNBL4zY{2aov*EW"
+                                },
+                                {
+                                  "text": "light_point",
+                                  "id": "Ck3iT09(f~RAsoUpt6UX"
+                                },
+                                {
+                                  "text": "lights_on_off",
+                                  "id": "R@F#umgx47~{|4[69PXJ"
+                                },
+                                {
+                                  "text": "material",
+                                  "id": "rKvtcXy;/TKKzRrAEMF5"
+                                },
+                                {
+                                  "text": "metalness",
+                                  "id": "Shl.+h5Q_qnw}]TEsNmL"
+                                },
+                                {
+                                  "text": "model",
+                                  "id": "l[bLGkR:0DNT_A8c|}zY"
+                                },
+                                {
+                                  "text": "opacity",
+                                  "id": "7}X6r!WJvniQ-prk,iX-"
+                                },
+                                {
+                                  "text": "orgiin",
+                                  "id": "^mE;MyLQy}(z4$NNTBrF"
+                                },
+                                {
+                                  "text": "rotation",
+                                  "id": "#DJF$0JzB4RcfAEt=kZX"
+                                },
+                                {
+                                  "text": "scale",
+                                  "id": "w6N?iT9n]6)HzfdzDIGZ"
+                                },
+                                {
+                                  "text": "side",
+                                  "id": "wM50mZin%x$%6j:NSvca"
+                                },
+                                {
+                                  "text": "texture",
+                                  "id": "s,5Ao*tTs+AGG.J6q*/}"
+                                },
+                                {
+                                  "text": "voxel_7",
+                                  "id": "De},K=IX9FMMYWmalYG`"
+                                },
+                                {
+                                  "text": "voxel_repeat",
+                                  "id": "VxKLk0H(l4Y~SU0#rUN."
+                                },
+                                {
+                                  "text": "voxel_start",
+                                  "id": "hYevjC~gY/|P$Y{+VW}^"
+                                },
+                                {
+                                  "text": "voxel_text",
+                                  "id": "y:Bx1F#ZRvY#@?of^9P3"
+                                },
+                                {
+                                  "text": "voxels",
+                                  "id": "f+:oa`W4}MJPIEg,`zNc"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        "fields": {
+                          "TYPE": "l[bLGkR:0DNT_A8c|}zY"
+                        },
+                        "next": {
+                          "block": {
+                            "type": "toolbox_block",
+                            "id": "t=8sq,bENl!/S-j~9H!J",
+                            "extraState": {
+                              "dropdowns": [
+                                {
+                                  "field": "TYPE",
+                                  "options": [
+                                    {
+                                      "text": "auto_resize",
+                                      "id": "5qM8jqC7=nSW^gBDF0Fs"
+                                    },
+                                    {
+                                      "text": "color",
+                                      "id": "+M~ep=D~DV#zD;v8Dyx,"
+                                    },
+                                    {
+                                      "text": "colors",
+                                      "id": "LkThlQ+gz1ry^^3GR#)9"
+                                    },
+                                    {
+                                      "text": "deform",
+                                      "id": "gp|o*Pw_%tSHOyKH*R2u"
+                                    },
+                                    {
+                                      "text": "fade",
+                                      "id": "1CANkbd#3PjuWZUrA)[E"
+                                    },
+                                    {
+                                      "text": "light_ambient",
+                                      "id": "P)O:2E1Em[]5XN@oK?Bj"
+                                    },
+                                    {
+                                      "text": "light_directional",
+                                      "id": "A@HK2yNBL4zY{2aov*EW"
+                                    },
+                                    {
+                                      "text": "light_point",
+                                      "id": "Ck3iT09(f~RAsoUpt6UX"
+                                    },
+                                    {
+                                      "text": "lights_on_off",
+                                      "id": "R@F#umgx47~{|4[69PXJ"
+                                    },
+                                    {
+                                      "text": "material",
+                                      "id": "rKvtcXy;/TKKzRrAEMF5"
+                                    },
+                                    {
+                                      "text": "metalness",
+                                      "id": "Shl.+h5Q_qnw}]TEsNmL"
+                                    },
+                                    {
+                                      "text": "model",
+                                      "id": "l[bLGkR:0DNT_A8c|}zY"
+                                    },
+                                    {
+                                      "text": "opacity",
+                                      "id": "7}X6r!WJvniQ-prk,iX-"
+                                    },
+                                    {
+                                      "text": "orgiin",
+                                      "id": "^mE;MyLQy}(z4$NNTBrF"
+                                    },
+                                    {
+                                      "text": "rotation",
+                                      "id": "#DJF$0JzB4RcfAEt=kZX"
+                                    },
+                                    {
+                                      "text": "scale",
+                                      "id": "w6N?iT9n]6)HzfdzDIGZ"
+                                    },
+                                    {
+                                      "text": "side",
+                                      "id": "wM50mZin%x$%6j:NSvca"
+                                    },
+                                    {
+                                      "text": "texture",
+                                      "id": "s,5Ao*tTs+AGG.J6q*/}"
+                                    },
+                                    {
+                                      "text": "voxel_7",
+                                      "id": "De},K=IX9FMMYWmalYG`"
+                                    },
+                                    {
+                                      "text": "voxel_repeat",
+                                      "id": "VxKLk0H(l4Y~SU0#rUN."
+                                    },
+                                    {
+                                      "text": "voxel_start",
+                                      "id": "hYevjC~gY/|P$Y{+VW}^"
+                                    },
+                                    {
+                                      "text": "voxel_text",
+                                      "id": "y:Bx1F#ZRvY#@?of^9P3"
+                                    },
+                                    {
+                                      "text": "voxels",
+                                      "id": "f+:oa`W4}MJPIEg,`zNc"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            "fields": {
+                              "TYPE": "w6N?iT9n]6)HzfdzDIGZ"
+                            },
+                            "next": {
+                              "block": {
+                                "type": "toolbox_block",
+                                "id": "[=(Ey^B3^j?4s:GaasNJ",
+                                "extraState": {
+                                  "dropdowns": [
+                                    {
+                                      "field": "TYPE",
+                                      "options": [
+                                        {
+                                          "text": "auto_resize",
+                                          "id": "5qM8jqC7=nSW^gBDF0Fs"
+                                        },
+                                        {
+                                          "text": "color",
+                                          "id": "+M~ep=D~DV#zD;v8Dyx,"
+                                        },
+                                        {
+                                          "text": "colors",
+                                          "id": "LkThlQ+gz1ry^^3GR#)9"
+                                        },
+                                        {
+                                          "text": "deform",
+                                          "id": "gp|o*Pw_%tSHOyKH*R2u"
+                                        },
+                                        {
+                                          "text": "fade",
+                                          "id": "1CANkbd#3PjuWZUrA)[E"
+                                        },
+                                        {
+                                          "text": "light_ambient",
+                                          "id": "P)O:2E1Em[]5XN@oK?Bj"
+                                        },
+                                        {
+                                          "text": "light_directional",
+                                          "id": "A@HK2yNBL4zY{2aov*EW"
+                                        },
+                                        {
+                                          "text": "light_point",
+                                          "id": "Ck3iT09(f~RAsoUpt6UX"
+                                        },
+                                        {
+                                          "text": "lights_on_off",
+                                          "id": "R@F#umgx47~{|4[69PXJ"
+                                        },
+                                        {
+                                          "text": "material",
+                                          "id": "rKvtcXy;/TKKzRrAEMF5"
+                                        },
+                                        {
+                                          "text": "metalness",
+                                          "id": "Shl.+h5Q_qnw}]TEsNmL"
+                                        },
+                                        {
+                                          "text": "model",
+                                          "id": "l[bLGkR:0DNT_A8c|}zY"
+                                        },
+                                        {
+                                          "text": "opacity",
+                                          "id": "7}X6r!WJvniQ-prk,iX-"
+                                        },
+                                        {
+                                          "text": "orgiin",
+                                          "id": "^mE;MyLQy}(z4$NNTBrF"
+                                        },
+                                        {
+                                          "text": "rotation",
+                                          "id": "#DJF$0JzB4RcfAEt=kZX"
+                                        },
+                                        {
+                                          "text": "scale",
+                                          "id": "w6N?iT9n]6)HzfdzDIGZ"
+                                        },
+                                        {
+                                          "text": "side",
+                                          "id": "wM50mZin%x$%6j:NSvca"
+                                        },
+                                        {
+                                          "text": "texture",
+                                          "id": "s,5Ao*tTs+AGG.J6q*/}"
+                                        },
+                                        {
+                                          "text": "voxel_7",
+                                          "id": "De},K=IX9FMMYWmalYG`"
+                                        },
+                                        {
+                                          "text": "voxel_repeat",
+                                          "id": "VxKLk0H(l4Y~SU0#rUN."
+                                        },
+                                        {
+                                          "text": "voxel_start",
+                                          "id": "hYevjC~gY/|P$Y{+VW}^"
+                                        },
+                                        {
+                                          "text": "voxel_text",
+                                          "id": "y:Bx1F#ZRvY#@?of^9P3"
+                                        },
+                                        {
+                                          "text": "voxels",
+                                          "id": "f+:oa`W4}MJPIEg,`zNc"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "fields": {
+                                  "TYPE": "#DJF$0JzB4RcfAEt=kZX"
+                                },
+                                "next": {
+                                  "block": {
+                                    "type": "toolbox_block",
+                                    "id": "5K|hsLH*yId%x#p*Pm^I",
+                                    "extraState": {
+                                      "dropdowns": [
+                                        {
+                                          "field": "TYPE",
+                                          "options": [
+                                            {
+                                              "text": "auto_resize",
+                                              "id": "5qM8jqC7=nSW^gBDF0Fs"
+                                            },
+                                            {
+                                              "text": "color",
+                                              "id": "+M~ep=D~DV#zD;v8Dyx,"
+                                            },
+                                            {
+                                              "text": "colors",
+                                              "id": "LkThlQ+gz1ry^^3GR#)9"
+                                            },
+                                            {
+                                              "text": "deform",
+                                              "id": "gp|o*Pw_%tSHOyKH*R2u"
+                                            },
+                                            {
+                                              "text": "fade",
+                                              "id": "1CANkbd#3PjuWZUrA)[E"
+                                            },
+                                            {
+                                              "text": "light_ambient",
+                                              "id": "P)O:2E1Em[]5XN@oK?Bj"
+                                            },
+                                            {
+                                              "text": "light_directional",
+                                              "id": "A@HK2yNBL4zY{2aov*EW"
+                                            },
+                                            {
+                                              "text": "light_point",
+                                              "id": "Ck3iT09(f~RAsoUpt6UX"
+                                            },
+                                            {
+                                              "text": "lights_on_off",
+                                              "id": "R@F#umgx47~{|4[69PXJ"
+                                            },
+                                            {
+                                              "text": "material",
+                                              "id": "rKvtcXy;/TKKzRrAEMF5"
+                                            },
+                                            {
+                                              "text": "metalness",
+                                              "id": "Shl.+h5Q_qnw}]TEsNmL"
+                                            },
+                                            {
+                                              "text": "model",
+                                              "id": "l[bLGkR:0DNT_A8c|}zY"
+                                            },
+                                            {
+                                              "text": "opacity",
+                                              "id": "7}X6r!WJvniQ-prk,iX-"
+                                            },
+                                            {
+                                              "text": "orgiin",
+                                              "id": "^mE;MyLQy}(z4$NNTBrF"
+                                            },
+                                            {
+                                              "text": "rotation",
+                                              "id": "#DJF$0JzB4RcfAEt=kZX"
+                                            },
+                                            {
+                                              "text": "scale",
+                                              "id": "w6N?iT9n]6)HzfdzDIGZ"
+                                            },
+                                            {
+                                              "text": "side",
+                                              "id": "wM50mZin%x$%6j:NSvca"
+                                            },
+                                            {
+                                              "text": "texture",
+                                              "id": "s,5Ao*tTs+AGG.J6q*/}"
+                                            },
+                                            {
+                                              "text": "voxel_7",
+                                              "id": "De},K=IX9FMMYWmalYG`"
+                                            },
+                                            {
+                                              "text": "voxel_repeat",
+                                              "id": "VxKLk0H(l4Y~SU0#rUN."
+                                            },
+                                            {
+                                              "text": "voxel_start",
+                                              "id": "hYevjC~gY/|P$Y{+VW}^"
+                                            },
+                                            {
+                                              "text": "voxel_text",
+                                              "id": "y:Bx1F#ZRvY#@?of^9P3"
+                                            },
+                                            {
+                                              "text": "voxels",
+                                              "id": "f+:oa`W4}MJPIEg,`zNc"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    "fields": {
+                                      "TYPE": "^mE;MyLQy}(z4$NNTBrF"
+                                    },
+                                    "next": {
+                                      "block": {
+                                        "type": "toolbox_block",
+                                        "id": "t]ZVDZlTW)IkGmfC]zvN",
+                                        "extraState": {
+                                          "dropdowns": [
+                                            {
+                                              "field": "TYPE",
+                                              "options": [
+                                                {
+                                                  "text": "auto_resize",
+                                                  "id": "5qM8jqC7=nSW^gBDF0Fs"
+                                                },
+                                                {
+                                                  "text": "color",
+                                                  "id": "+M~ep=D~DV#zD;v8Dyx,"
+                                                },
+                                                {
+                                                  "text": "colors",
+                                                  "id": "LkThlQ+gz1ry^^3GR#)9"
+                                                },
+                                                {
+                                                  "text": "deform",
+                                                  "id": "gp|o*Pw_%tSHOyKH*R2u"
+                                                },
+                                                {
+                                                  "text": "fade",
+                                                  "id": "1CANkbd#3PjuWZUrA)[E"
+                                                },
+                                                {
+                                                  "text": "light_ambient",
+                                                  "id": "P)O:2E1Em[]5XN@oK?Bj"
+                                                },
+                                                {
+                                                  "text": "light_directional",
+                                                  "id": "A@HK2yNBL4zY{2aov*EW"
+                                                },
+                                                {
+                                                  "text": "light_point",
+                                                  "id": "Ck3iT09(f~RAsoUpt6UX"
+                                                },
+                                                {
+                                                  "text": "lights_on_off",
+                                                  "id": "R@F#umgx47~{|4[69PXJ"
+                                                },
+                                                {
+                                                  "text": "material",
+                                                  "id": "rKvtcXy;/TKKzRrAEMF5"
+                                                },
+                                                {
+                                                  "text": "metalness",
+                                                  "id": "Shl.+h5Q_qnw}]TEsNmL"
+                                                },
+                                                {
+                                                  "text": "model",
+                                                  "id": "l[bLGkR:0DNT_A8c|}zY"
+                                                },
+                                                {
+                                                  "text": "opacity",
+                                                  "id": "7}X6r!WJvniQ-prk,iX-"
+                                                },
+                                                {
+                                                  "text": "orgiin",
+                                                  "id": "^mE;MyLQy}(z4$NNTBrF"
+                                                },
+                                                {
+                                                  "text": "rotation",
+                                                  "id": "#DJF$0JzB4RcfAEt=kZX"
+                                                },
+                                                {
+                                                  "text": "scale",
+                                                  "id": "w6N?iT9n]6)HzfdzDIGZ"
+                                                },
+                                                {
+                                                  "text": "side",
+                                                  "id": "wM50mZin%x$%6j:NSvca"
+                                                },
+                                                {
+                                                  "text": "texture",
+                                                  "id": "s,5Ao*tTs+AGG.J6q*/}"
+                                                },
+                                                {
+                                                  "text": "voxel_7",
+                                                  "id": "De},K=IX9FMMYWmalYG`"
+                                                },
+                                                {
+                                                  "text": "voxel_repeat",
+                                                  "id": "VxKLk0H(l4Y~SU0#rUN."
+                                                },
+                                                {
+                                                  "text": "voxel_start",
+                                                  "id": "hYevjC~gY/|P$Y{+VW}^"
+                                                },
+                                                {
+                                                  "text": "voxel_text",
+                                                  "id": "y:Bx1F#ZRvY#@?of^9P3"
+                                                },
+                                                {
+                                                  "text": "voxels",
+                                                  "id": "f+:oa`W4}MJPIEg,`zNc"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        "fields": {
+                                          "TYPE": "5qM8jqC7=nSW^gBDF0Fs"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "next": {
+                    "block": {
+                      "type": "toolbox_category",
+                      "id": "B|/9s~|pI/C[CBT8kF|:",
+                      "extraState": {
+                        "dropdowns": []
+                      },
+                      "fields": {
+                        "NAME": "Materials",
+                        "COLOUR": "#009900",
+                        "EXPAND": false
+                      },
+                      "inputs": {
+                        "LIST": {
+                          "block": {
+                            "type": "toolbox_block",
+                            "id": "j(63=+~89~o%8e-wVOqn",
+                            "extraState": {
+                              "dropdowns": [
+                                {
+                                  "field": "TYPE",
+                                  "options": [
+                                    {
+                                      "text": "auto_resize",
+                                      "id": "5qM8jqC7=nSW^gBDF0Fs"
+                                    },
+                                    {
+                                      "text": "color",
+                                      "id": "+M~ep=D~DV#zD;v8Dyx,"
+                                    },
+                                    {
+                                      "text": "colors",
+                                      "id": "LkThlQ+gz1ry^^3GR#)9"
+                                    },
+                                    {
+                                      "text": "deform",
+                                      "id": "gp|o*Pw_%tSHOyKH*R2u"
+                                    },
+                                    {
+                                      "text": "fade",
+                                      "id": "1CANkbd#3PjuWZUrA)[E"
+                                    },
+                                    {
+                                      "text": "light_ambient",
+                                      "id": "P)O:2E1Em[]5XN@oK?Bj"
+                                    },
+                                    {
+                                      "text": "light_directional",
+                                      "id": "A@HK2yNBL4zY{2aov*EW"
+                                    },
+                                    {
+                                      "text": "light_point",
+                                      "id": "Ck3iT09(f~RAsoUpt6UX"
+                                    },
+                                    {
+                                      "text": "lights_on_off",
+                                      "id": "R@F#umgx47~{|4[69PXJ"
+                                    },
+                                    {
+                                      "text": "material",
+                                      "id": "rKvtcXy;/TKKzRrAEMF5"
+                                    },
+                                    {
+                                      "text": "metalness",
+                                      "id": "Shl.+h5Q_qnw}]TEsNmL"
+                                    },
+                                    {
+                                      "text": "model",
+                                      "id": "l[bLGkR:0DNT_A8c|}zY"
+                                    },
+                                    {
+                                      "text": "opacity",
+                                      "id": "7}X6r!WJvniQ-prk,iX-"
+                                    },
+                                    {
+                                      "text": "orgiin",
+                                      "id": "^mE;MyLQy}(z4$NNTBrF"
+                                    },
+                                    {
+                                      "text": "rotation",
+                                      "id": "#DJF$0JzB4RcfAEt=kZX"
+                                    },
+                                    {
+                                      "text": "scale",
+                                      "id": "w6N?iT9n]6)HzfdzDIGZ"
+                                    },
+                                    {
+                                      "text": "side",
+                                      "id": "wM50mZin%x$%6j:NSvca"
+                                    },
+                                    {
+                                      "text": "texture",
+                                      "id": "s,5Ao*tTs+AGG.J6q*/}"
+                                    },
+                                    {
+                                      "text": "voxel_7",
+                                      "id": "De},K=IX9FMMYWmalYG`"
+                                    },
+                                    {
+                                      "text": "voxel_repeat",
+                                      "id": "VxKLk0H(l4Y~SU0#rUN."
+                                    },
+                                    {
+                                      "text": "voxel_start",
+                                      "id": "hYevjC~gY/|P$Y{+VW}^"
+                                    },
+                                    {
+                                      "text": "voxel_text",
+                                      "id": "y:Bx1F#ZRvY#@?of^9P3"
+                                    },
+                                    {
+                                      "text": "voxels",
+                                      "id": "f+:oa`W4}MJPIEg,`zNc"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            "fields": {
+                              "TYPE": "rKvtcXy;/TKKzRrAEMF5"
+                            },
+                            "next": {
+                              "block": {
+                                "type": "toolbox_block",
+                                "id": "p{Tu;.8,/uiEC~Q[JD4v",
+                                "extraState": {
+                                  "dropdowns": [
+                                    {
+                                      "field": "TYPE",
+                                      "options": [
+                                        {
+                                          "text": "auto_resize",
+                                          "id": "5qM8jqC7=nSW^gBDF0Fs"
+                                        },
+                                        {
+                                          "text": "color",
+                                          "id": "+M~ep=D~DV#zD;v8Dyx,"
+                                        },
+                                        {
+                                          "text": "colors",
+                                          "id": "LkThlQ+gz1ry^^3GR#)9"
+                                        },
+                                        {
+                                          "text": "deform",
+                                          "id": "gp|o*Pw_%tSHOyKH*R2u"
+                                        },
+                                        {
+                                          "text": "fade",
+                                          "id": "1CANkbd#3PjuWZUrA)[E"
+                                        },
+                                        {
+                                          "text": "light_ambient",
+                                          "id": "P)O:2E1Em[]5XN@oK?Bj"
+                                        },
+                                        {
+                                          "text": "light_directional",
+                                          "id": "A@HK2yNBL4zY{2aov*EW"
+                                        },
+                                        {
+                                          "text": "light_point",
+                                          "id": "Ck3iT09(f~RAsoUpt6UX"
+                                        },
+                                        {
+                                          "text": "lights_on_off",
+                                          "id": "R@F#umgx47~{|4[69PXJ"
+                                        },
+                                        {
+                                          "text": "material",
+                                          "id": "rKvtcXy;/TKKzRrAEMF5"
+                                        },
+                                        {
+                                          "text": "metalness",
+                                          "id": "Shl.+h5Q_qnw}]TEsNmL"
+                                        },
+                                        {
+                                          "text": "model",
+                                          "id": "l[bLGkR:0DNT_A8c|}zY"
+                                        },
+                                        {
+                                          "text": "opacity",
+                                          "id": "7}X6r!WJvniQ-prk,iX-"
+                                        },
+                                        {
+                                          "text": "orgiin",
+                                          "id": "^mE;MyLQy}(z4$NNTBrF"
+                                        },
+                                        {
+                                          "text": "rotation",
+                                          "id": "#DJF$0JzB4RcfAEt=kZX"
+                                        },
+                                        {
+                                          "text": "scale",
+                                          "id": "w6N?iT9n]6)HzfdzDIGZ"
+                                        },
+                                        {
+                                          "text": "side",
+                                          "id": "wM50mZin%x$%6j:NSvca"
+                                        },
+                                        {
+                                          "text": "texture",
+                                          "id": "s,5Ao*tTs+AGG.J6q*/}"
+                                        },
+                                        {
+                                          "text": "voxel_7",
+                                          "id": "De},K=IX9FMMYWmalYG`"
+                                        },
+                                        {
+                                          "text": "voxel_repeat",
+                                          "id": "VxKLk0H(l4Y~SU0#rUN."
+                                        },
+                                        {
+                                          "text": "voxel_start",
+                                          "id": "hYevjC~gY/|P$Y{+VW}^"
+                                        },
+                                        {
+                                          "text": "voxel_text",
+                                          "id": "y:Bx1F#ZRvY#@?of^9P3"
+                                        },
+                                        {
+                                          "text": "voxels",
+                                          "id": "f+:oa`W4}MJPIEg,`zNc"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "fields": {
+                                  "TYPE": "+M~ep=D~DV#zD;v8Dyx,"
+                                },
+                                "next": {
+                                  "block": {
+                                    "type": "toolbox_block",
+                                    "id": ")g,zrr?j]]ihg2t.t#E7",
+                                    "extraState": {
+                                      "dropdowns": [
+                                        {
+                                          "field": "TYPE",
+                                          "options": [
+                                            {
+                                              "text": "auto_resize",
+                                              "id": "5qM8jqC7=nSW^gBDF0Fs"
+                                            },
+                                            {
+                                              "text": "color",
+                                              "id": "+M~ep=D~DV#zD;v8Dyx,"
+                                            },
+                                            {
+                                              "text": "colors",
+                                              "id": "LkThlQ+gz1ry^^3GR#)9"
+                                            },
+                                            {
+                                              "text": "deform",
+                                              "id": "gp|o*Pw_%tSHOyKH*R2u"
+                                            },
+                                            {
+                                              "text": "fade",
+                                              "id": "1CANkbd#3PjuWZUrA)[E"
+                                            },
+                                            {
+                                              "text": "light_ambient",
+                                              "id": "P)O:2E1Em[]5XN@oK?Bj"
+                                            },
+                                            {
+                                              "text": "light_directional",
+                                              "id": "A@HK2yNBL4zY{2aov*EW"
+                                            },
+                                            {
+                                              "text": "light_point",
+                                              "id": "Ck3iT09(f~RAsoUpt6UX"
+                                            },
+                                            {
+                                              "text": "lights_on_off",
+                                              "id": "R@F#umgx47~{|4[69PXJ"
+                                            },
+                                            {
+                                              "text": "material",
+                                              "id": "rKvtcXy;/TKKzRrAEMF5"
+                                            },
+                                            {
+                                              "text": "metalness",
+                                              "id": "Shl.+h5Q_qnw}]TEsNmL"
+                                            },
+                                            {
+                                              "text": "model",
+                                              "id": "l[bLGkR:0DNT_A8c|}zY"
+                                            },
+                                            {
+                                              "text": "opacity",
+                                              "id": "7}X6r!WJvniQ-prk,iX-"
+                                            },
+                                            {
+                                              "text": "orgiin",
+                                              "id": "^mE;MyLQy}(z4$NNTBrF"
+                                            },
+                                            {
+                                              "text": "rotation",
+                                              "id": "#DJF$0JzB4RcfAEt=kZX"
+                                            },
+                                            {
+                                              "text": "scale",
+                                              "id": "w6N?iT9n]6)HzfdzDIGZ"
+                                            },
+                                            {
+                                              "text": "side",
+                                              "id": "wM50mZin%x$%6j:NSvca"
+                                            },
+                                            {
+                                              "text": "texture",
+                                              "id": "s,5Ao*tTs+AGG.J6q*/}"
+                                            },
+                                            {
+                                              "text": "voxel_7",
+                                              "id": "De},K=IX9FMMYWmalYG`"
+                                            },
+                                            {
+                                              "text": "voxel_repeat",
+                                              "id": "VxKLk0H(l4Y~SU0#rUN."
+                                            },
+                                            {
+                                              "text": "voxel_start",
+                                              "id": "hYevjC~gY/|P$Y{+VW}^"
+                                            },
+                                            {
+                                              "text": "voxel_text",
+                                              "id": "y:Bx1F#ZRvY#@?of^9P3"
+                                            },
+                                            {
+                                              "text": "voxels",
+                                              "id": "f+:oa`W4}MJPIEg,`zNc"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    "fields": {
+                                      "TYPE": "Shl.+h5Q_qnw}]TEsNmL"
+                                    },
+                                    "next": {
+                                      "block": {
+                                        "type": "toolbox_block",
+                                        "id": "U{o+Y{/_t!!^yNoFK;xl",
+                                        "extraState": {
+                                          "dropdowns": [
+                                            {
+                                              "field": "TYPE",
+                                              "options": [
+                                                {
+                                                  "text": "auto_resize",
+                                                  "id": "5qM8jqC7=nSW^gBDF0Fs"
+                                                },
+                                                {
+                                                  "text": "color",
+                                                  "id": "+M~ep=D~DV#zD;v8Dyx,"
+                                                },
+                                                {
+                                                  "text": "colors",
+                                                  "id": "LkThlQ+gz1ry^^3GR#)9"
+                                                },
+                                                {
+                                                  "text": "deform",
+                                                  "id": "gp|o*Pw_%tSHOyKH*R2u"
+                                                },
+                                                {
+                                                  "text": "fade",
+                                                  "id": "1CANkbd#3PjuWZUrA)[E"
+                                                },
+                                                {
+                                                  "text": "light_ambient",
+                                                  "id": "P)O:2E1Em[]5XN@oK?Bj"
+                                                },
+                                                {
+                                                  "text": "light_directional",
+                                                  "id": "A@HK2yNBL4zY{2aov*EW"
+                                                },
+                                                {
+                                                  "text": "light_point",
+                                                  "id": "Ck3iT09(f~RAsoUpt6UX"
+                                                },
+                                                {
+                                                  "text": "lights_on_off",
+                                                  "id": "R@F#umgx47~{|4[69PXJ"
+                                                },
+                                                {
+                                                  "text": "material",
+                                                  "id": "rKvtcXy;/TKKzRrAEMF5"
+                                                },
+                                                {
+                                                  "text": "metalness",
+                                                  "id": "Shl.+h5Q_qnw}]TEsNmL"
+                                                },
+                                                {
+                                                  "text": "model",
+                                                  "id": "l[bLGkR:0DNT_A8c|}zY"
+                                                },
+                                                {
+                                                  "text": "opacity",
+                                                  "id": "7}X6r!WJvniQ-prk,iX-"
+                                                },
+                                                {
+                                                  "text": "orgiin",
+                                                  "id": "^mE;MyLQy}(z4$NNTBrF"
+                                                },
+                                                {
+                                                  "text": "rotation",
+                                                  "id": "#DJF$0JzB4RcfAEt=kZX"
+                                                },
+                                                {
+                                                  "text": "scale",
+                                                  "id": "w6N?iT9n]6)HzfdzDIGZ"
+                                                },
+                                                {
+                                                  "text": "side",
+                                                  "id": "wM50mZin%x$%6j:NSvca"
+                                                },
+                                                {
+                                                  "text": "texture",
+                                                  "id": "s,5Ao*tTs+AGG.J6q*/}"
+                                                },
+                                                {
+                                                  "text": "voxel_7",
+                                                  "id": "De},K=IX9FMMYWmalYG`"
+                                                },
+                                                {
+                                                  "text": "voxel_repeat",
+                                                  "id": "VxKLk0H(l4Y~SU0#rUN."
+                                                },
+                                                {
+                                                  "text": "voxel_start",
+                                                  "id": "hYevjC~gY/|P$Y{+VW}^"
+                                                },
+                                                {
+                                                  "text": "voxel_text",
+                                                  "id": "y:Bx1F#ZRvY#@?of^9P3"
+                                                },
+                                                {
+                                                  "text": "voxels",
+                                                  "id": "f+:oa`W4}MJPIEg,`zNc"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        "fields": {
+                                          "TYPE": "wM50mZin%x$%6j:NSvca"
+                                        },
+                                        "next": {
+                                          "block": {
+                                            "type": "toolbox_block",
+                                            "id": "O)iRJ[)9;~ucV}nc,Z;v",
+                                            "extraState": {
+                                              "dropdowns": [
+                                                {
+                                                  "field": "TYPE",
+                                                  "options": [
+                                                    {
+                                                      "text": "auto_resize",
+                                                      "id": "5qM8jqC7=nSW^gBDF0Fs"
+                                                    },
+                                                    {
+                                                      "text": "color",
+                                                      "id": "+M~ep=D~DV#zD;v8Dyx,"
+                                                    },
+                                                    {
+                                                      "text": "colors",
+                                                      "id": "LkThlQ+gz1ry^^3GR#)9"
+                                                    },
+                                                    {
+                                                      "text": "deform",
+                                                      "id": "gp|o*Pw_%tSHOyKH*R2u"
+                                                    },
+                                                    {
+                                                      "text": "fade",
+                                                      "id": "1CANkbd#3PjuWZUrA)[E"
+                                                    },
+                                                    {
+                                                      "text": "light_ambient",
+                                                      "id": "P)O:2E1Em[]5XN@oK?Bj"
+                                                    },
+                                                    {
+                                                      "text": "light_directional",
+                                                      "id": "A@HK2yNBL4zY{2aov*EW"
+                                                    },
+                                                    {
+                                                      "text": "light_point",
+                                                      "id": "Ck3iT09(f~RAsoUpt6UX"
+                                                    },
+                                                    {
+                                                      "text": "lights_on_off",
+                                                      "id": "R@F#umgx47~{|4[69PXJ"
+                                                    },
+                                                    {
+                                                      "text": "material",
+                                                      "id": "rKvtcXy;/TKKzRrAEMF5"
+                                                    },
+                                                    {
+                                                      "text": "metalness",
+                                                      "id": "Shl.+h5Q_qnw}]TEsNmL"
+                                                    },
+                                                    {
+                                                      "text": "model",
+                                                      "id": "l[bLGkR:0DNT_A8c|}zY"
+                                                    },
+                                                    {
+                                                      "text": "opacity",
+                                                      "id": "7}X6r!WJvniQ-prk,iX-"
+                                                    },
+                                                    {
+                                                      "text": "orgiin",
+                                                      "id": "^mE;MyLQy}(z4$NNTBrF"
+                                                    },
+                                                    {
+                                                      "text": "rotation",
+                                                      "id": "#DJF$0JzB4RcfAEt=kZX"
+                                                    },
+                                                    {
+                                                      "text": "scale",
+                                                      "id": "w6N?iT9n]6)HzfdzDIGZ"
+                                                    },
+                                                    {
+                                                      "text": "side",
+                                                      "id": "wM50mZin%x$%6j:NSvca"
+                                                    },
+                                                    {
+                                                      "text": "texture",
+                                                      "id": "s,5Ao*tTs+AGG.J6q*/}"
+                                                    },
+                                                    {
+                                                      "text": "voxel_7",
+                                                      "id": "De},K=IX9FMMYWmalYG`"
+                                                    },
+                                                    {
+                                                      "text": "voxel_repeat",
+                                                      "id": "VxKLk0H(l4Y~SU0#rUN."
+                                                    },
+                                                    {
+                                                      "text": "voxel_start",
+                                                      "id": "hYevjC~gY/|P$Y{+VW}^"
+                                                    },
+                                                    {
+                                                      "text": "voxel_text",
+                                                      "id": "y:Bx1F#ZRvY#@?of^9P3"
+                                                    },
+                                                    {
+                                                      "text": "voxels",
+                                                      "id": "f+:oa`W4}MJPIEg,`zNc"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            "fields": {
+                                              "TYPE": "gp|o*Pw_%tSHOyKH*R2u"
+                                            },
+                                            "next": {
+                                              "block": {
+                                                "type": "toolbox_block",
+                                                "id": "[?!L+Y:(s5JV8OOZW-`X",
+                                                "extraState": {
+                                                  "dropdowns": [
+                                                    {
+                                                      "field": "TYPE",
+                                                      "options": [
+                                                        {
+                                                          "text": "auto_resize",
+                                                          "id": "5qM8jqC7=nSW^gBDF0Fs"
+                                                        },
+                                                        {
+                                                          "text": "color",
+                                                          "id": "+M~ep=D~DV#zD;v8Dyx,"
+                                                        },
+                                                        {
+                                                          "text": "colors",
+                                                          "id": "LkThlQ+gz1ry^^3GR#)9"
+                                                        },
+                                                        {
+                                                          "text": "deform",
+                                                          "id": "gp|o*Pw_%tSHOyKH*R2u"
+                                                        },
+                                                        {
+                                                          "text": "fade",
+                                                          "id": "1CANkbd#3PjuWZUrA)[E"
+                                                        },
+                                                        {
+                                                          "text": "light_ambient",
+                                                          "id": "P)O:2E1Em[]5XN@oK?Bj"
+                                                        },
+                                                        {
+                                                          "text": "light_directional",
+                                                          "id": "A@HK2yNBL4zY{2aov*EW"
+                                                        },
+                                                        {
+                                                          "text": "light_point",
+                                                          "id": "Ck3iT09(f~RAsoUpt6UX"
+                                                        },
+                                                        {
+                                                          "text": "lights_on_off",
+                                                          "id": "R@F#umgx47~{|4[69PXJ"
+                                                        },
+                                                        {
+                                                          "text": "material",
+                                                          "id": "rKvtcXy;/TKKzRrAEMF5"
+                                                        },
+                                                        {
+                                                          "text": "metalness",
+                                                          "id": "Shl.+h5Q_qnw}]TEsNmL"
+                                                        },
+                                                        {
+                                                          "text": "model",
+                                                          "id": "l[bLGkR:0DNT_A8c|}zY"
+                                                        },
+                                                        {
+                                                          "text": "opacity",
+                                                          "id": "7}X6r!WJvniQ-prk,iX-"
+                                                        },
+                                                        {
+                                                          "text": "orgiin",
+                                                          "id": "^mE;MyLQy}(z4$NNTBrF"
+                                                        },
+                                                        {
+                                                          "text": "rotation",
+                                                          "id": "#DJF$0JzB4RcfAEt=kZX"
+                                                        },
+                                                        {
+                                                          "text": "scale",
+                                                          "id": "w6N?iT9n]6)HzfdzDIGZ"
+                                                        },
+                                                        {
+                                                          "text": "side",
+                                                          "id": "wM50mZin%x$%6j:NSvca"
+                                                        },
+                                                        {
+                                                          "text": "texture",
+                                                          "id": "s,5Ao*tTs+AGG.J6q*/}"
+                                                        },
+                                                        {
+                                                          "text": "voxel_7",
+                                                          "id": "De},K=IX9FMMYWmalYG`"
+                                                        },
+                                                        {
+                                                          "text": "voxel_repeat",
+                                                          "id": "VxKLk0H(l4Y~SU0#rUN."
+                                                        },
+                                                        {
+                                                          "text": "voxel_start",
+                                                          "id": "hYevjC~gY/|P$Y{+VW}^"
+                                                        },
+                                                        {
+                                                          "text": "voxel_text",
+                                                          "id": "y:Bx1F#ZRvY#@?of^9P3"
+                                                        },
+                                                        {
+                                                          "text": "voxels",
+                                                          "id": "f+:oa`W4}MJPIEg,`zNc"
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                "fields": {
+                                                  "TYPE": "1CANkbd#3PjuWZUrA)[E"
+                                                },
+                                                "next": {
+                                                  "block": {
+                                                    "type": "toolbox_block",
+                                                    "id": "!9L!muPz_J#}TvyAq;?g",
+                                                    "extraState": {
+                                                      "dropdowns": [
+                                                        {
+                                                          "field": "TYPE",
+                                                          "options": [
+                                                            {
+                                                              "text": "auto_resize",
+                                                              "id": "5qM8jqC7=nSW^gBDF0Fs"
+                                                            },
+                                                            {
+                                                              "text": "color",
+                                                              "id": "+M~ep=D~DV#zD;v8Dyx,"
+                                                            },
+                                                            {
+                                                              "text": "colors",
+                                                              "id": "LkThlQ+gz1ry^^3GR#)9"
+                                                            },
+                                                            {
+                                                              "text": "deform",
+                                                              "id": "gp|o*Pw_%tSHOyKH*R2u"
+                                                            },
+                                                            {
+                                                              "text": "fade",
+                                                              "id": "1CANkbd#3PjuWZUrA)[E"
+                                                            },
+                                                            {
+                                                              "text": "light_ambient",
+                                                              "id": "P)O:2E1Em[]5XN@oK?Bj"
+                                                            },
+                                                            {
+                                                              "text": "light_directional",
+                                                              "id": "A@HK2yNBL4zY{2aov*EW"
+                                                            },
+                                                            {
+                                                              "text": "light_point",
+                                                              "id": "Ck3iT09(f~RAsoUpt6UX"
+                                                            },
+                                                            {
+                                                              "text": "lights_on_off",
+                                                              "id": "R@F#umgx47~{|4[69PXJ"
+                                                            },
+                                                            {
+                                                              "text": "material",
+                                                              "id": "rKvtcXy;/TKKzRrAEMF5"
+                                                            },
+                                                            {
+                                                              "text": "metalness",
+                                                              "id": "Shl.+h5Q_qnw}]TEsNmL"
+                                                            },
+                                                            {
+                                                              "text": "model",
+                                                              "id": "l[bLGkR:0DNT_A8c|}zY"
+                                                            },
+                                                            {
+                                                              "text": "opacity",
+                                                              "id": "7}X6r!WJvniQ-prk,iX-"
+                                                            },
+                                                            {
+                                                              "text": "orgiin",
+                                                              "id": "^mE;MyLQy}(z4$NNTBrF"
+                                                            },
+                                                            {
+                                                              "text": "rotation",
+                                                              "id": "#DJF$0JzB4RcfAEt=kZX"
+                                                            },
+                                                            {
+                                                              "text": "scale",
+                                                              "id": "w6N?iT9n]6)HzfdzDIGZ"
+                                                            },
+                                                            {
+                                                              "text": "side",
+                                                              "id": "wM50mZin%x$%6j:NSvca"
+                                                            },
+                                                            {
+                                                              "text": "texture",
+                                                              "id": "s,5Ao*tTs+AGG.J6q*/}"
+                                                            },
+                                                            {
+                                                              "text": "voxel_7",
+                                                              "id": "De},K=IX9FMMYWmalYG`"
+                                                            },
+                                                            {
+                                                              "text": "voxel_repeat",
+                                                              "id": "VxKLk0H(l4Y~SU0#rUN."
+                                                            },
+                                                            {
+                                                              "text": "voxel_start",
+                                                              "id": "hYevjC~gY/|P$Y{+VW}^"
+                                                            },
+                                                            {
+                                                              "text": "voxel_text",
+                                                              "id": "y:Bx1F#ZRvY#@?of^9P3"
+                                                            },
+                                                            {
+                                                              "text": "voxels",
+                                                              "id": "f+:oa`W4}MJPIEg,`zNc"
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    },
+                                                    "fields": {
+                                                      "TYPE": "7}X6r!WJvniQ-prk,iX-"
+                                                    },
+                                                    "next": {
+                                                      "block": {
+                                                        "type": "toolbox_block",
+                                                        "id": "/TY_hDaZ]m%$m6JODl*8",
+                                                        "extraState": {
+                                                          "dropdowns": [
+                                                            {
+                                                              "field": "TYPE",
+                                                              "options": [
+                                                                {
+                                                                  "text": "auto_resize",
+                                                                  "id": "5qM8jqC7=nSW^gBDF0Fs"
+                                                                },
+                                                                {
+                                                                  "text": "color",
+                                                                  "id": "+M~ep=D~DV#zD;v8Dyx,"
+                                                                },
+                                                                {
+                                                                  "text": "colors",
+                                                                  "id": "LkThlQ+gz1ry^^3GR#)9"
+                                                                },
+                                                                {
+                                                                  "text": "deform",
+                                                                  "id": "gp|o*Pw_%tSHOyKH*R2u"
+                                                                },
+                                                                {
+                                                                  "text": "fade",
+                                                                  "id": "1CANkbd#3PjuWZUrA)[E"
+                                                                },
+                                                                {
+                                                                  "text": "light_ambient",
+                                                                  "id": "P)O:2E1Em[]5XN@oK?Bj"
+                                                                },
+                                                                {
+                                                                  "text": "light_directional",
+                                                                  "id": "A@HK2yNBL4zY{2aov*EW"
+                                                                },
+                                                                {
+                                                                  "text": "light_point",
+                                                                  "id": "Ck3iT09(f~RAsoUpt6UX"
+                                                                },
+                                                                {
+                                                                  "text": "lights_on_off",
+                                                                  "id": "R@F#umgx47~{|4[69PXJ"
+                                                                },
+                                                                {
+                                                                  "text": "material",
+                                                                  "id": "rKvtcXy;/TKKzRrAEMF5"
+                                                                },
+                                                                {
+                                                                  "text": "metalness",
+                                                                  "id": "Shl.+h5Q_qnw}]TEsNmL"
+                                                                },
+                                                                {
+                                                                  "text": "model",
+                                                                  "id": "l[bLGkR:0DNT_A8c|}zY"
+                                                                },
+                                                                {
+                                                                  "text": "opacity",
+                                                                  "id": "7}X6r!WJvniQ-prk,iX-"
+                                                                },
+                                                                {
+                                                                  "text": "orgiin",
+                                                                  "id": "^mE;MyLQy}(z4$NNTBrF"
+                                                                },
+                                                                {
+                                                                  "text": "rotation",
+                                                                  "id": "#DJF$0JzB4RcfAEt=kZX"
+                                                                },
+                                                                {
+                                                                  "text": "scale",
+                                                                  "id": "w6N?iT9n]6)HzfdzDIGZ"
+                                                                },
+                                                                {
+                                                                  "text": "side",
+                                                                  "id": "wM50mZin%x$%6j:NSvca"
+                                                                },
+                                                                {
+                                                                  "text": "texture",
+                                                                  "id": "s,5Ao*tTs+AGG.J6q*/}"
+                                                                },
+                                                                {
+                                                                  "text": "voxel_7",
+                                                                  "id": "De},K=IX9FMMYWmalYG`"
+                                                                },
+                                                                {
+                                                                  "text": "voxel_repeat",
+                                                                  "id": "VxKLk0H(l4Y~SU0#rUN."
+                                                                },
+                                                                {
+                                                                  "text": "voxel_start",
+                                                                  "id": "hYevjC~gY/|P$Y{+VW}^"
+                                                                },
+                                                                {
+                                                                  "text": "voxel_text",
+                                                                  "id": "y:Bx1F#ZRvY#@?of^9P3"
+                                                                },
+                                                                {
+                                                                  "text": "voxels",
+                                                                  "id": "f+:oa`W4}MJPIEg,`zNc"
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        },
+                                                        "fields": {
+                                                          "TYPE": "s,5Ao*tTs+AGG.J6q*/}"
+                                                        },
+                                                        "next": {
+                                                          "block": {
+                                                            "type": "toolbox_block",
+                                                            "id": "C8pq#48ANFf3G:_W$g_U",
+                                                            "extraState": {
+                                                              "dropdowns": [
+                                                                {
+                                                                  "field": "TYPE",
+                                                                  "options": [
+                                                                    {
+                                                                      "text": "auto_resize",
+                                                                      "id": "5qM8jqC7=nSW^gBDF0Fs"
+                                                                    },
+                                                                    {
+                                                                      "text": "color",
+                                                                      "id": "+M~ep=D~DV#zD;v8Dyx,"
+                                                                    },
+                                                                    {
+                                                                      "text": "colors",
+                                                                      "id": "LkThlQ+gz1ry^^3GR#)9"
+                                                                    },
+                                                                    {
+                                                                      "text": "deform",
+                                                                      "id": "gp|o*Pw_%tSHOyKH*R2u"
+                                                                    },
+                                                                    {
+                                                                      "text": "fade",
+                                                                      "id": "1CANkbd#3PjuWZUrA)[E"
+                                                                    },
+                                                                    {
+                                                                      "text": "light_ambient",
+                                                                      "id": "P)O:2E1Em[]5XN@oK?Bj"
+                                                                    },
+                                                                    {
+                                                                      "text": "light_directional",
+                                                                      "id": "A@HK2yNBL4zY{2aov*EW"
+                                                                    },
+                                                                    {
+                                                                      "text": "light_point",
+                                                                      "id": "Ck3iT09(f~RAsoUpt6UX"
+                                                                    },
+                                                                    {
+                                                                      "text": "lights_on_off",
+                                                                      "id": "R@F#umgx47~{|4[69PXJ"
+                                                                    },
+                                                                    {
+                                                                      "text": "material",
+                                                                      "id": "rKvtcXy;/TKKzRrAEMF5"
+                                                                    },
+                                                                    {
+                                                                      "text": "metalness",
+                                                                      "id": "Shl.+h5Q_qnw}]TEsNmL"
+                                                                    },
+                                                                    {
+                                                                      "text": "model",
+                                                                      "id": "l[bLGkR:0DNT_A8c|}zY"
+                                                                    },
+                                                                    {
+                                                                      "text": "opacity",
+                                                                      "id": "7}X6r!WJvniQ-prk,iX-"
+                                                                    },
+                                                                    {
+                                                                      "text": "orgiin",
+                                                                      "id": "^mE;MyLQy}(z4$NNTBrF"
+                                                                    },
+                                                                    {
+                                                                      "text": "rotation",
+                                                                      "id": "#DJF$0JzB4RcfAEt=kZX"
+                                                                    },
+                                                                    {
+                                                                      "text": "scale",
+                                                                      "id": "w6N?iT9n]6)HzfdzDIGZ"
+                                                                    },
+                                                                    {
+                                                                      "text": "side",
+                                                                      "id": "wM50mZin%x$%6j:NSvca"
+                                                                    },
+                                                                    {
+                                                                      "text": "texture",
+                                                                      "id": "s,5Ao*tTs+AGG.J6q*/}"
+                                                                    },
+                                                                    {
+                                                                      "text": "voxel_7",
+                                                                      "id": "De},K=IX9FMMYWmalYG`"
+                                                                    },
+                                                                    {
+                                                                      "text": "voxel_repeat",
+                                                                      "id": "VxKLk0H(l4Y~SU0#rUN."
+                                                                    },
+                                                                    {
+                                                                      "text": "voxel_start",
+                                                                      "id": "hYevjC~gY/|P$Y{+VW}^"
+                                                                    },
+                                                                    {
+                                                                      "text": "voxel_text",
+                                                                      "id": "y:Bx1F#ZRvY#@?of^9P3"
+                                                                    },
+                                                                    {
+                                                                      "text": "voxels",
+                                                                      "id": "f+:oa`W4}MJPIEg,`zNc"
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            },
+                                                            "fields": {
+                                                              "TYPE": "R@F#umgx47~{|4[69PXJ"
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "next": {
+                        "block": {
+                          "type": "toolbox_category",
+                          "id": "5~K#s8*e4ILmt#8!pc``",
+                          "extraState": {
+                            "dropdowns": []
+                          },
+                          "fields": {
+                            "NAME": "Voxels",
+                            "COLOUR": "#6600cc",
+                            "EXPAND": false
+                          },
+                          "inputs": {
+                            "LIST": {
+                              "block": {
+                                "type": "toolbox_block",
+                                "id": "$.ZmqB.I@vA~.{d;/7cn",
+                                "extraState": {
+                                  "dropdowns": [
+                                    {
+                                      "field": "TYPE",
+                                      "options": [
+                                        {
+                                          "text": "auto_resize",
+                                          "id": "5qM8jqC7=nSW^gBDF0Fs"
+                                        },
+                                        {
+                                          "text": "color",
+                                          "id": "+M~ep=D~DV#zD;v8Dyx,"
+                                        },
+                                        {
+                                          "text": "colors",
+                                          "id": "LkThlQ+gz1ry^^3GR#)9"
+                                        },
+                                        {
+                                          "text": "deform",
+                                          "id": "gp|o*Pw_%tSHOyKH*R2u"
+                                        },
+                                        {
+                                          "text": "fade",
+                                          "id": "1CANkbd#3PjuWZUrA)[E"
+                                        },
+                                        {
+                                          "text": "light_ambient",
+                                          "id": "P)O:2E1Em[]5XN@oK?Bj"
+                                        },
+                                        {
+                                          "text": "light_directional",
+                                          "id": "A@HK2yNBL4zY{2aov*EW"
+                                        },
+                                        {
+                                          "text": "light_point",
+                                          "id": "Ck3iT09(f~RAsoUpt6UX"
+                                        },
+                                        {
+                                          "text": "lights_on_off",
+                                          "id": "R@F#umgx47~{|4[69PXJ"
+                                        },
+                                        {
+                                          "text": "material",
+                                          "id": "rKvtcXy;/TKKzRrAEMF5"
+                                        },
+                                        {
+                                          "text": "metalness",
+                                          "id": "Shl.+h5Q_qnw}]TEsNmL"
+                                        },
+                                        {
+                                          "text": "model",
+                                          "id": "l[bLGkR:0DNT_A8c|}zY"
+                                        },
+                                        {
+                                          "text": "opacity",
+                                          "id": "7}X6r!WJvniQ-prk,iX-"
+                                        },
+                                        {
+                                          "text": "orgiin",
+                                          "id": "^mE;MyLQy}(z4$NNTBrF"
+                                        },
+                                        {
+                                          "text": "rotation",
+                                          "id": "#DJF$0JzB4RcfAEt=kZX"
+                                        },
+                                        {
+                                          "text": "scale",
+                                          "id": "w6N?iT9n]6)HzfdzDIGZ"
+                                        },
+                                        {
+                                          "text": "side",
+                                          "id": "wM50mZin%x$%6j:NSvca"
+                                        },
+                                        {
+                                          "text": "texture",
+                                          "id": "s,5Ao*tTs+AGG.J6q*/}"
+                                        },
+                                        {
+                                          "text": "voxel_7",
+                                          "id": "De},K=IX9FMMYWmalYG`"
+                                        },
+                                        {
+                                          "text": "voxel_repeat",
+                                          "id": "VxKLk0H(l4Y~SU0#rUN."
+                                        },
+                                        {
+                                          "text": "voxel_start",
+                                          "id": "hYevjC~gY/|P$Y{+VW}^"
+                                        },
+                                        {
+                                          "text": "voxel_text",
+                                          "id": "y:Bx1F#ZRvY#@?of^9P3"
+                                        },
+                                        {
+                                          "text": "voxels",
+                                          "id": "f+:oa`W4}MJPIEg,`zNc"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "fields": {
+                                  "TYPE": "f+:oa`W4}MJPIEg,`zNc"
+                                },
+                                "next": {
+                                  "block": {
+                                    "type": "toolbox_block",
+                                    "id": "oJbe=(`Nn1,B[:b3KOq~",
+                                    "extraState": {
+                                      "dropdowns": [
+                                        {
+                                          "field": "TYPE",
+                                          "options": [
+                                            {
+                                              "text": "auto_resize",
+                                              "id": "5qM8jqC7=nSW^gBDF0Fs"
+                                            },
+                                            {
+                                              "text": "color",
+                                              "id": "+M~ep=D~DV#zD;v8Dyx,"
+                                            },
+                                            {
+                                              "text": "colors",
+                                              "id": "LkThlQ+gz1ry^^3GR#)9"
+                                            },
+                                            {
+                                              "text": "deform",
+                                              "id": "gp|o*Pw_%tSHOyKH*R2u"
+                                            },
+                                            {
+                                              "text": "fade",
+                                              "id": "1CANkbd#3PjuWZUrA)[E"
+                                            },
+                                            {
+                                              "text": "light_ambient",
+                                              "id": "P)O:2E1Em[]5XN@oK?Bj"
+                                            },
+                                            {
+                                              "text": "light_directional",
+                                              "id": "A@HK2yNBL4zY{2aov*EW"
+                                            },
+                                            {
+                                              "text": "light_point",
+                                              "id": "Ck3iT09(f~RAsoUpt6UX"
+                                            },
+                                            {
+                                              "text": "lights_on_off",
+                                              "id": "R@F#umgx47~{|4[69PXJ"
+                                            },
+                                            {
+                                              "text": "material",
+                                              "id": "rKvtcXy;/TKKzRrAEMF5"
+                                            },
+                                            {
+                                              "text": "metalness",
+                                              "id": "Shl.+h5Q_qnw}]TEsNmL"
+                                            },
+                                            {
+                                              "text": "model",
+                                              "id": "l[bLGkR:0DNT_A8c|}zY"
+                                            },
+                                            {
+                                              "text": "opacity",
+                                              "id": "7}X6r!WJvniQ-prk,iX-"
+                                            },
+                                            {
+                                              "text": "orgiin",
+                                              "id": "^mE;MyLQy}(z4$NNTBrF"
+                                            },
+                                            {
+                                              "text": "rotation",
+                                              "id": "#DJF$0JzB4RcfAEt=kZX"
+                                            },
+                                            {
+                                              "text": "scale",
+                                              "id": "w6N?iT9n]6)HzfdzDIGZ"
+                                            },
+                                            {
+                                              "text": "side",
+                                              "id": "wM50mZin%x$%6j:NSvca"
+                                            },
+                                            {
+                                              "text": "texture",
+                                              "id": "s,5Ao*tTs+AGG.J6q*/}"
+                                            },
+                                            {
+                                              "text": "voxel_7",
+                                              "id": "De},K=IX9FMMYWmalYG`"
+                                            },
+                                            {
+                                              "text": "voxel_repeat",
+                                              "id": "VxKLk0H(l4Y~SU0#rUN."
+                                            },
+                                            {
+                                              "text": "voxel_start",
+                                              "id": "hYevjC~gY/|P$Y{+VW}^"
+                                            },
+                                            {
+                                              "text": "voxel_text",
+                                              "id": "y:Bx1F#ZRvY#@?of^9P3"
+                                            },
+                                            {
+                                              "text": "voxels",
+                                              "id": "f+:oa`W4}MJPIEg,`zNc"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    "fields": {
+                                      "TYPE": "hYevjC~gY/|P$Y{+VW}^"
+                                    },
+                                    "next": {
+                                      "block": {
+                                        "type": "toolbox_block",
+                                        "id": "uC8|q#FcgML[#b5zHOjZ",
+                                        "extraState": {
+                                          "dropdowns": [
+                                            {
+                                              "field": "TYPE",
+                                              "options": [
+                                                {
+                                                  "text": "auto_resize",
+                                                  "id": "5qM8jqC7=nSW^gBDF0Fs"
+                                                },
+                                                {
+                                                  "text": "color",
+                                                  "id": "+M~ep=D~DV#zD;v8Dyx,"
+                                                },
+                                                {
+                                                  "text": "colors",
+                                                  "id": "LkThlQ+gz1ry^^3GR#)9"
+                                                },
+                                                {
+                                                  "text": "deform",
+                                                  "id": "gp|o*Pw_%tSHOyKH*R2u"
+                                                },
+                                                {
+                                                  "text": "fade",
+                                                  "id": "1CANkbd#3PjuWZUrA)[E"
+                                                },
+                                                {
+                                                  "text": "light_ambient",
+                                                  "id": "P)O:2E1Em[]5XN@oK?Bj"
+                                                },
+                                                {
+                                                  "text": "light_directional",
+                                                  "id": "A@HK2yNBL4zY{2aov*EW"
+                                                },
+                                                {
+                                                  "text": "light_point",
+                                                  "id": "Ck3iT09(f~RAsoUpt6UX"
+                                                },
+                                                {
+                                                  "text": "lights_on_off",
+                                                  "id": "R@F#umgx47~{|4[69PXJ"
+                                                },
+                                                {
+                                                  "text": "material",
+                                                  "id": "rKvtcXy;/TKKzRrAEMF5"
+                                                },
+                                                {
+                                                  "text": "metalness",
+                                                  "id": "Shl.+h5Q_qnw}]TEsNmL"
+                                                },
+                                                {
+                                                  "text": "model",
+                                                  "id": "l[bLGkR:0DNT_A8c|}zY"
+                                                },
+                                                {
+                                                  "text": "opacity",
+                                                  "id": "7}X6r!WJvniQ-prk,iX-"
+                                                },
+                                                {
+                                                  "text": "orgiin",
+                                                  "id": "^mE;MyLQy}(z4$NNTBrF"
+                                                },
+                                                {
+                                                  "text": "rotation",
+                                                  "id": "#DJF$0JzB4RcfAEt=kZX"
+                                                },
+                                                {
+                                                  "text": "scale",
+                                                  "id": "w6N?iT9n]6)HzfdzDIGZ"
+                                                },
+                                                {
+                                                  "text": "side",
+                                                  "id": "wM50mZin%x$%6j:NSvca"
+                                                },
+                                                {
+                                                  "text": "texture",
+                                                  "id": "s,5Ao*tTs+AGG.J6q*/}"
+                                                },
+                                                {
+                                                  "text": "voxel_7",
+                                                  "id": "De},K=IX9FMMYWmalYG`"
+                                                },
+                                                {
+                                                  "text": "voxel_repeat",
+                                                  "id": "VxKLk0H(l4Y~SU0#rUN."
+                                                },
+                                                {
+                                                  "text": "voxel_start",
+                                                  "id": "hYevjC~gY/|P$Y{+VW}^"
+                                                },
+                                                {
+                                                  "text": "voxel_text",
+                                                  "id": "y:Bx1F#ZRvY#@?of^9P3"
+                                                },
+                                                {
+                                                  "text": "voxels",
+                                                  "id": "f+:oa`W4}MJPIEg,`zNc"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        "fields": {
+                                          "TYPE": "y:Bx1F#ZRvY#@?of^9P3"
+                                        },
+                                        "next": {
+                                          "block": {
+                                            "type": "toolbox_block",
+                                            "id": "%Av@iqv]D)!jkuaI}f7F",
+                                            "extraState": {
+                                              "dropdowns": [
+                                                {
+                                                  "field": "TYPE",
+                                                  "options": [
+                                                    {
+                                                      "text": "auto_resize",
+                                                      "id": "5qM8jqC7=nSW^gBDF0Fs"
+                                                    },
+                                                    {
+                                                      "text": "color",
+                                                      "id": "+M~ep=D~DV#zD;v8Dyx,"
+                                                    },
+                                                    {
+                                                      "text": "colors",
+                                                      "id": "LkThlQ+gz1ry^^3GR#)9"
+                                                    },
+                                                    {
+                                                      "text": "deform",
+                                                      "id": "gp|o*Pw_%tSHOyKH*R2u"
+                                                    },
+                                                    {
+                                                      "text": "fade",
+                                                      "id": "1CANkbd#3PjuWZUrA)[E"
+                                                    },
+                                                    {
+                                                      "text": "light_ambient",
+                                                      "id": "P)O:2E1Em[]5XN@oK?Bj"
+                                                    },
+                                                    {
+                                                      "text": "light_directional",
+                                                      "id": "A@HK2yNBL4zY{2aov*EW"
+                                                    },
+                                                    {
+                                                      "text": "light_point",
+                                                      "id": "Ck3iT09(f~RAsoUpt6UX"
+                                                    },
+                                                    {
+                                                      "text": "lights_on_off",
+                                                      "id": "R@F#umgx47~{|4[69PXJ"
+                                                    },
+                                                    {
+                                                      "text": "material",
+                                                      "id": "rKvtcXy;/TKKzRrAEMF5"
+                                                    },
+                                                    {
+                                                      "text": "metalness",
+                                                      "id": "Shl.+h5Q_qnw}]TEsNmL"
+                                                    },
+                                                    {
+                                                      "text": "model",
+                                                      "id": "l[bLGkR:0DNT_A8c|}zY"
+                                                    },
+                                                    {
+                                                      "text": "opacity",
+                                                      "id": "7}X6r!WJvniQ-prk,iX-"
+                                                    },
+                                                    {
+                                                      "text": "orgiin",
+                                                      "id": "^mE;MyLQy}(z4$NNTBrF"
+                                                    },
+                                                    {
+                                                      "text": "rotation",
+                                                      "id": "#DJF$0JzB4RcfAEt=kZX"
+                                                    },
+                                                    {
+                                                      "text": "scale",
+                                                      "id": "w6N?iT9n]6)HzfdzDIGZ"
+                                                    },
+                                                    {
+                                                      "text": "side",
+                                                      "id": "wM50mZin%x$%6j:NSvca"
+                                                    },
+                                                    {
+                                                      "text": "texture",
+                                                      "id": "s,5Ao*tTs+AGG.J6q*/}"
+                                                    },
+                                                    {
+                                                      "text": "voxel_7",
+                                                      "id": "De},K=IX9FMMYWmalYG`"
+                                                    },
+                                                    {
+                                                      "text": "voxel_repeat",
+                                                      "id": "VxKLk0H(l4Y~SU0#rUN."
+                                                    },
+                                                    {
+                                                      "text": "voxel_start",
+                                                      "id": "hYevjC~gY/|P$Y{+VW}^"
+                                                    },
+                                                    {
+                                                      "text": "voxel_text",
+                                                      "id": "y:Bx1F#ZRvY#@?of^9P3"
+                                                    },
+                                                    {
+                                                      "text": "voxels",
+                                                      "id": "f+:oa`W4}MJPIEg,`zNc"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            "fields": {
+                                              "TYPE": "VxKLk0H(l4Y~SU0#rUN."
+                                            },
+                                            "next": {
+                                              "block": {
+                                                "type": "toolbox_block",
+                                                "id": "UP9yLSs~i;K};1UA@`Lh",
+                                                "extraState": {
+                                                  "dropdowns": [
+                                                    {
+                                                      "field": "TYPE",
+                                                      "options": [
+                                                        {
+                                                          "text": "auto_resize",
+                                                          "id": "5qM8jqC7=nSW^gBDF0Fs"
+                                                        },
+                                                        {
+                                                          "text": "color",
+                                                          "id": "+M~ep=D~DV#zD;v8Dyx,"
+                                                        },
+                                                        {
+                                                          "text": "colors",
+                                                          "id": "LkThlQ+gz1ry^^3GR#)9"
+                                                        },
+                                                        {
+                                                          "text": "deform",
+                                                          "id": "gp|o*Pw_%tSHOyKH*R2u"
+                                                        },
+                                                        {
+                                                          "text": "fade",
+                                                          "id": "1CANkbd#3PjuWZUrA)[E"
+                                                        },
+                                                        {
+                                                          "text": "light_ambient",
+                                                          "id": "P)O:2E1Em[]5XN@oK?Bj"
+                                                        },
+                                                        {
+                                                          "text": "light_directional",
+                                                          "id": "A@HK2yNBL4zY{2aov*EW"
+                                                        },
+                                                        {
+                                                          "text": "light_point",
+                                                          "id": "Ck3iT09(f~RAsoUpt6UX"
+                                                        },
+                                                        {
+                                                          "text": "lights_on_off",
+                                                          "id": "R@F#umgx47~{|4[69PXJ"
+                                                        },
+                                                        {
+                                                          "text": "material",
+                                                          "id": "rKvtcXy;/TKKzRrAEMF5"
+                                                        },
+                                                        {
+                                                          "text": "metalness",
+                                                          "id": "Shl.+h5Q_qnw}]TEsNmL"
+                                                        },
+                                                        {
+                                                          "text": "model",
+                                                          "id": "l[bLGkR:0DNT_A8c|}zY"
+                                                        },
+                                                        {
+                                                          "text": "opacity",
+                                                          "id": "7}X6r!WJvniQ-prk,iX-"
+                                                        },
+                                                        {
+                                                          "text": "orgiin",
+                                                          "id": "^mE;MyLQy}(z4$NNTBrF"
+                                                        },
+                                                        {
+                                                          "text": "rotation",
+                                                          "id": "#DJF$0JzB4RcfAEt=kZX"
+                                                        },
+                                                        {
+                                                          "text": "scale",
+                                                          "id": "w6N?iT9n]6)HzfdzDIGZ"
+                                                        },
+                                                        {
+                                                          "text": "side",
+                                                          "id": "wM50mZin%x$%6j:NSvca"
+                                                        },
+                                                        {
+                                                          "text": "texture",
+                                                          "id": "s,5Ao*tTs+AGG.J6q*/}"
+                                                        },
+                                                        {
+                                                          "text": "voxel_7",
+                                                          "id": "De},K=IX9FMMYWmalYG`"
+                                                        },
+                                                        {
+                                                          "text": "voxel_repeat",
+                                                          "id": "VxKLk0H(l4Y~SU0#rUN."
+                                                        },
+                                                        {
+                                                          "text": "voxel_start",
+                                                          "id": "hYevjC~gY/|P$Y{+VW}^"
+                                                        },
+                                                        {
+                                                          "text": "voxel_text",
+                                                          "id": "y:Bx1F#ZRvY#@?of^9P3"
+                                                        },
+                                                        {
+                                                          "text": "voxels",
+                                                          "id": "f+:oa`W4}MJPIEg,`zNc"
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                "fields": {
+                                                  "TYPE": "De},K=IX9FMMYWmalYG`"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

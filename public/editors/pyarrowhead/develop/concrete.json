@@ -1,0 +1,109 @@
+{
+  "$JT,o@uHT`%Z|6;rvx@_": {
+    "type": "local_cloud",
+    "id": "$JT,o@uHT`%Z|6;rvx@_",
+    "x": 58,
+    "y": 116,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "NAME_DESCRIPTION": "Cloud name",
+      "NAME": "local-cloud.world"
+    },
+    "inputs": {
+      "STATEMENTS": {
+        "block": {
+          "id": "T`C|H+_kb|h/UbaZKmad"
+        }
+      }
+    }
+  },
+  "f([nwsJ7W8q^pC`9^H;z": {
+    "type": "local_cloud",
+    "id": "f([nwsJ7W8q^pC`9^H;z",
+    "x": 60,
+    "y": 227,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "NAME_DESCRIPTION": "Cloud name",
+      "NAME": "local-cloud2.world"
+    },
+    "inputs": {
+      "STATEMENTS": {
+        "block": {
+          "id": "?wKWf;da!,`iJ8uF#+nI"
+        }
+      }
+    }
+  },
+  "T`C|H+_kb|h/UbaZKmad": {
+    "type": "add_client",
+    "id": "T`C|H+_kb|h/UbaZKmad",
+    "x": 79,
+    "y": 142,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "NAME_DESCRIPTION": "Client",
+      "NAME": "consumer"
+    },
+    "next": {
+      "block": {
+        "id": "Dnp|el^nL9H^*zsBZ,S)"
+      }
+    }
+  },
+  "?wKWf;da!,`iJ8uF#+nI": {
+    "type": "add_client",
+    "id": "?wKWf;da!,`iJ8uF#+nI",
+    "x": 81,
+    "y": 253,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "NAME_DESCRIPTION": "Client",
+      "NAME": "consumer"
+    },
+    "next": {
+      "block": {
+        "id": "uk9,[Gmo52xfyuBp;edH"
+      }
+    }
+  },
+  "Dnp|el^nL9H^*zsBZ,S)": {
+    "type": "add_client",
+    "id": "Dnp|el^nL9H^*zsBZ,S)",
+    "x": 79,
+    "y": 168,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "NAME_DESCRIPTION": "Client",
+      "NAME": "provider"
+    }
+  },
+  "uk9,[Gmo52xfyuBp;edH": {
+    "type": "add_client",
+    "id": "uk9,[Gmo52xfyuBp;edH",
+    "x": 81,
+    "y": 279,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "NAME_DESCRIPTION": "Client",
+      "NAME": "provider"
+    }
+  },
+  "top_blocks": [
+    "$JT,o@uHT`%Z|6;rvx@_",
+    "f([nwsJ7W8q^pC`9^H;z"
+  ],
+  "mergeable": true
+}

@@ -1,0 +1,536 @@
+{
+  "blocks": {
+    "languageVersion": 0,
+    "blocks": [
+      {
+        "type": "factory_base",
+        "id": ".}uX;_xN~$[c=KQT]owh",
+        "x": 31,
+        "y": 17,
+        "extraState": {
+          "connections": "NONE"
+        },
+        "fields": {
+          "NAME": "definitions",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "NONE"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_dummy",
+              "id": "bR~wA5AtWucDbCGeQ}Pn",
+              "fields": {
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_label_serializable",
+                    "id": "Tm-~soT:VJqE9B`dy+_x",
+                    "fields": {
+                      "TEXT": "Definitions",
+                      "FIELDNAME": "DEFINITIONS_LABEL"
+                    }
+                  }
+                }
+              },
+              "next": {
+                "block": {
+                  "type": "input_statement",
+                  "id": "2wK3f^UjJq9=[(HLEIU(",
+                  "fields": {
+                    "INPUTNAME": "DEFINITIONS",
+                    "ALIGN": "LEFT"
+                  },
+                  "inputs": {
+                    "TYPE": {
+                      "shadow": {
+                        "type": "type_null",
+                        "id": "SKcwS|#-(^I-b!2H%/#2"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "RfGWw+Cuj4DI(RD,4Cbq",
+              "extraState": {
+                "colour": "#5ba55b"
+              },
+              "fields": {
+                "HUE": 120
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": "aCIx|5.H8@ZahO7Xl_wU",
+        "x": 49,
+        "y": 366,
+        "extraState": {
+          "connections": "BOTH"
+        },
+        "fields": {
+          "NAME": "booleanDefinition",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "BOTH"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_dummy",
+              "id": "Ql4N~!@jM?|]O#T|j005",
+              "fields": {
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_label_serializable",
+                    "id": "lsR,:hkD2?ali.jv7Ut[",
+                    "fields": {
+                      "TEXT": "Boolean",
+                      "FIELDNAME": "DEFINITION"
+                    }
+                  }
+                }
+              },
+              "next": {
+                "block": {
+                  "type": "input_dummy",
+                  "id": "VumYJNqGdE{m6Q{GCj(]",
+                  "fields": {
+                    "ALIGN": "LEFT"
+                  },
+                  "inputs": {
+                    "FIELDS": {
+                      "block": {
+                        "type": "field_label_serializable",
+                        "id": "o;-f*![hB[*BTZJ}[6Xd",
+                        "icons": {
+                          "comment": {
+                            "text": "Category to define how the extended entity of the field should behave (Read = read from Info message on name match, Write = send to device in Automatic Config).",
+                            "pinned": false,
+                            "height": 80,
+                            "width": 160
+                          }
+                        },
+                        "fields": {
+                          "TEXT": "Category",
+                          "FIELDNAME": "CATEGORY_LABEL"
+                        },
+                        "next": {
+                          "block": {
+                            "type": "field_dropdown",
+                            "id": "HzM5*F@X1_@cU3;q?)E[",
+                            "extraState": {
+                              "options": "[\"text\",\"text\",\"text\",\"text\"]"
+                            },
+                            "fields": {
+                              "FIELDNAME": "CATEGORY",
+                              "USER0": "Informative",
+                              "CPU0": "Informative",
+                              "USER1": "Write",
+                              "CPU1": "Write",
+                              "USER2": "Read",
+                              "CPU2": "Read",
+                              "USER3": "ReadWrite",
+                              "CPU3": "ReadWrite"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "next": {
+                    "block": {
+                      "type": "input_dummy",
+                      "id": "P113UROrGzrS0oO;VYSz",
+                      "fields": {
+                        "ALIGN": "LEFT"
+                      },
+                      "inputs": {
+                        "FIELDS": {
+                          "block": {
+                            "type": "field_label_serializable",
+                            "id": "|y~6S#p$+c[0PsQOk$R|",
+                            "icons": {
+                              "comment": {
+                                "text": "The name identifier of the field (must start with a letter or underscore, and may contain only letters, numbers and underscores). (Mandatory)",
+                                "pinned": false,
+                                "height": 80,
+                                "width": 160
+                              }
+                            },
+                            "fields": {
+                              "TEXT": "Name",
+                              "FIELDNAME": "NAME_LABEL"
+                            },
+                            "next": {
+                              "block": {
+                                "type": "field_input",
+                                "id": "W]78?0UQ6o;vM?p=MasL",
+                                "fields": {
+                                  "TEXT": "name",
+                                  "FIELDNAME": "NAME"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "next": {
+                        "block": {
+                          "type": "input_dummy",
+                          "id": "6WA(2mP5W-BA|10;GWQ7",
+                          "fields": {
+                            "ALIGN": "LEFT"
+                          },
+                          "inputs": {
+                            "FIELDS": {
+                              "block": {
+                                "type": "field_label_serializable",
+                                "id": "|qUEYT@P3,!R2z1GuoO3",
+                                "icons": {
+                                  "comment": {
+                                    "text": "Indicates if the field allows selecting multiple options.",
+                                    "pinned": false,
+                                    "height": 80,
+                                    "width": 160
+                                  }
+                                },
+                                "fields": {
+                                  "TEXT": "Multiselect",
+                                  "FIELDNAME": "MULTISELECT_LABEL"
+                                },
+                                "next": {
+                                  "block": {
+                                    "type": "field_checkbox",
+                                    "id": "]K##48:,Wbo#X!!SMqvl",
+                                    "fields": {
+                                      "CHECKED": false,
+                                      "FIELDNAME": "MULTISELECT"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "next": {
+                            "block": {
+                              "type": "input_dummy",
+                              "id": "dVeg@/NN3quA(8)LMzf`",
+                              "fields": {
+                                "ALIGN": "LEFT"
+                              },
+                              "inputs": {
+                                "FIELDS": {
+                                  "block": {
+                                    "type": "field_label_serializable",
+                                    "id": "TONs/yKi?xOW-NT~s^f_",
+                                    "icons": {
+                                      "comment": {
+                                        "text": "Indicates if the field allows selecting multiple options.",
+                                        "pinned": false,
+                                        "height": 80,
+                                        "width": 160
+                                      }
+                                    },
+                                    "fields": {
+                                      "TEXT": "Searchable",
+                                      "FIELDNAME": "SEARCHABLE_LABEL"
+                                    },
+                                    "next": {
+                                      "block": {
+                                        "type": "field_checkbox",
+                                        "id": "*g9^%VYvIs*z7I!,hHD(",
+                                        "fields": {
+                                          "CHECKED": false,
+                                          "FIELDNAME": "SEARCHABLE"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "next": {
+                                "block": {
+                                  "type": "input_dummy",
+                                  "id": "]!N{@~bgWd#p_{I#[(dN",
+                                  "fields": {
+                                    "ALIGN": "LEFT"
+                                  },
+                                  "inputs": {
+                                    "FIELDS": {
+                                      "block": {
+                                        "type": "field_label_serializable",
+                                        "id": ")Za?%r_o:%IPl;$ANUEu",
+                                        "icons": {
+                                          "comment": {
+                                            "text": "The display name of the field as it will be shown. (Mandatory)",
+                                            "pinned": false,
+                                            "height": 80,
+                                            "width": 160
+                                          }
+                                        },
+                                        "fields": {
+                                          "TEXT": "Display Name",
+                                          "FIELDNAME": "DISPLAY_NAME_LABEL"
+                                        },
+                                        "next": {
+                                          "block": {
+                                            "type": "field_input",
+                                            "id": "C~D/uh#093)Z?))^=kuE",
+                                            "fields": {
+                                              "TEXT": "name",
+                                              "FIELDNAME": "DISPLAY_NAME"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "TOOLTIP": {
+            "block": {
+              "type": "text",
+              "id": "!6Ik**]I|`%%G#y)HW{2",
+              "fields": {
+                "TEXT": "A choice field, shown as a dropdown."
+              }
+            }
+          },
+          "TOPTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "k9H3YnsIe#r-bfiaV8(T"
+            }
+          },
+          "BOTTOMTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "|lmquxM!Y!oYl?gE}PkM"
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "GT;~sH_Jr89(e.(ZyPo]",
+              "extraState": {
+                "colour": "#5ba55b"
+              },
+              "fields": {
+                "HUE": 120
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "factory_base",
+        "id": "7g#HcEA,1e!Rjq?@M,3e",
+        "x": 53,
+        "y": 1219,
+        "extraState": {
+          "connections": "BOTH"
+        },
+        "fields": {
+          "NAME": "groupDefinition",
+          "INLINE": "AUTO",
+          "CONNECTIONS": "BOTH"
+        },
+        "inputs": {
+          "INPUTS": {
+            "block": {
+              "type": "input_dummy",
+              "id": "yxGL7_fd4#[#Z6TVFn0N",
+              "fields": {
+                "ALIGN": "LEFT"
+              },
+              "inputs": {
+                "FIELDS": {
+                  "block": {
+                    "type": "field_label_serializable",
+                    "id": "GdAn3F~|gky$7nljY#{q",
+                    "fields": {
+                      "TEXT": "Group",
+                      "FIELDNAME": "DEFINITION"
+                    }
+                  }
+                }
+              },
+              "next": {
+                "block": {
+                  "type": "input_dummy",
+                  "id": "!NaAvmC{2s;hLHUQo/##",
+                  "fields": {
+                    "ALIGN": "LEFT"
+                  },
+                  "inputs": {
+                    "FIELDS": {
+                      "block": {
+                        "type": "field_label_serializable",
+                        "id": "ZE%`GcDOS@p/u9{/-$7x",
+                        "icons": {
+                          "comment": {
+                            "text": "The name identifier of the field (must start with a letter or underscore, and may contain only letters, numbers and underscores). (Mandatory)",
+                            "pinned": false,
+                            "height": 80,
+                            "width": 160
+                          }
+                        },
+                        "fields": {
+                          "TEXT": "Name",
+                          "FIELDNAME": "NAME_LABEL"
+                        },
+                        "next": {
+                          "block": {
+                            "type": "field_input",
+                            "id": "[4W;HT:$rVfzoOMu5fHc",
+                            "fields": {
+                              "TEXT": "name",
+                              "FIELDNAME": "NAME"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "next": {
+                    "block": {
+                      "type": "input_dummy",
+                      "id": "N8}%b0uTtv#R7lw_py5#",
+                      "fields": {
+                        "ALIGN": "LEFT"
+                      },
+                      "inputs": {
+                        "FIELDS": {
+                          "block": {
+                            "type": "field_label_serializable",
+                            "id": "U!scf.o;!;~AzmkUuH?t",
+                            "icons": {
+                              "comment": {
+                                "text": "The display name of the field as it will be shown. (Mandatory)",
+                                "pinned": false,
+                                "height": 80,
+                                "width": 160
+                              }
+                            },
+                            "fields": {
+                              "TEXT": "Display Name",
+                              "FIELDNAME": "DISPLAY_NAME_LABEL"
+                            },
+                            "next": {
+                              "block": {
+                                "type": "field_input",
+                                "id": "Ha+qc%UaTx]riszq/)^W",
+                                "fields": {
+                                  "TEXT": "name",
+                                  "FIELDNAME": "DISPLAY_NAME"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "next": {
+                        "block": {
+                          "type": "input_dummy",
+                          "id": "wp^M//khJc#IJ9YLKVMy",
+                          "fields": {
+                            "ALIGN": "LEFT"
+                          },
+                          "inputs": {
+                            "FIELDS": {
+                              "block": {
+                                "type": "field_label_serializable",
+                                "id": "RQZ-zn3k%L*Kybc99PSt",
+                                "icons": {
+                                  "comment": {
+                                    "text": "The description of the field as it will be shown.",
+                                    "pinned": false,
+                                    "height": 80,
+                                    "width": 160
+                                  }
+                                },
+                                "fields": {
+                                  "TEXT": "Description",
+                                  "FIELDNAME": "DESCRIPTION_LABEL"
+                                },
+                                "next": {
+                                  "block": {
+                                    "type": "field_input",
+                                    "id": "A{Px7{DafA0hEOA-l__/",
+                                    "fields": {
+                                      "TEXT": "description",
+                                      "FIELDNAME": "DESCRIPTION"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "TOOLTIP": {
+            "block": {
+              "type": "text",
+              "id": "]4XQuwq=2K[o4spyYLNq",
+              "fields": {
+                "TEXT": "A choice field, shown as a dropdown."
+              }
+            }
+          },
+          "TOPTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "{a{G@Zje5Sd?]{H~Z[?m"
+            }
+          },
+          "BOTTOMTYPE": {
+            "shadow": {
+              "type": "type_null",
+              "id": "d!|$+Zmg8C~s/*,WFpB5"
+            }
+          },
+          "COLOUR": {
+            "block": {
+              "type": "colour_hue",
+              "id": "[~dS}p@iN|@#f-]YHmcG",
+              "extraState": {
+                "colour": "#5ba55b"
+              },
+              "fields": {
+                "HUE": 120
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

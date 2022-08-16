@@ -1,0 +1,123 @@
+{
+  "u*|k:9vwYN!t$=OQ(5X?": {
+    "type": "generate_code",
+    "id": "u*|k:9vwYN!t$=OQ(5X?",
+    "x": 98,
+    "y": 40,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "nice_new_block",
+              "id": "cf@Yx}eq[{f(Jpo0w79A"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "LANG",
+      "TYPE": "cf@Yx}eq[{f(Jpo0w79A"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "ckAwvUETtj[-Ile4Ff3U"
+        }
+      }
+    }
+  },
+  "ckAwvUETtj[-Ile4Ff3U": {
+    "type": "generate_token",
+    "id": "ckAwvUETtj[-Ile4Ff3U",
+    "x": 119,
+    "y": 66,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "\""
+    },
+    "next": {
+      "block": {
+        "id": "/z;]+O(0vL-+kN#K8Y|f"
+      }
+    }
+  },
+  "/z;]+O(0vL-+kN#K8Y|f": {
+    "type": "generate_field_value2",
+    "id": "/z;]+O(0vL-+kN#K8Y|f",
+    "x": 119,
+    "y": 92,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "NAME",
+              "id": "E[vkX3;?N,(R8DGX!y0G0"
+            },
+            {
+              "text": "TITLE",
+              "id": "b_YhQ$b0(,t^Do)_NjKQ0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "E[vkX3;?N,(R8DGX!y0G0"
+    },
+    "next": {
+      "block": {
+        "id": "d38J*8![/D1xtr(Z.-2%"
+      }
+    }
+  },
+  "d38J*8![/D1xtr(Z.-2%": {
+    "type": "generate_token",
+    "id": "d38J*8![/D1xtr(Z.-2%",
+    "x": 119,
+    "y": 118,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "\":\\n"
+    },
+    "next": {
+      "block": {
+        "id": "]Qi/t/meWCYqe,en#4oi"
+      }
+    }
+  },
+  "]Qi/t/meWCYqe,en#4oi": {
+    "type": "generate_statements2",
+    "id": "]Qi/t/meWCYqe,en#4oi",
+    "x": 119,
+    "y": 144,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "STATEMENTS",
+          "options": [
+            {
+              "text": "STATEMENTS",
+              "id": "nmND^gQ/d(c+Lst/2jZ."
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "STATEMENTS": "nmND^gQ/d(c+Lst/2jZ."
+    }
+  },
+  "top_blocks": [
+    "u*|k:9vwYN!t$=OQ(5X?"
+  ],
+  "mergeable": true
+}

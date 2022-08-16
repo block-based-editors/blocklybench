@@ -1,0 +1,19 @@
+{
+  "0hefwKpO{H9!ieYDt?e+": {
+    "type": "nice_new_block",
+    "id": "0hefwKpO{H9!ieYDt?e+",
+    "x": 72,
+    "y": 58,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TITLE": "Nice new block",
+      "NAME": "my_name"
+    }
+  },
+  "top_blocks": [
+    "0hefwKpO{H9!ieYDt?e+"
+  ],
+  "mergeable": true
+}
