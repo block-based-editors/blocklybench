@@ -3481,30 +3481,6 @@ Blockly.Javascript['getSpot'] = function(block) {
   }
 }
 ;
-if (!Blockly.YAML) {
-  Blockly.YAML = new Blockly.Generator('YAML');
-  Blockly.YAML.ORDER_ATOMIC = 0;
-}
-
-Blockly.YAML.scrub_ = function(block, code, opt_thisOnly) {
-    const nextBlock = block.nextConnection && block.nextConnection.targetBlock();
-    const nextCode = opt_thisOnly ? '' : Blockly.YAML.blockToCode(nextBlock);
-    return code + nextCode;
-}
-
-Blockly.YAML['Angle'] = function(block) {
-  var code ='';
-
-  // if this block is a 'value' then code + ORDER needs to be returned
-  if(block.outputConnection) {
-    return [code, Blockly.YAML.ORDER_ATOMIC];
-  }
-  else // no value block
-  {
-    return code;
-  }
-}
-;
 if (!Blockly.Javascript) {
   Blockly.Javascript = new Blockly.Generator('Javascript');
   Blockly.Javascript.ORDER_ATOMIC = 0;
@@ -4141,160 +4117,160 @@ BlocklyStorage.alert = function(message) {
 toolbox = {
  "kind": "categoryToolbox",
  "contents": [
-  {
-   "kind": "category",
-   "name" : "Spot",
-   "colour": "#66c",
-   "contents": [
     {
-      "kind": "block",
-      "type": "spot_set_prop"
-    },
-    {
-      "kind": "block",
-      "type": "getSpot"
-    },
-    {
-      "kind": "block",
-      "type": "getSpotById"
-    },
-    {
-      "kind": "block",
-      "type": "show_hideSpot"
-    },
-    {
-      "kind": "block",
-      "type": "show_hideSpotVariable"
-    },
-    {
-      "kind": "block",
-      "type": "get_spot_property"
-    },
-    {
-      "kind": "block",
-      "type": "forAllSpots"
-    },
-   ]
-  },
-  {
-   "kind": "category",
-   "name" : "Space",
-   "colour": "#399",
-   "contents": [
-    {
-      "kind": "block",
-      "type": "reset_space"
-    },
-    {
-      "kind": "block",
-      "type": "getSpot"
-    },
-    {
-      "kind": "block",
-      "type": "getSpotById"
-    },
-    {
-      "kind": "block",
-      "type": "getCamera"
-    },
-   ]
-  },
-  {
-   "kind": "category",
-   "name" : "Events",
-   "colour": "#fc0",
-   "contents": [
-    {
-      "kind": "block",
-      "type": "onClick"
-    },
-    {
-      "kind": "block",
-      "type": "setInterval"
-    },
-    {
-      "kind": "block",
-      "type": "clearInterval"
-    },
-   ]
-  },
-  {
-   "kind": "category",
-   "name" : "Color",
-   "colour": "#3c0",
-   "contents": [
-    {
-      "kind": "block",
-      "type": "Color"
-    },
-    {
-      "kind": "block",
-      "type": "Color_alpha"
-    },
-   ]
-  },
-  {
-   "kind": "category",
-   "name" : "Vector",
-   "colour": "#36f",
-   "contents": [
-    {
-      "kind": "block",
-      "type": "Vector3"
-    },
-    {
-      "kind": "block",
-      "type": "Vector3_static"
-    },
-    {
-      "kind": "block",
-      "type": "Angle"
-    },
-    {
-      "kind": "block",
-      "type": "Distance"
-    },
-    {
-      "kind": "block",
-      "type": "Cross"
-    },
-   ]
-  },
-  {
-   "kind": "category",
-   "name" : "Quaternion",
-   "colour": "#60c",
-   "contents": [
-    {
-      "kind": "block",
-      "type": "Quaternion"
-    },
-    {
-      "kind": "block",
-      "type": "Quaternion_euler"
-    },
-   ]
-  },
-  {
-   "kind": "category",
-   "name" : "Debug",
-   "colour": "#c00",
-   "contents": [
-    {
-      "kind": "block",
-      "type": "log"
-    },
-    {
-      "kind": "block",
-      "type": "log_text"
-    },
-   ]
-  },
-  {
      "kind": "category",
-     "name": "Variables",
-     "custom": "VARIABLE"
-  },
+     "name" : "Spot",
+     "colour": "#66c",
+     "contents": [
+        {
+          "kind": "block",
+          "type": "spot_set_prop"
+        },
+        {
+          "kind": "block",
+          "type": "getSpot"
+        },
+        {
+          "kind": "block",
+          "type": "getSpotById"
+        },
+        {
+          "kind": "block",
+          "type": "show_hideSpot"
+        },
+        {
+          "kind": "block",
+          "type": "show_hideSpotVariable"
+        },
+        {
+          "kind": "block",
+          "type": "get_spot_property"
+        },
+        {
+          "kind": "block",
+          "type": "forAllSpots"
+        },
+     ]
+    },
+    {
+     "kind": "category",
+     "name" : "Space",
+     "colour": "#399",
+     "contents": [
+        {
+          "kind": "block",
+          "type": "reset_space"
+        },
+        {
+          "kind": "block",
+          "type": "getSpot"
+        },
+        {
+          "kind": "block",
+          "type": "getSpotById"
+        },
+        {
+          "kind": "block",
+          "type": "getCamera"
+        },
+     ]
+    },
+    {
+     "kind": "category",
+     "name" : "Events",
+     "colour": "#fc0",
+     "contents": [
+        {
+          "kind": "block",
+          "type": "onClick"
+        },
+        {
+          "kind": "block",
+          "type": "setInterval"
+        },
+        {
+          "kind": "block",
+          "type": "clearInterval"
+        },
+     ]
+    },
+    {
+     "kind": "category",
+     "name" : "Color",
+     "colour": "#3c0",
+     "contents": [
+        {
+          "kind": "block",
+          "type": "Color"
+        },
+        {
+          "kind": "block",
+          "type": "Color_alpha"
+        },
+     ]
+    },
+    {
+     "kind": "category",
+     "name" : "Vector",
+     "colour": "#36f",
+     "contents": [
+        {
+          "kind": "block",
+          "type": "Vector3"
+        },
+        {
+          "kind": "block",
+          "type": "Vector3_static"
+        },
+        {
+          "kind": "block",
+          "type": "Angle"
+        },
+        {
+          "kind": "block",
+          "type": "Distance"
+        },
+        {
+          "kind": "block",
+          "type": "Cross"
+        },
+     ]
+    },
+    {
+     "kind": "category",
+     "name" : "Quaternion",
+     "colour": "#60c",
+     "contents": [
+        {
+          "kind": "block",
+          "type": "Quaternion"
+        },
+        {
+          "kind": "block",
+          "type": "Quaternion_euler"
+        },
+     ]
+    },
+    {
+     "kind": "category",
+     "name" : "Debug",
+     "colour": "#c00",
+     "contents": [
+        {
+          "kind": "block",
+          "type": "log"
+        },
+        {
+          "kind": "block",
+          "type": "log_text"
+        },
+     ]
+    },
+    {
+       "kind": "category",
+       "name": "Variables",
+       "custom": "VARIABLE"
+    },
  ]
 }
     

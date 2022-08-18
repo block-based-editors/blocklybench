@@ -1347,125 +1347,6 @@
       }
     }
   },
-  "!pFWuCNO]ffR}yRlv`$~": {
-    "type": "generate_code",
-    "id": "!pFWuCNO]ffR}yRlv`$~",
-    "x": 0,
-    "y": 1978,
-    "extraState": {
-      "dropdowns": [
-        {
-          "field": "TYPE",
-          "options": [
-            {
-              "text": "Angle",
-              "id": "vZ*rfG=?GD|*Gn4oz;JW"
-            },
-            {
-              "text": "Color",
-              "id": "blIsv=~Rz/7sRHw/${vi"
-            },
-            {
-              "text": "Color_alpha",
-              "id": "?dorq2fvz3c]0-A~G9[r"
-            },
-            {
-              "text": "Cross",
-              "id": "b/2lGci;ufIhs^$a32rc"
-            },
-            {
-              "text": "Distance",
-              "id": ".{DRto-9LaZpw5_b_~iD"
-            },
-            {
-              "text": "Quaternion",
-              "id": "[~9.*?!}FIsH%7*EiC[s"
-            },
-            {
-              "text": "Quaternion_euler",
-              "id": "Zo!9.lh|?T?P5;PmeV]O"
-            },
-            {
-              "text": "Spot",
-              "id": "cZxVgiajJ}?NM]pRe6!D"
-            },
-            {
-              "text": "Vector3",
-              "id": "abe^{M%AnvU}8e_S*J+i"
-            },
-            {
-              "text": "Vector3_static",
-              "id": "a11pyOATl.zRx2+?zbPY"
-            },
-            {
-              "text": "clearInterval",
-              "id": "osYr0JHK.BzG/wPjHVp0"
-            },
-            {
-              "text": "forAllSpots",
-              "id": "tihVLK_zM!}T`s$i.*4o"
-            },
-            {
-              "text": "getCamera",
-              "id": "F==8Y8Fm0_,E/10YCjS{"
-            },
-            {
-              "text": "getSpot",
-              "id": "TJ#gZ6y{:#sp_=@}rrSh"
-            },
-            {
-              "text": "getSpotById",
-              "id": "dMMEzce{eoN;:~CQ5$GD"
-            },
-            {
-              "text": "get_spot_property",
-              "id": "Ae{5^C6e*gM:j%as^#r5"
-            },
-            {
-              "text": "log",
-              "id": "QW/VB6d$u*3w]E_W0Ro`"
-            },
-            {
-              "text": "log_text",
-              "id": "k_[?iPs.NF=do3Y#Ywz8"
-            },
-            {
-              "text": "move_to",
-              "id": "#e+g({up3N`p:DScZGOd"
-            },
-            {
-              "text": "onClick",
-              "id": "#|S1@P=jYv!3LJr+3Lw~"
-            },
-            {
-              "text": "reset_space",
-              "id": ".NPG1dhgB(pq37Nj5g?i"
-            },
-            {
-              "text": "setInterval",
-              "id": "dhV!tx/KxSEgV7R_6Qn)"
-            },
-            {
-              "text": "show_hideSpot",
-              "id": "(YtXA]8b(chPt{bkMM%R"
-            },
-            {
-              "text": "show_hideSpotVariable",
-              "id": "{JxcGN0~#oUF!}tlW/#;"
-            },
-            {
-              "text": "spot_set_prop",
-              "id": ")pRsNnyexLQp%/,S$X{+"
-            }
-          ]
-        }
-      ]
-    },
-    "fields": {
-      "LANGUAGE": "YAML",
-      "TYPE": "vZ*rfG=?GD|*Gn4oz;JW"
-    }
-  },
   "Oxg3i57hYEv,vUDdl3u|": {
     "type": "generate_code",
     "id": "Oxg3i57hYEv,vUDdl3u|",
@@ -5531,7 +5412,6 @@
     "Gr7#q9L1SNrB;{_fxqmu",
     "jPM_t[b~$l2g3T)qoRm_",
     "#I0HO0]41=I+i.B-.ik)",
-    "!pFWuCNO]ffR}yRlv`$~",
     "Oxg3i57hYEv,vUDdl3u|",
     "dwSj,GFS?I|rAb*:@6U`",
     "@QPre+7k_SJG{m[jOe]P",
