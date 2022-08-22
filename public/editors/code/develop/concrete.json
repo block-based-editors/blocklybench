@@ -1,29 +1,18 @@
 {
-  "blocks": {
-    "languageVersion": 0,
-    "blocks": [
-      {
-        "type": "generate_list_length",
-        "id": "t)$[z{xF9:attFs1!((K",
-        "x": 83,
-        "y": 52,
-        "extraState": {
-          "dropdowns": [
-            {
-              "field": "STATEMENTS",
-              "options": [
-                {
-                  "text": "CODE",
-                  "id": "hNV`zgbU3Re8Xc,Awk~("
-                }
-              ]
-            }
-          ]
-        },
-        "fields": {
-          "STATEMENTS": "hNV`zgbU3Re8Xc,Awk~("
-        }
-      }
-    ]
-  }
+  "g18ITBDisF3{(m,ud38$": {
+    "type": "generate_token_if_next_block",
+    "id": "g18ITBDisF3{(m,ud38$",
+    "x": 167,
+    "y": 88,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": ","
+    }
+  },
+  "top_blocks": [
+    "g18ITBDisF3{(m,ud38$"
+  ],
+  "mergeable": true
 }

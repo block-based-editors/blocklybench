@@ -41,6 +41,22 @@ Blockly.Code['generate_token'] = function(block) {
   return code;
 };
 
+Blockly.Code['generate_token_if_next_block'] = function(block) {
+  var code ='';
+  code += 'if(block.getNextBlock()) {code += "';
+  var field = block.getField('TOKEN');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+  code += '"};\n';
+
+  return code;
+}
+;
+
+
 
 Blockly.Code['generate_code'] = function(block) {
   var text_language = block.getFieldValue('LANGUAGE');
