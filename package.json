@@ -6,7 +6,7 @@
     "@blockly/plugin-workspace-search": "^5",
     "@blockly/zoom-to-fit": "^2.0.7",
     "@blockly/theme-dark": "^3.0.3",
-    "blockly": "^7",
+    "blockly": "^8",
     "file-saver": "^2.0.5",
 	"idb-keyval": "^5",
 	"jquery": "^3.6",
