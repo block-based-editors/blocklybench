@@ -1,257 +1,341 @@
 {
-  "blocks": {
-    "languageVersion": 0,
-    "blocks": [
-      {
-        "type": "basic_list",
-        "id": "_zeh~,}GFSZ[?RwREQk/",
-        "x": 90,
-        "y": 26,
-        "extraState": {
-          "dropdowns": []
-        },
-        "inputs": {
-          "LIST": {
-            "block": {
-              "type": "basic_dict",
-              "id": "lRf-u(qUbFzE8o*b/zgq",
-              "extraState": {
-                "dropdowns": []
-              },
-              "inputs": {
-                "LIST": {
-                  "block": {
-                    "type": "basic_key_dict",
-                    "id": "m{=U^gc7B3NP!%i6|c9@",
-                    "extraState": {
-                      "dropdowns": []
-                    },
-                    "fields": {
-                      "KEY": "getCurrentTime"
-                    },
-                    "inputs": {
-                      "LIST": {
-                        "block": {
-                          "type": "basic_key_value",
-                          "id": "|5G~/G]N_obqxqJ$7wF1",
-                          "extraState": {
-                            "dropdowns": []
-                          },
-                          "fields": {
-                            "KEY": "call",
-                            "VALUE": "http.get"
-                          },
-                          "next": {
-                            "block": {
-                              "type": "basic_key_dict",
-                              "id": "iWn;sB![5H)*n2i$O3uk",
-                              "extraState": {
-                                "dropdowns": []
-                              },
-                              "fields": {
-                                "KEY": "args"
-                              },
-                              "inputs": {
-                                "LIST": {
-                                  "block": {
-                                    "type": "basic_key_value",
-                                    "id": "-ju^q0OVel]QcyHgNIQ/",
-                                    "extraState": {
-                                      "dropdowns": []
-                                    },
-                                    "fields": {
-                                      "KEY": "url",
-                                      "VALUE": "https://us-central1-workflowsample.cloudfunctions.net/datetime"
-                                    }
-                                  }
-                                }
-                              },
-                              "next": {
-                                "block": {
-                                  "type": "basic_key_value",
-                                  "id": "mg`%j.j@^2e|?kP,j`_z",
-                                  "extraState": {
-                                    "dropdowns": []
-                                  },
-                                  "fields": {
-                                    "KEY": "result",
-                                    "VALUE": "CurrentDateTime"
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              },
-              "next": {
-                "block": {
-                  "type": "basic_dict",
-                  "id": "mO=84oUIi$c_sGUS{FgW",
-                  "extraState": {
-                    "dropdowns": []
-                  },
-                  "inputs": {
-                    "LIST": {
-                      "block": {
-                        "type": "basic_key_dict",
-                        "id": "}pRYjb15|H(:-tBB`ytc",
-                        "extraState": {
-                          "dropdowns": []
-                        },
-                        "fields": {
-                          "KEY": "readWikipedia"
-                        },
-                        "inputs": {
-                          "LIST": {
-                            "block": {
-                              "type": "basic_key_value",
-                              "id": "Iw!r%?^@`k-py4GsYp!%",
-                              "extraState": {
-                                "dropdowns": []
-                              },
-                              "fields": {
-                                "KEY": "call",
-                                "VALUE": "http.get"
-                              },
-                              "next": {
-                                "block": {
-                                  "type": "basic_key_dict",
-                                  "id": "[KpN$m#X,[K9$r6T!Qc0",
-                                  "extraState": {
-                                    "dropdowns": []
-                                  },
-                                  "fields": {
-                                    "KEY": "args"
-                                  },
-                                  "inputs": {
-                                    "LIST": {
-                                      "block": {
-                                        "type": "basic_key_value",
-                                        "id": "*@E]V-b_]sXY2~_*F%XX",
-                                        "extraState": {
-                                          "dropdowns": []
-                                        },
-                                        "fields": {
-                                          "KEY": "url",
-                                          "VALUE": "https://en.wikipedia.org/w/api.php"
-                                        },
-                                        "next": {
-                                          "block": {
-                                            "type": "basic_key_dict",
-                                            "id": "nhW_Vtn.s;?3ZXl,;@0k",
-                                            "extraState": {
-                                              "dropdowns": []
-                                            },
-                                            "fields": {
-                                              "KEY": "query"
-                                            },
-                                            "inputs": {
-                                              "LIST": {
-                                                "block": {
-                                                  "type": "basic_key_value",
-                                                  "id": "2dT=tz#t7VWuUV#yE}V7",
-                                                  "extraState": {
-                                                    "dropdowns": []
-                                                  },
-                                                  "fields": {
-                                                    "KEY": "action",
-                                                    "VALUE": "opensearch"
-                                                  },
-                                                  "next": {
-                                                    "block": {
-                                                      "type": "basic_key_value",
-                                                      "id": "`cqNYx_jt*[XJzaIDnf:",
-                                                      "extraState": {
-                                                        "dropdowns": []
-                                                      },
-                                                      "fields": {
-                                                        "KEY": "search",
-                                                        "VALUE": "${CurrentDateTime.body.dayOfTheWeek}"
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  },
-                                  "next": {
-                                    "block": {
-                                      "type": "basic_key_value",
-                                      "id": "49O%)^X2ett_Qf6eC.L~",
-                                      "extraState": {
-                                        "dropdowns": []
-                                      },
-                                      "fields": {
-                                        "KEY": "result",
-                                        "VALUE": "WikiResult"
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  },
-                  "next": {
-                    "block": {
-                      "type": "basic_dict",
-                      "id": "#5LJ!}du49Ijax|;d;m.",
-                      "extraState": {
-                        "dropdowns": []
-                      },
-                      "inputs": {
-                        "LIST": {
-                          "block": {
-                            "type": "basic_key_dict",
-                            "id": "zdNLHL4U%a`lnro$j8*`",
-                            "extraState": {
-                              "dropdowns": []
-                            },
-                            "fields": {
-                              "KEY": "returnOutput"
-                            },
-                            "inputs": {
-                              "LIST": {
-                                "block": {
-                                  "type": "basic_key_value",
-                                  "id": "h%o%lDCXX8SPV,oCO|9p",
-                                  "extraState": {
-                                    "dropdowns": []
-                                  },
-                                  "fields": {
-                                    "KEY": "return",
-                                    "VALUE": "${WikiResult.body[1]}"
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
+  "_zeh~,}GFSZ[?RwREQk/": {
+    "type": "basic_list",
+    "id": "_zeh~,}GFSZ[?RwREQk/",
+    "x": 90,
+    "y": 26,
+    "extraState": {
+      "dropdowns": []
+    },
+    "inputs": {
+      "LIST": {
+        "block": {
+          "id": "lRf-u(qUbFzE8o*b/zgq"
         }
       }
-    ]
+    }
   },
-  "editor": {
-    "editor": "basic",
-    "version": 1,
-    "url": "https://cidt.asml.com/editors/latest/basic/editor.html"
-  }
+  "lRf-u(qUbFzE8o*b/zgq": {
+    "type": "basic_dict",
+    "id": "lRf-u(qUbFzE8o*b/zgq",
+    "x": 111,
+    "y": 52,
+    "extraState": {
+      "dropdowns": []
+    },
+    "inputs": {
+      "LIST": {
+        "block": {
+          "id": "m{=U^gc7B3NP!%i6|c9@"
+        }
+      }
+    },
+    "next": {
+      "block": {
+        "id": "mO=84oUIi$c_sGUS{FgW"
+      }
+    }
+  },
+  "m{=U^gc7B3NP!%i6|c9@": {
+    "type": "basic_key_dict",
+    "id": "m{=U^gc7B3NP!%i6|c9@",
+    "x": 132,
+    "y": 78,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "KEY": "getCurrentTime"
+    },
+    "inputs": {
+      "LIST": {
+        "block": {
+          "id": "|5G~/G]N_obqxqJ$7wF1"
+        }
+      }
+    }
+  },
+  "mO=84oUIi$c_sGUS{FgW": {
+    "type": "basic_dict",
+    "id": "mO=84oUIi$c_sGUS{FgW",
+    "x": 111,
+    "y": 247,
+    "extraState": {
+      "dropdowns": []
+    },
+    "inputs": {
+      "LIST": {
+        "block": {
+          "id": "}pRYjb15|H(:-tBB`ytc"
+        }
+      }
+    },
+    "next": {
+      "block": {
+        "id": "#5LJ!}du49Ijax|;d;m."
+      }
+    }
+  },
+  "|5G~/G]N_obqxqJ$7wF1": {
+    "type": "basic_key_value",
+    "id": "|5G~/G]N_obqxqJ$7wF1",
+    "x": 153,
+    "y": 104,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "KEY": "call",
+      "VALUE": "http.get"
+    },
+    "next": {
+      "block": {
+        "id": "iWn;sB![5H)*n2i$O3uk"
+      }
+    }
+  },
+  "}pRYjb15|H(:-tBB`ytc": {
+    "type": "basic_key_dict",
+    "id": "}pRYjb15|H(:-tBB`ytc",
+    "x": 132,
+    "y": 273,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "KEY": "readWikipedia"
+    },
+    "inputs": {
+      "LIST": {
+        "block": {
+          "id": "Iw!r%?^@`k-py4GsYp!%"
+        }
+      }
+    }
+  },
+  "#5LJ!}du49Ijax|;d;m.": {
+    "type": "basic_dict",
+    "id": "#5LJ!}du49Ijax|;d;m.",
+    "x": 111,
+    "y": 533,
+    "extraState": {
+      "dropdowns": []
+    },
+    "inputs": {
+      "LIST": {
+        "block": {
+          "id": "zdNLHL4U%a`lnro$j8*`"
+        }
+      }
+    }
+  },
+  "iWn;sB![5H)*n2i$O3uk": {
+    "type": "basic_key_dict",
+    "id": "iWn;sB![5H)*n2i$O3uk",
+    "x": 153,
+    "y": 130,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "KEY": "args"
+    },
+    "inputs": {
+      "LIST": {
+        "block": {
+          "id": "-ju^q0OVel]QcyHgNIQ/"
+        }
+      }
+    },
+    "next": {
+      "block": {
+        "id": "mg`%j.j@^2e|?kP,j`_z"
+      }
+    }
+  },
+  "Iw!r%?^@`k-py4GsYp!%": {
+    "type": "basic_key_value",
+    "id": "Iw!r%?^@`k-py4GsYp!%",
+    "x": 153,
+    "y": 299,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "KEY": "call",
+      "VALUE": "http.get"
+    },
+    "next": {
+      "block": {
+        "id": "[KpN$m#X,[K9$r6T!Qc0"
+      }
+    }
+  },
+  "zdNLHL4U%a`lnro$j8*`": {
+    "type": "basic_key_dict",
+    "id": "zdNLHL4U%a`lnro$j8*`",
+    "x": 132,
+    "y": 559,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "KEY": "returnOutput"
+    },
+    "inputs": {
+      "LIST": {
+        "block": {
+          "id": "h%o%lDCXX8SPV,oCO|9p"
+        }
+      }
+    }
+  },
+  "-ju^q0OVel]QcyHgNIQ/": {
+    "type": "basic_key_value",
+    "id": "-ju^q0OVel]QcyHgNIQ/",
+    "x": 174,
+    "y": 156,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "KEY": "url",
+      "VALUE": "https://us-central1-workflowsample.cloudfunctions.net/datetime"
+    }
+  },
+  "mg`%j.j@^2e|?kP,j`_z": {
+    "type": "basic_key_value",
+    "id": "mg`%j.j@^2e|?kP,j`_z",
+    "x": 153,
+    "y": 195,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "KEY": "result",
+      "VALUE": "CurrentDateTime"
+    }
+  },
+  "[KpN$m#X,[K9$r6T!Qc0": {
+    "type": "basic_key_dict",
+    "id": "[KpN$m#X,[K9$r6T!Qc0",
+    "x": 153,
+    "y": 325,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "KEY": "args"
+    },
+    "inputs": {
+      "LIST": {
+        "block": {
+          "id": "*@E]V-b_]sXY2~_*F%XX"
+        }
+      }
+    },
+    "next": {
+      "block": {
+        "id": "49O%)^X2ett_Qf6eC.L~"
+      }
+    }
+  },
+  "h%o%lDCXX8SPV,oCO|9p": {
+    "type": "basic_key_value",
+    "id": "h%o%lDCXX8SPV,oCO|9p",
+    "x": 153,
+    "y": 585,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "KEY": "return",
+      "VALUE": "${WikiResult.body[1]}"
+    }
+  },
+  "*@E]V-b_]sXY2~_*F%XX": {
+    "type": "basic_key_value",
+    "id": "*@E]V-b_]sXY2~_*F%XX",
+    "x": 174,
+    "y": 351,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "KEY": "url",
+      "VALUE": "https://en.wikipedia.org/w/api.php"
+    },
+    "next": {
+      "block": {
+        "id": "nhW_Vtn.s;?3ZXl,;@0k"
+      }
+    }
+  },
+  "49O%)^X2ett_Qf6eC.L~": {
+    "type": "basic_key_value",
+    "id": "49O%)^X2ett_Qf6eC.L~",
+    "x": 153,
+    "y": 481,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "KEY": "result",
+      "VALUE": "WikiResult"
+    }
+  },
+  "nhW_Vtn.s;?3ZXl,;@0k": {
+    "type": "basic_key_dict",
+    "id": "nhW_Vtn.s;?3ZXl,;@0k",
+    "x": 174,
+    "y": 377,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "KEY": "query"
+    },
+    "inputs": {
+      "LIST": {
+        "block": {
+          "id": "2dT=tz#t7VWuUV#yE}V7"
+        }
+      }
+    }
+  },
+  "2dT=tz#t7VWuUV#yE}V7": {
+    "type": "basic_key_value",
+    "id": "2dT=tz#t7VWuUV#yE}V7",
+    "x": 195,
+    "y": 403,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "KEY": "action",
+      "VALUE": "opensearch"
+    },
+    "next": {
+      "block": {
+        "id": "`cqNYx_jt*[XJzaIDnf:"
+      }
+    }
+  },
+  "`cqNYx_jt*[XJzaIDnf:": {
+    "type": "basic_key_value",
+    "id": "`cqNYx_jt*[XJzaIDnf:",
+    "x": 195,
+    "y": 429,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "KEY": "search",
+      "VALUE": "${CurrentDateTime.body.dayOfTheWeek}"
+    }
+  },
+  "top_blocks": [
+    "_zeh~,}GFSZ[?RwREQk/"
+  ],
+  "mergeable": true
 }

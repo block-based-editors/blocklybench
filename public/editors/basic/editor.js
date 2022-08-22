@@ -1,124 +1,3 @@
-Blockly.Blocks['code_block_type'] = {
-  init: function() {
-    this.appendDummyInput()
-        .appendField("block_type");
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
-    this.setColour(230);
- this.setTooltip("");
- this.setHelpUrl("");
-  },
-
-  /*
-   * Create XML to represent the output type.
-   * @return {!Element} XML storage element.
-   * @this {Blockly.Block}
-   */
-  mutationToDom: function() {
-    var container = Blockly.utils.xml.createElement('mutation');
-    var field;
-    for (var b = 0, input; input = this.inputList[b]; b++)
-    {
-      for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
-          var dropdown = Blockly.utils.xml.createElement('dropdown');
-          dropdown.setAttribute('field', field.name);
-        
-          container.appendChild(dropdown)
-          var options = field.getOptions()
-          for (var i = 0; i < options.length; i++) {
-            var option = Blockly.utils.xml.createElement('option');
-            option.setAttribute('text', options[i][0]);
-            option.setAttribute('id', options[i][1]);
-            dropdown.appendChild(option);
-          }
-    		}
-      }
-    }
-    return container;
-  },
-  saveExtraState: function() {
-    var field;
-    var state = {'dropdowns':[]};
-    for (var b = 0, input; input = this.inputList[b]; b++)
-    {
-      for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
-          var field_state = {'field':field.name, 'options' : []}
-          state.dropdowns.push(field_state);
-          var options = field.getOptions()
-          for (var i = 0; i < options.length; i++) {
-            var option_state = {'text': options[i][0], 'id':options[i][1]}
-            field_state.options.push(option_state)
-          }
-    		}
-      }
-    }
-    return state;
-  },
-
-  /**
-   * Parse XML to restore the output type.
-   * @param {!Element} xmlElement XML storage element.
-   * @this {Blockly.Block}
-   */
-  domToMutation: function(xmlElement) {
-
-    for (var i = 0, childNode; (childNode = xmlElement.childNodes[i]); i++) {
-      if (childNode.nodeName.toLowerCase() == 'dropdown') {
-        var field_name = childNode.getAttribute('field');
-        var field = this.getField(field_name);
-    
-        var options = field.getOptions(false)
-        var ids = options.map(option => option[1]);
-        
-        for (var j = 0, optionsElement; (optionsElement = childNode.childNodes[j]); j++) {
-          if (optionsElement.nodeName.toLowerCase() == 'option') {
-            var text = optionsElement.getAttribute('text');
-            var id = optionsElement.getAttribute('id');
-            if (!ids.includes(id)) {
-              options.push([text,id])
-            }
-          }
-        }
-        field.savedOptionsSet = true;     
-      }
-    }
-  },
-  loadExtraState: function(state) {
-    for (var i=0; i<state.dropdowns.length; i++)
-    {
-      var field_name = state.dropdowns[i].field;
-      var field = this.getField(field_name);
-      if (field.getOptions)
-      { 
-         var options = field.getOptions(false);
-      }
-      else
-      {
-        var options = []
-      }
-      var ids = options.map(option => option[1]);
-      for (var j =0; j<state.dropdowns[i].options.length;j++)
-      {
-        var text = state.dropdowns[i].options[j].text;
-        var id = state.dropdowns[i].options[j].id;
-        if (!ids.includes(id)) {
-          options.push([text,id])
-        }
-      }
-      field.savedOptionsSet = true;
-    }
-  }
-
-
-
-};
-
 Blockly.Blocks['basic_list'] = {
   init: function() {
     this.appendDummyInput()
@@ -144,7 +23,7 @@ Blockly.Blocks['basic_list'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
@@ -169,7 +48,7 @@ Blockly.Blocks['basic_list'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
@@ -217,7 +96,7 @@ Blockly.Blocks['basic_list'] = {
     {
       var field_name = state.dropdowns[i].field;
       var field = this.getField(field_name);
-      if (field.getOptions)
+      if (field.getOptions && !field.variable_) // is dropdown and not a variable
       { 
          var options = field.getOptions(false);
       }
@@ -267,7 +146,7 @@ Blockly.Blocks['model_cpd_name_value'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
@@ -292,7 +171,7 @@ Blockly.Blocks['model_cpd_name_value'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
@@ -340,7 +219,7 @@ Blockly.Blocks['model_cpd_name_value'] = {
     {
       var field_name = state.dropdowns[i].field;
       var field = this.getField(field_name);
-      if (field.getOptions)
+      if (field.getOptions && !field.variable_) // is dropdown and not a variable
       { 
          var options = field.getOptions(false);
       }
@@ -390,7 +269,7 @@ Blockly.Blocks['basic_dict'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
@@ -415,7 +294,7 @@ Blockly.Blocks['basic_dict'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
@@ -463,7 +342,7 @@ Blockly.Blocks['basic_dict'] = {
     {
       var field_name = state.dropdowns[i].field;
       var field = this.getField(field_name);
-      if (field.getOptions)
+      if (field.getOptions && !field.variable_) // is dropdown and not a variable
       { 
          var options = field.getOptions(false);
       }
@@ -511,7 +390,7 @@ Blockly.Blocks['basic_list_value'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
@@ -536,7 +415,7 @@ Blockly.Blocks['basic_list_value'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
@@ -584,7 +463,7 @@ Blockly.Blocks['basic_list_value'] = {
     {
       var field_name = state.dropdowns[i].field;
       var field = this.getField(field_name);
-      if (field.getOptions)
+      if (field.getOptions && !field.variable_) // is dropdown and not a variable
       { 
          var options = field.getOptions(false);
       }
@@ -634,7 +513,7 @@ Blockly.Blocks['basic_key_value'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
@@ -659,7 +538,7 @@ Blockly.Blocks['basic_key_value'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
@@ -707,7 +586,7 @@ Blockly.Blocks['basic_key_value'] = {
     {
       var field_name = state.dropdowns[i].field;
       var field = this.getField(field_name);
-      if (field.getOptions)
+      if (field.getOptions && !field.variable_) // is dropdown and not a variable
       { 
          var options = field.getOptions(false);
       }
@@ -758,7 +637,7 @@ Blockly.Blocks['basic_key_list'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
@@ -783,7 +662,7 @@ Blockly.Blocks['basic_key_list'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
@@ -831,7 +710,7 @@ Blockly.Blocks['basic_key_list'] = {
     {
       var field_name = state.dropdowns[i].field;
       var field = this.getField(field_name);
-      if (field.getOptions)
+      if (field.getOptions && !field.variable_) // is dropdown and not a variable
       { 
          var options = field.getOptions(false);
       }
@@ -882,7 +761,7 @@ Blockly.Blocks['basic_key_dict'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
@@ -907,7 +786,7 @@ Blockly.Blocks['basic_key_dict'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
@@ -955,7 +834,7 @@ Blockly.Blocks['basic_key_dict'] = {
     {
       var field_name = state.dropdowns[i].field;
       var field = this.getField(field_name);
-      if (field.getOptions)
+      if (field.getOptions && !field.variable_) // is dropdown and not a variable
       { 
          var options = field.getOptions(false);
       }
@@ -980,18 +859,18 @@ Blockly.Blocks['basic_key_dict'] = {
 
 };
 
-if (!Blockly.JSON) {
-  Blockly.JSON = new Blockly.Generator('JSON');
-  Blockly.JSON.ORDER_ATOMIC = 0;
+if (!Blockly.JavaScript) {
+  Blockly.JavaScript = new Blockly.Generator('JavaScript');
+  Blockly.JavaScript.ORDER_ATOMIC = 0;
 }
 
-Blockly.JSON.scrub_ = function(block, code, opt_thisOnly) {
+Blockly.JavaScript.scrub_ = function(block, code, opt_thisOnly) {
     const nextBlock = block.nextConnection && block.nextConnection.targetBlock();
-    const nextCode = opt_thisOnly ? '' : Blockly.JSON.blockToCode(nextBlock);
+    const nextCode = opt_thisOnly ? '' : Blockly.JavaScript.blockToCode(nextBlock);
     return code + nextCode;
 }
 
-Blockly.JSON['basic_key_dict'] = function(block) {
+Blockly.JavaScript['basic_key_dict'] = function(block) {
   var code ='';
   code += '"';
   var field = block.getField('KEY');
@@ -1006,7 +885,7 @@ Blockly.JSON['basic_key_dict'] = function(block) {
 
   // if this block is a 'value' then code + ORDER needs to be returned
   if(block.outputConnection) {
-    return [code, Blockly.JSON.ORDER_ATOMIC];
+    return [code, Blockly.JavaScript.ORDER_ATOMIC];
   }
   else // no value block
   {
@@ -1070,7 +949,11 @@ Blockly.JSON.scrub_ = function(block, code, opt_thisOnly) {
 
 Blockly.JSON['basic_dict'] = function(block) {
   var code ='';
+  code += '{\n';
   code += Blockly.JSON.statementToCode(block, 'LIST');
+  code += '}';
+  if(block.getNextBlock()) {code += ','}
+  code += '\n';
 
   // if this block is a 'value' then code + ORDER needs to be returned
   if(block.outputConnection) {
@@ -1107,6 +990,66 @@ Blockly.YAML['basic_dict'] = function(block) {
   }
 }
 ;
+if (!Blockly.JavaScript) {
+  Blockly.JavaScript = new Blockly.Generator('JavaScript');
+  Blockly.JavaScript.ORDER_ATOMIC = 0;
+}
+
+Blockly.JavaScript.scrub_ = function(block, code, opt_thisOnly) {
+    const nextBlock = block.nextConnection && block.nextConnection.targetBlock();
+    const nextCode = opt_thisOnly ? '' : Blockly.JavaScript.blockToCode(nextBlock);
+    return code + nextCode;
+}
+
+Blockly.JavaScript['basic_dict'] = function(block) {
+  var code ='';
+  code += Blockly.JavaScript.statementToCode(block, 'LIST');
+
+  // if this block is a 'value' then code + ORDER needs to be returned
+  if(block.outputConnection) {
+    return [code, Blockly.JavaScript.ORDER_ATOMIC];
+  }
+  else // no value block
+  {
+    return code;
+  }
+}
+;
+if (!Blockly.JavaScript) {
+  Blockly.JavaScript = new Blockly.Generator('JavaScript');
+  Blockly.JavaScript.ORDER_ATOMIC = 0;
+}
+
+Blockly.JavaScript.scrub_ = function(block, code, opt_thisOnly) {
+    const nextBlock = block.nextConnection && block.nextConnection.targetBlock();
+    const nextCode = opt_thisOnly ? '' : Blockly.JavaScript.blockToCode(nextBlock);
+    return code + nextCode;
+}
+
+Blockly.JavaScript['basic_key_value'] = function(block) {
+  var code ='';
+  code += '"';
+  var field = block.getField('KEY');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+  code += '" : "';
+  code += 'basic_key_value'
+  code += '", ';
+  code += '\n';
+
+  // if this block is a 'value' then code + ORDER needs to be returned
+  if(block.outputConnection) {
+    return [code, Blockly.JavaScript.ORDER_ATOMIC];
+  }
+  else // no value block
+  {
+    return code;
+  }
+}
+;
 if (!Blockly.JSON) {
   Blockly.JSON = new Blockly.Generator('JSON');
   Blockly.JSON.ORDER_ATOMIC = 0;
@@ -1128,8 +1071,14 @@ Blockly.JSON['basic_key_value'] = function(block) {
     code += field.getValue();
   }
   code += '" : "';
-  code += 'basic_key_value'
-  code += '", ';
+  var field = block.getField('VALUE');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+  code += '"';
+  if(block.getNextBlock()) {code += ','}
   code += '\n';
 
   // if this block is a 'value' then code + ORDER needs to be returned
@@ -1173,6 +1122,42 @@ Blockly.YAML['basic_key_value'] = function(block) {
   // if this block is a 'value' then code + ORDER needs to be returned
   if(block.outputConnection) {
     return [code, Blockly.YAML.ORDER_ATOMIC];
+  }
+  else // no value block
+  {
+    return code;
+  }
+}
+;
+if (!Blockly.JSON) {
+  Blockly.JSON = new Blockly.Generator('JSON');
+  Blockly.JSON.ORDER_ATOMIC = 0;
+}
+
+Blockly.JSON.scrub_ = function(block, code, opt_thisOnly) {
+    const nextBlock = block.nextConnection && block.nextConnection.targetBlock();
+    const nextCode = opt_thisOnly ? '' : Blockly.JSON.blockToCode(nextBlock);
+    return code + nextCode;
+}
+
+Blockly.JSON['basic_key_dict'] = function(block) {
+  var code ='';
+  code += '"';
+  var field = block.getField('KEY');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+  code += '": {\n';
+  code += Blockly.JSON.statementToCode(block, 'LIST');
+  code += '}';
+  if(block.getNextBlock()) {code += ','}
+  code += '\n';
+
+  // if this block is a 'value' then code + ORDER needs to be returned
+  if(block.outputConnection) {
+    return [code, Blockly.JSON.ORDER_ATOMIC];
   }
   else // no value block
   {
@@ -1257,11 +1242,38 @@ Blockly.JSON.scrub_ = function(block, code, opt_thisOnly) {
 
 Blockly.JSON['basic_list'] = function(block) {
   var code ='';
+  code += '[\n';
   code += Blockly.JSON.statementToCode(block, 'LIST');
+  code += ']';
 
   // if this block is a 'value' then code + ORDER needs to be returned
   if(block.outputConnection) {
     return [code, Blockly.JSON.ORDER_ATOMIC];
+  }
+  else // no value block
+  {
+    return code;
+  }
+}
+;
+if (!Blockly.JavaScript) {
+  Blockly.JavaScript = new Blockly.Generator('JavaScript');
+  Blockly.JavaScript.ORDER_ATOMIC = 0;
+}
+
+Blockly.JavaScript.scrub_ = function(block, code, opt_thisOnly) {
+    const nextBlock = block.nextConnection && block.nextConnection.targetBlock();
+    const nextCode = opt_thisOnly ? '' : Blockly.JavaScript.blockToCode(nextBlock);
+    return code + nextCode;
+}
+
+Blockly.JavaScript['basic_list'] = function(block) {
+  var code ='';
+  code += Blockly.JavaScript.statementToCode(block, 'LIST');
+
+  // if this block is a 'value' then code + ORDER needs to be returned
+  if(block.outputConnection) {
+    return [code, Blockly.JavaScript.ORDER_ATOMIC];
   }
   else // no value block
   {
@@ -1351,31 +1363,6 @@ Blockly.JavaScript['basic_list_value'] = function(block) {
   // if this block is a 'value' then code + ORDER needs to be returned
   if(block.outputConnection) {
     return [code, Blockly.JavaScript.ORDER_ATOMIC];
-  }
-  else // no value block
-  {
-    return code;
-  }
-}
-;
-if (!Blockly.JSON) {
-  Blockly.JSON = new Blockly.Generator('JSON');
-  Blockly.JSON.ORDER_ATOMIC = 0;
-}
-
-Blockly.JSON.scrub_ = function(block, code, opt_thisOnly) {
-    const nextBlock = block.nextConnection && block.nextConnection.targetBlock();
-    const nextCode = opt_thisOnly ? '' : Blockly.JSON.blockToCode(nextBlock);
-    return code + nextCode;
-}
-
-Blockly.JSON['code_block_type'] = function(block) {
-  var code ='';
-  code += block.getSurroundParent().type
-
-  // if this block is a 'value' then code + ORDER needs to be returned
-  if(block.outputConnection) {
-    return [code, Blockly.JSON.ORDER_ATOMIC];
   }
   else // no value block
   {
@@ -1608,10 +1595,6 @@ toolbox = {
     "kind": "block",
     "type": "basic_key_dict"
   },
-  {
-    "kind": "block",
-    "type": "code_block_type"
-  },
  ]
 };
     
@@ -1642,10 +1625,10 @@ var options = {
 };
 
 function codeGeneration(event) {
-  if (Blockly.YAML)
+  if (Blockly.JSON)
   {  
       try {
-          var code = Blockly.YAML.workspaceToCode(workspace);
+          var code = Blockly.JSON.workspaceToCode(workspace);
 	  } catch (e) {
 		console.warn("Error while creating code", e);
 		code = "Error while creating code:" + e
@@ -1683,27 +1666,42 @@ function updateDropdownRename(event)
 
 var workspace;
 
+function vscode_start()
+{
+  inject();
+
+  search();
+
+}
+
+function search()
+{
+  workspace.workspaceSearch = new WorkspaceSearch(workspace);
+
+  workspace.workspaceSearch.init();
+  workspace.workspaceSearch.open();
+}
+
+function inject()
+{
+  /* Inject your workspace */ 
+  workspace = Blockly.inject("blocklyDiv", options);
+  workspace.name="Concrete"
+}
+
 function start()
 {
+  inject();
 
-/* Inject your workspace */ 
-workspace = Blockly.inject("blocklyDiv", options);
-workspace.name="Concrete"
+  BlocklyStorage.restoreBlocks(workspace, 'concrete');
+  BlocklyStorage.backupOnUnload(workspace, 'concrete');
 
-BlocklyStorage.restoreBlocks(workspace, 'concrete');
-BlocklyStorage.backupOnUnload(workspace, 'concrete');
+  workspace.addChangeListener(codeGeneration);
+  workspace.addChangeListener(updateDropdownRename);
 
-workspace.addChangeListener(codeGeneration);
-workspace.addChangeListener(updateDropdownRename);
-
-workspace.workspaceSearch = new WorkspaceSearch(workspace);
-
-workspace.workspaceSearch.init();
-workspace.workspaceSearch.open();
-
-document.getElementById("save").addEventListener("click", saveFile);
-add_load()
-
+  search();
+  document.getElementById("save").addEventListener("click", saveFile);
+  add_load()
 }
 
 function get_json(workspace)

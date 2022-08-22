@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>basic Editor</title>
-  <body onload="start()">
+  <body onload="start();">
   
 <input type="button" id="loadFileXml" value="Load JSON" onclick="document.getElementById('input').click();" />
 <input type="file" style="display:none;" id="input" name="file"/>
@@ -17,10 +17,11 @@
  <div id="blocklyDiv" style="height: 480px; width: 100%;"></div>
  <textarea id="codeDiv" style="height: 350px; width: 100%"></textarea>
 
- <script src="https://unpkg.com/blockly/blockly.min.js"></script>
+
+
+<script src="https://unpkg.com/blockly/blockly.min.js"></script>
 <script src="https://unpkg.com/@blockly/plugin-workspace-search@5.0.3/dist/index.js"></script>
 <script src='./editor.js'></script>
-
 
 </body>
 </html>
