@@ -1,5 +1,5 @@
 {
-  "name": "blockly-editor-generator",
+  "name": "blockly-svox",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
