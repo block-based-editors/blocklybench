@@ -952,7 +952,7 @@ Blockly.JSON['basic_dict'] = function(block) {
   code += '{\n';
   code += Blockly.JSON.statementToCode(block, 'LIST');
   code += '}';
-  if(block.getNextBlock()) {code += ','}
+  if(block.getNextBlock()) {code += ","};
   code += '\n';
 
   // if this block is a 'value' then code + ORDER needs to be returned
@@ -1078,7 +1078,7 @@ Blockly.JSON['basic_key_value'] = function(block) {
     code += field.getValue();
   }
   code += '"';
-  if(block.getNextBlock()) {code += ','}
+  if(block.getNextBlock()) {code += ","};
   code += '\n';
 
   // if this block is a 'value' then code + ORDER needs to be returned
@@ -1152,7 +1152,7 @@ Blockly.JSON['basic_key_dict'] = function(block) {
   code += '": {\n';
   code += Blockly.JSON.statementToCode(block, 'LIST');
   code += '}';
-  if(block.getNextBlock()) {code += ','}
+  if(block.getNextBlock()) {code += ","};
   code += '\n';
 
   // if this block is a 'value' then code + ORDER needs to be returned
