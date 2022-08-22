@@ -444,9 +444,9 @@ function registerCombineBlocks() {
 
 
 		  var data = factory_block.toCopyData();
-		  var new_input = Blockly.serialization.blocks.append(data.saveInfo, factory_workspace);
+		  var new_block = Blockly.serialization.blocks.append(data.saveInfo, factory_workspace);
 
-          var new_name = getUniqueNameForBlock(factory_block.getFieldValue('NAME')+'_combi', new_block)
+      var new_name = getUniqueNameForBlock(factory_block.getFieldValue('NAME')+'_combi', new_block)
       
 		  new_block.setFieldValue(new_name, 'NAME')
           
