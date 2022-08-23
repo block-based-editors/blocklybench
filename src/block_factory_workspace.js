@@ -5,6 +5,7 @@ import * as Blockly from 'blockly';
 
 
 import { WorkspaceSearch } from '@blockly/plugin-workspace-search';
+// TODO extend to the generated code windows with something like: https://github.com/AlienKevin/SmartTextarea/
 import { ZoomToFitControl } from '@blockly/zoom-to-fit' 
 
 import JSZip from 'jszip';
