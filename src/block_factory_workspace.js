@@ -17,6 +17,7 @@ import Concrete from './concrete_workspace.js';
 import Editor from './editor_generator.js';
 import JsonToBlocklyXML from './json_to_factory_blockly_xml.js';
 import { get, set } from 'idb-keyval';
+import DownloadScreen from "./screenshot.js";
 
 
 /* TODO: Change toolbox XML ID if necessary. Can export toolbox XML from Workspace Factory. */
@@ -262,7 +263,7 @@ function registerDownload(){
 		return "enabled"
 	   },
 	callback:function(a) {
-	   	  Blockly.downloadScreenshot(a.workspace)
+         DownloadScreen.downloadScreenshot(a.workspace)
 	   },
 	scopeType:Blockly.ContextMenuRegistry.ScopeType.WORKSPACE,
 	id:"blockDownload",

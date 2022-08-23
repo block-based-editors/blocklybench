@@ -91,11 +91,13 @@ function workspaceToSvg_(workspace, callback, customCss) {
   svgToPng_(data, width, height, callback);
 }
 
+var DownloadScreen = {}; // create a namespace
+
 /**
  * Download a screenshot of the blocks on a Blockly workspace.
  * @param {!Blockly.WorkspaceSvg} workspace The Blockly workspace.
  */
-Blockly.downloadScreenshot = function(workspace) {
+ DownloadScreen.downloadScreenshot = function(workspace) {
   workspaceToSvg_(workspace, function(datauri) {
     var a = document.createElement('a');
     a.download = 'screenshot.png';
@@ -106,3 +108,6 @@ Blockly.downloadScreenshot = function(workspace) {
 	a.parentNode.removeChild(a);
   });
 };
+
+export default DownloadScreen;
+
