@@ -1240,6 +1240,40 @@ Blockly.JSON.scrub_ = function(block, code, opt_thisOnly) {
     return code + nextCode;
 }
 
+Blockly.JSON['basic_key_list'] = function(block) {
+  var code ='';
+  code += '"';
+  var field = block.getField('KEY');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+  code += '" : [\n';
+  code += Blockly.JSON.statementToCode(block, 'LIST');
+  code += ']\n';
+
+  // if this block is a 'value' then code + ORDER needs to be returned
+  if(block.outputConnection) {
+    return [code, Blockly.JSON.ORDER_ATOMIC];
+  }
+  else // no value block
+  {
+    return code;
+  }
+}
+;
+if (!Blockly.JSON) {
+  Blockly.JSON = new Blockly.Generator('JSON');
+  Blockly.JSON.ORDER_ATOMIC = 0;
+}
+
+Blockly.JSON.scrub_ = function(block, code, opt_thisOnly) {
+    const nextBlock = block.nextConnection && block.nextConnection.targetBlock();
+    const nextCode = opt_thisOnly ? '' : Blockly.JSON.blockToCode(nextBlock);
+    return code + nextCode;
+}
+
 Blockly.JSON['basic_list'] = function(block) {
   var code ='';
   code += '[\n';
