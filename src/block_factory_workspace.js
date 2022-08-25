@@ -601,7 +601,8 @@ function saveDirectFiles()
 
     await create_file(dirHandle, "editor.js", Editor.generate_editor_js(get_code(), language, editor));
     await create_file(dirHandle, "editor.html", Editor.generate_editor_html(editor));
-    await create_file(dirHandle, "readme.txt","develop folder contains the develop\nStart the editor.html to use the editor\n");
+    await create_file(dirHandle, "readme.txt","develop folder contains the develop\nStart the editor.html to use the editor. Open the example.json\n");
+    await create_file(dirHandle, "example.json", get_json(Concrete.concrete_workspace));
 
     const new_dir = await create_directory(dirHandle, 'develop');
     //await create_file(new_dir, "factory.json", get_json(factory_workspace));
