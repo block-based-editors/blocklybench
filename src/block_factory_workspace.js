@@ -711,7 +711,8 @@ function saveZip()
     
     zip.file("editor.js", Editor.generate_editor_js(get_code(), language));
     zip.file("editor.html", Editor.generate_editor_html(editor));
-    zip.file("readme.txt","develop folder contains the develop\nStart the editor.html to use the editor\n");
+    zip.file("example.json", get_json(Concrete.concrete_workspace));
+    zip.file("readme.txt","develop folder contains the develop\nStart the editor.html to use the editor. Open the example.json\n");
     zip.generateAsync({type:"blob"})
         .then(function (blob) {
             saveAs(blob, editor +".zip");
