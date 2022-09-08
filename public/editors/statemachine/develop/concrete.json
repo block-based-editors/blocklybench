@@ -1,0 +1,221 @@
+{
+  "=GQFF_Xq;ls7+=R-Yn!-": {
+    "type": "machine",
+    "id": "=GQFF_Xq;ls7+=R-Yn!-",
+    "x": 86,
+    "y": 146,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "NAME": "doors"
+    },
+    "inputs": {
+      "STATES": {
+        "block": {
+          "id": "5$aV:|j+kb+mAOYqq!K5"
+        }
+      }
+    }
+  },
+  "5$aV:|j+kb+mAOYqq!K5": {
+    "type": "state",
+    "id": "5$aV:|j+kb+mAOYqq!K5",
+    "x": 107,
+    "y": 173,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "STATE_NAME": "closed"
+    },
+    "inputs": {
+      "TRANSITIONS": {
+        "block": {
+          "id": "n;X7bPIrH~oK=j7ug(uw"
+        }
+      }
+    },
+    "next": {
+      "block": {
+        "id": "G0y3|!+oYpOZ[zSlZ[U0"
+      }
+    }
+  },
+  "n;X7bPIrH~oK=j7ug(uw": {
+    "type": "transision",
+    "id": "n;X7bPIrH~oK=j7ug(uw",
+    "x": 128,
+    "y": 200,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TO_STATE",
+          "options": [
+            {
+              "text": "closed",
+              "id": "5$aV:|j+kb+mAOYqq!K5"
+            },
+            {
+              "text": "locked",
+              "id": "S/z]=J~pChb_.rlXT+6!"
+            },
+            {
+              "text": "opened",
+              "id": "G0y3|!+oYpOZ[zSlZ[U0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "EVENT": "open",
+      "TO_STATE": "G0y3|!+oYpOZ[zSlZ[U0"
+    },
+    "next": {
+      "block": {
+        "id": "Tgl2VdoOg;g+4Ba,KvK_"
+      }
+    }
+  },
+  "G0y3|!+oYpOZ[zSlZ[U0": {
+    "type": "state",
+    "id": "G0y3|!+oYpOZ[zSlZ[U0",
+    "x": 107,
+    "y": 267,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "STATE_NAME": "opened"
+    },
+    "inputs": {
+      "TRANSITIONS": {
+        "block": {
+          "id": "~Z($X5nUsm2N/wUt?%B2"
+        }
+      }
+    },
+    "next": {
+      "block": {
+        "id": "S/z]=J~pChb_.rlXT+6!"
+      }
+    }
+  },
+  "Tgl2VdoOg;g+4Ba,KvK_": {
+    "type": "transision",
+    "id": "Tgl2VdoOg;g+4Ba,KvK_",
+    "x": 128,
+    "y": 227,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TO_STATE",
+          "options": [
+            {
+              "text": "closed",
+              "id": "5$aV:|j+kb+mAOYqq!K5"
+            },
+            {
+              "text": "locked",
+              "id": "S/z]=J~pChb_.rlXT+6!"
+            },
+            {
+              "text": "opened",
+              "id": "G0y3|!+oYpOZ[zSlZ[U0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "EVENT": "lock",
+      "TO_STATE": "S/z]=J~pChb_.rlXT+6!"
+    }
+  },
+  "~Z($X5nUsm2N/wUt?%B2": {
+    "type": "transision",
+    "id": "~Z($X5nUsm2N/wUt?%B2",
+    "x": 128,
+    "y": 294,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TO_STATE",
+          "options": [
+            {
+              "text": "closed",
+              "id": "5$aV:|j+kb+mAOYqq!K5"
+            },
+            {
+              "text": "locked",
+              "id": "S/z]=J~pChb_.rlXT+6!"
+            },
+            {
+              "text": "opened",
+              "id": "G0y3|!+oYpOZ[zSlZ[U0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "EVENT": "close",
+      "TO_STATE": "5$aV:|j+kb+mAOYqq!K5"
+    }
+  },
+  "S/z]=J~pChb_.rlXT+6!": {
+    "type": "state",
+    "id": "S/z]=J~pChb_.rlXT+6!",
+    "x": 107,
+    "y": 334,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "STATE_NAME": "locked"
+    },
+    "inputs": {
+      "TRANSITIONS": {
+        "block": {
+          "id": ";w}9*s1v$cQ}vb_b`lWP"
+        }
+      }
+    }
+  },
+  ";w}9*s1v$cQ}vb_b`lWP": {
+    "type": "transision",
+    "id": ";w}9*s1v$cQ}vb_b`lWP",
+    "x": 128,
+    "y": 361,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TO_STATE",
+          "options": [
+            {
+              "text": "closed",
+              "id": "5$aV:|j+kb+mAOYqq!K5"
+            },
+            {
+              "text": "locked",
+              "id": "S/z]=J~pChb_.rlXT+6!"
+            },
+            {
+              "text": "opened",
+              "id": "G0y3|!+oYpOZ[zSlZ[U0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "EVENT": "unlock",
+      "TO_STATE": "5$aV:|j+kb+mAOYqq!K5"
+    }
+  },
+  "top_blocks": [
+    "=GQFF_Xq;ls7+=R-Yn!-"
+  ],
+  "mergeable": true
+}

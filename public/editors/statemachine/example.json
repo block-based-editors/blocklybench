@@ -1,0 +1,192 @@
+{
+  "blocks": {
+    "languageVersion": 0,
+    "blocks": [
+      {
+        "type": "machine",
+        "id": "=GQFF_Xq;ls7+=R-Yn!-",
+        "x": 86,
+        "y": 146,
+        "extraState": {
+          "dropdowns": []
+        },
+        "fields": {
+          "NAME": "doors"
+        },
+        "inputs": {
+          "STATES": {
+            "block": {
+              "type": "state",
+              "id": "5$aV:|j+kb+mAOYqq!K5",
+              "extraState": {
+                "dropdowns": []
+              },
+              "fields": {
+                "STATE_NAME": "closed"
+              },
+              "inputs": {
+                "TRANSITIONS": {
+                  "block": {
+                    "type": "transision",
+                    "id": "n;X7bPIrH~oK=j7ug(uw",
+                    "extraState": {
+                      "dropdowns": [
+                        {
+                          "field": "TO_STATE",
+                          "options": [
+                            {
+                              "text": "closed",
+                              "id": "5$aV:|j+kb+mAOYqq!K5"
+                            },
+                            {
+                              "text": "locked",
+                              "id": "S/z]=J~pChb_.rlXT+6!"
+                            },
+                            {
+                              "text": "opened",
+                              "id": "G0y3|!+oYpOZ[zSlZ[U0"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "fields": {
+                      "EVENT": "open",
+                      "TO_STATE": "G0y3|!+oYpOZ[zSlZ[U0"
+                    },
+                    "next": {
+                      "block": {
+                        "type": "transision",
+                        "id": "Tgl2VdoOg;g+4Ba,KvK_",
+                        "extraState": {
+                          "dropdowns": [
+                            {
+                              "field": "TO_STATE",
+                              "options": [
+                                {
+                                  "text": "closed",
+                                  "id": "5$aV:|j+kb+mAOYqq!K5"
+                                },
+                                {
+                                  "text": "locked",
+                                  "id": "S/z]=J~pChb_.rlXT+6!"
+                                },
+                                {
+                                  "text": "opened",
+                                  "id": "G0y3|!+oYpOZ[zSlZ[U0"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        "fields": {
+                          "EVENT": "lock",
+                          "TO_STATE": "S/z]=J~pChb_.rlXT+6!"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "next": {
+                "block": {
+                  "type": "state",
+                  "id": "G0y3|!+oYpOZ[zSlZ[U0",
+                  "extraState": {
+                    "dropdowns": []
+                  },
+                  "fields": {
+                    "STATE_NAME": "opened"
+                  },
+                  "inputs": {
+                    "TRANSITIONS": {
+                      "block": {
+                        "type": "transision",
+                        "id": "~Z($X5nUsm2N/wUt?%B2",
+                        "extraState": {
+                          "dropdowns": [
+                            {
+                              "field": "TO_STATE",
+                              "options": [
+                                {
+                                  "text": "closed",
+                                  "id": "5$aV:|j+kb+mAOYqq!K5"
+                                },
+                                {
+                                  "text": "locked",
+                                  "id": "S/z]=J~pChb_.rlXT+6!"
+                                },
+                                {
+                                  "text": "opened",
+                                  "id": "G0y3|!+oYpOZ[zSlZ[U0"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        "fields": {
+                          "EVENT": "close",
+                          "TO_STATE": "5$aV:|j+kb+mAOYqq!K5"
+                        }
+                      }
+                    }
+                  },
+                  "next": {
+                    "block": {
+                      "type": "state",
+                      "id": "S/z]=J~pChb_.rlXT+6!",
+                      "extraState": {
+                        "dropdowns": []
+                      },
+                      "fields": {
+                        "STATE_NAME": "locked"
+                      },
+                      "inputs": {
+                        "TRANSITIONS": {
+                          "block": {
+                            "type": "transision",
+                            "id": ";w}9*s1v$cQ}vb_b`lWP",
+                            "extraState": {
+                              "dropdowns": [
+                                {
+                                  "field": "TO_STATE",
+                                  "options": [
+                                    {
+                                      "text": "closed",
+                                      "id": "5$aV:|j+kb+mAOYqq!K5"
+                                    },
+                                    {
+                                      "text": "locked",
+                                      "id": "S/z]=J~pChb_.rlXT+6!"
+                                    },
+                                    {
+                                      "text": "opened",
+                                      "id": "G0y3|!+oYpOZ[zSlZ[U0"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            "fields": {
+                              "EVENT": "unlock",
+                              "TO_STATE": "5$aV:|j+kb+mAOYqq!K5"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "editor": {
+    "editor": "statemachine",
+    "version": 1,
+    "url": "https://cidt.asml.com/editors/latest/statemachine/editor.html"
+  }
+}

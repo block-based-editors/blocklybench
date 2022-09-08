@@ -1,0 +1,122 @@
+{
+  ".gltJ!iFe]:ltu8_jWrp": {
+    "type": "toolbox_blocks",
+    "id": ".gltJ!iFe]:ltu8_jWrp",
+    "x": 24,
+    "y": 78,
+    "extraState": {
+      "dropdowns": []
+    },
+    "inputs": {
+      "LIST": {
+        "block": {
+          "id": "=dH=^NAwtr?!%(9T#a)D"
+        }
+      }
+    }
+  },
+  "=dH=^NAwtr?!%(9T#a)D": {
+    "type": "toolbox_block",
+    "id": "=dH=^NAwtr?!%(9T#a)D",
+    "x": 45,
+    "y": 105,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "machine",
+              "id": "%Ge9q(@Xx_-:gSyJhAW:"
+            },
+            {
+              "text": "state",
+              "id": "Y)AZwaT?/+n/1@`HMU?x"
+            },
+            {
+              "text": "transition",
+              "id": "GCOOrEB:r8|^vaNK$4G7"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "TYPE": "%Ge9q(@Xx_-:gSyJhAW:"
+    },
+    "next": {
+      "block": {
+        "id": "tp[H8bJu1x)+a~LM,7fl"
+      }
+    }
+  },
+  "tp[H8bJu1x)+a~LM,7fl": {
+    "type": "toolbox_block",
+    "id": "tp[H8bJu1x)+a~LM,7fl",
+    "x": 45,
+    "y": 132,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "machine",
+              "id": "%Ge9q(@Xx_-:gSyJhAW:"
+            },
+            {
+              "text": "state",
+              "id": "Y)AZwaT?/+n/1@`HMU?x"
+            },
+            {
+              "text": "transition",
+              "id": "GCOOrEB:r8|^vaNK$4G7"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "TYPE": "Y)AZwaT?/+n/1@`HMU?x"
+    },
+    "next": {
+      "block": {
+        "id": "U7F0-g5.Yo1)SuDP.I:+"
+      }
+    }
+  },
+  "U7F0-g5.Yo1)SuDP.I:+": {
+    "type": "toolbox_block",
+    "id": "U7F0-g5.Yo1)SuDP.I:+",
+    "x": 45,
+    "y": 159,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "machine",
+              "id": "%Ge9q(@Xx_-:gSyJhAW:"
+            },
+            {
+              "text": "state",
+              "id": "Y)AZwaT?/+n/1@`HMU?x"
+            },
+            {
+              "text": "transition",
+              "id": "GCOOrEB:r8|^vaNK$4G7"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "TYPE": "GCOOrEB:r8|^vaNK$4G7"
+    }
+  },
+  "top_blocks": [
+    ".gltJ!iFe]:ltu8_jWrp"
+  ],
+  "mergeable": true
+}
