@@ -185,8 +185,8 @@ Blockly.Blocks['transition'] = {
                 }
                 return options;
             }), "TO_STATE");
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
+    this.setPreviousStatement(true, "TRANSITION");
+    this.setNextStatement(true, "TRANSITION");
     this.setColour(120);
  this.setTooltip("");
  this.setHelpUrl("");
@@ -491,8 +491,11 @@ Blockly.DOT.scrub_ = function(block, code, opt_thisOnly) {
 
 Blockly.DOT['transition'] = function(block) {
   var code ='';
-  var parent = block.getSurroundParent()
-  code += parent.getFieldValue('STATE_NAME');
+  var parent = block.getSurroundParent();
+  if (parent)
+  {
+    code += parent.getFieldValue("STATE_NAME");
+  }
   code += ' -> ';
   var field = block.getField('TO_STATE');
   if (field.getText()) {

@@ -108,7 +108,7 @@
     "inputs": {
       "CODE": {
         "block": {
-          "id": "z^1d~}qcG,yNHK_AfuNE"
+          "id": "HY6SXbS@DIug:q2Q]Lu@"
         }
       }
     }
@@ -117,7 +117,7 @@
     "type": "generate_statements2",
     "id": "Lqo^[:f2]%_Ppo^F-ui=",
     "x": 21,
-    "y": 27,
+    "y": 26,
     "extraState": {
       "dropdowns": [
         {
@@ -143,7 +143,7 @@
     "type": "generate_token",
     "id": "**#(2CD1!Inq6,qeXF;J",
     "x": 21,
-    "y": 118,
+    "y": 117,
     "extraState": {
       "dropdowns": []
     },
@@ -156,20 +156,42 @@
       }
     }
   },
-  "z^1d~}qcG,yNHK_AfuNE": {
-    "type": "generate_javascript",
-    "id": "z^1d~}qcG,yNHK_AfuNE",
+  "HY6SXbS@DIug:q2Q]Lu@": {
+    "type": "generate_parent_field_value",
+    "id": "HY6SXbS@DIug:q2Q]Lu@",
     "x": 21,
-    "y": 263,
+    "y": 262,
     "extraState": {
-      "dropdowns": []
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "EVENT",
+              "id": "~@mren(,^3!uYHjC7+5u"
+            },
+            {
+              "text": "NAME",
+              "id": "{wAW%f(P^?eK7R$Ns41q"
+            },
+            {
+              "text": "STATE_NAME",
+              "id": "Fg/ra7bh9Q%cPW81dR`f"
+            },
+            {
+              "text": "TO_STATE",
+              "id": "Aejf{K${h2EiFwzHl`Ix"
+            }
+          ]
+        }
+      ]
     },
     "fields": {
-      "JAVASCRIPT": "var parent = block.getSurroundParent()"
+      "FIELDS": "Fg/ra7bh9Q%cPW81dR`f"
     },
     "next": {
       "block": {
-        "id": "ZxRWhJv[e4CD1vUX^l?0"
+        "id": "xam{IgyFVRxHp1?gEx,O"
       }
     }
   },
@@ -177,7 +199,7 @@
     "type": "generate_statements2",
     "id": "Pjuy]=K.96R,qTlSS:U}",
     "x": 21,
-    "y": 145,
+    "y": 143,
     "extraState": {
       "dropdowns": [
         {
@@ -200,40 +222,11 @@
       }
     }
   },
-  "ZxRWhJv[e4CD1vUX^l?0": {
-    "type": "generate_javascript",
-    "id": "ZxRWhJv[e4CD1vUX^l?0",
-    "x": 21,
-    "y": 290,
-    "extraState": {
-      "dropdowns": []
-    },
-    "fields": {
-      "JAVASCRIPT": "code += parent.getFieldValue('STATE_NAME');"
-    },
-    "next": {
-      "block": {
-        "id": "xam{IgyFVRxHp1?gEx,O"
-      }
-    }
-  },
-  "yK(A$]XSAH^{]^K.bMwB": {
-    "type": "generate_token",
-    "id": "yK(A$]XSAH^{]^K.bMwB",
-    "x": 21,
-    "y": 172,
-    "extraState": {
-      "dropdowns": []
-    },
-    "fields": {
-      "TOKEN": "}"
-    }
-  },
   "xam{IgyFVRxHp1?gEx,O": {
     "type": "generate_token",
     "id": "xam{IgyFVRxHp1?gEx,O",
     "x": 21,
-    "y": 317,
+    "y": 288,
     "extraState": {
       "dropdowns": []
     },
@@ -246,11 +239,23 @@
       }
     }
   },
+  "yK(A$]XSAH^{]^K.bMwB": {
+    "type": "generate_token",
+    "id": "yK(A$]XSAH^{]^K.bMwB",
+    "x": 21,
+    "y": 169,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "}"
+    }
+  },
   "feKuNL2%R0eQuX|OIjxs": {
     "type": "generate_field_value2",
     "id": "feKuNL2%R0eQuX|OIjxs",
     "x": 21,
-    "y": 344,
+    "y": 314,
     "extraState": {
       "dropdowns": [
         {
@@ -281,7 +286,7 @@
     "type": "generate_token",
     "id": "n~T#A0=D6`o54D0%NtW!",
     "x": 21,
-    "y": 371,
+    "y": 340,
     "extraState": {
       "dropdowns": []
     },
@@ -298,7 +303,7 @@
     "type": "generate_field_value2",
     "id": "-YE97::`c{CV]!Db$Vlu",
     "x": 21,
-    "y": 398,
+    "y": 366,
     "extraState": {
       "dropdowns": [
         {
@@ -329,7 +334,7 @@
     "type": "generate_token",
     "id": "/Y!zEX1fza-NwguXdKQd",
     "x": 21,
-    "y": 425,
+    "y": 392,
     "extraState": {
       "dropdowns": []
     },

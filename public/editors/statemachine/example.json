@@ -4,20 +4,20 @@
     "blocks": [
       {
         "type": "machine",
-        "id": "=GQFF_Xq;ls7+=R-Yn!-",
-        "x": 86,
-        "y": 146,
+        "id": "=i7doq%VwrBYaMqP6Nl/",
+        "x": 30,
+        "y": 29,
         "extraState": {
           "dropdowns": []
         },
         "fields": {
-          "NAME": "doors"
+          "NAME": "door"
         },
         "inputs": {
           "STATES": {
             "block": {
               "type": "state",
-              "id": "5$aV:|j+kb+mAOYqq!K5",
+              "id": "GbcRh0!`f36:87hr{F#_",
               "extraState": {
                 "dropdowns": []
               },
@@ -27,8 +27,8 @@
               "inputs": {
                 "TRANSITIONS": {
                   "block": {
-                    "type": "transision",
-                    "id": "n;X7bPIrH~oK=j7ug(uw",
+                    "type": "transition",
+                    "id": "*@8Ai}eoI8~Xp~fi;kMR",
                     "extraState": {
                       "dropdowns": [
                         {
@@ -36,15 +36,15 @@
                           "options": [
                             {
                               "text": "closed",
-                              "id": "5$aV:|j+kb+mAOYqq!K5"
+                              "id": "GbcRh0!`f36:87hr{F#_"
                             },
                             {
                               "text": "locked",
-                              "id": "S/z]=J~pChb_.rlXT+6!"
+                              "id": "0]O|5:%k=t(PUhyrc5UO"
                             },
                             {
                               "text": "opened",
-                              "id": "G0y3|!+oYpOZ[zSlZ[U0"
+                              "id": "_p5GnFg`JjOQVzA*NSF!"
                             }
                           ]
                         }
@@ -52,12 +52,12 @@
                     },
                     "fields": {
                       "EVENT": "open",
-                      "TO_STATE": "G0y3|!+oYpOZ[zSlZ[U0"
+                      "TO_STATE": "_p5GnFg`JjOQVzA*NSF!"
                     },
                     "next": {
                       "block": {
-                        "type": "transision",
-                        "id": "Tgl2VdoOg;g+4Ba,KvK_",
+                        "type": "transition",
+                        "id": "L`zAL5W:,!nU=L5h@S]|",
                         "extraState": {
                           "dropdowns": [
                             {
@@ -65,15 +65,15 @@
                               "options": [
                                 {
                                   "text": "closed",
-                                  "id": "5$aV:|j+kb+mAOYqq!K5"
+                                  "id": "GbcRh0!`f36:87hr{F#_"
                                 },
                                 {
                                   "text": "locked",
-                                  "id": "S/z]=J~pChb_.rlXT+6!"
+                                  "id": "0]O|5:%k=t(PUhyrc5UO"
                                 },
                                 {
                                   "text": "opened",
-                                  "id": "G0y3|!+oYpOZ[zSlZ[U0"
+                                  "id": "_p5GnFg`JjOQVzA*NSF!"
                                 }
                               ]
                             }
@@ -81,7 +81,7 @@
                         },
                         "fields": {
                           "EVENT": "lock",
-                          "TO_STATE": "S/z]=J~pChb_.rlXT+6!"
+                          "TO_STATE": "0]O|5:%k=t(PUhyrc5UO"
                         }
                       }
                     }
@@ -91,7 +91,7 @@
               "next": {
                 "block": {
                   "type": "state",
-                  "id": "G0y3|!+oYpOZ[zSlZ[U0",
+                  "id": "_p5GnFg`JjOQVzA*NSF!",
                   "extraState": {
                     "dropdowns": []
                   },
@@ -101,8 +101,8 @@
                   "inputs": {
                     "TRANSITIONS": {
                       "block": {
-                        "type": "transision",
-                        "id": "~Z($X5nUsm2N/wUt?%B2",
+                        "type": "transition",
+                        "id": "5|4[2Y?SL938#r=OArUe",
                         "extraState": {
                           "dropdowns": [
                             {
@@ -110,15 +110,15 @@
                               "options": [
                                 {
                                   "text": "closed",
-                                  "id": "5$aV:|j+kb+mAOYqq!K5"
+                                  "id": "GbcRh0!`f36:87hr{F#_"
                                 },
                                 {
                                   "text": "locked",
-                                  "id": "S/z]=J~pChb_.rlXT+6!"
+                                  "id": "0]O|5:%k=t(PUhyrc5UO"
                                 },
                                 {
                                   "text": "opened",
-                                  "id": "G0y3|!+oYpOZ[zSlZ[U0"
+                                  "id": "_p5GnFg`JjOQVzA*NSF!"
                                 }
                               ]
                             }
@@ -126,7 +126,7 @@
                         },
                         "fields": {
                           "EVENT": "close",
-                          "TO_STATE": "5$aV:|j+kb+mAOYqq!K5"
+                          "TO_STATE": "GbcRh0!`f36:87hr{F#_"
                         }
                       }
                     }
@@ -134,7 +134,7 @@
                   "next": {
                     "block": {
                       "type": "state",
-                      "id": "S/z]=J~pChb_.rlXT+6!",
+                      "id": "0]O|5:%k=t(PUhyrc5UO",
                       "extraState": {
                         "dropdowns": []
                       },
@@ -144,8 +144,8 @@
                       "inputs": {
                         "TRANSITIONS": {
                           "block": {
-                            "type": "transision",
-                            "id": ";w}9*s1v$cQ}vb_b`lWP",
+                            "type": "transition",
+                            "id": "4?@f~BJ4^Iz.}v/oA|#v",
                             "extraState": {
                               "dropdowns": [
                                 {
@@ -153,15 +153,15 @@
                                   "options": [
                                     {
                                       "text": "closed",
-                                      "id": "5$aV:|j+kb+mAOYqq!K5"
+                                      "id": "GbcRh0!`f36:87hr{F#_"
                                     },
                                     {
                                       "text": "locked",
-                                      "id": "S/z]=J~pChb_.rlXT+6!"
+                                      "id": "0]O|5:%k=t(PUhyrc5UO"
                                     },
                                     {
                                       "text": "opened",
-                                      "id": "G0y3|!+oYpOZ[zSlZ[U0"
+                                      "id": "_p5GnFg`JjOQVzA*NSF!"
                                     }
                                   ]
                                 }
@@ -169,7 +169,7 @@
                             },
                             "fields": {
                               "EVENT": "unlock",
-                              "TO_STATE": "5$aV:|j+kb+mAOYqq!K5"
+                              "TO_STATE": "GbcRh0!`f36:87hr{F#_"
                             }
                           }
                         }

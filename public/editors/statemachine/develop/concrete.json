@@ -1,28 +1,28 @@
 {
-  "=GQFF_Xq;ls7+=R-Yn!-": {
+  "=i7doq%VwrBYaMqP6Nl/": {
     "type": "machine",
-    "id": "=GQFF_Xq;ls7+=R-Yn!-",
-    "x": 86,
-    "y": 146,
+    "id": "=i7doq%VwrBYaMqP6Nl/",
+    "x": 30,
+    "y": 29,
     "extraState": {
       "dropdowns": []
     },
     "fields": {
-      "NAME": "doors"
+      "NAME": "door"
     },
     "inputs": {
       "STATES": {
         "block": {
-          "id": "5$aV:|j+kb+mAOYqq!K5"
+          "id": "GbcRh0!`f36:87hr{F#_"
         }
       }
     }
   },
-  "5$aV:|j+kb+mAOYqq!K5": {
+  "GbcRh0!`f36:87hr{F#_": {
     "type": "state",
-    "id": "5$aV:|j+kb+mAOYqq!K5",
-    "x": 107,
-    "y": 173,
+    "id": "GbcRh0!`f36:87hr{F#_",
+    "x": 51,
+    "y": 55,
     "extraState": {
       "dropdowns": []
     },
@@ -32,21 +32,21 @@
     "inputs": {
       "TRANSITIONS": {
         "block": {
-          "id": "n;X7bPIrH~oK=j7ug(uw"
+          "id": "*@8Ai}eoI8~Xp~fi;kMR"
         }
       }
     },
     "next": {
       "block": {
-        "id": "G0y3|!+oYpOZ[zSlZ[U0"
+        "id": "_p5GnFg`JjOQVzA*NSF!"
       }
     }
   },
-  "n;X7bPIrH~oK=j7ug(uw": {
-    "type": "transision",
-    "id": "n;X7bPIrH~oK=j7ug(uw",
-    "x": 128,
-    "y": 200,
+  "*@8Ai}eoI8~Xp~fi;kMR": {
+    "type": "transition",
+    "id": "*@8Ai}eoI8~Xp~fi;kMR",
+    "x": 72,
+    "y": 81,
     "extraState": {
       "dropdowns": [
         {
@@ -54,15 +54,15 @@
           "options": [
             {
               "text": "closed",
-              "id": "5$aV:|j+kb+mAOYqq!K5"
+              "id": "GbcRh0!`f36:87hr{F#_"
             },
             {
               "text": "locked",
-              "id": "S/z]=J~pChb_.rlXT+6!"
+              "id": "0]O|5:%k=t(PUhyrc5UO"
             },
             {
               "text": "opened",
-              "id": "G0y3|!+oYpOZ[zSlZ[U0"
+              "id": "_p5GnFg`JjOQVzA*NSF!"
             }
           ]
         }
@@ -70,19 +70,19 @@
     },
     "fields": {
       "EVENT": "open",
-      "TO_STATE": "G0y3|!+oYpOZ[zSlZ[U0"
+      "TO_STATE": "_p5GnFg`JjOQVzA*NSF!"
     },
     "next": {
       "block": {
-        "id": "Tgl2VdoOg;g+4Ba,KvK_"
+        "id": "L`zAL5W:,!nU=L5h@S]|"
       }
     }
   },
-  "G0y3|!+oYpOZ[zSlZ[U0": {
+  "_p5GnFg`JjOQVzA*NSF!": {
     "type": "state",
-    "id": "G0y3|!+oYpOZ[zSlZ[U0",
-    "x": 107,
-    "y": 267,
+    "id": "_p5GnFg`JjOQVzA*NSF!",
+    "x": 51,
+    "y": 146,
     "extraState": {
       "dropdowns": []
     },
@@ -92,21 +92,21 @@
     "inputs": {
       "TRANSITIONS": {
         "block": {
-          "id": "~Z($X5nUsm2N/wUt?%B2"
+          "id": "5|4[2Y?SL938#r=OArUe"
         }
       }
     },
     "next": {
       "block": {
-        "id": "S/z]=J~pChb_.rlXT+6!"
+        "id": "0]O|5:%k=t(PUhyrc5UO"
       }
     }
   },
-  "Tgl2VdoOg;g+4Ba,KvK_": {
-    "type": "transision",
-    "id": "Tgl2VdoOg;g+4Ba,KvK_",
-    "x": 128,
-    "y": 227,
+  "L`zAL5W:,!nU=L5h@S]|": {
+    "type": "transition",
+    "id": "L`zAL5W:,!nU=L5h@S]|",
+    "x": 72,
+    "y": 107,
     "extraState": {
       "dropdowns": [
         {
@@ -114,15 +114,15 @@
           "options": [
             {
               "text": "closed",
-              "id": "5$aV:|j+kb+mAOYqq!K5"
+              "id": "GbcRh0!`f36:87hr{F#_"
             },
             {
               "text": "locked",
-              "id": "S/z]=J~pChb_.rlXT+6!"
+              "id": "0]O|5:%k=t(PUhyrc5UO"
             },
             {
               "text": "opened",
-              "id": "G0y3|!+oYpOZ[zSlZ[U0"
+              "id": "_p5GnFg`JjOQVzA*NSF!"
             }
           ]
         }
@@ -130,14 +130,14 @@
     },
     "fields": {
       "EVENT": "lock",
-      "TO_STATE": "S/z]=J~pChb_.rlXT+6!"
+      "TO_STATE": "0]O|5:%k=t(PUhyrc5UO"
     }
   },
-  "~Z($X5nUsm2N/wUt?%B2": {
-    "type": "transision",
-    "id": "~Z($X5nUsm2N/wUt?%B2",
-    "x": 128,
-    "y": 294,
+  "5|4[2Y?SL938#r=OArUe": {
+    "type": "transition",
+    "id": "5|4[2Y?SL938#r=OArUe",
+    "x": 72,
+    "y": 172,
     "extraState": {
       "dropdowns": [
         {
@@ -145,15 +145,15 @@
           "options": [
             {
               "text": "closed",
-              "id": "5$aV:|j+kb+mAOYqq!K5"
+              "id": "GbcRh0!`f36:87hr{F#_"
             },
             {
               "text": "locked",
-              "id": "S/z]=J~pChb_.rlXT+6!"
+              "id": "0]O|5:%k=t(PUhyrc5UO"
             },
             {
               "text": "opened",
-              "id": "G0y3|!+oYpOZ[zSlZ[U0"
+              "id": "_p5GnFg`JjOQVzA*NSF!"
             }
           ]
         }
@@ -161,14 +161,14 @@
     },
     "fields": {
       "EVENT": "close",
-      "TO_STATE": "5$aV:|j+kb+mAOYqq!K5"
+      "TO_STATE": "GbcRh0!`f36:87hr{F#_"
     }
   },
-  "S/z]=J~pChb_.rlXT+6!": {
+  "0]O|5:%k=t(PUhyrc5UO": {
     "type": "state",
-    "id": "S/z]=J~pChb_.rlXT+6!",
-    "x": 107,
-    "y": 334,
+    "id": "0]O|5:%k=t(PUhyrc5UO",
+    "x": 51,
+    "y": 211,
     "extraState": {
       "dropdowns": []
     },
@@ -178,16 +178,16 @@
     "inputs": {
       "TRANSITIONS": {
         "block": {
-          "id": ";w}9*s1v$cQ}vb_b`lWP"
+          "id": "4?@f~BJ4^Iz.}v/oA|#v"
         }
       }
     }
   },
-  ";w}9*s1v$cQ}vb_b`lWP": {
-    "type": "transision",
-    "id": ";w}9*s1v$cQ}vb_b`lWP",
-    "x": 128,
-    "y": 361,
+  "4?@f~BJ4^Iz.}v/oA|#v": {
+    "type": "transition",
+    "id": "4?@f~BJ4^Iz.}v/oA|#v",
+    "x": 72,
+    "y": 237,
     "extraState": {
       "dropdowns": [
         {
@@ -195,15 +195,15 @@
           "options": [
             {
               "text": "closed",
-              "id": "5$aV:|j+kb+mAOYqq!K5"
+              "id": "GbcRh0!`f36:87hr{F#_"
             },
             {
               "text": "locked",
-              "id": "S/z]=J~pChb_.rlXT+6!"
+              "id": "0]O|5:%k=t(PUhyrc5UO"
             },
             {
               "text": "opened",
-              "id": "G0y3|!+oYpOZ[zSlZ[U0"
+              "id": "_p5GnFg`JjOQVzA*NSF!"
             }
           ]
         }
@@ -211,11 +211,11 @@
     },
     "fields": {
       "EVENT": "unlock",
-      "TO_STATE": "5$aV:|j+kb+mAOYqq!K5"
+      "TO_STATE": "GbcRh0!`f36:87hr{F#_"
     }
   },
   "top_blocks": [
-    "=GQFF_Xq;ls7+=R-Yn!-"
+    "=i7doq%VwrBYaMqP6Nl/"
   ],
   "mergeable": true
 }
