@@ -108,6 +108,10 @@ CodeGen.init_code = function() {
      "type": "generate_field_value2"
     },
     {
+      "kind": "block",
+      "type": "generate_parent_field_value"
+    },
+    {
      "kind": "block",
      "type": "generate_field_text"
     },

@@ -1,0 +1,78 @@
+{
+  "blocks": {
+    "languageVersion": 0,
+    "blocks": [
+      {
+        "type": "generate_parent_field_value",
+        "id": "`ZRQSFvaH372DjC=R8fN",
+        "x": 65,
+        "y": 307,
+        "extraState": {
+          "dropdowns": [
+            {
+              "field": "FIELDS",
+              "options": [
+                {
+                  "text": "FIELDS",
+                  "id": "Xj10cRN@NBRn)GU-GaF$"
+                },
+                {
+                  "text": "FIELDS",
+                  "id": "vby;QyoRn~c!/kA2V+UW"
+                },
+                {
+                  "text": "FIELDS",
+                  "id": "vk|~2[V8C7ez!wWtBhdt"
+                },
+                {
+                  "text": "INDENT",
+                  "id": "Jrz~JN7i1;{o#XAll7b3"
+                },
+                {
+                  "text": "JAVASCRIPT",
+                  "id": "X4?o%WT/Yp|VFADhYix4"
+                },
+                {
+                  "text": "LANGUAGE",
+                  "id": "Aw_3D^G2[PFBYKv%4U-{"
+                },
+                {
+                  "text": "STATEMENTS",
+                  "id": "`GAft(}~!ob_KUTmcHS|"
+                },
+                {
+                  "text": "STATEMENTS",
+                  "id": "e^-OW:qsNd~zH8hW2Z;+"
+                },
+                {
+                  "text": "STATEMENTS",
+                  "id": "kXJu)VQLTj1GF#U0XO#:"
+                },
+                {
+                  "text": "TOKEN",
+                  "id": ".iLI_zwq^49Oq)4|s`Qp"
+                },
+                {
+                  "text": "TYPE",
+                  "id": "}.S6Np{AH2P3Jvom4E,N"
+                },
+                {
+                  "text": "VALUE",
+                  "id": "x/ub%Xxs[t(hL3$sIC$!"
+                }
+              ]
+            }
+          ]
+        },
+        "fields": {
+          "FIELDS": "Xj10cRN@NBRn)GU-GaF$"
+        }
+      }
+    ]
+  },
+  "editor": {
+    "editor": "code",
+    "version": 1,
+    "url": "https://cidt.asml.com/editors/latest/code/editor.html"
+  }
+}
