@@ -162,7 +162,7 @@ Blockly.Code['generate_statements3'] = function(block) {
   var code = ''
   if (ident=='FALSE')
   {
-    code += "const targetBlock = block.getInputTargetBlock('" + statements + "');\n"
+    code += "var targetBlock = block.getInputTargetBlock('" + statements + "');\n"
     code += "code += Blockly." + language + ".blockToCode(targetBlock);\n"
   }
   else
