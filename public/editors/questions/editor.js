@@ -6,10 +6,16 @@ Blockly.Blocks['company'] = {
         .appendField(new Blockly.FieldTextInput("your email", null, ), "EMAIL");
     this.appendDummyInput()
         .appendField(new Blockly.FieldLabelSerializable("How many DSLs do you have in your company", null, {"tooltip": "Domain Specific Language like dot, or protoc"}), "HOW_MANY")
-        .appendField(new Blockly.FieldDropdown([["0","ZERO"], ["1-10","TO10"], ["11-100","TO100"], ["more than 100","MORE100"]]), "ANSWER");
+        .appendField(new Blockly.FieldDropdown([["0","ZERO"], ["1-10","TO10"], ["11-100","TO100"], ["more than 100","MORE100"]]), "NR_DSLS");
     this.appendStatementInput("DSLs")
         .setCheck(null)
         .appendField(new Blockly.FieldLabelSerializable("Please add some DSLs", null, {"tooltip": "Domain Specific Language like dot, or protoc"}), "DSLS_LABEL");
+    this.appendDummyInput()
+        .appendField(new Blockly.FieldLabelSerializable("How many APIs do you have in your company", null, {"tooltip": "Domain Specific Language like dot, or protoc"}), "HOW_MANY_API")
+        .appendField(new Blockly.FieldDropdown([["0","ZERO"], ["1-10","TO10"], ["11-100","TO100"], ["more than 100","MORE100"]]), "NR_APIS");
+    this.appendStatementInput("APIs")
+        .setCheck(null)
+        .appendField(new Blockly.FieldLabelSerializable("Please add some APIs", null, {"tooltip": "Domain Specific Language like dot, or protoc"}), "APIS_LABEL");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(260);
@@ -252,7 +258,131 @@ Blockly.Blocks['dsl'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("DSL:")
-        .appendField(new Blockly.FieldTextInput("name", null, ), "DSL_NAME")
+        .appendField(new Blockly.FieldTextInput("name", null, ), "NAME")
+        .appendField(new Blockly.FieldDropdown([["Internal","INTERNAL"], ["External","EXTERNAL"]]), "INT_EXT")
+        .appendField(new Blockly.FieldTextInput("https://...", null, ), "URL");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(160);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  },
+
+  /*
+   * Create XML to represent the output type.
+   * @return {!Element} XML storage element.
+   * @this {Blockly.Block}
+   */
+  mutationToDom: function() {
+    var container = Blockly.utils.xml.createElement('mutation');
+    var field;
+    for (var b = 0, input; input = this.inputList[b]; b++)
+    {
+      for (var d = 0, field; field = input.fieldRow[d]; d++)
+	    {	
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
+		    {
+          var dropdown = Blockly.utils.xml.createElement('dropdown');
+          dropdown.setAttribute('field', field.name);
+        
+          container.appendChild(dropdown)
+          var options = field.getOptions()
+          for (var i = 0; i < options.length; i++) {
+            var option = Blockly.utils.xml.createElement('option');
+            option.setAttribute('text', options[i][0]);
+            option.setAttribute('id', options[i][1]);
+            dropdown.appendChild(option);
+          }
+    		}
+      }
+    }
+    return container;
+  },
+  saveExtraState: function() {
+    var field;
+    var state = {'dropdowns':[]};
+    for (var b = 0, input; input = this.inputList[b]; b++)
+    {
+      for (var d = 0, field; field = input.fieldRow[d]; d++)
+	    {	
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
+		    {
+          var field_state = {'field':field.name, 'options' : []}
+          state.dropdowns.push(field_state);
+          var options = field.getOptions()
+          for (var i = 0; i < options.length; i++) {
+            var option_state = {'text': options[i][0], 'id':options[i][1]}
+            field_state.options.push(option_state)
+          }
+    		}
+      }
+    }
+    return state;
+  },
+
+  /**
+   * Parse XML to restore the output type.
+   * @param {!Element} xmlElement XML storage element.
+   * @this {Blockly.Block}
+   */
+  domToMutation: function(xmlElement) {
+
+    for (var i = 0, childNode; (childNode = xmlElement.childNodes[i]); i++) {
+      if (childNode.nodeName.toLowerCase() == 'dropdown') {
+        var field_name = childNode.getAttribute('field');
+        var field = this.getField(field_name);
+    
+        var options = field.getOptions(false)
+        var ids = options.map(option => option[1]);
+        
+        for (var j = 0, optionsElement; (optionsElement = childNode.childNodes[j]); j++) {
+          if (optionsElement.nodeName.toLowerCase() == 'option') {
+            var text = optionsElement.getAttribute('text');
+            var id = optionsElement.getAttribute('id');
+            if (!ids.includes(id)) {
+              options.push([text,id])
+            }
+          }
+        }
+        field.savedOptionsSet = true;     
+      }
+    }
+  },
+  loadExtraState: function(state) {
+    for (var i=0; i<state.dropdowns.length; i++)
+    {
+      var field_name = state.dropdowns[i].field;
+      var field = this.getField(field_name);
+      if (field.getOptions && !field.variable_) // is dropdown and not a variable
+      { 
+         var options = field.getOptions(false);
+      }
+      else
+      {
+        var options = []
+      }
+      var ids = options.map(option => option[1]);
+      for (var j =0; j<state.dropdowns[i].options.length;j++)
+      {
+        var text = state.dropdowns[i].options[j].text;
+        var id = state.dropdowns[i].options[j].id;
+        if (!ids.includes(id)) {
+          options.push([text,id])
+        }
+      }
+      field.savedOptionsSet = true;
+    }
+  }
+
+
+
+};
+
+Blockly.Blocks['api'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("API:")
+        .appendField(new Blockly.FieldTextInput("name", null, ), "NAME")
         .appendField(new Blockly.FieldDropdown([["Internal","INTERNAL"], ["External","EXTERNAL"]]), "INT_EXT")
         .appendField(new Blockly.FieldTextInput("https://...", null, ), "URL");
     this.setPreviousStatement(true, null);
@@ -385,7 +515,9 @@ Blockly.CSV.scrub_ = function(block, code, opt_thisOnly) {
 
 Blockly.CSV['company'] = function(block) {
   var code ='';
-  const targetBlock = block.getInputTargetBlock('DSLs');
+  var targetBlock = block.getInputTargetBlock('DSLs');
+  code += Blockly.CSV.blockToCode(targetBlock);
+  var targetBlock = block.getInputTargetBlock('APIs');
   code += Blockly.CSV.blockToCode(targetBlock);
 
   // if this block is a 'value' then code + ORDER needs to be returned
@@ -411,9 +543,9 @@ Blockly.CSV.scrub_ = function(block, code, opt_thisOnly) {
 
 Blockly.CSV['companies'] = function(block) {
   var code ='';
-  code += '"ID", "Company", "Email", "DSL_name", "Internal/External", "URL"';
+  code += '"Type", "ID", "Company", "Email", "DSL_name", "Internal/External", "URL"';
   code += '\n';
-  const targetBlock = block.getInputTargetBlock('COMPANIES');
+  var targetBlock = block.getInputTargetBlock('COMPANIES');
   code += Blockly.CSV.blockToCode(targetBlock);
 
   // if this block is a 'value' then code + ORDER needs to be returned
@@ -439,9 +571,10 @@ Blockly.CSV.scrub_ = function(block, code, opt_thisOnly) {
 
 Blockly.CSV['dsl'] = function(block) {
   var code ='';
-  code += '"DSL:';
+  code += '"DSL';
+  code += '",';
   code += block.getSurroundParent().getDescendants().indexOf(block)-1;
-  code += '","';
+  code += ',"';
   var parent = block.getSurroundParent();
   if (parent)
   {
@@ -457,10 +590,77 @@ Blockly.CSV['dsl'] = function(block) {
   var parent = block.getSurroundParent();
   if (parent)
   {
-    code += parent.getFieldValue("ANSWER");
+    code += parent.getFieldValue("NR_DSLS");
   }
   code += '","';
-  var field = block.getField('DSL_NAME');
+  var field = block.getField('NAME');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+  code += '","';
+  var field = block.getField('INT_EXT');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+  code += '","';
+  var field = block.getField('URL');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+  code += '"\n';
+
+  // if this block is a 'value' then code + ORDER needs to be returned
+  if(block.outputConnection) {
+    return [code, Blockly.CSV.ORDER_ATOMIC];
+  }
+  else // no value block
+  {
+    return code;
+  }
+}
+;
+if (!Blockly.CSV) {
+  Blockly.CSV = new Blockly.Generator('CSV');
+  Blockly.CSV.ORDER_ATOMIC = 0;
+}
+
+Blockly.CSV.scrub_ = function(block, code, opt_thisOnly) {
+    const nextBlock = block.nextConnection && block.nextConnection.targetBlock();
+    const nextCode = opt_thisOnly ? '' : Blockly.CSV.blockToCode(nextBlock);
+    return code + nextCode;
+}
+
+Blockly.CSV['api'] = function(block) {
+  var code ='';
+  code += '"API"';
+  code += ',';
+  code += block.getSurroundParent().getDescendants().indexOf(block)-1;
+  code += ',"';
+  var parent = block.getSurroundParent();
+  if (parent)
+  {
+    code += parent.getFieldValue("COMPANY_NAME");
+  }
+  code += '","';
+  var parent = block.getSurroundParent();
+  if (parent)
+  {
+    code += parent.getFieldValue("EMAIL");
+  }
+  code += '","';
+  var parent = block.getSurroundParent();
+  if (parent)
+  {
+    code += parent.getFieldValue("NR_DSLS");
+  }
+  code += '","';
+  var field = block.getField('NAME');
   if (field.getText()) {
     code += field.getText();
   } else {
@@ -691,51 +891,64 @@ BlocklyStorage.alert = function(message) {
 };
 
 toolbox = {
- "kind": "flyoutToolbox",
+ "kind": "categoryToolbox",
  "contents": [
   {
-    "kind": "block",
-    "type": "companies"
-  },
-  {
-    "kind": "block",
-    "type": "company", 
-    "fields": {
+   "kind": "category",
+   "name" : "Your Company",
+   "colour": "#090",
+   "contents": [
+    {
+      "kind": "block",
+      "type": "companies"
     },
-    "inputs": {
-      "DSLs" :  {
-        "block": {
-          "type": "dsl",
-        }
+    {
+      "kind": "block",
+      "type": "company", 
+      "fields": {
       },
-    }
-  },
-  { 
-    "kind": "label",
-    "text": "Extra examples"
+      "inputs": {
+        "DSLs" :  {
+          "block": {
+            "type": "dsl",
+          }
+        },
+      }
+    },
+   ]
   },
   {
-    "kind": "block",
-    "type": "dsl", 
-    "fields": {
-      "DSL_NAME" : "protoc",
-      "URL" : "https://grpc.io/docs/protoc-installation/",
-      "INT_EXT" : "EXTERNAL",
+   "kind": "category",
+   "name" : "Google Examples",
+   "colour": "#36f",
+   "contents": [
+    {
+      "kind": "block",
+      "type": "dsl", 
+      "fields": {
+        "NAME" : "protoc",
+        "URL" : "https://grpc.io/docs/protoc-installation/",
+        "INT_EXT" : "EXTERNAL",
+      },
+      "inputs": {
+      }
     },
-    "inputs": {
-    }
-  },
-  {
-    "kind": "block",
-    "type": "dsl", 
-    "fields": {
-      "DSL_NAME" : "ddf",
+    {
+      "kind": "block",
+      "type": "api", 
+      "fields": {
+        "NAME" : "Cloud Functions API",
+        "URL" : "https://cloud.google.com/functions/docs/reference/rest",
+        "INT_EXT" : "EXTERNAL",
+      },
+      "inputs": {
+      }
     },
-    "inputs": {
-    }
+   ]
   },
+
  ]
-};
+}
     
 
 
