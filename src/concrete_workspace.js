@@ -141,7 +141,14 @@ Concrete.init_concrete = function(toolbox)
 
 		/* Load Workspace Blocks from XML to workspace. Remove all code below if no blocks to load */
 
-		BlocklyStorage.restoreBlocks(this.concrete_workspace, 'concrete');
+		// restore sometimes fails on delete blocks, continue without restore
+		try
+		{	
+			BlocklyStorage.restoreBlocks(this.concrete_workspace, 'concrete');
+		} catch (error) {
+			console.error(error);
+		}
+
 		BlocklyStorage.backupOnUnload(this.concrete_workspace, 'concrete');
 
 		this.concrete_workspace.workspaceSearch = new WorkspaceSearch(this.concrete_workspace);
