@@ -1,0 +1,552 @@
+{
+  "YKF$O2r0OM$(n!q{}p{-": {
+    "type": "toolbox_blocks",
+    "id": "YKF$O2r0OM$(n!q{}p{-",
+    "x": 77,
+    "y": 301,
+    "extraState": {
+      "dropdowns": []
+    },
+    "inputs": {
+      "LIST": {
+        "block": {
+          "id": "G8T-D,7c?QKho]:Osd@;"
+        }
+      }
+    }
+  },
+  "G8T-D,7c?QKho]:Osd@;": {
+    "type": "toolbox_block",
+    "id": "G8T-D,7c?QKho]:Osd@;",
+    "x": 98,
+    "y": 327,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "companies",
+              "id": "q{lAVTXPb{)RFG{V6F5^"
+            },
+            {
+              "text": "company",
+              "id": ".vR*{J$TGgfvRQ0+iitV"
+            },
+            {
+              "text": "dsl",
+              "id": "bWd^(]uB9`3a;s0aK;h}"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "TYPE": "q{lAVTXPb{)RFG{V6F5^"
+    },
+    "next": {
+      "block": {
+        "id": "RIKavsK^2:pNeWHG8`T3"
+      }
+    }
+  },
+  "RIKavsK^2:pNeWHG8`T3": {
+    "type": "toolbox_block_json",
+    "id": "RIKavsK^2:pNeWHG8`T3",
+    "x": 98,
+    "y": 353,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "companies",
+              "id": "q{lAVTXPb{)RFG{V6F5^"
+            },
+            {
+              "text": "company",
+              "id": ".vR*{J$TGgfvRQ0+iitV"
+            },
+            {
+              "text": "dsl",
+              "id": "bWd^(]uB9`3a;s0aK;h}"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "TYPE": ".vR*{J$TGgfvRQ0+iitV"
+    },
+    "inputs": {
+      "INPUTS": {
+        "block": {
+          "id": "@-RsSarP1V4$*yD(|eRE"
+        }
+      }
+    },
+    "next": {
+      "block": {
+        "id": "mU*4dh^N.2$b3JjX:EUp"
+      }
+    }
+  },
+  "@-RsSarP1V4$*yD(|eRE": {
+    "type": "toolbox_block_json_input",
+    "id": "@-RsSarP1V4$*yD(|eRE",
+    "x": 159,
+    "y": 413,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "NAME",
+          "options": [
+            {
+              "text": "COMPANIES",
+              "id": ",*E,Dv*pHMX4IvtA@W@H"
+            },
+            {
+              "text": "DSLs",
+              "id": "l8I=+*-;JIJHYTURoea-"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "NAME": "l8I=+*-;JIJHYTURoea-"
+    },
+    "inputs": {
+      "BLOCKS": {
+        "block": {
+          "id": "dTs1=FoZ)_u-w)X)0L_J"
+        }
+      }
+    }
+  },
+  "mU*4dh^N.2$b3JjX:EUp": {
+    "type": "toolbox_label",
+    "id": "mU*4dh^N.2$b3JjX:EUp",
+    "x": 98,
+    "y": 491,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TEXT": "Extra examples"
+    },
+    "next": {
+      "block": {
+        "id": "*KQ6)]@BUlL-[(Iai$hF"
+      }
+    }
+  },
+  "dTs1=FoZ)_u-w)X)0L_J": {
+    "type": "toolbox_block",
+    "id": "dTs1=FoZ)_u-w)X)0L_J",
+    "x": 180,
+    "y": 439,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "companies",
+              "id": "q{lAVTXPb{)RFG{V6F5^"
+            },
+            {
+              "text": "company",
+              "id": ".vR*{J$TGgfvRQ0+iitV"
+            },
+            {
+              "text": "dsl",
+              "id": "bWd^(]uB9`3a;s0aK;h}"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "TYPE": "bWd^(]uB9`3a;s0aK;h}"
+    }
+  },
+  "*KQ6)]@BUlL-[(Iai$hF": {
+    "type": "toolbox_block_json",
+    "id": "*KQ6)]@BUlL-[(Iai$hF",
+    "x": 98,
+    "y": 517,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "companies",
+              "id": "q{lAVTXPb{)RFG{V6F5^"
+            },
+            {
+              "text": "company",
+              "id": ".vR*{J$TGgfvRQ0+iitV"
+            },
+            {
+              "text": "dsl",
+              "id": "bWd^(]uB9`3a;s0aK;h}"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "TYPE": "bWd^(]uB9`3a;s0aK;h}"
+    },
+    "inputs": {
+      "FIELDS": {
+        "block": {
+          "id": "q0)iT!=kvnh6cE_*9i~C"
+        }
+      }
+    },
+    "next": {
+      "block": {
+        "id": "g(c2i!BWHq%IL@fI|j9X"
+      }
+    }
+  },
+  "q0)iT!=kvnh6cE_*9i~C": {
+    "type": "toolbox_block_json_field",
+    "id": "q0)iT!=kvnh6cE_*9i~C",
+    "x": 159,
+    "y": 543,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "NAME",
+          "options": [
+            {
+              "text": "ANSWER",
+              "id": "7~.Kca/S+mU%YsKG6d6,"
+            },
+            {
+              "text": "ANSWER",
+              "id": "l`N?{P6h%(}aS5}Mv5#u"
+            },
+            {
+              "text": "COMPANY_NAME",
+              "id": "?V`aF%*+*DtQ3@QuH+|U"
+            },
+            {
+              "text": "COMPANY_NAME",
+              "id": "LI[*aADMRvN#uJr9M9T_"
+            },
+            {
+              "text": "DSLS_LABEL",
+              "id": "#eFU7#,(D44a]^4cj@=i"
+            },
+            {
+              "text": "DSLS_LABEL",
+              "id": "lhHAh0K;5[b+{tVr%[3$"
+            },
+            {
+              "text": "DSL_NAME",
+              "id": "4BY.SKuxlWAp~gKXP-!("
+            },
+            {
+              "text": "EMAIL",
+              "id": "8!skL4;1hC}78b_?!e[,"
+            },
+            {
+              "text": "EMAIL",
+              "id": ":=GS~j$,r-WBNGF.~00v"
+            },
+            {
+              "text": "HOW_MANY",
+              "id": "8Fic_p8Fo[;!c%fFh|qy"
+            },
+            {
+              "text": "HOW_MANY",
+              "id": "8fIi_b7c![Y=Tf:ll}4G"
+            },
+            {
+              "text": "INT_EXT",
+              "id": "#dX}hwApCw5rFgqu#qX!"
+            },
+            {
+              "text": "URL",
+              "id": "%e%bfj56wUtd`(Fw3RGl"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "NAME": "4BY.SKuxlWAp~gKXP-!(",
+      "VALUE": "protoc"
+    },
+    "next": {
+      "block": {
+        "id": "nKsYMdS0_b@(XTbt$ln@"
+      }
+    }
+  },
+  "g(c2i!BWHq%IL@fI|j9X": {
+    "type": "toolbox_block_json",
+    "id": "g(c2i!BWHq%IL@fI|j9X",
+    "x": 98,
+    "y": 668,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "companies",
+              "id": "q{lAVTXPb{)RFG{V6F5^"
+            },
+            {
+              "text": "company",
+              "id": ".vR*{J$TGgfvRQ0+iitV"
+            },
+            {
+              "text": "dsl",
+              "id": "bWd^(]uB9`3a;s0aK;h}"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "TYPE": "bWd^(]uB9`3a;s0aK;h}"
+    },
+    "inputs": {
+      "FIELDS": {
+        "block": {
+          "id": "EG!CFK$Gy6+$L$?Z8L,]"
+        }
+      }
+    }
+  },
+  "nKsYMdS0_b@(XTbt$ln@": {
+    "type": "toolbox_block_json_field",
+    "id": "nKsYMdS0_b@(XTbt$ln@",
+    "x": 159,
+    "y": 569,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "NAME",
+          "options": [
+            {
+              "text": "ANSWER",
+              "id": "7~.Kca/S+mU%YsKG6d6,"
+            },
+            {
+              "text": "ANSWER",
+              "id": "l`N?{P6h%(}aS5}Mv5#u"
+            },
+            {
+              "text": "COMPANY_NAME",
+              "id": "?V`aF%*+*DtQ3@QuH+|U"
+            },
+            {
+              "text": "COMPANY_NAME",
+              "id": "LI[*aADMRvN#uJr9M9T_"
+            },
+            {
+              "text": "DSLS_LABEL",
+              "id": "#eFU7#,(D44a]^4cj@=i"
+            },
+            {
+              "text": "DSLS_LABEL",
+              "id": "lhHAh0K;5[b+{tVr%[3$"
+            },
+            {
+              "text": "DSL_NAME",
+              "id": "4BY.SKuxlWAp~gKXP-!("
+            },
+            {
+              "text": "EMAIL",
+              "id": "8!skL4;1hC}78b_?!e[,"
+            },
+            {
+              "text": "EMAIL",
+              "id": ":=GS~j$,r-WBNGF.~00v"
+            },
+            {
+              "text": "HOW_MANY",
+              "id": "8Fic_p8Fo[;!c%fFh|qy"
+            },
+            {
+              "text": "HOW_MANY",
+              "id": "8fIi_b7c![Y=Tf:ll}4G"
+            },
+            {
+              "text": "INT_EXT",
+              "id": "#dX}hwApCw5rFgqu#qX!"
+            },
+            {
+              "text": "URL",
+              "id": "%e%bfj56wUtd`(Fw3RGl"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "NAME": "%e%bfj56wUtd`(Fw3RGl",
+      "VALUE": "https://grpc.io/docs/protoc-installation/"
+    },
+    "next": {
+      "block": {
+        "id": "xaLQ.Y@kS*o~hJo1IP$K"
+      }
+    }
+  },
+  "EG!CFK$Gy6+$L$?Z8L,]": {
+    "type": "toolbox_block_json_field",
+    "id": "EG!CFK$Gy6+$L$?Z8L,]",
+    "x": 159,
+    "y": 694,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "NAME",
+          "options": [
+            {
+              "text": "ANSWER",
+              "id": "7~.Kca/S+mU%YsKG6d6,"
+            },
+            {
+              "text": "ANSWER",
+              "id": "l`N?{P6h%(}aS5}Mv5#u"
+            },
+            {
+              "text": "COMPANY_NAME",
+              "id": "?V`aF%*+*DtQ3@QuH+|U"
+            },
+            {
+              "text": "COMPANY_NAME",
+              "id": "LI[*aADMRvN#uJr9M9T_"
+            },
+            {
+              "text": "DSLS_LABEL",
+              "id": "#eFU7#,(D44a]^4cj@=i"
+            },
+            {
+              "text": "DSLS_LABEL",
+              "id": "lhHAh0K;5[b+{tVr%[3$"
+            },
+            {
+              "text": "DSL_NAME",
+              "id": "4BY.SKuxlWAp~gKXP-!("
+            },
+            {
+              "text": "EMAIL",
+              "id": "8!skL4;1hC}78b_?!e[,"
+            },
+            {
+              "text": "EMAIL",
+              "id": ":=GS~j$,r-WBNGF.~00v"
+            },
+            {
+              "text": "HOW_MANY",
+              "id": "8Fic_p8Fo[;!c%fFh|qy"
+            },
+            {
+              "text": "HOW_MANY",
+              "id": "8fIi_b7c![Y=Tf:ll}4G"
+            },
+            {
+              "text": "INT_EXT",
+              "id": "#dX}hwApCw5rFgqu#qX!"
+            },
+            {
+              "text": "URL",
+              "id": "%e%bfj56wUtd`(Fw3RGl"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "NAME": "4BY.SKuxlWAp~gKXP-!(",
+      "VALUE": "ddf"
+    }
+  },
+  "xaLQ.Y@kS*o~hJo1IP$K": {
+    "type": "toolbox_block_json_field",
+    "id": "xaLQ.Y@kS*o~hJo1IP$K",
+    "x": 159,
+    "y": 595,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "NAME",
+          "options": [
+            {
+              "text": "ANSWER",
+              "id": "7~.Kca/S+mU%YsKG6d6,"
+            },
+            {
+              "text": "ANSWER",
+              "id": "l`N?{P6h%(}aS5}Mv5#u"
+            },
+            {
+              "text": "COMPANY_NAME",
+              "id": "?V`aF%*+*DtQ3@QuH+|U"
+            },
+            {
+              "text": "COMPANY_NAME",
+              "id": "LI[*aADMRvN#uJr9M9T_"
+            },
+            {
+              "text": "DSLS_LABEL",
+              "id": "#eFU7#,(D44a]^4cj@=i"
+            },
+            {
+              "text": "DSLS_LABEL",
+              "id": "lhHAh0K;5[b+{tVr%[3$"
+            },
+            {
+              "text": "DSL_NAME",
+              "id": "4BY.SKuxlWAp~gKXP-!("
+            },
+            {
+              "text": "EMAIL",
+              "id": "8!skL4;1hC}78b_?!e[,"
+            },
+            {
+              "text": "EMAIL",
+              "id": ":=GS~j$,r-WBNGF.~00v"
+            },
+            {
+              "text": "HOW_MANY",
+              "id": "8Fic_p8Fo[;!c%fFh|qy"
+            },
+            {
+              "text": "HOW_MANY",
+              "id": "8fIi_b7c![Y=Tf:ll}4G"
+            },
+            {
+              "text": "INT_EXT",
+              "id": "#dX}hwApCw5rFgqu#qX!"
+            },
+            {
+              "text": "URL",
+              "id": "%e%bfj56wUtd`(Fw3RGl"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "NAME": "#dX}hwApCw5rFgqu#qX!",
+      "VALUE": "EXTERNAL"
+    }
+  },
+  "top_blocks": [
+    "YKF$O2r0OM$(n!q{}p{-"
+  ],
+  "mergeable": true
+}

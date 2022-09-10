@@ -1,0 +1,484 @@
+{
+  ".vR*{J$TGgfvRQ0+iitV": {
+    "type": "factory_base",
+    "id": ".vR*{J$TGgfvRQ0+iitV",
+    "x": 0,
+    "y": 0,
+    "extraState": {
+      "connections": "BOTH"
+    },
+    "fields": {
+      "NAME": "company",
+      "INLINE": "AUTO",
+      "CONNECTIONS": "BOTH"
+    },
+    "inputs": {
+      "INPUTS": {
+        "block": {
+          "id": "*I0zjx725C3hEBH{z()9"
+        }
+      },
+      "TOPTYPE": {
+        "shadow": {
+          "type": "type_null",
+          "id": "|WH357+S154AA92WWK3_"
+        }
+      },
+      "BOTTOMTYPE": {
+        "shadow": {
+          "type": "type_null",
+          "id": "%ER%4/f96.^@if1+klG]"
+        }
+      },
+      "COLOUR": {
+        "block": {
+          "id": ",p##[8s+~jYl@#dB]lR{"
+        }
+      }
+    }
+  },
+  "q{lAVTXPb{)RFG{V6F5^": {
+    "type": "factory_base",
+    "id": "q{lAVTXPb{)RFG{V6F5^",
+    "x": 447,
+    "y": 74,
+    "extraState": {
+      "connections": "NONE"
+    },
+    "fields": {
+      "NAME": "companies",
+      "INLINE": "AUTO",
+      "CONNECTIONS": "NONE"
+    },
+    "inputs": {
+      "INPUTS": {
+        "block": {
+          "id": "SY2@(Sbo4Km=?~WJ]6N@"
+        }
+      },
+      "COLOUR": {
+        "block": {
+          "id": "3b@]DhyEYo_C#G?eo%#["
+        }
+      }
+    }
+  },
+  "_K)o2sbKTpI6aZ*5Fs0g": {
+    "type": "colour_hue",
+    "id": "_K)o2sbKTpI6aZ*5Fs0g",
+    "x": 685,
+    "y": 433,
+    "extraState": {
+      "colour": "#745ba5"
+    },
+    "fields": {
+      "HUE": 260
+    }
+  },
+  "bWd^(]uB9`3a;s0aK;h}": {
+    "type": "factory_base",
+    "id": "bWd^(]uB9`3a;s0aK;h}",
+    "x": 0,
+    "y": 604,
+    "extraState": {
+      "connections": "BOTH"
+    },
+    "fields": {
+      "NAME": "dsl",
+      "INLINE": "AUTO",
+      "CONNECTIONS": "BOTH"
+    },
+    "inputs": {
+      "INPUTS": {
+        "block": {
+          "id": "`C[b[%x82)bp%Y5HqRhy"
+        }
+      },
+      "TOPTYPE": {
+        "shadow": {
+          "type": "type_null",
+          "id": "k?FnK?]cFLM;m|vhDFRR"
+        }
+      },
+      "BOTTOMTYPE": {
+        "shadow": {
+          "type": "type_null",
+          "id": "mT_*D=f=9Mb|Eze!%as$"
+        }
+      },
+      "COLOUR": {
+        "block": {
+          "id": "Uc5v(xUe$t3bF2NyH{q_"
+        }
+      }
+    }
+  },
+  "*I0zjx725C3hEBH{z()9": {
+    "type": "input_dummy",
+    "id": "*I0zjx725C3hEBH{z()9",
+    "x": 60,
+    "y": 26,
+    "fields": {
+      "ALIGN": "LEFT"
+    },
+    "inputs": {
+      "FIELDS": {
+        "block": {
+          "id": "1gf[O?m=c;GYg6K:VX8#"
+        }
+      }
+    },
+    "next": {
+      "block": {
+        "id": "diz~s$.OJhuxU]Uj+/-C"
+      }
+    }
+  },
+  "|WH357+S154AA92WWK3_": {
+    "type": "type_null",
+    "id": "|WH357+S154AA92WWK3_",
+    "x": 205,
+    "y": 524
+  },
+  "%ER%4/f96.^@if1+klG]": {
+    "type": "type_null",
+    "id": "%ER%4/f96.^@if1+klG]",
+    "x": 205,
+    "y": 550
+  },
+  ",p##[8s+~jYl@#dB]lR{": {
+    "type": "colour_hue",
+    "id": ",p##[8s+~jYl@#dB]lR{",
+    "x": 205,
+    "y": 576,
+    "extraState": {
+      "colour": "#745ba5"
+    },
+    "fields": {
+      "HUE": 260
+    }
+  },
+  "SY2@(Sbo4Km=?~WJ]6N@": {
+    "type": "input_dummy",
+    "id": "SY2@(Sbo4Km=?~WJ]6N@",
+    "x": 507,
+    "y": 100,
+    "fields": {
+      "ALIGN": "LEFT"
+    },
+    "inputs": {
+      "FIELDS": {
+        "block": {
+          "id": "kF.v2m*/S3h8:Up0lZZI"
+        }
+      }
+    },
+    "next": {
+      "block": {
+        "id": ",*E,Dv*pHMX4IvtA@W@H"
+      }
+    }
+  },
+  "3b@]DhyEYo_C#G?eo%#[": {
+    "type": "colour_hue",
+    "id": "3b@]DhyEYo_C#G?eo%#[",
+    "x": 597,
+    "y": 346,
+    "extraState": {
+      "colour": "#a5745b"
+    },
+    "fields": {
+      "HUE": 20
+    }
+  },
+  "`C[b[%x82)bp%Y5HqRhy": {
+    "type": "input_dummy",
+    "id": "`C[b[%x82)bp%Y5HqRhy",
+    "x": 60,
+    "y": 630,
+    "fields": {
+      "ALIGN": "LEFT"
+    },
+    "inputs": {
+      "FIELDS": {
+        "block": {
+          "id": "m^`t0v_3m=G=la#/viw2"
+        }
+      }
+    }
+  },
+  "k?FnK?]cFLM;m|vhDFRR": {
+    "type": "type_null",
+    "id": "k?FnK?]cFLM;m|vhDFRR",
+    "x": 205,
+    "y": 931
+  },
+  "mT_*D=f=9Mb|Eze!%as$": {
+    "type": "type_null",
+    "id": "mT_*D=f=9Mb|Eze!%as$",
+    "x": 205,
+    "y": 957
+  },
+  "Uc5v(xUe$t3bF2NyH{q_": {
+    "type": "colour_hue",
+    "id": "Uc5v(xUe$t3bF2NyH{q_",
+    "x": 205,
+    "y": 983,
+    "extraState": {
+      "colour": "#5ba58c"
+    },
+    "fields": {
+      "HUE": 160
+    }
+  },
+  "1gf[O?m=c;GYg6K:VX8#": {
+    "type": "field_static",
+    "id": "1gf[O?m=c;GYg6K:VX8#",
+    "x": 161,
+    "y": 52,
+    "fields": {
+      "TEXT": "Company"
+    },
+    "next": {
+      "block": {
+        "id": "LI[*aADMRvN#uJr9M9T_"
+      }
+    }
+  },
+  "diz~s$.OJhuxU]Uj+/-C": {
+    "type": "input_dummy",
+    "id": "diz~s$.OJhuxU]Uj+/-C",
+    "x": 60,
+    "y": 143,
+    "fields": {
+      "ALIGN": "LEFT"
+    },
+    "inputs": {
+      "FIELDS": {
+        "block": {
+          "id": "8Fic_p8Fo[;!c%fFh|qy"
+        }
+      }
+    },
+    "next": {
+      "block": {
+        "id": "l8I=+*-;JIJHYTURoea-"
+      }
+    }
+  },
+  "kF.v2m*/S3h8:Up0lZZI": {
+    "type": "field_static",
+    "id": "kF.v2m*/S3h8:Up0lZZI",
+    "x": 608,
+    "y": 126,
+    "fields": {
+      "TEXT": "Companies"
+    }
+  },
+  ",*E,Dv*pHMX4IvtA@W@H": {
+    "type": "input_statement",
+    "id": ",*E,Dv*pHMX4IvtA@W@H",
+    "x": 507,
+    "y": 165,
+    "fields": {
+      "INPUTNAME": "COMPANIES",
+      "ALIGN": "LEFT"
+    },
+    "inputs": {
+      "TYPE": {
+        "shadow": {
+          "type": "type_null",
+          "id": "~3N@P=eWbfX4,(-^cgBR"
+        }
+      }
+    }
+  },
+  "m^`t0v_3m=G=la#/viw2": {
+    "type": "field_static",
+    "id": "m^`t0v_3m=G=la#/viw2",
+    "x": 161,
+    "y": 656,
+    "fields": {
+      "TEXT": "DSL:"
+    },
+    "next": {
+      "block": {
+        "id": "4BY.SKuxlWAp~gKXP-!("
+      }
+    }
+  },
+  "LI[*aADMRvN#uJr9M9T_": {
+    "type": "field_input",
+    "id": "LI[*aADMRvN#uJr9M9T_",
+    "x": 161,
+    "y": 78,
+    "fields": {
+      "TEXT": "name",
+      "FIELDNAME": "COMPANY_NAME"
+    },
+    "next": {
+      "block": {
+        "id": ":=GS~j$,r-WBNGF.~00v"
+      }
+    }
+  },
+  "8Fic_p8Fo[;!c%fFh|qy": {
+    "type": "field_label_serializable",
+    "id": "8Fic_p8Fo[;!c%fFh|qy",
+    "x": 161,
+    "y": 169,
+    "icons": {
+      "comment": {
+        "text": "Domain Specific Language like dot, or protoc",
+        "pinned": false,
+        "height": 80,
+        "width": 160
+      }
+    },
+    "fields": {
+      "TEXT": "How many DSLs do you have in your company",
+      "FIELDNAME": "HOW_MANY"
+    },
+    "next": {
+      "block": {
+        "id": "7~.Kca/S+mU%YsKG6d6,"
+      }
+    }
+  },
+  "l8I=+*-;JIJHYTURoea-": {
+    "type": "input_statement",
+    "id": "l8I=+*-;JIJHYTURoea-",
+    "x": 60,
+    "y": 338,
+    "fields": {
+      "INPUTNAME": "DSLs",
+      "ALIGN": "LEFT"
+    },
+    "inputs": {
+      "FIELDS": {
+        "block": {
+          "id": "lhHAh0K;5[b+{tVr%[3$"
+        }
+      },
+      "TYPE": {
+        "shadow": {
+          "type": "type_null",
+          "id": "wB_:252eaZDNVqb!=((]"
+        }
+      }
+    }
+  },
+  "~3N@P=eWbfX4,(-^cgBR": {
+    "type": "type_null",
+    "id": "~3N@P=eWbfX4,(-^cgBR",
+    "x": 725,
+    "y": 214
+  },
+  "4BY.SKuxlWAp~gKXP-!(": {
+    "type": "field_input",
+    "id": "4BY.SKuxlWAp~gKXP-!(",
+    "x": 161,
+    "y": 682,
+    "fields": {
+      "TEXT": "name",
+      "FIELDNAME": "DSL_NAME"
+    },
+    "next": {
+      "block": {
+        "id": "#dX}hwApCw5rFgqu#qX!"
+      }
+    }
+  },
+  ":=GS~j$,r-WBNGF.~00v": {
+    "type": "field_input",
+    "id": ":=GS~j$,r-WBNGF.~00v",
+    "x": 161,
+    "y": 104,
+    "fields": {
+      "TEXT": "your email",
+      "FIELDNAME": "EMAIL"
+    }
+  },
+  "7~.Kca/S+mU%YsKG6d6,": {
+    "type": "field_dropdown",
+    "id": "7~.Kca/S+mU%YsKG6d6,",
+    "x": 161,
+    "y": 195,
+    "extraState": {
+      "options": "[\"text\",\"text\",\"text\",\"text\"]"
+    },
+    "fields": {
+      "FIELDNAME": "ANSWER",
+      "USER0": "0",
+      "CPU0": "ZERO",
+      "USER1": "1-10",
+      "CPU1": "TO10",
+      "USER2": "11-100",
+      "CPU2": "TO100",
+      "USER3": "more than 100",
+      "CPU3": "MORE100"
+    }
+  },
+  "lhHAh0K;5[b+{tVr%[3$": {
+    "type": "field_label_serializable",
+    "id": "lhHAh0K;5[b+{tVr%[3$",
+    "x": 161,
+    "y": 364,
+    "icons": {
+      "comment": {
+        "text": "Domain Specific Language like dot, or protoc",
+        "pinned": false,
+        "height": 80,
+        "width": 160
+      }
+    },
+    "fields": {
+      "TEXT": "Please add some DSLs",
+      "FIELDNAME": "DSLS_LABEL"
+    }
+  },
+  "wB_:252eaZDNVqb!=((]": {
+    "type": "type_null",
+    "id": "wB_:252eaZDNVqb!=((]",
+    "x": 227,
+    "y": 392
+  },
+  "#dX}hwApCw5rFgqu#qX!": {
+    "type": "field_dropdown",
+    "id": "#dX}hwApCw5rFgqu#qX!",
+    "x": 161,
+    "y": 708,
+    "extraState": {
+      "options": "[\"text\",\"text\"]"
+    },
+    "fields": {
+      "FIELDNAME": "INT_EXT",
+      "USER0": "Internal",
+      "CPU0": "INTERNAL",
+      "USER1": "External",
+      "CPU1": "EXTERNAL"
+    },
+    "next": {
+      "block": {
+        "id": "%e%bfj56wUtd`(Fw3RGl"
+      }
+    }
+  },
+  "%e%bfj56wUtd`(Fw3RGl": {
+    "type": "field_input",
+    "id": "%e%bfj56wUtd`(Fw3RGl",
+    "x": 161,
+    "y": 786,
+    "fields": {
+      "TEXT": "https://...",
+      "FIELDNAME": "URL"
+    }
+  },
+  "top_blocks": [
+    ".vR*{J$TGgfvRQ0+iitV",
+    "q{lAVTXPb{)RFG{V6F5^",
+    "_K)o2sbKTpI6aZ*5Fs0g",
+    "bWd^(]uB9`3a;s0aK;h}"
+  ],
+  "mergeable": true
+}

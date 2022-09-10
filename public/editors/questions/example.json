@@ -1,0 +1,255 @@
+{
+  "blocks": {
+    "languageVersion": 0,
+    "blocks": [
+      {
+        "type": "companies",
+        "id": "j-]`ACbhL`;lA@A3{aHR",
+        "x": 53,
+        "y": 376,
+        "extraState": {
+          "dropdowns": []
+        },
+        "inputs": {
+          "COMPANIES": {
+            "block": {
+              "type": "company",
+              "id": "Mk:nHz~jQSc!S7QwwB3b",
+              "extraState": {
+                "dropdowns": [
+                  {
+                    "field": "ANSWER",
+                    "options": [
+                      {
+                        "text": "0",
+                        "id": "ZERO"
+                      },
+                      {
+                        "text": "1-10",
+                        "id": "TO10"
+                      },
+                      {
+                        "text": "11-100",
+                        "id": "TO100"
+                      },
+                      {
+                        "text": "more than 100",
+                        "id": "MORE100"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "fields": {
+                "COMPANY_NAME": "Google",
+                "EMAIL": "person@google.com",
+                "HOW_MANY": "How many DSLs do you have in your company",
+                "ANSWER": "MORE100",
+                "DSLS_LABEL": "Please add some DSLs"
+              },
+              "inputs": {
+                "DSLs": {
+                  "block": {
+                    "type": "dsl",
+                    "id": "-AVFe=vZ[pTDidq.9q{}",
+                    "extraState": {
+                      "dropdowns": [
+                        {
+                          "field": "INT_EXT",
+                          "options": [
+                            {
+                              "text": "Internal",
+                              "id": "INTERNAL"
+                            },
+                            {
+                              "text": "External",
+                              "id": "EXTERNAL"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "fields": {
+                      "DSL_NAME": "Google Workflow",
+                      "INT_EXT": "EXTERNAL",
+                      "URL": "https://..."
+                    },
+                    "next": {
+                      "block": {
+                        "type": "dsl",
+                        "id": "[H%*|;QNM7QWvF*f?HTS",
+                        "extraState": {
+                          "dropdowns": [
+                            {
+                              "field": "INT_EXT",
+                              "options": [
+                                {
+                                  "text": "Internal",
+                                  "id": "INTERNAL"
+                                },
+                                {
+                                  "text": "External",
+                                  "id": "EXTERNAL"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        "fields": {
+                          "DSL_NAME": "protoc",
+                          "INT_EXT": "EXTERNAL",
+                          "URL": "https://grpc.io/docs/protoc-installation/"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "next": {
+                "block": {
+                  "type": "company",
+                  "id": "UL;E_)nK^iCJ/LPXc-IR",
+                  "extraState": {
+                    "dropdowns": [
+                      {
+                        "field": "ANSWER",
+                        "options": [
+                          {
+                            "text": "0",
+                            "id": "ZERO"
+                          },
+                          {
+                            "text": "1-10",
+                            "id": "TO10"
+                          },
+                          {
+                            "text": "11-100",
+                            "id": "TO100"
+                          },
+                          {
+                            "text": "more than 100",
+                            "id": "MORE100"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "fields": {
+                    "COMPANY_NAME": "Amazon",
+                    "EMAIL": "person@amazon.com",
+                    "HOW_MANY": "How many DSLs do you have in your company",
+                    "ANSWER": "TO100",
+                    "DSLS_LABEL": "Please add some DSLs"
+                  },
+                  "inputs": {
+                    "DSLs": {
+                      "block": {
+                        "type": "dsl",
+                        "id": "]n}dPgF{e`AK5H1M|O$y",
+                        "extraState": {
+                          "dropdowns": [
+                            {
+                              "field": "INT_EXT",
+                              "options": [
+                                {
+                                  "text": "Internal",
+                                  "id": "INTERNAL"
+                                },
+                                {
+                                  "text": "External",
+                                  "id": "EXTERNAL"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        "fields": {
+                          "DSL_NAME": "name",
+                          "INT_EXT": "INTERNAL",
+                          "URL": "https://..."
+                        }
+                      }
+                    }
+                  },
+                  "next": {
+                    "block": {
+                      "type": "company",
+                      "id": "q=(%eSs|zpdh#FQ]G.!{",
+                      "extraState": {
+                        "dropdowns": [
+                          {
+                            "field": "ANSWER",
+                            "options": [
+                              {
+                                "text": "0",
+                                "id": "ZERO"
+                              },
+                              {
+                                "text": "1-10",
+                                "id": "TO10"
+                              },
+                              {
+                                "text": "11-100",
+                                "id": "TO100"
+                              },
+                              {
+                                "text": "more than 100",
+                                "id": "MORE100"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "fields": {
+                        "COMPANY_NAME": "name",
+                        "EMAIL": "your email",
+                        "HOW_MANY": "How many DSLs do you have in your company",
+                        "ANSWER": "ZERO",
+                        "DSLS_LABEL": "Please add some DSLs"
+                      },
+                      "inputs": {
+                        "DSLs": {
+                          "block": {
+                            "type": "dsl",
+                            "id": "WMn0.FzcEEd{-T(B*PmP",
+                            "extraState": {
+                              "dropdowns": [
+                                {
+                                  "field": "INT_EXT",
+                                  "options": [
+                                    {
+                                      "text": "Internal",
+                                      "id": "INTERNAL"
+                                    },
+                                    {
+                                      "text": "External",
+                                      "id": "EXTERNAL"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            "fields": {
+                              "DSL_NAME": "name",
+                              "INT_EXT": "INTERNAL",
+                              "URL": "https://..."
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "editor": {
+    "editor": "questions",
+    "version": 1,
+    "url": "https://cidt.asml.com/editors/latest/questions/editor.html"
+  }
+}
