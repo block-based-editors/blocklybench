@@ -38,7 +38,7 @@ BlocklyStorage.backupBlocks_ = function(workspace, id) {
   if ('localStorage' in window) {
     var json_text = Blockly.serialization.workspaces.save(workspace);
     // Gets the current URL, not including the hash.
-    var url = window.location.href.split('#')[0]+id;
+    var url = window.location.href.split('#')[0]+id+'.json';
     window.localStorage.setItem(url, JSON.stringify(json_text));
   }
 };
@@ -59,9 +59,9 @@ BlocklyStorage.backupOnUnload = function(opt_workspace,id) {
  */
 BlocklyStorage.restoreBlocks = function(opt_workspace, id) {
   var url = window.location.href.split('#')[0];
-  if ('localStorage' in window && window.localStorage[url+id]) {
+  if ('localStorage' in window && window.localStorage[url+id+'.json']) {
     var workspace = opt_workspace || Blockly.getMainWorkspace();
-    var json = JSON.parse(window.localStorage[url+id]);
+    var json = JSON.parse(window.localStorage[url+id+'.json']);
     Blockly.serialization.workspaces.load(json, workspace);
    }
 };
