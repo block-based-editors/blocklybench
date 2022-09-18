@@ -1659,10 +1659,10 @@ var options = {
 };
 
 function codeGeneration(event) {
-  if (Blockly.JavaScript)
+  if (Blockly.JSON)
   {  
       try {
-          var code = Blockly.JavaScript.workspaceToCode(workspace);
+          var code = Blockly.JSON.workspaceToCode(workspace);
 	  } catch (e) {
 		console.warn("Error while creating code", e);
 		code = "Error while creating code:" + e
