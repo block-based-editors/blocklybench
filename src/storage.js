@@ -21,10 +21,10 @@ var BlocklyStorage = {};
  */
 BlocklyStorage.backupBlocks_ = function(workspace, id) {
   if ('localStorage' in window) {
-    var xml = Blockly.Xml.workspaceToDom(workspace);
+    var json_text = Blockly.serialization.workspaces.save(workspace);
     // Gets the current URL, not including the hash.
     var url = window.location.href.split('#')[0]+id;
-    window.localStorage.setItem(url, Blockly.Xml.domToText(xml));
+    window.localStorage.setItem(url, JSON.stringify(json_text));
   }
 };
 
@@ -46,8 +46,8 @@ BlocklyStorage.restoreBlocks = function(opt_workspace, id) {
   var url = window.location.href.split('#')[0];
   if ('localStorage' in window && window.localStorage[url+id]) {
     var workspace = opt_workspace || Blockly.getMainWorkspace();
-    var xml = Blockly.Xml.textToDom(window.localStorage[url+id]);
-    Blockly.Xml.domToWorkspace(xml, workspace);
+    var json = JSON.parse(window.localStorage[url+id]);
+    Blockly.serialization.workspaces.load(json, workspace);
    }
 };
 
