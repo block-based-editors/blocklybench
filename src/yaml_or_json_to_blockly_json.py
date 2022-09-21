@@ -144,15 +144,14 @@ def list_or_dict_to_json(data, last_block):
       list_values_to_json(last_block, data)
       last_block = next
   
-  if type(data)==dict or type(data)==OrderedDict:
+  elif type(data)==dict or type(data)==OrderedDict:
       (block, statements, next) = dict_json()
       last_block.update(block)
       last_block = statements
       dict_values_to_json(last_block, data)
       last_block = next
   else:
-      print('can not start with value should be list or dict: ' + type(data))
-  
+      print('can not start with value should be list or dict: ' + str(type(data)))
   return last_block
   
       
@@ -178,6 +177,7 @@ import json
 #svn_root = os.environ.get('SVN_ROOT')
 
 import sys
+sys.setrecursionlimit(1500)
 filename = sys.argv[1]
 import os
 path, file_extension = os.path.splitext(filename)
@@ -194,7 +194,7 @@ with open(filename, 'r') as f:
        sys.exit(1)
    
     root = get_root(data)
-    print(root)
+    #print(root)
    
     with open(path+'.blockly','w') as f:
         json.dump(root, f, indent=4)
