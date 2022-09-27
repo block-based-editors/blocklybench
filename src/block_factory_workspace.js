@@ -73,6 +73,28 @@ function get_code()
   return code;
 }
 
+var some_thing_changed = false;
+
+function logEvents(event)
+{
+  some_thing_changed = true;
+  //console.log(event)
+}
+
+function saveBlocks()
+{
+  if (some_thing_changed)
+  {
+    some_thing_changed = false;
+    errorHandler.report(get_mergable_json(factory_workspace));
+    errorHandler.report(get_mergable_json(Toolbox.toolbox_workspace));
+    errorHandler.report(get_mergable_json(Code.code_workspace));
+    errorHandler.report(get_mergable_json(Concrete.concrete_workspace));
+    
+  }
+}
+
+
 function myFactoryGeneration(event) {
   var code = get_code()
   document.getElementById('factory_code').value = code;
@@ -1140,13 +1162,29 @@ function register_workspace_serialization()
     );
 }
 
+var errorHandler = null;
+function enable_exception_logging()
+{
+  
+  errorHandler = new StackdriverErrorReporter();
+  errorHandler.start({
+    key: "AIzaSyBhLrATN834bxB8yRWjTozgqMhb4BnSJ28",
+    projectId: "motar-242711",
+});
+}
+
+
+
+
 //function init_all()
 document.addEventListener("DOMContentLoaded", function () 
 {
   handle_resize();
+  enable_exception_logging();
 
   factory_workspace.addChangeListener(myFactoryGeneration);
   factory_workspace.addChangeListener(updateDropdownRename);
+  factory_workspace.addChangeListener(logEvents);
   
   BlocklyStorage.restoreBlocks(factory_workspace,'factory');
   BlocklyStorage.backupOnUnload(factory_workspace,'factory');
@@ -1163,6 +1201,9 @@ document.addEventListener("DOMContentLoaded", function ()
   Concrete.init_concrete();
   
   // all blockly workspaces are initialized and restored 
+
+  // save the block to logging
+  setInterval(saveBlocks, 10000);
 
   // from now on also trigger the code and toolbox generation updates
   
