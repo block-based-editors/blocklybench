@@ -21,13 +21,15 @@ Concrete.reload = function()
 
 Concrete.myConcreteCodeGeneration = function (event) {
   var language = document.getElementById('language').value
-  var code = ''
- 
-  try {
-	 eval('Blockly = blockly__WEBPACK_IMPORTED_MODULE_0__; code = Blockly.'+language+'.workspaceToCode(Concrete.concrete_workspace);')
-  } catch (e) {
-	//console.warn("Error while creating " + language + " code", e);
-	code = "Error while creating " +language + " code:" + e
+  var code = 'No code generation yet. Add code generation blocks.'
+  if (language)
+  {
+	try {
+		eval('Blockly = blockly__WEBPACK_IMPORTED_MODULE_0__; code = Blockly.'+language+'.workspaceToCode(Concrete.concrete_workspace);')
+	} catch (e) {
+		//console.warn("Error while creating " + language + " code", e);
+		code = "Error while creating " +language + " code:" + e
+	}
   }     
   document.getElementById('concrete_code').value = code;
 }
