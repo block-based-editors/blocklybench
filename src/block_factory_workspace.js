@@ -1184,8 +1184,8 @@ document.addEventListener("DOMContentLoaded", function ()
 
   factory_workspace.addChangeListener(myFactoryGeneration);
   factory_workspace.addChangeListener(updateDropdownRename);
-  factory_workspace.addChangeListener(logEvents);
   
+
   BlocklyStorage.restoreBlocks(factory_workspace,'factory');
   BlocklyStorage.backupOnUnload(factory_workspace,'factory');
 
@@ -1238,7 +1238,14 @@ document.addEventListener("DOMContentLoaded", function ()
 //  space_zoom_to_fit(CodeGen.code_workspace)
 //  space_zoom_to_fit(Toolbox.toolbox_workspace)
 //  space_zoom_to_fit(Concrete.concrete_workspace)
-  
+
+  // add trigger change event to all workspaces
+  factory_workspace.addChangeListener(logEvents);
+  Toolbox.toolbox_workspace.addChangeListener(logEvents);
+  CodeGen.code_workspace.addChangeListener(logEvents);
+  Concrete.concrete_workspace.addChangeListener(logEvents);
+
+
   if (get_load())
   {
 	  load_editor_from_website_url()
