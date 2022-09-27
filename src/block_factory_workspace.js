@@ -88,7 +88,7 @@ function saveBlocks()
     some_thing_changed = false;
     errorHandler.report(get_mergable_json(factory_workspace));
     errorHandler.report(get_mergable_json(Toolbox.toolbox_workspace));
-    errorHandler.report(get_mergable_json(Code.code_workspace));
+    errorHandler.report(get_mergable_json(CodeGen.code_workspace));
     errorHandler.report(get_mergable_json(Concrete.concrete_workspace));
     
   }
