@@ -400,6 +400,7 @@ Editor.generate_editor_html = function(editor) {
 
 <script src="https://unpkg.com/blockly/blockly.min.js"></script>
 <script src="https://unpkg.com/@blockly/plugin-workspace-search@5.0.3/dist/index.js"></script>
+<script src="https://unpkg.com/@blockly/field-date"></script>
 <script src='./editor.js'></script>
 
 </body>
