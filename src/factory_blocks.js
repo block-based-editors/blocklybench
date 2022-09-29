@@ -1,4 +1,5 @@
 import * as Blockly from 'blockly';
+import { FieldDate }  from '@blockly/field-date';
 
 /**
  * @license
@@ -648,6 +649,25 @@ Blockly.Blocks['field_colour'] = {
     this.setNextStatement(true, 'Field');
     this.setTooltip('Colour input field.');
     this.setHelpUrl('https://www.youtube.com/watch?v=s2_xaEvcVI0#t=495');
+  },
+  onchange: function() {
+    fieldNameCheck(this);
+  }
+};
+
+Blockly.Blocks['field_date'] = {
+  // Colour input.
+  init: function() {
+    this.setColour(160);
+    this.appendDummyInput()
+        .appendField('date')
+        .appendField(new Blockly.FieldDate(), 'DATE')
+        .appendField(',')
+        .appendField(new Blockly.FieldTextInput('NAME'), 'FIELDNAME');
+    this.setPreviousStatement(true, 'Field');
+    this.setNextStatement(true, 'Field');
+    this.setTooltip('Date input field.');
+    this.setHelpUrl('https://developers.google.com/blockly/guides/create-custom-blocks/fields/built-in-fields/date');
   },
   onchange: function() {
     fieldNameCheck(this);

@@ -3,17 +3,18 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "@blockly/field-date": "^5.0.22",
     "@blockly/plugin-workspace-search": "^5",
-    "@blockly/zoom-to-fit": "^2.0.7",
     "@blockly/theme-dark": "^3.0.3",
+    "@blockly/zoom-to-fit": "^2.0.7",
     "blockly": "^8",
     "file-saver": "^2.0.5",
-	"idb-keyval": "^5",
-	"jquery": "^3.6",
-	"jquery-ui": "^1.13",
+    "idb-keyval": "^5",
+    "jquery": "^3.6",
+    "jquery-ui": "^1.13",
     "jszip": "^3.7.1"
   },
-    "scripts": {
+  "scripts": {
     "audit": "npm audit fix",
     "update": "npm update",
     "start": "webpack-dev-server",
@@ -25,7 +26,4 @@
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.0.0"
   }
-  
-  
-  
 }

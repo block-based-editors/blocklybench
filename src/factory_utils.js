@@ -581,6 +581,12 @@ FactoryUtils.getFieldsJs_ = function(block) {
               '), ' +
               JSON.stringify(block.getFieldValue('FIELDNAME')));
           break;
+        case 'field_date':
+          fields.push('new Blockly.FieldDate(' +
+              JSON.stringify(block.getFieldValue('DATE')) +
+              '), ' +
+              JSON.stringify(block.getFieldValue('FIELDNAME')));
+          break;
         case 'field_variable':
           // Result: new Blockly.FieldVariable('item'), 'VAR'
           var varname
@@ -865,6 +871,13 @@ FactoryUtils.getFieldsJson_ = function(block) {
             name: block.getFieldValue('FIELDNAME'),
             colour: block.getFieldValue('COLOUR')
           });
+          break;
+        case 'field_date':
+            fields.push({
+              type: block.type,
+              name: block.getFieldValue('FIELDNAME'),
+              date: block.getFieldValue('DATE')
+            });
           break;
         case 'field_variable':
           fields.push({
