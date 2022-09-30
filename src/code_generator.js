@@ -222,7 +222,14 @@ Blockly.Code['generate_token_if_length'] = function(block) {
   code += '   l = 0\n';
   code += '}\n';
   code += 'if (l ';
-  var field = block.getField("CONDITION"); code += field.getValue();code += ') {\n code += \'';
+  var field = block.getField("OPERATOR"); code += field.getValue();code += ' ';
+  var field = block.getField('VALUE');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+  code += ') {\n code += \'';
   var field = block.getField('TOKEN');
   if (field.getText()) {
     code += field.getText();
@@ -241,7 +248,6 @@ Blockly.Code['generate_token_if_length'] = function(block) {
   }
 }
 ;
-
 
 Blockly.Code['generate_parent_field_value'] = function(block) {
   var code ='';

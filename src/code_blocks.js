@@ -2558,7 +2558,9 @@ Blockly.Blocks['generate_token_if_length'] = {
                 }
                 return options;
             }), "STATEMENTS")
-        .appendField(new Blockly.FieldDropdown([["= 0 :","== 0"], ["> 0 :","> 0"]]), "CONDITION")
+        .appendField(new Blockly.FieldDropdown([["==","=="], ["<=","<="], [">=",">="], ["!=","!="], ["<","<"], [">",">"]]), "OPERATOR")
+        .appendField(new Blockly.FieldTextInput("0", null, ), "VALUE")
+        .appendField(":")
         .appendField(new Blockly.FieldTextInput("...\\n", null, ), "TOKEN");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
@@ -2676,4 +2678,3 @@ Blockly.Blocks['generate_token_if_length'] = {
 
 
 };
-
