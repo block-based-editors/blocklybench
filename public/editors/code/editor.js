@@ -2391,7 +2391,7 @@ Blockly.Code['generate_token_if_length'] = function(block) {
   } else {
     code += field.getValue();
   }
-  code += '\';\n}';
+  code += '\';\n}\n';
 
   // if this block is a 'value' then code + ORDER needs to be returned
   if(block.outputConnection) {
