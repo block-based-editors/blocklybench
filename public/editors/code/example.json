@@ -3,69 +3,40 @@
     "languageVersion": 0,
     "blocks": [
       {
-        "type": "generate_parent_field_value",
-        "id": "`ZRQSFvaH372DjC=R8fN",
-        "x": 65,
-        "y": 307,
+        "type": "generate_list_if_length",
+        "id": "3Q[C030l{p+)^$n8fNb|",
+        "x": 102,
+        "y": 169,
         "extraState": {
           "dropdowns": [
             {
-              "field": "FIELDS",
+              "field": "STATEMENTS",
               "options": [
                 {
-                  "text": "FIELDS",
-                  "id": "Xj10cRN@NBRn)GU-GaF$"
+                  "text": "CODE",
+                  "id": "hNV`zgbU3Re8Xc,Awk~("
+                }
+              ]
+            },
+            {
+              "field": "CONDITION",
+              "options": [
+                {
+                  "text": "=",
+                  "id": "== 0"
                 },
                 {
-                  "text": "FIELDS",
-                  "id": "vby;QyoRn~c!/kA2V+UW"
-                },
-                {
-                  "text": "FIELDS",
-                  "id": "vk|~2[V8C7ez!wWtBhdt"
-                },
-                {
-                  "text": "INDENT",
-                  "id": "Jrz~JN7i1;{o#XAll7b3"
-                },
-                {
-                  "text": "JAVASCRIPT",
-                  "id": "X4?o%WT/Yp|VFADhYix4"
-                },
-                {
-                  "text": "LANGUAGE",
-                  "id": "Aw_3D^G2[PFBYKv%4U-{"
-                },
-                {
-                  "text": "STATEMENTS",
-                  "id": "`GAft(}~!ob_KUTmcHS|"
-                },
-                {
-                  "text": "STATEMENTS",
-                  "id": "e^-OW:qsNd~zH8hW2Z;+"
-                },
-                {
-                  "text": "STATEMENTS",
-                  "id": "kXJu)VQLTj1GF#U0XO#:"
-                },
-                {
-                  "text": "TOKEN",
-                  "id": ".iLI_zwq^49Oq)4|s`Qp"
-                },
-                {
-                  "text": "TYPE",
-                  "id": "}.S6Np{AH2P3Jvom4E,N"
-                },
-                {
-                  "text": "VALUE",
-                  "id": "x/ub%Xxs[t(hL3$sIC$!"
+                  "text": ">",
+                  "id": "> 0"
                 }
               ]
             }
           ]
         },
         "fields": {
-          "FIELDS": "Xj10cRN@NBRn)GU-GaF$"
+          "STATEMENTS": "hNV`zgbU3Re8Xc,Awk~(",
+          "CONDITION": "> 0",
+          "TOKEN": "hier komt je tokenb"
         }
       }
     ]

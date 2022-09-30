@@ -152,6 +152,10 @@ CodeGen.init_code = function() {
       "type": "generate_token_if_next_block"
     },
     {
+      "kind": "block",
+      "type": "generate_token_if_length"
+    },
+    {
      "kind": "block",
      "type": "generate_list_length"
     },

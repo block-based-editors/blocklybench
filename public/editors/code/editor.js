@@ -2046,6 +2046,188 @@ Blockly.Blocks['generate_parent_field_value'] = {
 
 };
 
+Blockly.Blocks['generate_token_if_length'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Length of")
+        .appendField(new Blockly.FieldDropdown(function() {
+                // options filed from dom
+                // this function should always return a [['at least one option id','at least one option text']] 
+                // 1. when the block is created this function is called
+                // 2. than the saved dom options are set
+                // 3. than we should wait for all blocks to be loaded for function below to work 
+                
+
+                if (this.savedOptionsSet)
+                {
+                  var options = this.getOptions(true); // get from Cache
+                }
+                else
+                { 
+                  var options = []
+                }
+                var ids = options.map(option => option[1]);
+                var field = "INPUTNAME";
+                var workspace_name = "Factory";
+                var workspaces = Blockly.Workspace.getAll();
+                for (var i=0; i< workspaces.length;i++) {
+                  var workspace= workspaces[i]
+
+                  if (workspace.name == workspace_name)
+                  {
+                    var all_blocks = workspace.getAllBlocks()
+                    for(var j=0;j<all_blocks.length;j++)
+                    {
+                      var field_value = all_blocks[j].getFieldValue(field)
+                      if (field_value)
+                      {
+                        var index = ids.indexOf(all_blocks[j].id)
+                        if (index !== -1) {
+                          // should pop the old options as rename of field_value 
+                          ids.splice(index, 1)
+                          options.splice(index,1)                        
+                        }
+                        options.push([field_value, all_blocks[j].id])
+                      }
+                    }
+                  }
+                }
+                options.sort();
+                
+                if (options.length==0)
+                {
+                  options.push(['no options yet','NONE'])
+                }
+                if (options.length>1)
+                {
+                  var ids = options.map(option => option[1]);
+                  var index = ids.indexOf('NONE')
+                  if (index !== -1) {
+                    // should pop the old options as rename of field_value 
+                    options.splice(index,1)                        
+                  }
+                }
+                return options;
+            }), "STATEMENTS")
+        .appendField(new Blockly.FieldDropdown([["= 0 :","== 0"], ["> 0 :","> 0"]]), "CONDITION")
+        .appendField(new Blockly.FieldTextInput("...\\n", null, ), "TOKEN");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  },
+
+  /*
+   * Create XML to represent the output type.
+   * @return {!Element} XML storage element.
+   * @this {Blockly.Block}
+   */
+  mutationToDom: function() {
+    var container = Blockly.utils.xml.createElement('mutation');
+    var field;
+    for (var b = 0, input; input = this.inputList[b]; b++)
+    {
+      for (var d = 0, field; field = input.fieldRow[d]; d++)
+	    {	
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
+		    {
+          var dropdown = Blockly.utils.xml.createElement('dropdown');
+          dropdown.setAttribute('field', field.name);
+        
+          container.appendChild(dropdown)
+          var options = field.getOptions()
+          for (var i = 0; i < options.length; i++) {
+            var option = Blockly.utils.xml.createElement('option');
+            option.setAttribute('text', options[i][0]);
+            option.setAttribute('id', options[i][1]);
+            dropdown.appendChild(option);
+          }
+    		}
+      }
+    }
+    return container;
+  },
+  saveExtraState: function() {
+    var field;
+    var state = {'dropdowns':[]};
+    for (var b = 0, input; input = this.inputList[b]; b++)
+    {
+      for (var d = 0, field; field = input.fieldRow[d]; d++)
+	    {	
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
+		    {
+          var field_state = {'field':field.name, 'options' : []}
+          state.dropdowns.push(field_state);
+          var options = field.getOptions()
+          for (var i = 0; i < options.length; i++) {
+            var option_state = {'text': options[i][0], 'id':options[i][1]}
+            field_state.options.push(option_state)
+          }
+    		}
+      }
+    }
+    return state;
+  },
+
+  /**
+   * Parse XML to restore the output type.
+   * @param {!Element} xmlElement XML storage element.
+   * @this {Blockly.Block}
+   */
+  domToMutation: function(xmlElement) {
+
+    for (var i = 0, childNode; (childNode = xmlElement.childNodes[i]); i++) {
+      if (childNode.nodeName.toLowerCase() == 'dropdown') {
+        var field_name = childNode.getAttribute('field');
+        var field = this.getField(field_name);
+    
+        var options = field.getOptions(false)
+        var ids = options.map(option => option[1]);
+        
+        for (var j = 0, optionsElement; (optionsElement = childNode.childNodes[j]); j++) {
+          if (optionsElement.nodeName.toLowerCase() == 'option') {
+            var text = optionsElement.getAttribute('text');
+            var id = optionsElement.getAttribute('id');
+            if (!ids.includes(id)) {
+              options.push([text,id])
+            }
+          }
+        }
+        field.savedOptionsSet = true;     
+      }
+    }
+  },
+  loadExtraState: function(state) {
+    for (var i=0; i<state.dropdowns.length; i++)
+    {
+      var field_name = state.dropdowns[i].field;
+      var field = this.getField(field_name);
+      if (field.getOptions && !field.variable_) // is dropdown and not a variable
+      { 
+         var options = field.getOptions(false);
+      }
+      else
+      {
+        var options = []
+      }
+      var ids = options.map(option => option[1]);
+      for (var j =0; j<state.dropdowns[i].options.length;j++)
+      {
+        var text = state.dropdowns[i].options[j].text;
+        var id = state.dropdowns[i].options[j].id;
+        if (!ids.includes(id)) {
+          options.push([text,id])
+        }
+      }
+      field.savedOptionsSet = true;
+    }
+  }
+
+
+
+};
+
 if (!Blockly.Code) {
   Blockly.Code = new Blockly.Generator('Code');
   Blockly.Code.ORDER_ATOMIC = 0;
@@ -2166,6 +2348,52 @@ Blockly.Code['generate_list_length'] = function(block) {
   }
 }
 ;
+if (!Blockly.Code) {
+  Blockly.Code = new Blockly.Generator('Code');
+  Blockly.Code.ORDER_ATOMIC = 0;
+}
+
+Blockly.Code.scrub_ = function(block, code, opt_thisOnly) {
+    const nextBlock = block.nextConnection && block.nextConnection.targetBlock();
+    const nextCode = opt_thisOnly ? '' : Blockly.Code.blockToCode(nextBlock);
+    return code + nextCode;
+}
+
+Blockly.Code['generate_token_if_length'] = function(block) {
+  var code ='';
+  code += 'var target = block.getInputTargetBlock("';
+  var field = block.getField('STATEMENTS');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+  code += '");\n';
+  code += 'var l;\nif (target) {\n ';
+  code += '   l = target.getDescendants().length\n';
+  code += '} else {\n ';
+  code += '   l = 0\n';
+  code += '}\n';
+  code += 'if (l ';
+  var field = block.getField("CONDITION"); code += field.getValue();code += ') {\n code += \'';
+  var field = block.getField('TOKEN');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+  code += '\';\n}';
+
+  // if this block is a 'value' then code + ORDER needs to be returned
+  if(block.outputConnection) {
+    return [code, Blockly.Code.ORDER_ATOMIC];
+  }
+  else // no value block
+  {
+    return code;
+  }
+}
+;
 /**
  * @license
  * Copyright 2012 Google LLC
@@ -2196,10 +2424,10 @@ BlocklyStorage.XML_ERROR = 'Could not load your saved file.\n' +
  */
 BlocklyStorage.backupBlocks_ = function(workspace, id) {
   if ('localStorage' in window) {
-    var xml = Blockly.Xml.workspaceToDom(workspace);
+    var json_text = Blockly.serialization.workspaces.save(workspace);
     // Gets the current URL, not including the hash.
-    var url = window.location.href.split('#')[0]+id;
-    window.localStorage.setItem(url, Blockly.Xml.domToText(xml));
+    var url = window.location.href.split('#')[0]+id+'.json';
+    window.localStorage.setItem(url, JSON.stringify(json_text));
   }
 };
 
@@ -2219,10 +2447,10 @@ BlocklyStorage.backupOnUnload = function(opt_workspace,id) {
  */
 BlocklyStorage.restoreBlocks = function(opt_workspace, id) {
   var url = window.location.href.split('#')[0];
-  if ('localStorage' in window && window.localStorage[url+id]) {
+  if ('localStorage' in window && window.localStorage[url+id+'.json']) {
     var workspace = opt_workspace || Blockly.getMainWorkspace();
-    var xml = Blockly.Xml.textToDom(window.localStorage[url+id]);
-    Blockly.Xml.domToWorkspace(xml, workspace);
+    var json = JSON.parse(window.localStorage[url+id+'.json']);
+    Blockly.serialization.workspaces.load(json, workspace);
    }
 };
 
@@ -2426,6 +2654,10 @@ toolbox = {
     {
       "kind": "block",
       "type": "generate_list_length"
+    },
+    {
+      "kind": "block",
+      "type": "generate_token_if_length"
     },
     {
       "kind": "block",

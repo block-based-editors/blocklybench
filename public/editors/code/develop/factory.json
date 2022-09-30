@@ -105,7 +105,7 @@
     "type": "factory_base",
     "id": "]U,PmB3PNod~=2j?[]!{",
     "x": 0,
-    "y": 1010,
+    "y": 1339,
     "extraState": {
       "connections": "BOTH"
     },
@@ -143,7 +143,7 @@
     "type": "factory_base",
     "id": "fvzU7gcaY2]~)82V3NN/",
     "x": 0,
-    "y": 1313,
+    "y": 1642,
     "extraState": {
       "connections": "BOTH"
     },
@@ -181,7 +181,7 @@
     "type": "factory_base",
     "id": ")18([W*:S#Cb@T*,XXXt",
     "x": 0,
-    "y": 1616,
+    "y": 1945,
     "extraState": {
       "connections": "BOTH"
     },
@@ -219,7 +219,7 @@
     "type": "factory_base",
     "id": "poEkYGzs;l*7uGT=IM[:",
     "x": 0,
-    "y": 2274,
+    "y": 2603,
     "extraState": {
       "connections": "BOTH"
     },
@@ -262,7 +262,7 @@
     "type": "factory_base",
     "id": "gyH3dW2_hs$+/3;rws4d",
     "x": 0,
-    "y": 2603,
+    "y": 2932,
     "extraState": {
       "connections": "BOTH"
     },
@@ -300,7 +300,7 @@
     "type": "factory_base",
     "id": "8Bh0n@]:|(Fu(pc5/A/I",
     "x": 0,
-    "y": 2984,
+    "y": 3313,
     "extraState": {
       "connections": "BOTH"
     },
@@ -338,7 +338,7 @@
     "type": "factory_base",
     "id": ":{0nD0iSF#7NmO}nXOr!",
     "x": 0,
-    "y": 3313,
+    "y": 3642,
     "extraState": {
       "connections": "BOTH"
     },
@@ -376,7 +376,7 @@
     "type": "factory_base",
     "id": "5GZ:!?w+,5Px!84;1yYa",
     "x": 0,
-    "y": 3642,
+    "y": 3971,
     "extraState": {
       "connections": "BOTH"
     },
@@ -414,7 +414,7 @@
     "type": "colour_hue",
     "id": "n}iO?p%/H3Q`}q{AUeup",
     "x": 0,
-    "y": 3945,
+    "y": 4274,
     "extraState": {
       "colour": "#6d5ba5"
     },
@@ -426,7 +426,7 @@
     "type": "factory_base",
     "id": "#4OvA*:`]xIm~vMT4Mlh",
     "x": 0,
-    "y": 3995,
+    "y": 4324,
     "extraState": {
       "connections": "BOTH"
     },
@@ -464,7 +464,7 @@
     "type": "factory_base",
     "id": ":aPBYP/,9MaeYIUq65,8",
     "x": 0,
-    "y": 1945,
+    "y": 2274,
     "extraState": {
       "connections": "BOTH"
     },
@@ -494,6 +494,44 @@
       "COLOUR": {
         "block": {
           "id": "7K|+QzF]Mwx.3+~g24[C"
+        }
+      }
+    }
+  },
+  "krZ_3:hF[*}[RGt-@U4k": {
+    "type": "factory_base",
+    "id": "krZ_3:hF[*}[RGt-@U4k",
+    "x": 0,
+    "y": 1010,
+    "extraState": {
+      "connections": "BOTH"
+    },
+    "fields": {
+      "NAME": "generate_token_if_length",
+      "INLINE": "AUTO",
+      "CONNECTIONS": "BOTH"
+    },
+    "inputs": {
+      "INPUTS": {
+        "block": {
+          "id": "Iq|C3tQDww$=8Zlm`,Yy"
+        }
+      },
+      "TOPTYPE": {
+        "shadow": {
+          "type": "type_null",
+          "id": "M1nfYxr.`?8q-kCTK2:r"
+        }
+      },
+      "BOTTOMTYPE": {
+        "shadow": {
+          "type": "type_null",
+          "id": "$H_f3.p7xoV*OKs+;l]F"
+        }
+      },
+      "COLOUR": {
+        "block": {
+          "id": "Hf2NRu.wzXrKj+@AIj_)"
         }
       }
     }
@@ -615,7 +653,7 @@
     "type": "input_dummy",
     "id": "Q#KNm;[JfPQhdk$p^r56",
     "x": 60,
-    "y": 1036,
+    "y": 1365,
     "fields": {
       "ALIGN": "LEFT"
     },
@@ -631,19 +669,19 @@
     "type": "type_null",
     "id": "!21onWwhJ-cRP0ooXeq*",
     "x": 205,
-    "y": 1207
+    "y": 1536
   },
   "T91jgA)in`N_t.wqN.ru": {
     "type": "type_null",
     "id": "T91jgA)in`N_t.wqN.ru",
     "x": 205,
-    "y": 1233
+    "y": 1562
   },
   "k?j[*,},%YK_sT,G5$}_": {
     "type": "colour_hue",
     "id": "k?j[*,},%YK_sT,G5$}_",
     "x": 205,
-    "y": 1259,
+    "y": 1588,
     "extraState": {
       "colour": "#5b67a5"
     },
@@ -655,7 +693,7 @@
     "type": "input_dummy",
     "id": ";TIg#(4Q.kr4Q#%GTlSW",
     "x": 60,
-    "y": 1339,
+    "y": 1668,
     "fields": {
       "ALIGN": "LEFT"
     },
@@ -671,19 +709,19 @@
     "type": "type_null",
     "id": "l2LsEcR^N=M8+Dq`;U5v",
     "x": 205,
-    "y": 1510
+    "y": 1839
   },
   "g*/$K|D%XF!=JQbYG=yT": {
     "type": "type_null",
     "id": "g*/$K|D%XF!=JQbYG=yT",
     "x": 205,
-    "y": 1536
+    "y": 1865
   },
   "-t@KsKentYjz_Y/,R=M]": {
     "type": "colour_hue",
     "id": "-t@KsKentYjz_Y/,R=M]",
     "x": 205,
-    "y": 1562,
+    "y": 1891,
     "extraState": {
       "colour": "#5b67a5"
     },
@@ -695,7 +733,7 @@
     "type": "input_dummy",
     "id": "q9(|R5N}W2~=w3i8HRof",
     "x": 60,
-    "y": 1642,
+    "y": 1971,
     "fields": {
       "ALIGN": "LEFT"
     },
@@ -711,19 +749,19 @@
     "type": "type_null",
     "id": "=uR!e`piQ}#T@!F_|F~v",
     "x": 212,
-    "y": 1839
+    "y": 2168
   },
   ";hwio/~}:iuf`k(7N{mW": {
     "type": "type_null",
     "id": ";hwio/~}:iuf`k(7N{mW",
     "x": 212,
-    "y": 1865
+    "y": 2194
   },
   "LaNd.b^T`-qEmfo{Cv-d": {
     "type": "colour_hue",
     "id": "LaNd.b^T`-qEmfo{Cv-d",
     "x": 212,
-    "y": 1891,
+    "y": 2220,
     "extraState": {
       "colour": "#5b67a5"
     },
@@ -735,7 +773,7 @@
     "type": "input_dummy",
     "id": "=Xjv40?edUAe*Q;id1pw",
     "x": 60,
-    "y": 2300,
+    "y": 2629,
     "fields": {
       "ALIGN": "LEFT"
     },
@@ -751,7 +789,7 @@
     "type": "text",
     "id": "joDNB=,IOPp8RQ@aQbSZ",
     "x": 205,
-    "y": 2445,
+    "y": 2774,
     "fields": {
       "TEXT": "For dropdown filed this will return the ID."
     }
@@ -760,19 +798,19 @@
     "type": "type_null",
     "id": "ItVFB(x)z*0.asc[ebe$",
     "x": 205,
-    "y": 2497
+    "y": 2826
   },
   "!lLU/)[(ab;wdODZ8qau": {
     "type": "type_null",
     "id": "!lLU/)[(ab;wdODZ8qau",
     "x": 205,
-    "y": 2523
+    "y": 2852
   },
   "1l5oS$9s(veKl3A|(No[": {
     "type": "colour_hue",
     "id": "1l5oS$9s(veKl3A|(No[",
     "x": 205,
-    "y": 2549,
+    "y": 2878,
     "extraState": {
       "colour": "#5b67a5"
     },
@@ -784,7 +822,7 @@
     "type": "input_dummy",
     "id": "a[a=HfQG4}$nbsM*3=;#",
     "x": 60,
-    "y": 2629,
+    "y": 2958,
     "fields": {
       "ALIGN": "LEFT"
     },
@@ -800,19 +838,19 @@
     "type": "type_null",
     "id": "yRL[)8f`};x)]6ZUg7*j",
     "x": 214,
-    "y": 2878
+    "y": 3207
   },
   "n[aBR=:g*VS;C2Cz%+Pr": {
     "type": "type_null",
     "id": "n[aBR=:g*VS;C2Cz%+Pr",
     "x": 214,
-    "y": 2904
+    "y": 3233
   },
   "|z;sssPu[V}Z?FB{fM#c": {
     "type": "colour_hue",
     "id": "|z;sssPu[V}Z?FB{fM#c",
     "x": 214,
-    "y": 2930,
+    "y": 3259,
     "extraState": {
       "colour": "#5b67a5"
     },
@@ -824,7 +862,7 @@
     "type": "input_dummy",
     "id": "k|/3T:iIRmuI~Io)jQBw",
     "x": 60,
-    "y": 3010,
+    "y": 3339,
     "fields": {
       "ALIGN": "LEFT"
     },
@@ -840,19 +878,19 @@
     "type": "type_null",
     "id": "F6D94B6(34:o5))MTT|q",
     "x": 214,
-    "y": 3207
+    "y": 3536
   },
   "$;~m,X`85{XX|!o_/Xqf": {
     "type": "type_null",
     "id": "$;~m,X`85{XX|!o_/Xqf",
     "x": 214,
-    "y": 3233
+    "y": 3562
   },
   ")h4-9Z0te/g`:,amUCkX": {
     "type": "colour_hue",
     "id": ")h4-9Z0te/g`:,amUCkX",
     "x": 214,
-    "y": 3259,
+    "y": 3588,
     "extraState": {
       "colour": "#5b67a5"
     },
@@ -864,7 +902,7 @@
     "type": "input_dummy",
     "id": "IV(^r`l$[04yp5H[;v;p",
     "x": 60,
-    "y": 3339,
+    "y": 3668,
     "fields": {
       "ALIGN": "LEFT"
     },
@@ -880,19 +918,19 @@
     "type": "type_null",
     "id": "V|Um0eWn]sb]9Qt]]9NN",
     "x": 205,
-    "y": 3536
+    "y": 3865
   },
   "z@IF_|GDtz2u~uMyNCz3": {
     "type": "type_null",
     "id": "z@IF_|GDtz2u~uMyNCz3",
     "x": 205,
-    "y": 3562
+    "y": 3891
   },
   ";u~X7ZS%5=l`3^LZVoW$": {
     "type": "colour_hue",
     "id": ";u~X7ZS%5=l`3^LZVoW$",
     "x": 205,
-    "y": 3588,
+    "y": 3917,
     "extraState": {
       "colour": "#5b67a5"
     },
@@ -904,7 +942,7 @@
     "type": "input_dummy",
     "id": "IxYhtAn,.uik`}*mv_Kn",
     "x": 60,
-    "y": 3668,
+    "y": 3997,
     "fields": {
       "ALIGN": "LEFT"
     },
@@ -920,19 +958,19 @@
     "type": "type_null",
     "id": "%-I$58JY9~X|86=mo816",
     "x": 205,
-    "y": 3839
+    "y": 4168
   },
   "{Mq0$S/6]yVr6^=T_IBd": {
     "type": "type_null",
     "id": "{Mq0$S/6]yVr6^=T_IBd",
     "x": 205,
-    "y": 3865
+    "y": 4194
   },
   "lL8ac)YVn6{#_Wl!W!G;": {
     "type": "colour_hue",
     "id": "lL8ac)YVn6{#_Wl!W!G;",
     "x": 205,
-    "y": 3891,
+    "y": 4220,
     "extraState": {
       "colour": "#a5675b"
     },
@@ -944,7 +982,7 @@
     "type": "input_dummy",
     "id": "B]%fEItwaw)!|%iElu}(",
     "x": 60,
-    "y": 4021,
+    "y": 4350,
     "fields": {
       "ALIGN": "LEFT"
     },
@@ -960,19 +998,19 @@
     "type": "type_null",
     "id": "9Ua,SL2$1.T.H]m4~P%x",
     "x": 205,
-    "y": 4192
+    "y": 4521
   },
   "fCd%.f$^ibdkDl~T.z.^": {
     "type": "type_null",
     "id": "fCd%.f$^ibdkDl~T.z.^",
     "x": 205,
-    "y": 4218
+    "y": 4547
   },
   "wt[66pX.HEf=)xd1xh@g": {
     "type": "colour_hue",
     "id": "wt[66pX.HEf=)xd1xh@g",
     "x": 205,
-    "y": 4244,
+    "y": 4573,
     "extraState": {
       "colour": "#5b67a5"
     },
@@ -984,7 +1022,7 @@
     "type": "input_dummy",
     "id": "Qs_kEY[G|Vtn{bG2Uyiu",
     "x": 60,
-    "y": 1971,
+    "y": 2300,
     "fields": {
       "ALIGN": "LEFT"
     },
@@ -1000,19 +1038,59 @@
     "type": "type_null",
     "id": "A5*{ak0w2k8uC;r`lQv6",
     "x": 254,
-    "y": 2168
+    "y": 2497
   },
   "7D,fJ(@*m32k+*rp-`ar": {
     "type": "type_null",
     "id": "7D,fJ(@*m32k+*rp-`ar",
     "x": 254,
-    "y": 2194
+    "y": 2523
   },
   "7K|+QzF]Mwx.3+~g24[C": {
     "type": "colour_hue",
     "id": "7K|+QzF]Mwx.3+~g24[C",
     "x": 254,
-    "y": 2220,
+    "y": 2549,
+    "extraState": {
+      "colour": "#5b67a5"
+    },
+    "fields": {
+      "HUE": 230
+    }
+  },
+  "Iq|C3tQDww$=8Zlm`,Yy": {
+    "type": "input_dummy",
+    "id": "Iq|C3tQDww$=8Zlm`,Yy",
+    "x": 60,
+    "y": 1036,
+    "fields": {
+      "ALIGN": "LEFT"
+    },
+    "inputs": {
+      "FIELDS": {
+        "block": {
+          "id": "fAkJN.d4fC0:xc=q/2yi"
+        }
+      }
+    }
+  },
+  "M1nfYxr.`?8q-kCTK2:r": {
+    "type": "type_null",
+    "id": "M1nfYxr.`?8q-kCTK2:r",
+    "x": 233,
+    "y": 1337
+  },
+  "$H_f3.p7xoV*OKs+;l]F": {
+    "type": "type_null",
+    "id": "$H_f3.p7xoV*OKs+;l]F",
+    "x": 233,
+    "y": 1363
+  },
+  "Hf2NRu.wzXrKj+@AIj_)": {
+    "type": "colour_hue",
+    "id": "Hf2NRu.wzXrKj+@AIj_)",
+    "x": 233,
+    "y": 1389,
     "extraState": {
       "colour": "#5b67a5"
     },
@@ -1081,7 +1159,7 @@
     "type": "field_static",
     "id": "=^3fUb]vJ?R|[%j/zkgx",
     "x": 161,
-    "y": 1062,
+    "y": 1391,
     "fields": {
       "TEXT": "Index of this child"
     }
@@ -1090,7 +1168,7 @@
     "type": "field_static",
     "id": "JY;vZxUO;)_JXy{5dOI8",
     "x": 161,
-    "y": 1365,
+    "y": 1694,
     "fields": {
       "TEXT": "Comment "
     }
@@ -1099,7 +1177,7 @@
     "type": "field_static",
     "id": ".mL~m*y-(Hc*C;~YcY~@",
     "x": 161,
-    "y": 1668,
+    "y": 1997,
     "fields": {
       "TEXT": "Field"
     },
@@ -1113,7 +1191,7 @@
     "type": "field_static",
     "id": "sE(l^m2uplcoIUy;z[`=",
     "x": 161,
-    "y": 2326,
+    "y": 2655,
     "fields": {
       "TEXT": "Field ID"
     },
@@ -1127,7 +1205,7 @@
     "type": "field_static",
     "id": ",iw8t=MRIy@8_AC#9:3V",
     "x": 161,
-    "y": 2655,
+    "y": 2984,
     "fields": {
       "TEXT": "Statements"
     },
@@ -1141,7 +1219,7 @@
     "type": "field_static",
     "id": "U*H/|03BH@N~^oEd:a/s",
     "x": 161,
-    "y": 3036,
+    "y": 3365,
     "fields": {
       "TEXT": "Statements"
     },
@@ -1155,7 +1233,7 @@
     "type": "field_static",
     "id": "){_6AG,K2g{qaO*O:)so",
     "x": 161,
-    "y": 3365,
+    "y": 3694,
     "fields": {
       "TEXT": "Value"
     },
@@ -1169,7 +1247,7 @@
     "type": "field_input",
     "id": "X4?o%WT/Yp|VFADhYix4",
     "x": 161,
-    "y": 3694,
+    "y": 4023,
     "fields": {
       "TEXT": "var obj = null;",
       "FIELDNAME": "JAVASCRIPT"
@@ -1179,7 +1257,7 @@
     "type": "field_static",
     "id": "x#z`]#0X7I|V$][nNgK`",
     "x": 161,
-    "y": 4047,
+    "y": 4376,
     "fields": {
       "TEXT": "block_type"
     }
@@ -1188,13 +1266,27 @@
     "type": "field_static",
     "id": "PewYAM[!Jv)!3Prl;m9i",
     "x": 161,
-    "y": 1997,
+    "y": 2326,
     "fields": {
       "TEXT": "Parent Field"
     },
     "next": {
       "block": {
         "id": "vby;QyoRn~c!/kA2V+UW"
+      }
+    }
+  },
+  "fAkJN.d4fC0:xc=q/2yi": {
+    "type": "field_static",
+    "id": "fAkJN.d4fC0:xc=q/2yi",
+    "x": 161,
+    "y": 1062,
+    "fields": {
+      "TEXT": "Length of"
+    },
+    "next": {
+      "block": {
+        "id": "5wCnR)~E-~xqfxE0Kt^d"
       }
     }
   },
@@ -1233,7 +1325,7 @@
     "type": "field_dropdown_function",
     "id": "Xj10cRN@NBRn)GU-GaF$",
     "x": 161,
-    "y": 1694,
+    "y": 2023,
     "fields": {
       "FIELDNAME": "FIELDS",
       "FIELD": "FIELDNAME",
@@ -1244,7 +1336,7 @@
     "type": "field_dropdown_function",
     "id": "vk|~2[V8C7ez!wWtBhdt",
     "x": 161,
-    "y": 2352,
+    "y": 2681,
     "fields": {
       "FIELDNAME": "FIELDS",
       "FIELD": "FIELDNAME",
@@ -1255,7 +1347,7 @@
     "type": "field_dropdown_function",
     "id": "e^-OW:qsNd~zH8hW2Z;+",
     "x": 161,
-    "y": 2681,
+    "y": 3010,
     "fields": {
       "FIELDNAME": "STATEMENTS",
       "FIELD": "INPUTNAME",
@@ -1271,7 +1363,7 @@
     "type": "field_dropdown_function",
     "id": "kXJu)VQLTj1GF#U0XO#:",
     "x": 161,
-    "y": 3062,
+    "y": 3391,
     "fields": {
       "FIELDNAME": "STATEMENTS",
       "FIELD": "INPUTNAME",
@@ -1282,7 +1374,7 @@
     "type": "field_dropdown_function",
     "id": "x/ub%Xxs[t(hL3$sIC$!",
     "x": 161,
-    "y": 3391,
+    "y": 3720,
     "fields": {
       "FIELDNAME": "VALUE",
       "FIELD": "INPUTNAME",
@@ -1293,11 +1385,27 @@
     "type": "field_dropdown_function",
     "id": "vby;QyoRn~c!/kA2V+UW",
     "x": 161,
-    "y": 2023,
+    "y": 2352,
     "fields": {
       "FIELDNAME": "FIELDS",
       "FIELD": "FIELDNAME",
       "WORKSPACE": "Factory"
+    }
+  },
+  "5wCnR)~E-~xqfxE0Kt^d": {
+    "type": "field_dropdown_function",
+    "id": "5wCnR)~E-~xqfxE0Kt^d",
+    "x": 161,
+    "y": 1088,
+    "fields": {
+      "FIELDNAME": "STATEMENTS",
+      "FIELD": "INPUTNAME",
+      "WORKSPACE": "Factory"
+    },
+    "next": {
+      "block": {
+        "id": "{PsHy.+O^^%KKr0J0Do#"
+      }
     }
   },
   "}.S6Np{AH2P3Jvom4E,N": {
@@ -1315,7 +1423,7 @@
     "type": "field_static",
     "id": "w~8)4*]pyadscK35j(Ce",
     "x": 161,
-    "y": 2707,
+    "y": 3036,
     "fields": {
       "TEXT": "Indent"
     },
@@ -1325,14 +1433,45 @@
       }
     }
   },
+  "{PsHy.+O^^%KKr0J0Do#": {
+    "type": "field_dropdown",
+    "id": "{PsHy.+O^^%KKr0J0Do#",
+    "x": 161,
+    "y": 1114,
+    "extraState": {
+      "options": "[\"text\",\"text\"]"
+    },
+    "fields": {
+      "FIELDNAME": "CONDITION",
+      "USER0": "= 0 :",
+      "CPU0": "== 0",
+      "USER1": "> 0 :",
+      "CPU1": "> 0"
+    },
+    "next": {
+      "block": {
+        "id": "!FA,1X2Qd$~gIXsKcN^?"
+      }
+    }
+  },
   "Jrz~JN7i1;{o#XAll7b3": {
     "type": "field_checkbox",
     "id": "Jrz~JN7i1;{o#XAll7b3",
     "x": 161,
-    "y": 2733,
+    "y": 3062,
     "fields": {
       "CHECKED": false,
       "FIELDNAME": "INDENT"
+    }
+  },
+  "!FA,1X2Qd$~gIXsKcN^?": {
+    "type": "field_input",
+    "id": "!FA,1X2Qd$~gIXsKcN^?",
+    "x": 161,
+    "y": 1192,
+    "fields": {
+      "TEXT": "...\\n",
+      "FIELDNAME": "TOKEN"
     }
   },
   "top_blocks": [
@@ -1349,7 +1488,8 @@
     "5GZ:!?w+,5Px!84;1yYa",
     "n}iO?p%/H3Q`}q{AUeup",
     "#4OvA*:`]xIm~vMT4Mlh",
-    ":aPBYP/,9MaeYIUq65,8"
+    ":aPBYP/,9MaeYIUq65,8",
+    "krZ_3:hF[*}[RGt-@U4k"
   ],
   "mergeable": true
 }
