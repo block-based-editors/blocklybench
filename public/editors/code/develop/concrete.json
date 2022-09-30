@@ -1,9 +1,9 @@
 {
-  "uxzryU1H++|r[S+YAZaX": {
-    "type": "generate_token_if_length",
-    "id": "uxzryU1H++|r[S+YAZaX",
-    "x": 108,
-    "y": 205,
+  "3Q[C030l{p+)^$n8fNb|": {
+    "type": "generate_list_if_length",
+    "id": "3Q[C030l{p+)^$n8fNb|",
+    "x": 102,
+    "y": 169,
     "extraState": {
       "dropdowns": [
         {
@@ -16,31 +16,15 @@
           ]
         },
         {
-          "field": "OPERATOR",
+          "field": "CONDITION",
           "options": [
             {
-              "text": "==",
-              "id": "=="
-            },
-            {
-              "text": "<=",
-              "id": "<="
-            },
-            {
-              "text": ">=",
-              "id": ">="
-            },
-            {
-              "text": "!=",
-              "id": "!="
-            },
-            {
-              "text": "<",
-              "id": "<"
+              "text": "=",
+              "id": "== 0"
             },
             {
               "text": ">",
-              "id": ">"
+              "id": "> 0"
             }
           ]
         }
@@ -48,13 +32,12 @@
     },
     "fields": {
       "STATEMENTS": "hNV`zgbU3Re8Xc,Awk~(",
-      "OPERATOR": ">",
-      "VALUE": "0",
-      "TOKEN": "...\\n"
+      "CONDITION": "> 0",
+      "TOKEN": "hier komt je tokenb"
     }
   },
   "top_blocks": [
-    "uxzryU1H++|r[S+YAZaX"
+    "3Q[C030l{p+)^$n8fNb|"
   ],
   "mergeable": true
 }

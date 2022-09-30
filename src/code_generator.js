@@ -222,14 +222,7 @@ Blockly.Code['generate_token_if_length'] = function(block) {
   code += '   l = 0\n';
   code += '}\n';
   code += 'if (l ';
-  var field = block.getField("OPERATOR"); code += field.getValue();code += ' ';
-  var field = block.getField('VALUE');
-  if (field.getText()) {
-    code += field.getText();
-  } else {
-    code += field.getValue();
-  }
-  code += ') {\n code += \'';
+  var field = block.getField("CONDITION"); code += field.getValue();code += ') {\n code += \'';
   var field = block.getField('TOKEN');
   if (field.getText()) {
     code += field.getText();
@@ -246,5 +239,68 @@ Blockly.Code['generate_token_if_length'] = function(block) {
   {
     return code;
   }
+}
+;
+
+
+Blockly.Code['generate_parent_field_value'] = function(block) {
+  var code ='';
+  code += 'var parent = block.getSurroundParent();\n';
+  code += 'if (parent)\n{  \n  code += parent.getFieldValue("';
+  var field = block.getField('FIELDS');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+  code += '");\n}\n';
+
+  // if this block is a 'value' then code + ORDER needs to be returned
+  if(block.outputConnection) {
+    return [code, Blockly.Code.ORDER_ATOMIC];
+  }
+  else // no value block
+  {
+    return code;
+  }
+}
+;
+
+
+
+Blockly.Code['generate_list_length'] = function(block) {
+  var code ='';
+  code += 'var target = block.getInputTargetBlock("';
+  var field = block.getField('STATEMENTS');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+  code += '");\n';
+  code += 'if (target) {\n ';
+  code += '  code += target.getDescendants().length\n';
+  code += '} else {\n ';
+  code += '  code += "0"\n';
+  code += '}\n';
+
+
+  return code;
+}
+;
+
+
+Blockly.Code['generate_field_text'] = function(block) {
+  var code ='';
+  code += 'var field = block.getField("';
+  var field = block.getField('FIELDS');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+  code += '"); code += field.getValue();';
+
+  return code;
 }
 ;
