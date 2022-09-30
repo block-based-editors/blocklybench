@@ -2109,7 +2109,9 @@ Blockly.Blocks['generate_token_if_length'] = {
                 }
                 return options;
             }), "STATEMENTS")
-        .appendField(new Blockly.FieldDropdown([["= 0 :","== 0"], ["> 0 :","> 0"]]), "CONDITION")
+        .appendField(new Blockly.FieldDropdown([["==","=="], ["<=","<="], [">=",">="], ["!=","!="], ["<","<"], [">",">"]]), "OPERATOR")
+        .appendField(new Blockly.FieldTextInput("0", null, ), "VALUE")
+        .appendField(":")
         .appendField(new Blockly.FieldTextInput("...\\n", null, ), "TOKEN");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
@@ -2375,7 +2377,14 @@ Blockly.Code['generate_token_if_length'] = function(block) {
   code += '   l = 0\n';
   code += '}\n';
   code += 'if (l ';
-  var field = block.getField("CONDITION"); code += field.getValue();code += ') {\n code += \'';
+  var field = block.getField("OPERATOR"); code += field.getValue();code += ' ';
+  var field = block.getField('VALUE');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+  code += ') {\n code += \'';
   var field = block.getField('TOKEN');
   if (field.getText()) {
     code += field.getText();

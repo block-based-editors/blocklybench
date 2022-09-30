@@ -111,7 +111,9 @@ def list_values_to_json(last_block, values):
    
 def dict_values_to_json(last_block, data):
     for key, value in data.items():
-        if type(value)==list:
+        if key.startswith('ADEL'):
+            pass
+        elif type(value)==list:
             (block, statements, next) = key_list_json(key)
             last_block.update(block)
             last_block = statements
@@ -173,8 +175,6 @@ def get_root(data):
 
 import oyaml as yaml
 import json
-
-#svn_root = os.environ.get('SVN_ROOT')
 
 import sys
 sys.setrecursionlimit(1500)
