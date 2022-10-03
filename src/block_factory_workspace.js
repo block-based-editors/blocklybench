@@ -54,8 +54,7 @@ var factory_zoomToFit = null;
 
 function get_code()
 {
-	//  var code = Blockly.Code.workspaceToCode(factory_workspace);
-  var code = "";
+	var code = "";
   var blocks = factory_workspace.getAllBlocks();
   
   for (var i=0;i<blocks.length;i++)
@@ -86,11 +85,13 @@ function saveBlocks()
   if (some_thing_changed)
   {
     some_thing_changed = false;
-    errorHandler.report(get_mergable_json(factory_workspace));
-    errorHandler.report(get_mergable_json(Toolbox.toolbox_workspace));
-    errorHandler.report(get_mergable_json(CodeGen.code_workspace));
-    errorHandler.report(get_mergable_json(Concrete.concrete_workspace));
-    
+    if (errorHandler)
+    {
+      errorHandler.report(get_mergable_json(factory_workspace));
+      errorHandler.report(get_mergable_json(Toolbox.toolbox_workspace));
+      errorHandler.report(get_mergable_json(CodeGen.code_workspace));
+      errorHandler.report(get_mergable_json(Concrete.concrete_workspace));
+    }    
   }
 }
 
@@ -1165,12 +1166,19 @@ function register_workspace_serialization()
 var errorHandler = null;
 function enable_exception_logging()
 {
-  
-  errorHandler = new StackdriverErrorReporter();
-  errorHandler.start({
-    key: "AIzaSyBhLrATN834bxB8yRWjTozgqMhb4BnSJ28",
-    projectId: "motar-242711",
-});
+  if (location.hostname === "localhost" || location.hostname === "127.0.0.1")
+  {
+
+  }
+  else
+  {
+    errorHandler = new StackdriverErrorReporter();
+    errorHandler.start({
+      key: "AIzaSyBhLrATN834bxB8yRWjTozgqMhb4BnSJ28",
+        projectId: "motar-242711",
+    
+    });
+  }
 }
 
 
