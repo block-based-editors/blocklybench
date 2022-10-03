@@ -1,1559 +1,2220 @@
 {
-  "blocks": {
-    "languageVersion": 0,
-    "blocks": [
-      {
-        "type": "generate_code",
-        "id": "Rn_Csv$~@h97*Se/5uZD",
-        "x": 0,
-        "y": 0,
-        "extraState": {
-          "dropdowns": [
+  "Rn_Csv$~@h97*Se/5uZD": {
+    "type": "generate_code",
+    "id": "Rn_Csv$~@h97*Se/5uZD",
+    "x": 0,
+    "y": 0,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
             {
-              "field": "TYPE",
-              "options": [
-                {
-                  "text": "toolbox_block",
-                  "id": "@}@4`E(EDclQ^%lG[_eJ"
-                },
-                {
-                  "text": "toolbox_block_json",
-                  "id": "]o@m4-nTKq8Y:)Zp=)v."
-                },
-                {
-                  "text": "toolbox_block_json_field",
-                  "id": "`$x2j8A^O6PW.ZB3D_S?"
-                },
-                {
-                  "text": "toolbox_block_json_input",
-                  "id": "sh)oVYDB0$1E5g4Ck^IK"
-                },
-                {
-                  "text": "toolbox_blocks",
-                  "id": ")pT5.tKmg]A7?o%JG9F0"
-                },
-                {
-                  "text": "toolbox_categories",
-                  "id": "W2MV#7=+J/@J{!#GfYDM"
-                },
-                {
-                  "text": "toolbox_category",
-                  "id": "[zsY.7A0O.=b9@oD%=6_"
-                },
-                {
-                  "text": "toolbox_label",
-                  "id": "KY@F+%SQ`ivNM844@ik+"
-                },
-                {
-                  "text": "toolbox_seperator",
-                  "id": "y]1$^*%::)M+67))#=QZ"
-                },
-                {
-                  "text": "toolbox_variable_category",
-                  "id": "rk/^b/MJQ9w^v|-#]+#!"
-                }
-              ]
+              "text": "toolbox_block",
+              "id": "@}@4`E(EDclQ^%lG[_eJ"
+            },
+            {
+              "text": "toolbox_block_all",
+              "id": "Pma%b?%%jXabHuIJC[;e"
+            },
+            {
+              "text": "toolbox_block_json",
+              "id": "]o@m4-nTKq8Y:)Zp=)v."
+            },
+            {
+              "text": "toolbox_block_json_field",
+              "id": "`$x2j8A^O6PW.ZB3D_S?"
+            },
+            {
+              "text": "toolbox_block_json_input",
+              "id": "sh)oVYDB0$1E5g4Ck^IK"
+            },
+            {
+              "text": "toolbox_blocks",
+              "id": ")pT5.tKmg]A7?o%JG9F0"
+            },
+            {
+              "text": "toolbox_categories",
+              "id": "W2MV#7=+J/@J{!#GfYDM"
+            },
+            {
+              "text": "toolbox_category",
+              "id": "[zsY.7A0O.=b9@oD%=6_"
+            },
+            {
+              "text": "toolbox_label",
+              "id": "KY@F+%SQ`ivNM844@ik+"
+            },
+            {
+              "text": "toolbox_seperator",
+              "id": "y]1$^*%::)M+67))#=QZ"
+            },
+            {
+              "text": "toolbox_variable_category",
+              "id": "rk/^b/MJQ9w^v|-#]+#!"
             }
           ]
-        },
-        "fields": {
-          "LANGUAGE": "JSON",
-          "TYPE": "@}@4`E(EDclQ^%lG[_eJ"
-        },
-        "inputs": {
-          "CODE": {
-            "block": {
-              "type": "generate_javascript",
-              "id": "GR/wCd|Mf87jOI^JgTe}",
-              "extraState": {
-                "dropdowns": []
-              },
-              "fields": {
-                "JAVASCRIPT": "if (block.getSurroundParent() && block.getSurroundParent().type!=\"toolbox_block_json_input\") {"
-              },
-              "next": {
-                "block": {
-                  "type": "generate_token",
-                  "id": "4#Rb9s3-@Ntu8+n]O!U^",
-                  "extraState": {
-                    "dropdowns": []
-                  },
-                  "fields": {
-                    "TOKEN": "{\\n  \"kind\": \"block\",\\n  \"type\": \""
-                  },
-                  "next": {
-                    "block": {
-                      "type": "generate_field_value2",
-                      "id": "Mv=E8E[C?u.c{M1!DwB/",
-                      "extraState": {
-                        "dropdowns": [
-                          {
-                            "field": "FIELDS",
-                            "options": [
-                              {
-                                "text": "TYPE",
-                                "id": "rlUV{lIht-ZM-Ow2/U9#"
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      "fields": {
-                        "FIELDS": "rlUV{lIht-ZM-Ow2/U9#"
-                      },
-                      "next": {
-                        "block": {
-                          "type": "generate_token",
-                          "id": "[VGZ6u?FOP2;)Zfhi-xr",
-                          "extraState": {
-                            "dropdowns": []
-                          },
-                          "fields": {
-                            "TOKEN": "\"\\n},\\n"
-                          },
-                          "next": {
-                            "block": {
-                              "type": "generate_javascript",
-                              "id": "4E,2AhM{=#pH$l54N}.X",
-                              "extraState": {
-                                "dropdowns": []
-                              },
-                              "fields": {
-                                "JAVASCRIPT": "} else {"
-                              },
-                              "next": {
-                                "block": {
-                                  "type": "generate_token",
-                                  "id": ";0Sh@8z#=!fkOx){p9XS",
-                                  "extraState": {
-                                    "dropdowns": []
-                                  },
-                                  "fields": {
-                                    "TOKEN": "{\\n  \"block\": {\\n    \"type\": \""
-                                  },
-                                  "next": {
-                                    "block": {
-                                      "type": "generate_field_value2",
-                                      "id": "z3xl`?t9.x@VGwCFHX#b",
-                                      "extraState": {
-                                        "dropdowns": [
-                                          {
-                                            "field": "FIELDS",
-                                            "options": [
-                                              {
-                                                "text": "TYPE",
-                                                "id": "rlUV{lIht-ZM-Ow2/U9#"
-                                              }
-                                            ]
-                                          }
-                                        ]
-                                      },
-                                      "fields": {
-                                        "FIELDS": "rlUV{lIht-ZM-Ow2/U9#"
-                                      },
-                                      "next": {
-                                        "block": {
-                                          "type": "generate_token",
-                                          "id": "9=sXQt7tj56.M--D8CS9",
-                                          "extraState": {
-                                            "dropdowns": []
-                                          },
-                                          "fields": {
-                                            "TOKEN": "\",\\n  }\\n},\\n"
-                                          },
-                                          "next": {
-                                            "block": {
-                                              "type": "generate_javascript",
-                                              "id": "^v_|T?V:bgEO]2G,egv;",
-                                              "extraState": {
-                                                "dropdowns": []
-                                              },
-                                              "fields": {
-                                                "JAVASCRIPT": "}"
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
         }
-      },
-      {
-        "type": "generate_code",
-        "id": "6XP4QPj{XdZaRLj3@v/C",
-        "x": 0,
-        "y": 297,
-        "extraState": {
-          "dropdowns": [
-            {
-              "field": "TYPE",
-              "options": [
-                {
-                  "text": "toolbox_block",
-                  "id": "@}@4`E(EDclQ^%lG[_eJ"
-                },
-                {
-                  "text": "toolbox_block_json",
-                  "id": "]o@m4-nTKq8Y:)Zp=)v."
-                },
-                {
-                  "text": "toolbox_block_json_field",
-                  "id": "`$x2j8A^O6PW.ZB3D_S?"
-                },
-                {
-                  "text": "toolbox_block_json_input",
-                  "id": "sh)oVYDB0$1E5g4Ck^IK"
-                },
-                {
-                  "text": "toolbox_blocks",
-                  "id": ")pT5.tKmg]A7?o%JG9F0"
-                },
-                {
-                  "text": "toolbox_categories",
-                  "id": "W2MV#7=+J/@J{!#GfYDM"
-                },
-                {
-                  "text": "toolbox_category",
-                  "id": "[zsY.7A0O.=b9@oD%=6_"
-                },
-                {
-                  "text": "toolbox_label",
-                  "id": "KY@F+%SQ`ivNM844@ik+"
-                },
-                {
-                  "text": "toolbox_seperator",
-                  "id": "y]1$^*%::)M+67))#=QZ"
-                },
-                {
-                  "text": "toolbox_variable_category",
-                  "id": "rk/^b/MJQ9w^v|-#]+#!"
-                }
-              ]
-            }
-          ]
-        },
-        "fields": {
-          "LANGUAGE": "JSON",
-          "TYPE": "]o@m4-nTKq8Y:)Zp=)v."
-        },
-        "inputs": {
-          "CODE": {
-            "block": {
-              "type": "generate_javascript",
-              "id": "fPtUV~wD4qdqU:LB5(6l",
-              "extraState": {
-                "dropdowns": []
-              },
-              "fields": {
-                "JAVASCRIPT": "if (block.getSurroundParent() && block.getSurroundParent().type!=\"toolbox_block_json_input\") {"
-              },
-              "next": {
-                "block": {
-                  "type": "generate_token",
-                  "id": "D9TpF{4xABJ-,4$ufPLy",
-                  "extraState": {
-                    "dropdowns": []
-                  },
-                  "fields": {
-                    "TOKEN": "{\\n  \"kind\": \"block\",\\n  \"type\": \\\""
-                  },
-                  "next": {
-                    "block": {
-                      "type": "generate_field_value2",
-                      "id": "4?Aa~0~E=`$Hy#,3Rf0C",
-                      "extraState": {
-                        "dropdowns": [
-                          {
-                            "field": "FIELDS",
-                            "options": [
-                              {
-                                "text": "TYPE",
-                                "id": "e7I:EiZIClAvb3CIDgYG"
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      "fields": {
-                        "FIELDS": "e7I:EiZIClAvb3CIDgYG"
-                      },
-                      "next": {
-                        "block": {
-                          "type": "generate_token",
-                          "id": "YKTW~O(Q{$hrEm7%Tq78",
-                          "extraState": {
-                            "dropdowns": []
-                          },
-                          "fields": {
-                            "TOKEN": "\", \\n  \"fields\": {\\n"
-                          },
-                          "next": {
-                            "block": {
-                              "type": "generate_statements2",
-                              "id": "Qtd^;fpKli.%o~gnXL.,",
-                              "extraState": {
-                                "dropdowns": [
-                                  {
-                                    "field": "STATEMENTS",
-                                    "options": [
-                                      {
-                                        "text": "FIELDS",
-                                        "id": "_OpLTgO!DM2x4qzRw/et"
-                                      },
-                                      {
-                                        "text": "INPUTS",
-                                        "id": "i:fVP]Pb`PrGjMR0,Z6c"
-                                      }
-                                    ]
-                                  }
-                                ]
-                              },
-                              "fields": {
-                                "STATEMENTS": "_OpLTgO!DM2x4qzRw/et"
-                              },
-                              "next": {
-                                "block": {
-                                  "type": "generate_token",
-                                  "id": "M_V|?TfsbD+Z4odDjsU3",
-                                  "extraState": {
-                                    "dropdowns": []
-                                  },
-                                  "fields": {
-                                    "TOKEN": "  },\\n"
-                                  },
-                                  "next": {
-                                    "block": {
-                                      "type": "generate_token",
-                                      "id": "=Mq3QUcx7rW:FCPN#AeG",
-                                      "extraState": {
-                                        "dropdowns": []
-                                      },
-                                      "fields": {
-                                        "TOKEN": "  \"inputs\": {\\n"
-                                      },
-                                      "next": {
-                                        "block": {
-                                          "type": "generate_statements2",
-                                          "id": "y]Wt_|u5?lNcbVqgTbRE",
-                                          "extraState": {
-                                            "dropdowns": [
-                                              {
-                                                "field": "STATEMENTS",
-                                                "options": [
-                                                  {
-                                                    "text": "FIELDS",
-                                                    "id": "_OpLTgO!DM2x4qzRw/et"
-                                                  },
-                                                  {
-                                                    "text": "INPUTS",
-                                                    "id": "i:fVP]Pb`PrGjMR0,Z6c"
-                                                  }
-                                                ]
-                                              }
-                                            ]
-                                          },
-                                          "fields": {
-                                            "STATEMENTS": "i:fVP]Pb`PrGjMR0,Z6c"
-                                          },
-                                          "next": {
-                                            "block": {
-                                              "type": "generate_token",
-                                              "id": "[At@+d!pE}`o2x9pNCTI",
-                                              "extraState": {
-                                                "dropdowns": []
-                                              },
-                                              "fields": {
-                                                "TOKEN": "  }\\n},\\n"
-                                              },
-                                              "next": {
-                                                "block": {
-                                                  "type": "generate_javascript",
-                                                  "id": "D45brF+v3`Mnj+2$GL@L",
-                                                  "extraState": {
-                                                    "dropdowns": []
-                                                  },
-                                                  "fields": {
-                                                    "JAVASCRIPT": "} else {"
-                                                  },
-                                                  "next": {
-                                                    "block": {
-                                                      "type": "generate_token",
-                                                      "id": "::~uF:5l0C=_.Ru1wSi(",
-                                                      "extraState": {
-                                                        "dropdowns": []
-                                                      },
-                                                      "fields": {
-                                                        "TOKEN": "{\\n  \"block\": {\\n    \"type\": \""
-                                                      },
-                                                      "next": {
-                                                        "block": {
-                                                          "type": "generate_field_value2",
-                                                          "id": "/_)P+]fo?I9]tONczzUt",
-                                                          "extraState": {
-                                                            "dropdowns": [
-                                                              {
-                                                                "field": "FIELDS",
-                                                                "options": [
-                                                                  {
-                                                                    "text": "TYPE",
-                                                                    "id": "e7I:EiZIClAvb3CIDgYG"
-                                                                  },
-                                                                  {
-                                                                    "text": "TYPE",
-                                                                    "id": "rlUV{lIht-ZM-Ow2/U9#"
-                                                                  }
-                                                                ]
-                                                              }
-                                                            ]
-                                                          },
-                                                          "fields": {
-                                                            "FIELDS": "rlUV{lIht-ZM-Ow2/U9#"
-                                                          },
-                                                          "next": {
-                                                            "block": {
-                                                              "type": "generate_token",
-                                                              "id": "a1rD6=`A.DntwU6WXKj}",
-                                                              "extraState": {
-                                                                "dropdowns": []
-                                                              },
-                                                              "fields": {
-                                                                "TOKEN": "\", \\n    \"fields\": {\\n"
-                                                              },
-                                                              "next": {
-                                                                "block": {
-                                                                  "type": "generate_statements2",
-                                                                  "id": "e0W6bTpdAw3)}}}t7_7L",
-                                                                  "extraState": {
-                                                                    "dropdowns": [
-                                                                      {
-                                                                        "field": "STATEMENTS",
-                                                                        "options": [
-                                                                          {
-                                                                            "text": "FIELDS",
-                                                                            "id": "_OpLTgO!DM2x4qzRw/et"
-                                                                          },
-                                                                          {
-                                                                            "text": "INPUTS",
-                                                                            "id": "i:fVP]Pb`PrGjMR0,Z6c"
-                                                                          }
-                                                                        ]
-                                                                      }
-                                                                    ]
-                                                                  },
-                                                                  "fields": {
-                                                                    "STATEMENTS": "_OpLTgO!DM2x4qzRw/et"
-                                                                  },
-                                                                  "next": {
-                                                                    "block": {
-                                                                      "type": "generate_token",
-                                                                      "id": "dD66#4`:xkvM=HXQ7vwx",
-                                                                      "extraState": {
-                                                                        "dropdowns": []
-                                                                      },
-                                                                      "fields": {
-                                                                        "TOKEN": "    },\\n"
-                                                                      },
-                                                                      "next": {
-                                                                        "block": {
-                                                                          "type": "generate_token",
-                                                                          "id": "d9HEVttn^nQkNJwfwctz",
-                                                                          "extraState": {
-                                                                            "dropdowns": []
-                                                                          },
-                                                                          "fields": {
-                                                                            "TOKEN": "    \"inputs\": {\\n"
-                                                                          },
-                                                                          "next": {
-                                                                            "block": {
-                                                                              "type": "generate_statements2",
-                                                                              "id": "F:OoeiMZnrm=T1rSuJ_s",
-                                                                              "extraState": {
-                                                                                "dropdowns": [
-                                                                                  {
-                                                                                    "field": "STATEMENTS",
-                                                                                    "options": [
-                                                                                      {
-                                                                                        "text": "FIELDS",
-                                                                                        "id": "_OpLTgO!DM2x4qzRw/et"
-                                                                                      },
-                                                                                      {
-                                                                                        "text": "INPUTS",
-                                                                                        "id": "i:fVP]Pb`PrGjMR0,Z6c"
-                                                                                      }
-                                                                                    ]
-                                                                                  }
-                                                                                ]
-                                                                              },
-                                                                              "fields": {
-                                                                                "STATEMENTS": "i:fVP]Pb`PrGjMR0,Z6c"
-                                                                              },
-                                                                              "next": {
-                                                                                "block": {
-                                                                                  "type": "generate_token",
-                                                                                  "id": ":N_tVkQRI0$)g].K{MZQ",
-                                                                                  "extraState": {
-                                                                                    "dropdowns": []
-                                                                                  },
-                                                                                  "fields": {
-                                                                                    "TOKEN": "    }\\n  },\\n"
-                                                                                  },
-                                                                                  "next": {
-                                                                                    "block": {
-                                                                                      "type": "generate_token",
-                                                                                      "id": "~6rvlBk[3cF%vxtq(0UH",
-                                                                                      "extraState": {
-                                                                                        "dropdowns": []
-                                                                                      },
-                                                                                      "fields": {
-                                                                                        "TOKEN": "},\\n"
-                                                                                      },
-                                                                                      "next": {
-                                                                                        "block": {
-                                                                                          "type": "generate_javascript",
-                                                                                          "id": "[x?2@UrF~8S5W[-E^KII",
-                                                                                          "extraState": {
-                                                                                            "dropdowns": []
-                                                                                          },
-                                                                                          "fields": {
-                                                                                            "JAVASCRIPT": "}"
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      {
-        "type": "generate_code",
-        "id": "RHz{SmAYNLznbX~al}fD",
-        "x": 0,
-        "y": 934,
-        "extraState": {
-          "dropdowns": [
-            {
-              "field": "TYPE",
-              "options": [
-                {
-                  "text": "toolbox_block",
-                  "id": "@}@4`E(EDclQ^%lG[_eJ"
-                },
-                {
-                  "text": "toolbox_block_json",
-                  "id": "]o@m4-nTKq8Y:)Zp=)v."
-                },
-                {
-                  "text": "toolbox_block_json_field",
-                  "id": "`$x2j8A^O6PW.ZB3D_S?"
-                },
-                {
-                  "text": "toolbox_block_json_input",
-                  "id": "sh)oVYDB0$1E5g4Ck^IK"
-                },
-                {
-                  "text": "toolbox_blocks",
-                  "id": ")pT5.tKmg]A7?o%JG9F0"
-                },
-                {
-                  "text": "toolbox_categories",
-                  "id": "W2MV#7=+J/@J{!#GfYDM"
-                },
-                {
-                  "text": "toolbox_category",
-                  "id": "[zsY.7A0O.=b9@oD%=6_"
-                },
-                {
-                  "text": "toolbox_label",
-                  "id": "KY@F+%SQ`ivNM844@ik+"
-                },
-                {
-                  "text": "toolbox_seperator",
-                  "id": "y]1$^*%::)M+67))#=QZ"
-                },
-                {
-                  "text": "toolbox_variable_category",
-                  "id": "rk/^b/MJQ9w^v|-#]+#!"
-                }
-              ]
-            }
-          ]
-        },
-        "fields": {
-          "LANGUAGE": "JSON",
-          "TYPE": "`$x2j8A^O6PW.ZB3D_S?"
-        },
-        "inputs": {
-          "CODE": {
-            "block": {
-              "type": "generate_token",
-              "id": "(d;%6=sAkS^M/=n6jv;P",
-              "extraState": {
-                "dropdowns": []
-              },
-              "fields": {
-                "TOKEN": "  \""
-              },
-              "next": {
-                "block": {
-                  "type": "generate_field_value2",
-                  "id": "UvBb+Awr4luZUKi,CwEi",
-                  "extraState": {
-                    "dropdowns": [
-                      {
-                        "field": "FIELDS",
-                        "options": [
-                          {
-                            "text": "NAME",
-                            "id": ":#!%|W!eLhdtDPVjPI7u"
-                          },
-                          {
-                            "text": "VALUE",
-                            "id": "lmsS1lI1i|Qk2XNxUdwq"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  "fields": {
-                    "FIELDS": ":#!%|W!eLhdtDPVjPI7u"
-                  },
-                  "next": {
-                    "block": {
-                      "type": "generate_token",
-                      "id": "(IXALQa,HP+N?o`^_F_k",
-                      "extraState": {
-                        "dropdowns": []
-                      },
-                      "fields": {
-                        "TOKEN": "\" : \""
-                      },
-                      "next": {
-                        "block": {
-                          "type": "generate_field_value2",
-                          "id": "u,XB,bfUJ@vk]tD*Igif",
-                          "extraState": {
-                            "dropdowns": [
-                              {
-                                "field": "FIELDS",
-                                "options": [
-                                  {
-                                    "text": "NAME",
-                                    "id": ":#!%|W!eLhdtDPVjPI7u"
-                                  },
-                                  {
-                                    "text": "VALUE",
-                                    "id": "lmsS1lI1i|Qk2XNxUdwq"
-                                  }
-                                ]
-                              }
-                            ]
-                          },
-                          "fields": {
-                            "FIELDS": "lmsS1lI1i|Qk2XNxUdwq"
-                          },
-                          "next": {
-                            "block": {
-                              "type": "generate_token",
-                              "id": "]CWm3kksH2QuLOqA;Whh",
-                              "extraState": {
-                                "dropdowns": []
-                              },
-                              "fields": {
-                                "TOKEN": "\",\\n"
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      {
-        "type": "generate_code",
-        "id": "D4a?}}[37*+rDbppxqMV",
-        "x": 0,
-        "y": 1127,
-        "extraState": {
-          "dropdowns": [
-            {
-              "field": "TYPE",
-              "options": [
-                {
-                  "text": "toolbox_block",
-                  "id": "@}@4`E(EDclQ^%lG[_eJ"
-                },
-                {
-                  "text": "toolbox_block_json",
-                  "id": "]o@m4-nTKq8Y:)Zp=)v."
-                },
-                {
-                  "text": "toolbox_block_json_field",
-                  "id": "`$x2j8A^O6PW.ZB3D_S?"
-                },
-                {
-                  "text": "toolbox_block_json_input",
-                  "id": "sh)oVYDB0$1E5g4Ck^IK"
-                },
-                {
-                  "text": "toolbox_blocks",
-                  "id": ")pT5.tKmg]A7?o%JG9F0"
-                },
-                {
-                  "text": "toolbox_categories",
-                  "id": "W2MV#7=+J/@J{!#GfYDM"
-                },
-                {
-                  "text": "toolbox_category",
-                  "id": "[zsY.7A0O.=b9@oD%=6_"
-                },
-                {
-                  "text": "toolbox_label",
-                  "id": "KY@F+%SQ`ivNM844@ik+"
-                },
-                {
-                  "text": "toolbox_seperator",
-                  "id": "y]1$^*%::)M+67))#=QZ"
-                },
-                {
-                  "text": "toolbox_variable_category",
-                  "id": "rk/^b/MJQ9w^v|-#]+#!"
-                }
-              ]
-            }
-          ]
-        },
-        "fields": {
-          "LANGUAGE": "JSON",
-          "TYPE": "sh)oVYDB0$1E5g4Ck^IK"
-        },
-        "inputs": {
-          "CODE": {
-            "block": {
-              "type": "generate_token",
-              "id": "LFFfwh2vpNZ*ifkKl+*u",
-              "extraState": {
-                "dropdowns": []
-              },
-              "fields": {
-                "TOKEN": "  \""
-              },
-              "next": {
-                "block": {
-                  "type": "generate_field_value2",
-                  "id": "Dl;A!G~jFF-vn^5J,/_.",
-                  "extraState": {
-                    "dropdowns": [
-                      {
-                        "field": "FIELDS",
-                        "options": [
-                          {
-                            "text": "NAME",
-                            "id": "FU2@Bwss1d@w%fKadWXU"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  "fields": {
-                    "FIELDS": "FU2@Bwss1d@w%fKadWXU"
-                  },
-                  "next": {
-                    "block": {
-                      "type": "generate_token",
-                      "id": "Kcu:#PXpADuq;Y!BmD/i",
-                      "extraState": {
-                        "dropdowns": []
-                      },
-                      "fields": {
-                        "TOKEN": "\" :"
-                      },
-                      "next": {
-                        "block": {
-                          "type": "generate_statements2",
-                          "id": "IUR@~P+*H3!B$O]bFaQl",
-                          "extraState": {
-                            "dropdowns": [
-                              {
-                                "field": "STATEMENTS",
-                                "options": [
-                                  {
-                                    "text": "BLOCKS",
-                                    "id": "/%:Hv=E`@VZBT]Tva(@O"
-                                  }
-                                ]
-                              }
-                            ]
-                          },
-                          "fields": {
-                            "STATEMENTS": "/%:Hv=E`@VZBT]Tva(@O"
-                          },
-                          "next": {
-                            "block": {
-                              "type": "generate_token",
-                              "id": "AwJh3,xN(_Z~1!XAX52%",
-                              "extraState": {
-                                "dropdowns": []
-                              },
-                              "fields": {
-                                "TOKEN": ""
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      {
-        "type": "generate_code",
-        "id": "k38QUF`/[RyjiQ.9sm=N",
-        "x": 0,
-        "y": 1320,
-        "extraState": {
-          "dropdowns": [
-            {
-              "field": "TYPE",
-              "options": [
-                {
-                  "text": "toolbox_block",
-                  "id": "@}@4`E(EDclQ^%lG[_eJ"
-                },
-                {
-                  "text": "toolbox_block_json",
-                  "id": "]o@m4-nTKq8Y:)Zp=)v."
-                },
-                {
-                  "text": "toolbox_block_json_field",
-                  "id": "`$x2j8A^O6PW.ZB3D_S?"
-                },
-                {
-                  "text": "toolbox_block_json_input",
-                  "id": "sh)oVYDB0$1E5g4Ck^IK"
-                },
-                {
-                  "text": "toolbox_blocks",
-                  "id": ")pT5.tKmg]A7?o%JG9F0"
-                },
-                {
-                  "text": "toolbox_categories",
-                  "id": "W2MV#7=+J/@J{!#GfYDM"
-                },
-                {
-                  "text": "toolbox_category",
-                  "id": "[zsY.7A0O.=b9@oD%=6_"
-                },
-                {
-                  "text": "toolbox_label",
-                  "id": "KY@F+%SQ`ivNM844@ik+"
-                },
-                {
-                  "text": "toolbox_seperator",
-                  "id": "y]1$^*%::)M+67))#=QZ"
-                },
-                {
-                  "text": "toolbox_variable_category",
-                  "id": "rk/^b/MJQ9w^v|-#]+#!"
-                }
-              ]
-            }
-          ]
-        },
-        "fields": {
-          "LANGUAGE": "JSON",
-          "TYPE": "rk/^b/MJQ9w^v|-#]+#!"
-        },
-        "inputs": {
-          "CODE": {
-            "block": {
-              "type": "generate_token",
-              "id": "6zy{64%4ssIqGC6D2O:/",
-              "extraState": {
-                "dropdowns": []
-              },
-              "fields": {
-                "TOKEN": "{\\n   \"kind\": \"category\",\\n   \"name\": \"Variables\",\\n   \"custom\": \"VARIABLE\"\\n},"
-              }
-            }
-          }
-        }
-      },
-      {
-        "type": "generate_code",
-        "id": "[50H#Og2J}4CUJ4o4BUS",
-        "x": 0,
-        "y": 1409,
-        "extraState": {
-          "dropdowns": [
-            {
-              "field": "TYPE",
-              "options": [
-                {
-                  "text": "toolbox_block",
-                  "id": "@}@4`E(EDclQ^%lG[_eJ"
-                },
-                {
-                  "text": "toolbox_block_json",
-                  "id": "]o@m4-nTKq8Y:)Zp=)v."
-                },
-                {
-                  "text": "toolbox_block_json_field",
-                  "id": "`$x2j8A^O6PW.ZB3D_S?"
-                },
-                {
-                  "text": "toolbox_block_json_input",
-                  "id": "sh)oVYDB0$1E5g4Ck^IK"
-                },
-                {
-                  "text": "toolbox_blocks",
-                  "id": ")pT5.tKmg]A7?o%JG9F0"
-                },
-                {
-                  "text": "toolbox_categories",
-                  "id": "W2MV#7=+J/@J{!#GfYDM"
-                },
-                {
-                  "text": "toolbox_category",
-                  "id": "[zsY.7A0O.=b9@oD%=6_"
-                },
-                {
-                  "text": "toolbox_label",
-                  "id": "KY@F+%SQ`ivNM844@ik+"
-                },
-                {
-                  "text": "toolbox_seperator",
-                  "id": "y]1$^*%::)M+67))#=QZ"
-                },
-                {
-                  "text": "toolbox_variable_category",
-                  "id": "rk/^b/MJQ9w^v|-#]+#!"
-                }
-              ]
-            }
-          ]
-        },
-        "fields": {
-          "LANGUAGE": "JSON",
-          "TYPE": "y]1$^*%::)M+67))#=QZ"
-        },
-        "inputs": {
-          "CODE": {
-            "block": {
-              "type": "generate_token",
-              "id": "P;+,ay-c$p/VA=l,jH%H",
-              "extraState": {
-                "dropdowns": []
-              },
-              "fields": {
-                "TOKEN": "{ \\n  \"kind\": \"sep\",\\n  \"gap\": \""
-              },
-              "next": {
-                "block": {
-                  "type": "generate_field_value2",
-                  "id": "E?3V%?3yB9GQEZ54}CIl",
-                  "extraState": {
-                    "dropdowns": [
-                      {
-                        "field": "FIELDS",
-                        "options": [
-                          {
-                            "text": "GAP",
-                            "id": "Ul?c|L`;abgVYeedNg:t"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  "fields": {
-                    "FIELDS": "Ul?c|L`;abgVYeedNg:t"
-                  },
-                  "next": {
-                    "block": {
-                      "type": "generate_token",
-                      "id": "snL%l5O/w=4FQ{=ys18k",
-                      "extraState": {
-                        "dropdowns": []
-                      },
-                      "fields": {
-                        "TOKEN": "\"\\n},\\n"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      {
-        "type": "generate_code",
-        "id": "NH{C]Nmg/9d=z.r5l*Wr",
-        "x": 0,
-        "y": 1550,
-        "extraState": {
-          "dropdowns": [
-            {
-              "field": "TYPE",
-              "options": [
-                {
-                  "text": "toolbox_block",
-                  "id": "@}@4`E(EDclQ^%lG[_eJ"
-                },
-                {
-                  "text": "toolbox_block_json",
-                  "id": "]o@m4-nTKq8Y:)Zp=)v."
-                },
-                {
-                  "text": "toolbox_block_json_field",
-                  "id": "`$x2j8A^O6PW.ZB3D_S?"
-                },
-                {
-                  "text": "toolbox_block_json_input",
-                  "id": "sh)oVYDB0$1E5g4Ck^IK"
-                },
-                {
-                  "text": "toolbox_blocks",
-                  "id": ")pT5.tKmg]A7?o%JG9F0"
-                },
-                {
-                  "text": "toolbox_categories",
-                  "id": "W2MV#7=+J/@J{!#GfYDM"
-                },
-                {
-                  "text": "toolbox_category",
-                  "id": "[zsY.7A0O.=b9@oD%=6_"
-                },
-                {
-                  "text": "toolbox_label",
-                  "id": "KY@F+%SQ`ivNM844@ik+"
-                },
-                {
-                  "text": "toolbox_seperator",
-                  "id": "y]1$^*%::)M+67))#=QZ"
-                },
-                {
-                  "text": "toolbox_variable_category",
-                  "id": "rk/^b/MJQ9w^v|-#]+#!"
-                }
-              ]
-            }
-          ]
-        },
-        "fields": {
-          "LANGUAGE": "JSON",
-          "TYPE": "KY@F+%SQ`ivNM844@ik+"
-        },
-        "inputs": {
-          "CODE": {
-            "block": {
-              "type": "generate_token",
-              "id": "G8MyL3Bzcp%KQcDLr)W+",
-              "extraState": {
-                "dropdowns": []
-              },
-              "fields": {
-                "TOKEN": "{ \\n  \"kind\": \"label\",\\n  \"text\": \""
-              },
-              "next": {
-                "block": {
-                  "type": "generate_field_value2",
-                  "id": "iWdNTK4e.dJ?T3wxg;yF",
-                  "extraState": {
-                    "dropdowns": [
-                      {
-                        "field": "FIELDS",
-                        "options": [
-                          {
-                            "text": "TEXT",
-                            "id": "M:F~MdYEVH~Mp8F,}2Gh"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  "fields": {
-                    "FIELDS": "M:F~MdYEVH~Mp8F,}2Gh"
-                  },
-                  "next": {
-                    "block": {
-                      "type": "generate_token",
-                      "id": "nk:zsl3vnWj@c*xZ_G,D",
-                      "extraState": {
-                        "dropdowns": []
-                      },
-                      "fields": {
-                        "TOKEN": "\"\\n},\\n"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      {
-        "type": "generate_code",
-        "id": "_ahKCG|?l{BrX0gia7vX",
-        "x": 0,
-        "y": 1691,
-        "extraState": {
-          "dropdowns": [
-            {
-              "field": "TYPE",
-              "options": [
-                {
-                  "text": "toolbox_block",
-                  "id": "@}@4`E(EDclQ^%lG[_eJ"
-                },
-                {
-                  "text": "toolbox_block_json",
-                  "id": "]o@m4-nTKq8Y:)Zp=)v."
-                },
-                {
-                  "text": "toolbox_block_json_field",
-                  "id": "`$x2j8A^O6PW.ZB3D_S?"
-                },
-                {
-                  "text": "toolbox_block_json_input",
-                  "id": "sh)oVYDB0$1E5g4Ck^IK"
-                },
-                {
-                  "text": "toolbox_blocks",
-                  "id": ")pT5.tKmg]A7?o%JG9F0"
-                },
-                {
-                  "text": "toolbox_categories",
-                  "id": "W2MV#7=+J/@J{!#GfYDM"
-                },
-                {
-                  "text": "toolbox_category",
-                  "id": "[zsY.7A0O.=b9@oD%=6_"
-                },
-                {
-                  "text": "toolbox_label",
-                  "id": "KY@F+%SQ`ivNM844@ik+"
-                },
-                {
-                  "text": "toolbox_seperator",
-                  "id": "y]1$^*%::)M+67))#=QZ"
-                },
-                {
-                  "text": "toolbox_variable_category",
-                  "id": "rk/^b/MJQ9w^v|-#]+#!"
-                }
-              ]
-            }
-          ]
-        },
-        "fields": {
-          "LANGUAGE": "JSON",
-          "TYPE": ")pT5.tKmg]A7?o%JG9F0"
-        },
-        "inputs": {
-          "CODE": {
-            "block": {
-              "type": "generate_token",
-              "id": "t_f3+MR-L;~]w_8LuN-I",
-              "extraState": {
-                "dropdowns": []
-              },
-              "fields": {
-                "TOKEN": "{\\n"
-              },
-              "next": {
-                "block": {
-                  "type": "generate_token",
-                  "id": "/C3]Ib*0oeNzlfWn7hF$",
-                  "extraState": {
-                    "dropdowns": []
-                  },
-                  "fields": {
-                    "TOKEN": " \"kind\": \"flyoutToolbox\",\\n"
-                  },
-                  "next": {
-                    "block": {
-                      "type": "generate_token",
-                      "id": "~]~vJl}inHv/zf(`qCQC",
-                      "extraState": {
-                        "dropdowns": []
-                      },
-                      "fields": {
-                        "TOKEN": " \"contents\": [\\n"
-                      },
-                      "next": {
-                        "block": {
-                          "type": "generate_statements2",
-                          "id": "m:G1;H^[3N9_mUl-1^@I",
-                          "extraState": {
-                            "dropdowns": [
-                              {
-                                "field": "STATEMENTS",
-                                "options": [
-                                  {
-                                    "text": "LIST",
-                                    "id": "/#tqk^;!DBw6$,?M5Oss"
-                                  }
-                                ]
-                              }
-                            ]
-                          },
-                          "fields": {
-                            "STATEMENTS": "/#tqk^;!DBw6$,?M5Oss"
-                          },
-                          "next": {
-                            "block": {
-                              "type": "generate_token",
-                              "id": "se/$x*?xokfYg1f8eQP.",
-                              "extraState": {
-                                "dropdowns": []
-                              },
-                              "fields": {
-                                "TOKEN": " ]\\n};"
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      {
-        "type": "generate_code",
-        "id": "[`cazz@iQ8!.$-g7rn0V",
-        "x": 0,
-        "y": 1884,
-        "extraState": {
-          "dropdowns": [
-            {
-              "field": "TYPE",
-              "options": [
-                {
-                  "text": "toolbox_block",
-                  "id": "@}@4`E(EDclQ^%lG[_eJ"
-                },
-                {
-                  "text": "toolbox_block_json",
-                  "id": "]o@m4-nTKq8Y:)Zp=)v."
-                },
-                {
-                  "text": "toolbox_block_json_field",
-                  "id": "`$x2j8A^O6PW.ZB3D_S?"
-                },
-                {
-                  "text": "toolbox_block_json_input",
-                  "id": "sh)oVYDB0$1E5g4Ck^IK"
-                },
-                {
-                  "text": "toolbox_blocks",
-                  "id": ")pT5.tKmg]A7?o%JG9F0"
-                },
-                {
-                  "text": "toolbox_categories",
-                  "id": "W2MV#7=+J/@J{!#GfYDM"
-                },
-                {
-                  "text": "toolbox_category",
-                  "id": "[zsY.7A0O.=b9@oD%=6_"
-                },
-                {
-                  "text": "toolbox_label",
-                  "id": "KY@F+%SQ`ivNM844@ik+"
-                },
-                {
-                  "text": "toolbox_seperator",
-                  "id": "y]1$^*%::)M+67))#=QZ"
-                },
-                {
-                  "text": "toolbox_variable_category",
-                  "id": "rk/^b/MJQ9w^v|-#]+#!"
-                }
-              ]
-            }
-          ]
-        },
-        "fields": {
-          "LANGUAGE": "JSON",
-          "TYPE": "W2MV#7=+J/@J{!#GfYDM"
-        },
-        "inputs": {
-          "CODE": {
-            "block": {
-              "type": "generate_token",
-              "id": "2784YIp)?-[[Lgm|0+YR",
-              "extraState": {
-                "dropdowns": []
-              },
-              "fields": {
-                "TOKEN": "{\\n"
-              },
-              "next": {
-                "block": {
-                  "type": "generate_token",
-                  "id": "I3Iy~-Z{oTIx5)5LOusT",
-                  "extraState": {
-                    "dropdowns": []
-                  },
-                  "fields": {
-                    "TOKEN": " \"kind\": \"categoryToolbox\",\\n"
-                  },
-                  "next": {
-                    "block": {
-                      "type": "generate_token",
-                      "id": "[HEq5|;T=2.zfXZEV!%8",
-                      "extraState": {
-                        "dropdowns": []
-                      },
-                      "fields": {
-                        "TOKEN": " \"contents\": [\\n"
-                      },
-                      "next": {
-                        "block": {
-                          "type": "generate_statements2",
-                          "id": "vXl42):J5USWg{gPfT;j",
-                          "extraState": {
-                            "dropdowns": [
-                              {
-                                "field": "STATEMENTS",
-                                "options": [
-                                  {
-                                    "text": "LIST",
-                                    "id": "WErQreF}r?iV[@$,+]*_"
-                                  }
-                                ]
-                              }
-                            ]
-                          },
-                          "fields": {
-                            "STATEMENTS": "WErQreF}r?iV[@$,+]*_"
-                          },
-                          "next": {
-                            "block": {
-                              "type": "generate_token",
-                              "id": "vija+mST?pG-4B`pmGl?",
-                              "extraState": {
-                                "dropdowns": []
-                              },
-                              "fields": {
-                                "TOKEN": "\\n ]\\n}"
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      {
-        "type": "generate_code",
-        "id": "O6zRTkQ..]JuXHpTeEdx",
-        "x": 0,
-        "y": 2077,
-        "extraState": {
-          "dropdowns": [
-            {
-              "field": "TYPE",
-              "options": [
-                {
-                  "text": "toolbox_block",
-                  "id": "@}@4`E(EDclQ^%lG[_eJ"
-                },
-                {
-                  "text": "toolbox_block_json",
-                  "id": "]o@m4-nTKq8Y:)Zp=)v."
-                },
-                {
-                  "text": "toolbox_block_json_field",
-                  "id": "`$x2j8A^O6PW.ZB3D_S?"
-                },
-                {
-                  "text": "toolbox_block_json_input",
-                  "id": "sh)oVYDB0$1E5g4Ck^IK"
-                },
-                {
-                  "text": "toolbox_blocks",
-                  "id": ")pT5.tKmg]A7?o%JG9F0"
-                },
-                {
-                  "text": "toolbox_categories",
-                  "id": "W2MV#7=+J/@J{!#GfYDM"
-                },
-                {
-                  "text": "toolbox_category",
-                  "id": "[zsY.7A0O.=b9@oD%=6_"
-                },
-                {
-                  "text": "toolbox_label",
-                  "id": "KY@F+%SQ`ivNM844@ik+"
-                },
-                {
-                  "text": "toolbox_seperator",
-                  "id": "y]1$^*%::)M+67))#=QZ"
-                },
-                {
-                  "text": "toolbox_variable_category",
-                  "id": "rk/^b/MJQ9w^v|-#]+#!"
-                }
-              ]
-            }
-          ]
-        },
-        "fields": {
-          "LANGUAGE": "JSON",
-          "TYPE": "[zsY.7A0O.=b9@oD%=6_"
-        },
-        "inputs": {
-          "CODE": {
-            "block": {
-              "type": "generate_token",
-              "id": "Y3]Gx_IP0I/x.$3.K#AE",
-              "extraState": {
-                "dropdowns": []
-              },
-              "fields": {
-                "TOKEN": "{\\n"
-              },
-              "next": {
-                "block": {
-                  "type": "generate_token",
-                  "id": ",ttRh~w(a=VV.(+n[VhL",
-                  "extraState": {
-                    "dropdowns": []
-                  },
-                  "fields": {
-                    "TOKEN": " \"kind\": \"category\",\\n"
-                  },
-                  "next": {
-                    "block": {
-                      "type": "generate_token",
-                      "id": "lJl;9pm_h3|-L79WqV5f",
-                      "extraState": {
-                        "dropdowns": []
-                      },
-                      "fields": {
-                        "TOKEN": " \"contents\": [\\n"
-                      },
-                      "next": {
-                        "block": {
-                          "type": "generate_statements2",
-                          "id": "Bj{I6x%r0JLzF}t`xesR",
-                          "extraState": {
-                            "dropdowns": [
-                              {
-                                "field": "STATEMENTS",
-                                "options": [
-                                  {
-                                    "text": "LIST",
-                                    "id": "J@c+.Dy.U=Z{RP[z9Dt3"
-                                  }
-                                ]
-                              }
-                            ]
-                          },
-                          "fields": {
-                            "STATEMENTS": "J@c+.Dy.U=Z{RP[z9Dt3"
-                          },
-                          "next": {
-                            "block": {
-                              "type": "generate_token",
-                              "id": "4WVJrtiUqw-Peo^KG;:]",
-                              "extraState": {
-                                "dropdowns": []
-                              },
-                              "fields": {
-                                "TOKEN": " ]\\n},\\n"
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      {
-        "type": "generate_token",
-        "id": "|Yf!c{HS`};jm@vKBmM^",
-        "x": 0,
-        "y": 880,
-        "extraState": {
-          "dropdowns": []
-        },
-        "fields": {
-          "TOKEN": "{\\n  \"kind\": \"block\",\\n  \"type\": \\\""
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "JSON",
+      "TYPE": "@}@4`E(EDclQ^%lG[_eJ"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "GR/wCd|Mf87jOI^JgTe}"
         }
       }
-    ]
-  }
+    }
+  },
+  "6XP4QPj{XdZaRLj3@v/C": {
+    "type": "generate_code",
+    "id": "6XP4QPj{XdZaRLj3@v/C",
+    "x": 0,
+    "y": 594,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "toolbox_block",
+              "id": "@}@4`E(EDclQ^%lG[_eJ"
+            },
+            {
+              "text": "toolbox_block_all",
+              "id": "Pma%b?%%jXabHuIJC[;e"
+            },
+            {
+              "text": "toolbox_block_json",
+              "id": "]o@m4-nTKq8Y:)Zp=)v."
+            },
+            {
+              "text": "toolbox_block_json_field",
+              "id": "`$x2j8A^O6PW.ZB3D_S?"
+            },
+            {
+              "text": "toolbox_block_json_input",
+              "id": "sh)oVYDB0$1E5g4Ck^IK"
+            },
+            {
+              "text": "toolbox_blocks",
+              "id": ")pT5.tKmg]A7?o%JG9F0"
+            },
+            {
+              "text": "toolbox_categories",
+              "id": "W2MV#7=+J/@J{!#GfYDM"
+            },
+            {
+              "text": "toolbox_category",
+              "id": "[zsY.7A0O.=b9@oD%=6_"
+            },
+            {
+              "text": "toolbox_label",
+              "id": "KY@F+%SQ`ivNM844@ik+"
+            },
+            {
+              "text": "toolbox_seperator",
+              "id": "y]1$^*%::)M+67))#=QZ"
+            },
+            {
+              "text": "toolbox_variable_category",
+              "id": "rk/^b/MJQ9w^v|-#]+#!"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "JSON",
+      "TYPE": "]o@m4-nTKq8Y:)Zp=)v."
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "fPtUV~wD4qdqU:LB5(6l"
+        }
+      }
+    }
+  },
+  "RHz{SmAYNLznbX~al}fD": {
+    "type": "generate_code",
+    "id": "RHz{SmAYNLznbX~al}fD",
+    "x": 0,
+    "y": 1231,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "toolbox_block",
+              "id": "@}@4`E(EDclQ^%lG[_eJ"
+            },
+            {
+              "text": "toolbox_block_all",
+              "id": "Pma%b?%%jXabHuIJC[;e"
+            },
+            {
+              "text": "toolbox_block_json",
+              "id": "]o@m4-nTKq8Y:)Zp=)v."
+            },
+            {
+              "text": "toolbox_block_json_field",
+              "id": "`$x2j8A^O6PW.ZB3D_S?"
+            },
+            {
+              "text": "toolbox_block_json_input",
+              "id": "sh)oVYDB0$1E5g4Ck^IK"
+            },
+            {
+              "text": "toolbox_blocks",
+              "id": ")pT5.tKmg]A7?o%JG9F0"
+            },
+            {
+              "text": "toolbox_categories",
+              "id": "W2MV#7=+J/@J{!#GfYDM"
+            },
+            {
+              "text": "toolbox_category",
+              "id": "[zsY.7A0O.=b9@oD%=6_"
+            },
+            {
+              "text": "toolbox_label",
+              "id": "KY@F+%SQ`ivNM844@ik+"
+            },
+            {
+              "text": "toolbox_seperator",
+              "id": "y]1$^*%::)M+67))#=QZ"
+            },
+            {
+              "text": "toolbox_variable_category",
+              "id": "rk/^b/MJQ9w^v|-#]+#!"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "JSON",
+      "TYPE": "`$x2j8A^O6PW.ZB3D_S?"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "(d;%6=sAkS^M/=n6jv;P"
+        }
+      }
+    }
+  },
+  "D4a?}}[37*+rDbppxqMV": {
+    "type": "generate_code",
+    "id": "D4a?}}[37*+rDbppxqMV",
+    "x": 0,
+    "y": 1424,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "toolbox_block",
+              "id": "@}@4`E(EDclQ^%lG[_eJ"
+            },
+            {
+              "text": "toolbox_block_all",
+              "id": "Pma%b?%%jXabHuIJC[;e"
+            },
+            {
+              "text": "toolbox_block_json",
+              "id": "]o@m4-nTKq8Y:)Zp=)v."
+            },
+            {
+              "text": "toolbox_block_json_field",
+              "id": "`$x2j8A^O6PW.ZB3D_S?"
+            },
+            {
+              "text": "toolbox_block_json_input",
+              "id": "sh)oVYDB0$1E5g4Ck^IK"
+            },
+            {
+              "text": "toolbox_blocks",
+              "id": ")pT5.tKmg]A7?o%JG9F0"
+            },
+            {
+              "text": "toolbox_categories",
+              "id": "W2MV#7=+J/@J{!#GfYDM"
+            },
+            {
+              "text": "toolbox_category",
+              "id": "[zsY.7A0O.=b9@oD%=6_"
+            },
+            {
+              "text": "toolbox_label",
+              "id": "KY@F+%SQ`ivNM844@ik+"
+            },
+            {
+              "text": "toolbox_seperator",
+              "id": "y]1$^*%::)M+67))#=QZ"
+            },
+            {
+              "text": "toolbox_variable_category",
+              "id": "rk/^b/MJQ9w^v|-#]+#!"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "JSON",
+      "TYPE": "sh)oVYDB0$1E5g4Ck^IK"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "LFFfwh2vpNZ*ifkKl+*u"
+        }
+      }
+    }
+  },
+  "k38QUF`/[RyjiQ.9sm=N": {
+    "type": "generate_code",
+    "id": "k38QUF`/[RyjiQ.9sm=N",
+    "x": 0,
+    "y": 1617,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "toolbox_block",
+              "id": "@}@4`E(EDclQ^%lG[_eJ"
+            },
+            {
+              "text": "toolbox_block_all",
+              "id": "Pma%b?%%jXabHuIJC[;e"
+            },
+            {
+              "text": "toolbox_block_json",
+              "id": "]o@m4-nTKq8Y:)Zp=)v."
+            },
+            {
+              "text": "toolbox_block_json_field",
+              "id": "`$x2j8A^O6PW.ZB3D_S?"
+            },
+            {
+              "text": "toolbox_block_json_input",
+              "id": "sh)oVYDB0$1E5g4Ck^IK"
+            },
+            {
+              "text": "toolbox_blocks",
+              "id": ")pT5.tKmg]A7?o%JG9F0"
+            },
+            {
+              "text": "toolbox_categories",
+              "id": "W2MV#7=+J/@J{!#GfYDM"
+            },
+            {
+              "text": "toolbox_category",
+              "id": "[zsY.7A0O.=b9@oD%=6_"
+            },
+            {
+              "text": "toolbox_label",
+              "id": "KY@F+%SQ`ivNM844@ik+"
+            },
+            {
+              "text": "toolbox_seperator",
+              "id": "y]1$^*%::)M+67))#=QZ"
+            },
+            {
+              "text": "toolbox_variable_category",
+              "id": "rk/^b/MJQ9w^v|-#]+#!"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "JSON",
+      "TYPE": "rk/^b/MJQ9w^v|-#]+#!"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "6zy{64%4ssIqGC6D2O:/"
+        }
+      }
+    }
+  },
+  "[50H#Og2J}4CUJ4o4BUS": {
+    "type": "generate_code",
+    "id": "[50H#Og2J}4CUJ4o4BUS",
+    "x": 0,
+    "y": 1706,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "toolbox_block",
+              "id": "@}@4`E(EDclQ^%lG[_eJ"
+            },
+            {
+              "text": "toolbox_block_all",
+              "id": "Pma%b?%%jXabHuIJC[;e"
+            },
+            {
+              "text": "toolbox_block_json",
+              "id": "]o@m4-nTKq8Y:)Zp=)v."
+            },
+            {
+              "text": "toolbox_block_json_field",
+              "id": "`$x2j8A^O6PW.ZB3D_S?"
+            },
+            {
+              "text": "toolbox_block_json_input",
+              "id": "sh)oVYDB0$1E5g4Ck^IK"
+            },
+            {
+              "text": "toolbox_blocks",
+              "id": ")pT5.tKmg]A7?o%JG9F0"
+            },
+            {
+              "text": "toolbox_categories",
+              "id": "W2MV#7=+J/@J{!#GfYDM"
+            },
+            {
+              "text": "toolbox_category",
+              "id": "[zsY.7A0O.=b9@oD%=6_"
+            },
+            {
+              "text": "toolbox_label",
+              "id": "KY@F+%SQ`ivNM844@ik+"
+            },
+            {
+              "text": "toolbox_seperator",
+              "id": "y]1$^*%::)M+67))#=QZ"
+            },
+            {
+              "text": "toolbox_variable_category",
+              "id": "rk/^b/MJQ9w^v|-#]+#!"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "JSON",
+      "TYPE": "y]1$^*%::)M+67))#=QZ"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "P;+,ay-c$p/VA=l,jH%H"
+        }
+      }
+    }
+  },
+  "NH{C]Nmg/9d=z.r5l*Wr": {
+    "type": "generate_code",
+    "id": "NH{C]Nmg/9d=z.r5l*Wr",
+    "x": 0,
+    "y": 1847,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "toolbox_block",
+              "id": "@}@4`E(EDclQ^%lG[_eJ"
+            },
+            {
+              "text": "toolbox_block_all",
+              "id": "Pma%b?%%jXabHuIJC[;e"
+            },
+            {
+              "text": "toolbox_block_json",
+              "id": "]o@m4-nTKq8Y:)Zp=)v."
+            },
+            {
+              "text": "toolbox_block_json_field",
+              "id": "`$x2j8A^O6PW.ZB3D_S?"
+            },
+            {
+              "text": "toolbox_block_json_input",
+              "id": "sh)oVYDB0$1E5g4Ck^IK"
+            },
+            {
+              "text": "toolbox_blocks",
+              "id": ")pT5.tKmg]A7?o%JG9F0"
+            },
+            {
+              "text": "toolbox_categories",
+              "id": "W2MV#7=+J/@J{!#GfYDM"
+            },
+            {
+              "text": "toolbox_category",
+              "id": "[zsY.7A0O.=b9@oD%=6_"
+            },
+            {
+              "text": "toolbox_label",
+              "id": "KY@F+%SQ`ivNM844@ik+"
+            },
+            {
+              "text": "toolbox_seperator",
+              "id": "y]1$^*%::)M+67))#=QZ"
+            },
+            {
+              "text": "toolbox_variable_category",
+              "id": "rk/^b/MJQ9w^v|-#]+#!"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "JSON",
+      "TYPE": "KY@F+%SQ`ivNM844@ik+"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "G8MyL3Bzcp%KQcDLr)W+"
+        }
+      }
+    }
+  },
+  "_ahKCG|?l{BrX0gia7vX": {
+    "type": "generate_code",
+    "id": "_ahKCG|?l{BrX0gia7vX",
+    "x": 0,
+    "y": 1988,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "toolbox_block",
+              "id": "@}@4`E(EDclQ^%lG[_eJ"
+            },
+            {
+              "text": "toolbox_block_all",
+              "id": "Pma%b?%%jXabHuIJC[;e"
+            },
+            {
+              "text": "toolbox_block_json",
+              "id": "]o@m4-nTKq8Y:)Zp=)v."
+            },
+            {
+              "text": "toolbox_block_json_field",
+              "id": "`$x2j8A^O6PW.ZB3D_S?"
+            },
+            {
+              "text": "toolbox_block_json_input",
+              "id": "sh)oVYDB0$1E5g4Ck^IK"
+            },
+            {
+              "text": "toolbox_blocks",
+              "id": ")pT5.tKmg]A7?o%JG9F0"
+            },
+            {
+              "text": "toolbox_categories",
+              "id": "W2MV#7=+J/@J{!#GfYDM"
+            },
+            {
+              "text": "toolbox_category",
+              "id": "[zsY.7A0O.=b9@oD%=6_"
+            },
+            {
+              "text": "toolbox_label",
+              "id": "KY@F+%SQ`ivNM844@ik+"
+            },
+            {
+              "text": "toolbox_seperator",
+              "id": "y]1$^*%::)M+67))#=QZ"
+            },
+            {
+              "text": "toolbox_variable_category",
+              "id": "rk/^b/MJQ9w^v|-#]+#!"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "JSON",
+      "TYPE": ")pT5.tKmg]A7?o%JG9F0"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "t_f3+MR-L;~]w_8LuN-I"
+        }
+      }
+    }
+  },
+  "[`cazz@iQ8!.$-g7rn0V": {
+    "type": "generate_code",
+    "id": "[`cazz@iQ8!.$-g7rn0V",
+    "x": 0,
+    "y": 2181,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "toolbox_block",
+              "id": "@}@4`E(EDclQ^%lG[_eJ"
+            },
+            {
+              "text": "toolbox_block_all",
+              "id": "Pma%b?%%jXabHuIJC[;e"
+            },
+            {
+              "text": "toolbox_block_json",
+              "id": "]o@m4-nTKq8Y:)Zp=)v."
+            },
+            {
+              "text": "toolbox_block_json_field",
+              "id": "`$x2j8A^O6PW.ZB3D_S?"
+            },
+            {
+              "text": "toolbox_block_json_input",
+              "id": "sh)oVYDB0$1E5g4Ck^IK"
+            },
+            {
+              "text": "toolbox_blocks",
+              "id": ")pT5.tKmg]A7?o%JG9F0"
+            },
+            {
+              "text": "toolbox_categories",
+              "id": "W2MV#7=+J/@J{!#GfYDM"
+            },
+            {
+              "text": "toolbox_category",
+              "id": "[zsY.7A0O.=b9@oD%=6_"
+            },
+            {
+              "text": "toolbox_label",
+              "id": "KY@F+%SQ`ivNM844@ik+"
+            },
+            {
+              "text": "toolbox_seperator",
+              "id": "y]1$^*%::)M+67))#=QZ"
+            },
+            {
+              "text": "toolbox_variable_category",
+              "id": "rk/^b/MJQ9w^v|-#]+#!"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "JSON",
+      "TYPE": "W2MV#7=+J/@J{!#GfYDM"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "2784YIp)?-[[Lgm|0+YR"
+        }
+      }
+    }
+  },
+  "O6zRTkQ..]JuXHpTeEdx": {
+    "type": "generate_code",
+    "id": "O6zRTkQ..]JuXHpTeEdx",
+    "x": 0,
+    "y": 2374,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "toolbox_block",
+              "id": "@}@4`E(EDclQ^%lG[_eJ"
+            },
+            {
+              "text": "toolbox_block_all",
+              "id": "Pma%b?%%jXabHuIJC[;e"
+            },
+            {
+              "text": "toolbox_block_json",
+              "id": "]o@m4-nTKq8Y:)Zp=)v."
+            },
+            {
+              "text": "toolbox_block_json_field",
+              "id": "`$x2j8A^O6PW.ZB3D_S?"
+            },
+            {
+              "text": "toolbox_block_json_input",
+              "id": "sh)oVYDB0$1E5g4Ck^IK"
+            },
+            {
+              "text": "toolbox_blocks",
+              "id": ")pT5.tKmg]A7?o%JG9F0"
+            },
+            {
+              "text": "toolbox_categories",
+              "id": "W2MV#7=+J/@J{!#GfYDM"
+            },
+            {
+              "text": "toolbox_category",
+              "id": "[zsY.7A0O.=b9@oD%=6_"
+            },
+            {
+              "text": "toolbox_label",
+              "id": "KY@F+%SQ`ivNM844@ik+"
+            },
+            {
+              "text": "toolbox_seperator",
+              "id": "y]1$^*%::)M+67))#=QZ"
+            },
+            {
+              "text": "toolbox_variable_category",
+              "id": "rk/^b/MJQ9w^v|-#]+#!"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "JSON",
+      "TYPE": "[zsY.7A0O.=b9@oD%=6_"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "Y3]Gx_IP0I/x.$3.K#AE"
+        }
+      }
+    }
+  },
+  "|Yf!c{HS`};jm@vKBmM^": {
+    "type": "generate_token",
+    "id": "|Yf!c{HS`};jm@vKBmM^",
+    "x": 0,
+    "y": 1177,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "{\\n  \"kind\": \"block\",\\n  \"type\": \\\""
+    }
+  },
+  ".y5,0uqk}m}lmi?FEAc*": {
+    "type": "generate_code",
+    "id": ".y5,0uqk}m}lmi?FEAc*",
+    "x": 0,
+    "y": 297,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "toolbox_block",
+              "id": "@}@4`E(EDclQ^%lG[_eJ"
+            },
+            {
+              "text": "toolbox_block_all",
+              "id": "Pma%b?%%jXabHuIJC[;e"
+            },
+            {
+              "text": "toolbox_block_json",
+              "id": "]o@m4-nTKq8Y:)Zp=)v."
+            },
+            {
+              "text": "toolbox_block_json_field",
+              "id": "`$x2j8A^O6PW.ZB3D_S?"
+            },
+            {
+              "text": "toolbox_block_json_input",
+              "id": "sh)oVYDB0$1E5g4Ck^IK"
+            },
+            {
+              "text": "toolbox_blocks",
+              "id": ")pT5.tKmg]A7?o%JG9F0"
+            },
+            {
+              "text": "toolbox_categories",
+              "id": "W2MV#7=+J/@J{!#GfYDM"
+            },
+            {
+              "text": "toolbox_category",
+              "id": "[zsY.7A0O.=b9@oD%=6_"
+            },
+            {
+              "text": "toolbox_label",
+              "id": "KY@F+%SQ`ivNM844@ik+"
+            },
+            {
+              "text": "toolbox_seperator",
+              "id": "y]1$^*%::)M+67))#=QZ"
+            },
+            {
+              "text": "toolbox_variable_category",
+              "id": "rk/^b/MJQ9w^v|-#]+#!"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "JSON",
+      "TYPE": "Pma%b?%%jXabHuIJC[;e"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "ReM981U9/}Z40^0VN.nA"
+        }
+      }
+    }
+  },
+  "GR/wCd|Mf87jOI^JgTe}": {
+    "type": "generate_javascript",
+    "id": "GR/wCd|Mf87jOI^JgTe}",
+    "x": 21,
+    "y": 26,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "JAVASCRIPT": "if (block.getSurroundParent() && block.getSurroundParent().type!=\"toolbox_block_json_input\") {"
+    },
+    "next": {
+      "block": {
+        "id": "4#Rb9s3-@Ntu8+n]O!U^"
+      }
+    }
+  },
+  "fPtUV~wD4qdqU:LB5(6l": {
+    "type": "generate_javascript",
+    "id": "fPtUV~wD4qdqU:LB5(6l",
+    "x": 21,
+    "y": 620,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "JAVASCRIPT": "if (block.getSurroundParent() && block.getSurroundParent().type!=\"toolbox_block_json_input\") {"
+    },
+    "next": {
+      "block": {
+        "id": "D9TpF{4xABJ-,4$ufPLy"
+      }
+    }
+  },
+  "(d;%6=sAkS^M/=n6jv;P": {
+    "type": "generate_token",
+    "id": "(d;%6=sAkS^M/=n6jv;P",
+    "x": 21,
+    "y": 1257,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "  \""
+    },
+    "next": {
+      "block": {
+        "id": "UvBb+Awr4luZUKi,CwEi"
+      }
+    }
+  },
+  "LFFfwh2vpNZ*ifkKl+*u": {
+    "type": "generate_token",
+    "id": "LFFfwh2vpNZ*ifkKl+*u",
+    "x": 21,
+    "y": 1450,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "  \""
+    },
+    "next": {
+      "block": {
+        "id": "Dl;A!G~jFF-vn^5J,/_."
+      }
+    }
+  },
+  "6zy{64%4ssIqGC6D2O:/": {
+    "type": "generate_token",
+    "id": "6zy{64%4ssIqGC6D2O:/",
+    "x": 21,
+    "y": 1643,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "{\\n   \"kind\": \"category\",\\n   \"name\": \"Variables\",\\n   \"custom\": \"VARIABLE\"\\n},"
+    }
+  },
+  "P;+,ay-c$p/VA=l,jH%H": {
+    "type": "generate_token",
+    "id": "P;+,ay-c$p/VA=l,jH%H",
+    "x": 21,
+    "y": 1732,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "{ \\n  \"kind\": \"sep\",\\n  \"gap\": \""
+    },
+    "next": {
+      "block": {
+        "id": "E?3V%?3yB9GQEZ54}CIl"
+      }
+    }
+  },
+  "G8MyL3Bzcp%KQcDLr)W+": {
+    "type": "generate_token",
+    "id": "G8MyL3Bzcp%KQcDLr)W+",
+    "x": 21,
+    "y": 1873,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "{ \\n  \"kind\": \"label\",\\n  \"text\": \""
+    },
+    "next": {
+      "block": {
+        "id": "iWdNTK4e.dJ?T3wxg;yF"
+      }
+    }
+  },
+  "t_f3+MR-L;~]w_8LuN-I": {
+    "type": "generate_token",
+    "id": "t_f3+MR-L;~]w_8LuN-I",
+    "x": 21,
+    "y": 2014,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "{\\n"
+    },
+    "next": {
+      "block": {
+        "id": "/C3]Ib*0oeNzlfWn7hF$"
+      }
+    }
+  },
+  "2784YIp)?-[[Lgm|0+YR": {
+    "type": "generate_token",
+    "id": "2784YIp)?-[[Lgm|0+YR",
+    "x": 21,
+    "y": 2207,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "{\\n"
+    },
+    "next": {
+      "block": {
+        "id": "I3Iy~-Z{oTIx5)5LOusT"
+      }
+    }
+  },
+  "Y3]Gx_IP0I/x.$3.K#AE": {
+    "type": "generate_token",
+    "id": "Y3]Gx_IP0I/x.$3.K#AE",
+    "x": 21,
+    "y": 2400,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "{\\n"
+    },
+    "next": {
+      "block": {
+        "id": ",ttRh~w(a=VV.(+n[VhL"
+      }
+    }
+  },
+  "ReM981U9/}Z40^0VN.nA": {
+    "type": "generate_javascript",
+    "id": "ReM981U9/}Z40^0VN.nA",
+    "x": 21,
+    "y": 323,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "JAVASCRIPT": "if (block.getSurroundParent() && block.getSurroundParent().type!=\"toolbox_block_json_input\") {"
+    },
+    "next": {
+      "block": {
+        "id": "A6gnW+E92x@t@KGP1IKE"
+      }
+    }
+  },
+  "4#Rb9s3-@Ntu8+n]O!U^": {
+    "type": "generate_token",
+    "id": "4#Rb9s3-@Ntu8+n]O!U^",
+    "x": 21,
+    "y": 52,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "{\\n  \"kind\": \"block\",\\n  \"type\": \""
+    },
+    "next": {
+      "block": {
+        "id": "Mv=E8E[C?u.c{M1!DwB/"
+      }
+    }
+  },
+  "D9TpF{4xABJ-,4$ufPLy": {
+    "type": "generate_token",
+    "id": "D9TpF{4xABJ-,4$ufPLy",
+    "x": 21,
+    "y": 646,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "{\\n  \"kind\": \"block\",\\n  \"type\": \\\""
+    },
+    "next": {
+      "block": {
+        "id": "4?Aa~0~E=`$Hy#,3Rf0C"
+      }
+    }
+  },
+  "UvBb+Awr4luZUKi,CwEi": {
+    "type": "generate_field_value2",
+    "id": "UvBb+Awr4luZUKi,CwEi",
+    "x": 21,
+    "y": 1283,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "NAME",
+              "id": ":#!%|W!eLhdtDPVjPI7u"
+            },
+            {
+              "text": "NAME",
+              "id": ":#!%|W!eLhdtDPVjPI7u0"
+            },
+            {
+              "text": "VALUE",
+              "id": "lmsS1lI1i|Qk2XNxUdwq"
+            },
+            {
+              "text": "VALUE",
+              "id": "lmsS1lI1i|Qk2XNxUdwq0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": ":#!%|W!eLhdtDPVjPI7u"
+    },
+    "next": {
+      "block": {
+        "id": "(IXALQa,HP+N?o`^_F_k"
+      }
+    }
+  },
+  "Dl;A!G~jFF-vn^5J,/_.": {
+    "type": "generate_field_value2",
+    "id": "Dl;A!G~jFF-vn^5J,/_.",
+    "x": 21,
+    "y": 1476,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "NAME",
+              "id": "FU2@Bwss1d@w%fKadWXU"
+            },
+            {
+              "text": "NAME",
+              "id": "FU2@Bwss1d@w%fKadWXU0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "FU2@Bwss1d@w%fKadWXU"
+    },
+    "next": {
+      "block": {
+        "id": "Kcu:#PXpADuq;Y!BmD/i"
+      }
+    }
+  },
+  "E?3V%?3yB9GQEZ54}CIl": {
+    "type": "generate_field_value2",
+    "id": "E?3V%?3yB9GQEZ54}CIl",
+    "x": 21,
+    "y": 1758,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "GAP",
+              "id": "Ul?c|L`;abgVYeedNg:t"
+            },
+            {
+              "text": "GAP",
+              "id": "Ul?c|L`;abgVYeedNg:t0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "Ul?c|L`;abgVYeedNg:t"
+    },
+    "next": {
+      "block": {
+        "id": "snL%l5O/w=4FQ{=ys18k"
+      }
+    }
+  },
+  "iWdNTK4e.dJ?T3wxg;yF": {
+    "type": "generate_field_value2",
+    "id": "iWdNTK4e.dJ?T3wxg;yF",
+    "x": 21,
+    "y": 1899,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "TEXT",
+              "id": "M:F~MdYEVH~Mp8F,}2Gh"
+            },
+            {
+              "text": "TEXT",
+              "id": "M:F~MdYEVH~Mp8F,}2Gh0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "M:F~MdYEVH~Mp8F,}2Gh"
+    },
+    "next": {
+      "block": {
+        "id": "nk:zsl3vnWj@c*xZ_G,D"
+      }
+    }
+  },
+  "/C3]Ib*0oeNzlfWn7hF$": {
+    "type": "generate_token",
+    "id": "/C3]Ib*0oeNzlfWn7hF$",
+    "x": 21,
+    "y": 2040,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": " \"kind\": \"flyoutToolbox\",\\n"
+    },
+    "next": {
+      "block": {
+        "id": "~]~vJl}inHv/zf(`qCQC"
+      }
+    }
+  },
+  "I3Iy~-Z{oTIx5)5LOusT": {
+    "type": "generate_token",
+    "id": "I3Iy~-Z{oTIx5)5LOusT",
+    "x": 21,
+    "y": 2233,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": " \"kind\": \"categoryToolbox\",\\n"
+    },
+    "next": {
+      "block": {
+        "id": "[HEq5|;T=2.zfXZEV!%8"
+      }
+    }
+  },
+  ",ttRh~w(a=VV.(+n[VhL": {
+    "type": "generate_token",
+    "id": ",ttRh~w(a=VV.(+n[VhL",
+    "x": 21,
+    "y": 2426,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": " \"kind\": \"category\",\\n"
+    },
+    "next": {
+      "block": {
+        "id": "lJl;9pm_h3|-L79WqV5f"
+      }
+    }
+  },
+  "A6gnW+E92x@t@KGP1IKE": {
+    "type": "generate_token",
+    "id": "A6gnW+E92x@t@KGP1IKE",
+    "x": 21,
+    "y": 349,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "{\\n  \"kind\": \"block\",\\n  \"type\": \""
+    },
+    "next": {
+      "block": {
+        "id": "dk$^;HsXB/)]-Qe46a[["
+      }
+    }
+  },
+  "Mv=E8E[C?u.c{M1!DwB/": {
+    "type": "generate_field_value2",
+    "id": "Mv=E8E[C?u.c{M1!DwB/",
+    "x": 21,
+    "y": 78,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "TYPE",
+              "id": "rlUV{lIht-ZM-Ow2/U9#"
+            },
+            {
+              "text": "TYPE",
+              "id": "rlUV{lIht-ZM-Ow2/U9#0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "rlUV{lIht-ZM-Ow2/U9#"
+    },
+    "next": {
+      "block": {
+        "id": "[VGZ6u?FOP2;)Zfhi-xr"
+      }
+    }
+  },
+  "4?Aa~0~E=`$Hy#,3Rf0C": {
+    "type": "generate_field_value2",
+    "id": "4?Aa~0~E=`$Hy#,3Rf0C",
+    "x": 21,
+    "y": 672,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "TYPE",
+              "id": "e7I:EiZIClAvb3CIDgYG"
+            },
+            {
+              "text": "TYPE",
+              "id": "e7I:EiZIClAvb3CIDgYG0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "e7I:EiZIClAvb3CIDgYG"
+    },
+    "next": {
+      "block": {
+        "id": "YKTW~O(Q{$hrEm7%Tq78"
+      }
+    }
+  },
+  "(IXALQa,HP+N?o`^_F_k": {
+    "type": "generate_token",
+    "id": "(IXALQa,HP+N?o`^_F_k",
+    "x": 21,
+    "y": 1309,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "\" : \""
+    },
+    "next": {
+      "block": {
+        "id": "u,XB,bfUJ@vk]tD*Igif"
+      }
+    }
+  },
+  "Kcu:#PXpADuq;Y!BmD/i": {
+    "type": "generate_token",
+    "id": "Kcu:#PXpADuq;Y!BmD/i",
+    "x": 21,
+    "y": 1502,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "\" :"
+    },
+    "next": {
+      "block": {
+        "id": "IUR@~P+*H3!B$O]bFaQl"
+      }
+    }
+  },
+  "snL%l5O/w=4FQ{=ys18k": {
+    "type": "generate_token",
+    "id": "snL%l5O/w=4FQ{=ys18k",
+    "x": 21,
+    "y": 1784,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "\"\\n},\\n"
+    }
+  },
+  "nk:zsl3vnWj@c*xZ_G,D": {
+    "type": "generate_token",
+    "id": "nk:zsl3vnWj@c*xZ_G,D",
+    "x": 21,
+    "y": 1925,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "\"\\n},\\n"
+    }
+  },
+  "~]~vJl}inHv/zf(`qCQC": {
+    "type": "generate_token",
+    "id": "~]~vJl}inHv/zf(`qCQC",
+    "x": 21,
+    "y": 2066,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": " \"contents\": [\\n"
+    },
+    "next": {
+      "block": {
+        "id": "m:G1;H^[3N9_mUl-1^@I"
+      }
+    }
+  },
+  "[HEq5|;T=2.zfXZEV!%8": {
+    "type": "generate_token",
+    "id": "[HEq5|;T=2.zfXZEV!%8",
+    "x": 21,
+    "y": 2259,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": " \"contents\": [\\n"
+    },
+    "next": {
+      "block": {
+        "id": "vXl42):J5USWg{gPfT;j"
+      }
+    }
+  },
+  "lJl;9pm_h3|-L79WqV5f": {
+    "type": "generate_token",
+    "id": "lJl;9pm_h3|-L79WqV5f",
+    "x": 21,
+    "y": 2452,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": " \"contents\": [\\n"
+    },
+    "next": {
+      "block": {
+        "id": "Bj{I6x%r0JLzF}t`xesR"
+      }
+    }
+  },
+  "dk$^;HsXB/)]-Qe46a[[": {
+    "type": "generate_field_value2",
+    "id": "dk$^;HsXB/)]-Qe46a[[",
+    "x": 21,
+    "y": 375,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "TYPE",
+              "id": "V;L8*P3E^7)q+iyBqojQ0"
+            },
+            {
+              "text": "TYPE",
+              "id": "b=IngNh}k`B9BRT,4S1h0"
+            },
+            {
+              "text": "TYPE",
+              "id": "rlUV{lIht-ZM-Ow2/U9#"
+            },
+            {
+              "text": "TYPE",
+              "id": "rlUV{lIht-ZM-Ow2/U9#0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "rlUV{lIht-ZM-Ow2/U9#0"
+    },
+    "next": {
+      "block": {
+        "id": ";Uo.v#:x%+kxR)OMlEaD"
+      }
+    }
+  },
+  "[VGZ6u?FOP2;)Zfhi-xr": {
+    "type": "generate_token",
+    "id": "[VGZ6u?FOP2;)Zfhi-xr",
+    "x": 21,
+    "y": 104,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "\"\\n},\\n"
+    },
+    "next": {
+      "block": {
+        "id": "4E,2AhM{=#pH$l54N}.X"
+      }
+    }
+  },
+  "YKTW~O(Q{$hrEm7%Tq78": {
+    "type": "generate_token",
+    "id": "YKTW~O(Q{$hrEm7%Tq78",
+    "x": 21,
+    "y": 698,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "\", \\n  \"fields\": {\\n"
+    },
+    "next": {
+      "block": {
+        "id": "Qtd^;fpKli.%o~gnXL.,"
+      }
+    }
+  },
+  "u,XB,bfUJ@vk]tD*Igif": {
+    "type": "generate_field_value2",
+    "id": "u,XB,bfUJ@vk]tD*Igif",
+    "x": 21,
+    "y": 1335,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "NAME",
+              "id": ":#!%|W!eLhdtDPVjPI7u"
+            },
+            {
+              "text": "NAME",
+              "id": ":#!%|W!eLhdtDPVjPI7u0"
+            },
+            {
+              "text": "VALUE",
+              "id": "lmsS1lI1i|Qk2XNxUdwq"
+            },
+            {
+              "text": "VALUE",
+              "id": "lmsS1lI1i|Qk2XNxUdwq0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "lmsS1lI1i|Qk2XNxUdwq"
+    },
+    "next": {
+      "block": {
+        "id": "]CWm3kksH2QuLOqA;Whh"
+      }
+    }
+  },
+  "IUR@~P+*H3!B$O]bFaQl": {
+    "type": "generate_statements2",
+    "id": "IUR@~P+*H3!B$O]bFaQl",
+    "x": 21,
+    "y": 1528,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "STATEMENTS",
+          "options": [
+            {
+              "text": "BLOCKS",
+              "id": "/%:Hv=E`@VZBT]Tva(@O"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "STATEMENTS": "/%:Hv=E`@VZBT]Tva(@O"
+    },
+    "next": {
+      "block": {
+        "id": "AwJh3,xN(_Z~1!XAX52%"
+      }
+    }
+  },
+  "m:G1;H^[3N9_mUl-1^@I": {
+    "type": "generate_statements2",
+    "id": "m:G1;H^[3N9_mUl-1^@I",
+    "x": 21,
+    "y": 2092,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "STATEMENTS",
+          "options": [
+            {
+              "text": "LIST",
+              "id": "/#tqk^;!DBw6$,?M5Oss"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "STATEMENTS": "/#tqk^;!DBw6$,?M5Oss"
+    },
+    "next": {
+      "block": {
+        "id": "se/$x*?xokfYg1f8eQP."
+      }
+    }
+  },
+  "vXl42):J5USWg{gPfT;j": {
+    "type": "generate_statements2",
+    "id": "vXl42):J5USWg{gPfT;j",
+    "x": 21,
+    "y": 2285,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "STATEMENTS",
+          "options": [
+            {
+              "text": "LIST",
+              "id": "WErQreF}r?iV[@$,+]*_"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "STATEMENTS": "WErQreF}r?iV[@$,+]*_"
+    },
+    "next": {
+      "block": {
+        "id": "vija+mST?pG-4B`pmGl?"
+      }
+    }
+  },
+  "Bj{I6x%r0JLzF}t`xesR": {
+    "type": "generate_statements2",
+    "id": "Bj{I6x%r0JLzF}t`xesR",
+    "x": 21,
+    "y": 2478,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "STATEMENTS",
+          "options": [
+            {
+              "text": "LIST",
+              "id": "J@c+.Dy.U=Z{RP[z9Dt3"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "STATEMENTS": "J@c+.Dy.U=Z{RP[z9Dt3"
+    },
+    "next": {
+      "block": {
+        "id": "4WVJrtiUqw-Peo^KG;:]"
+      }
+    }
+  },
+  ";Uo.v#:x%+kxR)OMlEaD": {
+    "type": "generate_token",
+    "id": ";Uo.v#:x%+kxR)OMlEaD",
+    "x": 21,
+    "y": 401,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "\"\\n},\\n"
+    },
+    "next": {
+      "block": {
+        "id": "2!{X@+ionZuN9o]st51+"
+      }
+    }
+  },
+  "4E,2AhM{=#pH$l54N}.X": {
+    "type": "generate_javascript",
+    "id": "4E,2AhM{=#pH$l54N}.X",
+    "x": 21,
+    "y": 130,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "JAVASCRIPT": "} else {"
+    },
+    "next": {
+      "block": {
+        "id": ";0Sh@8z#=!fkOx){p9XS"
+      }
+    }
+  },
+  "Qtd^;fpKli.%o~gnXL.,": {
+    "type": "generate_statements2",
+    "id": "Qtd^;fpKli.%o~gnXL.,",
+    "x": 21,
+    "y": 724,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "STATEMENTS",
+          "options": [
+            {
+              "text": "FIELDS",
+              "id": "_OpLTgO!DM2x4qzRw/et"
+            },
+            {
+              "text": "INPUTS",
+              "id": "i:fVP]Pb`PrGjMR0,Z6c"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "STATEMENTS": "_OpLTgO!DM2x4qzRw/et"
+    },
+    "next": {
+      "block": {
+        "id": "M_V|?TfsbD+Z4odDjsU3"
+      }
+    }
+  },
+  "]CWm3kksH2QuLOqA;Whh": {
+    "type": "generate_token",
+    "id": "]CWm3kksH2QuLOqA;Whh",
+    "x": 21,
+    "y": 1361,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "\",\\n"
+    }
+  },
+  "AwJh3,xN(_Z~1!XAX52%": {
+    "type": "generate_token",
+    "id": "AwJh3,xN(_Z~1!XAX52%",
+    "x": 21,
+    "y": 1554,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": ""
+    }
+  },
+  "se/$x*?xokfYg1f8eQP.": {
+    "type": "generate_token",
+    "id": "se/$x*?xokfYg1f8eQP.",
+    "x": 21,
+    "y": 2118,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": " ]\\n};"
+    }
+  },
+  "vija+mST?pG-4B`pmGl?": {
+    "type": "generate_token",
+    "id": "vija+mST?pG-4B`pmGl?",
+    "x": 21,
+    "y": 2311,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "\\n ]\\n}"
+    }
+  },
+  "4WVJrtiUqw-Peo^KG;:]": {
+    "type": "generate_token",
+    "id": "4WVJrtiUqw-Peo^KG;:]",
+    "x": 21,
+    "y": 2504,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": " ]\\n},\\n"
+    }
+  },
+  "2!{X@+ionZuN9o]st51+": {
+    "type": "generate_javascript",
+    "id": "2!{X@+ionZuN9o]st51+",
+    "x": 21,
+    "y": 427,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "JAVASCRIPT": "} else {"
+    },
+    "next": {
+      "block": {
+        "id": "g{,=RMc7DjJ3jd{{:;}Q"
+      }
+    }
+  },
+  ";0Sh@8z#=!fkOx){p9XS": {
+    "type": "generate_token",
+    "id": ";0Sh@8z#=!fkOx){p9XS",
+    "x": 21,
+    "y": 156,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "{\\n  \"block\": {\\n    \"type\": \""
+    },
+    "next": {
+      "block": {
+        "id": "z3xl`?t9.x@VGwCFHX#b"
+      }
+    }
+  },
+  "M_V|?TfsbD+Z4odDjsU3": {
+    "type": "generate_token",
+    "id": "M_V|?TfsbD+Z4odDjsU3",
+    "x": 21,
+    "y": 750,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "  },\\n"
+    },
+    "next": {
+      "block": {
+        "id": "=Mq3QUcx7rW:FCPN#AeG"
+      }
+    }
+  },
+  "g{,=RMc7DjJ3jd{{:;}Q": {
+    "type": "generate_token",
+    "id": "g{,=RMc7DjJ3jd{{:;}Q",
+    "x": 21,
+    "y": 453,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "{\\n  \"block\": {\\n    \"type\": \""
+    },
+    "next": {
+      "block": {
+        "id": "7Sl!}$@)x3M^.K/^fS.O"
+      }
+    }
+  },
+  "z3xl`?t9.x@VGwCFHX#b": {
+    "type": "generate_field_value2",
+    "id": "z3xl`?t9.x@VGwCFHX#b",
+    "x": 21,
+    "y": 182,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "TYPE",
+              "id": "rlUV{lIht-ZM-Ow2/U9#"
+            },
+            {
+              "text": "TYPE",
+              "id": "rlUV{lIht-ZM-Ow2/U9#0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "rlUV{lIht-ZM-Ow2/U9#"
+    },
+    "next": {
+      "block": {
+        "id": "9=sXQt7tj56.M--D8CS9"
+      }
+    }
+  },
+  "=Mq3QUcx7rW:FCPN#AeG": {
+    "type": "generate_token",
+    "id": "=Mq3QUcx7rW:FCPN#AeG",
+    "x": 21,
+    "y": 776,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "  \"inputs\": {\\n"
+    },
+    "next": {
+      "block": {
+        "id": "y]Wt_|u5?lNcbVqgTbRE"
+      }
+    }
+  },
+  "7Sl!}$@)x3M^.K/^fS.O": {
+    "type": "generate_field_value2",
+    "id": "7Sl!}$@)x3M^.K/^fS.O",
+    "x": 21,
+    "y": 479,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "TYPE",
+              "id": "V;L8*P3E^7)q+iyBqojQ0"
+            },
+            {
+              "text": "TYPE",
+              "id": "b=IngNh}k`B9BRT,4S1h0"
+            },
+            {
+              "text": "TYPE",
+              "id": "rlUV{lIht-ZM-Ow2/U9#"
+            },
+            {
+              "text": "TYPE",
+              "id": "rlUV{lIht-ZM-Ow2/U9#0"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "rlUV{lIht-ZM-Ow2/U9#0"
+    },
+    "next": {
+      "block": {
+        "id": "mY^w~@0R4Mi9MYxMYdLp"
+      }
+    }
+  },
+  "9=sXQt7tj56.M--D8CS9": {
+    "type": "generate_token",
+    "id": "9=sXQt7tj56.M--D8CS9",
+    "x": 21,
+    "y": 208,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "\",\\n  }\\n},\\n"
+    },
+    "next": {
+      "block": {
+        "id": "^v_|T?V:bgEO]2G,egv;"
+      }
+    }
+  },
+  "y]Wt_|u5?lNcbVqgTbRE": {
+    "type": "generate_statements2",
+    "id": "y]Wt_|u5?lNcbVqgTbRE",
+    "x": 21,
+    "y": 802,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "STATEMENTS",
+          "options": [
+            {
+              "text": "FIELDS",
+              "id": "_OpLTgO!DM2x4qzRw/et"
+            },
+            {
+              "text": "INPUTS",
+              "id": "i:fVP]Pb`PrGjMR0,Z6c"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "STATEMENTS": "i:fVP]Pb`PrGjMR0,Z6c"
+    },
+    "next": {
+      "block": {
+        "id": "[At@+d!pE}`o2x9pNCTI"
+      }
+    }
+  },
+  "mY^w~@0R4Mi9MYxMYdLp": {
+    "type": "generate_token",
+    "id": "mY^w~@0R4Mi9MYxMYdLp",
+    "x": 21,
+    "y": 505,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "\",\\n  }\\n},\\n"
+    },
+    "next": {
+      "block": {
+        "id": "AXT%$wq2mDnNTt*riC6E"
+      }
+    }
+  },
+  "^v_|T?V:bgEO]2G,egv;": {
+    "type": "generate_javascript",
+    "id": "^v_|T?V:bgEO]2G,egv;",
+    "x": 21,
+    "y": 234,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "JAVASCRIPT": "}"
+    }
+  },
+  "[At@+d!pE}`o2x9pNCTI": {
+    "type": "generate_token",
+    "id": "[At@+d!pE}`o2x9pNCTI",
+    "x": 21,
+    "y": 828,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "  }\\n},\\n"
+    },
+    "next": {
+      "block": {
+        "id": "D45brF+v3`Mnj+2$GL@L"
+      }
+    }
+  },
+  "AXT%$wq2mDnNTt*riC6E": {
+    "type": "generate_javascript",
+    "id": "AXT%$wq2mDnNTt*riC6E",
+    "x": 21,
+    "y": 531,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "JAVASCRIPT": "}"
+    }
+  },
+  "D45brF+v3`Mnj+2$GL@L": {
+    "type": "generate_javascript",
+    "id": "D45brF+v3`Mnj+2$GL@L",
+    "x": 21,
+    "y": 854,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "JAVASCRIPT": "} else {"
+    },
+    "next": {
+      "block": {
+        "id": "::~uF:5l0C=_.Ru1wSi("
+      }
+    }
+  },
+  "::~uF:5l0C=_.Ru1wSi(": {
+    "type": "generate_token",
+    "id": "::~uF:5l0C=_.Ru1wSi(",
+    "x": 21,
+    "y": 880,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "{\\n  \"block\": {\\n    \"type\": \""
+    },
+    "next": {
+      "block": {
+        "id": "/_)P+]fo?I9]tONczzUt"
+      }
+    }
+  },
+  "/_)P+]fo?I9]tONczzUt": {
+    "type": "generate_field_value2",
+    "id": "/_)P+]fo?I9]tONczzUt",
+    "x": 21,
+    "y": 906,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "FIELDS",
+          "options": [
+            {
+              "text": "TYPE",
+              "id": "e7I:EiZIClAvb3CIDgYG"
+            },
+            {
+              "text": "TYPE",
+              "id": "e7I:EiZIClAvb3CIDgYG0"
+            },
+            {
+              "text": "TYPE",
+              "id": "rlUV{lIht-ZM-Ow2/U9#"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FIELDS": "rlUV{lIht-ZM-Ow2/U9#"
+    },
+    "next": {
+      "block": {
+        "id": "a1rD6=`A.DntwU6WXKj}"
+      }
+    }
+  },
+  "a1rD6=`A.DntwU6WXKj}": {
+    "type": "generate_token",
+    "id": "a1rD6=`A.DntwU6WXKj}",
+    "x": 21,
+    "y": 932,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "\", \\n    \"fields\": {\\n"
+    },
+    "next": {
+      "block": {
+        "id": "e0W6bTpdAw3)}}}t7_7L"
+      }
+    }
+  },
+  "e0W6bTpdAw3)}}}t7_7L": {
+    "type": "generate_statements2",
+    "id": "e0W6bTpdAw3)}}}t7_7L",
+    "x": 21,
+    "y": 958,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "STATEMENTS",
+          "options": [
+            {
+              "text": "FIELDS",
+              "id": "_OpLTgO!DM2x4qzRw/et"
+            },
+            {
+              "text": "INPUTS",
+              "id": "i:fVP]Pb`PrGjMR0,Z6c"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "STATEMENTS": "_OpLTgO!DM2x4qzRw/et"
+    },
+    "next": {
+      "block": {
+        "id": "dD66#4`:xkvM=HXQ7vwx"
+      }
+    }
+  },
+  "dD66#4`:xkvM=HXQ7vwx": {
+    "type": "generate_token",
+    "id": "dD66#4`:xkvM=HXQ7vwx",
+    "x": 21,
+    "y": 984,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "    },\\n"
+    },
+    "next": {
+      "block": {
+        "id": "d9HEVttn^nQkNJwfwctz"
+      }
+    }
+  },
+  "d9HEVttn^nQkNJwfwctz": {
+    "type": "generate_token",
+    "id": "d9HEVttn^nQkNJwfwctz",
+    "x": 21,
+    "y": 1010,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "    \"inputs\": {\\n"
+    },
+    "next": {
+      "block": {
+        "id": "F:OoeiMZnrm=T1rSuJ_s"
+      }
+    }
+  },
+  "F:OoeiMZnrm=T1rSuJ_s": {
+    "type": "generate_statements2",
+    "id": "F:OoeiMZnrm=T1rSuJ_s",
+    "x": 21,
+    "y": 1036,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "STATEMENTS",
+          "options": [
+            {
+              "text": "FIELDS",
+              "id": "_OpLTgO!DM2x4qzRw/et"
+            },
+            {
+              "text": "INPUTS",
+              "id": "i:fVP]Pb`PrGjMR0,Z6c"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "STATEMENTS": "i:fVP]Pb`PrGjMR0,Z6c"
+    },
+    "next": {
+      "block": {
+        "id": ":N_tVkQRI0$)g].K{MZQ"
+      }
+    }
+  },
+  ":N_tVkQRI0$)g].K{MZQ": {
+    "type": "generate_token",
+    "id": ":N_tVkQRI0$)g].K{MZQ",
+    "x": 21,
+    "y": 1062,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "    }\\n  },\\n"
+    },
+    "next": {
+      "block": {
+        "id": "~6rvlBk[3cF%vxtq(0UH"
+      }
+    }
+  },
+  "~6rvlBk[3cF%vxtq(0UH": {
+    "type": "generate_token",
+    "id": "~6rvlBk[3cF%vxtq(0UH",
+    "x": 21,
+    "y": 1088,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "},\\n"
+    },
+    "next": {
+      "block": {
+        "id": "[x?2@UrF~8S5W[-E^KII"
+      }
+    }
+  },
+  "[x?2@UrF~8S5W[-E^KII": {
+    "type": "generate_javascript",
+    "id": "[x?2@UrF~8S5W[-E^KII",
+    "x": 21,
+    "y": 1114,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "JAVASCRIPT": "}"
+    }
+  },
+  "top_blocks": [
+    "Rn_Csv$~@h97*Se/5uZD",
+    "6XP4QPj{XdZaRLj3@v/C",
+    "RHz{SmAYNLznbX~al}fD",
+    "D4a?}}[37*+rDbppxqMV",
+    "k38QUF`/[RyjiQ.9sm=N",
+    "[50H#Og2J}4CUJ4o4BUS",
+    "NH{C]Nmg/9d=z.r5l*Wr",
+    "_ahKCG|?l{BrX0gia7vX",
+    "[`cazz@iQ8!.$-g7rn0V",
+    "O6zRTkQ..]JuXHpTeEdx",
+    "|Yf!c{HS`};jm@vKBmM^",
+    ".y5,0uqk}m}lmi?FEAc*"
+  ],
+  "mergeable": true
 }

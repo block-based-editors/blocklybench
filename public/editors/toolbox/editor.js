@@ -22,7 +22,7 @@ Blockly.Blocks['toolbox_seperator'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
@@ -47,7 +47,7 @@ Blockly.Blocks['toolbox_seperator'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
@@ -95,7 +95,7 @@ Blockly.Blocks['toolbox_seperator'] = {
     {
       var field_name = state.dropdowns[i].field;
       var field = this.getField(field_name);
-      if (field.getOptions)
+      if (field.getOptions && !field.variable_) // is dropdown and not a variable
       { 
          var options = field.getOptions(false);
       }
@@ -144,7 +144,7 @@ Blockly.Blocks['toolbox_label'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
@@ -169,7 +169,7 @@ Blockly.Blocks['toolbox_label'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
@@ -217,7 +217,7 @@ Blockly.Blocks['toolbox_label'] = {
     {
       var field_name = state.dropdowns[i].field;
       var field = this.getField(field_name);
-      if (field.getOptions)
+      if (field.getOptions && !field.variable_) // is dropdown and not a variable
       { 
          var options = field.getOptions(false);
       }
@@ -265,7 +265,7 @@ Blockly.Blocks['toolbox_variable_category'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
@@ -290,7 +290,7 @@ Blockly.Blocks['toolbox_variable_category'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
@@ -338,7 +338,7 @@ Blockly.Blocks['toolbox_variable_category'] = {
     {
       var field_name = state.dropdowns[i].field;
       var field = this.getField(field_name);
-      if (field.getOptions)
+      if (field.getOptions && !field.variable_) // is dropdown and not a variable
       { 
          var options = field.getOptions(false);
       }
@@ -451,7 +451,7 @@ Blockly.Blocks['toolbox_block_json'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
@@ -476,7 +476,7 @@ Blockly.Blocks['toolbox_block_json'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
@@ -524,7 +524,7 @@ Blockly.Blocks['toolbox_block_json'] = {
     {
       var field_name = state.dropdowns[i].field;
       var field = this.getField(field_name);
-      if (field.getOptions)
+      if (field.getOptions && !field.variable_) // is dropdown and not a variable
       { 
          var options = field.getOptions(false);
       }
@@ -633,7 +633,7 @@ Blockly.Blocks['toolbox_block_json_input'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
@@ -658,7 +658,7 @@ Blockly.Blocks['toolbox_block_json_input'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
@@ -706,7 +706,7 @@ Blockly.Blocks['toolbox_block_json_input'] = {
     {
       var field_name = state.dropdowns[i].field;
       var field = this.getField(field_name);
-      if (field.getOptions)
+      if (field.getOptions && !field.variable_) // is dropdown and not a variable
       { 
          var options = field.getOptions(false);
       }
@@ -814,7 +814,7 @@ Blockly.Blocks['toolbox_block_json_field'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
@@ -839,7 +839,7 @@ Blockly.Blocks['toolbox_block_json_field'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
@@ -887,7 +887,7 @@ Blockly.Blocks['toolbox_block_json_field'] = {
     {
       var field_name = state.dropdowns[i].field;
       var field = this.getField(field_name);
-      if (field.getOptions)
+      if (field.getOptions && !field.variable_) // is dropdown and not a variable
       { 
          var options = field.getOptions(false);
       }
@@ -935,7 +935,7 @@ Blockly.Blocks['toolbox_blocks'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
@@ -960,7 +960,7 @@ Blockly.Blocks['toolbox_blocks'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
@@ -1008,7 +1008,7 @@ Blockly.Blocks['toolbox_blocks'] = {
     {
       var field_name = state.dropdowns[i].field;
       var field = this.getField(field_name);
-      if (field.getOptions)
+      if (field.getOptions && !field.variable_) // is dropdown and not a variable
       { 
          var options = field.getOptions(false);
       }
@@ -1099,7 +1099,7 @@ Blockly.Blocks['toolbox_block'] = {
     this.setPreviousStatement(true, "block");
     this.setNextStatement(true, "block");
     this.setColour(315);
- this.setTooltip("");
+ this.setTooltip("Your own blocks");
  this.setHelpUrl("");
   },
 
@@ -1115,7 +1115,7 @@ Blockly.Blocks['toolbox_block'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
@@ -1140,7 +1140,7 @@ Blockly.Blocks['toolbox_block'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
@@ -1188,7 +1188,7 @@ Blockly.Blocks['toolbox_block'] = {
     {
       var field_name = state.dropdowns[i].field;
       var field = this.getField(field_name);
-      if (field.getOptions)
+      if (field.getOptions && !field.variable_) // is dropdown and not a variable
       { 
          var options = field.getOptions(false);
       }
@@ -1236,7 +1236,7 @@ Blockly.Blocks['toolbox_categories'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
@@ -1261,7 +1261,7 @@ Blockly.Blocks['toolbox_categories'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
@@ -1309,7 +1309,7 @@ Blockly.Blocks['toolbox_categories'] = {
     {
       var field_name = state.dropdowns[i].field;
       var field = this.getField(field_name);
-      if (field.getOptions)
+      if (field.getOptions && !field.variable_) // is dropdown and not a variable
       { 
          var options = field.getOptions(false);
       }
@@ -1362,7 +1362,7 @@ Blockly.Blocks['toolbox_category'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
@@ -1387,7 +1387,7 @@ Blockly.Blocks['toolbox_category'] = {
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
 	    {	
-	      if (field.getOptions) // is dropdown
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
 		    {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
@@ -1435,7 +1435,129 @@ Blockly.Blocks['toolbox_category'] = {
     {
       var field_name = state.dropdowns[i].field;
       var field = this.getField(field_name);
-      if (field.getOptions)
+      if (field.getOptions && !field.variable_) // is dropdown and not a variable
+      { 
+         var options = field.getOptions(false);
+      }
+      else
+      {
+        var options = []
+      }
+      var ids = options.map(option => option[1]);
+      for (var j =0; j<state.dropdowns[i].options.length;j++)
+      {
+        var text = state.dropdowns[i].options[j].text;
+        var id = state.dropdowns[i].options[j].id;
+        if (!ids.includes(id)) {
+          options.push([text,id])
+        }
+      }
+      field.savedOptionsSet = true;
+    }
+  }
+
+
+
+};
+
+Blockly.Blocks['toolbox_block_all'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Block")
+        .appendField(new Blockly.FieldDropdown([["variables_get_dynamic","variables_get_dynamic"],["variables_set_dynamic","variables_set_dynamic"],["variables_get","variables_get"],["variables_set","variables_set"],["text","text"],["text_multiline","text_multiline"],["text_join","text_join"],["text_create_join_container","text_create_join_container"],["text_create_join_item","text_create_join_item"],["text_append","text_append"],["text_length","text_length"],["text_isEmpty","text_isEmpty"],["text_indexOf","text_indexOf"],["text_charAt","text_charAt"],["text_getSubstring","text_getSubstring"],["text_changeCase","text_changeCase"],["text_trim","text_trim"],["text_print","text_print"],["text_prompt_ext","text_prompt_ext"],["text_prompt","text_prompt"],["text_count","text_count"],["text_replace","text_replace"],["text_reverse","text_reverse"],["procedures_defnoreturn","procedures_defnoreturn"],["procedures_defreturn","procedures_defreturn"],["procedures_mutatorcontainer","procedures_mutatorcontainer"],["procedures_mutatorarg","procedures_mutatorarg"],["procedures_callnoreturn","procedures_callnoreturn"],["procedures_callreturn","procedures_callreturn"],["procedures_ifreturn","procedures_ifreturn"],["math_number","math_number"],["math_arithmetic","math_arithmetic"],["math_single","math_single"],["math_trig","math_trig"],["math_constant","math_constant"],["math_number_property","math_number_property"],["math_change","math_change"],["math_round","math_round"],["math_on_list","math_on_list"],["math_modulo","math_modulo"],["math_constrain","math_constrain"],["math_random_int","math_random_int"],["math_random_float","math_random_float"],["math_atan2","math_atan2"],["controls_repeat_ext","controls_repeat_ext"],["controls_repeat","controls_repeat"],["controls_whileUntil","controls_whileUntil"],["controls_for","controls_for"],["controls_forEach","controls_forEach"],["controls_flow_statements","controls_flow_statements"],["logic_boolean","logic_boolean"],["controls_if","controls_if"],["controls_ifelse","controls_ifelse"],["logic_compare","logic_compare"],["logic_operation","logic_operation"],["logic_negate","logic_negate"],["logic_null","logic_null"],["logic_ternary","logic_ternary"],["controls_if_if","controls_if_if"],["controls_if_elseif","controls_if_elseif"],["controls_if_else","controls_if_else"],["lists_create_empty","lists_create_empty"],["lists_repeat","lists_repeat"],["lists_reverse","lists_reverse"],["lists_isEmpty","lists_isEmpty"],["lists_length","lists_length"],["lists_create_with","lists_create_with"],["lists_create_with_container","lists_create_with_container"],["lists_create_with_item","lists_create_with_item"],["lists_indexOf","lists_indexOf"],["lists_getIndex","lists_getIndex"],["lists_setIndex","lists_setIndex"],["lists_getSublist","lists_getSublist"],["lists_sort","lists_sort"],["lists_split","lists_split"],["colour_picker","colour_picker"],["colour_random","colour_random"],["colour_rgb","colour_rgb"],["colour_blend","colour_blend"],["generate_code","generate_code"],["generate_code_variable","generate_code_variable"],["generate_token","generate_token"],["generate_token_if_next_block","generate_token_if_next_block"],["generate_list_length","generate_list_length"],["generate_list_index","generate_list_index"],["generate_comment","generate_comment"],["generate_field_value2","generate_field_value2"],["generate_field_text","generate_field_text"],["generate_statements3","generate_statements3"],["generate_statements2","generate_statements2"],["generate_values2","generate_values2"],["generate_javascript","generate_javascript"],["generate_parent_field_value","generate_parent_field_value"],["generate_indent","generate_indent"],["generate_block_type","generate_block_type"],["generate_token_if_length","generate_token_if_length"],["toolbox_seperator","toolbox_seperator"],["toolbox_label","toolbox_label"],["toolbox_variable_category","toolbox_variable_category"],["toolbox_block_json","toolbox_block_json"],["toolbox_block_json_input","toolbox_block_json_input"],["toolbox_block_json_field","toolbox_block_json_field"],["toolbox_blocks","toolbox_blocks"],["toolbox_block","toolbox_block"],["toolbox_categories","toolbox_categories"],["toolbox_category","toolbox_category"],["factory_base","factory_base"],["input_value","input_value"],["input_statement","input_statement"],["input_dummy","input_dummy"],["field_static","field_static"],["field_label_serializable","field_label_serializable"],["field_input","field_input"],["field_number","field_number"],["field_angle","field_angle"],["field_dropdown_statement","field_dropdown_statement"],["field_dropdown_fixed_item","field_dropdown_fixed_item"],["field_dropdown_workspaces","field_dropdown_workspaces"],["field_dropdown_function","field_dropdown_function"],["field_dropdown","field_dropdown"],["field_dropdown_container","field_dropdown_container"],["field_dropdown_option_text","field_dropdown_option_text"],["field_dropdown_option_image","field_dropdown_option_image"],["field_checkbox","field_checkbox"],["field_colour","field_colour"],["field_date","field_date"],["field_variable","field_variable"],["field_image","field_image"],["type_group","type_group"],["type_group_container","type_group_container"],["type_group_item","type_group_item"],["type_null","type_null"],["type_boolean","type_boolean"],["type_number","type_number"],["type_string","type_string"],["type_list","type_list"],["type_other","type_other"],["colour_hue","colour_hue"],["field_dropdown_url","field_dropdown_url"],["field_dropdown_url_split","field_dropdown_url_split"],["toolbox_block_copy","toolbox_block_copy"],["toolbox_block_cop","toolbox_block_cop"],["toolbox_block_co","toolbox_block_co"],["toolbox_block_c","toolbox_block_c"],["toolbox_block_","toolbox_block_"],["toolbox_block_a","toolbox_block_a"],["toolbox_block_al","toolbox_block_al"],["toolbox_block_all","toolbox_block_all"]]),"TYPE");
+    this.setPreviousStatement(true, "block");
+    this.setNextStatement(true, "block");
+    this.setColour(315);
+ this.setTooltip("All existing blocks");
+ this.setHelpUrl("");
+  },
+
+  /*
+   * Create XML to represent the output type.
+   * @return {!Element} XML storage element.
+   * @this {Blockly.Block}
+   */
+  mutationToDom: function() {
+    var container = Blockly.utils.xml.createElement('mutation');
+    var field;
+    for (var b = 0, input; input = this.inputList[b]; b++)
+    {
+      for (var d = 0, field; field = input.fieldRow[d]; d++)
+	    {	
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
+		    {
+          var dropdown = Blockly.utils.xml.createElement('dropdown');
+          dropdown.setAttribute('field', field.name);
+        
+          container.appendChild(dropdown)
+          var options = field.getOptions()
+          for (var i = 0; i < options.length; i++) {
+            var option = Blockly.utils.xml.createElement('option');
+            option.setAttribute('text', options[i][0]);
+            option.setAttribute('id', options[i][1]);
+            dropdown.appendChild(option);
+          }
+    		}
+      }
+    }
+    return container;
+  },
+  saveExtraState: function() {
+    var field;
+    var state = {'dropdowns':[]};
+    for (var b = 0, input; input = this.inputList[b]; b++)
+    {
+      for (var d = 0, field; field = input.fieldRow[d]; d++)
+	    {	
+	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
+		    {
+          var field_state = {'field':field.name, 'options' : []}
+          state.dropdowns.push(field_state);
+          var options = field.getOptions()
+          for (var i = 0; i < options.length; i++) {
+            var option_state = {'text': options[i][0], 'id':options[i][1]}
+            field_state.options.push(option_state)
+          }
+    		}
+      }
+    }
+    return state;
+  },
+
+  /**
+   * Parse XML to restore the output type.
+   * @param {!Element} xmlElement XML storage element.
+   * @this {Blockly.Block}
+   */
+  domToMutation: function(xmlElement) {
+
+    for (var i = 0, childNode; (childNode = xmlElement.childNodes[i]); i++) {
+      if (childNode.nodeName.toLowerCase() == 'dropdown') {
+        var field_name = childNode.getAttribute('field');
+        var field = this.getField(field_name);
+    
+        var options = field.getOptions(false)
+        var ids = options.map(option => option[1]);
+        
+        for (var j = 0, optionsElement; (optionsElement = childNode.childNodes[j]); j++) {
+          if (optionsElement.nodeName.toLowerCase() == 'option') {
+            var text = optionsElement.getAttribute('text');
+            var id = optionsElement.getAttribute('id');
+            if (!ids.includes(id)) {
+              options.push([text,id])
+            }
+          }
+        }
+        field.savedOptionsSet = true;     
+      }
+    }
+  },
+  loadExtraState: function(state) {
+    for (var i=0; i<state.dropdowns.length; i++)
+    {
+      var field_name = state.dropdowns[i].field;
+      var field = this.getField(field_name);
+      if (field.getOptions && !field.variable_) // is dropdown and not a variable
       { 
          var options = field.getOptions(false);
       }
@@ -1472,6 +1594,49 @@ Blockly.JSON.scrub_ = function(block, code, opt_thisOnly) {
 }
 
 Blockly.JSON['toolbox_block'] = function(block) {
+  var code ='';
+  if (block.getSurroundParent() && block.getSurroundParent().type!="toolbox_block_json_input") {
+  code += '{\n  "kind": "block",\n  "type": "';
+  var field = block.getField('TYPE');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+  code += '"\n},\n';
+  } else {
+  code += '{\n  "block": {\n    "type": "';
+  var field = block.getField('TYPE');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+  code += '",\n  }\n},\n';
+  }
+
+  // if this block is a 'value' then code + ORDER needs to be returned
+  if(block.outputConnection) {
+    return [code, Blockly.JSON.ORDER_ATOMIC];
+  }
+  else // no value block
+  {
+    return code;
+  }
+}
+;
+if (!Blockly.JSON) {
+  Blockly.JSON = new Blockly.Generator('JSON');
+  Blockly.JSON.ORDER_ATOMIC = 0;
+}
+
+Blockly.JSON.scrub_ = function(block, code, opt_thisOnly) {
+    const nextBlock = block.nextConnection && block.nextConnection.targetBlock();
+    const nextCode = opt_thisOnly ? '' : Blockly.JSON.blockToCode(nextBlock);
+    return code + nextCode;
+}
+
+Blockly.JSON['toolbox_block_all'] = function(block) {
   var code ='';
   if (block.getSurroundParent() && block.getSurroundParent().type!="toolbox_block_json_input") {
   code += '{\n  "kind": "block",\n  "type": "';
@@ -1557,6 +1722,8 @@ Blockly.JSON['toolbox_block_json'] = function(block) {
   }
 }
 ;
+code += '{\n  "kind": "block",\n  "type": \"';
+
 if (!Blockly.JSON) {
   Blockly.JSON = new Blockly.Generator('JSON');
   Blockly.JSON.ORDER_ATOMIC = 0;
@@ -1792,14 +1959,7 @@ Blockly.JSON['toolbox_category'] = function(block) {
   var code ='';
   code += '{\n';
   code += ' "kind": "category",\n';
-  code += ' "name" : "';
-  var field = block.getField('NAME');
-  if (field.getText()) {
-    code += field.getText();
-  } else {
-    code += field.getValue();
-  }
-  code += '",\n "contents": [\n';
+  code += ' "contents": [\n';
   code += Blockly.JSON.statementToCode(block, 'LIST');
   code += ' ]\n},\n';
 
@@ -1843,10 +2003,10 @@ BlocklyStorage.XML_ERROR = 'Could not load your saved file.\n' +
  */
 BlocklyStorage.backupBlocks_ = function(workspace, id) {
   if ('localStorage' in window) {
-    var xml = Blockly.Xml.workspaceToDom(workspace);
+    var json_text = Blockly.serialization.workspaces.save(workspace);
     // Gets the current URL, not including the hash.
-    var url = window.location.href.split('#')[0]+id;
-    window.localStorage.setItem(url, Blockly.Xml.domToText(xml));
+    var url = window.location.href.split('#')[0]+id+'.json';
+    window.localStorage.setItem(url, JSON.stringify(json_text));
   }
 };
 
@@ -1866,10 +2026,10 @@ BlocklyStorage.backupOnUnload = function(opt_workspace,id) {
  */
 BlocklyStorage.restoreBlocks = function(opt_workspace, id) {
   var url = window.location.href.split('#')[0];
-  if ('localStorage' in window && window.localStorage[url+id]) {
+  if ('localStorage' in window && window.localStorage[url+id+'.json']) {
     var workspace = opt_workspace || Blockly.getMainWorkspace();
-    var xml = Blockly.Xml.textToDom(window.localStorage[url+id]);
-    Blockly.Xml.domToWorkspace(xml, workspace);
+    var json = JSON.parse(window.localStorage[url+id+'.json']);
+    Blockly.serialization.workspaces.load(json, workspace);
    }
 };
 
@@ -2017,6 +2177,7 @@ toolbox = {
   {
    "kind": "category",
    "name" : "Basic",
+   "colour": "#666",
    "contents": [
     {
       "kind": "block",
@@ -2039,7 +2200,12 @@ toolbox = {
   {
    "kind": "category",
    "name" : "Special",
+   "colour": "#ccc",
    "contents": [
+    {
+      "kind": "block",
+      "type": "toolbox_block_json"
+    },
     {
       "kind": "block",
       "type": "toolbox_block_json"
@@ -2086,6 +2252,9 @@ var options = {
 	horizontalLayout : false, 
 	toolboxPosition : 'start', 
 	css : true, 
+  zoom: {
+    controls: true,
+  },
 	media : 'https://blockly-demo.appspot.com/static/media/', 
 	rtl : false, 
 	scrollbars : true, 
@@ -2133,21 +2302,45 @@ function updateDropdownRename(event)
   }
 }
 
+var workspace;
 
-/* Inject your workspace */ 
-var workspace = Blockly.inject("blocklyDiv", options);
+function vscode_start()
+{
+  inject();
 
-workspace.name="Concrete"
+  search();
 
-BlocklyStorage.restoreBlocks(workspace, 'concrete');
-BlocklyStorage.backupOnUnload(workspace, 'concrete');
+}
 
-workspace.addChangeListener(codeGeneration);
-workspace.addChangeListener(updateDropdownRename);
+function search()
+{
+  workspace.workspaceSearch = new WorkspaceSearch(workspace);
 
+  workspace.workspaceSearch.init();
+  workspace.workspaceSearch.open();
+}
 
-document.getElementById("save").addEventListener("click", saveFile);
+function inject()
+{
+  /* Inject your workspace */ 
+  workspace = Blockly.inject("blocklyDiv", options);
+  workspace.name="Concrete"
+}
 
+function start()
+{
+  inject();
+
+  BlocklyStorage.restoreBlocks(workspace, 'concrete');
+  BlocklyStorage.backupOnUnload(workspace, 'concrete');
+
+  workspace.addChangeListener(codeGeneration);
+  workspace.addChangeListener(updateDropdownRename);
+
+  search();
+  document.getElementById("save").addEventListener("click", saveFile);
+  add_load()
+}
 
 function get_json(workspace)
 {
@@ -2196,5 +2389,4 @@ function add_load()
   }
 }
 
-add_load()
 
