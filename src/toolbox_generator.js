@@ -54,6 +54,40 @@ Blockly.YAML.scrub_ = function(block, code, opt_thisOnly) {
     return code + nextCode;
 }
 
+Blockly.YAML['toolbox_block_all'] = function(block) {
+  var code ='';
+  if (block.getSurroundParent() && block.getSurroundParent().type!="toolbox_block_json_input") {
+  code += '{\n  "kind": "block",\n  "type": "';
+  var field = block.getField('TYPE');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+  code += '"\n},\n';
+  } else {
+  code += '{\n  "block": {\n    "type": "';
+  var field = block.getField('TYPE');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+  code += '",\n  }\n},\n';
+  }
+
+  // if this block is a 'value' then code + ORDER needs to be returned
+  if(block.outputConnection) {
+    return [code, Blockly.JSON.ORDER_ATOMIC];
+  }
+  else // no value block
+  {
+    return code;
+  }
+}
+;
+
+
 Blockly.YAML['toolbox_block_json'] = function(block) {
   var code ='';
   if (block.getSurroundParent() && block.getSurroundParent().type!="toolbox_block_json_input") {

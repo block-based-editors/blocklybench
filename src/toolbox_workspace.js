@@ -124,8 +124,12 @@ Toolbox.init_toolbox = function() {
 		  "expanded":"false",
 		   "contents": [
 			{
-			 "kind": "block",
-			 "type": "toolbox_block_json"
+				"kind": "block",
+				"type": "toolbox_block_all"
+			},
+			{
+				"kind": "block",
+				 "type": "toolbox_block_json"
 			},
 			{
 			 "kind": "block",
