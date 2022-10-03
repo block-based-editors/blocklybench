@@ -1,17 +1,7 @@
 
 import * as Blockly from 'blockly';
 
-Blockly.Code = new Blockly.Generator('Code');
-
-
-Blockly.Code.scrub_ = function(block, code, opt_thisOnly) {
-    const nextBlock = block.nextConnection && block.nextConnection.targetBlock();
-    const nextCode = opt_thisOnly ? '' : Blockly.Code.blockToCode(nextBlock);
-    return code + nextCode;
-}
-;
-
-Blockly.Code['generate_statements'] = function(block) {
+Blockly.JavaScript['generate_statements'] = function(block) {
   var statements = block.getFieldValue('STATEMENTS');
  
   var language = block.getSurroundParent().getFieldValue('LANGUAGE')
@@ -19,14 +9,14 @@ Blockly.Code['generate_statements'] = function(block) {
   return code;
 };
 
-Blockly.Code['generate_values'] = function(block) {
+Blockly.JavaScript['generate_values'] = function(block) {
   var value = block.getFieldValue('VALUE');
   var language = block.getSurroundParent().getFieldValue('LANGUAGE')
   var code = "code += Blockly." + language + ".valueToCode(block, '" + value +"', Blockly." +language +".ORDER_ATOMIC);\n"
   return code;
 };
 
-Blockly.Code['generate_values2'] = function(block) {
+Blockly.JavaScript['generate_values2'] = function(block) {
   var field = block.getField('VALUE');
   var value = field.getText();
   var language = block.getSurroundParent().getFieldValue('LANGUAGE')
@@ -34,14 +24,14 @@ Blockly.Code['generate_values2'] = function(block) {
   return code;
 };
 
-Blockly.Code['generate_token'] = function(block) {
+Blockly.JavaScript['generate_token'] = function(block) {
   var text_token = block.getFieldValue('TOKEN');
   
   var code = "code += '" + text_token + "';\n"
   return code;
 };
 
-Blockly.Code['generate_token_if_next_block'] = function(block) {
+Blockly.JavaScript['generate_token_if_next_block'] = function(block) {
   var code ='';
   code += 'if(block.getNextBlock()) {code += "';
   var field = block.getField('TOKEN');
@@ -58,11 +48,11 @@ Blockly.Code['generate_token_if_next_block'] = function(block) {
 
 
 
-Blockly.Code['generate_code'] = function(block) {
+Blockly.JavaScript['generate_code'] = function(block) {
   var text_language = block.getFieldValue('LANGUAGE');
 
   var text_type = block.getField('TYPE').getText();
-  var statements_name = Blockly.Code.statementToCode(block, 'CODE');
+  var statements_name = Blockly.JavaScript.statementToCode(block, 'CODE');
   
   var code = ''
   code += "if (!Blockly."+ text_language+") {\n"
@@ -89,10 +79,10 @@ Blockly.Code['generate_code'] = function(block) {
   return code;
 };
 
-Blockly.Code['generate_code_input'] = Blockly.Code['generate_code'] 
-Blockly.Code['generate_code_variable'] = Blockly.Code['generate_code'] 
+Blockly.JavaScript['generate_code_input'] = Blockly.JavaScript['generate_code'] 
+Blockly.JavaScript['generate_code_variable'] = Blockly.JavaScript['generate_code'] 
 
-Blockly.Code['generate_field_value'] = function(block) {
+Blockly.JavaScript['generate_field_value'] = function(block) {
 
   var dropdown_fields = block.getFieldValue('FIELDS');
   var code = '' 
@@ -106,7 +96,7 @@ Blockly.Code['generate_field_value'] = function(block) {
   return code;
 };
 
-Blockly.Code['generate_indent'] = function(block) {
+Blockly.JavaScript['generate_indent'] = function(block) {
   var code ='';
   code += 'Blockly.';
   code += block.getSurroundParent().getFieldValue('LANGUAGE');
@@ -121,7 +111,7 @@ Blockly.Code['generate_indent'] = function(block) {
 
   // if this block is a 'value' then code + ORDER needs to be returned
   if(block.outputConnection) {
-    return [code, Blockly.Code.ORDER_ATOMIC];
+    return [code, Blockly.JavaScript.ORDER_ATOMIC];
   }
   else // no value block
   {
@@ -131,7 +121,7 @@ Blockly.Code['generate_indent'] = function(block) {
 ;
 
 
-Blockly.Code['generate_block_type'] = function(block) {
+Blockly.JavaScript['generate_block_type'] = function(block) {
   var code ='';
   // should be code generation time
   code += "code += '" + block.getSurroundParent().getField('TYPE').getText() + "'\n"
@@ -140,7 +130,7 @@ Blockly.Code['generate_block_type'] = function(block) {
 ;
 
 
-Blockly.Code['generate_field_value2'] = function(block) {
+Blockly.JavaScript['generate_field_value2'] = function(block) {
 
   var dropdown_fields = block.getField('FIELDS');
   var code = '' 
@@ -153,7 +143,7 @@ Blockly.Code['generate_field_value2'] = function(block) {
   return code;
 };
 
-Blockly.Code['generate_statements3'] = function(block) {
+Blockly.JavaScript['generate_statements3'] = function(block) {
   var statements_field = block.getField('STATEMENTS');
   var ident = block.getFieldValue('INDENT');
   var statements = statements_field.getText();
@@ -172,7 +162,7 @@ Blockly.Code['generate_statements3'] = function(block) {
   return code;
 };
 
-Blockly.Code['generate_statements2'] = function(block) {
+Blockly.JavaScript['generate_statements2'] = function(block) {
   var statements_field = block.getField('STATEMENTS');
   var statements = statements_field.getText();
  
@@ -184,20 +174,20 @@ Blockly.Code['generate_statements2'] = function(block) {
 
 
 
-Blockly.Code['generate_javascript'] = function(block) {
+Blockly.JavaScript['generate_javascript'] = function(block) {
   var javascript = block.getFieldValue('JAVASCRIPT');
   var code = javascript + '\n';
   return code;
 };
 
-Blockly.Code['generate_comment'] = function(block) {
+Blockly.JavaScript['generate_comment'] = function(block) {
   var code ='';
   code += 'if (block.getCommentText()) {\n code += block.getCommentText();\n}\n';
   return code;
 }
 ;
 
-Blockly.Code['generate_list_index'] = function(block) {
+Blockly.JavaScript['generate_list_index'] = function(block) {
   var code ='';
   code += 'code += block.getSurroundParent().getDescendants().indexOf(block)-1;\n';
 
@@ -206,50 +196,7 @@ Blockly.Code['generate_list_index'] = function(block) {
 ;
 
 
-Blockly.Code['generate_token_if_length'] = function(block) {
-  var code ='';
-  code += 'var target = block.getInputTargetBlock("';
-  var field = block.getField('STATEMENTS');
-  if (field.getText()) {
-    code += field.getText();
-  } else {
-    code += field.getValue();
-  }
-  code += '");\n';
-  code += 'var l;\nif (target) {\n ';
-  code += '   l = target.getDescendants().length\n';
-  code += '} else {\n ';
-  code += '   l = 0\n';
-  code += '}\n';
-  code += 'if (l ';
-  var field = block.getField("OPERATOR"); code += field.getValue();code += ' ';
-  var field = block.getField('VALUE');
-  if (field.getText()) {
-    code += field.getText();
-  } else {
-    code += field.getValue();
-  }
-  code += ') {\n code += \'';
-  var field = block.getField('TOKEN');
-  if (field.getText()) {
-    code += field.getText();
-  } else {
-    code += field.getValue();
-  }
-  code += '\';\n}';
-
-  // if this block is a 'value' then code + ORDER needs to be returned
-  if(block.outputConnection) {
-    return [code, Blockly.Code.ORDER_ATOMIC];
-  }
-  else // no value block
-  {
-    return code;
-  }
-}
-;
-
-Blockly.Code['generate_parent_field_value'] = function(block) {
+Blockly.JavaScript['generate_parent_field_value'] = function(block) {
   var code ='';
   code += 'var parent = block.getSurroundParent();\n';
   code += 'if (parent)\n{  \n  code += parent.getFieldValue("';
@@ -263,7 +210,7 @@ Blockly.Code['generate_parent_field_value'] = function(block) {
 
   // if this block is a 'value' then code + ORDER needs to be returned
   if(block.outputConnection) {
-    return [code, Blockly.Code.ORDER_ATOMIC];
+    return [code, Blockly.JavaScript.ORDER_ATOMIC];
   }
   else // no value block
   {
@@ -274,7 +221,7 @@ Blockly.Code['generate_parent_field_value'] = function(block) {
 
 
 
-Blockly.Code['generate_list_length'] = function(block) {
+Blockly.JavaScript['generate_list_length'] = function(block) {
   var code ='';
   code += 'var target = block.getInputTargetBlock("';
   var field = block.getField('STATEMENTS');
@@ -296,7 +243,7 @@ Blockly.Code['generate_list_length'] = function(block) {
 ;
 
 
-Blockly.Code['generate_field_text'] = function(block) {
+Blockly.JavaScript['generate_field_text'] = function(block) {
   var code ='';
   code += 'var field = block.getField("';
   var field = block.getField('FIELDS');

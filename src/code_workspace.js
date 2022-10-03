@@ -15,7 +15,7 @@ CodeGen.code_workspace = null;
 
 CodeGen.get_code = function()
 {
-	return Blockly.Code.workspaceToCode(CodeGen.code_workspace);
+	return Blockly.JavaScript.workspaceToCode(CodeGen.code_workspace);
 }
 
 function add_options(selection, languages)
