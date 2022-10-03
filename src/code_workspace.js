@@ -86,98 +86,141 @@ CodeGen.init_code = function() {
     // clear for now just copy existing blocks
 	//var toolbox = document.getElementById("code_toolbox");
 
-    var toolbox = {
-"kind": "categoryToolbox",
- "contents": [
-  {
-  "kind":"category",
-  "name":"Basic",
-  "colour":"#090",
-  "expanded":"false",
-   "contents": [
-    {
-     "kind": "block",
-     "type": "generate_code"
-    },
-    {
-     "kind": "block",
-     "type": "generate_token"
-    },
-    {
-     "kind": "block",
-     "type": "generate_field_value2"
-    },
-    {
-      "kind": "block",
-      "type": "generate_parent_field_value"
-    },
-    {
-     "kind": "block",
-     "type": "generate_field_text"
-    },
-    {
-     "kind": "block",
-     "type": "generate_statements2"
-    },
-    {
-      "kind": "block",
-      "type": "generate_statements3"
-    },
-    {
-     "kind": "block",
-     "type": "generate_values2"
-    },
-    {
-     "kind": "block",
-     "type": "generate_comment"
-    },
-    {
-     "kind": "block",
-     "type": "generate_javascript"
-    },
-   ]
-  },
-  {
-  "kind":"category",
-  "name":"Extra",
-  "colour":"#399",
-  "expanded":"false",
-   "contents": [
-    {
-     "kind": "block",
-     "type": "generate_block_type"
-    },
-    {
-      "kind": "block",
-      "type": "generate_token_if_next_block"
-    },
-    {
-      "kind": "block",
-      "type": "generate_token_if_length"
-    },
-    {
-     "kind": "block",
-     "type": "generate_list_length"
-    },
-    {
-     "kind": "block",
-     "type": "generate_list_index"
-    },
-    {
-      "kind": "block",
-      "type": "generate_indent"
+  var toolbox = {
+    "kind": "categoryToolbox",
+    "contents": [
+     {
+      "kind": "category",
+      "name" : "Basic",
+      "colour": "#090",
+      "contents": [
+       {
+         "kind": "block",
+         "type": "generate_code"
+       },
+       {
+         "kind": "block",
+         "type": "generate_token"
+       },
+       {
+         "kind": "block",
+         "type": "generate_field_value2"
+       },
+       {
+         "kind": "block",
+         "type": "generate_parent_field_value"
+       },
+       {
+         "kind": "block",
+         "type": "generate_field_text"
+       },
+       {
+         "kind": "block",
+         "type": "generate_statements2"
+       },
+       {
+         "kind": "block",
+         "type": "generate_statements3"
+       },
+       {
+         "kind": "block",
+         "type": "generate_values2"
+       },
+       {
+         "kind": "block",
+         "type": "generate_comment"
+       },
+       {
+         "kind": "block",
+         "type": "generate_javascript"
+       },
+      ]
      },
      {
-      "kind": "block",
-      "type": "generate_code_variable"
+      "kind": "category",
+      "name" : "Extra",
+      "colour": "#399",
+      "contents": [
+       {
+         "kind": "block",
+         "type": "generate_block_type"
+       },
+       {
+         "kind": "block",
+         "type": "generate_list_length"
+       },
+       {
+         "kind": "block",
+         "type": "generate_list_index"
+       },
+      ]
      },
- 
-   ]
-  },
- ]
-}
-
-
+     {
+      "kind": "category",
+      "name" : "Logic",
+      "colour": "#399",
+      "contents": [
+       {
+         "kind": "block",
+         "type": "generate_javascript_value"
+       },
+       {
+         "kind": "block",
+         "type": "logic_compare"
+       },
+       {
+         "kind": "block",
+         "type": "logic_negate"
+       },
+       {
+         "kind": "block",
+         "type": "logic_boolean"
+       },
+       {
+         "kind": "block",
+         "type": "logic_null"
+       },
+       {
+         "kind": "block",
+         "type": "text"
+       },
+       {
+         "kind": "block",
+         "type": "math_number"
+       },
+       {
+         "kind": "block",
+         "type": "logic_operation"
+       },
+       {
+         "kind": "block",
+         "type": "controls_if"
+       },
+       {
+         "kind": "block",
+         "type": "variables_get"
+       },
+       {
+         "kind": "block",
+         "type": "procedures_defreturn"
+       },
+       {
+         "kind": "block",
+         "type": "procedures_defnoreturn"
+       },
+       {
+         "kind": "block",
+         "type": "lists_isEmpty"
+       },
+      ]
+     },
+     {
+        "kind": "category",
+        "name": "Variables",
+        "custom": "VARIABLE"
+     },
+    ]
+   }
 
 	var options = { 
 		toolbox : toolbox, 

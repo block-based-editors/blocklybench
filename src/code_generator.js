@@ -180,6 +180,28 @@ Blockly.JavaScript['generate_javascript'] = function(block) {
   return code;
 };
 
+Blockly.JavaScript['generate_javascript_value'] = function(block) {
+  var code ='';
+  var field = block.getField('JAVASCRIPT');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+
+  // if this block is a 'value' then code + ORDER needs to be returned
+  if(block.outputConnection) {
+    return [code, Blockly.JavaScript.ORDER_ATOMIC];
+  }
+  else // no value block
+  {
+    return code;
+  }
+}
+;
+
+
+
 Blockly.JavaScript['generate_comment'] = function(block) {
   var code ='';
   code += 'if (block.getCommentText()) {\n code += block.getCommentText();\n}\n';
