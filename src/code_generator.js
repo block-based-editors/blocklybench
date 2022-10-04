@@ -54,6 +54,7 @@ Blockly.JavaScript['generate_code'] = function(block) {
   var text_type = block.getField('TYPE').getText();
   var statements_name = Blockly.JavaScript.statementToCode(block, 'CODE');
   
+  // TODO now this piece of code is generated for every block, could be done once per languages as part of the 'finish'?
   var code = ''
   code += "if (!Blockly."+ text_language+") {\n"
   code += "  Blockly." + text_language + " = new Blockly.Generator('" + text_language +"');\n"
@@ -72,6 +73,7 @@ Blockly.JavaScript['generate_code'] = function(block) {
   code += "  var code ='';\n"; 
 
   code += statements_name + "\n";
+  // TODO: this can be known during code generation, no need to postpone to runtime
   code += "  // if this block is a 'value' then code + ORDER needs to be returned\n";
   code += "  if(block.outputConnection) {\n    return [code, Blockly." + text_language + ".ORDER_ATOMIC];\n  }\n  else // no value block\n"
   code += "  {\n    return code;\n  }\n}\n;"
