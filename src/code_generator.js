@@ -46,6 +46,48 @@ Blockly.JavaScript['generate_token_if_next_block'] = function(block) {
 }
 ;
 
+Blockly.JavaScript['generate_token_if_length'] = function(block) {
+  var code ='';
+  code += 'var target = block.getInputTargetBlock("';
+  var field = block.getField('STATEMENTS');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+  code += '");\n';
+  code += 'var l;\nif (target) {\n ';
+  code += '   l = target.getDescendants().length\n';
+  code += '} else {\n ';
+  code += '   l = 0\n';
+  code += '}\n';
+  code += 'if (l ';
+  var field = block.getField("OPERATOR"); code += field.getValue();code += ' ';
+  var field = block.getField('VALUE');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+  code += ') {\n code += \'';
+  var field = block.getField('TOKEN');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+  code += '\';\n}';
+
+  // if this block is a 'value' then code + ORDER needs to be returned
+  if(block.outputConnection) {
+    return [code, Blockly.Code.ORDER_ATOMIC];
+  }
+  else // no value block
+  {
+    return code;
+  }
+}
+;
 
 
 Blockly.JavaScript['generate_code'] = function(block) {
