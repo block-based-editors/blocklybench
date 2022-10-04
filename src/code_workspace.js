@@ -41,14 +41,20 @@ CodeGen.select_language = function(selection, language)
 	}
 }
 
-CodeGen.updateLanguageDropdown = function(event) {
+CodeGen.getLanguages = function()
+{
 	var blocks = CodeGen.code_workspace.getTopBlocks()
 	var languages = new Set()
 	for (var i=0;i<blocks.length; i++)
 	{
         languages.add(blocks[i].getFieldValue('LANGUAGE'))
 	}
-	
+  return languages
+}
+
+CodeGen.updateLanguageDropdown = function(event) {
+  var languages = CodeGen.getLanguages();
+
 	var selection = document.getElementById('language');
 
 	var index = -1
