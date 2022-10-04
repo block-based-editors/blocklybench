@@ -3,74 +3,23 @@
     "languageVersion": 0,
     "blocks": [
       {
-        "type": "generate_code",
-        "id": ":0cD.|H2!H@y53ZI*zY`",
-        "x": 59,
-        "y": 50,
+        "type": "generate_token_value",
+        "id": "|7FUYn{O-X;cix*TwG;a",
+        "x": 85,
+        "y": 162,
         "extraState": {
-          "dropdowns": [
-            {
-              "field": "TYPE",
-              "options": [
-                {
-                  "text": "generate_block_type",
-                  "id": "#4OvA*:`]xIm~vMT4Mlh"
-                },
-                {
-                  "text": "generate_code",
-                  "id": "V9H!^_3{~CrGy7ja+eIl"
-                },
-                {
-                  "text": "generate_comment",
-                  "id": "fvzU7gcaY2]~)82V3NN/"
-                },
-                {
-                  "text": "generate_field_text",
-                  "id": "poEkYGzs;l*7uGT=IM[:"
-                },
-                {
-                  "text": "generate_field_value2",
-                  "id": ")18([W*:S#Cb@T*,XXXt"
-                },
-                {
-                  "text": "generate_javascript",
-                  "id": "5GZ:!?w+,5Px!84;1yYa"
-                },
-                {
-                  "text": "generate_list_index",
-                  "id": "]U,PmB3PNod~=2j?[]!{"
-                },
-                {
-                  "text": "generate_list_length",
-                  "id": "w8^cC4IqtV55j!wCe+8H"
-                },
-                {
-                  "text": "generate_parent_field_value",
-                  "id": ":aPBYP/,9MaeYIUq65,8"
-                },
-                {
-                  "text": "generate_statements2",
-                  "id": "8Bh0n@]:|(Fu(pc5/A/I"
-                },
-                {
-                  "text": "generate_statements3",
-                  "id": "gyH3dW2_hs$+/3;rws4d"
-                },
-                {
-                  "text": "generate_token",
-                  "id": "#r-+LmT!38fi;}SKXqC5"
-                },
-                {
-                  "text": "generate_values2",
-                  "id": ":{0nD0iSF#7NmO}nXOr!"
-                }
-              ]
-            }
-          ]
+          "dropdowns": []
         },
-        "fields": {
-          "LANGUAGE": "YAML",
-          "TYPE": "#4OvA*:`]xIm~vMT4Mlh"
+        "inputs": {
+          "TOKEN": {
+            "block": {
+              "type": "text",
+              "id": "-1}!y{w4.Z0]IGy8:l@U",
+              "fields": {
+                "TEXT": "hi"
+              }
+            }
+          }
         }
       }
     ]

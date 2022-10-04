@@ -110,6 +110,19 @@ CodeGen.init_code = function() {
        },
        {
          "kind": "block",
+         "type": "generate_token_value", 
+         "fields": {
+         },
+         "inputs": {
+           "TOKEN" :  {
+             "block": {
+               "type": "text",
+             }
+           },
+         }
+       },
+       {
+         "kind": "block",
          "type": "generate_field_value2"
        },
        {
@@ -231,7 +244,7 @@ CodeGen.init_code = function() {
      },
     ]
    }
-   
+
 	var options = { 
 		toolbox : toolbox, 
 		collapse : false, 
