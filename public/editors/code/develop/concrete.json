@@ -1,72 +1,77 @@
 {
-  "`ZRQSFvaH372DjC=R8fN": {
-    "type": "generate_parent_field_value",
-    "id": "`ZRQSFvaH372DjC=R8fN",
-    "x": 65,
-    "y": 307,
+  ":0cD.|H2!H@y53ZI*zY`": {
+    "type": "generate_code",
+    "id": ":0cD.|H2!H@y53ZI*zY`",
+    "x": 59,
+    "y": 50,
     "extraState": {
       "dropdowns": [
         {
-          "field": "FIELDS",
+          "field": "TYPE",
           "options": [
             {
-              "text": "FIELDS",
-              "id": "Xj10cRN@NBRn)GU-GaF$"
+              "text": "generate_block_type",
+              "id": "#4OvA*:`]xIm~vMT4Mlh"
             },
             {
-              "text": "FIELDS",
-              "id": "vby;QyoRn~c!/kA2V+UW"
+              "text": "generate_code",
+              "id": "V9H!^_3{~CrGy7ja+eIl"
             },
             {
-              "text": "FIELDS",
-              "id": "vk|~2[V8C7ez!wWtBhdt"
+              "text": "generate_comment",
+              "id": "fvzU7gcaY2]~)82V3NN/"
             },
             {
-              "text": "INDENT",
-              "id": "Jrz~JN7i1;{o#XAll7b3"
+              "text": "generate_field_text",
+              "id": "poEkYGzs;l*7uGT=IM[:"
             },
             {
-              "text": "JAVASCRIPT",
-              "id": "X4?o%WT/Yp|VFADhYix4"
+              "text": "generate_field_value2",
+              "id": ")18([W*:S#Cb@T*,XXXt"
             },
             {
-              "text": "LANGUAGE",
-              "id": "Aw_3D^G2[PFBYKv%4U-{"
+              "text": "generate_javascript",
+              "id": "5GZ:!?w+,5Px!84;1yYa"
             },
             {
-              "text": "STATEMENTS",
-              "id": "`GAft(}~!ob_KUTmcHS|"
+              "text": "generate_list_index",
+              "id": "]U,PmB3PNod~=2j?[]!{"
             },
             {
-              "text": "STATEMENTS",
-              "id": "e^-OW:qsNd~zH8hW2Z;+"
+              "text": "generate_list_length",
+              "id": "w8^cC4IqtV55j!wCe+8H"
             },
             {
-              "text": "STATEMENTS",
-              "id": "kXJu)VQLTj1GF#U0XO#:"
+              "text": "generate_parent_field_value",
+              "id": ":aPBYP/,9MaeYIUq65,8"
             },
             {
-              "text": "TOKEN",
-              "id": ".iLI_zwq^49Oq)4|s`Qp"
+              "text": "generate_statements2",
+              "id": "8Bh0n@]:|(Fu(pc5/A/I"
             },
             {
-              "text": "TYPE",
-              "id": "}.S6Np{AH2P3Jvom4E,N"
+              "text": "generate_statements3",
+              "id": "gyH3dW2_hs$+/3;rws4d"
             },
             {
-              "text": "VALUE",
-              "id": "x/ub%Xxs[t(hL3$sIC$!"
+              "text": "generate_token",
+              "id": "#r-+LmT!38fi;}SKXqC5"
+            },
+            {
+              "text": "generate_values2",
+              "id": ":{0nD0iSF#7NmO}nXOr!"
             }
           ]
         }
       ]
     },
     "fields": {
-      "FIELDS": "Xj10cRN@NBRn)GU-GaF$"
+      "LANGUAGE": "YAML",
+      "TYPE": "#4OvA*:`]xIm~vMT4Mlh"
     }
   },
   "top_blocks": [
-    "`ZRQSFvaH372DjC=R8fN"
+    ":0cD.|H2!H@y53ZI*zY`"
   ],
   "mergeable": true
 }

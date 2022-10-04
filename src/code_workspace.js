@@ -157,14 +157,22 @@ CodeGen.init_code = function() {
        },
        {
          "kind": "block",
-         "type": "generate_list_index"
+         "type": "generate_parent_field_value"
+       },
+       {
+         "kind": "block",
+         "type": "generate_token_if_length"
+       },
+       {
+         "kind": "block",
+         "type": "generate_token_if_next_block"
        },
       ]
      },
      {
       "kind": "category",
       "name" : "Logic",
-      "colour": "#399",
+      "colour": "#366",
       "contents": [
        {
          "kind": "block",
@@ -172,7 +180,15 @@ CodeGen.init_code = function() {
        },
        {
          "kind": "block",
+         "type": "controls_if"
+       },
+       {
+         "kind": "block",
          "type": "logic_compare"
+       },
+       {
+         "kind": "block",
+         "type": "logic_operation"
        },
        {
          "kind": "block",
@@ -196,14 +212,6 @@ CodeGen.init_code = function() {
        },
        {
          "kind": "block",
-         "type": "logic_operation"
-       },
-       {
-         "kind": "block",
-         "type": "controls_if"
-       },
-       {
-         "kind": "block",
          "type": "variables_get"
        },
        {
@@ -214,10 +222,6 @@ CodeGen.init_code = function() {
          "kind": "block",
          "type": "procedures_defnoreturn"
        },
-       {
-         "kind": "block",
-         "type": "lists_isEmpty"
-       },
       ]
      },
      {
@@ -227,7 +231,7 @@ CodeGen.init_code = function() {
      },
     ]
    }
-
+   
 	var options = { 
 		toolbox : toolbox, 
 		collapse : false, 

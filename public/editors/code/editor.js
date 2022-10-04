@@ -2429,11 +2429,78 @@ toolbox = {
     },
     {
       "kind": "block",
-      "type": "generate_list_index"
+      "type": "generate_parent_field_value"
+    },
+    {
+      "kind": "block",
+      "type": "generate_token_if_length"
+    },
+    {
+      "kind": "block",
+      "type": "generate_token_if_next_block"
     },
    ]
   },
-
+  {
+   "kind": "category",
+   "name" : "Logic",
+   "colour": "#366",
+   "contents": [
+    {
+      "kind": "block",
+      "type": "generate_javascript_value"
+    },
+    {
+      "kind": "block",
+      "type": "controls_if"
+    },
+    {
+      "kind": "block",
+      "type": "logic_compare"
+    },
+    {
+      "kind": "block",
+      "type": "logic_operation"
+    },
+    {
+      "kind": "block",
+      "type": "logic_negate"
+    },
+    {
+      "kind": "block",
+      "type": "logic_boolean"
+    },
+    {
+      "kind": "block",
+      "type": "logic_null"
+    },
+    {
+      "kind": "block",
+      "type": "text"
+    },
+    {
+      "kind": "block",
+      "type": "math_number"
+    },
+    {
+      "kind": "block",
+      "type": "variables_get"
+    },
+    {
+      "kind": "block",
+      "type": "procedures_defreturn"
+    },
+    {
+      "kind": "block",
+      "type": "procedures_defnoreturn"
+    },
+   ]
+  },
+  {
+     "kind": "category",
+     "name": "Variables",
+     "custom": "VARIABLE"
+  },
  ]
 }
     
