@@ -1,0 +1,119 @@
+{
+  "blocks": {
+    "languageVersion": 0,
+    "blocks": [
+      {
+        "type": "onClick",
+        "id": "omCO/l)+6(DjW!i}}}su",
+        "x": 122,
+        "y": 151,
+        "extraState": {
+          "dropdowns": []
+        },
+        "fields": {
+          "NAME": {
+            "id": "y/(]EGAE%io55ERK740]"
+          }
+        },
+        "inputs": {
+          "STATEMENTS": {
+            "block": {
+              "type": "spot_set_prop",
+              "id": "E=0+prCJ)}c[~F#c@2J`",
+              "extraState": {
+                "dropdowns": [
+                  {
+                    "field": "PROPERTY",
+                    "options": [
+                      {
+                        "text": "position",
+                        "id": "position"
+                      },
+                      {
+                        "text": "rotation",
+                        "id": "rotation"
+                      },
+                      {
+                        "text": "is visible",
+                        "id": "isVisible"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "fields": {
+                "PROPERTY": "position",
+                "NAME": {
+                  "id": "y/(]EGAE%io55ERK740]"
+                }
+              },
+              "inputs": {
+                "INPUT": {
+                  "block": {
+                    "type": "Vector3_static",
+                    "id": "Ac8KU54;0II5@B.x.*1h",
+                    "extraState": {
+                      "dropdowns": [
+                        {
+                          "field": "VECTOR",
+                          "options": [
+                            {
+                              "text": "back",
+                              "id": "0, 0, -1"
+                            },
+                            {
+                              "text": "down",
+                              "id": "0, -1, 0"
+                            },
+                            {
+                              "text": "forward",
+                              "id": "0, 0, 1"
+                            },
+                            {
+                              "text": "left",
+                              "id": "-1, 0, 0"
+                            },
+                            {
+                              "text": "one",
+                              "id": "1, 1, 1"
+                            },
+                            {
+                              "text": "right",
+                              "id": "1, 0, 0"
+                            },
+                            {
+                              "text": "up",
+                              "id": "0, 1, 0"
+                            },
+                            {
+                              "text": "zero",
+                              "id": "0, 0, 0"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "fields": {
+                      "VECTOR": "0, 0, 0"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "variables": [
+    {
+      "name": "spot",
+      "id": "y/(]EGAE%io55ERK740]"
+    }
+  ],
+  "editor": {
+    "editor": "fectar",
+    "version": 1,
+    "url": "https://cidt.asml.com/editors/latest/fectar/editor.html"
+  }
+}

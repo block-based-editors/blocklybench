@@ -26,14 +26,14 @@
     "type": "spot_set_prop",
     "id": "E=0+prCJ)}c[~F#c@2J`",
     "x": 143,
-    "y": 177,
+    "y": 178,
     "extraState": {
       "dropdowns": [
         {
           "field": "PROPERTY",
           "options": [
             {
-              "text": "postion",
+              "text": "position",
               "id": "position"
             },
             {
@@ -67,8 +67,8 @@
   "Ac8KU54;0II5@B.x.*1h": {
     "type": "Vector3_static",
     "id": "Ac8KU54;0II5@B.x.*1h",
-    "x": 376,
-    "y": 177,
+    "x": 379,
+    "y": 178,
     "extraState": {
       "dropdowns": [
         {

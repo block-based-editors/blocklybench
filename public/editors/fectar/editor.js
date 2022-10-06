@@ -247,7 +247,7 @@ Blockly.Blocks['spot_set_prop'] = {
     this.appendValueInput("INPUT")
         .setCheck(null)
         .appendField("Set ")
-        .appendField(new Blockly.FieldDropdown([["postion","position"], ["rotation","rotation"], ["is visible","isVisible"]]), "PROPERTY")
+        .appendField(new Blockly.FieldDropdown([["position","position"], ["rotation","rotation"], ["is visible","isVisible"]]), "PROPERTY")
         .appendField("of spot:")
         .appendField(new Blockly.FieldVariable("item"), "NAME");
     this.setPreviousStatement(true, null);
@@ -3946,10 +3946,10 @@ BlocklyStorage.XML_ERROR = 'Could not load your saved file.\n' +
  */
 BlocklyStorage.backupBlocks_ = function(workspace, id) {
   if ('localStorage' in window) {
-    var xml = Blockly.Xml.workspaceToDom(workspace);
+    var json_text = Blockly.serialization.workspaces.save(workspace);
     // Gets the current URL, not including the hash.
-    var url = window.location.href.split('#')[0]+id;
-    window.localStorage.setItem(url, Blockly.Xml.domToText(xml));
+    var url = window.location.href.split('#')[0]+id+'.json';
+    window.localStorage.setItem(url, JSON.stringify(json_text));
   }
 };
 
@@ -3969,10 +3969,10 @@ BlocklyStorage.backupOnUnload = function(opt_workspace,id) {
  */
 BlocklyStorage.restoreBlocks = function(opt_workspace, id) {
   var url = window.location.href.split('#')[0];
-  if ('localStorage' in window && window.localStorage[url+id]) {
+  if ('localStorage' in window && window.localStorage[url+id+'.json']) {
     var workspace = opt_workspace || Blockly.getMainWorkspace();
-    var xml = Blockly.Xml.textToDom(window.localStorage[url+id]);
-    Blockly.Xml.domToWorkspace(xml, workspace);
+    var json = JSON.parse(window.localStorage[url+id+'.json']);
+    Blockly.serialization.workspaces.load(json, workspace);
    }
 };
 
@@ -4117,160 +4117,160 @@ BlocklyStorage.alert = function(message) {
 toolbox = {
  "kind": "categoryToolbox",
  "contents": [
+  {
+   "kind": "category",
+   "name" : "Spot",
+   "colour": "#66c",
+   "contents": [
     {
+      "kind": "block",
+      "type": "spot_set_prop"
+    },
+    {
+      "kind": "block",
+      "type": "getSpot"
+    },
+    {
+      "kind": "block",
+      "type": "getSpotById"
+    },
+    {
+      "kind": "block",
+      "type": "show_hideSpot"
+    },
+    {
+      "kind": "block",
+      "type": "show_hideSpotVariable"
+    },
+    {
+      "kind": "block",
+      "type": "get_spot_property"
+    },
+    {
+      "kind": "block",
+      "type": "forAllSpots"
+    },
+   ]
+  },
+  {
+   "kind": "category",
+   "name" : "Space",
+   "colour": "#399",
+   "contents": [
+    {
+      "kind": "block",
+      "type": "reset_space"
+    },
+    {
+      "kind": "block",
+      "type": "getSpot"
+    },
+    {
+      "kind": "block",
+      "type": "getSpotById"
+    },
+    {
+      "kind": "block",
+      "type": "getCamera"
+    },
+   ]
+  },
+  {
+   "kind": "category",
+   "name" : "Events",
+   "colour": "#fc0",
+   "contents": [
+    {
+      "kind": "block",
+      "type": "onClick"
+    },
+    {
+      "kind": "block",
+      "type": "setInterval"
+    },
+    {
+      "kind": "block",
+      "type": "clearInterval"
+    },
+   ]
+  },
+  {
+   "kind": "category",
+   "name" : "Color",
+   "colour": "#3c0",
+   "contents": [
+    {
+      "kind": "block",
+      "type": "Color"
+    },
+    {
+      "kind": "block",
+      "type": "Color_alpha"
+    },
+   ]
+  },
+  {
+   "kind": "category",
+   "name" : "Vector",
+   "colour": "#36f",
+   "contents": [
+    {
+      "kind": "block",
+      "type": "Vector3"
+    },
+    {
+      "kind": "block",
+      "type": "Vector3_static"
+    },
+    {
+      "kind": "block",
+      "type": "Angle"
+    },
+    {
+      "kind": "block",
+      "type": "Distance"
+    },
+    {
+      "kind": "block",
+      "type": "Cross"
+    },
+   ]
+  },
+  {
+   "kind": "category",
+   "name" : "Quaternion",
+   "colour": "#60c",
+   "contents": [
+    {
+      "kind": "block",
+      "type": "Quaternion"
+    },
+    {
+      "kind": "block",
+      "type": "Quaternion_euler"
+    },
+   ]
+  },
+  {
+   "kind": "category",
+   "name" : "Debug",
+   "colour": "#c00",
+   "contents": [
+    {
+      "kind": "block",
+      "type": "log"
+    },
+    {
+      "kind": "block",
+      "type": "log_text"
+    },
+   ]
+  },
+  {
      "kind": "category",
-     "name" : "Spot",
-     "colour": "#66c",
-     "contents": [
-        {
-          "kind": "block",
-          "type": "spot_set_prop"
-        },
-        {
-          "kind": "block",
-          "type": "getSpot"
-        },
-        {
-          "kind": "block",
-          "type": "getSpotById"
-        },
-        {
-          "kind": "block",
-          "type": "show_hideSpot"
-        },
-        {
-          "kind": "block",
-          "type": "show_hideSpotVariable"
-        },
-        {
-          "kind": "block",
-          "type": "get_spot_property"
-        },
-        {
-          "kind": "block",
-          "type": "forAllSpots"
-        },
-     ]
-    },
-    {
-     "kind": "category",
-     "name" : "Space",
-     "colour": "#399",
-     "contents": [
-        {
-          "kind": "block",
-          "type": "reset_space"
-        },
-        {
-          "kind": "block",
-          "type": "getSpot"
-        },
-        {
-          "kind": "block",
-          "type": "getSpotById"
-        },
-        {
-          "kind": "block",
-          "type": "getCamera"
-        },
-     ]
-    },
-    {
-     "kind": "category",
-     "name" : "Events",
-     "colour": "#fc0",
-     "contents": [
-        {
-          "kind": "block",
-          "type": "onClick"
-        },
-        {
-          "kind": "block",
-          "type": "setInterval"
-        },
-        {
-          "kind": "block",
-          "type": "clearInterval"
-        },
-     ]
-    },
-    {
-     "kind": "category",
-     "name" : "Color",
-     "colour": "#3c0",
-     "contents": [
-        {
-          "kind": "block",
-          "type": "Color"
-        },
-        {
-          "kind": "block",
-          "type": "Color_alpha"
-        },
-     ]
-    },
-    {
-     "kind": "category",
-     "name" : "Vector",
-     "colour": "#36f",
-     "contents": [
-        {
-          "kind": "block",
-          "type": "Vector3"
-        },
-        {
-          "kind": "block",
-          "type": "Vector3_static"
-        },
-        {
-          "kind": "block",
-          "type": "Angle"
-        },
-        {
-          "kind": "block",
-          "type": "Distance"
-        },
-        {
-          "kind": "block",
-          "type": "Cross"
-        },
-     ]
-    },
-    {
-     "kind": "category",
-     "name" : "Quaternion",
-     "colour": "#60c",
-     "contents": [
-        {
-          "kind": "block",
-          "type": "Quaternion"
-        },
-        {
-          "kind": "block",
-          "type": "Quaternion_euler"
-        },
-     ]
-    },
-    {
-     "kind": "category",
-     "name" : "Debug",
-     "colour": "#c00",
-     "contents": [
-        {
-          "kind": "block",
-          "type": "log"
-        },
-        {
-          "kind": "block",
-          "type": "log_text"
-        },
-     ]
-    },
-    {
-       "kind": "category",
-       "name": "Variables",
-       "custom": "VARIABLE"
-    },
+     "name": "Variables",
+     "custom": "VARIABLE"
+  },
  ]
 }
     
