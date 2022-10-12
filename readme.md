@@ -1,5 +1,6 @@
 
 # Blocklybench web application
+[![DOI](https://zenodo.org/badge/523855099.svg)](https://zenodo.org/badge/latestdoi/523855099)
 
 ## How to run
 
