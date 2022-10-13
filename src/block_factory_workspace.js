@@ -7,6 +7,7 @@ import * as Blockly from 'blockly';
 import { WorkspaceSearch } from '@blockly/plugin-workspace-search';
 // TODO extend to the generated code windows with something like: https://github.com/AlienKevin/SmartTextarea/
 import { ZoomToFitControl } from '@blockly/zoom-to-fit' 
+import FieldDate from '@blockly/field-date'
 
 import JSZip from 'jszip';
 import {saveAs} from 'file-saver';
@@ -99,7 +100,7 @@ function saveBlocks()
 function myFactoryGeneration(event) {
   var code = get_code()
   document.getElementById('factory_code').value = code;
-  code = "Blockly = blockly__WEBPACK_IMPORTED_MODULE_0__;\n" + code;
+  code = "Blockly = blockly__WEBPACK_IMPORTED_MODULE_0__;\nvar FieldDate = _blockly_field_date__WEBPACK_IMPORTED_MODULE_3__;\n"+ code;
   
   try {
 	eval(code)

@@ -485,7 +485,7 @@ FactoryUtils.connectionLineJs_ = function(rootBlock, functionName, typeName, wor
 };
 
 
-function load_json_options(url)
+function load_json_options(url, empty_options)
 {
   var url_params = window.location.search;
   let params = new URLSearchParams(url_params);
@@ -500,7 +500,7 @@ function load_json_options(url)
     console.log(request.responseText);
     return JSON.parse(request.responseText)
   }
-  return [["no valid json found", "NONE"]]
+  return empty_options
   
 }
 
@@ -582,7 +582,7 @@ FactoryUtils.getFieldsJs_ = function(block) {
               JSON.stringify(block.getFieldValue('FIELDNAME')));
           break;
         case 'field_date':
-          fields.push('new Blockly.FieldDate(' +
+          fields.push('new FieldDate(' +
               JSON.stringify(block.getFieldValue('DATE')) +
               '), ' +
               JSON.stringify(block.getFieldValue('FIELDNAME')));
@@ -704,7 +704,8 @@ FactoryUtils.getFieldsJs_ = function(block) {
           // new Blockly.FieldDropdown([['yes', '1'], ['no', '0']]), 'TOGGLE'
           //var options = null //[JSON.stringify(['yes','no'])];
           //var options = dropdown_url_options
-          var options = load_json_options(block.getFieldValue('URL'))
+          var options = load_json_options(block.getFieldValue('URL'), 
+                                 [["no valid json found", "NONE"]])
 
           fields.push('new Blockly.FieldDropdown(' +
                 JSON.stringify(options)+ '),' +
@@ -716,7 +717,8 @@ FactoryUtils.getFieldsJs_ = function(block) {
             // new Blockly.FieldDropdown([['yes', '1'], ['no', '0']]), 'TOGGLE'
             //var options = null //[JSON.stringify(['yes','no'])];
             //var options = dropdown_url_options
-            var options = load_json_options(block.getFieldValue('URL'))
+            var options = load_json_options(block.getFieldValue('URL'),
+                [["no valid json found:no valid json found", "NONE:NONE"]])
             var split = []
             
             // make a set instead of all common options
@@ -733,7 +735,13 @@ FactoryUtils.getFieldsJs_ = function(block) {
 
             fields.push('new Blockly.FieldDropdown(' +
                   JSON.stringify(split)+ `, function(in_out_value) {
-                      if(this.getSourceBlock())  
+                      var source_block = null;
+                      try
+                      {
+                        source_block = this.getSourceBlock();
+                      } catch (e) {}
+                                          
+                      if(source_block)  
                       {
                         // update the other field
                         var field = this.getSourceBlock().getField("` + block.getFieldValue('FIELDNAME2') + `"); 
@@ -758,7 +766,13 @@ FactoryUtils.getFieldsJs_ = function(block) {
             fields.push(`new Blockly.FieldDropdown(function() {
                         var options = ` + JSON.stringify(options) + `
                         var first_selection = null;
-                        if (this.getSourceBlock()) {
+                        var source_block = null;
+                        try
+                        {
+                          source_block = this.getSourceBlock();
+                        } catch (e) {}
+                      
+                        if (source_block) {
                           first_selection = this.getSourceBlock().getFieldValue("` + block.getFieldValue('FIELDNAME1') + `"); 
                         }
                         var split = []
@@ -771,7 +785,6 @@ FactoryUtils.getFieldsJs_ = function(block) {
                                         options[i][1].split(split_on)[1] ]) 
                           }
                         }
-                        console.log(split)
                         if (split.length == 0)  // just take the second part of the first option
                         {
                           split.push([options[0][0].split(split_on)[1], options[0][1].split(split_on)[1] ])

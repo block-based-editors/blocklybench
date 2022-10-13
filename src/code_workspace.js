@@ -2,7 +2,9 @@
 
 //var Blockly = require('blockly');
 import * as Blockly from 'blockly';
+import { FieldDate }  from '@blockly/field-date';
 /* webpackIgnore: true */ 
+import {javascriptGenerator} from 'blockly/javascript';
 
 import BlocklyStorage from './storage.js';
 import { WorkspaceSearch } from '@blockly/plugin-workspace-search';
@@ -15,7 +17,7 @@ CodeGen.code_workspace = null;
 
 CodeGen.get_code = function()
 {
-	return Blockly.JavaScript.workspaceToCode(CodeGen.code_workspace);
+	return javascriptGenerator.workspaceToCode(CodeGen.code_workspace);
 }
 
 function add_options(selection, languages)

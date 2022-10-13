@@ -1,7 +1,10 @@
 
 import * as Blockly from 'blockly';
 
-Blockly.JavaScript['generate_statements'] = function(block) {
+import {javascriptGenerator} from 'blockly/javascript';
+
+
+javascriptGenerator['generate_statements'] = function(block) {
   var statements = block.getFieldValue('STATEMENTS');
  
   var language = block.getSurroundParent().getFieldValue('LANGUAGE')
@@ -9,14 +12,14 @@ Blockly.JavaScript['generate_statements'] = function(block) {
   return code;
 };
 
-Blockly.JavaScript['generate_values'] = function(block) {
+javascriptGenerator['generate_values'] = function(block) {
   var value = block.getFieldValue('VALUE');
   var language = block.getSurroundParent().getFieldValue('LANGUAGE')
   var code = "code += Blockly." + language + ".valueToCode(block, '" + value +"', Blockly." +language +".ORDER_ATOMIC);\n"
   return code;
 };
 
-Blockly.JavaScript['generate_values2'] = function(block) {
+javascriptGenerator['generate_values2'] = function(block) {
   var field = block.getField('VALUE');
   var value = field.getText();
   var language = block.getSurroundParent().getFieldValue('LANGUAGE')
@@ -24,14 +27,14 @@ Blockly.JavaScript['generate_values2'] = function(block) {
   return code;
 };
 
-Blockly.JavaScript['generate_token'] = function(block) {
+javascriptGenerator['generate_token'] = function(block) {
   var text_token = block.getFieldValue('TOKEN');
   
   var code = "code += '" + text_token + "';\n"
   return code;
 };
 
-Blockly.JavaScript['generate_token_if_next_block'] = function(block) {
+javascriptGenerator['generate_token_if_next_block'] = function(block) {
   var code ='';
   code += 'if(block.getNextBlock()) {code += "';
   var field = block.getField('TOKEN');
@@ -46,7 +49,7 @@ Blockly.JavaScript['generate_token_if_next_block'] = function(block) {
 }
 ;
 
-Blockly.JavaScript['generate_token_if_length'] = function(block) {
+javascriptGenerator['generate_token_if_length'] = function(block) {
   var code ='';
   code += 'var target = block.getInputTargetBlock("';
   var field = block.getField('STATEMENTS');
@@ -90,11 +93,11 @@ Blockly.JavaScript['generate_token_if_length'] = function(block) {
 ;
 
 
-Blockly.JavaScript['generate_code'] = function(block) {
+javascriptGenerator['generate_code'] = function(block) {
   var text_language = block.getFieldValue('LANGUAGE');
 
   var text_type = block.getField('TYPE').getText();
-  var statements_name = Blockly.JavaScript.statementToCode(block, 'CODE');
+  var statements_name = javascriptGenerator.statementToCode(block, 'CODE');
   
   // TODO now this piece of code is generated for every block, could be done once per languages as part of the 'finish'?
   var code = ''
@@ -123,10 +126,10 @@ Blockly.JavaScript['generate_code'] = function(block) {
   return code;
 };
 
-Blockly.JavaScript['generate_code_input'] = Blockly.JavaScript['generate_code'] 
-Blockly.JavaScript['generate_code_variable'] = Blockly.JavaScript['generate_code'] 
+javascriptGenerator['generate_code_input'] = javascriptGenerator['generate_code'] 
+javascriptGenerator['generate_code_variable'] = javascriptGenerator['generate_code'] 
 
-Blockly.JavaScript['generate_field_value'] = function(block) {
+javascriptGenerator['generate_field_value'] = function(block) {
 
   var dropdown_fields = block.getFieldValue('FIELDS');
   var code = '' 
@@ -140,7 +143,7 @@ Blockly.JavaScript['generate_field_value'] = function(block) {
   return code;
 };
 
-Blockly.JavaScript['generate_indent'] = function(block) {
+javascriptGenerator['generate_indent'] = function(block) {
   var code ='';
   code += 'Blockly.';
   code += block.getSurroundParent().getFieldValue('LANGUAGE');
@@ -155,7 +158,7 @@ Blockly.JavaScript['generate_indent'] = function(block) {
 
   // if this block is a 'value' then code + ORDER needs to be returned
   if(block.outputConnection) {
-    return [code, Blockly.JavaScript.ORDER_ATOMIC];
+    return [code, javascriptGenerator.ORDER_ATOMIC];
   }
   else // no value block
   {
@@ -165,7 +168,7 @@ Blockly.JavaScript['generate_indent'] = function(block) {
 ;
 
 
-Blockly.JavaScript['generate_block_type'] = function(block) {
+javascriptGenerator['generate_block_type'] = function(block) {
   var code ='';
   // should be code generation time
   code += "code += '" + block.getSurroundParent().getField('TYPE').getText() + "'\n"
@@ -174,7 +177,7 @@ Blockly.JavaScript['generate_block_type'] = function(block) {
 ;
 
 
-Blockly.JavaScript['generate_field_value2'] = function(block) {
+javascriptGenerator['generate_field_value2'] = function(block) {
 
   var dropdown_fields = block.getField('FIELDS');
   var code = '' 
@@ -187,7 +190,7 @@ Blockly.JavaScript['generate_field_value2'] = function(block) {
   return code;
 };
 
-Blockly.JavaScript['generate_statements3'] = function(block) {
+javascriptGenerator['generate_statements3'] = function(block) {
   var statements_field = block.getField('STATEMENTS');
   var ident = block.getFieldValue('INDENT');
   var statements = statements_field.getText();
@@ -206,7 +209,7 @@ Blockly.JavaScript['generate_statements3'] = function(block) {
   return code;
 };
 
-Blockly.JavaScript['generate_statements2'] = function(block) {
+javascriptGenerator['generate_statements2'] = function(block) {
   var statements_field = block.getField('STATEMENTS');
   var statements = statements_field.getText();
  
@@ -218,13 +221,13 @@ Blockly.JavaScript['generate_statements2'] = function(block) {
 
 
 
-Blockly.JavaScript['generate_javascript'] = function(block) {
+javascriptGenerator['generate_javascript'] = function(block) {
   var javascript = block.getFieldValue('JAVASCRIPT');
   var code = javascript + '\n';
   return code;
 };
 
-Blockly.JavaScript['generate_javascript_value'] = function(block) {
+javascriptGenerator['generate_javascript_value'] = function(block) {
   var code ='';
   var field = block.getField('JAVASCRIPT');
   if (field.getText()) {
@@ -235,7 +238,7 @@ Blockly.JavaScript['generate_javascript_value'] = function(block) {
 
   // if this block is a 'value' then code + ORDER needs to be returned
   if(block.outputConnection) {
-    return [code, Blockly.JavaScript.ORDER_ATOMIC];
+    return [code, javascriptGenerator.ORDER_ATOMIC];
   }
   else // no value block
   {
@@ -246,14 +249,14 @@ Blockly.JavaScript['generate_javascript_value'] = function(block) {
 
 
 
-Blockly.JavaScript['generate_comment'] = function(block) {
+javascriptGenerator['generate_comment'] = function(block) {
   var code ='';
   code += 'if (block.getCommentText()) {\n code += block.getCommentText();\n}\n';
   return code;
 }
 ;
 
-Blockly.JavaScript['generate_list_index'] = function(block) {
+javascriptGenerator['generate_list_index'] = function(block) {
   var code ='';
   code += 'code += block.getSurroundParent().getDescendants().indexOf(block)-1;\n';
 
@@ -262,7 +265,7 @@ Blockly.JavaScript['generate_list_index'] = function(block) {
 ;
 
 
-Blockly.JavaScript['generate_parent_field_value'] = function(block) {
+javascriptGenerator['generate_parent_field_value'] = function(block) {
   var code ='';
   code += 'var parent = block.getSurroundParent();\n';
   code += 'if (parent)\n{  \n  code += parent.getFieldValue("';
@@ -276,7 +279,7 @@ Blockly.JavaScript['generate_parent_field_value'] = function(block) {
 
   // if this block is a 'value' then code + ORDER needs to be returned
   if(block.outputConnection) {
-    return [code, Blockly.JavaScript.ORDER_ATOMIC];
+    return [code, javascriptGenerator.ORDER_ATOMIC];
   }
   else // no value block
   {
@@ -287,7 +290,7 @@ Blockly.JavaScript['generate_parent_field_value'] = function(block) {
 
 
 
-Blockly.JavaScript['generate_list_length'] = function(block) {
+javascriptGenerator['generate_list_length'] = function(block) {
   var code ='';
   code += 'var target = block.getInputTargetBlock("';
   var field = block.getField('STATEMENTS');
@@ -309,7 +312,7 @@ Blockly.JavaScript['generate_list_length'] = function(block) {
 ;
 
 
-Blockly.JavaScript['generate_field_text'] = function(block) {
+javascriptGenerator['generate_field_text'] = function(block) {
   var code ='';
   code += 'var field = block.getField("';
   var field = block.getField('FIELDS');

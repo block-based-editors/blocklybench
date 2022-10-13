@@ -1,5 +1,6 @@
 import * as Blockly from 'blockly';
-import { FieldDate }  from '@blockly/field-date';
+import FieldDate from '@blockly/field-date';
+
 
 /**
  * @license
@@ -661,7 +662,7 @@ Blockly.Blocks['field_date'] = {
     this.setColour(160);
     this.appendDummyInput()
         .appendField('date')
-        .appendField(new Blockly.FieldDate(), 'DATE')
+        .appendField(new FieldDate(), 'DATE')
         .appendField(',')
         .appendField(new Blockly.FieldTextInput('NAME'), 'FIELDNAME');
     this.setPreviousStatement(true, 'Field');

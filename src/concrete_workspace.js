@@ -3,7 +3,7 @@
 'use strict';
 //var Blockly = require('blockly');
 import * as Blockly from 'blockly';
-
+import FieldDate from "@blockly/field-date";
 import BlocklyStorage from './storage.js';
 import { WorkspaceSearch } from '@blockly/plugin-workspace-search';
 
