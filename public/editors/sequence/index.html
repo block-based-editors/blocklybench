@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>sequence Editor</title>
+  <body onload="start();">
+  
+<input type="button" id="loadFileXml" value="Load JSON" onclick="document.getElementById('input').click();" />
+<input type="file" style="display:none;" id="input" name="file"/>
+<button id="save">Save JSON</button>
+<div id="error" value="error"></div>
+
+  
+<div id="blocklyDiv" style="height: 480px; width: 100%;"></div>
+<div id="diagram"></div>
+ <textarea oninput="update_diagram()" id="codeDiv" style="height: 350px; width: 100%"></textarea>
+
+
+
+<script src="https://unpkg.com/blockly/blockly.min.js"></script>
+<script src="https://unpkg.com/@blockly/plugin-workspace-search@5.0.3/dist/index.js"></script>
+<script src="https://unpkg.com/@blockly/field-date"></script>
+<script src='./editor.js'></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src="https://unpkg.com/snapsvg@0.5.1"></script>
+<script src="https://unpkg.com/underscore"></script>
+<script src="./sequence-diagram.js"></script>
+
+
+<script>
+    function update_code(code) {
+        var div = document.getElementById('diagram')
+        while(div.firstChild && div.removeChild(div.firstChild));
+        var diagram = Diagram.parse(code);
+        diagram.drawSVG("diagram", {theme: 'hand'});
+    }
+</script>
+</body>
+</html>
+
+

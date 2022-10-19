@@ -1,0 +1,167 @@
+{
+  "blocks": {
+    "languageVersion": 0,
+    "blocks": [
+      {
+        "type": "title",
+        "id": "goK#Jn/^3XHgqPRHEUyV",
+        "x": 78,
+        "y": 152,
+        "extraState": {
+          "dropdowns": []
+        },
+        "fields": {
+          "TITLE": "Here is the title"
+        },
+        "next": {
+          "block": {
+            "type": "order",
+            "id": "%Lx7jyX;EuA/bt)XrE{c",
+            "extraState": {
+              "dropdowns": []
+            },
+            "inputs": {
+              "ACTORS": {
+                "block": {
+                  "type": "actor",
+                  "id": "ysmCV4j5|;g^#@8z/(_4",
+                  "extraState": {
+                    "dropdowns": [
+                      {
+                        "field": "ACTOR",
+                        "options": [
+                          {
+                            "text": "A",
+                            "id": "_ewg61-Q(aDS)FMyU9An"
+                          },
+                          {
+                            "text": "A",
+                            "id": "b2!,u(fkRa8{qr+iU`Bq"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "fields": {
+                    "ACTOR": "_ewg61-Q(aDS)FMyU9An"
+                  }
+                }
+              }
+            },
+            "next": {
+              "block": {
+                "type": "arrow",
+                "id": "b2!,u(fkRa8{qr+iU`Bq",
+                "extraState": {
+                  "dropdowns": [
+                    {
+                      "field": "ARROW",
+                      "options": [
+                        {
+                          "text": "🠖",
+                          "id": "->"
+                        },
+                        {
+                          "text": "⭬",
+                          "id": "-->"
+                        },
+                        {
+                          "text": "→",
+                          "id": "->>"
+                        },
+                        {
+                          "text": "⇢",
+                          "id": "-->>"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "fields": {
+                  "FROM_ACTOR": "A",
+                  "ARROW": "->>",
+                  "TO_ACTOR": "B",
+                  "MESSAGE": "Message"
+                },
+                "next": {
+                  "block": {
+                    "type": "arrow",
+                    "id": "_ewg61-Q(aDS)FMyU9An",
+                    "extraState": {
+                      "dropdowns": [
+                        {
+                          "field": "ARROW",
+                          "options": [
+                            {
+                              "text": "🠖",
+                              "id": "->"
+                            },
+                            {
+                              "text": "⭬",
+                              "id": "-->"
+                            },
+                            {
+                              "text": "→",
+                              "id": "->>"
+                            },
+                            {
+                              "text": "⇢",
+                              "id": "-->>"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "fields": {
+                      "FROM_ACTOR": "A",
+                      "ARROW": "->",
+                      "TO_ACTOR": "B",
+                      "MESSAGE": "Message"
+                    },
+                    "next": {
+                      "block": {
+                        "type": "note",
+                        "id": "`$~p:9L9Q-9(ImavcwAn",
+                        "extraState": {
+                          "dropdowns": [
+                            {
+                              "field": "PLACE",
+                              "options": [
+                                {
+                                  "text": "left of",
+                                  "id": "LEFT_OF"
+                                },
+                                {
+                                  "text": "right of",
+                                  "id": "RIGHT_OF"
+                                },
+                                {
+                                  "text": "over",
+                                  "id": "OVER_ONE"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        "fields": {
+                          "PLACE": "LEFT_OF",
+                          "ACTOR1": "Actor A",
+                          "MESSAGE": "Message"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "editor": {
+    "editor": "sequence",
+    "version": 1,
+    "url": "https://cidt.asml.com/editors/latest/sequence/editor.html"
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "goK#Jn/^3XHgqPRHEUyV": {
+    "type": "title",
+    "id": "goK#Jn/^3XHgqPRHEUyV",
+    "x": 78,
+    "y": 152,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TITLE": "Here is the title"
+    },
+    "next": {
+      "block": {
+        "id": "%Lx7jyX;EuA/bt)XrE{c"
+      }
+    }
+  },
+  "%Lx7jyX;EuA/bt)XrE{c": {
+    "type": "order",
+    "id": "%Lx7jyX;EuA/bt)XrE{c",
+    "x": 78,
+    "y": 178,
+    "extraState": {
+      "dropdowns": []
+    },
+    "inputs": {
+      "ACTORS": {
+        "block": {
+          "id": "ysmCV4j5|;g^#@8z/(_4"
+        }
+      }
+    },
+    "next": {
+      "block": {
+        "id": "b2!,u(fkRa8{qr+iU`Bq"
+      }
+    }
+  },
+  "b2!,u(fkRa8{qr+iU`Bq": {
+    "type": "arrow",
+    "id": "b2!,u(fkRa8{qr+iU`Bq",
+    "x": 78,
+    "y": 243,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "ARROW",
+          "options": [
+            {
+              "text": "🠖",
+              "id": "->"
+            },
+            {
+              "text": "⭬",
+              "id": "-->"
+            },
+            {
+              "text": "→",
+              "id": "->>"
+            },
+            {
+              "text": "⇢",
+              "id": "-->>"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FROM_ACTOR": "A",
+      "ARROW": "->>",
+      "TO_ACTOR": "B",
+      "MESSAGE": "Message"
+    },
+    "next": {
+      "block": {
+        "id": "_ewg61-Q(aDS)FMyU9An"
+      }
+    }
+  },
+  "ysmCV4j5|;g^#@8z/(_4": {
+    "type": "actor",
+    "id": "ysmCV4j5|;g^#@8z/(_4",
+    "x": 99,
+    "y": 204,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "ACTOR",
+          "options": [
+            {
+              "text": "A",
+              "id": "_ewg61-Q(aDS)FMyU9An"
+            },
+            {
+              "text": "A",
+              "id": "b2!,u(fkRa8{qr+iU`Bq"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "ACTOR": "_ewg61-Q(aDS)FMyU9An"
+    }
+  },
+  "_ewg61-Q(aDS)FMyU9An": {
+    "type": "arrow",
+    "id": "_ewg61-Q(aDS)FMyU9An",
+    "x": 78,
+    "y": 269,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "ARROW",
+          "options": [
+            {
+              "text": "🠖",
+              "id": "->"
+            },
+            {
+              "text": "⭬",
+              "id": "-->"
+            },
+            {
+              "text": "→",
+              "id": "->>"
+            },
+            {
+              "text": "⇢",
+              "id": "-->>"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "FROM_ACTOR": "A",
+      "ARROW": "->",
+      "TO_ACTOR": "B",
+      "MESSAGE": "Message"
+    },
+    "next": {
+      "block": {
+        "id": "`$~p:9L9Q-9(ImavcwAn"
+      }
+    }
+  },
+  "`$~p:9L9Q-9(ImavcwAn": {
+    "type": "note",
+    "id": "`$~p:9L9Q-9(ImavcwAn",
+    "x": 78,
+    "y": 295,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "PLACE",
+          "options": [
+            {
+              "text": "left of",
+              "id": "LEFT_OF"
+            },
+            {
+              "text": "right of",
+              "id": "RIGHT_OF"
+            },
+            {
+              "text": "over",
+              "id": "OVER_ONE"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "PLACE": "LEFT_OF",
+      "ACTOR1": "Actor A",
+      "MESSAGE": "Message"
+    }
+  },
+  "top_blocks": [
+    "goK#Jn/^3XHgqPRHEUyV"
+  ],
+  "mergeable": true
+}
