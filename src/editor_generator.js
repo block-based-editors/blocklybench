@@ -245,13 +245,18 @@ var options = {
 function codeGeneration(event) {
   if (Blockly.` + language + `)
   {  
-      try {
+    try {
           var code = Blockly.`+ language + `.workspaceToCode(workspace);
 	  } catch (e) {
-		console.warn("Error while creating code", e);
-		code = "Error while creating code:" + e
+		  console.warn("Error while creating code", e);
+		  code = "Error while creating code:" + e
 	  }     
-      document.getElementById('codeDiv').value = code;
+    document.getElementById('codeDiv').value = code;
+    // trigger a update_code function if it exist
+    if (update_code)
+    {
+      update_code(code);
+    }
   }
 }
 
