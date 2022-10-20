@@ -1,9 +1,11 @@
 Blockly.Blocks['arrow'] = {
   init: function() {
+    this.appendValueInput("FROM_ACTOR")
+        .setCheck(null);
+    this.appendValueInput("TO_ACTOR")
+        .setCheck(null)
+        .appendField(new Blockly.FieldDropdown([["🠖","->"], ["⭬","-->"], ["→","->>"], ["⇢","-->>"]]), "ARROW");
     this.appendDummyInput()
-        .appendField(new Blockly.FieldTextInput("Actor A", null, ), "FROM_ACTOR")
-        .appendField(new Blockly.FieldDropdown([["🠖","->"], ["⭬","-->"], ["→","->>"], ["⇢","-->>"]]), "ARROW")
-        .appendField(new Blockly.FieldTextInput("Actor B", null, ), "TO_ACTOR")
         .appendField(new Blockly.FieldTextInput("Message", null, ), "MESSAGE");
     this.setPreviousStatement(true, "ARROW_OR_NOTE");
     this.setNextStatement(true, "ARROW_OR_NOTE");
@@ -247,8 +249,10 @@ Blockly.Blocks['note'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("Note")
-        .appendField(new Blockly.FieldDropdown([["left of","LEFT_OF"], ["right of","RIGHT_OF"], ["over","OVER_ONE"]]), "PLACE")
-        .appendField(new Blockly.FieldTextInput("Actor A", null, ), "ACTOR1")
+        .appendField(new Blockly.FieldDropdown([["left of","LEFT_OF"], ["right of","RIGHT_OF"], ["over","OVER_ONE"]]), "PLACE");
+    this.appendValueInput("ACTOR")
+        .setCheck(null);
+    this.appendDummyInput()
         .appendField(new Blockly.FieldTextInput("Message", null, ), "MESSAGE");
     this.setPreviousStatement(true, "ARROW_OR_NOTE");
     this.setNextStatement(true, "ARROW_OR_NOTE");
@@ -492,66 +496,9 @@ Blockly.Blocks['order'] = {
 
 Blockly.Blocks['actor'] = {
   init: function() {
-    this.appendDummyInput()
-        .appendField(new Blockly.FieldDropdown(function() {
-                // options filed from dom
-                // this function should always return a [['at least one option id','at least one option text']] 
-                // 1. when the block is created this function is called
-                // 2. than the saved dom options are set
-                // 3. than we should wait for all blocks to be loaded for function below to work 
-                
-
-                if (this.savedOptionsSet)
-                {
-                  var options = this.getOptions(true); // get from Cache
-                }
-                else
-                { 
-                  var options = []
-                }
-                var ids = options.map(option => option[1]);
-                var field = "FROM_ACTOR";
-                var workspace_name = "Concrete";
-                var workspaces = Blockly.Workspace.getAll();
-                for (var i=0; i< workspaces.length;i++) {
-                  var workspace= workspaces[i]
-
-                  if (workspace.name == workspace_name)
-                  {
-                    var all_blocks = workspace.getAllBlocks()
-                    for(var j=0;j<all_blocks.length;j++)
-                    {
-                      var field_value = all_blocks[j].getFieldValue(field)
-                      if (field_value)
-                      {
-                        var index = ids.indexOf(all_blocks[j].id)
-                        if (index !== -1) {
-                          // should pop the old options as rename of field_value 
-                          ids.splice(index, 1)
-                          options.splice(index,1)                        
-                        }
-                        options.push([field_value, all_blocks[j].id])
-                      }
-                    }
-                  }
-                }
-                options.sort();
-                
-                if (options.length==0)
-                {
-                  options.push(['no options yet','NONE'])
-                }
-                if (options.length>1)
-                {
-                  var ids = options.map(option => option[1]);
-                  var index = ids.indexOf('NONE')
-                  if (index !== -1) {
-                    // should pop the old options as rename of field_value 
-                    options.splice(index,1)                        
-                  }
-                }
-                return options;
-            }), "ACTOR");
+    this.appendValueInput("ACTOR")
+        .setCheck(null);
+    this.setInputsInline(true);
     this.setPreviousStatement(true, "ACTOR");
     this.setNextStatement(true, "ACTOR");
     this.setColour(260);
@@ -682,18 +629,8 @@ Blockly.YAML.scrub_ = function(block, code, opt_thisOnly) {
 
 Blockly.YAML['arrow'] = function(block) {
   var code ='';
-  var field = block.getField('FROM_ACTOR');
-  if (field.getText()) {
-    code += field.getText();
-  } else {
-    code += field.getValue();
-  }
-  var field = block.getField("ARROW"); code += field.getValue();var field = block.getField('TO_ACTOR');
-  if (field.getText()) {
-    code += field.getText();
-  } else {
-    code += field.getValue();
-  }
+  code += Blockly.YAML.valueToCode(block, 'FROM_ACTOR', Blockly.YAML.ORDER_ATOMIC);
+  var field = block.getField("ARROW"); code += field.getValue();code += Blockly.YAML.valueToCode(block, 'TO_ACTOR', Blockly.YAML.ORDER_ATOMIC);
   code += ': ';
   var field = block.getField('MESSAGE');
   if (field.getText()) {
@@ -734,12 +671,7 @@ Blockly.YAML['note'] = function(block) {
     code += field.getValue();
   }
   code += ' ';
-  var field = block.getField('ACTOR1');
-  if (field.getText()) {
-    code += field.getText();
-  } else {
-    code += field.getValue();
-  }
+  code += Blockly.YAML.valueToCode(block, 'ACTOR', Blockly.YAML.ORDER_ATOMIC);
   code += ': ';
   var field = block.getField('MESSAGE');
   if (field.getText()) {
@@ -773,13 +705,34 @@ Blockly.YAML.scrub_ = function(block, code, opt_thisOnly) {
 Blockly.YAML['actor'] = function(block) {
   var code ='';
   code += 'participant ';
-  var field = block.getField('ACTOR');
-  if (field.getText()) {
-    code += field.getText();
-  } else {
-    code += field.getValue();
-  }
+  code += Blockly.YAML.valueToCode(block, 'ACTOR', Blockly.YAML.ORDER_ATOMIC);
   code += '\n';
+
+  // if this block is a 'value' then code + ORDER needs to be returned
+  if(block.outputConnection) {
+    return [code, Blockly.YAML.ORDER_ATOMIC];
+  }
+  else // no value block
+  {
+    return code;
+  }
+}
+;
+if (!Blockly.YAML) {
+  Blockly.YAML = new Blockly.Generator('YAML');
+  Blockly.YAML.ORDER_ATOMIC = 0;
+}
+
+Blockly.YAML.scrub_ = function(block, code, opt_thisOnly) {
+    const nextBlock = block.nextConnection && block.nextConnection.targetBlock();
+    const nextCode = opt_thisOnly ? '' : Blockly.YAML.blockToCode(nextBlock);
+    return code + nextCode;
+}
+
+Blockly.YAML['variables_get'] = function(block) {
+  var code ='';
+  var name = block.getField('VAR').getVariable().name
+  code += name;
 
   // if this block is a 'value' then code + ORDER needs to be returned
   if(block.outputConnection) {
@@ -1048,35 +1001,47 @@ BlocklyStorage.alert = function(message) {
 };
 
 toolbox = {
- "kind": "flyoutToolbox",
+ "kind": "categoryToolbox",
  "contents": [
   {
-    "kind": "block",
-    "type": "arrow"
-  },
-  {
-    "kind": "block",
-    "type": "note"
-  },
-  {
-    "kind": "block",
-    "type": "title"
-  },
-  {
-    "kind": "block",
-    "type": "order", 
-    "fields": {
+   "kind": "category",
+   "name" : "Basic",
+   "colour": "#3c0",
+   "contents": [
+    {
+      "kind": "block",
+      "type": "arrow"
     },
-    "inputs": {
-      "ACTORS" :  {
-        "block": {
-          "type": "actor",
-        }
+    {
+      "kind": "block",
+      "type": "note"
+    },
+    {
+      "kind": "block",
+      "type": "title"
+    },
+    {
+      "kind": "block",
+      "type": "order", 
+      "fields": {
       },
-    }
+      "inputs": {
+        "ACTORS" :  {
+          "block": {
+            "type": "actor",
+          }
+        },
+      }
+    },
+   ]
+  },
+  {
+     "kind": "category",
+     "name": "Variables",
+     "custom": "VARIABLE"
   },
  ]
-};
+}
     
 
 
@@ -1114,6 +1079,7 @@ function codeGeneration(event) {
 		  code = "Error while creating code:" + e
 	  }     
     document.getElementById('codeDiv').value = code;
+    // trigger a update_code function if it exist
     if (update_code)
     {
       update_code(code);

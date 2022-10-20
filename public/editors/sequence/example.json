@@ -4,9 +4,9 @@
     "blocks": [
       {
         "type": "title",
-        "id": "goK#Jn/^3XHgqPRHEUyV",
-        "x": 78,
-        "y": 152,
+        "id": "/p|g~cq..fciiTd?+P1%",
+        "x": 56,
+        "y": 37,
         "extraState": {
           "dropdowns": []
         },
@@ -16,7 +16,7 @@
         "next": {
           "block": {
             "type": "order",
-            "id": "%Lx7jyX;EuA/bt)XrE{c",
+            "id": "GV@.XT@8j6VNoK.n41},",
             "extraState": {
               "dropdowns": []
             },
@@ -24,26 +24,44 @@
               "ACTORS": {
                 "block": {
                   "type": "actor",
-                  "id": "ysmCV4j5|;g^#@8z/(_4",
+                  "id": "XI%:4#:6.UIOjU6i*]GE",
                   "extraState": {
-                    "dropdowns": [
-                      {
-                        "field": "ACTOR",
-                        "options": [
-                          {
-                            "text": "A",
-                            "id": "_ewg61-Q(aDS)FMyU9An"
-                          },
-                          {
-                            "text": "A",
-                            "id": "b2!,u(fkRa8{qr+iU`Bq"
-                          }
-                        ]
-                      }
-                    ]
+                    "dropdowns": []
                   },
-                  "fields": {
-                    "ACTOR": "_ewg61-Q(aDS)FMyU9An"
+                  "inputs": {
+                    "ACTOR": {
+                      "block": {
+                        "type": "variables_get",
+                        "id": "CfY+TIX2V|4XT|)q7nDj",
+                        "fields": {
+                          "VAR": {
+                            "id": "y/A)2m6HG[bA=2GLVAgl"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "next": {
+                    "block": {
+                      "type": "actor",
+                      "id": "3Nh+skv:A-Ki;%NS3Kf6",
+                      "extraState": {
+                        "dropdowns": []
+                      },
+                      "inputs": {
+                        "ACTOR": {
+                          "block": {
+                            "type": "variables_get",
+                            "id": "{bEOVyg_ssPWbCrwSs6#",
+                            "fields": {
+                              "VAR": {
+                                "id": "d]|M6|Lap%]*,dB@8SP0"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
                   }
                 }
               }
@@ -51,7 +69,7 @@
             "next": {
               "block": {
                 "type": "arrow",
-                "id": "b2!,u(fkRa8{qr+iU`Bq",
+                "id": "#cSBe+^u%`v[QIw=3=xp",
                 "extraState": {
                   "dropdowns": [
                     {
@@ -78,75 +96,72 @@
                   ]
                 },
                 "fields": {
-                  "FROM_ACTOR": "A",
-                  "ARROW": "->>",
-                  "TO_ACTOR": "B",
+                  "ARROW": "->",
                   "MESSAGE": "Message"
+                },
+                "inputs": {
+                  "FROM_ACTOR": {
+                    "block": {
+                      "type": "variables_get",
+                      "id": "tYS^yT@cnu;%cfJGmU~X",
+                      "fields": {
+                        "VAR": {
+                          "id": "d]|M6|Lap%]*,dB@8SP0"
+                        }
+                      }
+                    }
+                  },
+                  "TO_ACTOR": {
+                    "block": {
+                      "type": "variables_get",
+                      "id": "65#-k._sVQSK4P=31Qf5",
+                      "fields": {
+                        "VAR": {
+                          "id": "y/A)2m6HG[bA=2GLVAgl"
+                        }
+                      }
+                    }
+                  }
                 },
                 "next": {
                   "block": {
-                    "type": "arrow",
-                    "id": "_ewg61-Q(aDS)FMyU9An",
+                    "type": "note",
+                    "id": "W-i#c%xZ@6XG-`yA-P;{",
                     "extraState": {
                       "dropdowns": [
                         {
-                          "field": "ARROW",
+                          "field": "PLACE",
                           "options": [
                             {
-                              "text": "🠖",
-                              "id": "->"
+                              "text": "left of",
+                              "id": "LEFT_OF"
                             },
                             {
-                              "text": "⭬",
-                              "id": "-->"
+                              "text": "right of",
+                              "id": "RIGHT_OF"
                             },
                             {
-                              "text": "→",
-                              "id": "->>"
-                            },
-                            {
-                              "text": "⇢",
-                              "id": "-->>"
+                              "text": "over",
+                              "id": "OVER_ONE"
                             }
                           ]
                         }
                       ]
                     },
                     "fields": {
-                      "FROM_ACTOR": "A",
-                      "ARROW": "->",
-                      "TO_ACTOR": "B",
+                      "PLACE": "LEFT_OF",
                       "MESSAGE": "Message"
                     },
-                    "next": {
-                      "block": {
-                        "type": "note",
-                        "id": "`$~p:9L9Q-9(ImavcwAn",
-                        "extraState": {
-                          "dropdowns": [
-                            {
-                              "field": "PLACE",
-                              "options": [
-                                {
-                                  "text": "left of",
-                                  "id": "LEFT_OF"
-                                },
-                                {
-                                  "text": "right of",
-                                  "id": "RIGHT_OF"
-                                },
-                                {
-                                  "text": "over",
-                                  "id": "OVER_ONE"
-                                }
-                              ]
+                    "inputs": {
+                      "ACTOR": {
+                        "block": {
+                          "type": "variables_get",
+                          "id": "|?0/G_qH?H_TL*I[B5SW",
+                          "fields": {
+                            "VAR": {
+                              "id": "d]|M6|Lap%]*,dB@8SP0"
                             }
-                          ]
-                        },
-                        "fields": {
-                          "PLACE": "LEFT_OF",
-                          "ACTOR1": "Actor A",
-                          "MESSAGE": "Message"
+                          }
                         }
                       }
                     }
@@ -159,6 +174,16 @@
       }
     ]
   },
+  "variables": [
+    {
+      "name": "Actor A",
+      "id": "d]|M6|Lap%]*,dB@8SP0"
+    },
+    {
+      "name": "Actor B",
+      "id": "y/A)2m6HG[bA=2GLVAgl"
+    }
+  ],
   "editor": {
     "editor": "sequence",
     "version": 1,

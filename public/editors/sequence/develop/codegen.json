@@ -40,7 +40,7 @@
     "inputs": {
       "CODE": {
         "block": {
-          "id": "AGLf;?jwWFayXCk1Gc5)"
+          "id": "tIxrTNI+O~5YnL7Y5P-}"
         }
       }
     }
@@ -229,50 +229,64 @@
       }
     }
   },
-  "AGLf;?jwWFayXCk1Gc5)": {
-    "type": "generate_field_value2",
-    "id": "AGLf;?jwWFayXCk1Gc5)",
-    "x": 21,
-    "y": 26,
+  "!+),#JF|DmWT?#xEscb(": {
+    "type": "generate_code_variable",
+    "id": "!+),#JF|DmWT?#xEscb(",
+    "x": 292,
+    "y": 533,
     "extraState": {
       "dropdowns": [
         {
-          "field": "FIELDS",
+          "field": "TYPE",
           "options": [
             {
-              "text": "ARROW",
-              "id": "3Wgp((X-FI$gohoXIt;%0"
+              "text": "variables_get",
+              "id": "variables_get"
             },
             {
-              "text": "ARROW",
-              "id": "GL`_,+_3^~;32VS,d,0^0"
-            },
-            {
-              "text": "FROM",
-              "id": "AZG|cCC5}:N=K,[ZkkXt0"
-            },
-            {
-              "text": "FROM_ACTOR",
-              "id": "30VG:+-UIR~foCc)vZL90"
-            },
-            {
-              "text": "MESSAGE",
-              "id": ";yN,oZ|7)Jk;1K?WGX}w0"
-            },
-            {
-              "text": "TO",
-              "id": "?veFw}dEYrY:4+JWt`d*0"
-            },
-            {
-              "text": "TO_ACTOR",
-              "id": "07tx#+^mC,d^s*Vlh8Ch0"
+              "text": "variables_set",
+              "id": "variables_set"
             }
           ]
         }
       ]
     },
     "fields": {
-      "FIELDS": "30VG:+-UIR~foCc)vZL90"
+      "LANGUAGE": "YAML",
+      "TYPE": "variables_get"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "i[ugecFgmD`hYQK[fMe9"
+        }
+      }
+    }
+  },
+  "tIxrTNI+O~5YnL7Y5P-}": {
+    "type": "generate_values2",
+    "id": "tIxrTNI+O~5YnL7Y5P-}",
+    "x": 21,
+    "y": 26,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "VALUE",
+          "options": [
+            {
+              "text": "FROM_ACTOR",
+              "id": "0Y3mh0%iX),VeZ$nl]?|"
+            },
+            {
+              "text": "TO_ACTOR",
+              "id": "h|OBu%K*vNV6=5,o[-Lw"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "VALUE": "0Y3mh0%iX),VeZ$nl]?|"
     },
     "next": {
       "block": {
@@ -350,7 +364,24 @@
     },
     "next": {
       "block": {
-        "id": "Wu.uV]`4;,Xr@u}to?wb"
+        "id": "qpY.bl1Z%TSHVYZ{[4gA"
+      }
+    }
+  },
+  "i[ugecFgmD`hYQK[fMe9": {
+    "type": "generate_javascript",
+    "id": "i[ugecFgmD`hYQK[fMe9",
+    "x": 313,
+    "y": 559,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "JAVASCRIPT": "var name = block.getField('VAR').getVariable().name"
+    },
+    "next": {
+      "block": {
+        "id": "pwe0nzF^Rc@csfrOy3!]"
       }
     }
   },
@@ -401,7 +432,7 @@
     },
     "next": {
       "block": {
-        "id": "z.:2m(7mE_C4nJ@u8@A4"
+        "id": ":=SHG?*W1f2u*$uUIXuT"
       }
     }
   },
@@ -503,78 +534,26 @@
       }
     }
   },
-  "Wu.uV]`4;,Xr@u}to?wb": {
-    "type": "generate_field_value2",
-    "id": "Wu.uV]`4;,Xr@u}to?wb",
+  "qpY.bl1Z%TSHVYZ{[4gA": {
+    "type": "generate_values2",
+    "id": "qpY.bl1Z%TSHVYZ{[4gA",
     "x": 21,
     "y": 516,
     "extraState": {
       "dropdowns": [
         {
-          "field": "FIELDS",
+          "field": "VALUE",
           "options": [
             {
               "text": "ACTOR",
-              "id": "-x|e3/duZ!6TS;yTigJ:0"
-            },
-            {
-              "text": "ACTOR",
-              "id": "2.h9a@Uk.tjt8lYN4VI.0"
-            },
-            {
-              "text": "ARROW",
-              "id": "3Wgp((X-FI$gohoXIt;%0"
-            },
-            {
-              "text": "ARROW",
-              "id": "GL`_,+_3^~;32VS,d,0^0"
-            },
-            {
-              "text": "FROM",
-              "id": "30VG:+-UIR~foCc)vZL90"
-            },
-            {
-              "text": "FROM",
-              "id": "@+]0{yRzNqf_B!.gEJ-Y0"
-            },
-            {
-              "text": "FROM",
-              "id": "AZG|cCC5}:N=K,[ZkkXt0"
-            },
-            {
-              "text": "MESSAGE",
-              "id": "I_QCEd4i0.PO4KIJa?{Z0"
-            },
-            {
-              "text": "MESSAGE",
-              "id": "KQoOW[ptB6yb^k5gqcKa0"
-            },
-            {
-              "text": "PLACE",
-              "id": "flgX7+1wNVs;4Ayk-DrK0"
-            },
-            {
-              "text": "PLACE",
-              "id": "wvbTC70Lr*,Pp=7h_pn`0"
-            },
-            {
-              "text": "TO",
-              "id": "07tx#+^mC,d^s*Vlh8Ch0"
-            },
-            {
-              "text": "TO",
-              "id": "6S=WS4=K?Vs-G3GavUN]0"
-            },
-            {
-              "text": "TO",
-              "id": "?veFw}dEYrY:4+JWt`d*0"
+              "id": "[5yBY31r+Q1[Mt(23lVH"
             }
           ]
         }
       ]
     },
     "fields": {
-      "FIELDS": "2.h9a@Uk.tjt8lYN4VI.0"
+      "VALUE": "[5yBY31r+Q1[Mt(23lVH"
     },
     "next": {
       "block": {
@@ -582,50 +561,42 @@
       }
     }
   },
-  "z.:2m(7mE_C4nJ@u8@A4": {
-    "type": "generate_field_value2",
-    "id": "z.:2m(7mE_C4nJ@u8@A4",
+  "pwe0nzF^Rc@csfrOy3!]": {
+    "type": "generate_javascript",
+    "id": "pwe0nzF^Rc@csfrOy3!]",
+    "x": 313,
+    "y": 585,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "JAVASCRIPT": "code += name;"
+    }
+  },
+  ":=SHG?*W1f2u*$uUIXuT": {
+    "type": "generate_values2",
+    "id": ":=SHG?*W1f2u*$uUIXuT",
     "x": 21,
     "y": 78,
     "extraState": {
       "dropdowns": [
         {
-          "field": "FIELDS",
+          "field": "VALUE",
           "options": [
             {
-              "text": "ARROW",
-              "id": "3Wgp((X-FI$gohoXIt;%0"
-            },
-            {
-              "text": "ARROW",
-              "id": "GL`_,+_3^~;32VS,d,0^0"
-            },
-            {
-              "text": "FROM",
-              "id": "AZG|cCC5}:N=K,[ZkkXt0"
-            },
-            {
               "text": "FROM_ACTOR",
-              "id": "30VG:+-UIR~foCc)vZL90"
-            },
-            {
-              "text": "MESSAGE",
-              "id": ";yN,oZ|7)Jk;1K?WGX}w0"
-            },
-            {
-              "text": "TO",
-              "id": "?veFw}dEYrY:4+JWt`d*0"
+              "id": "0Y3mh0%iX),VeZ$nl]?|"
             },
             {
               "text": "TO_ACTOR",
-              "id": "07tx#+^mC,d^s*Vlh8Ch0"
+              "id": "h|OBu%K*vNV6=5,o[-Lw"
             }
           ]
         }
       ]
     },
     "fields": {
-      "FIELDS": "07tx#+^mC,d^s*Vlh8Ch0"
+      "VALUE": "h|OBu%K*vNV6=5,o[-Lw"
     },
     "next": {
       "block": {
@@ -658,7 +629,7 @@
     },
     "next": {
       "block": {
-        "id": "MeL}w-hEGXnUjS@[H7]Y"
+        "id": "o]J`L}z^DEq28~4mb*#i"
       }
     }
   },
@@ -691,70 +662,26 @@
       }
     }
   },
-  "MeL}w-hEGXnUjS@[H7]Y": {
-    "type": "generate_field_value2",
-    "id": "MeL}w-hEGXnUjS@[H7]Y",
+  "o]J`L}z^DEq28~4mb*#i": {
+    "type": "generate_values2",
+    "id": "o]J`L}z^DEq28~4mb*#i",
     "x": 21,
     "y": 323,
     "extraState": {
       "dropdowns": [
         {
-          "field": "FIELDS",
+          "field": "VALUE",
           "options": [
             {
               "text": "ACTOR",
-              "id": "2.h9a@Uk.tjt8lYN4VI.0"
-            },
-            {
-              "text": "ACTOR1",
-              "id": ":H-q8u_Zw#,z#[0Pl,G10"
-            },
-            {
-              "text": "ARROW",
-              "id": "3Wgp((X-FI$gohoXIt;%0"
-            },
-            {
-              "text": "ARROW",
-              "id": "GL`_,+_3^~;32VS,d,0^0"
-            },
-            {
-              "text": "FROM",
-              "id": "30VG:+-UIR~foCc)vZL90"
-            },
-            {
-              "text": "FROM",
-              "id": "@+]0{yRzNqf_B!.gEJ-Y0"
-            },
-            {
-              "text": "FROM",
-              "id": "AZG|cCC5}:N=K,[ZkkXt0"
-            },
-            {
-              "text": "MESSAGE",
-              "id": "I_QCEd4i0.PO4KIJa?{Z0"
-            },
-            {
-              "text": "PLACE",
-              "id": "wvbTC70Lr*,Pp=7h_pn`0"
-            },
-            {
-              "text": "TO",
-              "id": "07tx#+^mC,d^s*Vlh8Ch0"
-            },
-            {
-              "text": "TO",
-              "id": "6S=WS4=K?Vs-G3GavUN]0"
-            },
-            {
-              "text": "TO",
-              "id": "?veFw}dEYrY:4+JWt`d*0"
+              "id": ";iolE[yy*Gsb8S,grCTC"
             }
           ]
         }
       ]
     },
     "fields": {
-      "FIELDS": ":H-q8u_Zw#,z#[0Pl,G10"
+      "VALUE": ";iolE[yy*Gsb8S,grCTC"
     },
     "next": {
       "block": {
@@ -930,7 +857,8 @@
     "1PS=N[p~__axqQ3zzP2#",
     "~ElCZSjX]SDF$KG0ZzfO",
     "Z`SalX-4JND/+Vm3W=yU",
-    "Oe{ynxm_Z:.X/Hu8t*eK"
+    "Oe{ynxm_Z:.X/Hu8t*eK",
+    "!+),#JF|DmWT?#xEscb("
   ],
   "mergeable": true
 }
