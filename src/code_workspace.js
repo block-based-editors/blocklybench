@@ -182,6 +182,10 @@ CodeGen.init_code = function() {
          "kind": "block",
          "type": "generate_token_if_next_block"
        },
+       {
+        "kind": "block",
+        "type": "generate_code_variable"
+       }
       ]
      },
      {
