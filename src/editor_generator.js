@@ -252,11 +252,6 @@ function codeGeneration(event) {
 		  code = "Error while creating code:" + e
 	  }     
     document.getElementById('codeDiv').value = code;
-    // trigger a update_code function if it exist
-    if (update_code)
-    {
-      update_code(code);
-    }
   }
 }
 
