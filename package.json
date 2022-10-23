@@ -3,11 +3,11 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "@blockly/field-date": "6.0.0",
+    "@blockly/field-date": "^6.0.0",
     "@blockly/plugin-workspace-search": "",
     "@blockly/theme-dark": "",
     "@blockly/zoom-to-fit": "",
-    "blockly": "^9",
+    "blockly": "^9.0.1",
     "file-saver": "^2.0.5",
     "idb-keyval": "^5",
     "jquery": "^3.6",

@@ -735,11 +735,7 @@ FactoryUtils.getFieldsJs_ = function(block) {
 
             fields.push('new Blockly.FieldDropdown(' +
                   JSON.stringify(split)+ `, function(in_out_value) {
-                      var source_block = null;
-                      try
-                      {
-                        source_block = this.getSourceBlock();
-                      } catch (e) {}
+                      var source_block = this.getSourceBlock();
                                           
                       if(source_block)  
                       {
@@ -766,12 +762,8 @@ FactoryUtils.getFieldsJs_ = function(block) {
             fields.push(`new Blockly.FieldDropdown(function() {
                         var options = ` + JSON.stringify(options) + `
                         var first_selection = null;
-                        var source_block = null;
-                        try
-                        {
-                          source_block = this.getSourceBlock();
-                        } catch (e) {}
-                      
+                        var source_block = this.getSourceBlock();
+                        
                         if (source_block) {
                           first_selection = this.getSourceBlock().getFieldValue("` + block.getFieldValue('FIELDNAME1') + `"); 
                         }

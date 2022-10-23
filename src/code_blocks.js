@@ -685,11 +685,7 @@ Blockly.Blocks['generate_list_length'] = {
                     // than the type field for the code_generation block
                     // than find in the factory_base blocks with name 'block_type'
                     // than find the all descendants (fields in the factory base)
-                    try {
-                      var source_block = this.getSourceBlock()
-                    } catch (e) {
-                      var source_block = null;
-                    }
+                    var source_block = this.getSourceBlock()
                     
                     var parent = null;
                     var all_blocks = []
@@ -1115,11 +1111,7 @@ Blockly.Blocks['generate_field_value2'] = {
                     // than the type field for the code_generation block
                     // than find in the factory_base blocks with name 'block_type'
                     // than find the all descendants (fields in the factory base)
-                    try {
-                      var source_block = this.getSourceBlock()
-                    } catch (e) {
-                      var source_block = null;
-                    }
+                    var source_block = this.getSourceBlock()
                     
                     var parent = null;
                     var all_blocks = []
@@ -1320,15 +1312,13 @@ Blockly.Blocks['generate_field_text'] = {
                     // than the type field for the code_generation block
                     // than find in the factory_base blocks with name 'block_type'
                     // than find the all descendants (fields in the factory base)
-                    try {
-                      var source_block = this.getSourceBlock()
-                    } catch (e) {
-                      var source_block = null;
-                    }
+                    var source_block = this.getSourceBlock()
+                    
                     var parent = null;
                     var all_blocks = []
                     if (source_block)
-                    {  parent = source_block.getSurroundParent()
+                    {  
+                      parent = source_block.getSurroundParent()
                     }    
                     if (parent)
                     {
@@ -1521,11 +1511,8 @@ Blockly.Blocks['generate_statements3'] = {
                     // than the type field for the code_generation block
                     // than find in the factory_base blocks with name 'block_type'
                     // than find the all descendants (fields in the factory base)
-                    try {
-                      var source_block = this.getSourceBlock()
-                    } catch (e) {
-                      var source_block = null;
-                    }
+                    var source_block = this.getSourceBlock()
+                    
                     var parent = null;
                     var all_blocks = []
                     if (source_block)
@@ -1733,11 +1720,8 @@ Blockly.Blocks['generate_statements2'] = {
                     // than the type field for the code_generation block
                     // than find in the factory_base blocks with name 'block_type'
                     // than find the all descendants (fields in the factory base)
-                    try {
-                      var source_block = this.getSourceBlock()
-                    } catch (e) {
-                      var source_block = null;
-                    }
+                    var source_block = this.getSourceBlock()
+                    
                     var parent = null;
                     var all_blocks = []
                     if (source_block)
@@ -1936,15 +1920,13 @@ Blockly.Blocks['generate_values2'] = {
                     // than the type field for the code_generation block
                     // than find in the factory_base blocks with name 'block_type'
                     // than find the all descendants (fields in the factory base)
-                    try {
-                      var source_block = this.getSourceBlock()
-                    } catch (e) {
-                      var source_block = null;
-                    }
+                    var source_block = this.getSourceBlock()
+                    
                     var parent = null;
                     var all_blocks = []
                     if (source_block)
-                    {  parent = source_block.getSurroundParent()
+                    {  
+                      parent = source_block.getSurroundParent()
                     }    
                     if (parent)
                     {
