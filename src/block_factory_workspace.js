@@ -551,6 +551,7 @@ function add_load_save_listeners()
     inputElement.addEventListener("change", loadZip, false);
     
     document.getElementById("save").addEventListener("click", saveZip);
+    document.getElementById("clear").addEventListener("click", new_editor);
     
     document.getElementById("loadEditor").addEventListener("click", load_editor_from_website_button);
     saveDirectFiles();
@@ -682,6 +683,11 @@ function loadDirectFiles()
 function get_load()
 {
 	return get_from_url('load');
+}
+
+function get_clear()
+{
+  return get_from_url('clear');
 }
 
 function get_editor()
@@ -864,6 +870,15 @@ function load_editor_from_website(editor)
   window.history.pushState('', '', pageUrl);
 }
 
+function new_editor()
+{
+
+  var editor = window.prompt("Name of the new editor:",'myEditor');
+  var url = new window.URL(window.location);
+  url.searchParams.set("editor", editor);
+  window.location.href = url
+
+}
 
 function load_editor_from_website_button()
 {
@@ -1263,5 +1278,13 @@ document.addEventListener("DOMContentLoaded", function ()
 	  
 	  window.history.pushState({}, document.title, removeParam('load', window.location.search));
   }
-
+  if (get_clear())
+  {
+    factory_workspace.clear();
+    Toolbox.toolbox_workspace.clear();
+    CodeGen.code_workspace.clear();
+    Concrete.concrete_workspace.clear();
+  }
+  window.history.pushState({}, document.title, removeParam('clear', window.location.search));
+  
 })
