@@ -927,6 +927,11 @@ function load_all(name)
         })
 }
 
+function load_xml_text_to_workspace(workspace, xmlText)
+{
+  workspace.clear()
+  Blockly.Xml.domToWorkspace(Blockly.Xml.textToDom(xmlText), workspace);
+}
 
 function load_json_text_to_workspace(workspace, text)
 {
@@ -948,22 +953,33 @@ function loadZip()
 	  var file = this.files[i];
 	  if (file) 
 	  {
-		JSZip.loadAsync(file)                                   
-		  .then(function(zip) {
-			zip.file('develop/factory.json').async("text").then(function (json_text) {
-			  load_json_text_to_workspace(factory_workspace, json_text);
-				zip.file('develop/toolbox.json').async("text").then(function (json_text) {
-				  load_json_text_to_workspace(Toolbox.toolbox_workspace, json_text);
-					zip.file('develop/codegen.json').async("text").then(function (json_text) {
-					  load_json_text_to_workspace(CodeGen.code_workspace, json_text);
-						zip.file('develop/concrete.json').async("text").then(function (json_text) {
-						  load_json_text_to_workspace(Concrete.concrete_workspace, json_text);
-						});
-					});
-				});
-			});
-		  })
-	  }
+      if (file.type == "text/xml")
+      {
+        var reader = new FileReader();
+			  reader.readAsText(file, "UTF-8");
+			  reader.onload = function (evt) {
+				  load_xml_text_to_workspace(factory_workspace, evt.target.result);
+        }
+      }
+      else if (file.type == "application/x-zip-compressed")
+      {
+		    JSZip.loadAsync(file).then(function(zip) {
+
+			    zip.file('develop/factory.json').async("text").then(function (json_text) {
+			      load_json_text_to_workspace(factory_workspace, json_text);
+            zip.file('develop/toolbox.json').async("text").then(function (json_text) {
+              load_json_text_to_workspace(Toolbox.toolbox_workspace, json_text);
+              zip.file('develop/codegen.json').async("text").then(function (json_text) {
+                load_json_text_to_workspace(CodeGen.code_workspace, json_text);
+                zip.file('develop/concrete.json').async("text").then(function (json_text) {
+                  load_json_text_to_workspace(Concrete.concrete_workspace, json_text);
+                });
+						  });
+					  });
+				  });
+		    });
+	    }
+   }
   }
 }
 
