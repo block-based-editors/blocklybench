@@ -103,9 +103,9 @@ var DownloadScreen = {}; // create a namespace
     a.download = 'screenshot.png';
     a.target = '_self';
     a.href = datauri;
-	document.body.appendChild(a);
-	a.click();
-	a.parentNode.removeChild(a);
+  document.body.appendChild(a);
+  a.click();
+  a.parentNode.removeChild(a);
   });
 };
 

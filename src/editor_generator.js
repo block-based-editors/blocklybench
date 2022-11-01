@@ -27,7 +27,7 @@ BlocklyStorage.HTTPREQUEST_ERROR = 'There was a problem with the request.\\n';
 BlocklyStorage.LINK_ALERT = 'Share your blocks with this link:\\n\\n%1';
 BlocklyStorage.HASH_ERROR = 'Sorry, "%1" doesn\\'t correspond with any saved Blockly file.';
 BlocklyStorage.XML_ERROR = 'Could not load your saved file.\\n' +
-		'Perhaps it was created with a different version of Blockly?';
+    'Perhaps it was created with a different version of Blockly?';
 
 /**
  * Backup code blocks to localStorage.
@@ -208,7 +208,7 @@ BlocklyStorage.alert = function(message) {
 
 Editor.generate_editor_js = function(factory_code, language, editor)
 {
-	var code = "";
+  var code = "";
 
     code += factory_code // from factory
     code += CodeGen.get_code()
@@ -223,23 +223,23 @@ Editor.generate_editor_js = function(factory_code, language, editor)
 // hardcoded till the end
 
 var options = { 
-	toolbox : toolbox, 
-	collapse : true, 
-	comments : true, 
-	disable : false, 
-	maxBlocks : Infinity, 
-	trashcan : false, 
-	horizontalLayout : false, 
-	toolboxPosition : 'start', 
-	css : true, 
+  toolbox : toolbox, 
+  collapse : true, 
+  comments : true, 
+  disable : false, 
+  maxBlocks : Infinity, 
+  trashcan : false, 
+  horizontalLayout : false, 
+  toolboxPosition : 'start', 
+  css : true, 
   zoom: {
     controls: true,
   },
-	media : 'https://blockly-demo.appspot.com/static/media/', 
-	rtl : false, 
-	scrollbars : true, 
-	sounds : true, 
-	oneBasedIndex : true
+  media : 'https://blockly-demo.appspot.com/static/media/', 
+  rtl : false, 
+  scrollbars : true, 
+  sounds : true, 
+  oneBasedIndex : true
 };
 
 function codeGeneration(event) {
@@ -247,18 +247,18 @@ function codeGeneration(event) {
   {  
     try {
           var code = Blockly.`+ language + `.workspaceToCode(workspace);
-	  } catch (e) {
-		  console.warn("Error while creating code", e);
-		  code = "Error while creating code:" + e
-	  }     
+    } catch (e) {
+      console.warn("Error while creating code", e);
+      code = "Error while creating code:" + e
+    }     
     document.getElementById('codeDiv').value = code;
   }
 }
 
 function updateDropdownRename(event)
 {
-	if (event.type == "change" && (event.name=="NAME" || event.name=="FIELDNAME" ) || event.type == "create")
-	{
+  if (event.type == "change" && (event.name=="NAME" || event.name=="FIELDNAME" ) || event.type == "create")
+  {
     var blocks = workspace.getAllBlocks(); 
     for (var k = 0; k < blocks.length; k++) {
       var block = blocks[k];
@@ -353,18 +353,18 @@ function add_load()
   inputElement.addEventListener("change", handleFiles, false);
   function handleFiles() {
     for (let i = 0; i < this.files.length; i++) {
-		var file = this.files[i];
-		if (file) {
-		  var reader = new FileReader();
-		  reader.readAsText(file, "UTF-8");
-		  reader.onload = function (evt) {
-			var json = JSON.parse(evt.target.result);
-			Blockly.serialization.workspaces.load(json, workspace)
-		  }
-		  reader.onerror = function (evt) {
-			document.getElementById("error").innerHTML = "error reading file";
-		  }
-		}
+    var file = this.files[i];
+    if (file) {
+      var reader = new FileReader();
+      reader.readAsText(file, "UTF-8");
+      reader.onload = function (evt) {
+      var json = JSON.parse(evt.target.result);
+      Blockly.serialization.workspaces.load(json, workspace)
+      }
+      reader.onerror = function (evt) {
+      document.getElementById("error").innerHTML = "error reading file";
+      }
+    }
     }
   }
 }
@@ -407,7 +407,7 @@ Editor.generate_editor_html = function(editor) {
 </html>
  ` 
 
-	return code
+  return code
 }
 
 export default Editor;

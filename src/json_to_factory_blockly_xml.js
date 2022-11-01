@@ -52,8 +52,8 @@ function xml_find(xmlElement, nodeName)
       }
       else // search deeper
       {
-      	var ret = xml_find(childNode, nodeName);
-      	if (ret) return ret
+        var ret = xml_find(childNode, nodeName);
+        if (ret) return ret
       }
   }
 }
@@ -98,14 +98,14 @@ function  key_list_xml(key) {
 function getWorkspaceByName(name)
 {
     var workspaces = Blockly.Workspace.getAll();
-	for (var i=0; i< workspaces.length;i++) {
-	  var workspace = workspaces[i]
+  for (var i=0; i< workspaces.length;i++) {
+    var workspace = workspaces[i]
 
-	  if (workspace.name == name)
-	  {
-		return workspace
-	  }
-	}
+    if (workspace.name == name)
+    {
+    return workspace
+    }
+  }
 }
   
 function  key_dict_xml(key, key_value_list) {

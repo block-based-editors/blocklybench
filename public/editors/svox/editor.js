@@ -27,9 +27,9 @@ Blockly.Blocks['texture'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -41,7 +41,7 @@ Blockly.Blocks['texture'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -52,9 +52,9 @@ Blockly.Blocks['texture'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -62,7 +62,7 @@ Blockly.Blocks['texture'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -164,9 +164,9 @@ Blockly.Blocks['light_point'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -178,7 +178,7 @@ Blockly.Blocks['light_point'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -189,9 +189,9 @@ Blockly.Blocks['light_point'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -199,7 +199,7 @@ Blockly.Blocks['light_point'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -287,9 +287,9 @@ Blockly.Blocks['color'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -301,7 +301,7 @@ Blockly.Blocks['color'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -312,9 +312,9 @@ Blockly.Blocks['color'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -322,7 +322,7 @@ Blockly.Blocks['color'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -420,9 +420,9 @@ Blockly.Blocks['material'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -434,7 +434,7 @@ Blockly.Blocks['material'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -445,9 +445,9 @@ Blockly.Blocks['material'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -455,7 +455,7 @@ Blockly.Blocks['material'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -542,9 +542,9 @@ Blockly.Blocks['lights_on_off'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -556,7 +556,7 @@ Blockly.Blocks['lights_on_off'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -567,9 +567,9 @@ Blockly.Blocks['lights_on_off'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -577,7 +577,7 @@ Blockly.Blocks['lights_on_off'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -664,9 +664,9 @@ Blockly.Blocks['fade'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -678,7 +678,7 @@ Blockly.Blocks['fade'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -689,9 +689,9 @@ Blockly.Blocks['fade'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -699,7 +699,7 @@ Blockly.Blocks['fade'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -786,9 +786,9 @@ Blockly.Blocks['auto_resize'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -800,7 +800,7 @@ Blockly.Blocks['auto_resize'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -811,9 +811,9 @@ Blockly.Blocks['auto_resize'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -821,7 +821,7 @@ Blockly.Blocks['auto_resize'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -908,9 +908,9 @@ Blockly.Blocks['opacity'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -922,7 +922,7 @@ Blockly.Blocks['opacity'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -933,9 +933,9 @@ Blockly.Blocks['opacity'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -943,7 +943,7 @@ Blockly.Blocks['opacity'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -1035,9 +1035,9 @@ Blockly.Blocks['deform'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -1049,7 +1049,7 @@ Blockly.Blocks['deform'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -1060,9 +1060,9 @@ Blockly.Blocks['deform'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -1070,7 +1070,7 @@ Blockly.Blocks['deform'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -1157,9 +1157,9 @@ Blockly.Blocks['metalness'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -1171,7 +1171,7 @@ Blockly.Blocks['metalness'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -1182,9 +1182,9 @@ Blockly.Blocks['metalness'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -1192,7 +1192,7 @@ Blockly.Blocks['metalness'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -1279,9 +1279,9 @@ Blockly.Blocks['side'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -1293,7 +1293,7 @@ Blockly.Blocks['side'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -1304,9 +1304,9 @@ Blockly.Blocks['side'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -1314,7 +1314,7 @@ Blockly.Blocks['side'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -1401,9 +1401,9 @@ Blockly.Blocks['orgiin'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -1415,7 +1415,7 @@ Blockly.Blocks['orgiin'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -1426,9 +1426,9 @@ Blockly.Blocks['orgiin'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -1436,7 +1436,7 @@ Blockly.Blocks['orgiin'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -1532,9 +1532,9 @@ Blockly.Blocks['light_directional'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -1546,7 +1546,7 @@ Blockly.Blocks['light_directional'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -1557,9 +1557,9 @@ Blockly.Blocks['light_directional'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -1567,7 +1567,7 @@ Blockly.Blocks['light_directional'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -1654,9 +1654,9 @@ Blockly.Blocks['colors'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -1668,7 +1668,7 @@ Blockly.Blocks['colors'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -1679,9 +1679,9 @@ Blockly.Blocks['colors'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -1689,7 +1689,7 @@ Blockly.Blocks['colors'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -2187,9 +2187,9 @@ Blockly.Blocks['voxel_7'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -2201,7 +2201,7 @@ Blockly.Blocks['voxel_7'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -2212,9 +2212,9 @@ Blockly.Blocks['voxel_7'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -2222,7 +2222,7 @@ Blockly.Blocks['voxel_7'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -2308,9 +2308,9 @@ Blockly.Blocks['voxel_repeat'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -2322,7 +2322,7 @@ Blockly.Blocks['voxel_repeat'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -2333,9 +2333,9 @@ Blockly.Blocks['voxel_repeat'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -2343,7 +2343,7 @@ Blockly.Blocks['voxel_repeat'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -2429,9 +2429,9 @@ Blockly.Blocks['voxel_text'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -2443,7 +2443,7 @@ Blockly.Blocks['voxel_text'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -2454,9 +2454,9 @@ Blockly.Blocks['voxel_text'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -2464,7 +2464,7 @@ Blockly.Blocks['voxel_text'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -2550,9 +2550,9 @@ Blockly.Blocks['voxel_start'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -2564,7 +2564,7 @@ Blockly.Blocks['voxel_start'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -2575,9 +2575,9 @@ Blockly.Blocks['voxel_start'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -2585,7 +2585,7 @@ Blockly.Blocks['voxel_start'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -2672,9 +2672,9 @@ Blockly.Blocks['voxels'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -2686,7 +2686,7 @@ Blockly.Blocks['voxels'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -2697,9 +2697,9 @@ Blockly.Blocks['voxels'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -2707,7 +2707,7 @@ Blockly.Blocks['voxels'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -2798,9 +2798,9 @@ Blockly.Blocks['light_ambient'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -2812,7 +2812,7 @@ Blockly.Blocks['light_ambient'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -2823,9 +2823,9 @@ Blockly.Blocks['light_ambient'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -2833,7 +2833,7 @@ Blockly.Blocks['light_ambient'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -2923,9 +2923,9 @@ Blockly.Blocks['model'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -2937,7 +2937,7 @@ Blockly.Blocks['model'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -2948,9 +2948,9 @@ Blockly.Blocks['model'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -2958,7 +2958,7 @@ Blockly.Blocks['model'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -3047,9 +3047,9 @@ Blockly.Blocks['rotation'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -3061,7 +3061,7 @@ Blockly.Blocks['rotation'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -3072,9 +3072,9 @@ Blockly.Blocks['rotation'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -3082,7 +3082,7 @@ Blockly.Blocks['rotation'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -3171,9 +3171,9 @@ Blockly.Blocks['scale'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -3185,7 +3185,7 @@ Blockly.Blocks['scale'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -3196,9 +3196,9 @@ Blockly.Blocks['scale'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions) // is dropdown
-		    {
+      {  
+        if (field.getOptions) // is dropdown
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -3206,7 +3206,7 @@ Blockly.Blocks['scale'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -4180,7 +4180,7 @@ BlocklyStorage.HTTPREQUEST_ERROR = 'There was a problem with the request.\n';
 BlocklyStorage.LINK_ALERT = 'Share your blocks with this link:\n\n%1';
 BlocklyStorage.HASH_ERROR = 'Sorry, "%1" doesn\'t correspond with any saved Blockly file.';
 BlocklyStorage.XML_ERROR = 'Could not load your saved file.\n' +
-		'Perhaps it was created with a different version of Blockly?';
+    'Perhaps it was created with a different version of Blockly?';
 
 /**
  * Backup code blocks to localStorage.
@@ -4490,20 +4490,20 @@ toolbox = {
 // hardcoded till the end
 
 var options = { 
-	toolbox : toolbox, 
-	collapse : true, 
-	comments : true, 
-	disable : false, 
-	maxBlocks : Infinity, 
-	trashcan : false, 
-	horizontalLayout : false, 
-	toolboxPosition : 'start', 
-	css : true, 
-	media : 'https://blockly-demo.appspot.com/static/media/', 
-	rtl : false, 
-	scrollbars : true, 
-	sounds : true, 
-	oneBasedIndex : true
+  toolbox : toolbox, 
+  collapse : true, 
+  comments : true, 
+  disable : false, 
+  maxBlocks : Infinity, 
+  trashcan : false, 
+  horizontalLayout : false, 
+  toolboxPosition : 'start', 
+  css : true, 
+  media : 'https://blockly-demo.appspot.com/static/media/', 
+  rtl : false, 
+  scrollbars : true, 
+  sounds : true, 
+  oneBasedIndex : true
 };
 
 function codeGeneration(event) {
@@ -4511,20 +4511,20 @@ function codeGeneration(event) {
   {  
       try {
           var code = Blockly.SVOX.workspaceToCode(workspace);
-	  } catch (e) {
-		console.warn("Error while creating code", e);
-		code = "Error while creating code:" + e
-	  }     
+    } catch (e) {
+    console.warn("Error while creating code", e);
+    code = "Error while creating code:" + e
+    }     
       document.getElementById('codeDiv').value = code;
-  	  editor.setValue(code, -1);
-	  renderModel();
+      editor.setValue(code, -1);
+    renderModel();
   }
 }
 
 function updateDropdownRename(event)
 {
-	if (event.type == "change" && (event.name=="NAME" || event.name=="FIELDNAME" ) || event.type == "create")
-	{
+  if (event.type == "change" && (event.name=="NAME" || event.name=="FIELDNAME" ) || event.type == "create")
+  {
     var blocks = workspace.getAllBlocks(); 
     for (var k = 0; k < blocks.length; k++) {
       var block = blocks[k];
@@ -4595,18 +4595,18 @@ function add_load()
   inputElement.addEventListener("change", handleFiles, false);
   function handleFiles() {
     for (let i = 0; i < this.files.length; i++) {
-		var file = this.files[i];
-		if (file) {
-		  var reader = new FileReader();
-		  reader.readAsText(file, "UTF-8");
-		  reader.onload = function (evt) {
-			var json = JSON.parse(evt.target.result);
-			Blockly.serialization.workspaces.load(json, workspace)
-		  }
-		  reader.onerror = function (evt) {
-			document.getElementById("error").innerHTML = "error reading file";
-		  }
-		}
+    var file = this.files[i];
+    if (file) {
+      var reader = new FileReader();
+      reader.readAsText(file, "UTF-8");
+      reader.onload = function (evt) {
+      var json = JSON.parse(evt.target.result);
+      Blockly.serialization.workspaces.load(json, workspace)
+      }
+      reader.onerror = function (evt) {
+      document.getElementById("error").innerHTML = "error reading file";
+      }
+    }
     }
   }
 }

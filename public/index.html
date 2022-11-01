@@ -50,7 +50,7 @@ div.small_column {
  
   resize: both;
   overflow: hidden;
-	
+  
 }
 
 /* CSS */
@@ -108,30 +108,30 @@ Generate concrete code language:
 
 <body mode="maker">
     <div class="blockly-editor">
-		<div class="row" id="firstRow">
-		  <div class="column" id="blocklyFactoryArea">
-		    <div style="height: 50vh">
-		      <div id="blocklyFactoryDiv" style="position=absolute"></div>
-		    </div>
-		  </div>  
-		  <div class="small_column" id="blocklyToolboxArea">
-		    <div style="height: 50vh"> 
-	          <div id="blocklyToolboxDiv" style="position=absolute"></div>
-	        </div>
-	      </div>
-		  <div class="column" id="blocklyConcreteArea">
-		    <div style="height: 50vh">
-		     <div id="blocklyConcreteDiv" style="position=absolute"></div>
-	        </div>
-	      </div>
-	    </div>
-		<div class="row">
-	     <div class="column" id="blocklyGeneratorArea">
-	        <div style="height: 38vh; width: 100%; "> 
-	          <div id="blocklyGeneratorDiv" style="position=absolute"></div>
-	        </div>
-	     </div>
-	    </div>
+    <div class="row" id="firstRow">
+      <div class="column" id="blocklyFactoryArea">
+        <div style="height: 50vh">
+          <div id="blocklyFactoryDiv" style="position=absolute"></div>
+        </div>
+      </div>  
+      <div class="small_column" id="blocklyToolboxArea">
+        <div style="height: 50vh"> 
+            <div id="blocklyToolboxDiv" style="position=absolute"></div>
+          </div>
+        </div>
+      <div class="column" id="blocklyConcreteArea">
+        <div style="height: 50vh">
+         <div id="blocklyConcreteDiv" style="position=absolute"></div>
+          </div>
+        </div>
+      </div>
+    <div class="row">
+       <div class="column" id="blocklyGeneratorArea">
+          <div style="height: 38vh; width: 100%; "> 
+            <div id="blocklyGeneratorDiv" style="position=absolute"></div>
+          </div>
+       </div>
+      </div>
     </div>
 
 
@@ -217,7 +217,7 @@ Generate concrete code language:
   </div>
   <div class="update_code">
     <textarea id="factory_code" class="textarea_content" spellcheck="false"></textarea>
-  </div>	
+  </div>  
 </div>
 
 <div id="concrete_json_content" class="ui-widget-content" onmousedown="textareaFocus('concrete_json_content');" ontouchstart="textareaFocus('concrete_json_content');">
@@ -226,7 +226,7 @@ Generate concrete code language:
   </div>
   <div class="update_code">
     <textarea id="concrete_json" class="textarea_content" spellcheck="false"></textarea>
-  </div>	
+  </div>  
 </div>
 
 
@@ -237,7 +237,7 @@ Generate concrete code language:
   </div>
   <div class="update_code">
     <textarea id="generator_code" class="textarea_content" spellcheck="false"></textarea>
-  </div>	
+  </div>  
 </div>
 
 <div id="toolbox_javascript_content" class="ui-widget-content" onmousedown="textareaFocus('toolbox_javascript_content');" ontouchstart="textareaFocus('toolbox_javascript_content');">
@@ -246,7 +246,7 @@ Generate concrete code language:
   </div>
   <div class="update_code">
     <textarea id="toolbox_javascript" class="textarea_content" spellcheck="false"></textarea>
-  </div>	
+  </div>  
 </div>
 
 <div id="concrete_generation_content" class="ui-widget-content" onmousedown="textareaFocus('concrete_generation_content');" ontouchstart="textareaFocus('concrete_generation_content');">
@@ -255,30 +255,30 @@ Generate concrete code language:
   </div>
   <div class="update_code">
     <textarea id="concrete_code" class="textarea_content" spellcheck="false"></textarea>
-  </div>	
+  </div>  
 </div>
 
 
 <script>
   $( "#factory_code_content" ).draggable();
-  $( "#factory_code_content" ).resizable();		
+  $( "#factory_code_content" ).resizable();    
 
   $( "#code_generation_content" ).draggable();
-  $( "#code_generation_content" ).resizable();		
+  $( "#code_generation_content" ).resizable();    
   $( "#concrete_generation_content" ).draggable();
-  $( "#concrete_generation_content  " ).resizable();		
+  $( "#concrete_generation_content  " ).resizable();    
   $( "#toolbox_javascript_content" ).draggable();
-  $( "#toolbox_javascript_content  " ).resizable();	
+  $( "#toolbox_javascript_content  " ).resizable();  
   $( "#concrete_json_content" ).draggable();
-  $( "#concrete_json_content  " ).resizable();		
+  $( "#concrete_json_content  " ).resizable();    
   
-  	
+    
   var contents = ['factory_code_content','concrete_json_content','concrete_generation_content','toolbox_javascript_content', 'code_generation_content'];
   function textareaFocus(id) {
-	for (var i in contents) {
-		const content = document.getElementById(contents[i]);
-		content.style.zIndex = (contents[i]==id)?"999999":"999998";
-	}
+  for (var i in contents) {
+    const content = document.getElementById(contents[i]);
+    content.style.zIndex = (contents[i]==id)?"999999":"999998";
+  }
   }
   textareaFocus('all')
   

@@ -17,64 +17,64 @@ CodeGen.code_workspace = null;
 
 CodeGen.get_code = function()
 {
-	return javascriptGenerator.workspaceToCode(CodeGen.code_workspace);
+  return javascriptGenerator.workspaceToCode(CodeGen.code_workspace);
 }
 
 function add_options(selection, languages)
 {
-	for (let language of languages)
-	{
-	   var opt = document.createElement('option');
+  for (let language of languages)
+  {
+     var opt = document.createElement('option');
        opt.value = language;
        opt.innerHTML = language;
        selection.appendChild(opt);
-	}
+  }
 
 }
 CodeGen.select_language = function(selection, language)
 
 {
-	var opts = selection.options;
-	for (var opt, j = 0; opt = opts[j]; j++) {
-	  if (opt.value == language) {
-		selection.selectedIndex = j;
-		break;
-	  }
-	}
+  var opts = selection.options;
+  for (var opt, j = 0; opt = opts[j]; j++) {
+    if (opt.value == language) {
+    selection.selectedIndex = j;
+    break;
+    }
+  }
 }
 
 CodeGen.getLanguages = function()
 {
-	var blocks = CodeGen.code_workspace.getTopBlocks()
-	var languages = new Set()
-	for (var i=0;i<blocks.length; i++)
-	{
+  var blocks = CodeGen.code_workspace.getTopBlocks()
+  var languages = new Set()
+  for (var i=0;i<blocks.length; i++)
+  {
         languages.add(blocks[i].getFieldValue('LANGUAGE'))
-	}
+  }
   return languages
 }
 
 CodeGen.updateLanguageDropdown = function(event) {
   var languages = CodeGen.getLanguages();
 
-	var selection = document.getElementById('language');
+  var selection = document.getElementById('language');
 
-	var index = -1
-	if (selection.options)
-	{
-		index = selection.options.selectedIndex
-	}
-	var selected_language = null;
-	if (index>=0)
-	{
-		selected_language = selection.options[index].label
+  var index = -1
+  if (selection.options)
+  {
+    index = selection.options.selectedIndex
+  }
+  var selected_language = null;
+  if (index>=0)
+  {
+    selected_language = selection.options[index].label
 
-	}
-	selection.options.length = 0
-	add_options(selection, languages)
+  }
+  selection.options.length = 0
+  add_options(selection, languages)
     CodeGen.select_language(selection, selected_language)   
     
-	return languages
+  return languages
 }
 
 CodeGen.myCodeGeneration = function(event) {
@@ -92,7 +92,7 @@ CodeGen.myCodeGeneration = function(event) {
 CodeGen.init_code = function() {
 
     // clear for now just copy existing blocks
-	//var toolbox = document.getElementById("code_toolbox");
+  //var toolbox = document.getElementById("code_toolbox");
 
   var toolbox = {
     "kind": "categoryToolbox",
@@ -251,40 +251,40 @@ CodeGen.init_code = function() {
     ]
    }
 
-	var options = { 
-		toolbox : toolbox, 
-		collapse : false, 
-		zoom: {
+  var options = { 
+    toolbox : toolbox, 
+    collapse : false, 
+    zoom: {
           controls: true,
         },
-		comments : true, 
-		disable : false, 
-		maxBlocks : Infinity, 
-		trashcan : false, 
-		horizontalLayout : false, 
-		toolboxPosition : 'start', 
-		css : true, 
-		media : 'https://blockly-demo.appspot.com/static/media/', 
-		rtl : false, 
-		scrollbars : true, 
-		sounds : true, 
-		oneBasedIndex : true
-	};
+    comments : true, 
+    disable : false, 
+    maxBlocks : Infinity, 
+    trashcan : false, 
+    horizontalLayout : false, 
+    toolboxPosition : 'start', 
+    css : true, 
+    media : 'https://blockly-demo.appspot.com/static/media/', 
+    rtl : false, 
+    scrollbars : true, 
+    sounds : true, 
+    oneBasedIndex : true
+  };
 
     if (!this.code_workspace) {
 
-		/* Inject your workspace */ 
-		this.code_workspace = Blockly.inject("blocklyGeneratorDiv", options);
-		this.code_workspace.name = "Code"
+    /* Inject your workspace */ 
+    this.code_workspace = Blockly.inject("blocklyGeneratorDiv", options);
+    this.code_workspace.name = "Code"
 
 
-		BlocklyStorage.restoreBlocks(this.code_workspace,'code');
-		BlocklyStorage.backupOnUnload(this.code_workspace,'code');
+    BlocklyStorage.restoreBlocks(this.code_workspace,'code');
+    BlocklyStorage.backupOnUnload(this.code_workspace,'code');
 
-		this.code_workspace.addChangeListener(CodeGen.myCodeGeneration);
-		this.code_workspace.addChangeListener(CodeGen.updateLanguageDropdown)
+    this.code_workspace.addChangeListener(CodeGen.myCodeGeneration);
+    this.code_workspace.addChangeListener(CodeGen.updateLanguageDropdown)
 
-		this.code_workspace.workspaceSearch = new WorkspaceSearch(this.code_workspace);
+    this.code_workspace.workspaceSearch = new WorkspaceSearch(this.code_workspace);
 
         this.code_workspace.workspaceSearch.init();
         this.code_workspace.workspaceSearch.open();

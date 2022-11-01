@@ -93,14 +93,14 @@ function  key_list_xml(key) {
 function getWorkspaceByName(name)
 {
     var workspaces = Blockly.Workspace.getAll();
-	for (var i=0; i< workspaces.length;i++) {
-	  var workspace = workspaces[i]
+  for (var i=0; i< workspaces.length;i++) {
+    var workspace = workspaces[i]
 
-	  if (workspace.name == name)
-	  {
-		return workspace
-	  }
-	}
+    if (workspace.name == name)
+    {
+    return workspace
+    }
+  }
 }
   
 function  key_dict_xml(key, key_value_list) {

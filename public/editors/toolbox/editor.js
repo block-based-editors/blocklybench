@@ -21,9 +21,9 @@ Blockly.Blocks['toolbox_seperator'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
-		    {
+      {  
+        if (field.getOptions && !field.variable_) // is dropdown and not a variable
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -35,7 +35,7 @@ Blockly.Blocks['toolbox_seperator'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -46,9 +46,9 @@ Blockly.Blocks['toolbox_seperator'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
-		    {
+      {  
+        if (field.getOptions && !field.variable_) // is dropdown and not a variable
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -56,7 +56,7 @@ Blockly.Blocks['toolbox_seperator'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -143,9 +143,9 @@ Blockly.Blocks['toolbox_label'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
-		    {
+      {  
+        if (field.getOptions && !field.variable_) // is dropdown and not a variable
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -157,7 +157,7 @@ Blockly.Blocks['toolbox_label'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -168,9 +168,9 @@ Blockly.Blocks['toolbox_label'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
-		    {
+      {  
+        if (field.getOptions && !field.variable_) // is dropdown and not a variable
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -178,7 +178,7 @@ Blockly.Blocks['toolbox_label'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -264,9 +264,9 @@ Blockly.Blocks['toolbox_variable_category'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
-		    {
+      {  
+        if (field.getOptions && !field.variable_) // is dropdown and not a variable
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -278,7 +278,7 @@ Blockly.Blocks['toolbox_variable_category'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -289,9 +289,9 @@ Blockly.Blocks['toolbox_variable_category'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
-		    {
+      {  
+        if (field.getOptions && !field.variable_) // is dropdown and not a variable
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -299,7 +299,7 @@ Blockly.Blocks['toolbox_variable_category'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -450,9 +450,9 @@ Blockly.Blocks['toolbox_block_json'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
-		    {
+      {  
+        if (field.getOptions && !field.variable_) // is dropdown and not a variable
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -464,7 +464,7 @@ Blockly.Blocks['toolbox_block_json'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -475,9 +475,9 @@ Blockly.Blocks['toolbox_block_json'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
-		    {
+      {  
+        if (field.getOptions && !field.variable_) // is dropdown and not a variable
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -485,7 +485,7 @@ Blockly.Blocks['toolbox_block_json'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -632,9 +632,9 @@ Blockly.Blocks['toolbox_block_json_input'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
-		    {
+      {  
+        if (field.getOptions && !field.variable_) // is dropdown and not a variable
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -646,7 +646,7 @@ Blockly.Blocks['toolbox_block_json_input'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -657,9 +657,9 @@ Blockly.Blocks['toolbox_block_json_input'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
-		    {
+      {  
+        if (field.getOptions && !field.variable_) // is dropdown and not a variable
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -667,7 +667,7 @@ Blockly.Blocks['toolbox_block_json_input'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -813,9 +813,9 @@ Blockly.Blocks['toolbox_block_json_field'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
-		    {
+      {  
+        if (field.getOptions && !field.variable_) // is dropdown and not a variable
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -827,7 +827,7 @@ Blockly.Blocks['toolbox_block_json_field'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -838,9 +838,9 @@ Blockly.Blocks['toolbox_block_json_field'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
-		    {
+      {  
+        if (field.getOptions && !field.variable_) // is dropdown and not a variable
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -848,7 +848,7 @@ Blockly.Blocks['toolbox_block_json_field'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -934,9 +934,9 @@ Blockly.Blocks['toolbox_blocks'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
-		    {
+      {  
+        if (field.getOptions && !field.variable_) // is dropdown and not a variable
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -948,7 +948,7 @@ Blockly.Blocks['toolbox_blocks'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -959,9 +959,9 @@ Blockly.Blocks['toolbox_blocks'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
-		    {
+      {  
+        if (field.getOptions && !field.variable_) // is dropdown and not a variable
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -969,7 +969,7 @@ Blockly.Blocks['toolbox_blocks'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -1114,9 +1114,9 @@ Blockly.Blocks['toolbox_block'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
-		    {
+      {  
+        if (field.getOptions && !field.variable_) // is dropdown and not a variable
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -1128,7 +1128,7 @@ Blockly.Blocks['toolbox_block'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -1139,9 +1139,9 @@ Blockly.Blocks['toolbox_block'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
-		    {
+      {  
+        if (field.getOptions && !field.variable_) // is dropdown and not a variable
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -1149,7 +1149,7 @@ Blockly.Blocks['toolbox_block'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -1235,9 +1235,9 @@ Blockly.Blocks['toolbox_categories'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
-		    {
+      {  
+        if (field.getOptions && !field.variable_) // is dropdown and not a variable
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -1249,7 +1249,7 @@ Blockly.Blocks['toolbox_categories'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -1260,9 +1260,9 @@ Blockly.Blocks['toolbox_categories'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
-		    {
+      {  
+        if (field.getOptions && !field.variable_) // is dropdown and not a variable
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -1270,7 +1270,7 @@ Blockly.Blocks['toolbox_categories'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -1361,9 +1361,9 @@ Blockly.Blocks['toolbox_category'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
-		    {
+      {  
+        if (field.getOptions && !field.variable_) // is dropdown and not a variable
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -1375,7 +1375,7 @@ Blockly.Blocks['toolbox_category'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -1386,9 +1386,9 @@ Blockly.Blocks['toolbox_category'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
-		    {
+      {  
+        if (field.getOptions && !field.variable_) // is dropdown and not a variable
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -1396,7 +1396,7 @@ Blockly.Blocks['toolbox_category'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -1483,9 +1483,9 @@ Blockly.Blocks['toolbox_block_all'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
-		    {
+      {  
+        if (field.getOptions && !field.variable_) // is dropdown and not a variable
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -1497,7 +1497,7 @@ Blockly.Blocks['toolbox_block_all'] = {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -1508,9 +1508,9 @@ Blockly.Blocks['toolbox_block_all'] = {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
-		    {
+      {  
+        if (field.getOptions && !field.variable_) // is dropdown and not a variable
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -1518,7 +1518,7 @@ Blockly.Blocks['toolbox_block_all'] = {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;
@@ -1994,7 +1994,7 @@ BlocklyStorage.HTTPREQUEST_ERROR = 'There was a problem with the request.\n';
 BlocklyStorage.LINK_ALERT = 'Share your blocks with this link:\n\n%1';
 BlocklyStorage.HASH_ERROR = 'Sorry, "%1" doesn\'t correspond with any saved Blockly file.';
 BlocklyStorage.XML_ERROR = 'Could not load your saved file.\n' +
-		'Perhaps it was created with a different version of Blockly?';
+    'Perhaps it was created with a different version of Blockly?';
 
 /**
  * Backup code blocks to localStorage.
@@ -2243,23 +2243,23 @@ toolbox = {
 // hardcoded till the end
 
 var options = { 
-	toolbox : toolbox, 
-	collapse : true, 
-	comments : true, 
-	disable : false, 
-	maxBlocks : Infinity, 
-	trashcan : false, 
-	horizontalLayout : false, 
-	toolboxPosition : 'start', 
-	css : true, 
+  toolbox : toolbox, 
+  collapse : true, 
+  comments : true, 
+  disable : false, 
+  maxBlocks : Infinity, 
+  trashcan : false, 
+  horizontalLayout : false, 
+  toolboxPosition : 'start', 
+  css : true, 
   zoom: {
     controls: true,
   },
-	media : 'https://blockly-demo.appspot.com/static/media/', 
-	rtl : false, 
-	scrollbars : true, 
-	sounds : true, 
-	oneBasedIndex : true
+  media : 'https://blockly-demo.appspot.com/static/media/', 
+  rtl : false, 
+  scrollbars : true, 
+  sounds : true, 
+  oneBasedIndex : true
 };
 
 function codeGeneration(event) {
@@ -2267,18 +2267,18 @@ function codeGeneration(event) {
   {  
       try {
           var code = Blockly.JSON.workspaceToCode(workspace);
-	  } catch (e) {
-		console.warn("Error while creating code", e);
-		code = "Error while creating code:" + e
-	  }     
+    } catch (e) {
+    console.warn("Error while creating code", e);
+    code = "Error while creating code:" + e
+    }     
       document.getElementById('codeDiv').value = code;
   }
 }
 
 function updateDropdownRename(event)
 {
-	if (event.type == "change" && (event.name=="NAME" || event.name=="FIELDNAME" ) || event.type == "create")
-	{
+  if (event.type == "change" && (event.name=="NAME" || event.name=="FIELDNAME" ) || event.type == "create")
+  {
     var blocks = workspace.getAllBlocks(); 
     for (var k = 0; k < blocks.length; k++) {
       var block = blocks[k];
@@ -2373,18 +2373,18 @@ function add_load()
   inputElement.addEventListener("change", handleFiles, false);
   function handleFiles() {
     for (let i = 0; i < this.files.length; i++) {
-		var file = this.files[i];
-		if (file) {
-		  var reader = new FileReader();
-		  reader.readAsText(file, "UTF-8");
-		  reader.onload = function (evt) {
-			var json = JSON.parse(evt.target.result);
-			Blockly.serialization.workspaces.load(json, workspace)
-		  }
-		  reader.onerror = function (evt) {
-			document.getElementById("error").innerHTML = "error reading file";
-		  }
-		}
+    var file = this.files[i];
+    if (file) {
+      var reader = new FileReader();
+      reader.readAsText(file, "UTF-8");
+      reader.onload = function (evt) {
+      var json = JSON.parse(evt.target.result);
+      Blockly.serialization.workspaces.load(json, workspace)
+      }
+      reader.onerror = function (evt) {
+      document.getElementById("error").innerHTML = "error reading file";
+      }
+    }
     }
   }
 }

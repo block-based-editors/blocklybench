@@ -364,9 +364,9 @@ FactoryUtils.formatJavaScript_ = function(blockType, rootBlock, workspace) {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
-		    {
+      {  
+        if (field.getOptions && !field.variable_) // is dropdown and not a variable
+        {
           var dropdown = Blockly.utils.xml.createElement('dropdown');
           dropdown.setAttribute('field', field.name);
         
@@ -378,7 +378,7 @@ FactoryUtils.formatJavaScript_ = function(blockType, rootBlock, workspace) {
             option.setAttribute('id', options[i][1]);
             dropdown.appendChild(option);
           }
-    		}
+        }
       }
     }
     return container;
@@ -389,9 +389,9 @@ FactoryUtils.formatJavaScript_ = function(blockType, rootBlock, workspace) {
     for (var b = 0, input; input = this.inputList[b]; b++)
     {
       for (var d = 0, field; field = input.fieldRow[d]; d++)
-	    {	
-	      if (field.getOptions && !field.variable_) // is dropdown and not a variable
-		    {
+      {  
+        if (field.getOptions && !field.variable_) // is dropdown and not a variable
+        {
           var field_state = {'field':field.name, 'options' : []}
           state.dropdowns.push(field_state);
           var options = field.getOptions()
@@ -399,7 +399,7 @@ FactoryUtils.formatJavaScript_ = function(blockType, rootBlock, workspace) {
             var option_state = {'text': options[i][0], 'id':options[i][1]}
             field_state.options.push(option_state)
           }
-    		}
+        }
       }
     }
     return state;

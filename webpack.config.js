@@ -32,11 +32,11 @@ module.exports = {
         index: './src/index.js',
     },
     output: {
-		publicPath: '',
+    publicPath: '',
         path: path.resolve(__dirname, 'build'),
         filename: '[name].js'
     },
-	plugins: [
+  plugins: [
         new webpack.optimize.ModuleConcatenationPlugin(),
         new CopyPlugin({patterns: [
             {
