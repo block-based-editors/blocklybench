@@ -80,28 +80,67 @@ Concrete.mySelection = function(event) {
     if(event.newElementId) {
       var workspace = Blockly.Workspace.getById(event.workspaceId)
       var block = workspace.getBlockById(event.newElementId)
-      Concrete.select_block_type(block.type)
+      Concrete.select_block_type(block)
     }
   }
+  if (event.type == 'click' && !event.blockId)
+  {
+    clear_selection();
+  }
+
 }
 
-Concrete.select_block_type = function(block_type)
+function highlight_blocks_of_type(search_workspace, block_type, field_name, block_type_to_search)
+// highlight all blocks 
+// for example highlight_blocks_of_type(search_workspace, "factory_base", "NAME", block_type);
+  
+{
+  var factory_base_blocks = search_workspace.getBlocksByType(block_type)
+  var blocks_to_highlight = [];
+  for (var i=0;i<factory_base_blocks.length;i++)
+  {
+    var block = factory_base_blocks[i]
+    if (block.getFieldValue(field_name) == block_type_to_search)
+    {
+      blocks_to_highlight.push(block)
+    }
+  }
+  search_workspace.workspaceSearch.unhighlightSearchGroup_(search_workspace.getAllBlocks());
+  search_workspace.workspaceSearch.highlightSearchGroup_(blocks_to_highlight);
+  // highlight only works if the search group is applied first
+  search_workspace.workspaceSearch.highlightCurrentSelection_(blocks_to_highlight[0]);
+  search_workspace.workspaceSearch.scrollToVisible_(blocks_to_highlight[0]);
+  return blocks_to_highlight[0]
+}
+
+Concrete.select_block_type = function(block)
 {
   var search_workspace = getWorkspaceByName('Factory')
-  search_workspace.workspaceSearch.searchAndHighlight(block_type, false)
-  search_workspace.workspaceSearch.inputElement_.value = block_type
-
+  
+  var factory_block = highlight_blocks_of_type(search_workspace, "factory_base", "NAME", block.type);
+  
   search_workspace = getWorkspaceByName('Code')
-  search_workspace.workspaceSearch.searchAndHighlight(block_type, false)
-  search_workspace.workspaceSearch.inputElement_.value = block_type
-
+  
+  highlight_blocks_of_type(search_workspace, "generate_code", "TYPE", factory_block.id);
+  
   search_workspace = getWorkspaceByName('Toolbox')
-  search_workspace.workspaceSearch.searchAndHighlight(block_type, false)
-  search_workspace.workspaceSearch.inputElement_.value = block_type
+  search_workspace.workspaceSearch.searchAndHighlight(block.type, false)
+  search_workspace.workspaceSearch.inputElement_.value = block.type
 
 }
 
-
+function clear_selection()
+{
+  var search_workspace = getWorkspaceByName('Factory')
+  search_workspace.workspaceSearch.unhighlightSearchGroup_(search_workspace.getAllBlocks());
+  
+  search_workspace = getWorkspaceByName('Code')
+  search_workspace.workspaceSearch.unhighlightSearchGroup_(search_workspace.getAllBlocks());
+  
+  search_workspace = getWorkspaceByName('Toolbox')
+  search_workspace.workspaceSearch.unhighlightSearchGroup_(search_workspace.getAllBlocks());
+  
+}
 
 
 Concrete.myJSONGeneration = function (event) {
