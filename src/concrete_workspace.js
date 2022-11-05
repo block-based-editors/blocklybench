@@ -11,10 +11,107 @@ var Concrete = {}; // create a namespace
 
 Concrete.concrete_workspace = null;
 
-Concrete.reload = function()
+function visit_block(json_block, oldValue, newValue)
 {
-    console.log('reload')
+
+  if (json_block.type == oldValue)
+  {
+    json_block.type = newValue
+  }
+  if (json_block.next)
+  {
+    visit_block(json_block.next.block, oldValue, newValue)
+  }
+  if (json_block.inputs)
+  {
+    for (const [key, value] of Object.entries(json_block.inputs)) {
+      visit_block(value.block, oldValue, newValue);
+
+    }
+  }
+}
+
+function visit_field(json_block, block_type, oldValue, newValue)
+{
+  if (json_block.type == block_type)
+  {
+    json_block.fields[newValue] = json_block.fields[oldValue]
+  }
+  if (json_block.next)
+  {
+    visit_field(json_block.next.block, block_type, oldValue, newValue)
+  }
+  if (json_block.inputs)
+  {
+    for (const [key, value] of Object.entries(json_block.inputs)) {
+      visit_field(value.block, block_type, oldValue, newValue);
+
+    }
+  }
+}
+
+function visit_input(json_block, block_type, oldValue, newValue)
+{
+  if (json_block.type == block_type)
+  {
+    json_block.inputs[newValue] = json_block.inputs[oldValue]
+    delete json_block.inputs[oldValue];
+  }
+  if (json_block.next)
+  {
+    visit_input(json_block.next.block, block_type, oldValue, newValue)
+  }
+  if (json_block.inputs)
+  {
+    for (const [key, value] of Object.entries(json_block.inputs)) {
+      visit_input(value.block, block_type, oldValue, newValue);
+
+    }
+  }
+}
+
+
+// update the concrete editor among the factory change on field names, block_types, 
+Concrete.reload = function(event)
+{
     var json_text = Blockly.serialization.workspaces.save(Concrete.concrete_workspace);
+    /* rename the fields */
+    if (event.element=="field")
+    {
+      var workspace = Blockly.Workspace.getById(event.workspaceId);
+      var field_block = workspace.getBlockById(event.blockId);
+      if (field_block.type=="factory_base")
+      {
+        for (var i=0; i< json_text.blocks.blocks.length; i++)
+        {
+          visit_block(json_text.blocks.blocks[i], event.oldValue, event.newValue);
+        } 
+      }
+      else if (field_block.type =="input_statement") 
+      {
+        var factory_block = field_block.getSurroundParent()
+        var block_type = factory_block.getFieldValue("NAME");
+        for (var i=0; i< json_text.blocks.blocks.length; i++)
+        {
+          visit_input(json_text.blocks.blocks[i], block_type, event.oldValue, event.newValue)
+        }
+      }
+      else { // field
+        if (event.name=="HUE" || event.name =="TYPE" || event.name == "TEXT")
+        {
+          // ignore
+        }
+        else
+        {
+          var factory_block = field_block.getSurroundParent().getSurroundParent();
+          var block_type = factory_block.getFieldValue("NAME");
+          for (var i=0; i< json_text.blocks.blocks.length; i++)
+          {
+            visit_field(json_text.blocks.blocks[i], block_type, event.oldValue, event.newValue)
+          }
+        }
+      }
+    }
     Concrete.concrete_workspace.clear()
     Blockly.serialization.workspaces.load(json_text, Concrete.concrete_workspace)
 }

@@ -1251,7 +1251,7 @@ document.addEventListener("DOMContentLoaded", function ()
 
   factory_workspace.addChangeListener(Toolbox.myToolboxGeneration);
   
-  //factory_workspace.addChangeListener(Concrete.reload);
+  factory_workspace.addChangeListener(Concrete.reload);
   
   CodeGen.updateLanguageDropdown()
   save_restore_language()
