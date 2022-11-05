@@ -859,40 +859,6 @@ Blockly.Blocks['basic_key_dict'] = {
 
 };
 
-if (!Blockly.JavaScript) {
-  Blockly.JavaScript = new Blockly.Generator('JavaScript');
-  Blockly.JavaScript.ORDER_ATOMIC = 0;
-}
-
-Blockly.JavaScript.scrub_ = function(block, code, opt_thisOnly) {
-    const nextBlock = block.nextConnection && block.nextConnection.targetBlock();
-    const nextCode = opt_thisOnly ? '' : Blockly.JavaScript.blockToCode(nextBlock);
-    return code + nextCode;
-}
-
-Blockly.JavaScript['basic_key_dict'] = function(block) {
-  var code ='';
-  code += '"';
-  var field = block.getField('KEY');
-  if (field.getText()) {
-    code += field.getText();
-  } else {
-    code += field.getValue();
-  }
-  code += '" : "';
-  code += 'basic_key_dict'
-  code += '", \n';
-
-  // if this block is a 'value' then code + ORDER needs to be returned
-  if(block.outputConnection) {
-    return [code, Blockly.JavaScript.ORDER_ATOMIC];
-  }
-  else // no value block
-  {
-    return code;
-  }
-}
-;
 if (!Blockly.JSON) {
   Blockly.JSON = new Blockly.Generator('JSON');
   Blockly.JSON.ORDER_ATOMIC = 0;
@@ -983,66 +949,6 @@ Blockly.YAML['basic_dict'] = function(block) {
   // if this block is a 'value' then code + ORDER needs to be returned
   if(block.outputConnection) {
     return [code, Blockly.YAML.ORDER_ATOMIC];
-  }
-  else // no value block
-  {
-    return code;
-  }
-}
-;
-if (!Blockly.JavaScript) {
-  Blockly.JavaScript = new Blockly.Generator('JavaScript');
-  Blockly.JavaScript.ORDER_ATOMIC = 0;
-}
-
-Blockly.JavaScript.scrub_ = function(block, code, opt_thisOnly) {
-    const nextBlock = block.nextConnection && block.nextConnection.targetBlock();
-    const nextCode = opt_thisOnly ? '' : Blockly.JavaScript.blockToCode(nextBlock);
-    return code + nextCode;
-}
-
-Blockly.JavaScript['basic_dict'] = function(block) {
-  var code ='';
-  code += Blockly.JavaScript.statementToCode(block, 'LIST');
-
-  // if this block is a 'value' then code + ORDER needs to be returned
-  if(block.outputConnection) {
-    return [code, Blockly.JavaScript.ORDER_ATOMIC];
-  }
-  else // no value block
-  {
-    return code;
-  }
-}
-;
-if (!Blockly.JavaScript) {
-  Blockly.JavaScript = new Blockly.Generator('JavaScript');
-  Blockly.JavaScript.ORDER_ATOMIC = 0;
-}
-
-Blockly.JavaScript.scrub_ = function(block, code, opt_thisOnly) {
-    const nextBlock = block.nextConnection && block.nextConnection.targetBlock();
-    const nextCode = opt_thisOnly ? '' : Blockly.JavaScript.blockToCode(nextBlock);
-    return code + nextCode;
-}
-
-Blockly.JavaScript['basic_key_value'] = function(block) {
-  var code ='';
-  code += '"';
-  var field = block.getField('KEY');
-  if (field.getText()) {
-    code += field.getText();
-  } else {
-    code += field.getValue();
-  }
-  code += '" : "';
-  code += 'basic_key_value'
-  code += '", ';
-  code += '\n';
-
-  // if this block is a 'value' then code + ORDER needs to be returned
-  if(block.outputConnection) {
-    return [code, Blockly.JavaScript.ORDER_ATOMIC];
   }
   else // no value block
   {
@@ -1290,31 +1196,6 @@ Blockly.JSON['basic_list'] = function(block) {
   }
 }
 ;
-if (!Blockly.JavaScript) {
-  Blockly.JavaScript = new Blockly.Generator('JavaScript');
-  Blockly.JavaScript.ORDER_ATOMIC = 0;
-}
-
-Blockly.JavaScript.scrub_ = function(block, code, opt_thisOnly) {
-    const nextBlock = block.nextConnection && block.nextConnection.targetBlock();
-    const nextCode = opt_thisOnly ? '' : Blockly.JavaScript.blockToCode(nextBlock);
-    return code + nextCode;
-}
-
-Blockly.JavaScript['basic_list'] = function(block) {
-  var code ='';
-  code += Blockly.JavaScript.statementToCode(block, 'LIST');
-
-  // if this block is a 'value' then code + ORDER needs to be returned
-  if(block.outputConnection) {
-    return [code, Blockly.JavaScript.ORDER_ATOMIC];
-  }
-  else // no value block
-  {
-    return code;
-  }
-}
-;
 if (!Blockly.YAML) {
   Blockly.YAML = new Blockly.Generator('YAML');
   Blockly.YAML.ORDER_ATOMIC = 0;
@@ -1365,38 +1246,6 @@ Blockly.YAML['basic_list_value'] = function(block) {
   // if this block is a 'value' then code + ORDER needs to be returned
   if(block.outputConnection) {
     return [code, Blockly.YAML.ORDER_ATOMIC];
-  }
-  else // no value block
-  {
-    return code;
-  }
-}
-;
-if (!Blockly.JavaScript) {
-  Blockly.JavaScript = new Blockly.Generator('JavaScript');
-  Blockly.JavaScript.ORDER_ATOMIC = 0;
-}
-
-Blockly.JavaScript.scrub_ = function(block, code, opt_thisOnly) {
-    const nextBlock = block.nextConnection && block.nextConnection.targetBlock();
-    const nextCode = opt_thisOnly ? '' : Blockly.JavaScript.blockToCode(nextBlock);
-    return code + nextCode;
-}
-
-Blockly.JavaScript['basic_list_value'] = function(block) {
-  var code ='';
-  code += '- ';
-  var field = block.getField('VALUE');
-  if (field.getText()) {
-    code += field.getText();
-  } else {
-    code += field.getValue();
-  }
-  code += '\n';
-
-  // if this block is a 'value' then code + ORDER needs to be returned
-  if(block.outputConnection) {
-    return [code, Blockly.JavaScript.ORDER_ATOMIC];
   }
   else // no value block
   {
@@ -1605,30 +1454,30 @@ BlocklyStorage.alert = function(message) {
 toolbox = {
  "kind": "flyoutToolbox",
  "contents": [
-  {
-    "kind": "block",
-    "type": "basic_list"
-  },
-  {
-    "kind": "block",
-    "type": "basic_dict"
-  },
-  {
-    "kind": "block",
-    "type": "basic_list_value"
-  },
-  {
-    "kind": "block",
-    "type": "basic_key_value"
-  },
-  {
-    "kind": "block",
-    "type": "basic_key_list"
-  },
-  {
-    "kind": "block",
-    "type": "basic_key_dict"
-  },
+    {
+      "kind": "block",
+      "type": "basic_list"
+    },
+    {
+      "kind": "block",
+      "type": "basic_dict"
+    },
+    {
+      "kind": "block",
+      "type": "basic_list_value"
+    },
+    {
+      "kind": "block",
+      "type": "basic_key_value"
+    },
+    {
+      "kind": "block",
+      "type": "basic_key_list"
+    },
+    {
+      "kind": "block",
+      "type": "basic_key_dict"
+    },
  ]
 };
     
@@ -1661,13 +1510,13 @@ var options = {
 function codeGeneration(event) {
   if (Blockly.JSON)
   {  
-      try {
+    try {
           var code = Blockly.JSON.workspaceToCode(workspace);
     } catch (e) {
-    console.warn("Error while creating code", e);
-    code = "Error while creating code:" + e
+      console.warn("Error while creating code", e);
+      code = "Error while creating code:" + e
     }     
-      document.getElementById('codeDiv').value = code;
+    document.getElementById('codeDiv').value = code;
   }
 }
 

@@ -1,62 +1,4 @@
 {
-  "h}|:O@$_Z5.?JEz^nV2Z": {
-    "type": "generate_code",
-    "id": "h}|:O@$_Z5.?JEz^nV2Z",
-    "x": 0,
-    "y": 0,
-    "extraState": {
-      "dropdowns": [
-        {
-          "field": "TYPE",
-          "options": [
-            {
-              "text": "basic_dict",
-              "id": "iu:$Vy7-dhl}xstPqoMQ"
-            },
-            {
-              "text": "basic_key_dict",
-              "id": "C$Y8k*DqvbR+yVPAlo.%"
-            },
-            {
-              "text": "basic_key_list",
-              "id": "$eM%jHb-hh{-,kXt@O1v"
-            },
-            {
-              "text": "basic_key_value",
-              "id": "Qc5=TlK_KK9ckuKA;gN:"
-            },
-            {
-              "text": "basic_list",
-              "id": "|Hdbn~~`G]T$HEtlKif7"
-            },
-            {
-              "text": "basic_list_value",
-              "id": ",myNku6J-AYAi?W|X+8O"
-            },
-            {
-              "text": "code_block_type",
-              "id": "h_E[#,]|hxo}apo}jPTj"
-            },
-            {
-              "text": "model_cpd_name_value",
-              "id": "Yq$kt|UHqq3nw%,ga^+b"
-            }
-          ]
-        }
-      ]
-    },
-    "fields": {
-      "LANGUAGE": "JavaScript",
-      "TYPE": "C$Y8k*DqvbR+yVPAlo.%"
-    },
-    "inputs": {
-      "CODE": {
-        "block": {
-          "id": ".G2k#:eqNL/x{H4$:e)s"
-        }
-      }
-    }
-  },
   "{^Z|Q8jb#LO|BbI0WZl`": {
     "type": "generate_code",
     "id": "{^Z|Q8jb#LO|BbI0WZl`",
@@ -227,122 +169,6 @@
       "CODE": {
         "block": {
           "id": "/vx|FM?glYW~UxwJpl?7"
-        }
-      }
-    }
-  },
-  "e78$XIO-.4zwv(c%GBuR": {
-    "type": "generate_code",
-    "id": "e78$XIO-.4zwv(c%GBuR",
-    "x": 0,
-    "y": 772,
-    "extraState": {
-      "dropdowns": [
-        {
-          "field": "TYPE",
-          "options": [
-            {
-              "text": "basic_dict",
-              "id": "iu:$Vy7-dhl}xstPqoMQ"
-            },
-            {
-              "text": "basic_key_dict",
-              "id": "C$Y8k*DqvbR+yVPAlo.%"
-            },
-            {
-              "text": "basic_key_list",
-              "id": "$eM%jHb-hh{-,kXt@O1v"
-            },
-            {
-              "text": "basic_key_value",
-              "id": "Qc5=TlK_KK9ckuKA;gN:"
-            },
-            {
-              "text": "basic_list",
-              "id": "|Hdbn~~`G]T$HEtlKif7"
-            },
-            {
-              "text": "basic_list_value",
-              "id": ",myNku6J-AYAi?W|X+8O"
-            },
-            {
-              "text": "code_block_type",
-              "id": "h_E[#,]|hxo}apo}jPTj"
-            },
-            {
-              "text": "model_cpd_name_value",
-              "id": "Yq$kt|UHqq3nw%,ga^+b"
-            }
-          ]
-        }
-      ]
-    },
-    "fields": {
-      "LANGUAGE": "JavaScript",
-      "TYPE": "iu:$Vy7-dhl}xstPqoMQ"
-    },
-    "inputs": {
-      "CODE": {
-        "block": {
-          "id": "4J+d|Zc#J::Ll8z3}D3T"
-        }
-      }
-    }
-  },
-  "uD%bs}t9*/BY]1JF%oo{": {
-    "type": "generate_code",
-    "id": "uD%bs}t9*/BY]1JF%oo{",
-    "x": 0,
-    "y": 861,
-    "extraState": {
-      "dropdowns": [
-        {
-          "field": "TYPE",
-          "options": [
-            {
-              "text": "basic_dict",
-              "id": "iu:$Vy7-dhl}xstPqoMQ"
-            },
-            {
-              "text": "basic_key_dict",
-              "id": "C$Y8k*DqvbR+yVPAlo.%"
-            },
-            {
-              "text": "basic_key_list",
-              "id": "$eM%jHb-hh{-,kXt@O1v"
-            },
-            {
-              "text": "basic_key_value",
-              "id": "Qc5=TlK_KK9ckuKA;gN:"
-            },
-            {
-              "text": "basic_list",
-              "id": "|Hdbn~~`G]T$HEtlKif7"
-            },
-            {
-              "text": "basic_list_value",
-              "id": ",myNku6J-AYAi?W|X+8O"
-            },
-            {
-              "text": "code_block_type",
-              "id": "h_E[#,]|hxo}apo}jPTj"
-            },
-            {
-              "text": "model_cpd_name_value",
-              "id": "Yq$kt|UHqq3nw%,ga^+b"
-            }
-          ]
-        }
-      ]
-    },
-    "fields": {
-      "LANGUAGE": "JavaScript",
-      "TYPE": "Qc5=TlK_KK9ckuKA;gN:"
-    },
-    "inputs": {
-      "CODE": {
-        "block": {
-          "id": ";nra4OqZ|.mg0(X7,o4h"
         }
       }
     }
@@ -753,64 +579,6 @@
       }
     }
   },
-  "-]xKZ[4.(oqdJ%q?]0s]": {
-    "type": "generate_code",
-    "id": "-]xKZ[4.(oqdJ%q?]0s]",
-    "x": 0,
-    "y": 2160,
-    "extraState": {
-      "dropdowns": [
-        {
-          "field": "TYPE",
-          "options": [
-            {
-              "text": "basic_dict",
-              "id": "iu:$Vy7-dhl}xstPqoMQ"
-            },
-            {
-              "text": "basic_key_dict",
-              "id": "C$Y8k*DqvbR+yVPAlo.%"
-            },
-            {
-              "text": "basic_key_list",
-              "id": "$eM%jHb-hh{-,kXt@O1v"
-            },
-            {
-              "text": "basic_key_value",
-              "id": "Qc5=TlK_KK9ckuKA;gN:"
-            },
-            {
-              "text": "basic_list",
-              "id": "|Hdbn~~`G]T$HEtlKif7"
-            },
-            {
-              "text": "basic_list_value",
-              "id": ",myNku6J-AYAi?W|X+8O"
-            },
-            {
-              "text": "code_block_type",
-              "id": "h_E[#,]|hxo}apo}jPTj"
-            },
-            {
-              "text": "model_cpd_name_value",
-              "id": "Yq$kt|UHqq3nw%,ga^+b"
-            }
-          ]
-        }
-      ]
-    },
-    "fields": {
-      "LANGUAGE": "JavaScript",
-      "TYPE": "|Hdbn~~`G]T$HEtlKif7"
-    },
-    "inputs": {
-      "CODE": {
-        "block": {
-          "id": "c)TM|O*MJ%7Ht_HOgvC+"
-        }
-      }
-    }
-  },
   "J:332ZZi0b.9/zl^[o7t": {
     "type": "generate_code",
     "id": "J:332ZZi0b.9/zl^[o7t",
@@ -927,81 +695,6 @@
       }
     }
   },
-  "zQ}fGW#E@ag8nJ?FWuhN": {
-    "type": "generate_code",
-    "id": "zQ}fGW#E@ag8nJ?FWuhN",
-    "x": 0,
-    "y": 2479,
-    "extraState": {
-      "dropdowns": [
-        {
-          "field": "TYPE",
-          "options": [
-            {
-              "text": "basic_dict",
-              "id": "iu:$Vy7-dhl}xstPqoMQ"
-            },
-            {
-              "text": "basic_key_dict",
-              "id": "C$Y8k*DqvbR+yVPAlo.%"
-            },
-            {
-              "text": "basic_key_list",
-              "id": "$eM%jHb-hh{-,kXt@O1v"
-            },
-            {
-              "text": "basic_key_value",
-              "id": "Qc5=TlK_KK9ckuKA;gN:"
-            },
-            {
-              "text": "basic_list",
-              "id": "|Hdbn~~`G]T$HEtlKif7"
-            },
-            {
-              "text": "basic_list_value",
-              "id": ",myNku6J-AYAi?W|X+8O"
-            },
-            {
-              "text": "code_block_type",
-              "id": "h_E[#,]|hxo}apo}jPTj"
-            },
-            {
-              "text": "model_cpd_name_value",
-              "id": "Yq$kt|UHqq3nw%,ga^+b"
-            }
-          ]
-        }
-      ]
-    },
-    "fields": {
-      "LANGUAGE": "JavaScript",
-      "TYPE": ",myNku6J-AYAi?W|X+8O"
-    },
-    "inputs": {
-      "CODE": {
-        "block": {
-          "id": "VFMVEv-eQ{G8;#_(AlEY"
-        }
-      }
-    }
-  },
-  ".G2k#:eqNL/x{H4$:e)s": {
-    "type": "generate_token",
-    "id": ".G2k#:eqNL/x{H4$:e)s",
-    "x": 21,
-    "y": 26,
-    "extraState": {
-      "dropdowns": []
-    },
-    "fields": {
-      "TOKEN": "\""
-    },
-    "next": {
-      "block": {
-        "id": "joGAKW^BNWO*W]8%brMZ"
-      }
-    }
-  },
   "]qfTw?uvMWMGnlqK[mgC": {
     "type": "generate_token",
     "id": "]qfTw?uvMWMGnlqK[mgC",
@@ -1056,45 +749,6 @@
     },
     "fields": {
       "STATEMENTS": "+FJoGo46L1Eo$6)IK_}O"
-    }
-  },
-  "4J+d|Zc#J::Ll8z3}D3T": {
-    "type": "generate_statements2",
-    "id": "4J+d|Zc#J::Ll8z3}D3T",
-    "x": 21,
-    "y": 798,
-    "extraState": {
-      "dropdowns": [
-        {
-          "field": "STATEMENTS",
-          "options": [
-            {
-              "text": "LIST",
-              "id": "+FJoGo46L1Eo$6)IK_}O"
-            }
-          ]
-        }
-      ]
-    },
-    "fields": {
-      "STATEMENTS": "+FJoGo46L1Eo$6)IK_}O"
-    }
-  },
-  ";nra4OqZ|.mg0(X7,o4h": {
-    "type": "generate_token",
-    "id": ";nra4OqZ|.mg0(X7,o4h",
-    "x": 21,
-    "y": 887,
-    "extraState": {
-      "dropdowns": []
-    },
-    "fields": {
-      "TOKEN": "\""
-    },
-    "next": {
-      "block": {
-        "id": "9)v^}+1}dW}^i^@{kfo-"
-      }
     }
   },
   "OWZ^jyQo)}/nO8BnHDy*": {
@@ -1266,28 +920,6 @@
       }
     }
   },
-  "c)TM|O*MJ%7Ht_HOgvC+": {
-    "type": "generate_statements2",
-    "id": "c)TM|O*MJ%7Ht_HOgvC+",
-    "x": 21,
-    "y": 2186,
-    "extraState": {
-      "dropdowns": [
-        {
-          "field": "STATEMENTS",
-          "options": [
-            {
-              "text": "LIST",
-              "id": ")(fT_4jzPntp,wUr7+5L"
-            }
-          ]
-        }
-      ]
-    },
-    "fields": {
-      "STATEMENTS": ")(fT_4jzPntp,wUr7+5L"
-    }
-  },
   "LNjzuVWN]hf.RxA/l5Kk": {
     "type": "generate_statements2",
     "id": "LNjzuVWN]hf.RxA/l5Kk",
@@ -1324,54 +956,6 @@
     "next": {
       "block": {
         "id": "uLDWBM|Mk7%bdIy1lq*b"
-      }
-    }
-  },
-  "VFMVEv-eQ{G8;#_(AlEY": {
-    "type": "generate_token",
-    "id": "VFMVEv-eQ{G8;#_(AlEY",
-    "x": 21,
-    "y": 2505,
-    "extraState": {
-      "dropdowns": []
-    },
-    "fields": {
-      "TOKEN": "- "
-    },
-    "next": {
-      "block": {
-        "id": "gCF(9;P5b^_M=ZfC7~pE"
-      }
-    }
-  },
-  "joGAKW^BNWO*W]8%brMZ": {
-    "type": "generate_field_value2",
-    "id": "joGAKW^BNWO*W]8%brMZ",
-    "x": 21,
-    "y": 52,
-    "extraState": {
-      "dropdowns": [
-        {
-          "field": "FIELDS",
-          "options": [
-            {
-              "text": "KEY",
-              "id": ";h`@LxSBtu[93:j=EKD*"
-            },
-            {
-              "text": "KEY",
-              "id": ";h`@LxSBtu[93:j=EKD*0"
-            }
-          ]
-        }
-      ]
-    },
-    "fields": {
-      "FIELDS": ";h`@LxSBtu[93:j=EKD*"
-    },
-    "next": {
-      "block": {
-        "id": "ycs/92D{4F$K(F6hXj@~"
       }
     }
   },
@@ -1430,45 +1014,6 @@
     "next": {
       "block": {
         "id": "/:jk@Qvan{4QFzl/#Cl1"
-      }
-    }
-  },
-  "9)v^}+1}dW}^i^@{kfo-": {
-    "type": "generate_field_value2",
-    "id": "9)v^}+1}dW}^i^@{kfo-",
-    "x": 21,
-    "y": 913,
-    "extraState": {
-      "dropdowns": [
-        {
-          "field": "FIELDS",
-          "options": [
-            {
-              "text": "KEY",
-              "id": "tk~0VxSH1`FU^U#YV4+P"
-            },
-            {
-              "text": "KEY",
-              "id": "tk~0VxSH1`FU^U#YV4+P0"
-            },
-            {
-              "text": "VALUE",
-              "id": "jYD`3~/knZJeg]?9,](q"
-            },
-            {
-              "text": "VALUE",
-              "id": "jYD`3~/knZJeg]?9,](q0"
-            }
-          ]
-        }
-      ]
-    },
-    "fields": {
-      "FIELDS": "tk~0VxSH1`FU^U#YV4+P"
-    },
-    "next": {
-      "block": {
-        "id": "d`MX$ymy(XUS5!*020$n"
       }
     }
   },
@@ -1551,7 +1096,7 @@
       ]
     },
     "fields": {
-      "FIELDS": ";h`@LxSBtu[93:j=EKD*"
+      "FIELDS": ";h`@LxSBtu[93:j=EKD*0"
     },
     "next": {
       "block": {
@@ -1682,54 +1227,6 @@
       }
     }
   },
-  "gCF(9;P5b^_M=ZfC7~pE": {
-    "type": "generate_field_value2",
-    "id": "gCF(9;P5b^_M=ZfC7~pE",
-    "x": 21,
-    "y": 2531,
-    "extraState": {
-      "dropdowns": [
-        {
-          "field": "FIELDS",
-          "options": [
-            {
-              "text": "VALUE",
-              "id": "zl?A~ejU_+H*4PQCk|SK"
-            },
-            {
-              "text": "VALUE",
-              "id": "zl?A~ejU_+H*4PQCk|SK0"
-            }
-          ]
-        }
-      ]
-    },
-    "fields": {
-      "FIELDS": "zl?A~ejU_+H*4PQCk|SK"
-    },
-    "next": {
-      "block": {
-        "id": "uz}qU6Z]qTxKT[e{rd%!"
-      }
-    }
-  },
-  "ycs/92D{4F$K(F6hXj@~": {
-    "type": "generate_token",
-    "id": "ycs/92D{4F$K(F6hXj@~",
-    "x": 21,
-    "y": 78,
-    "extraState": {
-      "dropdowns": []
-    },
-    "fields": {
-      "TOKEN": "\" : \""
-    },
-    "next": {
-      "block": {
-        "id": "2=dbUMzZZJ9EXSZaH[v="
-      }
-    }
-  },
   "rTGnLUpFK9A8},|/rB|0": {
     "type": "generate_token",
     "id": "rTGnLUpFK9A8},|/rB|0",
@@ -1761,23 +1258,6 @@
     "next": {
       "block": {
         "id": "hYm1K0$BdxMuxRp/rc:L"
-      }
-    }
-  },
-  "d`MX$ymy(XUS5!*020$n": {
-    "type": "generate_token",
-    "id": "d`MX$ymy(XUS5!*020$n",
-    "x": 21,
-    "y": 939,
-    "extraState": {
-      "dropdowns": []
-    },
-    "fields": {
-      "TOKEN": "\" : \""
-    },
-    "next": {
-      "block": {
-        "id": "]r@i/zr$Did6ti+T.|37"
       }
     }
   },
@@ -1939,32 +1419,6 @@
       "TOKEN": "\\n"
     }
   },
-  "uz}qU6Z]qTxKT[e{rd%!": {
-    "type": "generate_token",
-    "id": "uz}qU6Z]qTxKT[e{rd%!",
-    "x": 21,
-    "y": 2557,
-    "extraState": {
-      "dropdowns": []
-    },
-    "fields": {
-      "TOKEN": "\\n"
-    }
-  },
-  "2=dbUMzZZJ9EXSZaH[v=": {
-    "type": "generate_block_type",
-    "id": "2=dbUMzZZJ9EXSZaH[v=",
-    "x": 21,
-    "y": 104,
-    "extraState": {
-      "dropdowns": []
-    },
-    "next": {
-      "block": {
-        "id": "qGUNdjWR#Qn_ORBbxJUq"
-      }
-    }
-  },
   "GzbH*7[Z_Z3CM!+39PU:": {
     "type": "generate_block_type",
     "id": "GzbH*7[Z_Z3CM!+39PU:",
@@ -1993,20 +1447,6 @@
     "next": {
       "block": {
         "id": "hk5AvR9w!/X|(Qii?Xh{"
-      }
-    }
-  },
-  "]r@i/zr$Did6ti+T.|37": {
-    "type": "generate_block_type",
-    "id": "]r@i/zr$Did6ti+T.|37",
-    "x": 21,
-    "y": 965,
-    "extraState": {
-      "dropdowns": []
-    },
-    "next": {
-      "block": {
-        "id": "Ql{kgpqd}UrTVtm^]cKQ"
       }
     }
   },
@@ -2115,18 +1555,6 @@
       }
     }
   },
-  "qGUNdjWR#Qn_ORBbxJUq": {
-    "type": "generate_token",
-    "id": "qGUNdjWR#Qn_ORBbxJUq",
-    "x": 21,
-    "y": 130,
-    "extraState": {
-      "dropdowns": []
-    },
-    "fields": {
-      "TOKEN": "\", \\n"
-    }
-  },
   "V`F%}~,PucdA[9R7]9#K": {
     "type": "generate_token",
     "id": "V`F%}~,PucdA[9R7]9#K",
@@ -2154,23 +1582,6 @@
     },
     "fields": {
       "TOKEN": "\\n"
-    }
-  },
-  "Ql{kgpqd}UrTVtm^]cKQ": {
-    "type": "generate_token",
-    "id": "Ql{kgpqd}UrTVtm^]cKQ",
-    "x": 21,
-    "y": 991,
-    "extraState": {
-      "dropdowns": []
-    },
-    "fields": {
-      "TOKEN": "\", "
-    },
-    "next": {
-      "block": {
-        "id": "5!w*D0O3RL{[F5N9W1Fr"
-      }
     }
   },
   "^|%[nh5Dz+/hKjQcx?@1": {
@@ -2248,18 +1659,6 @@
       "block": {
         "id": "O)?5h{i|L+D|U:#2z}4`"
       }
-    }
-  },
-  "5!w*D0O3RL{[F5N9W1Fr": {
-    "type": "generate_token",
-    "id": "5!w*D0O3RL{[F5N9W1Fr",
-    "x": 21,
-    "y": 1017,
-    "extraState": {
-      "dropdowns": []
-    },
-    "fields": {
-      "TOKEN": "\\n"
     }
   },
   "8{~(c9.S+)Ml4ReBKbDq": {
@@ -2364,12 +1763,9 @@
     }
   },
   "top_blocks": [
-    "h}|:O@$_Z5.?JEz^nV2Z",
     "{^Z|Q8jb#LO|BbI0WZl`",
     "y+SS[0x;(ZpObRO?oxT2",
     "2F%N=NZg~AWl7i[B|}_+",
-    "e78$XIO-.4zwv(c%GBuR",
-    "uD%bs}t9*/BY]1JF%oo{",
     "+DW9Prn08vL/8wx._9;}",
     "%M0mN@$(TcpeD:gZ]{V_",
     "t*3ywMiffGldM+:lnaIS",
@@ -2377,10 +1773,8 @@
     "AtEkq+VD*(8(c~,m/HFK",
     "2Cgr.?q=c4hbQ{jXak`,",
     "H/%Qfh;-zTA=p{O[?S!1",
-    "-]xKZ[4.(oqdJ%q?]0s]",
     "J:332ZZi0b.9/zl^[o7t",
-    "KfgWuR7uwXw/J7,r44q5",
-    "zQ}fGW#E@ag8nJ?FWuhN"
+    "KfgWuR7uwXw/J7,r44q5"
   ],
   "mergeable": true
 }
