@@ -45,7 +45,6 @@ function visit_field(json_block, block_type, oldValue, newValue)
   {
     for (const [key, value] of Object.entries(json_block.inputs)) {
       visit_field(value.block, block_type, oldValue, newValue);
-
     }
   }
 }
@@ -65,7 +64,6 @@ function visit_input(json_block, block_type, oldValue, newValue)
   {
     for (const [key, value] of Object.entries(json_block.inputs)) {
       visit_input(value.block, block_type, oldValue, newValue);
-
     }
   }
 }
@@ -177,7 +175,7 @@ Concrete.mySelection = function(event) {
     if(event.newElementId) {
       var workspace = Blockly.Workspace.getById(event.workspaceId)
       var block = workspace.getBlockById(event.newElementId)
-      Concrete.select_block_type(block)
+     // Concrete.select_block_type(block)
     }
   }
   if (event.type == 'click' && !event.blockId)
