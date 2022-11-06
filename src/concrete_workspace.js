@@ -170,19 +170,15 @@ function getWorkspaceByName(name)
 }
 
 Concrete.mySelection = function(event) {
-  if (event.type == "selected" )
+  if (event.type == "click" && event.blockId )
   {
-    if(event.newElementId) {
-      var workspace = Blockly.Workspace.getById(event.workspaceId)
-      var block = workspace.getBlockById(event.newElementId)
-     // Concrete.select_block_type(block)
-    }
+    var block = Concrete.concrete_workspace.getBlockById(event.blockId)
+    Concrete.select_block_type(block)
   }
   if (event.type == 'click' && !event.blockId)
   {
     clear_selection();
   }
-
 }
 
 function highlight_blocks_of_type(search_workspace, block_type, field_name, block_type_to_search)
