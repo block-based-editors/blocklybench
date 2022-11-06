@@ -2,6 +2,9 @@
 # Blocklybench web application
 [![DOI](https://zenodo.org/badge/523855099.svg)](https://zenodo.org/badge/latestdoi/523855099)
 
+## Live version
+https://motar-242711.ew.r.appspot.com/
+
 ## How to run
 
 ```
