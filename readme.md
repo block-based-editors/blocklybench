@@ -1,6 +1,7 @@
 
 # Blocklybench web application
 [![DOI](https://zenodo.org/badge/523855099.svg)](https://zenodo.org/badge/latestdoi/523855099)
+[![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 ## Live version
 https://motar-242711.ew.r.appspot.com/
