@@ -4,9 +4,10 @@
   "private": true,
   "dependencies": {
     "@blockly/field-date": "^6.0.0",
-    "@blockly/plugin-workspace-search": "",
-    "@blockly/theme-dark": "",
-    "@blockly/zoom-to-fit": "",
+    "@blockly/plugin-cross-tab-copy-paste": "^2.0.2",
+    "@blockly/plugin-workspace-search": "^6.0.2",
+    "@blockly/theme-dark": "^4.0.1",
+    "@blockly/zoom-to-fit": "^3.0.2",
     "blockly": "^9.0.1",
     "file-saver": "^2.0.5",
     "idb-keyval": "^5",

@@ -5,6 +5,8 @@ import * as Blockly from 'blockly';
 
 
 import { WorkspaceSearch } from '@blockly/plugin-workspace-search';
+import { CrossTabCopyPaste } from '@blockly/plugin-cross-tab-copy-paste';
+
 // TODO extend to the generated code windows with something like: https://github.com/AlienKevin/SmartTextarea/
 import { ZoomToFitControl } from '@blockly/zoom-to-fit' 
 import FieldDate from '@blockly/field-date'
@@ -1303,4 +1305,13 @@ document.addEventListener("DOMContentLoaded", function ()
   }
   window.history.pushState({}, document.title, removeParam('clear', window.location.search));
   
+  const options = {
+    contextMenu: true,
+    shortcut: true,
+  }
+  
+  // Initialize plugin.
+  const plugin = new CrossTabCopyPaste();
+  plugin.init(options);
+
 })
