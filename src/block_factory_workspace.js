@@ -5,11 +5,13 @@ import * as Blockly from 'blockly';
 
 
 import { WorkspaceSearch } from '@blockly/plugin-workspace-search';
-import { CrossTabCopyPaste } from '@blockly/plugin-cross-tab-copy-paste';
 
 // TODO extend to the generated code windows with something like: https://github.com/AlienKevin/SmartTextarea/
 import { ZoomToFitControl } from '@blockly/zoom-to-fit' 
 import FieldDate from '@blockly/field-date'
+
+// ==== add new plugins below ====
+import { CrossTabCopyPaste } from '@blockly/plugin-cross-tab-copy-paste';
 
 import JSZip from 'jszip';
 import {saveAs} from 'file-saver';
