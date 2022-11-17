@@ -1162,15 +1162,14 @@ function saveFn(workspace)
   {
     var version = 'latest'
     return { 'editor': get_editor(), 
-    'version' : 1.0,
-    'url': 'https://cidt.asml.com/editors/latest/' + get_editor() + '/editor.html'}
+             'version' : 1.0
+           }
   }
   else
   {
     return { 'editor': 'factory/' + workspace.name, 
-    'version' : 1.0,
-    'url': 'https://cidt.asml.com/editors/latest/factory/?editor=' + get_editor() + '&load=1'}
-
+             'version' : 1.0
+           }
   }
 }
 
