@@ -3135,7 +3135,7 @@
     "type": "generate_token",
     "id": "-~{P)VHNr~py]szPbl0B",
     "x": 21,
-    "y": 27,
+    "y": 26,
     "extraState": {
       "dropdowns": []
     },
@@ -3152,7 +3152,7 @@
     "type": "generate_token",
     "id": "0CL-5?nJfrsQ~Jh+Azmz",
     "x": 21,
-    "y": 272,
+    "y": 271,
     "extraState": {
       "dropdowns": []
     },
@@ -3169,7 +3169,7 @@
     "type": "generate_token",
     "id": "_lLa#lzoO[KKpg!1s?DY",
     "x": 21,
-    "y": 413,
+    "y": 412,
     "extraState": {
       "dropdowns": []
     },
@@ -3186,7 +3186,7 @@
     "type": "generate_token",
     "id": "@SEjW[D=s7ygGWKsb:.A",
     "x": 21,
-    "y": 606,
+    "y": 605,
     "extraState": {
       "dropdowns": []
     },
@@ -3198,7 +3198,7 @@
     "type": "generate_javascript",
     "id": "S761/}^0Po903SGyS@fF",
     "x": 21,
-    "y": 695,
+    "y": 694,
     "extraState": {
       "dropdowns": []
     },
@@ -3215,7 +3215,7 @@
     "type": "generate_token",
     "id": "ReqTCrUaOhMRj#REG]`s",
     "x": 21,
-    "y": 810,
+    "y": 809,
     "extraState": {
       "dropdowns": []
     },
@@ -3232,7 +3232,7 @@
     "type": "generate_token",
     "id": "?h|;@C:;`lpEwi@uBHY9",
     "x": 51,
-    "y": 995,
+    "y": 994,
     "extraState": {
       "dropdowns": []
     },
@@ -3249,15 +3249,83 @@
     "type": "generate_values2",
     "id": "3n^q@EHSOH)_kibFvQhN",
     "x": 21,
-    "y": 1092,
+    "y": 1091,
     "extraState": {
       "dropdowns": [
         {
           "field": "VALUE",
           "options": [
             {
+              "text": "FROM",
+              "id": "PNhvG.~!kMPAdeDYfu71"
+            },
+            {
+              "text": "FROM",
+              "id": "Sy,,~|x[V?a*$4N1$t:g"
+            },
+            {
+              "text": "INPUT",
+              "id": "%P]^kgOWLs;nJsWC0qHL"
+            },
+            {
+              "text": "INPUT",
+              "id": "MbMOlqD.6;b$[(jD2c*`"
+            },
+            {
+              "text": "INPUT",
+              "id": "U/8TKD{b}SkuVf,66:9_"
+            },
+            {
+              "text": "LHS",
+              "id": "Pp*p@3c72UJKv3Y3nSe("
+            },
+            {
+              "text": "NAME",
+              "id": "0CczlR:jo;z73o)WIN1i"
+            },
+            {
+              "text": "NAME",
+              "id": "ttUcTLHnBwjhX9yDyVdo"
+            },
+            {
+              "text": "POSITION",
+              "id": "bVKl{K1V%_Ux-BJ}YB3,"
+            },
+            {
+              "text": "RHS",
+              "id": "3N]0.f:6YkmT;:1Q,qs;"
+            },
+            {
+              "text": "ROTATION",
+              "id": "IL1`0U0_P@d*U,cB{`lt"
+            },
+            {
+              "text": "ROTATION",
+              "id": "w)P6EINuujO`1{)#eM)@"
+            },
+            {
               "text": "SPOT",
               "id": "6|I1D+lv,fwRj;2uj-44"
+            },
+            {
+              "text": "STATEMENTS",
+              "id": ".^Z/IQh|;qyZ2jjY3Rys"
+            },
+            {
+              "text": "STATEMENTS",
+              "id": "J3X[G^qB|mZi(Gj*8b:."
+            },
+            {
+              "text": "STATEMENTS",
+              "id": "tm9f)-q_kKyK:Ds`pnOx"
+            },
+            {
+              "text": "TO",
+              "id": "_B%(~54Q5#)_Q7,bd0qU"
+            },
+            {
+              "text": "TO",
+              "id": "_RT/`o8:%/7bs;tGvIlK"
             }
           ]
         }
@@ -3276,7 +3344,7 @@
     "type": "generate_javascript",
     "id": "6Ld6_]?=aUa%jC~oJNn5",
     "x": 21,
-    "y": 1259,
+    "y": 1258,
     "extraState": {
       "dropdowns": []
     },
@@ -3293,7 +3361,7 @@
     "type": "generate_token",
     "id": "F,,Qz?%]~Ds;n/)%wPeg",
     "x": 21,
-    "y": 1426,
+    "y": 1425,
     "extraState": {
       "dropdowns": []
     },
@@ -3310,7 +3378,7 @@
     "type": "generate_token",
     "id": "wPrkw_jMK6~3},dCJ*(G",
     "x": 21,
-    "y": 1671,
+    "y": 1670,
     "extraState": {
       "dropdowns": []
     },
@@ -3327,7 +3395,7 @@
     "type": "generate_token",
     "id": "Trk_S_{6C:]AX{N[OM45",
     "x": 21,
-    "y": 1864,
+    "y": 1863,
     "extraState": {
       "dropdowns": []
     },
@@ -3344,7 +3412,7 @@
     "type": "generate_token",
     "id": "#pZ|vQm{b3k^FA,^KF~O",
     "x": 21,
-    "y": 2089,
+    "y": 2088,
     "extraState": {
       "dropdowns": []
     },
@@ -3361,7 +3429,7 @@
     "type": "generate_token",
     "id": "n;xVliU.x=zEc`vzuscK",
     "x": 21,
-    "y": 2230,
+    "y": 2229,
     "extraState": {
       "dropdowns": []
     },
@@ -3373,7 +3441,7 @@
     "type": "generate_token",
     "id": "ZTYEB3Y[pzc`:7sL2SaB",
     "x": 21,
-    "y": 2319,
+    "y": 2318,
     "extraState": {
       "dropdowns": []
     },
@@ -3390,7 +3458,7 @@
     "type": "generate_token",
     "id": "Z-#jqKeD`P!1=|ItHR2P",
     "x": 21,
-    "y": 2512,
+    "y": 2511,
     "extraState": {
       "dropdowns": []
     },
@@ -3402,7 +3470,7 @@
     "type": "generate_token",
     "id": "l*pt7:9JS@W-u2)15skG",
     "x": 21,
-    "y": 2601,
+    "y": 2600,
     "extraState": {
       "dropdowns": []
     },
@@ -3414,7 +3482,7 @@
     "type": "generate_token",
     "id": "0XCh.uu/v4?IPxpj?nP6",
     "x": 21,
-    "y": 2690,
+    "y": 2689,
     "extraState": {
       "dropdowns": []
     },
@@ -3431,19 +3499,171 @@
     "type": "generate_field_value2",
     "id": "1`ZDa=G/aU6UBthjoNkK",
     "x": 21,
-    "y": 2909,
+    "y": 2908,
     "extraState": {
       "dropdowns": [
         {
           "field": "FIELDS",
           "options": [
             {
+              "text": "ALPHA",
+              "id": "-p__;2Ef6}.p,t=`cxwR"
+            },
+            {
+              "text": "FACING_CAMERA",
+              "id": "w0,Gj}L_*Z^};JLuaGLD"
+            },
+            {
+              "text": "FACING_CAMERA_LABEL",
+              "id": "N8:5N?-{E3y(`i+Gge@$"
+            },
+            {
+              "text": "ID",
+              "id": "PR50djFXdO$7=/pGAj1@"
+            },
+            {
+              "text": "INTERVAL",
+              "id": "IInB[NkxigGrAt.[s3e-"
+            },
+            {
+              "text": "NAME",
+              "id": "/rz!F0CJQbt%.3`Xpkc`"
+            },
+            {
+              "text": "NAME",
+              "id": "6EjZTaDVoaLANXn]Ro/O"
+            },
+            {
+              "text": "NAME",
+              "id": "9r90s`Kvgv`SHs$zO:~B"
+            },
+            {
               "text": "NAME",
               "id": "9r90s`Kvgv`SHs$zO:~B0"
             },
             {
+              "text": "NAME",
+              "id": "?2=gwx8,*^DX_L;JxLy2"
+            },
+            {
+              "text": "NAME",
+              "id": "Tch%flW43J3G_#9u7{=C"
+            },
+            {
+              "text": "NAME",
+              "id": "YV;]%mAnL5:lSt~xd;/@"
+            },
+            {
+              "text": "NAME",
+              "id": "[]7TLa;oo-f$aD?}l:*V"
+            },
+            {
+              "text": "NAME",
+              "id": "dQQkW9o3GCZI0tX:~wi,"
+            },
+            {
+              "text": "NAME",
+              "id": "o0X5)gm$3+C|g/63{3@}"
+            },
+            {
+              "text": "NAME",
+              "id": "rgfA`UUw%C:L2k@W,7By"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "tNx=zzBF;60O7/#8dP4N"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "uvQ_CwgP{J9^Gp8!!_g="
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "y:HQ#rd}0v/3mzqPdN(v"
+            },
+            {
+              "text": "OPERATOR",
+              "id": "bgGQia1(li=6b3WLp!2y"
+            },
+            {
+              "text": "POSITION_LABEL",
+              "id": "W1?N?/*ZgjatwN/Mf2/l"
+            },
+            {
+              "text": "PROPERTY",
+              "id": "ExI|m2mgez,Ie|GD]tPO"
+            },
+            {
               "text": "PROPERTY",
               "id": "ExI|m2mgez,Ie|GD]tPO0"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "9K;A7hbYc[+j95{#.,CI"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "s$7Y3c(*PD1C.$[e=gcB"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "=~+J$),WM{;^82[t*R,4"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "F/H[:Udw[eL!)}H|EA,E"
+            },
+            {
+              "text": "VECTOR",
+              "id": "K$Bbb[B|^cW{2b/3vPF@"
+            },
+            {
+              "text": "VISIBLE",
+              "id": "@8JH0RJd|=)?FpFSRD6;"
+            },
+            {
+              "text": "VISIBLE_LABEL",
+              "id": "v@J_RaswTm=W$)STuAM+"
+            },
+            {
+              "text": "W",
+              "id": "f)wSF#`_anW`J$L]SCiQ"
+            },
+            {
+              "text": "X",
+              "id": "2QhDgZ.*^~Jx9,?m]Wd;"
+            },
+            {
+              "text": "X",
+              "id": "Q$Q^z*^1FD5!~C)TD_F3"
+            },
+            {
+              "text": "X",
+              "id": "zB.U?P:rLCj;IW}s}V#5"
+            },
+            {
+              "text": "Y",
+              "id": "K7i$L9G~iu+S8,9y%nJJ"
+            },
+            {
+              "text": "Y",
+              "id": "ct-9aP6^1@I(a_DIr67U"
+            },
+            {
+              "text": "Y",
+              "id": "j#G?X(s`V*CNX0#!-Emd"
+            },
+            {
+              "text": "Z",
+              "id": "9{2+?||$u*J/8SiB}4F2"
+            },
+            {
+              "text": "Z",
+              "id": "V`N+![xlE%~2!+x!k,K%"
+            },
+            {
+              "text": "Z",
+              "id": "|PVhNB9`)njf{nrv{PW/"
             }
           ]
         }
@@ -3462,15 +3682,83 @@
     "type": "generate_values2",
     "id": "#C(wUg#H7;;maj601?.;",
     "x": 21,
-    "y": 3128,
+    "y": 3127,
     "extraState": {
       "dropdowns": [
         {
           "field": "VALUE",
           "options": [
             {
+              "text": "FROM",
+              "id": "PNhvG.~!kMPAdeDYfu71"
+            },
+            {
+              "text": "FROM",
+              "id": "Sy,,~|x[V?a*$4N1$t:g"
+            },
+            {
               "text": "INPUT",
               "id": "%P]^kgOWLs;nJsWC0qHL"
+            },
+            {
+              "text": "INPUT",
+              "id": "MbMOlqD.6;b$[(jD2c*`"
+            },
+            {
+              "text": "INPUT",
+              "id": "U/8TKD{b}SkuVf,66:9_"
+            },
+            {
+              "text": "LHS",
+              "id": "Pp*p@3c72UJKv3Y3nSe("
+            },
+            {
+              "text": "NAME",
+              "id": "0CczlR:jo;z73o)WIN1i"
+            },
+            {
+              "text": "NAME",
+              "id": "ttUcTLHnBwjhX9yDyVdo"
+            },
+            {
+              "text": "POSITION",
+              "id": "bVKl{K1V%_Ux-BJ}YB3,"
+            },
+            {
+              "text": "RHS",
+              "id": "3N]0.f:6YkmT;:1Q,qs;"
+            },
+            {
+              "text": "ROTATION",
+              "id": "IL1`0U0_P@d*U,cB{`lt"
+            },
+            {
+              "text": "ROTATION",
+              "id": "w)P6EINuujO`1{)#eM)@"
+            },
+            {
+              "text": "SPOT",
+              "id": "6|I1D+lv,fwRj;2uj-44"
+            },
+            {
+              "text": "STATEMENTS",
+              "id": ".^Z/IQh|;qyZ2jjY3Rys"
+            },
+            {
+              "text": "STATEMENTS",
+              "id": "J3X[G^qB|mZi(Gj*8b:."
+            },
+            {
+              "text": "STATEMENTS",
+              "id": "tm9f)-q_kKyK:Ds`pnOx"
+            },
+            {
+              "text": "TO",
+              "id": "_B%(~54Q5#)_Q7,bd0qU"
+            },
+            {
+              "text": "TO",
+              "id": "_RT/`o8:%/7bs;tGvIlK"
             }
           ]
         }
@@ -3489,15 +3777,83 @@
     "type": "generate_values2",
     "id": "$j8spKfW@deSy[jW.m@P",
     "x": 21,
-    "y": 3399,
+    "y": 3398,
     "extraState": {
       "dropdowns": [
         {
           "field": "VALUE",
           "options": [
             {
+              "text": "FROM",
+              "id": "PNhvG.~!kMPAdeDYfu71"
+            },
+            {
+              "text": "FROM",
+              "id": "Sy,,~|x[V?a*$4N1$t:g"
+            },
+            {
+              "text": "INPUT",
+              "id": "%P]^kgOWLs;nJsWC0qHL"
+            },
+            {
               "text": "INPUT",
               "id": "MbMOlqD.6;b$[(jD2c*`"
+            },
+            {
+              "text": "INPUT",
+              "id": "U/8TKD{b}SkuVf,66:9_"
+            },
+            {
+              "text": "LHS",
+              "id": "Pp*p@3c72UJKv3Y3nSe("
+            },
+            {
+              "text": "NAME",
+              "id": "0CczlR:jo;z73o)WIN1i"
+            },
+            {
+              "text": "NAME",
+              "id": "ttUcTLHnBwjhX9yDyVdo"
+            },
+            {
+              "text": "POSITION",
+              "id": "bVKl{K1V%_Ux-BJ}YB3,"
+            },
+            {
+              "text": "RHS",
+              "id": "3N]0.f:6YkmT;:1Q,qs;"
+            },
+            {
+              "text": "ROTATION",
+              "id": "IL1`0U0_P@d*U,cB{`lt"
+            },
+            {
+              "text": "ROTATION",
+              "id": "w)P6EINuujO`1{)#eM)@"
+            },
+            {
+              "text": "SPOT",
+              "id": "6|I1D+lv,fwRj;2uj-44"
+            },
+            {
+              "text": "STATEMENTS",
+              "id": ".^Z/IQh|;qyZ2jjY3Rys"
+            },
+            {
+              "text": "STATEMENTS",
+              "id": "J3X[G^qB|mZi(Gj*8b:."
+            },
+            {
+              "text": "STATEMENTS",
+              "id": "tm9f)-q_kKyK:Ds`pnOx"
+            },
+            {
+              "text": "TO",
+              "id": "_B%(~54Q5#)_Q7,bd0qU"
+            },
+            {
+              "text": "TO",
+              "id": "_RT/`o8:%/7bs;tGvIlK"
             }
           ]
         }
@@ -3516,7 +3872,7 @@
     "type": "generate_token",
     "id": "h.pqd^Nm5E%]E4$;US}M",
     "x": 21,
-    "y": 3540,
+    "y": 3539,
     "extraState": {
       "dropdowns": []
     },
@@ -3533,7 +3889,7 @@
     "type": "generate_token",
     "id": "(?$*`eTfh#y$DSv[~tu`",
     "x": 21,
-    "y": 3681,
+    "y": 3680,
     "extraState": {
       "dropdowns": []
     },
@@ -3550,7 +3906,7 @@
     "type": "generate_token",
     "id": "JO)8hJ6q|aiy.)0hm`{J",
     "x": 21,
-    "y": 3822,
+    "y": 3821,
     "extraState": {
       "dropdowns": []
     },
@@ -3567,7 +3923,7 @@
     "type": "generate_token",
     "id": "D@Qh?_+F5veB1B)d-_3L",
     "x": 21,
-    "y": 4015,
+    "y": 4014,
     "extraState": {
       "dropdowns": []
     },
@@ -3584,7 +3940,7 @@
     "type": "generate_token",
     "id": "XQV2sw=AOq#c}-aQ%c/r",
     "x": 21,
-    "y": 4208,
+    "y": 4207,
     "extraState": {
       "dropdowns": []
     },
@@ -3601,23 +3957,175 @@
     "type": "generate_field_value2",
     "id": "xtzB,B@,R#ee$+gXw4T|",
     "x": 21,
-    "y": 54,
+    "y": 52,
     "extraState": {
       "dropdowns": [
         {
           "field": "FIELDS",
           "options": [
             {
+              "text": "ALPHA",
+              "id": "-p__;2Ef6}.p,t=`cxwR"
+            },
+            {
+              "text": "FACING_CAMERA",
+              "id": "w0,Gj}L_*Z^};JLuaGLD"
+            },
+            {
+              "text": "FACING_CAMERA_LABEL",
+              "id": "N8:5N?-{E3y(`i+Gge@$"
+            },
+            {
+              "text": "ID",
+              "id": "PR50djFXdO$7=/pGAj1@"
+            },
+            {
+              "text": "INTERVAL",
+              "id": "IInB[NkxigGrAt.[s3e-"
+            },
+            {
+              "text": "NAME",
+              "id": "/rz!F0CJQbt%.3`Xpkc`"
+            },
+            {
+              "text": "NAME",
+              "id": "6EjZTaDVoaLANXn]Ro/O"
+            },
+            {
+              "text": "NAME",
+              "id": "9r90s`Kvgv`SHs$zO:~B"
+            },
+            {
+              "text": "NAME",
+              "id": "?2=gwx8,*^DX_L;JxLy2"
+            },
+            {
+              "text": "NAME",
+              "id": "Tch%flW43J3G_#9u7{=C"
+            },
+            {
+              "text": "NAME",
+              "id": "YV;]%mAnL5:lSt~xd;/@"
+            },
+            {
+              "text": "NAME",
+              "id": "[]7TLa;oo-f$aD?}l:*V"
+            },
+            {
+              "text": "NAME",
+              "id": "dQQkW9o3GCZI0tX:~wi,"
+            },
+            {
+              "text": "NAME",
+              "id": "o0X5)gm$3+C|g/63{3@}"
+            },
+            {
+              "text": "NAME",
+              "id": "rgfA`UUw%C:L2k@W,7By"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "tNx=zzBF;60O7/#8dP4N"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "uvQ_CwgP{J9^Gp8!!_g="
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "y:HQ#rd}0v/3mzqPdN(v"
+            },
+            {
+              "text": "OPERATOR",
+              "id": "bgGQia1(li=6b3WLp!2y"
+            },
+            {
+              "text": "POSITION_LABEL",
+              "id": "W1?N?/*ZgjatwN/Mf2/l"
+            },
+            {
+              "text": "PROPERTY",
+              "id": "ExI|m2mgez,Ie|GD]tPO"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "9K;A7hbYc[+j95{#.,CI"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "s$7Y3c(*PD1C.$[e=gcB"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "=~+J$),WM{;^82[t*R,4"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "F/H[:Udw[eL!)}H|EA,E"
+            },
+            {
+              "text": "VECTOR",
+              "id": "K$Bbb[B|^cW{2b/3vPF@"
+            },
+            {
+              "text": "VISIBLE",
+              "id": "@8JH0RJd|=)?FpFSRD6;"
+            },
+            {
+              "text": "VISIBLE_LABEL",
+              "id": "v@J_RaswTm=W$)STuAM+"
+            },
+            {
+              "text": "W",
+              "id": "f)wSF#`_anW`J$L]SCiQ"
+            },
+            {
+              "text": "X",
+              "id": "2QhDgZ.*^~Jx9,?m]Wd;"
+            },
+            {
+              "text": "X",
+              "id": "Q$Q^z*^1FD5!~C)TD_F3"
+            },
+            {
+              "text": "X",
+              "id": "zB.U?P:rLCj;IW}s}V#5"
+            },
+            {
               "text": "X",
               "id": "zB.U?P:rLCj;IW}s}V#50"
+            },
+            {
+              "text": "Y",
+              "id": "K7i$L9G~iu+S8,9y%nJJ"
             },
             {
               "text": "Y",
               "id": "K7i$L9G~iu+S8,9y%nJJ0"
             },
             {
+              "text": "Y",
+              "id": "ct-9aP6^1@I(a_DIr67U"
+            },
+            {
+              "text": "Y",
+              "id": "j#G?X(s`V*CNX0#!-Emd"
+            },
+            {
+              "text": "Z",
+              "id": "9{2+?||$u*J/8SiB}4F2"
+            },
+            {
+              "text": "Z",
+              "id": "V`N+![xlE%~2!+x!k,K%"
+            },
+            {
               "text": "Z",
               "id": "V`N+![xlE%~2!+x!k,K%0"
+            },
+            {
+              "text": "Z",
+              "id": "|PVhNB9`)njf{nrv{PW/"
             }
           ]
         }
@@ -3636,15 +4144,167 @@
     "type": "generate_field_value2",
     "id": "(8=ti83td0RzSvy4bGNb",
     "x": 21,
-    "y": 299,
+    "y": 297,
     "extraState": {
       "dropdowns": [
         {
           "field": "FIELDS",
           "options": [
             {
+              "text": "ALPHA",
+              "id": "-p__;2Ef6}.p,t=`cxwR"
+            },
+            {
+              "text": "FACING_CAMERA",
+              "id": "w0,Gj}L_*Z^};JLuaGLD"
+            },
+            {
+              "text": "FACING_CAMERA_LABEL",
+              "id": "N8:5N?-{E3y(`i+Gge@$"
+            },
+            {
+              "text": "ID",
+              "id": "PR50djFXdO$7=/pGAj1@"
+            },
+            {
+              "text": "INTERVAL",
+              "id": "IInB[NkxigGrAt.[s3e-"
+            },
+            {
+              "text": "NAME",
+              "id": "/rz!F0CJQbt%.3`Xpkc`"
+            },
+            {
+              "text": "NAME",
+              "id": "6EjZTaDVoaLANXn]Ro/O"
+            },
+            {
+              "text": "NAME",
+              "id": "9r90s`Kvgv`SHs$zO:~B"
+            },
+            {
+              "text": "NAME",
+              "id": "?2=gwx8,*^DX_L;JxLy2"
+            },
+            {
               "text": "NAME",
               "id": "?2=gwx8,*^DX_L;JxLy20"
+            },
+            {
+              "text": "NAME",
+              "id": "Tch%flW43J3G_#9u7{=C"
+            },
+            {
+              "text": "NAME",
+              "id": "YV;]%mAnL5:lSt~xd;/@"
+            },
+            {
+              "text": "NAME",
+              "id": "[]7TLa;oo-f$aD?}l:*V"
+            },
+            {
+              "text": "NAME",
+              "id": "dQQkW9o3GCZI0tX:~wi,"
+            },
+            {
+              "text": "NAME",
+              "id": "o0X5)gm$3+C|g/63{3@}"
+            },
+            {
+              "text": "NAME",
+              "id": "rgfA`UUw%C:L2k@W,7By"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "tNx=zzBF;60O7/#8dP4N"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "uvQ_CwgP{J9^Gp8!!_g="
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "y:HQ#rd}0v/3mzqPdN(v"
+            },
+            {
+              "text": "OPERATOR",
+              "id": "bgGQia1(li=6b3WLp!2y"
+            },
+            {
+              "text": "POSITION_LABEL",
+              "id": "W1?N?/*ZgjatwN/Mf2/l"
+            },
+            {
+              "text": "PROPERTY",
+              "id": "ExI|m2mgez,Ie|GD]tPO"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "9K;A7hbYc[+j95{#.,CI"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "s$7Y3c(*PD1C.$[e=gcB"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "=~+J$),WM{;^82[t*R,4"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "F/H[:Udw[eL!)}H|EA,E"
+            },
+            {
+              "text": "VECTOR",
+              "id": "K$Bbb[B|^cW{2b/3vPF@"
+            },
+            {
+              "text": "VISIBLE",
+              "id": "@8JH0RJd|=)?FpFSRD6;"
+            },
+            {
+              "text": "VISIBLE_LABEL",
+              "id": "v@J_RaswTm=W$)STuAM+"
+            },
+            {
+              "text": "W",
+              "id": "f)wSF#`_anW`J$L]SCiQ"
+            },
+            {
+              "text": "X",
+              "id": "2QhDgZ.*^~Jx9,?m]Wd;"
+            },
+            {
+              "text": "X",
+              "id": "Q$Q^z*^1FD5!~C)TD_F3"
+            },
+            {
+              "text": "X",
+              "id": "zB.U?P:rLCj;IW}s}V#5"
+            },
+            {
+              "text": "Y",
+              "id": "K7i$L9G~iu+S8,9y%nJJ"
+            },
+            {
+              "text": "Y",
+              "id": "ct-9aP6^1@I(a_DIr67U"
+            },
+            {
+              "text": "Y",
+              "id": "j#G?X(s`V*CNX0#!-Emd"
+            },
+            {
+              "text": "Z",
+              "id": "9{2+?||$u*J/8SiB}4F2"
+            },
+            {
+              "text": "Z",
+              "id": "V`N+![xlE%~2!+x!k,K%"
+            },
+            {
+              "text": "Z",
+              "id": "|PVhNB9`)njf{nrv{PW/"
             }
           ]
         }
@@ -3663,7 +4323,7 @@
     "type": "generate_field_value2",
     "id": "c?N({@:}/FO5=l^LKBWO",
     "x": 21,
-    "y": 440,
+    "y": 438,
     "extraState": {
       "dropdowns": [
         {
@@ -3671,7 +4331,43 @@
           "options": [
             {
               "text": "ALPHA",
+              "id": "-p__;2Ef6}.p,t=`cxwR"
+            },
+            {
+              "text": "ALPHA",
               "id": "-p__;2Ef6}.p,t=`cxwR0"
+            },
+            {
+              "text": "FACING_CAMERA",
+              "id": "w0,Gj}L_*Z^};JLuaGLD"
+            },
+            {
+              "text": "FACING_CAMERA_LABEL",
+              "id": "N8:5N?-{E3y(`i+Gge@$"
+            },
+            {
+              "text": "ID",
+              "id": "PR50djFXdO$7=/pGAj1@"
+            },
+            {
+              "text": "INTERVAL",
+              "id": "IInB[NkxigGrAt.[s3e-"
+            },
+            {
+              "text": "NAME",
+              "id": "/rz!F0CJQbt%.3`Xpkc`"
+            },
+            {
+              "text": "NAME",
+              "id": "6EjZTaDVoaLANXn]Ro/O"
+            },
+            {
+              "text": "NAME",
+              "id": "9r90s`Kvgv`SHs$zO:~B"
+            },
+            {
+              "text": "NAME",
+              "id": "?2=gwx8,*^DX_L;JxLy2"
             },
             {
               "text": "NAME",
@@ -3679,7 +4375,123 @@
             },
             {
               "text": "NAME",
+              "id": "Tch%flW43J3G_#9u7{=C"
+            },
+            {
+              "text": "NAME",
+              "id": "YV;]%mAnL5:lSt~xd;/@"
+            },
+            {
+              "text": "NAME",
+              "id": "[]7TLa;oo-f$aD?}l:*V"
+            },
+            {
+              "text": "NAME",
+              "id": "dQQkW9o3GCZI0tX:~wi,"
+            },
+            {
+              "text": "NAME",
+              "id": "o0X5)gm$3+C|g/63{3@}"
+            },
+            {
+              "text": "NAME",
+              "id": "rgfA`UUw%C:L2k@W,7By"
+            },
+            {
+              "text": "NAME",
               "id": "rgfA`UUw%C:L2k@W,7By0"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "tNx=zzBF;60O7/#8dP4N"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "uvQ_CwgP{J9^Gp8!!_g="
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "y:HQ#rd}0v/3mzqPdN(v"
+            },
+            {
+              "text": "OPERATOR",
+              "id": "bgGQia1(li=6b3WLp!2y"
+            },
+            {
+              "text": "POSITION_LABEL",
+              "id": "W1?N?/*ZgjatwN/Mf2/l"
+            },
+            {
+              "text": "PROPERTY",
+              "id": "ExI|m2mgez,Ie|GD]tPO"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "9K;A7hbYc[+j95{#.,CI"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "s$7Y3c(*PD1C.$[e=gcB"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "=~+J$),WM{;^82[t*R,4"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "F/H[:Udw[eL!)}H|EA,E"
+            },
+            {
+              "text": "VECTOR",
+              "id": "K$Bbb[B|^cW{2b/3vPF@"
+            },
+            {
+              "text": "VISIBLE",
+              "id": "@8JH0RJd|=)?FpFSRD6;"
+            },
+            {
+              "text": "VISIBLE_LABEL",
+              "id": "v@J_RaswTm=W$)STuAM+"
+            },
+            {
+              "text": "W",
+              "id": "f)wSF#`_anW`J$L]SCiQ"
+            },
+            {
+              "text": "X",
+              "id": "2QhDgZ.*^~Jx9,?m]Wd;"
+            },
+            {
+              "text": "X",
+              "id": "Q$Q^z*^1FD5!~C)TD_F3"
+            },
+            {
+              "text": "X",
+              "id": "zB.U?P:rLCj;IW}s}V#5"
+            },
+            {
+              "text": "Y",
+              "id": "K7i$L9G~iu+S8,9y%nJJ"
+            },
+            {
+              "text": "Y",
+              "id": "ct-9aP6^1@I(a_DIr67U"
+            },
+            {
+              "text": "Y",
+              "id": "j#G?X(s`V*CNX0#!-Emd"
+            },
+            {
+              "text": "Z",
+              "id": "9{2+?||$u*J/8SiB}4F2"
+            },
+            {
+              "text": "Z",
+              "id": "V`N+![xlE%~2!+x!k,K%"
+            },
+            {
+              "text": "Z",
+              "id": "|PVhNB9`)njf{nrv{PW/"
             }
           ]
         }
@@ -3698,7 +4510,7 @@
     "type": "generate_javascript",
     "id": "itQJ7K`UET9Kj7+(`7n.",
     "x": 21,
-    "y": 722,
+    "y": 720,
     "extraState": {
       "dropdowns": []
     },
@@ -3710,7 +4522,7 @@
     "type": "generate_token",
     "id": "Wn8VyHBZJYN^kZ?tlaIo",
     "x": 21,
-    "y": 837,
+    "y": 835,
     "extraState": {
       "dropdowns": []
     },
@@ -3727,15 +4539,167 @@
     "type": "generate_field_value2",
     "id": ",1M.RT5+jdVULVKVDXw2",
     "x": 51,
-    "y": 1022,
+    "y": 1020,
     "extraState": {
       "dropdowns": [
         {
           "field": "FIELDS",
           "options": [
             {
+              "text": "ALPHA",
+              "id": "-p__;2Ef6}.p,t=`cxwR"
+            },
+            {
+              "text": "FACING_CAMERA",
+              "id": "w0,Gj}L_*Z^};JLuaGLD"
+            },
+            {
+              "text": "FACING_CAMERA_LABEL",
+              "id": "N8:5N?-{E3y(`i+Gge@$"
+            },
+            {
+              "text": "ID",
+              "id": "PR50djFXdO$7=/pGAj1@"
+            },
+            {
+              "text": "INTERVAL",
+              "id": "IInB[NkxigGrAt.[s3e-"
+            },
+            {
+              "text": "NAME",
+              "id": "/rz!F0CJQbt%.3`Xpkc`"
+            },
+            {
+              "text": "NAME",
+              "id": "6EjZTaDVoaLANXn]Ro/O"
+            },
+            {
+              "text": "NAME",
+              "id": "9r90s`Kvgv`SHs$zO:~B"
+            },
+            {
+              "text": "NAME",
+              "id": "?2=gwx8,*^DX_L;JxLy2"
+            },
+            {
+              "text": "NAME",
+              "id": "Tch%flW43J3G_#9u7{=C"
+            },
+            {
+              "text": "NAME",
+              "id": "YV;]%mAnL5:lSt~xd;/@"
+            },
+            {
+              "text": "NAME",
+              "id": "[]7TLa;oo-f$aD?}l:*V"
+            },
+            {
+              "text": "NAME",
+              "id": "dQQkW9o3GCZI0tX:~wi,"
+            },
+            {
+              "text": "NAME",
+              "id": "o0X5)gm$3+C|g/63{3@}"
+            },
+            {
+              "text": "NAME",
+              "id": "rgfA`UUw%C:L2k@W,7By"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "tNx=zzBF;60O7/#8dP4N"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "uvQ_CwgP{J9^Gp8!!_g="
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "y:HQ#rd}0v/3mzqPdN(v"
+            },
+            {
+              "text": "OPERATOR",
+              "id": "bgGQia1(li=6b3WLp!2y"
+            },
+            {
+              "text": "POSITION_LABEL",
+              "id": "W1?N?/*ZgjatwN/Mf2/l"
+            },
+            {
+              "text": "PROPERTY",
+              "id": "ExI|m2mgez,Ie|GD]tPO"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "9K;A7hbYc[+j95{#.,CI"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "s$7Y3c(*PD1C.$[e=gcB"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "=~+J$),WM{;^82[t*R,4"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "F/H[:Udw[eL!)}H|EA,E"
+            },
+            {
+              "text": "VECTOR",
+              "id": "K$Bbb[B|^cW{2b/3vPF@"
+            },
+            {
               "text": "VECTOR",
               "id": "K$Bbb[B|^cW{2b/3vPF@0"
+            },
+            {
+              "text": "VISIBLE",
+              "id": "@8JH0RJd|=)?FpFSRD6;"
+            },
+            {
+              "text": "VISIBLE_LABEL",
+              "id": "v@J_RaswTm=W$)STuAM+"
+            },
+            {
+              "text": "W",
+              "id": "f)wSF#`_anW`J$L]SCiQ"
+            },
+            {
+              "text": "X",
+              "id": "2QhDgZ.*^~Jx9,?m]Wd;"
+            },
+            {
+              "text": "X",
+              "id": "Q$Q^z*^1FD5!~C)TD_F3"
+            },
+            {
+              "text": "X",
+              "id": "zB.U?P:rLCj;IW}s}V#5"
+            },
+            {
+              "text": "Y",
+              "id": "K7i$L9G~iu+S8,9y%nJJ"
+            },
+            {
+              "text": "Y",
+              "id": "ct-9aP6^1@I(a_DIr67U"
+            },
+            {
+              "text": "Y",
+              "id": "j#G?X(s`V*CNX0#!-Emd"
+            },
+            {
+              "text": "Z",
+              "id": "9{2+?||$u*J/8SiB}4F2"
+            },
+            {
+              "text": "Z",
+              "id": "V`N+![xlE%~2!+x!k,K%"
+            },
+            {
+              "text": "Z",
+              "id": "|PVhNB9`)njf{nrv{PW/"
             }
           ]
         }
@@ -3749,7 +4713,7 @@
     "type": "generate_token",
     "id": "8,uU6].=.Z`=w=FajDPm",
     "x": 21,
-    "y": 1119,
+    "y": 1117,
     "extraState": {
       "dropdowns": []
     },
@@ -3766,7 +4730,7 @@
     "type": "generate_javascript",
     "id": "QQfyQ8Y(uz~lB$6V?R!^",
     "x": 21,
-    "y": 1286,
+    "y": 1284,
     "extraState": {
       "dropdowns": []
     },
@@ -3783,15 +4747,135 @@
     "type": "generate_field_value2",
     "id": "?`hDCYWskRszkYX?Y60f",
     "x": 21,
-    "y": 1453,
+    "y": 1451,
     "extraState": {
       "dropdowns": [
         {
           "field": "FIELDS",
           "options": [
             {
+              "text": "ALPHA",
+              "id": "-p__;2Ef6}.p,t=`cxwR"
+            },
+            {
+              "text": "FACING_CAMERA",
+              "id": "w0,Gj}L_*Z^};JLuaGLD"
+            },
+            {
+              "text": "FACING_CAMERA_LABEL",
+              "id": "N8:5N?-{E3y(`i+Gge@$"
+            },
+            {
+              "text": "ID",
+              "id": "PR50djFXdO$7=/pGAj1@"
+            },
+            {
+              "text": "INTERVAL",
+              "id": "IInB[NkxigGrAt.[s3e-"
+            },
+            {
+              "text": "NAME",
+              "id": "/rz!F0CJQbt%.3`Xpkc`"
+            },
+            {
+              "text": "NAME",
+              "id": "6EjZTaDVoaLANXn]Ro/O"
+            },
+            {
+              "text": "NAME",
+              "id": "9r90s`Kvgv`SHs$zO:~B"
+            },
+            {
+              "text": "NAME",
+              "id": "?2=gwx8,*^DX_L;JxLy2"
+            },
+            {
+              "text": "NAME",
+              "id": "Tch%flW43J3G_#9u7{=C"
+            },
+            {
+              "text": "NAME",
+              "id": "YV;]%mAnL5:lSt~xd;/@"
+            },
+            {
+              "text": "NAME",
+              "id": "[]7TLa;oo-f$aD?}l:*V"
+            },
+            {
+              "text": "NAME",
+              "id": "dQQkW9o3GCZI0tX:~wi,"
+            },
+            {
+              "text": "NAME",
+              "id": "o0X5)gm$3+C|g/63{3@}"
+            },
+            {
+              "text": "NAME",
+              "id": "rgfA`UUw%C:L2k@W,7By"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "tNx=zzBF;60O7/#8dP4N"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "uvQ_CwgP{J9^Gp8!!_g="
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "y:HQ#rd}0v/3mzqPdN(v"
+            },
+            {
+              "text": "OPERATOR",
+              "id": "bgGQia1(li=6b3WLp!2y"
+            },
+            {
+              "text": "POSITION_LABEL",
+              "id": "W1?N?/*ZgjatwN/Mf2/l"
+            },
+            {
+              "text": "PROPERTY",
+              "id": "ExI|m2mgez,Ie|GD]tPO"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "9K;A7hbYc[+j95{#.,CI"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "s$7Y3c(*PD1C.$[e=gcB"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "=~+J$),WM{;^82[t*R,4"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "F/H[:Udw[eL!)}H|EA,E"
+            },
+            {
+              "text": "VECTOR",
+              "id": "K$Bbb[B|^cW{2b/3vPF@"
+            },
+            {
+              "text": "VISIBLE",
+              "id": "@8JH0RJd|=)?FpFSRD6;"
+            },
+            {
+              "text": "VISIBLE_LABEL",
+              "id": "v@J_RaswTm=W$)STuAM+"
+            },
+            {
+              "text": "W",
+              "id": "f)wSF#`_anW`J$L]SCiQ"
+            },
+            {
               "text": "W",
               "id": "f)wSF#`_anW`J$L]SCiQ0"
+            },
+            {
+              "text": "X",
+              "id": "2QhDgZ.*^~Jx9,?m]Wd;"
             },
             {
               "text": "X",
@@ -3799,7 +4883,19 @@
             },
             {
               "text": "X",
+              "id": "Q$Q^z*^1FD5!~C)TD_F3"
+            },
+            {
+              "text": "X",
+              "id": "zB.U?P:rLCj;IW}s}V#5"
+            },
+            {
+              "text": "X",
               "id": "zB.U?P:rLCj;IW}s}V#50"
+            },
+            {
+              "text": "Y",
+              "id": "K7i$L9G~iu+S8,9y%nJJ"
             },
             {
               "text": "Y",
@@ -3807,11 +4903,31 @@
             },
             {
               "text": "Y",
+              "id": "ct-9aP6^1@I(a_DIr67U"
+            },
+            {
+              "text": "Y",
+              "id": "j#G?X(s`V*CNX0#!-Emd"
+            },
+            {
+              "text": "Y",
               "id": "j#G?X(s`V*CNX0#!-Emd0"
             },
             {
               "text": "Z",
+              "id": "9{2+?||$u*J/8SiB}4F2"
+            },
+            {
+              "text": "Z",
+              "id": "V`N+![xlE%~2!+x!k,K%"
+            },
+            {
+              "text": "Z",
               "id": "V`N+![xlE%~2!+x!k,K%0"
+            },
+            {
+              "text": "Z",
+              "id": "|PVhNB9`)njf{nrv{PW/"
             },
             {
               "text": "Z",
@@ -3834,19 +4950,103 @@
     "type": "generate_field_text",
     "id": "#wU4,yg+`Q^8oPe]RQ+o",
     "x": 21,
-    "y": 1698,
+    "y": 1696,
     "extraState": {
       "dropdowns": [
         {
           "field": "FIELDS",
           "options": [
             {
+              "text": "ALPHA",
+              "id": "-p__;2Ef6}.p,t=`cxwR"
+            },
+            {
+              "text": "FACING_CAMERA",
+              "id": "w0,Gj}L_*Z^};JLuaGLD"
+            },
+            {
+              "text": "FACING_CAMERA_LABEL",
+              "id": "N8:5N?-{E3y(`i+Gge@$"
+            },
+            {
+              "text": "ID",
+              "id": "PR50djFXdO$7=/pGAj1@"
+            },
+            {
+              "text": "INTERVAL",
+              "id": "IInB[NkxigGrAt.[s3e-"
+            },
+            {
+              "text": "NAME",
+              "id": "/rz!F0CJQbt%.3`Xpkc`"
+            },
+            {
               "text": "NAME",
               "id": "6EjZTaDVoaLANXn]Ro/O"
             },
             {
               "text": "NAME",
+              "id": "9r90s`Kvgv`SHs$zO:~B"
+            },
+            {
+              "text": "NAME",
+              "id": "?2=gwx8,*^DX_L;JxLy2"
+            },
+            {
+              "text": "NAME",
+              "id": "Tch%flW43J3G_#9u7{=C"
+            },
+            {
+              "text": "NAME",
               "id": "YV;]%mAnL5:lSt~xd;/@"
+            },
+            {
+              "text": "NAME",
+              "id": "[]7TLa;oo-f$aD?}l:*V"
+            },
+            {
+              "text": "NAME",
+              "id": "dQQkW9o3GCZI0tX:~wi,"
+            },
+            {
+              "text": "NAME",
+              "id": "o0X5)gm$3+C|g/63{3@}"
+            },
+            {
+              "text": "NAME",
+              "id": "rgfA`UUw%C:L2k@W,7By"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "tNx=zzBF;60O7/#8dP4N"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "uvQ_CwgP{J9^Gp8!!_g="
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "y:HQ#rd}0v/3mzqPdN(v"
+            },
+            {
+              "text": "OPERATOR",
+              "id": "bgGQia1(li=6b3WLp!2y"
+            },
+            {
+              "text": "POSITION_LABEL",
+              "id": "W1?N?/*ZgjatwN/Mf2/l"
+            },
+            {
+              "text": "PROPERTY",
+              "id": "ExI|m2mgez,Ie|GD]tPO"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "9K;A7hbYc[+j95{#.,CI"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "s$7Y3c(*PD1C.$[e=gcB"
             },
             {
               "text": "SHOW_HIDE",
@@ -3855,6 +5055,58 @@
             {
               "text": "SHOW_HIDE",
               "id": "F/H[:Udw[eL!)}H|EA,E"
+            },
+            {
+              "text": "VECTOR",
+              "id": "K$Bbb[B|^cW{2b/3vPF@"
+            },
+            {
+              "text": "VISIBLE",
+              "id": "@8JH0RJd|=)?FpFSRD6;"
+            },
+            {
+              "text": "VISIBLE_LABEL",
+              "id": "v@J_RaswTm=W$)STuAM+"
+            },
+            {
+              "text": "W",
+              "id": "f)wSF#`_anW`J$L]SCiQ"
+            },
+            {
+              "text": "X",
+              "id": "2QhDgZ.*^~Jx9,?m]Wd;"
+            },
+            {
+              "text": "X",
+              "id": "Q$Q^z*^1FD5!~C)TD_F3"
+            },
+            {
+              "text": "X",
+              "id": "zB.U?P:rLCj;IW}s}V#5"
+            },
+            {
+              "text": "Y",
+              "id": "K7i$L9G~iu+S8,9y%nJJ"
+            },
+            {
+              "text": "Y",
+              "id": "ct-9aP6^1@I(a_DIr67U"
+            },
+            {
+              "text": "Y",
+              "id": "j#G?X(s`V*CNX0#!-Emd"
+            },
+            {
+              "text": "Z",
+              "id": "9{2+?||$u*J/8SiB}4F2"
+            },
+            {
+              "text": "Z",
+              "id": "V`N+![xlE%~2!+x!k,K%"
+            },
+            {
+              "text": "Z",
+              "id": "|PVhNB9`)njf{nrv{PW/"
             }
           ]
         }
@@ -3873,19 +5125,171 @@
     "type": "generate_field_value2",
     "id": "j%bUkxD9;1?OG}S{=E]K",
     "x": 21,
-    "y": 1891,
+    "y": 1889,
     "extraState": {
       "dropdowns": [
         {
           "field": "FIELDS",
           "options": [
             {
+              "text": "ALPHA",
+              "id": "-p__;2Ef6}.p,t=`cxwR"
+            },
+            {
+              "text": "FACING_CAMERA",
+              "id": "w0,Gj}L_*Z^};JLuaGLD"
+            },
+            {
+              "text": "FACING_CAMERA_LABEL",
+              "id": "N8:5N?-{E3y(`i+Gge@$"
+            },
+            {
+              "text": "ID",
+              "id": "PR50djFXdO$7=/pGAj1@"
+            },
+            {
+              "text": "INTERVAL",
+              "id": "IInB[NkxigGrAt.[s3e-"
+            },
+            {
+              "text": "NAME",
+              "id": "/rz!F0CJQbt%.3`Xpkc`"
+            },
+            {
               "text": "NAME",
               "id": "/rz!F0CJQbt%.3`Xpkc`0"
             },
             {
+              "text": "NAME",
+              "id": "6EjZTaDVoaLANXn]Ro/O"
+            },
+            {
+              "text": "NAME",
+              "id": "9r90s`Kvgv`SHs$zO:~B"
+            },
+            {
+              "text": "NAME",
+              "id": "?2=gwx8,*^DX_L;JxLy2"
+            },
+            {
+              "text": "NAME",
+              "id": "Tch%flW43J3G_#9u7{=C"
+            },
+            {
+              "text": "NAME",
+              "id": "YV;]%mAnL5:lSt~xd;/@"
+            },
+            {
+              "text": "NAME",
+              "id": "[]7TLa;oo-f$aD?}l:*V"
+            },
+            {
+              "text": "NAME",
+              "id": "dQQkW9o3GCZI0tX:~wi,"
+            },
+            {
+              "text": "NAME",
+              "id": "o0X5)gm$3+C|g/63{3@}"
+            },
+            {
+              "text": "NAME",
+              "id": "rgfA`UUw%C:L2k@W,7By"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "tNx=zzBF;60O7/#8dP4N"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "uvQ_CwgP{J9^Gp8!!_g="
+            },
+            {
               "text": "NAME_LABEL",
               "id": "uvQ_CwgP{J9^Gp8!!_g=0"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "y:HQ#rd}0v/3mzqPdN(v"
+            },
+            {
+              "text": "OPERATOR",
+              "id": "bgGQia1(li=6b3WLp!2y"
+            },
+            {
+              "text": "POSITION_LABEL",
+              "id": "W1?N?/*ZgjatwN/Mf2/l"
+            },
+            {
+              "text": "PROPERTY",
+              "id": "ExI|m2mgez,Ie|GD]tPO"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "9K;A7hbYc[+j95{#.,CI"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "s$7Y3c(*PD1C.$[e=gcB"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "=~+J$),WM{;^82[t*R,4"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "F/H[:Udw[eL!)}H|EA,E"
+            },
+            {
+              "text": "VECTOR",
+              "id": "K$Bbb[B|^cW{2b/3vPF@"
+            },
+            {
+              "text": "VISIBLE",
+              "id": "@8JH0RJd|=)?FpFSRD6;"
+            },
+            {
+              "text": "VISIBLE_LABEL",
+              "id": "v@J_RaswTm=W$)STuAM+"
+            },
+            {
+              "text": "W",
+              "id": "f)wSF#`_anW`J$L]SCiQ"
+            },
+            {
+              "text": "X",
+              "id": "2QhDgZ.*^~Jx9,?m]Wd;"
+            },
+            {
+              "text": "X",
+              "id": "Q$Q^z*^1FD5!~C)TD_F3"
+            },
+            {
+              "text": "X",
+              "id": "zB.U?P:rLCj;IW}s}V#5"
+            },
+            {
+              "text": "Y",
+              "id": "K7i$L9G~iu+S8,9y%nJJ"
+            },
+            {
+              "text": "Y",
+              "id": "ct-9aP6^1@I(a_DIr67U"
+            },
+            {
+              "text": "Y",
+              "id": "j#G?X(s`V*CNX0#!-Emd"
+            },
+            {
+              "text": "Z",
+              "id": "9{2+?||$u*J/8SiB}4F2"
+            },
+            {
+              "text": "Z",
+              "id": "V`N+![xlE%~2!+x!k,K%"
+            },
+            {
+              "text": "Z",
+              "id": "|PVhNB9`)njf{nrv{PW/"
             }
           ]
         }
@@ -3904,19 +5308,83 @@
     "type": "generate_field_value2",
     "id": "QbNjAtp$2(l6GuI4H/E)",
     "x": 21,
-    "y": 2116,
+    "y": 2114,
     "extraState": {
       "dropdowns": [
         {
           "field": "FIELDS",
           "options": [
             {
+              "text": "ALPHA",
+              "id": "-p__;2Ef6}.p,t=`cxwR"
+            },
+            {
+              "text": "FACING_CAMERA",
+              "id": "w0,Gj}L_*Z^};JLuaGLD"
+            },
+            {
+              "text": "FACING_CAMERA_LABEL",
+              "id": "N8:5N?-{E3y(`i+Gge@$"
+            },
+            {
+              "text": "ID",
+              "id": "PR50djFXdO$7=/pGAj1@"
+            },
+            {
               "text": "ID",
               "id": "PR50djFXdO$7=/pGAj1@0"
             },
             {
+              "text": "INTERVAL",
+              "id": "IInB[NkxigGrAt.[s3e-"
+            },
+            {
+              "text": "NAME",
+              "id": "/rz!F0CJQbt%.3`Xpkc`"
+            },
+            {
               "text": "NAME",
               "id": "/rz!F0CJQbt%.3`Xpkc`0"
+            },
+            {
+              "text": "NAME",
+              "id": "6EjZTaDVoaLANXn]Ro/O"
+            },
+            {
+              "text": "NAME",
+              "id": "9r90s`Kvgv`SHs$zO:~B"
+            },
+            {
+              "text": "NAME",
+              "id": "?2=gwx8,*^DX_L;JxLy2"
+            },
+            {
+              "text": "NAME",
+              "id": "Tch%flW43J3G_#9u7{=C"
+            },
+            {
+              "text": "NAME",
+              "id": "YV;]%mAnL5:lSt~xd;/@"
+            },
+            {
+              "text": "NAME",
+              "id": "[]7TLa;oo-f$aD?}l:*V"
+            },
+            {
+              "text": "NAME",
+              "id": "dQQkW9o3GCZI0tX:~wi,"
+            },
+            {
+              "text": "NAME",
+              "id": "o0X5)gm$3+C|g/63{3@}"
+            },
+            {
+              "text": "NAME",
+              "id": "rgfA`UUw%C:L2k@W,7By"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "tNx=zzBF;60O7/#8dP4N"
             },
             {
               "text": "NAME_LABEL",
@@ -3924,7 +5392,95 @@
             },
             {
               "text": "NAME_LABEL",
+              "id": "uvQ_CwgP{J9^Gp8!!_g="
+            },
+            {
+              "text": "NAME_LABEL",
               "id": "uvQ_CwgP{J9^Gp8!!_g=0"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "y:HQ#rd}0v/3mzqPdN(v"
+            },
+            {
+              "text": "OPERATOR",
+              "id": "bgGQia1(li=6b3WLp!2y"
+            },
+            {
+              "text": "POSITION_LABEL",
+              "id": "W1?N?/*ZgjatwN/Mf2/l"
+            },
+            {
+              "text": "PROPERTY",
+              "id": "ExI|m2mgez,Ie|GD]tPO"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "9K;A7hbYc[+j95{#.,CI"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "s$7Y3c(*PD1C.$[e=gcB"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "=~+J$),WM{;^82[t*R,4"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "F/H[:Udw[eL!)}H|EA,E"
+            },
+            {
+              "text": "VECTOR",
+              "id": "K$Bbb[B|^cW{2b/3vPF@"
+            },
+            {
+              "text": "VISIBLE",
+              "id": "@8JH0RJd|=)?FpFSRD6;"
+            },
+            {
+              "text": "VISIBLE_LABEL",
+              "id": "v@J_RaswTm=W$)STuAM+"
+            },
+            {
+              "text": "W",
+              "id": "f)wSF#`_anW`J$L]SCiQ"
+            },
+            {
+              "text": "X",
+              "id": "2QhDgZ.*^~Jx9,?m]Wd;"
+            },
+            {
+              "text": "X",
+              "id": "Q$Q^z*^1FD5!~C)TD_F3"
+            },
+            {
+              "text": "X",
+              "id": "zB.U?P:rLCj;IW}s}V#5"
+            },
+            {
+              "text": "Y",
+              "id": "K7i$L9G~iu+S8,9y%nJJ"
+            },
+            {
+              "text": "Y",
+              "id": "ct-9aP6^1@I(a_DIr67U"
+            },
+            {
+              "text": "Y",
+              "id": "j#G?X(s`V*CNX0#!-Emd"
+            },
+            {
+              "text": "Z",
+              "id": "9{2+?||$u*J/8SiB}4F2"
+            },
+            {
+              "text": "Z",
+              "id": "V`N+![xlE%~2!+x!k,K%"
+            },
+            {
+              "text": "Z",
+              "id": "|PVhNB9`)njf{nrv{PW/"
             }
           ]
         }
@@ -3943,15 +5499,83 @@
     "type": "generate_statements2",
     "id": "Zya2.fePW/nXnm|9P_r-",
     "x": 21,
-    "y": 2346,
+    "y": 2344,
     "extraState": {
       "dropdowns": [
         {
           "field": "STATEMENTS",
           "options": [
             {
+              "text": "FROM",
+              "id": "PNhvG.~!kMPAdeDYfu71"
+            },
+            {
+              "text": "FROM",
+              "id": "Sy,,~|x[V?a*$4N1$t:g"
+            },
+            {
+              "text": "INPUT",
+              "id": "%P]^kgOWLs;nJsWC0qHL"
+            },
+            {
+              "text": "INPUT",
+              "id": "MbMOlqD.6;b$[(jD2c*`"
+            },
+            {
+              "text": "INPUT",
+              "id": "U/8TKD{b}SkuVf,66:9_"
+            },
+            {
+              "text": "LHS",
+              "id": "Pp*p@3c72UJKv3Y3nSe("
+            },
+            {
+              "text": "NAME",
+              "id": "0CczlR:jo;z73o)WIN1i"
+            },
+            {
+              "text": "NAME",
+              "id": "ttUcTLHnBwjhX9yDyVdo"
+            },
+            {
+              "text": "POSITION",
+              "id": "bVKl{K1V%_Ux-BJ}YB3,"
+            },
+            {
+              "text": "RHS",
+              "id": "3N]0.f:6YkmT;:1Q,qs;"
+            },
+            {
+              "text": "ROTATION",
+              "id": "IL1`0U0_P@d*U,cB{`lt"
+            },
+            {
+              "text": "ROTATION",
+              "id": "w)P6EINuujO`1{)#eM)@"
+            },
+            {
+              "text": "SPOT",
+              "id": "6|I1D+lv,fwRj;2uj-44"
+            },
+            {
               "text": "STATEMENTS",
               "id": ".^Z/IQh|;qyZ2jjY3Rys"
+            },
+            {
+              "text": "STATEMENTS",
+              "id": "J3X[G^qB|mZi(Gj*8b:."
+            },
+            {
+              "text": "STATEMENTS",
+              "id": "tm9f)-q_kKyK:Ds`pnOx"
+            },
+            {
+              "text": "TO",
+              "id": "_B%(~54Q5#)_Q7,bd0qU"
+            },
+            {
+              "text": "TO",
+              "id": "_RT/`o8:%/7bs;tGvIlK"
             }
           ]
         }
@@ -3970,7 +5594,7 @@
     "type": "generate_token",
     "id": "v_p)K,E5/92q;Za9JCjm",
     "x": 21,
-    "y": 2717,
+    "y": 2715,
     "extraState": {
       "dropdowns": []
     },
@@ -3987,7 +5611,7 @@
     "type": "generate_token",
     "id": "6aU2=+JYyeOjk}C_OF@^",
     "x": 21,
-    "y": 2936,
+    "y": 2934,
     "extraState": {
       "dropdowns": []
     },
@@ -4004,7 +5628,7 @@
     "type": "generate_token",
     "id": "+l?|:laRVZcKk)x7XSR2",
     "x": 21,
-    "y": 3155,
+    "y": 3153,
     "extraState": {
       "dropdowns": []
     },
@@ -4021,7 +5645,7 @@
     "type": "generate_token",
     "id": "~pn{;q-:)RpJZ]/zbz$s",
     "x": 21,
-    "y": 3426,
+    "y": 3424,
     "extraState": {
       "dropdowns": []
     },
@@ -4038,15 +5662,83 @@
     "type": "generate_values2",
     "id": "G[f-NX}:2E`IGl|04k~b",
     "x": 21,
-    "y": 3567,
+    "y": 3565,
     "extraState": {
       "dropdowns": [
         {
           "field": "VALUE",
           "options": [
             {
+              "text": "FROM",
+              "id": "PNhvG.~!kMPAdeDYfu71"
+            },
+            {
+              "text": "FROM",
+              "id": "Sy,,~|x[V?a*$4N1$t:g"
+            },
+            {
+              "text": "INPUT",
+              "id": "%P]^kgOWLs;nJsWC0qHL"
+            },
+            {
+              "text": "INPUT",
+              "id": "MbMOlqD.6;b$[(jD2c*`"
+            },
+            {
+              "text": "INPUT",
+              "id": "U/8TKD{b}SkuVf,66:9_"
+            },
+            {
+              "text": "LHS",
+              "id": "Pp*p@3c72UJKv3Y3nSe("
+            },
+            {
+              "text": "NAME",
+              "id": "0CczlR:jo;z73o)WIN1i"
+            },
+            {
               "text": "NAME",
               "id": "ttUcTLHnBwjhX9yDyVdo"
+            },
+            {
+              "text": "POSITION",
+              "id": "bVKl{K1V%_Ux-BJ}YB3,"
+            },
+            {
+              "text": "RHS",
+              "id": "3N]0.f:6YkmT;:1Q,qs;"
+            },
+            {
+              "text": "ROTATION",
+              "id": "IL1`0U0_P@d*U,cB{`lt"
+            },
+            {
+              "text": "ROTATION",
+              "id": "w)P6EINuujO`1{)#eM)@"
+            },
+            {
+              "text": "SPOT",
+              "id": "6|I1D+lv,fwRj;2uj-44"
+            },
+            {
+              "text": "STATEMENTS",
+              "id": ".^Z/IQh|;qyZ2jjY3Rys"
+            },
+            {
+              "text": "STATEMENTS",
+              "id": "J3X[G^qB|mZi(Gj*8b:."
+            },
+            {
+              "text": "STATEMENTS",
+              "id": "tm9f)-q_kKyK:Ds`pnOx"
+            },
+            {
+              "text": "TO",
+              "id": "_B%(~54Q5#)_Q7,bd0qU"
+            },
+            {
+              "text": "TO",
+              "id": "_RT/`o8:%/7bs;tGvIlK"
             }
           ]
         }
@@ -4065,15 +5757,167 @@
     "type": "generate_field_value2",
     "id": ";r7,.#,tE+.l{WQ[_WW0",
     "x": 21,
-    "y": 3708,
+    "y": 3706,
     "extraState": {
       "dropdowns": [
         {
           "field": "FIELDS",
           "options": [
             {
+              "text": "ALPHA",
+              "id": "-p__;2Ef6}.p,t=`cxwR"
+            },
+            {
+              "text": "FACING_CAMERA",
+              "id": "w0,Gj}L_*Z^};JLuaGLD"
+            },
+            {
+              "text": "FACING_CAMERA_LABEL",
+              "id": "N8:5N?-{E3y(`i+Gge@$"
+            },
+            {
+              "text": "ID",
+              "id": "PR50djFXdO$7=/pGAj1@"
+            },
+            {
+              "text": "INTERVAL",
+              "id": "IInB[NkxigGrAt.[s3e-"
+            },
+            {
+              "text": "NAME",
+              "id": "/rz!F0CJQbt%.3`Xpkc`"
+            },
+            {
+              "text": "NAME",
+              "id": "6EjZTaDVoaLANXn]Ro/O"
+            },
+            {
+              "text": "NAME",
+              "id": "9r90s`Kvgv`SHs$zO:~B"
+            },
+            {
+              "text": "NAME",
+              "id": "?2=gwx8,*^DX_L;JxLy2"
+            },
+            {
+              "text": "NAME",
+              "id": "Tch%flW43J3G_#9u7{=C"
+            },
+            {
+              "text": "NAME",
+              "id": "YV;]%mAnL5:lSt~xd;/@"
+            },
+            {
+              "text": "NAME",
+              "id": "[]7TLa;oo-f$aD?}l:*V"
+            },
+            {
               "text": "NAME",
               "id": "[]7TLa;oo-f$aD?}l:*V0"
+            },
+            {
+              "text": "NAME",
+              "id": "dQQkW9o3GCZI0tX:~wi,"
+            },
+            {
+              "text": "NAME",
+              "id": "o0X5)gm$3+C|g/63{3@}"
+            },
+            {
+              "text": "NAME",
+              "id": "rgfA`UUw%C:L2k@W,7By"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "tNx=zzBF;60O7/#8dP4N"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "uvQ_CwgP{J9^Gp8!!_g="
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "y:HQ#rd}0v/3mzqPdN(v"
+            },
+            {
+              "text": "OPERATOR",
+              "id": "bgGQia1(li=6b3WLp!2y"
+            },
+            {
+              "text": "POSITION_LABEL",
+              "id": "W1?N?/*ZgjatwN/Mf2/l"
+            },
+            {
+              "text": "PROPERTY",
+              "id": "ExI|m2mgez,Ie|GD]tPO"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "9K;A7hbYc[+j95{#.,CI"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "s$7Y3c(*PD1C.$[e=gcB"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "=~+J$),WM{;^82[t*R,4"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "F/H[:Udw[eL!)}H|EA,E"
+            },
+            {
+              "text": "VECTOR",
+              "id": "K$Bbb[B|^cW{2b/3vPF@"
+            },
+            {
+              "text": "VISIBLE",
+              "id": "@8JH0RJd|=)?FpFSRD6;"
+            },
+            {
+              "text": "VISIBLE_LABEL",
+              "id": "v@J_RaswTm=W$)STuAM+"
+            },
+            {
+              "text": "W",
+              "id": "f)wSF#`_anW`J$L]SCiQ"
+            },
+            {
+              "text": "X",
+              "id": "2QhDgZ.*^~Jx9,?m]Wd;"
+            },
+            {
+              "text": "X",
+              "id": "Q$Q^z*^1FD5!~C)TD_F3"
+            },
+            {
+              "text": "X",
+              "id": "zB.U?P:rLCj;IW}s}V#5"
+            },
+            {
+              "text": "Y",
+              "id": "K7i$L9G~iu+S8,9y%nJJ"
+            },
+            {
+              "text": "Y",
+              "id": "ct-9aP6^1@I(a_DIr67U"
+            },
+            {
+              "text": "Y",
+              "id": "j#G?X(s`V*CNX0#!-Emd"
+            },
+            {
+              "text": "Z",
+              "id": "9{2+?||$u*J/8SiB}4F2"
+            },
+            {
+              "text": "Z",
+              "id": "V`N+![xlE%~2!+x!k,K%"
+            },
+            {
+              "text": "Z",
+              "id": "|PVhNB9`)njf{nrv{PW/"
             }
           ]
         }
@@ -4092,7 +5936,7 @@
     "type": "generate_values2",
     "id": "#j.X*@#FR:k7*Lwf9gUO",
     "x": 21,
-    "y": 3849,
+    "y": 3847,
     "extraState": {
       "dropdowns": [
         {
@@ -4100,11 +5944,75 @@
           "options": [
             {
               "text": "FROM",
+              "id": "PNhvG.~!kMPAdeDYfu71"
+            },
+            {
+              "text": "FROM",
               "id": "Sy,,~|x[V?a*$4N1$t:g"
+            },
+            {
+              "text": "INPUT",
+              "id": "%P]^kgOWLs;nJsWC0qHL"
+            },
+            {
+              "text": "INPUT",
+              "id": "MbMOlqD.6;b$[(jD2c*`"
+            },
+            {
+              "text": "INPUT",
+              "id": "U/8TKD{b}SkuVf,66:9_"
+            },
+            {
+              "text": "LHS",
+              "id": "Pp*p@3c72UJKv3Y3nSe("
+            },
+            {
+              "text": "NAME",
+              "id": "0CczlR:jo;z73o)WIN1i"
+            },
+            {
+              "text": "NAME",
+              "id": "ttUcTLHnBwjhX9yDyVdo"
+            },
+            {
+              "text": "POSITION",
+              "id": "bVKl{K1V%_Ux-BJ}YB3,"
+            },
+            {
+              "text": "RHS",
+              "id": "3N]0.f:6YkmT;:1Q,qs;"
+            },
+            {
+              "text": "ROTATION",
+              "id": "IL1`0U0_P@d*U,cB{`lt"
+            },
+            {
+              "text": "ROTATION",
+              "id": "w)P6EINuujO`1{)#eM)@"
+            },
+            {
+              "text": "SPOT",
+              "id": "6|I1D+lv,fwRj;2uj-44"
+            },
+            {
+              "text": "STATEMENTS",
+              "id": ".^Z/IQh|;qyZ2jjY3Rys"
+            },
+            {
+              "text": "STATEMENTS",
+              "id": "J3X[G^qB|mZi(Gj*8b:."
+            },
+            {
+              "text": "STATEMENTS",
+              "id": "tm9f)-q_kKyK:Ds`pnOx"
             },
             {
               "text": "TO",
               "id": "_B%(~54Q5#)_Q7,bd0qU"
+            },
+            {
+              "text": "TO",
+              "id": "_RT/`o8:%/7bs;tGvIlK"
             }
           ]
         }
@@ -4123,7 +6031,7 @@
     "type": "generate_values2",
     "id": "Qs,rLtB:Ts4]|@*{w7.9",
     "x": 21,
-    "y": 4042,
+    "y": 4040,
     "extraState": {
       "dropdowns": [
         {
@@ -4136,6 +6044,62 @@
             {
               "text": "FROM",
               "id": "Sy,,~|x[V?a*$4N1$t:g"
+            },
+            {
+              "text": "INPUT",
+              "id": "%P]^kgOWLs;nJsWC0qHL"
+            },
+            {
+              "text": "INPUT",
+              "id": "MbMOlqD.6;b$[(jD2c*`"
+            },
+            {
+              "text": "INPUT",
+              "id": "U/8TKD{b}SkuVf,66:9_"
+            },
+            {
+              "text": "LHS",
+              "id": "Pp*p@3c72UJKv3Y3nSe("
+            },
+            {
+              "text": "NAME",
+              "id": "0CczlR:jo;z73o)WIN1i"
+            },
+            {
+              "text": "NAME",
+              "id": "ttUcTLHnBwjhX9yDyVdo"
+            },
+            {
+              "text": "POSITION",
+              "id": "bVKl{K1V%_Ux-BJ}YB3,"
+            },
+            {
+              "text": "RHS",
+              "id": "3N]0.f:6YkmT;:1Q,qs;"
+            },
+            {
+              "text": "ROTATION",
+              "id": "IL1`0U0_P@d*U,cB{`lt"
+            },
+            {
+              "text": "ROTATION",
+              "id": "w)P6EINuujO`1{)#eM)@"
+            },
+            {
+              "text": "SPOT",
+              "id": "6|I1D+lv,fwRj;2uj-44"
+            },
+            {
+              "text": "STATEMENTS",
+              "id": ".^Z/IQh|;qyZ2jjY3Rys"
+            },
+            {
+              "text": "STATEMENTS",
+              "id": "J3X[G^qB|mZi(Gj*8b:."
+            },
+            {
+              "text": "STATEMENTS",
+              "id": "tm9f)-q_kKyK:Ds`pnOx"
             },
             {
               "text": "TO",
@@ -4162,7 +6126,7 @@
     "type": "generate_values2",
     "id": "i7vY}^s!eE#kELZxzG~e",
     "x": 21,
-    "y": 4235,
+    "y": 4233,
     "extraState": {
       "dropdowns": [
         {
@@ -4170,19 +6134,75 @@
           "options": [
             {
               "text": "FROM",
+              "id": "PNhvG.~!kMPAdeDYfu71"
+            },
+            {
+              "text": "FROM",
               "id": "Sy,,~|x[V?a*$4N1$t:g"
+            },
+            {
+              "text": "INPUT",
+              "id": "%P]^kgOWLs;nJsWC0qHL"
+            },
+            {
+              "text": "INPUT",
+              "id": "MbMOlqD.6;b$[(jD2c*`"
+            },
+            {
+              "text": "INPUT",
+              "id": "U/8TKD{b}SkuVf,66:9_"
             },
             {
               "text": "LHS",
               "id": "Pp*p@3c72UJKv3Y3nSe("
             },
             {
+              "text": "NAME",
+              "id": "0CczlR:jo;z73o)WIN1i"
+            },
+            {
+              "text": "NAME",
+              "id": "ttUcTLHnBwjhX9yDyVdo"
+            },
+            {
+              "text": "POSITION",
+              "id": "bVKl{K1V%_Ux-BJ}YB3,"
+            },
+            {
               "text": "RHS",
               "id": "3N]0.f:6YkmT;:1Q,qs;"
             },
             {
+              "text": "ROTATION",
+              "id": "IL1`0U0_P@d*U,cB{`lt"
+            },
+            {
+              "text": "ROTATION",
+              "id": "w)P6EINuujO`1{)#eM)@"
+            },
+            {
+              "text": "SPOT",
+              "id": "6|I1D+lv,fwRj;2uj-44"
+            },
+            {
+              "text": "STATEMENTS",
+              "id": ".^Z/IQh|;qyZ2jjY3Rys"
+            },
+            {
+              "text": "STATEMENTS",
+              "id": "J3X[G^qB|mZi(Gj*8b:."
+            },
+            {
+              "text": "STATEMENTS",
+              "id": "tm9f)-q_kKyK:Ds`pnOx"
+            },
+            {
               "text": "TO",
               "id": "_B%(~54Q5#)_Q7,bd0qU"
+            },
+            {
+              "text": "TO",
+              "id": "_RT/`o8:%/7bs;tGvIlK"
             }
           ]
         }
@@ -4201,7 +6221,7 @@
     "type": "generate_token",
     "id": "jwC?xs.G!KorPkc87[J{",
     "x": 21,
-    "y": 81,
+    "y": 78,
     "extraState": {
       "dropdowns": []
     },
@@ -4218,7 +6238,7 @@
     "type": "generate_token",
     "id": "WKF3j#%M;We1ylNiGKX]",
     "x": 21,
-    "y": 326,
+    "y": 323,
     "extraState": {
       "dropdowns": []
     },
@@ -4230,7 +6250,7 @@
     "type": "generate_token",
     "id": "Ff6N*eR,c|]JLU_!+]Qd",
     "x": 21,
-    "y": 467,
+    "y": 464,
     "extraState": {
       "dropdowns": []
     },
@@ -4247,15 +6267,167 @@
     "type": "generate_field_value2",
     "id": "ADv%o[tn=KkaJz}dvAdg",
     "x": 21,
-    "y": 864,
+    "y": 861,
     "extraState": {
       "dropdowns": [
         {
           "field": "FIELDS",
           "options": [
             {
+              "text": "ALPHA",
+              "id": "-p__;2Ef6}.p,t=`cxwR"
+            },
+            {
+              "text": "FACING_CAMERA",
+              "id": "w0,Gj}L_*Z^};JLuaGLD"
+            },
+            {
+              "text": "FACING_CAMERA_LABEL",
+              "id": "N8:5N?-{E3y(`i+Gge@$"
+            },
+            {
+              "text": "ID",
+              "id": "PR50djFXdO$7=/pGAj1@"
+            },
+            {
+              "text": "INTERVAL",
+              "id": "IInB[NkxigGrAt.[s3e-"
+            },
+            {
+              "text": "NAME",
+              "id": "/rz!F0CJQbt%.3`Xpkc`"
+            },
+            {
+              "text": "NAME",
+              "id": "6EjZTaDVoaLANXn]Ro/O"
+            },
+            {
+              "text": "NAME",
+              "id": "9r90s`Kvgv`SHs$zO:~B"
+            },
+            {
+              "text": "NAME",
+              "id": "?2=gwx8,*^DX_L;JxLy2"
+            },
+            {
+              "text": "NAME",
+              "id": "Tch%flW43J3G_#9u7{=C"
+            },
+            {
+              "text": "NAME",
+              "id": "YV;]%mAnL5:lSt~xd;/@"
+            },
+            {
+              "text": "NAME",
+              "id": "[]7TLa;oo-f$aD?}l:*V"
+            },
+            {
+              "text": "NAME",
+              "id": "dQQkW9o3GCZI0tX:~wi,"
+            },
+            {
               "text": "NAME",
               "id": "dQQkW9o3GCZI0tX:~wi,0"
+            },
+            {
+              "text": "NAME",
+              "id": "o0X5)gm$3+C|g/63{3@}"
+            },
+            {
+              "text": "NAME",
+              "id": "rgfA`UUw%C:L2k@W,7By"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "tNx=zzBF;60O7/#8dP4N"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "uvQ_CwgP{J9^Gp8!!_g="
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "y:HQ#rd}0v/3mzqPdN(v"
+            },
+            {
+              "text": "OPERATOR",
+              "id": "bgGQia1(li=6b3WLp!2y"
+            },
+            {
+              "text": "POSITION_LABEL",
+              "id": "W1?N?/*ZgjatwN/Mf2/l"
+            },
+            {
+              "text": "PROPERTY",
+              "id": "ExI|m2mgez,Ie|GD]tPO"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "9K;A7hbYc[+j95{#.,CI"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "s$7Y3c(*PD1C.$[e=gcB"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "=~+J$),WM{;^82[t*R,4"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "F/H[:Udw[eL!)}H|EA,E"
+            },
+            {
+              "text": "VECTOR",
+              "id": "K$Bbb[B|^cW{2b/3vPF@"
+            },
+            {
+              "text": "VISIBLE",
+              "id": "@8JH0RJd|=)?FpFSRD6;"
+            },
+            {
+              "text": "VISIBLE_LABEL",
+              "id": "v@J_RaswTm=W$)STuAM+"
+            },
+            {
+              "text": "W",
+              "id": "f)wSF#`_anW`J$L]SCiQ"
+            },
+            {
+              "text": "X",
+              "id": "2QhDgZ.*^~Jx9,?m]Wd;"
+            },
+            {
+              "text": "X",
+              "id": "Q$Q^z*^1FD5!~C)TD_F3"
+            },
+            {
+              "text": "X",
+              "id": "zB.U?P:rLCj;IW}s}V#5"
+            },
+            {
+              "text": "Y",
+              "id": "K7i$L9G~iu+S8,9y%nJJ"
+            },
+            {
+              "text": "Y",
+              "id": "ct-9aP6^1@I(a_DIr67U"
+            },
+            {
+              "text": "Y",
+              "id": "j#G?X(s`V*CNX0#!-Emd"
+            },
+            {
+              "text": "Z",
+              "id": "9{2+?||$u*J/8SiB}4F2"
+            },
+            {
+              "text": "Z",
+              "id": "V`N+![xlE%~2!+x!k,K%"
+            },
+            {
+              "text": "Z",
+              "id": "|PVhNB9`)njf{nrv{PW/"
             }
           ]
         }
@@ -4274,19 +6446,163 @@
     "type": "generate_field_text",
     "id": "Sr]R]wyB$jCx*Ip_rM*9",
     "x": 21,
-    "y": 1146,
+    "y": 1143,
     "extraState": {
       "dropdowns": [
         {
           "field": "FIELDS",
           "options": [
             {
+              "text": "ALPHA",
+              "id": "-p__;2Ef6}.p,t=`cxwR"
+            },
+            {
+              "text": "FACING_CAMERA",
+              "id": "w0,Gj}L_*Z^};JLuaGLD"
+            },
+            {
+              "text": "FACING_CAMERA_LABEL",
+              "id": "N8:5N?-{E3y(`i+Gge@$"
+            },
+            {
+              "text": "ID",
+              "id": "PR50djFXdO$7=/pGAj1@"
+            },
+            {
+              "text": "INTERVAL",
+              "id": "IInB[NkxigGrAt.[s3e-"
+            },
+            {
+              "text": "NAME",
+              "id": "/rz!F0CJQbt%.3`Xpkc`"
+            },
+            {
               "text": "NAME",
               "id": "6EjZTaDVoaLANXn]Ro/O"
             },
             {
+              "text": "NAME",
+              "id": "9r90s`Kvgv`SHs$zO:~B"
+            },
+            {
+              "text": "NAME",
+              "id": "?2=gwx8,*^DX_L;JxLy2"
+            },
+            {
+              "text": "NAME",
+              "id": "Tch%flW43J3G_#9u7{=C"
+            },
+            {
+              "text": "NAME",
+              "id": "YV;]%mAnL5:lSt~xd;/@"
+            },
+            {
+              "text": "NAME",
+              "id": "[]7TLa;oo-f$aD?}l:*V"
+            },
+            {
+              "text": "NAME",
+              "id": "dQQkW9o3GCZI0tX:~wi,"
+            },
+            {
+              "text": "NAME",
+              "id": "o0X5)gm$3+C|g/63{3@}"
+            },
+            {
+              "text": "NAME",
+              "id": "rgfA`UUw%C:L2k@W,7By"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "tNx=zzBF;60O7/#8dP4N"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "uvQ_CwgP{J9^Gp8!!_g="
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "y:HQ#rd}0v/3mzqPdN(v"
+            },
+            {
+              "text": "OPERATOR",
+              "id": "bgGQia1(li=6b3WLp!2y"
+            },
+            {
+              "text": "POSITION_LABEL",
+              "id": "W1?N?/*ZgjatwN/Mf2/l"
+            },
+            {
+              "text": "PROPERTY",
+              "id": "ExI|m2mgez,Ie|GD]tPO"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "9K;A7hbYc[+j95{#.,CI"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "s$7Y3c(*PD1C.$[e=gcB"
+            },
+            {
               "text": "SHOW_HIDE",
               "id": "=~+J$),WM{;^82[t*R,4"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "F/H[:Udw[eL!)}H|EA,E"
+            },
+            {
+              "text": "VECTOR",
+              "id": "K$Bbb[B|^cW{2b/3vPF@"
+            },
+            {
+              "text": "VISIBLE",
+              "id": "@8JH0RJd|=)?FpFSRD6;"
+            },
+            {
+              "text": "VISIBLE_LABEL",
+              "id": "v@J_RaswTm=W$)STuAM+"
+            },
+            {
+              "text": "W",
+              "id": "f)wSF#`_anW`J$L]SCiQ"
+            },
+            {
+              "text": "X",
+              "id": "2QhDgZ.*^~Jx9,?m]Wd;"
+            },
+            {
+              "text": "X",
+              "id": "Q$Q^z*^1FD5!~C)TD_F3"
+            },
+            {
+              "text": "X",
+              "id": "zB.U?P:rLCj;IW}s}V#5"
+            },
+            {
+              "text": "Y",
+              "id": "K7i$L9G~iu+S8,9y%nJJ"
+            },
+            {
+              "text": "Y",
+              "id": "ct-9aP6^1@I(a_DIr67U"
+            },
+            {
+              "text": "Y",
+              "id": "j#G?X(s`V*CNX0#!-Emd"
+            },
+            {
+              "text": "Z",
+              "id": "9{2+?||$u*J/8SiB}4F2"
+            },
+            {
+              "text": "Z",
+              "id": "V`N+![xlE%~2!+x!k,K%"
+            },
+            {
+              "text": "Z",
+              "id": "|PVhNB9`)njf{nrv{PW/"
             }
           ]
         }
@@ -4305,7 +6621,7 @@
     "type": "generate_javascript",
     "id": "H|bO1FnotT2:9rwz*JC!",
     "x": 21,
-    "y": 1313,
+    "y": 1310,
     "extraState": {
       "dropdowns": []
     },
@@ -4322,7 +6638,7 @@
     "type": "generate_token",
     "id": "gKhyTC+Z1hh7Zn1pGZ.9",
     "x": 21,
-    "y": 1480,
+    "y": 1477,
     "extraState": {
       "dropdowns": []
     },
@@ -4339,7 +6655,7 @@
     "type": "generate_token",
     "id": "6OKJ$!X-~$%e,MrO*1rs",
     "x": 21,
-    "y": 1725,
+    "y": 1722,
     "extraState": {
       "dropdowns": []
     },
@@ -4356,7 +6672,7 @@
     "type": "generate_token",
     "id": "Sp.Hk=DPug!vr.Xx;nL?",
     "x": 21,
-    "y": 1918,
+    "y": 1915,
     "extraState": {
       "dropdowns": []
     },
@@ -4368,7 +6684,7 @@
     "type": "generate_token",
     "id": "5uBV3YGJH6-?2oB,qj}#",
     "x": 21,
-    "y": 2143,
+    "y": 2140,
     "extraState": {
       "dropdowns": []
     },
@@ -4380,7 +6696,7 @@
     "type": "generate_token",
     "id": "[UMUX-8Lk}CGNbJ%55{^",
     "x": 21,
-    "y": 2373,
+    "y": 2370,
     "extraState": {
       "dropdowns": []
     },
@@ -4397,15 +6713,167 @@
     "type": "generate_field_value2",
     "id": "?qb[%MdB($hRH?yEVufG",
     "x": 21,
-    "y": 2744,
+    "y": 2741,
     "extraState": {
       "dropdowns": [
         {
           "field": "FIELDS",
           "options": [
             {
+              "text": "ALPHA",
+              "id": "-p__;2Ef6}.p,t=`cxwR"
+            },
+            {
+              "text": "FACING_CAMERA",
+              "id": "w0,Gj}L_*Z^};JLuaGLD"
+            },
+            {
+              "text": "FACING_CAMERA_LABEL",
+              "id": "N8:5N?-{E3y(`i+Gge@$"
+            },
+            {
+              "text": "ID",
+              "id": "PR50djFXdO$7=/pGAj1@"
+            },
+            {
+              "text": "INTERVAL",
+              "id": "IInB[NkxigGrAt.[s3e-"
+            },
+            {
+              "text": "NAME",
+              "id": "/rz!F0CJQbt%.3`Xpkc`"
+            },
+            {
+              "text": "NAME",
+              "id": "6EjZTaDVoaLANXn]Ro/O"
+            },
+            {
+              "text": "NAME",
+              "id": "9r90s`Kvgv`SHs$zO:~B"
+            },
+            {
+              "text": "NAME",
+              "id": "?2=gwx8,*^DX_L;JxLy2"
+            },
+            {
+              "text": "NAME",
+              "id": "Tch%flW43J3G_#9u7{=C"
+            },
+            {
               "text": "NAME",
               "id": "Tch%flW43J3G_#9u7{=C0"
+            },
+            {
+              "text": "NAME",
+              "id": "YV;]%mAnL5:lSt~xd;/@"
+            },
+            {
+              "text": "NAME",
+              "id": "[]7TLa;oo-f$aD?}l:*V"
+            },
+            {
+              "text": "NAME",
+              "id": "dQQkW9o3GCZI0tX:~wi,"
+            },
+            {
+              "text": "NAME",
+              "id": "o0X5)gm$3+C|g/63{3@}"
+            },
+            {
+              "text": "NAME",
+              "id": "rgfA`UUw%C:L2k@W,7By"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "tNx=zzBF;60O7/#8dP4N"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "uvQ_CwgP{J9^Gp8!!_g="
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "y:HQ#rd}0v/3mzqPdN(v"
+            },
+            {
+              "text": "OPERATOR",
+              "id": "bgGQia1(li=6b3WLp!2y"
+            },
+            {
+              "text": "POSITION_LABEL",
+              "id": "W1?N?/*ZgjatwN/Mf2/l"
+            },
+            {
+              "text": "PROPERTY",
+              "id": "ExI|m2mgez,Ie|GD]tPO"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "9K;A7hbYc[+j95{#.,CI"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "s$7Y3c(*PD1C.$[e=gcB"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "=~+J$),WM{;^82[t*R,4"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "F/H[:Udw[eL!)}H|EA,E"
+            },
+            {
+              "text": "VECTOR",
+              "id": "K$Bbb[B|^cW{2b/3vPF@"
+            },
+            {
+              "text": "VISIBLE",
+              "id": "@8JH0RJd|=)?FpFSRD6;"
+            },
+            {
+              "text": "VISIBLE_LABEL",
+              "id": "v@J_RaswTm=W$)STuAM+"
+            },
+            {
+              "text": "W",
+              "id": "f)wSF#`_anW`J$L]SCiQ"
+            },
+            {
+              "text": "X",
+              "id": "2QhDgZ.*^~Jx9,?m]Wd;"
+            },
+            {
+              "text": "X",
+              "id": "Q$Q^z*^1FD5!~C)TD_F3"
+            },
+            {
+              "text": "X",
+              "id": "zB.U?P:rLCj;IW}s}V#5"
+            },
+            {
+              "text": "Y",
+              "id": "K7i$L9G~iu+S8,9y%nJJ"
+            },
+            {
+              "text": "Y",
+              "id": "ct-9aP6^1@I(a_DIr67U"
+            },
+            {
+              "text": "Y",
+              "id": "j#G?X(s`V*CNX0#!-Emd"
+            },
+            {
+              "text": "Z",
+              "id": "9{2+?||$u*J/8SiB}4F2"
+            },
+            {
+              "text": "Z",
+              "id": "V`N+![xlE%~2!+x!k,K%"
+            },
+            {
+              "text": "Z",
+              "id": "|PVhNB9`)njf{nrv{PW/"
             }
           ]
         }
@@ -4424,19 +6892,171 @@
     "type": "generate_field_value2",
     "id": "ojF4W@415Ae#,fPe?e:C",
     "x": 21,
-    "y": 2963,
+    "y": 2960,
     "extraState": {
       "dropdowns": [
         {
           "field": "FIELDS",
           "options": [
             {
+              "text": "ALPHA",
+              "id": "-p__;2Ef6}.p,t=`cxwR"
+            },
+            {
+              "text": "FACING_CAMERA",
+              "id": "w0,Gj}L_*Z^};JLuaGLD"
+            },
+            {
+              "text": "FACING_CAMERA_LABEL",
+              "id": "N8:5N?-{E3y(`i+Gge@$"
+            },
+            {
+              "text": "ID",
+              "id": "PR50djFXdO$7=/pGAj1@"
+            },
+            {
+              "text": "INTERVAL",
+              "id": "IInB[NkxigGrAt.[s3e-"
+            },
+            {
+              "text": "NAME",
+              "id": "/rz!F0CJQbt%.3`Xpkc`"
+            },
+            {
+              "text": "NAME",
+              "id": "6EjZTaDVoaLANXn]Ro/O"
+            },
+            {
+              "text": "NAME",
+              "id": "9r90s`Kvgv`SHs$zO:~B"
+            },
+            {
               "text": "NAME",
               "id": "9r90s`Kvgv`SHs$zO:~B0"
             },
             {
+              "text": "NAME",
+              "id": "?2=gwx8,*^DX_L;JxLy2"
+            },
+            {
+              "text": "NAME",
+              "id": "Tch%flW43J3G_#9u7{=C"
+            },
+            {
+              "text": "NAME",
+              "id": "YV;]%mAnL5:lSt~xd;/@"
+            },
+            {
+              "text": "NAME",
+              "id": "[]7TLa;oo-f$aD?}l:*V"
+            },
+            {
+              "text": "NAME",
+              "id": "dQQkW9o3GCZI0tX:~wi,"
+            },
+            {
+              "text": "NAME",
+              "id": "o0X5)gm$3+C|g/63{3@}"
+            },
+            {
+              "text": "NAME",
+              "id": "rgfA`UUw%C:L2k@W,7By"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "tNx=zzBF;60O7/#8dP4N"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "uvQ_CwgP{J9^Gp8!!_g="
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "y:HQ#rd}0v/3mzqPdN(v"
+            },
+            {
+              "text": "OPERATOR",
+              "id": "bgGQia1(li=6b3WLp!2y"
+            },
+            {
+              "text": "POSITION_LABEL",
+              "id": "W1?N?/*ZgjatwN/Mf2/l"
+            },
+            {
+              "text": "PROPERTY",
+              "id": "ExI|m2mgez,Ie|GD]tPO"
+            },
+            {
               "text": "PROPERTY",
               "id": "ExI|m2mgez,Ie|GD]tPO0"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "9K;A7hbYc[+j95{#.,CI"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "s$7Y3c(*PD1C.$[e=gcB"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "=~+J$),WM{;^82[t*R,4"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "F/H[:Udw[eL!)}H|EA,E"
+            },
+            {
+              "text": "VECTOR",
+              "id": "K$Bbb[B|^cW{2b/3vPF@"
+            },
+            {
+              "text": "VISIBLE",
+              "id": "@8JH0RJd|=)?FpFSRD6;"
+            },
+            {
+              "text": "VISIBLE_LABEL",
+              "id": "v@J_RaswTm=W$)STuAM+"
+            },
+            {
+              "text": "W",
+              "id": "f)wSF#`_anW`J$L]SCiQ"
+            },
+            {
+              "text": "X",
+              "id": "2QhDgZ.*^~Jx9,?m]Wd;"
+            },
+            {
+              "text": "X",
+              "id": "Q$Q^z*^1FD5!~C)TD_F3"
+            },
+            {
+              "text": "X",
+              "id": "zB.U?P:rLCj;IW}s}V#5"
+            },
+            {
+              "text": "Y",
+              "id": "K7i$L9G~iu+S8,9y%nJJ"
+            },
+            {
+              "text": "Y",
+              "id": "ct-9aP6^1@I(a_DIr67U"
+            },
+            {
+              "text": "Y",
+              "id": "j#G?X(s`V*CNX0#!-Emd"
+            },
+            {
+              "text": "Z",
+              "id": "9{2+?||$u*J/8SiB}4F2"
+            },
+            {
+              "text": "Z",
+              "id": "V`N+![xlE%~2!+x!k,K%"
+            },
+            {
+              "text": "Z",
+              "id": "|PVhNB9`)njf{nrv{PW/"
             }
           ]
         }
@@ -4455,23 +7075,175 @@
     "type": "generate_field_value2",
     "id": "$X`0gI=8b_)HIYIXA~1J",
     "x": 21,
-    "y": 3182,
+    "y": 3179,
     "extraState": {
       "dropdowns": [
         {
           "field": "FIELDS",
           "options": [
             {
+              "text": "ALPHA",
+              "id": "-p__;2Ef6}.p,t=`cxwR"
+            },
+            {
+              "text": "FACING_CAMERA",
+              "id": "w0,Gj}L_*Z^};JLuaGLD"
+            },
+            {
+              "text": "FACING_CAMERA_LABEL",
+              "id": "N8:5N?-{E3y(`i+Gge@$"
+            },
+            {
+              "text": "ID",
+              "id": "PR50djFXdO$7=/pGAj1@"
+            },
+            {
+              "text": "INTERVAL",
+              "id": "IInB[NkxigGrAt.[s3e-"
+            },
+            {
+              "text": "NAME",
+              "id": "/rz!F0CJQbt%.3`Xpkc`"
+            },
+            {
+              "text": "NAME",
+              "id": "6EjZTaDVoaLANXn]Ro/O"
+            },
+            {
+              "text": "NAME",
+              "id": "9r90s`Kvgv`SHs$zO:~B"
+            },
+            {
+              "text": "NAME",
+              "id": "?2=gwx8,*^DX_L;JxLy2"
+            },
+            {
+              "text": "NAME",
+              "id": "Tch%flW43J3G_#9u7{=C"
+            },
+            {
+              "text": "NAME",
+              "id": "YV;]%mAnL5:lSt~xd;/@"
+            },
+            {
+              "text": "NAME",
+              "id": "[]7TLa;oo-f$aD?}l:*V"
+            },
+            {
+              "text": "NAME",
+              "id": "dQQkW9o3GCZI0tX:~wi,"
+            },
+            {
+              "text": "NAME",
+              "id": "o0X5)gm$3+C|g/63{3@}"
+            },
+            {
+              "text": "NAME",
+              "id": "rgfA`UUw%C:L2k@W,7By"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "tNx=zzBF;60O7/#8dP4N"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "uvQ_CwgP{J9^Gp8!!_g="
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "y:HQ#rd}0v/3mzqPdN(v"
+            },
+            {
+              "text": "OPERATOR",
+              "id": "bgGQia1(li=6b3WLp!2y"
+            },
+            {
+              "text": "POSITION_LABEL",
+              "id": "W1?N?/*ZgjatwN/Mf2/l"
+            },
+            {
+              "text": "PROPERTY",
+              "id": "ExI|m2mgez,Ie|GD]tPO"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "9K;A7hbYc[+j95{#.,CI"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "s$7Y3c(*PD1C.$[e=gcB"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "=~+J$),WM{;^82[t*R,4"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "F/H[:Udw[eL!)}H|EA,E"
+            },
+            {
+              "text": "VECTOR",
+              "id": "K$Bbb[B|^cW{2b/3vPF@"
+            },
+            {
+              "text": "VISIBLE",
+              "id": "@8JH0RJd|=)?FpFSRD6;"
+            },
+            {
+              "text": "VISIBLE_LABEL",
+              "id": "v@J_RaswTm=W$)STuAM+"
+            },
+            {
+              "text": "W",
+              "id": "f)wSF#`_anW`J$L]SCiQ"
+            },
+            {
+              "text": "X",
+              "id": "2QhDgZ.*^~Jx9,?m]Wd;"
+            },
+            {
+              "text": "X",
+              "id": "Q$Q^z*^1FD5!~C)TD_F3"
+            },
+            {
               "text": "X",
               "id": "Q$Q^z*^1FD5!~C)TD_F30"
+            },
+            {
+              "text": "X",
+              "id": "zB.U?P:rLCj;IW}s}V#5"
+            },
+            {
+              "text": "Y",
+              "id": "K7i$L9G~iu+S8,9y%nJJ"
+            },
+            {
+              "text": "Y",
+              "id": "ct-9aP6^1@I(a_DIr67U"
             },
             {
               "text": "Y",
               "id": "ct-9aP6^1@I(a_DIr67U0"
             },
             {
+              "text": "Y",
+              "id": "j#G?X(s`V*CNX0#!-Emd"
+            },
+            {
+              "text": "Z",
+              "id": "9{2+?||$u*J/8SiB}4F2"
+            },
+            {
               "text": "Z",
               "id": "9{2+?||$u*J/8SiB}4F20"
+            },
+            {
+              "text": "Z",
+              "id": "V`N+![xlE%~2!+x!k,K%"
+            },
+            {
+              "text": "Z",
+              "id": "|PVhNB9`)njf{nrv{PW/"
             }
           ]
         }
@@ -4490,15 +7262,163 @@
     "type": "generate_field_text",
     "id": "f6!`L{HK~0JW_PK45rMq",
     "x": 21,
-    "y": 3453,
+    "y": 3450,
     "extraState": {
       "dropdowns": [
         {
           "field": "FIELDS",
           "options": [
             {
+              "text": "ALPHA",
+              "id": "-p__;2Ef6}.p,t=`cxwR"
+            },
+            {
+              "text": "FACING_CAMERA",
+              "id": "w0,Gj}L_*Z^};JLuaGLD"
+            },
+            {
+              "text": "FACING_CAMERA_LABEL",
+              "id": "N8:5N?-{E3y(`i+Gge@$"
+            },
+            {
+              "text": "ID",
+              "id": "PR50djFXdO$7=/pGAj1@"
+            },
+            {
+              "text": "INTERVAL",
+              "id": "IInB[NkxigGrAt.[s3e-"
+            },
+            {
+              "text": "NAME",
+              "id": "/rz!F0CJQbt%.3`Xpkc`"
+            },
+            {
+              "text": "NAME",
+              "id": "6EjZTaDVoaLANXn]Ro/O"
+            },
+            {
+              "text": "NAME",
+              "id": "9r90s`Kvgv`SHs$zO:~B"
+            },
+            {
+              "text": "NAME",
+              "id": "?2=gwx8,*^DX_L;JxLy2"
+            },
+            {
+              "text": "NAME",
+              "id": "Tch%flW43J3G_#9u7{=C"
+            },
+            {
+              "text": "NAME",
+              "id": "YV;]%mAnL5:lSt~xd;/@"
+            },
+            {
+              "text": "NAME",
+              "id": "[]7TLa;oo-f$aD?}l:*V"
+            },
+            {
+              "text": "NAME",
+              "id": "dQQkW9o3GCZI0tX:~wi,"
+            },
+            {
+              "text": "NAME",
+              "id": "o0X5)gm$3+C|g/63{3@}"
+            },
+            {
+              "text": "NAME",
+              "id": "rgfA`UUw%C:L2k@W,7By"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "tNx=zzBF;60O7/#8dP4N"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "uvQ_CwgP{J9^Gp8!!_g="
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "y:HQ#rd}0v/3mzqPdN(v"
+            },
+            {
               "text": "OPERATOR",
               "id": "bgGQia1(li=6b3WLp!2y"
+            },
+            {
+              "text": "POSITION_LABEL",
+              "id": "W1?N?/*ZgjatwN/Mf2/l"
+            },
+            {
+              "text": "PROPERTY",
+              "id": "ExI|m2mgez,Ie|GD]tPO"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "9K;A7hbYc[+j95{#.,CI"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "s$7Y3c(*PD1C.$[e=gcB"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "=~+J$),WM{;^82[t*R,4"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "F/H[:Udw[eL!)}H|EA,E"
+            },
+            {
+              "text": "VECTOR",
+              "id": "K$Bbb[B|^cW{2b/3vPF@"
+            },
+            {
+              "text": "VISIBLE",
+              "id": "@8JH0RJd|=)?FpFSRD6;"
+            },
+            {
+              "text": "VISIBLE_LABEL",
+              "id": "v@J_RaswTm=W$)STuAM+"
+            },
+            {
+              "text": "W",
+              "id": "f)wSF#`_anW`J$L]SCiQ"
+            },
+            {
+              "text": "X",
+              "id": "2QhDgZ.*^~Jx9,?m]Wd;"
+            },
+            {
+              "text": "X",
+              "id": "Q$Q^z*^1FD5!~C)TD_F3"
+            },
+            {
+              "text": "X",
+              "id": "zB.U?P:rLCj;IW}s}V#5"
+            },
+            {
+              "text": "Y",
+              "id": "K7i$L9G~iu+S8,9y%nJJ"
+            },
+            {
+              "text": "Y",
+              "id": "ct-9aP6^1@I(a_DIr67U"
+            },
+            {
+              "text": "Y",
+              "id": "j#G?X(s`V*CNX0#!-Emd"
+            },
+            {
+              "text": "Z",
+              "id": "9{2+?||$u*J/8SiB}4F2"
+            },
+            {
+              "text": "Z",
+              "id": "V`N+![xlE%~2!+x!k,K%"
+            },
+            {
+              "text": "Z",
+              "id": "|PVhNB9`)njf{nrv{PW/"
             }
           ]
         }
@@ -4512,7 +7432,7 @@
     "type": "generate_token",
     "id": "sQ8hJiqACl[{{3RcbcPW",
     "x": 21,
-    "y": 3594,
+    "y": 3591,
     "extraState": {
       "dropdowns": []
     },
@@ -4524,7 +7444,7 @@
     "type": "generate_token",
     "id": "rI=zFp9FhtjCt,/L5m0z",
     "x": 21,
-    "y": 3735,
+    "y": 3732,
     "extraState": {
       "dropdowns": []
     },
@@ -4536,7 +7456,7 @@
     "type": "generate_token",
     "id": "`RSC,u0R;[+dJ8^`:5+r",
     "x": 21,
-    "y": 3876,
+    "y": 3873,
     "extraState": {
       "dropdowns": []
     },
@@ -4553,7 +7473,7 @@
     "type": "generate_token",
     "id": "U$JdBL~(M[2!=ngxG93V",
     "x": 21,
-    "y": 4069,
+    "y": 4066,
     "extraState": {
       "dropdowns": []
     },
@@ -4570,7 +7490,7 @@
     "type": "generate_token",
     "id": "8TBA?BN5+/gl!b+(c*dv",
     "x": 21,
-    "y": 4262,
+    "y": 4259,
     "extraState": {
       "dropdowns": []
     },
@@ -4587,23 +7507,175 @@
     "type": "generate_field_value2",
     "id": "~*U9K6Us):.!1sY,~}3%",
     "x": 21,
-    "y": 108,
+    "y": 104,
     "extraState": {
       "dropdowns": [
         {
           "field": "FIELDS",
           "options": [
             {
+              "text": "ALPHA",
+              "id": "-p__;2Ef6}.p,t=`cxwR"
+            },
+            {
+              "text": "FACING_CAMERA",
+              "id": "w0,Gj}L_*Z^};JLuaGLD"
+            },
+            {
+              "text": "FACING_CAMERA_LABEL",
+              "id": "N8:5N?-{E3y(`i+Gge@$"
+            },
+            {
+              "text": "ID",
+              "id": "PR50djFXdO$7=/pGAj1@"
+            },
+            {
+              "text": "INTERVAL",
+              "id": "IInB[NkxigGrAt.[s3e-"
+            },
+            {
+              "text": "NAME",
+              "id": "/rz!F0CJQbt%.3`Xpkc`"
+            },
+            {
+              "text": "NAME",
+              "id": "6EjZTaDVoaLANXn]Ro/O"
+            },
+            {
+              "text": "NAME",
+              "id": "9r90s`Kvgv`SHs$zO:~B"
+            },
+            {
+              "text": "NAME",
+              "id": "?2=gwx8,*^DX_L;JxLy2"
+            },
+            {
+              "text": "NAME",
+              "id": "Tch%flW43J3G_#9u7{=C"
+            },
+            {
+              "text": "NAME",
+              "id": "YV;]%mAnL5:lSt~xd;/@"
+            },
+            {
+              "text": "NAME",
+              "id": "[]7TLa;oo-f$aD?}l:*V"
+            },
+            {
+              "text": "NAME",
+              "id": "dQQkW9o3GCZI0tX:~wi,"
+            },
+            {
+              "text": "NAME",
+              "id": "o0X5)gm$3+C|g/63{3@}"
+            },
+            {
+              "text": "NAME",
+              "id": "rgfA`UUw%C:L2k@W,7By"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "tNx=zzBF;60O7/#8dP4N"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "uvQ_CwgP{J9^Gp8!!_g="
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "y:HQ#rd}0v/3mzqPdN(v"
+            },
+            {
+              "text": "OPERATOR",
+              "id": "bgGQia1(li=6b3WLp!2y"
+            },
+            {
+              "text": "POSITION_LABEL",
+              "id": "W1?N?/*ZgjatwN/Mf2/l"
+            },
+            {
+              "text": "PROPERTY",
+              "id": "ExI|m2mgez,Ie|GD]tPO"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "9K;A7hbYc[+j95{#.,CI"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "s$7Y3c(*PD1C.$[e=gcB"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "=~+J$),WM{;^82[t*R,4"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "F/H[:Udw[eL!)}H|EA,E"
+            },
+            {
+              "text": "VECTOR",
+              "id": "K$Bbb[B|^cW{2b/3vPF@"
+            },
+            {
+              "text": "VISIBLE",
+              "id": "@8JH0RJd|=)?FpFSRD6;"
+            },
+            {
+              "text": "VISIBLE_LABEL",
+              "id": "v@J_RaswTm=W$)STuAM+"
+            },
+            {
+              "text": "W",
+              "id": "f)wSF#`_anW`J$L]SCiQ"
+            },
+            {
+              "text": "X",
+              "id": "2QhDgZ.*^~Jx9,?m]Wd;"
+            },
+            {
+              "text": "X",
+              "id": "Q$Q^z*^1FD5!~C)TD_F3"
+            },
+            {
+              "text": "X",
+              "id": "zB.U?P:rLCj;IW}s}V#5"
+            },
+            {
               "text": "X",
               "id": "zB.U?P:rLCj;IW}s}V#50"
+            },
+            {
+              "text": "Y",
+              "id": "K7i$L9G~iu+S8,9y%nJJ"
             },
             {
               "text": "Y",
               "id": "K7i$L9G~iu+S8,9y%nJJ0"
             },
             {
+              "text": "Y",
+              "id": "ct-9aP6^1@I(a_DIr67U"
+            },
+            {
+              "text": "Y",
+              "id": "j#G?X(s`V*CNX0#!-Emd"
+            },
+            {
+              "text": "Z",
+              "id": "9{2+?||$u*J/8SiB}4F2"
+            },
+            {
+              "text": "Z",
+              "id": "V`N+![xlE%~2!+x!k,K%"
+            },
+            {
               "text": "Z",
               "id": "V`N+![xlE%~2!+x!k,K%0"
+            },
+            {
+              "text": "Z",
+              "id": "|PVhNB9`)njf{nrv{PW/"
             }
           ]
         }
@@ -4622,7 +7694,7 @@
     "type": "generate_field_value2",
     "id": "-zlaVXusCEL_p%XUf/4`",
     "x": 21,
-    "y": 494,
+    "y": 490,
     "extraState": {
       "dropdowns": [
         {
@@ -4630,11 +7702,163 @@
           "options": [
             {
               "text": "ALPHA",
+              "id": "-p__;2Ef6}.p,t=`cxwR"
+            },
+            {
+              "text": "ALPHA",
               "id": "-p__;2Ef6}.p,t=`cxwR0"
+            },
+            {
+              "text": "FACING_CAMERA",
+              "id": "w0,Gj}L_*Z^};JLuaGLD"
+            },
+            {
+              "text": "FACING_CAMERA_LABEL",
+              "id": "N8:5N?-{E3y(`i+Gge@$"
+            },
+            {
+              "text": "ID",
+              "id": "PR50djFXdO$7=/pGAj1@"
+            },
+            {
+              "text": "INTERVAL",
+              "id": "IInB[NkxigGrAt.[s3e-"
+            },
+            {
+              "text": "NAME",
+              "id": "/rz!F0CJQbt%.3`Xpkc`"
+            },
+            {
+              "text": "NAME",
+              "id": "6EjZTaDVoaLANXn]Ro/O"
+            },
+            {
+              "text": "NAME",
+              "id": "9r90s`Kvgv`SHs$zO:~B"
+            },
+            {
+              "text": "NAME",
+              "id": "?2=gwx8,*^DX_L;JxLy2"
+            },
+            {
+              "text": "NAME",
+              "id": "Tch%flW43J3G_#9u7{=C"
+            },
+            {
+              "text": "NAME",
+              "id": "YV;]%mAnL5:lSt~xd;/@"
+            },
+            {
+              "text": "NAME",
+              "id": "[]7TLa;oo-f$aD?}l:*V"
+            },
+            {
+              "text": "NAME",
+              "id": "dQQkW9o3GCZI0tX:~wi,"
+            },
+            {
+              "text": "NAME",
+              "id": "o0X5)gm$3+C|g/63{3@}"
+            },
+            {
+              "text": "NAME",
+              "id": "rgfA`UUw%C:L2k@W,7By"
             },
             {
               "text": "NAME",
               "id": "rgfA`UUw%C:L2k@W,7By0"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "tNx=zzBF;60O7/#8dP4N"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "uvQ_CwgP{J9^Gp8!!_g="
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "y:HQ#rd}0v/3mzqPdN(v"
+            },
+            {
+              "text": "OPERATOR",
+              "id": "bgGQia1(li=6b3WLp!2y"
+            },
+            {
+              "text": "POSITION_LABEL",
+              "id": "W1?N?/*ZgjatwN/Mf2/l"
+            },
+            {
+              "text": "PROPERTY",
+              "id": "ExI|m2mgez,Ie|GD]tPO"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "9K;A7hbYc[+j95{#.,CI"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "s$7Y3c(*PD1C.$[e=gcB"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "=~+J$),WM{;^82[t*R,4"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "F/H[:Udw[eL!)}H|EA,E"
+            },
+            {
+              "text": "VECTOR",
+              "id": "K$Bbb[B|^cW{2b/3vPF@"
+            },
+            {
+              "text": "VISIBLE",
+              "id": "@8JH0RJd|=)?FpFSRD6;"
+            },
+            {
+              "text": "VISIBLE_LABEL",
+              "id": "v@J_RaswTm=W$)STuAM+"
+            },
+            {
+              "text": "W",
+              "id": "f)wSF#`_anW`J$L]SCiQ"
+            },
+            {
+              "text": "X",
+              "id": "2QhDgZ.*^~Jx9,?m]Wd;"
+            },
+            {
+              "text": "X",
+              "id": "Q$Q^z*^1FD5!~C)TD_F3"
+            },
+            {
+              "text": "X",
+              "id": "zB.U?P:rLCj;IW}s}V#5"
+            },
+            {
+              "text": "Y",
+              "id": "K7i$L9G~iu+S8,9y%nJJ"
+            },
+            {
+              "text": "Y",
+              "id": "ct-9aP6^1@I(a_DIr67U"
+            },
+            {
+              "text": "Y",
+              "id": "j#G?X(s`V*CNX0#!-Emd"
+            },
+            {
+              "text": "Z",
+              "id": "9{2+?||$u*J/8SiB}4F2"
+            },
+            {
+              "text": "Z",
+              "id": "V`N+![xlE%~2!+x!k,K%"
+            },
+            {
+              "text": "Z",
+              "id": "|PVhNB9`)njf{nrv{PW/"
             }
           ]
         }
@@ -4653,7 +7877,7 @@
     "type": "generate_token",
     "id": "K4U5N7QyK6g{lV#C7S%5",
     "x": 21,
-    "y": 891,
+    "y": 887,
     "extraState": {
       "dropdowns": []
     },
@@ -4670,7 +7894,7 @@
     "type": "generate_token",
     "id": "87eH(|{GBr*C~s1CV,rW",
     "x": 21,
-    "y": 1173,
+    "y": 1169,
     "extraState": {
       "dropdowns": []
     },
@@ -4682,7 +7906,7 @@
     "type": "generate_token",
     "id": "f/-$6vl4QqJE[`M[h?MV",
     "x": 21,
-    "y": 1340,
+    "y": 1336,
     "extraState": {
       "dropdowns": []
     },
@@ -4694,15 +7918,135 @@
     "type": "generate_field_value2",
     "id": "Gg,~O99Y5O0BbHoA%T?A",
     "x": 21,
-    "y": 1507,
+    "y": 1503,
     "extraState": {
       "dropdowns": [
         {
           "field": "FIELDS",
           "options": [
             {
+              "text": "ALPHA",
+              "id": "-p__;2Ef6}.p,t=`cxwR"
+            },
+            {
+              "text": "FACING_CAMERA",
+              "id": "w0,Gj}L_*Z^};JLuaGLD"
+            },
+            {
+              "text": "FACING_CAMERA_LABEL",
+              "id": "N8:5N?-{E3y(`i+Gge@$"
+            },
+            {
+              "text": "ID",
+              "id": "PR50djFXdO$7=/pGAj1@"
+            },
+            {
+              "text": "INTERVAL",
+              "id": "IInB[NkxigGrAt.[s3e-"
+            },
+            {
+              "text": "NAME",
+              "id": "/rz!F0CJQbt%.3`Xpkc`"
+            },
+            {
+              "text": "NAME",
+              "id": "6EjZTaDVoaLANXn]Ro/O"
+            },
+            {
+              "text": "NAME",
+              "id": "9r90s`Kvgv`SHs$zO:~B"
+            },
+            {
+              "text": "NAME",
+              "id": "?2=gwx8,*^DX_L;JxLy2"
+            },
+            {
+              "text": "NAME",
+              "id": "Tch%flW43J3G_#9u7{=C"
+            },
+            {
+              "text": "NAME",
+              "id": "YV;]%mAnL5:lSt~xd;/@"
+            },
+            {
+              "text": "NAME",
+              "id": "[]7TLa;oo-f$aD?}l:*V"
+            },
+            {
+              "text": "NAME",
+              "id": "dQQkW9o3GCZI0tX:~wi,"
+            },
+            {
+              "text": "NAME",
+              "id": "o0X5)gm$3+C|g/63{3@}"
+            },
+            {
+              "text": "NAME",
+              "id": "rgfA`UUw%C:L2k@W,7By"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "tNx=zzBF;60O7/#8dP4N"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "uvQ_CwgP{J9^Gp8!!_g="
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "y:HQ#rd}0v/3mzqPdN(v"
+            },
+            {
+              "text": "OPERATOR",
+              "id": "bgGQia1(li=6b3WLp!2y"
+            },
+            {
+              "text": "POSITION_LABEL",
+              "id": "W1?N?/*ZgjatwN/Mf2/l"
+            },
+            {
+              "text": "PROPERTY",
+              "id": "ExI|m2mgez,Ie|GD]tPO"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "9K;A7hbYc[+j95{#.,CI"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "s$7Y3c(*PD1C.$[e=gcB"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "=~+J$),WM{;^82[t*R,4"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "F/H[:Udw[eL!)}H|EA,E"
+            },
+            {
+              "text": "VECTOR",
+              "id": "K$Bbb[B|^cW{2b/3vPF@"
+            },
+            {
+              "text": "VISIBLE",
+              "id": "@8JH0RJd|=)?FpFSRD6;"
+            },
+            {
+              "text": "VISIBLE_LABEL",
+              "id": "v@J_RaswTm=W$)STuAM+"
+            },
+            {
+              "text": "W",
+              "id": "f)wSF#`_anW`J$L]SCiQ"
+            },
+            {
               "text": "W",
               "id": "f)wSF#`_anW`J$L]SCiQ0"
+            },
+            {
+              "text": "X",
+              "id": "2QhDgZ.*^~Jx9,?m]Wd;"
             },
             {
               "text": "X",
@@ -4710,7 +8054,19 @@
             },
             {
               "text": "X",
+              "id": "Q$Q^z*^1FD5!~C)TD_F3"
+            },
+            {
+              "text": "X",
+              "id": "zB.U?P:rLCj;IW}s}V#5"
+            },
+            {
+              "text": "X",
               "id": "zB.U?P:rLCj;IW}s}V#50"
+            },
+            {
+              "text": "Y",
+              "id": "K7i$L9G~iu+S8,9y%nJJ"
             },
             {
               "text": "Y",
@@ -4718,11 +8074,31 @@
             },
             {
               "text": "Y",
+              "id": "ct-9aP6^1@I(a_DIr67U"
+            },
+            {
+              "text": "Y",
+              "id": "j#G?X(s`V*CNX0#!-Emd"
+            },
+            {
+              "text": "Y",
               "id": "j#G?X(s`V*CNX0#!-Emd0"
             },
             {
               "text": "Z",
+              "id": "9{2+?||$u*J/8SiB}4F2"
+            },
+            {
+              "text": "Z",
+              "id": "V`N+![xlE%~2!+x!k,K%"
+            },
+            {
+              "text": "Z",
               "id": "V`N+![xlE%~2!+x!k,K%0"
+            },
+            {
+              "text": "Z",
+              "id": "|PVhNB9`)njf{nrv{PW/"
             },
             {
               "text": "Z",
@@ -4745,19 +8121,103 @@
     "type": "generate_field_text",
     "id": "Bufo$8zcy5DVoAkTb8sm",
     "x": 21,
-    "y": 1752,
+    "y": 1748,
     "extraState": {
       "dropdowns": [
         {
           "field": "FIELDS",
           "options": [
             {
+              "text": "ALPHA",
+              "id": "-p__;2Ef6}.p,t=`cxwR"
+            },
+            {
+              "text": "FACING_CAMERA",
+              "id": "w0,Gj}L_*Z^};JLuaGLD"
+            },
+            {
+              "text": "FACING_CAMERA_LABEL",
+              "id": "N8:5N?-{E3y(`i+Gge@$"
+            },
+            {
+              "text": "ID",
+              "id": "PR50djFXdO$7=/pGAj1@"
+            },
+            {
+              "text": "INTERVAL",
+              "id": "IInB[NkxigGrAt.[s3e-"
+            },
+            {
+              "text": "NAME",
+              "id": "/rz!F0CJQbt%.3`Xpkc`"
+            },
+            {
               "text": "NAME",
               "id": "6EjZTaDVoaLANXn]Ro/O"
             },
             {
               "text": "NAME",
+              "id": "9r90s`Kvgv`SHs$zO:~B"
+            },
+            {
+              "text": "NAME",
+              "id": "?2=gwx8,*^DX_L;JxLy2"
+            },
+            {
+              "text": "NAME",
+              "id": "Tch%flW43J3G_#9u7{=C"
+            },
+            {
+              "text": "NAME",
               "id": "YV;]%mAnL5:lSt~xd;/@"
+            },
+            {
+              "text": "NAME",
+              "id": "[]7TLa;oo-f$aD?}l:*V"
+            },
+            {
+              "text": "NAME",
+              "id": "dQQkW9o3GCZI0tX:~wi,"
+            },
+            {
+              "text": "NAME",
+              "id": "o0X5)gm$3+C|g/63{3@}"
+            },
+            {
+              "text": "NAME",
+              "id": "rgfA`UUw%C:L2k@W,7By"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "tNx=zzBF;60O7/#8dP4N"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "uvQ_CwgP{J9^Gp8!!_g="
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "y:HQ#rd}0v/3mzqPdN(v"
+            },
+            {
+              "text": "OPERATOR",
+              "id": "bgGQia1(li=6b3WLp!2y"
+            },
+            {
+              "text": "POSITION_LABEL",
+              "id": "W1?N?/*ZgjatwN/Mf2/l"
+            },
+            {
+              "text": "PROPERTY",
+              "id": "ExI|m2mgez,Ie|GD]tPO"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "9K;A7hbYc[+j95{#.,CI"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "s$7Y3c(*PD1C.$[e=gcB"
             },
             {
               "text": "SHOW_HIDE",
@@ -4766,6 +8226,58 @@
             {
               "text": "SHOW_HIDE",
               "id": "F/H[:Udw[eL!)}H|EA,E"
+            },
+            {
+              "text": "VECTOR",
+              "id": "K$Bbb[B|^cW{2b/3vPF@"
+            },
+            {
+              "text": "VISIBLE",
+              "id": "@8JH0RJd|=)?FpFSRD6;"
+            },
+            {
+              "text": "VISIBLE_LABEL",
+              "id": "v@J_RaswTm=W$)STuAM+"
+            },
+            {
+              "text": "W",
+              "id": "f)wSF#`_anW`J$L]SCiQ"
+            },
+            {
+              "text": "X",
+              "id": "2QhDgZ.*^~Jx9,?m]Wd;"
+            },
+            {
+              "text": "X",
+              "id": "Q$Q^z*^1FD5!~C)TD_F3"
+            },
+            {
+              "text": "X",
+              "id": "zB.U?P:rLCj;IW}s}V#5"
+            },
+            {
+              "text": "Y",
+              "id": "K7i$L9G~iu+S8,9y%nJJ"
+            },
+            {
+              "text": "Y",
+              "id": "ct-9aP6^1@I(a_DIr67U"
+            },
+            {
+              "text": "Y",
+              "id": "j#G?X(s`V*CNX0#!-Emd"
+            },
+            {
+              "text": "Z",
+              "id": "9{2+?||$u*J/8SiB}4F2"
+            },
+            {
+              "text": "Z",
+              "id": "V`N+![xlE%~2!+x!k,K%"
+            },
+            {
+              "text": "Z",
+              "id": "|PVhNB9`)njf{nrv{PW/"
             }
           ]
         }
@@ -4784,15 +8296,167 @@
     "type": "generate_field_value2",
     "id": "HSEIWsPm[=R?*uv-7!3C",
     "x": 21,
-    "y": 2400,
+    "y": 2396,
     "extraState": {
       "dropdowns": [
         {
           "field": "FIELDS",
           "options": [
             {
+              "text": "ALPHA",
+              "id": "-p__;2Ef6}.p,t=`cxwR"
+            },
+            {
+              "text": "FACING_CAMERA",
+              "id": "w0,Gj}L_*Z^};JLuaGLD"
+            },
+            {
+              "text": "FACING_CAMERA_LABEL",
+              "id": "N8:5N?-{E3y(`i+Gge@$"
+            },
+            {
+              "text": "ID",
+              "id": "PR50djFXdO$7=/pGAj1@"
+            },
+            {
+              "text": "INTERVAL",
+              "id": "IInB[NkxigGrAt.[s3e-"
+            },
+            {
               "text": "INTERVAL",
               "id": "IInB[NkxigGrAt.[s3e-0"
+            },
+            {
+              "text": "NAME",
+              "id": "/rz!F0CJQbt%.3`Xpkc`"
+            },
+            {
+              "text": "NAME",
+              "id": "6EjZTaDVoaLANXn]Ro/O"
+            },
+            {
+              "text": "NAME",
+              "id": "9r90s`Kvgv`SHs$zO:~B"
+            },
+            {
+              "text": "NAME",
+              "id": "?2=gwx8,*^DX_L;JxLy2"
+            },
+            {
+              "text": "NAME",
+              "id": "Tch%flW43J3G_#9u7{=C"
+            },
+            {
+              "text": "NAME",
+              "id": "YV;]%mAnL5:lSt~xd;/@"
+            },
+            {
+              "text": "NAME",
+              "id": "[]7TLa;oo-f$aD?}l:*V"
+            },
+            {
+              "text": "NAME",
+              "id": "dQQkW9o3GCZI0tX:~wi,"
+            },
+            {
+              "text": "NAME",
+              "id": "o0X5)gm$3+C|g/63{3@}"
+            },
+            {
+              "text": "NAME",
+              "id": "rgfA`UUw%C:L2k@W,7By"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "tNx=zzBF;60O7/#8dP4N"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "uvQ_CwgP{J9^Gp8!!_g="
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "y:HQ#rd}0v/3mzqPdN(v"
+            },
+            {
+              "text": "OPERATOR",
+              "id": "bgGQia1(li=6b3WLp!2y"
+            },
+            {
+              "text": "POSITION_LABEL",
+              "id": "W1?N?/*ZgjatwN/Mf2/l"
+            },
+            {
+              "text": "PROPERTY",
+              "id": "ExI|m2mgez,Ie|GD]tPO"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "9K;A7hbYc[+j95{#.,CI"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "s$7Y3c(*PD1C.$[e=gcB"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "=~+J$),WM{;^82[t*R,4"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "F/H[:Udw[eL!)}H|EA,E"
+            },
+            {
+              "text": "VECTOR",
+              "id": "K$Bbb[B|^cW{2b/3vPF@"
+            },
+            {
+              "text": "VISIBLE",
+              "id": "@8JH0RJd|=)?FpFSRD6;"
+            },
+            {
+              "text": "VISIBLE_LABEL",
+              "id": "v@J_RaswTm=W$)STuAM+"
+            },
+            {
+              "text": "W",
+              "id": "f)wSF#`_anW`J$L]SCiQ"
+            },
+            {
+              "text": "X",
+              "id": "2QhDgZ.*^~Jx9,?m]Wd;"
+            },
+            {
+              "text": "X",
+              "id": "Q$Q^z*^1FD5!~C)TD_F3"
+            },
+            {
+              "text": "X",
+              "id": "zB.U?P:rLCj;IW}s}V#5"
+            },
+            {
+              "text": "Y",
+              "id": "K7i$L9G~iu+S8,9y%nJJ"
+            },
+            {
+              "text": "Y",
+              "id": "ct-9aP6^1@I(a_DIr67U"
+            },
+            {
+              "text": "Y",
+              "id": "j#G?X(s`V*CNX0#!-Emd"
+            },
+            {
+              "text": "Z",
+              "id": "9{2+?||$u*J/8SiB}4F2"
+            },
+            {
+              "text": "Z",
+              "id": "V`N+![xlE%~2!+x!k,K%"
+            },
+            {
+              "text": "Z",
+              "id": "|PVhNB9`)njf{nrv{PW/"
             }
           ]
         }
@@ -4811,7 +8475,7 @@
     "type": "generate_token",
     "id": "#5-`8zsnd]~2@G(#|QKf",
     "x": 21,
-    "y": 2771,
+    "y": 2767,
     "extraState": {
       "dropdowns": []
     },
@@ -4828,7 +8492,7 @@
     "type": "generate_token",
     "id": "rif5t_@mzq}Q0Yyd)XqD",
     "x": 21,
-    "y": 2990,
+    "y": 2986,
     "extraState": {
       "dropdowns": []
     },
@@ -4845,7 +8509,7 @@
     "type": "generate_token",
     "id": "E6,z1rQfh=up^0OSRb?1",
     "x": 21,
-    "y": 3209,
+    "y": 3205,
     "extraState": {
       "dropdowns": []
     },
@@ -4862,7 +8526,7 @@
     "type": "generate_values2",
     "id": "h^jpY2/7GF?a,F|o*s8:",
     "x": 21,
-    "y": 3903,
+    "y": 3899,
     "extraState": {
       "dropdowns": [
         {
@@ -4870,11 +8534,75 @@
           "options": [
             {
               "text": "FROM",
+              "id": "PNhvG.~!kMPAdeDYfu71"
+            },
+            {
+              "text": "FROM",
               "id": "Sy,,~|x[V?a*$4N1$t:g"
+            },
+            {
+              "text": "INPUT",
+              "id": "%P]^kgOWLs;nJsWC0qHL"
+            },
+            {
+              "text": "INPUT",
+              "id": "MbMOlqD.6;b$[(jD2c*`"
+            },
+            {
+              "text": "INPUT",
+              "id": "U/8TKD{b}SkuVf,66:9_"
+            },
+            {
+              "text": "LHS",
+              "id": "Pp*p@3c72UJKv3Y3nSe("
+            },
+            {
+              "text": "NAME",
+              "id": "0CczlR:jo;z73o)WIN1i"
+            },
+            {
+              "text": "NAME",
+              "id": "ttUcTLHnBwjhX9yDyVdo"
+            },
+            {
+              "text": "POSITION",
+              "id": "bVKl{K1V%_Ux-BJ}YB3,"
+            },
+            {
+              "text": "RHS",
+              "id": "3N]0.f:6YkmT;:1Q,qs;"
+            },
+            {
+              "text": "ROTATION",
+              "id": "IL1`0U0_P@d*U,cB{`lt"
+            },
+            {
+              "text": "ROTATION",
+              "id": "w)P6EINuujO`1{)#eM)@"
+            },
+            {
+              "text": "SPOT",
+              "id": "6|I1D+lv,fwRj;2uj-44"
+            },
+            {
+              "text": "STATEMENTS",
+              "id": ".^Z/IQh|;qyZ2jjY3Rys"
+            },
+            {
+              "text": "STATEMENTS",
+              "id": "J3X[G^qB|mZi(Gj*8b:."
+            },
+            {
+              "text": "STATEMENTS",
+              "id": "tm9f)-q_kKyK:Ds`pnOx"
             },
             {
               "text": "TO",
               "id": "_B%(~54Q5#)_Q7,bd0qU"
+            },
+            {
+              "text": "TO",
+              "id": "_RT/`o8:%/7bs;tGvIlK"
             }
           ]
         }
@@ -4893,7 +8621,7 @@
     "type": "generate_values2",
     "id": "|nv59W^~|:qsE{*,k]4O",
     "x": 21,
-    "y": 4096,
+    "y": 4092,
     "extraState": {
       "dropdowns": [
         {
@@ -4906,6 +8634,62 @@
             {
               "text": "FROM",
               "id": "Sy,,~|x[V?a*$4N1$t:g"
+            },
+            {
+              "text": "INPUT",
+              "id": "%P]^kgOWLs;nJsWC0qHL"
+            },
+            {
+              "text": "INPUT",
+              "id": "MbMOlqD.6;b$[(jD2c*`"
+            },
+            {
+              "text": "INPUT",
+              "id": "U/8TKD{b}SkuVf,66:9_"
+            },
+            {
+              "text": "LHS",
+              "id": "Pp*p@3c72UJKv3Y3nSe("
+            },
+            {
+              "text": "NAME",
+              "id": "0CczlR:jo;z73o)WIN1i"
+            },
+            {
+              "text": "NAME",
+              "id": "ttUcTLHnBwjhX9yDyVdo"
+            },
+            {
+              "text": "POSITION",
+              "id": "bVKl{K1V%_Ux-BJ}YB3,"
+            },
+            {
+              "text": "RHS",
+              "id": "3N]0.f:6YkmT;:1Q,qs;"
+            },
+            {
+              "text": "ROTATION",
+              "id": "IL1`0U0_P@d*U,cB{`lt"
+            },
+            {
+              "text": "ROTATION",
+              "id": "w)P6EINuujO`1{)#eM)@"
+            },
+            {
+              "text": "SPOT",
+              "id": "6|I1D+lv,fwRj;2uj-44"
+            },
+            {
+              "text": "STATEMENTS",
+              "id": ".^Z/IQh|;qyZ2jjY3Rys"
+            },
+            {
+              "text": "STATEMENTS",
+              "id": "J3X[G^qB|mZi(Gj*8b:."
+            },
+            {
+              "text": "STATEMENTS",
+              "id": "tm9f)-q_kKyK:Ds`pnOx"
             },
             {
               "text": "TO",
@@ -4932,7 +8716,7 @@
     "type": "generate_values2",
     "id": "5Pj|^l3]7G,8}k-8X8A?",
     "x": 21,
-    "y": 4289,
+    "y": 4285,
     "extraState": {
       "dropdowns": [
         {
@@ -4940,19 +8724,75 @@
           "options": [
             {
               "text": "FROM",
+              "id": "PNhvG.~!kMPAdeDYfu71"
+            },
+            {
+              "text": "FROM",
               "id": "Sy,,~|x[V?a*$4N1$t:g"
+            },
+            {
+              "text": "INPUT",
+              "id": "%P]^kgOWLs;nJsWC0qHL"
+            },
+            {
+              "text": "INPUT",
+              "id": "MbMOlqD.6;b$[(jD2c*`"
+            },
+            {
+              "text": "INPUT",
+              "id": "U/8TKD{b}SkuVf,66:9_"
             },
             {
               "text": "LHS",
               "id": "Pp*p@3c72UJKv3Y3nSe("
             },
             {
+              "text": "NAME",
+              "id": "0CczlR:jo;z73o)WIN1i"
+            },
+            {
+              "text": "NAME",
+              "id": "ttUcTLHnBwjhX9yDyVdo"
+            },
+            {
+              "text": "POSITION",
+              "id": "bVKl{K1V%_Ux-BJ}YB3,"
+            },
+            {
               "text": "RHS",
               "id": "3N]0.f:6YkmT;:1Q,qs;"
             },
             {
+              "text": "ROTATION",
+              "id": "IL1`0U0_P@d*U,cB{`lt"
+            },
+            {
+              "text": "ROTATION",
+              "id": "w)P6EINuujO`1{)#eM)@"
+            },
+            {
+              "text": "SPOT",
+              "id": "6|I1D+lv,fwRj;2uj-44"
+            },
+            {
+              "text": "STATEMENTS",
+              "id": ".^Z/IQh|;qyZ2jjY3Rys"
+            },
+            {
+              "text": "STATEMENTS",
+              "id": "J3X[G^qB|mZi(Gj*8b:."
+            },
+            {
+              "text": "STATEMENTS",
+              "id": "tm9f)-q_kKyK:Ds`pnOx"
+            },
+            {
               "text": "TO",
               "id": "_B%(~54Q5#)_Q7,bd0qU"
+            },
+            {
+              "text": "TO",
+              "id": "_RT/`o8:%/7bs;tGvIlK"
             }
           ]
         }
@@ -4971,7 +8811,7 @@
     "type": "generate_token",
     "id": "4(-3KfL|5)}Vv?go9CFC",
     "x": 21,
-    "y": 135,
+    "y": 130,
     "extraState": {
       "dropdowns": []
     },
@@ -4988,7 +8828,7 @@
     "type": "generate_token",
     "id": "3Ig,Z6t}1GP`r%|pqL,%",
     "x": 21,
-    "y": 521,
+    "y": 516,
     "extraState": {
       "dropdowns": []
     },
@@ -5000,15 +8840,83 @@
     "type": "generate_statements2",
     "id": "jvQZ)*MACIP}MJ+;`K*8",
     "x": 21,
-    "y": 918,
+    "y": 913,
     "extraState": {
       "dropdowns": [
         {
           "field": "STATEMENTS",
           "options": [
             {
+              "text": "FROM",
+              "id": "PNhvG.~!kMPAdeDYfu71"
+            },
+            {
+              "text": "FROM",
+              "id": "Sy,,~|x[V?a*$4N1$t:g"
+            },
+            {
+              "text": "INPUT",
+              "id": "%P]^kgOWLs;nJsWC0qHL"
+            },
+            {
+              "text": "INPUT",
+              "id": "MbMOlqD.6;b$[(jD2c*`"
+            },
+            {
+              "text": "INPUT",
+              "id": "U/8TKD{b}SkuVf,66:9_"
+            },
+            {
+              "text": "LHS",
+              "id": "Pp*p@3c72UJKv3Y3nSe("
+            },
+            {
+              "text": "NAME",
+              "id": "0CczlR:jo;z73o)WIN1i"
+            },
+            {
+              "text": "NAME",
+              "id": "ttUcTLHnBwjhX9yDyVdo"
+            },
+            {
+              "text": "POSITION",
+              "id": "bVKl{K1V%_Ux-BJ}YB3,"
+            },
+            {
+              "text": "RHS",
+              "id": "3N]0.f:6YkmT;:1Q,qs;"
+            },
+            {
+              "text": "ROTATION",
+              "id": "IL1`0U0_P@d*U,cB{`lt"
+            },
+            {
+              "text": "ROTATION",
+              "id": "w)P6EINuujO`1{)#eM)@"
+            },
+            {
+              "text": "SPOT",
+              "id": "6|I1D+lv,fwRj;2uj-44"
+            },
+            {
+              "text": "STATEMENTS",
+              "id": ".^Z/IQh|;qyZ2jjY3Rys"
+            },
+            {
               "text": "STATEMENTS",
               "id": "J3X[G^qB|mZi(Gj*8b:."
+            },
+            {
+              "text": "STATEMENTS",
+              "id": "tm9f)-q_kKyK:Ds`pnOx"
+            },
+            {
+              "text": "TO",
+              "id": "_B%(~54Q5#)_Q7,bd0qU"
+            },
+            {
+              "text": "TO",
+              "id": "_RT/`o8:%/7bs;tGvIlK"
             }
           ]
         }
@@ -5027,7 +8935,7 @@
     "type": "generate_token",
     "id": "/.v#N:_^Buj/fO)dJ!0f",
     "x": 21,
-    "y": 1534,
+    "y": 1529,
     "extraState": {
       "dropdowns": []
     },
@@ -5044,7 +8952,7 @@
     "type": "generate_token",
     "id": "gPD..`[vN/qx|*(A9J(1",
     "x": 21,
-    "y": 1779,
+    "y": 1774,
     "extraState": {
       "dropdowns": []
     },
@@ -5056,7 +8964,7 @@
     "type": "generate_token",
     "id": "XL`Iy}|aPs/O][zaxN3U",
     "x": 21,
-    "y": 2427,
+    "y": 2422,
     "extraState": {
       "dropdowns": []
     },
@@ -5068,15 +8976,83 @@
     "type": "generate_statements2",
     "id": "gbblWqQh8C~XOm(6YIYm",
     "x": 21,
-    "y": 2798,
+    "y": 2793,
     "extraState": {
       "dropdowns": [
         {
           "field": "STATEMENTS",
           "options": [
             {
+              "text": "FROM",
+              "id": "PNhvG.~!kMPAdeDYfu71"
+            },
+            {
+              "text": "FROM",
+              "id": "Sy,,~|x[V?a*$4N1$t:g"
+            },
+            {
+              "text": "INPUT",
+              "id": "%P]^kgOWLs;nJsWC0qHL"
+            },
+            {
+              "text": "INPUT",
+              "id": "MbMOlqD.6;b$[(jD2c*`"
+            },
+            {
+              "text": "INPUT",
+              "id": "U/8TKD{b}SkuVf,66:9_"
+            },
+            {
+              "text": "LHS",
+              "id": "Pp*p@3c72UJKv3Y3nSe("
+            },
+            {
+              "text": "NAME",
+              "id": "0CczlR:jo;z73o)WIN1i"
+            },
+            {
+              "text": "NAME",
+              "id": "ttUcTLHnBwjhX9yDyVdo"
+            },
+            {
+              "text": "POSITION",
+              "id": "bVKl{K1V%_Ux-BJ}YB3,"
+            },
+            {
+              "text": "RHS",
+              "id": "3N]0.f:6YkmT;:1Q,qs;"
+            },
+            {
+              "text": "ROTATION",
+              "id": "IL1`0U0_P@d*U,cB{`lt"
+            },
+            {
+              "text": "ROTATION",
+              "id": "w)P6EINuujO`1{)#eM)@"
+            },
+            {
+              "text": "SPOT",
+              "id": "6|I1D+lv,fwRj;2uj-44"
+            },
+            {
+              "text": "STATEMENTS",
+              "id": ".^Z/IQh|;qyZ2jjY3Rys"
+            },
+            {
+              "text": "STATEMENTS",
+              "id": "J3X[G^qB|mZi(Gj*8b:."
+            },
+            {
               "text": "STATEMENTS",
               "id": "tm9f)-q_kKyK:Ds`pnOx"
+            },
+            {
+              "text": "TO",
+              "id": "_B%(~54Q5#)_Q7,bd0qU"
+            },
+            {
+              "text": "TO",
+              "id": "_RT/`o8:%/7bs;tGvIlK"
             }
           ]
         }
@@ -5095,15 +9071,83 @@
     "type": "generate_values2",
     "id": "c_qsJSg3hO.h$vkmrk5p",
     "x": 21,
-    "y": 3017,
+    "y": 3012,
     "extraState": {
       "dropdowns": [
         {
           "field": "VALUE",
           "options": [
             {
+              "text": "FROM",
+              "id": "PNhvG.~!kMPAdeDYfu71"
+            },
+            {
+              "text": "FROM",
+              "id": "Sy,,~|x[V?a*$4N1$t:g"
+            },
+            {
+              "text": "INPUT",
+              "id": "%P]^kgOWLs;nJsWC0qHL"
+            },
+            {
+              "text": "INPUT",
+              "id": "MbMOlqD.6;b$[(jD2c*`"
+            },
+            {
               "text": "INPUT",
               "id": "U/8TKD{b}SkuVf,66:9_"
+            },
+            {
+              "text": "LHS",
+              "id": "Pp*p@3c72UJKv3Y3nSe("
+            },
+            {
+              "text": "NAME",
+              "id": "0CczlR:jo;z73o)WIN1i"
+            },
+            {
+              "text": "NAME",
+              "id": "ttUcTLHnBwjhX9yDyVdo"
+            },
+            {
+              "text": "POSITION",
+              "id": "bVKl{K1V%_Ux-BJ}YB3,"
+            },
+            {
+              "text": "RHS",
+              "id": "3N]0.f:6YkmT;:1Q,qs;"
+            },
+            {
+              "text": "ROTATION",
+              "id": "IL1`0U0_P@d*U,cB{`lt"
+            },
+            {
+              "text": "ROTATION",
+              "id": "w)P6EINuujO`1{)#eM)@"
+            },
+            {
+              "text": "SPOT",
+              "id": "6|I1D+lv,fwRj;2uj-44"
+            },
+            {
+              "text": "STATEMENTS",
+              "id": ".^Z/IQh|;qyZ2jjY3Rys"
+            },
+            {
+              "text": "STATEMENTS",
+              "id": "J3X[G^qB|mZi(Gj*8b:."
+            },
+            {
+              "text": "STATEMENTS",
+              "id": "tm9f)-q_kKyK:Ds`pnOx"
+            },
+            {
+              "text": "TO",
+              "id": "_B%(~54Q5#)_Q7,bd0qU"
+            },
+            {
+              "text": "TO",
+              "id": "_RT/`o8:%/7bs;tGvIlK"
             }
           ]
         }
@@ -5122,23 +9166,175 @@
     "type": "generate_field_value2",
     "id": "cG#]UM8wO;?Nq{1h;9{6",
     "x": 21,
-    "y": 3236,
+    "y": 3231,
     "extraState": {
       "dropdowns": [
         {
           "field": "FIELDS",
           "options": [
             {
+              "text": "ALPHA",
+              "id": "-p__;2Ef6}.p,t=`cxwR"
+            },
+            {
+              "text": "FACING_CAMERA",
+              "id": "w0,Gj}L_*Z^};JLuaGLD"
+            },
+            {
+              "text": "FACING_CAMERA_LABEL",
+              "id": "N8:5N?-{E3y(`i+Gge@$"
+            },
+            {
+              "text": "ID",
+              "id": "PR50djFXdO$7=/pGAj1@"
+            },
+            {
+              "text": "INTERVAL",
+              "id": "IInB[NkxigGrAt.[s3e-"
+            },
+            {
+              "text": "NAME",
+              "id": "/rz!F0CJQbt%.3`Xpkc`"
+            },
+            {
+              "text": "NAME",
+              "id": "6EjZTaDVoaLANXn]Ro/O"
+            },
+            {
+              "text": "NAME",
+              "id": "9r90s`Kvgv`SHs$zO:~B"
+            },
+            {
+              "text": "NAME",
+              "id": "?2=gwx8,*^DX_L;JxLy2"
+            },
+            {
+              "text": "NAME",
+              "id": "Tch%flW43J3G_#9u7{=C"
+            },
+            {
+              "text": "NAME",
+              "id": "YV;]%mAnL5:lSt~xd;/@"
+            },
+            {
+              "text": "NAME",
+              "id": "[]7TLa;oo-f$aD?}l:*V"
+            },
+            {
+              "text": "NAME",
+              "id": "dQQkW9o3GCZI0tX:~wi,"
+            },
+            {
+              "text": "NAME",
+              "id": "o0X5)gm$3+C|g/63{3@}"
+            },
+            {
+              "text": "NAME",
+              "id": "rgfA`UUw%C:L2k@W,7By"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "tNx=zzBF;60O7/#8dP4N"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "uvQ_CwgP{J9^Gp8!!_g="
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "y:HQ#rd}0v/3mzqPdN(v"
+            },
+            {
+              "text": "OPERATOR",
+              "id": "bgGQia1(li=6b3WLp!2y"
+            },
+            {
+              "text": "POSITION_LABEL",
+              "id": "W1?N?/*ZgjatwN/Mf2/l"
+            },
+            {
+              "text": "PROPERTY",
+              "id": "ExI|m2mgez,Ie|GD]tPO"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "9K;A7hbYc[+j95{#.,CI"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "s$7Y3c(*PD1C.$[e=gcB"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "=~+J$),WM{;^82[t*R,4"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "F/H[:Udw[eL!)}H|EA,E"
+            },
+            {
+              "text": "VECTOR",
+              "id": "K$Bbb[B|^cW{2b/3vPF@"
+            },
+            {
+              "text": "VISIBLE",
+              "id": "@8JH0RJd|=)?FpFSRD6;"
+            },
+            {
+              "text": "VISIBLE_LABEL",
+              "id": "v@J_RaswTm=W$)STuAM+"
+            },
+            {
+              "text": "W",
+              "id": "f)wSF#`_anW`J$L]SCiQ"
+            },
+            {
+              "text": "X",
+              "id": "2QhDgZ.*^~Jx9,?m]Wd;"
+            },
+            {
+              "text": "X",
+              "id": "Q$Q^z*^1FD5!~C)TD_F3"
+            },
+            {
               "text": "X",
               "id": "Q$Q^z*^1FD5!~C)TD_F30"
+            },
+            {
+              "text": "X",
+              "id": "zB.U?P:rLCj;IW}s}V#5"
+            },
+            {
+              "text": "Y",
+              "id": "K7i$L9G~iu+S8,9y%nJJ"
+            },
+            {
+              "text": "Y",
+              "id": "ct-9aP6^1@I(a_DIr67U"
             },
             {
               "text": "Y",
               "id": "ct-9aP6^1@I(a_DIr67U0"
             },
             {
+              "text": "Y",
+              "id": "j#G?X(s`V*CNX0#!-Emd"
+            },
+            {
+              "text": "Z",
+              "id": "9{2+?||$u*J/8SiB}4F2"
+            },
+            {
               "text": "Z",
               "id": "9{2+?||$u*J/8SiB}4F20"
+            },
+            {
+              "text": "Z",
+              "id": "V`N+![xlE%~2!+x!k,K%"
+            },
+            {
+              "text": "Z",
+              "id": "|PVhNB9`)njf{nrv{PW/"
             }
           ]
         }
@@ -5157,7 +9353,7 @@
     "type": "generate_token",
     "id": "-`M?)ty7_-,-HMSmsT%W",
     "x": 21,
-    "y": 3930,
+    "y": 3925,
     "extraState": {
       "dropdowns": []
     },
@@ -5169,7 +9365,7 @@
     "type": "generate_token",
     "id": "5c:9IIm]b6o/uvgL=7Yn",
     "x": 21,
-    "y": 4123,
+    "y": 4118,
     "extraState": {
       "dropdowns": []
     },
@@ -5181,7 +9377,7 @@
     "type": "generate_token",
     "id": "[}g6r,NK:(?(,)xvay/p",
     "x": 21,
-    "y": 4316,
+    "y": 4311,
     "extraState": {
       "dropdowns": []
     },
@@ -5193,23 +9389,175 @@
     "type": "generate_field_value2",
     "id": "xj~JRe#U%nAd}9+ff7p/",
     "x": 21,
-    "y": 162,
+    "y": 156,
     "extraState": {
       "dropdowns": [
         {
           "field": "FIELDS",
           "options": [
             {
+              "text": "ALPHA",
+              "id": "-p__;2Ef6}.p,t=`cxwR"
+            },
+            {
+              "text": "FACING_CAMERA",
+              "id": "w0,Gj}L_*Z^};JLuaGLD"
+            },
+            {
+              "text": "FACING_CAMERA_LABEL",
+              "id": "N8:5N?-{E3y(`i+Gge@$"
+            },
+            {
+              "text": "ID",
+              "id": "PR50djFXdO$7=/pGAj1@"
+            },
+            {
+              "text": "INTERVAL",
+              "id": "IInB[NkxigGrAt.[s3e-"
+            },
+            {
+              "text": "NAME",
+              "id": "/rz!F0CJQbt%.3`Xpkc`"
+            },
+            {
+              "text": "NAME",
+              "id": "6EjZTaDVoaLANXn]Ro/O"
+            },
+            {
+              "text": "NAME",
+              "id": "9r90s`Kvgv`SHs$zO:~B"
+            },
+            {
+              "text": "NAME",
+              "id": "?2=gwx8,*^DX_L;JxLy2"
+            },
+            {
+              "text": "NAME",
+              "id": "Tch%flW43J3G_#9u7{=C"
+            },
+            {
+              "text": "NAME",
+              "id": "YV;]%mAnL5:lSt~xd;/@"
+            },
+            {
+              "text": "NAME",
+              "id": "[]7TLa;oo-f$aD?}l:*V"
+            },
+            {
+              "text": "NAME",
+              "id": "dQQkW9o3GCZI0tX:~wi,"
+            },
+            {
+              "text": "NAME",
+              "id": "o0X5)gm$3+C|g/63{3@}"
+            },
+            {
+              "text": "NAME",
+              "id": "rgfA`UUw%C:L2k@W,7By"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "tNx=zzBF;60O7/#8dP4N"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "uvQ_CwgP{J9^Gp8!!_g="
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "y:HQ#rd}0v/3mzqPdN(v"
+            },
+            {
+              "text": "OPERATOR",
+              "id": "bgGQia1(li=6b3WLp!2y"
+            },
+            {
+              "text": "POSITION_LABEL",
+              "id": "W1?N?/*ZgjatwN/Mf2/l"
+            },
+            {
+              "text": "PROPERTY",
+              "id": "ExI|m2mgez,Ie|GD]tPO"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "9K;A7hbYc[+j95{#.,CI"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "s$7Y3c(*PD1C.$[e=gcB"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "=~+J$),WM{;^82[t*R,4"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "F/H[:Udw[eL!)}H|EA,E"
+            },
+            {
+              "text": "VECTOR",
+              "id": "K$Bbb[B|^cW{2b/3vPF@"
+            },
+            {
+              "text": "VISIBLE",
+              "id": "@8JH0RJd|=)?FpFSRD6;"
+            },
+            {
+              "text": "VISIBLE_LABEL",
+              "id": "v@J_RaswTm=W$)STuAM+"
+            },
+            {
+              "text": "W",
+              "id": "f)wSF#`_anW`J$L]SCiQ"
+            },
+            {
+              "text": "X",
+              "id": "2QhDgZ.*^~Jx9,?m]Wd;"
+            },
+            {
+              "text": "X",
+              "id": "Q$Q^z*^1FD5!~C)TD_F3"
+            },
+            {
+              "text": "X",
+              "id": "zB.U?P:rLCj;IW}s}V#5"
+            },
+            {
               "text": "X",
               "id": "zB.U?P:rLCj;IW}s}V#50"
+            },
+            {
+              "text": "Y",
+              "id": "K7i$L9G~iu+S8,9y%nJJ"
             },
             {
               "text": "Y",
               "id": "K7i$L9G~iu+S8,9y%nJJ0"
             },
             {
+              "text": "Y",
+              "id": "ct-9aP6^1@I(a_DIr67U"
+            },
+            {
+              "text": "Y",
+              "id": "j#G?X(s`V*CNX0#!-Emd"
+            },
+            {
+              "text": "Z",
+              "id": "9{2+?||$u*J/8SiB}4F2"
+            },
+            {
+              "text": "Z",
+              "id": "V`N+![xlE%~2!+x!k,K%"
+            },
+            {
               "text": "Z",
               "id": "V`N+![xlE%~2!+x!k,K%0"
+            },
+            {
+              "text": "Z",
+              "id": "|PVhNB9`)njf{nrv{PW/"
             }
           ]
         }
@@ -5228,7 +9576,7 @@
     "type": "generate_token",
     "id": "/QDj7+1FG/,hzXu48n~Q",
     "x": 21,
-    "y": 945,
+    "y": 939,
     "extraState": {
       "dropdowns": []
     },
@@ -5240,15 +9588,135 @@
     "type": "generate_field_value2",
     "id": "8@yhe1yMjd4V^0gx5=C{",
     "x": 21,
-    "y": 1561,
+    "y": 1555,
     "extraState": {
       "dropdowns": [
         {
           "field": "FIELDS",
           "options": [
             {
+              "text": "ALPHA",
+              "id": "-p__;2Ef6}.p,t=`cxwR"
+            },
+            {
+              "text": "FACING_CAMERA",
+              "id": "w0,Gj}L_*Z^};JLuaGLD"
+            },
+            {
+              "text": "FACING_CAMERA_LABEL",
+              "id": "N8:5N?-{E3y(`i+Gge@$"
+            },
+            {
+              "text": "ID",
+              "id": "PR50djFXdO$7=/pGAj1@"
+            },
+            {
+              "text": "INTERVAL",
+              "id": "IInB[NkxigGrAt.[s3e-"
+            },
+            {
+              "text": "NAME",
+              "id": "/rz!F0CJQbt%.3`Xpkc`"
+            },
+            {
+              "text": "NAME",
+              "id": "6EjZTaDVoaLANXn]Ro/O"
+            },
+            {
+              "text": "NAME",
+              "id": "9r90s`Kvgv`SHs$zO:~B"
+            },
+            {
+              "text": "NAME",
+              "id": "?2=gwx8,*^DX_L;JxLy2"
+            },
+            {
+              "text": "NAME",
+              "id": "Tch%flW43J3G_#9u7{=C"
+            },
+            {
+              "text": "NAME",
+              "id": "YV;]%mAnL5:lSt~xd;/@"
+            },
+            {
+              "text": "NAME",
+              "id": "[]7TLa;oo-f$aD?}l:*V"
+            },
+            {
+              "text": "NAME",
+              "id": "dQQkW9o3GCZI0tX:~wi,"
+            },
+            {
+              "text": "NAME",
+              "id": "o0X5)gm$3+C|g/63{3@}"
+            },
+            {
+              "text": "NAME",
+              "id": "rgfA`UUw%C:L2k@W,7By"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "tNx=zzBF;60O7/#8dP4N"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "uvQ_CwgP{J9^Gp8!!_g="
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "y:HQ#rd}0v/3mzqPdN(v"
+            },
+            {
+              "text": "OPERATOR",
+              "id": "bgGQia1(li=6b3WLp!2y"
+            },
+            {
+              "text": "POSITION_LABEL",
+              "id": "W1?N?/*ZgjatwN/Mf2/l"
+            },
+            {
+              "text": "PROPERTY",
+              "id": "ExI|m2mgez,Ie|GD]tPO"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "9K;A7hbYc[+j95{#.,CI"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "s$7Y3c(*PD1C.$[e=gcB"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "=~+J$),WM{;^82[t*R,4"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "F/H[:Udw[eL!)}H|EA,E"
+            },
+            {
+              "text": "VECTOR",
+              "id": "K$Bbb[B|^cW{2b/3vPF@"
+            },
+            {
+              "text": "VISIBLE",
+              "id": "@8JH0RJd|=)?FpFSRD6;"
+            },
+            {
+              "text": "VISIBLE_LABEL",
+              "id": "v@J_RaswTm=W$)STuAM+"
+            },
+            {
+              "text": "W",
+              "id": "f)wSF#`_anW`J$L]SCiQ"
+            },
+            {
               "text": "W",
               "id": "f)wSF#`_anW`J$L]SCiQ0"
+            },
+            {
+              "text": "X",
+              "id": "2QhDgZ.*^~Jx9,?m]Wd;"
             },
             {
               "text": "X",
@@ -5256,7 +9724,19 @@
             },
             {
               "text": "X",
+              "id": "Q$Q^z*^1FD5!~C)TD_F3"
+            },
+            {
+              "text": "X",
+              "id": "zB.U?P:rLCj;IW}s}V#5"
+            },
+            {
+              "text": "X",
               "id": "zB.U?P:rLCj;IW}s}V#50"
+            },
+            {
+              "text": "Y",
+              "id": "K7i$L9G~iu+S8,9y%nJJ"
             },
             {
               "text": "Y",
@@ -5264,11 +9744,31 @@
             },
             {
               "text": "Y",
+              "id": "ct-9aP6^1@I(a_DIr67U"
+            },
+            {
+              "text": "Y",
+              "id": "j#G?X(s`V*CNX0#!-Emd"
+            },
+            {
+              "text": "Y",
               "id": "j#G?X(s`V*CNX0#!-Emd0"
             },
             {
               "text": "Z",
+              "id": "9{2+?||$u*J/8SiB}4F2"
+            },
+            {
+              "text": "Z",
+              "id": "V`N+![xlE%~2!+x!k,K%"
+            },
+            {
+              "text": "Z",
               "id": "V`N+![xlE%~2!+x!k,K%0"
+            },
+            {
+              "text": "Z",
+              "id": "|PVhNB9`)njf{nrv{PW/"
             },
             {
               "text": "Z",
@@ -5291,7 +9791,7 @@
     "type": "generate_token",
     "id": "r?VI4^Oo~thGYdnmzK%1",
     "x": 21,
-    "y": 2825,
+    "y": 2819,
     "extraState": {
       "dropdowns": []
     },
@@ -5303,7 +9803,7 @@
     "type": "generate_token",
     "id": "7sr2rK?BXP1x8QwMML[J",
     "x": 21,
-    "y": 3044,
+    "y": 3038,
     "extraState": {
       "dropdowns": []
     },
@@ -5315,7 +9815,7 @@
     "type": "generate_token",
     "id": "CO[[*$g,Va1M%H]8u:`4",
     "x": 21,
-    "y": 3263,
+    "y": 3257,
     "extraState": {
       "dropdowns": []
     },
@@ -5332,7 +9832,7 @@
     "type": "generate_token",
     "id": "aQFU)a]%Xj(DK:nOK`ij",
     "x": 21,
-    "y": 189,
+    "y": 182,
     "extraState": {
       "dropdowns": []
     },
@@ -5344,7 +9844,7 @@
     "type": "generate_token",
     "id": "~0xmNy!7yV]#%GvZAa7z",
     "x": 21,
-    "y": 1588,
+    "y": 1581,
     "extraState": {
       "dropdowns": []
     },
@@ -5356,23 +9856,175 @@
     "type": "generate_field_value2",
     "id": "jQ_A|80;sN+C,+E?/+hU",
     "x": 21,
-    "y": 3290,
+    "y": 3283,
     "extraState": {
       "dropdowns": [
         {
           "field": "FIELDS",
           "options": [
             {
+              "text": "ALPHA",
+              "id": "-p__;2Ef6}.p,t=`cxwR"
+            },
+            {
+              "text": "FACING_CAMERA",
+              "id": "w0,Gj}L_*Z^};JLuaGLD"
+            },
+            {
+              "text": "FACING_CAMERA_LABEL",
+              "id": "N8:5N?-{E3y(`i+Gge@$"
+            },
+            {
+              "text": "ID",
+              "id": "PR50djFXdO$7=/pGAj1@"
+            },
+            {
+              "text": "INTERVAL",
+              "id": "IInB[NkxigGrAt.[s3e-"
+            },
+            {
+              "text": "NAME",
+              "id": "/rz!F0CJQbt%.3`Xpkc`"
+            },
+            {
+              "text": "NAME",
+              "id": "6EjZTaDVoaLANXn]Ro/O"
+            },
+            {
+              "text": "NAME",
+              "id": "9r90s`Kvgv`SHs$zO:~B"
+            },
+            {
+              "text": "NAME",
+              "id": "?2=gwx8,*^DX_L;JxLy2"
+            },
+            {
+              "text": "NAME",
+              "id": "Tch%flW43J3G_#9u7{=C"
+            },
+            {
+              "text": "NAME",
+              "id": "YV;]%mAnL5:lSt~xd;/@"
+            },
+            {
+              "text": "NAME",
+              "id": "[]7TLa;oo-f$aD?}l:*V"
+            },
+            {
+              "text": "NAME",
+              "id": "dQQkW9o3GCZI0tX:~wi,"
+            },
+            {
+              "text": "NAME",
+              "id": "o0X5)gm$3+C|g/63{3@}"
+            },
+            {
+              "text": "NAME",
+              "id": "rgfA`UUw%C:L2k@W,7By"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "tNx=zzBF;60O7/#8dP4N"
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "uvQ_CwgP{J9^Gp8!!_g="
+            },
+            {
+              "text": "NAME_LABEL",
+              "id": "y:HQ#rd}0v/3mzqPdN(v"
+            },
+            {
+              "text": "OPERATOR",
+              "id": "bgGQia1(li=6b3WLp!2y"
+            },
+            {
+              "text": "POSITION_LABEL",
+              "id": "W1?N?/*ZgjatwN/Mf2/l"
+            },
+            {
+              "text": "PROPERTY",
+              "id": "ExI|m2mgez,Ie|GD]tPO"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "9K;A7hbYc[+j95{#.,CI"
+            },
+            {
+              "text": "ROTATION_LABEL",
+              "id": "s$7Y3c(*PD1C.$[e=gcB"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "=~+J$),WM{;^82[t*R,4"
+            },
+            {
+              "text": "SHOW_HIDE",
+              "id": "F/H[:Udw[eL!)}H|EA,E"
+            },
+            {
+              "text": "VECTOR",
+              "id": "K$Bbb[B|^cW{2b/3vPF@"
+            },
+            {
+              "text": "VISIBLE",
+              "id": "@8JH0RJd|=)?FpFSRD6;"
+            },
+            {
+              "text": "VISIBLE_LABEL",
+              "id": "v@J_RaswTm=W$)STuAM+"
+            },
+            {
+              "text": "W",
+              "id": "f)wSF#`_anW`J$L]SCiQ"
+            },
+            {
+              "text": "X",
+              "id": "2QhDgZ.*^~Jx9,?m]Wd;"
+            },
+            {
+              "text": "X",
+              "id": "Q$Q^z*^1FD5!~C)TD_F3"
+            },
+            {
               "text": "X",
               "id": "Q$Q^z*^1FD5!~C)TD_F30"
+            },
+            {
+              "text": "X",
+              "id": "zB.U?P:rLCj;IW}s}V#5"
+            },
+            {
+              "text": "Y",
+              "id": "K7i$L9G~iu+S8,9y%nJJ"
+            },
+            {
+              "text": "Y",
+              "id": "ct-9aP6^1@I(a_DIr67U"
             },
             {
               "text": "Y",
               "id": "ct-9aP6^1@I(a_DIr67U0"
             },
             {
+              "text": "Y",
+              "id": "j#G?X(s`V*CNX0#!-Emd"
+            },
+            {
+              "text": "Z",
+              "id": "9{2+?||$u*J/8SiB}4F2"
+            },
+            {
               "text": "Z",
               "id": "9{2+?||$u*J/8SiB}4F20"
+            },
+            {
+              "text": "Z",
+              "id": "V`N+![xlE%~2!+x!k,K%"
+            },
+            {
+              "text": "Z",
+              "id": "|PVhNB9`)njf{nrv{PW/"
             }
           ]
         }
@@ -5391,7 +10043,7 @@
     "type": "generate_token",
     "id": "^Yd2JwB_Nb:L.Y$Zz{M.",
     "x": 21,
-    "y": 3317,
+    "y": 3309,
     "extraState": {
       "dropdowns": []
     },
