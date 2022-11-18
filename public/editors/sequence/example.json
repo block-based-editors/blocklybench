@@ -176,17 +176,16 @@
   },
   "variables": [
     {
-      "name": "Actor A",
-      "id": "d]|M6|Lap%]*,dB@8SP0"
-    },
-    {
       "name": "Actor B",
       "id": "y/A)2m6HG[bA=2GLVAgl"
+    },
+    {
+      "name": "Actor A",
+      "id": "d]|M6|Lap%]*,dB@8SP0"
     }
   ],
   "editor": {
     "editor": "sequence",
-    "version": 1,
-    "url": "https://cidt.asml.com/editors/latest/sequence/editor.html"
+    "version": 1
   }
 }

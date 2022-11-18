@@ -1,42 +1,4 @@
 {
-  "uAA-QG8Mr.@g`Y}5P1-F": {
-    "type": "toolbox_block",
-    "id": "uAA-QG8Mr.@g`Y}5P1-F",
-    "x": 607,
-    "y": 292,
-    "extraState": {
-      "dropdowns": [
-        {
-          "field": "TYPE",
-          "options": [
-            {
-              "text": "actor",
-              "id": "$as!}{wWLWZg?Q}f=.{p"
-            },
-            {
-              "text": "arrow",
-              "id": "baySqy)+)X_.+VQ88h(7"
-            },
-            {
-              "text": "note",
-              "id": "Czx:AnkR+njfA@KVsctK"
-            },
-            {
-              "text": "order",
-              "id": "[)EpiWf-Tn(G.CyC9sWG"
-            },
-            {
-              "text": "title",
-              "id": "a*idYm$hSkt5hcxp_OzP"
-            }
-          ]
-        }
-      ]
-    },
-    "fields": {
-      "TYPE": "$as!}{wWLWZg?Q}f=.{p"
-    }
-  },
   "I]SobBm;RB[b_O11C|^/": {
     "type": "toolbox_categories",
     "id": "I]SobBm;RB[b_O11C|^/",
@@ -346,7 +308,6 @@
     }
   },
   "top_blocks": [
-    "uAA-QG8Mr.@g`Y}5P1-F",
     "I]SobBm;RB[b_O11C|^/"
   ],
   "mergeable": true
