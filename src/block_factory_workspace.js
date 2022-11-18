@@ -1164,12 +1164,14 @@ function saveFn(workspace)
   {
     var version = 'latest'
     return { 'editor': get_editor(), 
-    'version' : 1.0 }
+             'version' : 1.0
+           }
   }
   else
   {
     return { 'editor': 'factory/' + workspace.name, 
-    'version' : 1.0}
+             'version' : 1.0
+           }
   }
 }
 
