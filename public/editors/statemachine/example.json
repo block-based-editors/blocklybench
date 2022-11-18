@@ -186,7 +186,6 @@
   },
   "editor": {
     "editor": "statemachine",
-    "version": 1,
-    "url": "https://cidt.asml.com/editors/latest/statemachine/editor.html"
+    "version": 1
   }
 }
