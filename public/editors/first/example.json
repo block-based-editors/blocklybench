@@ -1,0 +1,24 @@
+{
+  "blocks": {
+    "languageVersion": 0,
+    "blocks": [
+      {
+        "type": "nice_new_block",
+        "id": "0hefwKpO{H9!ieYDt?e+",
+        "x": 72,
+        "y": 58,
+        "extraState": {
+          "dropdowns": []
+        },
+        "fields": {
+          "TITLE": "Nice new block",
+          "NAME": "my_name"
+        }
+      }
+    ]
+  },
+  "editor": {
+    "editor": "first",
+    "version": 1
+  }
+}
