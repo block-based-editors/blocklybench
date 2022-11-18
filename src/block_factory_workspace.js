@@ -628,7 +628,10 @@ function saveDirectFiles()
 
     dirHandle = await create_directory(dirHandle, editor)
 
-    await create_file(dirHandle, "editor.js", Editor.generate_editor_js(get_code(), language, editor));
+    await create_file(dirHandle, "storage.js", Editor.get_storage_script());
+    await create_file(dirHandle, "blocks.js", get_code());
+    await create_file(dirHandle, "generator.js", CodeGen.get_code());
+    await create_file(dirHandle, "editor.js", Editor.generate_editor_js(language));
     await create_file(dirHandle, "editor.html", Editor.generate_editor_html(editor));
     await create_file(dirHandle, "readme.txt","develop folder contains the develop\nStart the editor.html to use the editor. Open the example.json\n");
     await create_file(dirHandle, "example.json", get_json(Concrete.concrete_workspace));
@@ -743,7 +746,10 @@ function saveZip()
     zip.file("develop/codegen.json", get_mergable_json(CodeGen.code_workspace));
     zip.file("develop/concrete.json", get_mergable_json(Concrete.concrete_workspace));
     
-    zip.file("editor.js", Editor.generate_editor_js(get_code(), language));
+    zip.file("storage.js", Editor.get_storage_script());
+    zip.file("blocks.js", get_code());
+    zip.file("generator.js", CodeGen.get_code());
+    zip.file("editor.js", Editor.generate_editor_js(language));
     zip.file("editor.html", Editor.generate_editor_html(editor));
     zip.file("example.json", get_json(Concrete.concrete_workspace));
     zip.file("readme.txt","develop folder contains the develop\nStart the editor.html to use the editor. Open the example.json\n");

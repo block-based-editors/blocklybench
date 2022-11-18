@@ -5,6 +5,7 @@ import Toolbox from './toolbox_workspace.js';
 var Editor = {}; // create a namespace
 
 
+
 var storage_script= `
 /**
  * @license
@@ -206,19 +207,16 @@ BlocklyStorage.alert = function(message) {
 
 `
 
-Editor.generate_editor_js = function(factory_code, language, editor)
+Editor.get_storage_script = function()
+{
+  return storage_script;
+}
+Editor.generate_editor_js = function(language)
 {
   var code = "";
 
-    code += factory_code // from factory
-    code += CodeGen.get_code()
-    code += storage_script
-    code += "toolbox = " + Toolbox.get_code()
+    code += "var toolbox = " + Toolbox.get_code()
     code += `
-    
-
-
-
 
 // hardcoded till the end
 
@@ -320,6 +318,7 @@ function start()
   search();
   document.getElementById("save").addEventListener("click", saveFile);
   add_load()
+  return workspace;
 }
 
 function get_json(workspace)
@@ -401,6 +400,9 @@ Editor.generate_editor_html = function(editor) {
 <script src="https://unpkg.com/blockly/blockly.min.js"></script>
 <script src="https://unpkg.com/@blockly/plugin-workspace-search@5.0.3/dist/index.js"></script>
 <script src="https://unpkg.com/@blockly/field-date"></script>
+<script src='./storage.js'></script>
+<script src='./blocks.js'></script>
+<script src='./generator.js'></script>
 <script src='./editor.js'></script>
 
 </body>
