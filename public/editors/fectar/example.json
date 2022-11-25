@@ -112,7 +112,7 @@
     }
   ],
   "editor": {
-    "editor": "fectar",
+    "name": "fectar",
     "version": 1
   }
 }

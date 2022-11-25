@@ -84,7 +84,7 @@
     ]
   },
   "editor": {
-    "editor": "code",
+    "name": "code",
     "version": 1
   }
 }

@@ -692,7 +692,7 @@
     ]
   },
   "editor": {
-    "editor": "toolbox",
+    "name": "toolbox",
     "version": 1
   }
 }

@@ -253,7 +253,7 @@
     ]
   },
   "editor": {
-    "editor": "basic",
+    "name": "basic",
     "version": 1,
     "url": "https://cidt.asml.com/editors/latest/basic/editor.html"
   }

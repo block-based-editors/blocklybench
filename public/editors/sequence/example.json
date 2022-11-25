@@ -185,7 +185,7 @@
     }
   ],
   "editor": {
-    "editor": "sequence",
+    "name": "sequence",
     "version": 1
   }
 }

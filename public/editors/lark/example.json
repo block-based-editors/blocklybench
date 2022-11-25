@@ -151,7 +151,7 @@
     ]
   },
   "editor": {
-    "editor": "lark",
+    "name": "lark",
     "version": 1
   }
 }

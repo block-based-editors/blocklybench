@@ -185,7 +185,7 @@
     ]
   },
   "editor": {
-    "editor": "statemachine",
+    "name": "statemachine",
     "version": 1
   }
 }
