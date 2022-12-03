@@ -364,11 +364,10 @@ function registerEditBlockType() {
       var factory_block = find_factory_block(scope.block.type)
 
       var data = factory_block.toCopyData();
+      // set the name before adding it to the workspace, otherwise the two blocks will merge...
+      data.saveInfo.fields.NAME = getUniqueNameForBlock(factory_block.getFieldValue('NAME')+'_copy', factory_block)
       var new_block = Blockly.serialization.blocks.append(data.saveInfo, factory_workspace);
-      var new_name = getUniqueNameForBlock(factory_block.getFieldValue('NAME')+'_copy', new_block)
-      new_block.setFieldValue(new_name, 'NAME')
       
-
       new_block.workspace.cleanUp()
 
       // The copy field values is needed if converted from basic blocks to new block type
@@ -1004,10 +1003,10 @@ function loadZip()
 
 function updateDropdownRename(event)
 {
-  if (event.type == "change" && (event.name=="NAME" || event.name=="FIELDNAME" ) || event.type == "create")
+  if (event.type == "change" && (event.name=="NAME" || event.name=="FIELDNAME" || event.name=="INPUTNAME"  ) || event.type == "create")
   {
       myDropDownUpdate(Toolbox.toolbox_workspace)
-        myDropDownUpdate(CodeGen.code_workspace)
+      myDropDownUpdate(CodeGen.code_workspace)
   }
 }
 
