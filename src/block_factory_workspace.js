@@ -386,7 +386,7 @@ function registerEditBlockType() {
       // update the dropdowns to use the new id from the new block 
       var blocks = new_code_block.getDescendants();
       dropdownUpdateBlocksText(blocks)
-          new_code_block.workspace.cleanUp()
+      new_code_block.workspace.cleanUp()
     }
 
       
@@ -699,7 +699,12 @@ function get_clear()
 
 function get_editor()
 {
-  return get_from_url("editor");
+  var editor =  get_from_url("editor");
+  if (editor==null) 
+  {
+    editor = "unknown"
+  }
+  return editor;
 }
 
 function removeParam(key, sourceURL) {
@@ -733,7 +738,7 @@ function get_from_url(param)
 function saveZip()
 {
   var editor = get_editor()
-    var language = document.getElementById('language').value;
+  var language = document.getElementById('language').value;
 
   var zip = new JSZip();
     //zip.file("develop/factory.json", get_json(factory_workspace));
@@ -851,6 +856,8 @@ function save_mergeable(workspace)
     }
     save_blocks['top_blocks'] = workspace.getTopBlocks().map(block => block.id);
     save_blocks['mergeable'] = true;
+    // editor is the same as in register serialization 
+    save_blocks[serialization_name] = saveFn(workspace); 
 
     return save_blocks
 }
@@ -963,7 +970,8 @@ function loadZip()
     var file = this.files[i];
     if (file) 
     {
-      if (file.type == "text/xml")
+      if (file.type == "text/xml") 
+      // just a plain block.xml from the blockly factory
       {
         var reader = new FileReader();
         reader.readAsText(file, "UTF-8");
@@ -1169,7 +1177,7 @@ function saveFn(workspace)
   if (workspace.name=='Concrete')
   {
     var version = 'latest'
-    return { 'editor': get_editor(), 
+    return { 'name': get_editor(), 
              'version' : 1.0
            }
   }
@@ -1181,7 +1189,7 @@ function saveFn(workspace)
   }
 }
 
-function loadFn(hi)
+function loadFn(workspace)
 {
 
 }
@@ -1191,10 +1199,12 @@ function clearFn(workspace)
 
 }
 
+const serialization_name = 'editor'
+
 function register_workspace_serialization()
 {
   Blockly.serialization.registry.register(
-    'editor',  // Name
+    serialization_name,  // Name
     {
       save: saveFn,      // Save function
       load: loadFn,      // Load function
