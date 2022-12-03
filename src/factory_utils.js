@@ -438,7 +438,7 @@ FactoryUtils.formatJavaScript_ = function(blockType, rootBlock, workspace) {
     {
       var field_name = state.dropdowns[i].field;
       var field = this.getField(field_name);
-      if (field.getOptions && !field.variable_) // is dropdown and not a variable
+      if (field && field.getOptions && !field.variable_) // is dropdown and not a variable
       { 
          var options = field.getOptions(false);
       }
@@ -446,6 +446,7 @@ FactoryUtils.formatJavaScript_ = function(blockType, rootBlock, workspace) {
       {
         var options = []
       }
+      
       var ids = options.map(option => option[1]);
       for (var j =0; j<state.dropdowns[i].options.length;j++)
       {
@@ -455,7 +456,10 @@ FactoryUtils.formatJavaScript_ = function(blockType, rootBlock, workspace) {
           options.push([text,id])
         }
       }
-      field.savedOptionsSet = true;
+      if (field) // field can be temp gone if no name is set temparory
+      {
+        field.savedOptionsSet = true;
+      }
     }
   }
 

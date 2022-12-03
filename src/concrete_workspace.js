@@ -31,11 +31,22 @@ function visit_block(json_block, oldValue, newValue)
   }
 }
 
+function update_extra_state(json_block, oldValue, newValue)
+{
+  for (var i=0; i<json_block.extraState.dropdowns.length;i++)
+  {
+    if (json_block.extraState.dropdowns[i].field == oldValue)
+    {
+      json_block.extraState.dropdowns[i].field = newValue
+    }
+  }
+}
 function visit_field(json_block, block_type, oldValue, newValue)
 {
   if (json_block.type == block_type)
   {
     json_block.fields[newValue] = json_block.fields[oldValue]
+    update_extra_state(json_block, oldValue, newValue)
   }
   if (json_block.next)
   {
