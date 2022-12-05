@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>sequence Editor</title>
-  <body onload="start();">
+  <body onload="workspace = start();workspace.addChangeListener(update_code);;">
   
 <input type="button" id="loadFileXml" value="Load JSON" onclick="document.getElementById('input').click();" />
 <input type="file" style="display:none;" id="input" name="file"/>
@@ -24,6 +24,9 @@
 <script src="https://unpkg.com/blockly/blockly.min.js"></script>
 <script src="https://unpkg.com/@blockly/plugin-workspace-search@5.0.3/dist/index.js"></script>
 <script src="https://unpkg.com/@blockly/field-date"></script>
+<script src='./storage.js'></script>
+<script src='./blocks.js'></script>
+<script src='./generator.js'></script>
 <script src='./editor.js'></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
@@ -33,12 +36,20 @@
 
 
 <script>
-    function update_code(code) {
-        var div = document.getElementById('diagram')
-        while(div.firstChild && div.removeChild(div.firstChild));
-        var diagram = Diagram.parse(code);
-        diagram.drawSVG("diagram", {theme: 'hand'});
-    }
+ 
+  function update_code(event) {
+    var workspace = Blockly.Workspace.getById(event.workspaceId)
+    try {
+          var code = Blockly.YAML.workspaceToCode(workspace);
+    } catch (e) {
+      console.warn("Error while creating code", e);
+      code = "Error while creating code:" + e
+    } 
+    var div = document.getElementById('diagram')
+    while(div.firstChild && div.removeChild(div.firstChild));
+    var diagram = Diagram.parse(code);
+    diagram.drawSVG("diagram", {theme: 'hand'});
+  }
 </script>
 </body>
 </html>

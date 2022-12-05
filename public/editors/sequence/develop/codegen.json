@@ -860,5 +860,9 @@
     "Oe{ynxm_Z:.X/Hu8t*eK",
     "!+),#JF|DmWT?#xEscb("
   ],
-  "mergeable": true
+  "mergeable": true,
+  "editor": {
+    "editor": "factory/Code",
+    "version": 1
+  }
 }

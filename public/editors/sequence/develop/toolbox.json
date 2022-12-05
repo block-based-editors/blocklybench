@@ -310,5 +310,9 @@
   "top_blocks": [
     "I]SobBm;RB[b_O11C|^/"
   ],
-  "mergeable": true
+  "mergeable": true,
+  "editor": {
+    "editor": "factory/Toolbox",
+    "version": 1
+  }
 }

@@ -99,7 +99,7 @@ Blockly.Blocks['arrow'] = {
     {
       var field_name = state.dropdowns[i].field;
       var field = this.getField(field_name);
-      if (field.getOptions && !field.variable_) // is dropdown and not a variable
+      if (field && field.getOptions && !field.variable_) // is dropdown and not a variable
       { 
          var options = field.getOptions(false);
       }
@@ -107,6 +107,7 @@ Blockly.Blocks['arrow'] = {
       {
         var options = []
       }
+      
       var ids = options.map(option => option[1]);
       for (var j =0; j<state.dropdowns[i].options.length;j++)
       {
@@ -116,7 +117,10 @@ Blockly.Blocks['arrow'] = {
           options.push([text,id])
         }
       }
-      field.savedOptionsSet = true;
+      if (field) // field can be temp gone if no name is set temparory
+      {
+        field.savedOptionsSet = true;
+      }
     }
   }
 
@@ -220,7 +224,7 @@ Blockly.Blocks['title'] = {
     {
       var field_name = state.dropdowns[i].field;
       var field = this.getField(field_name);
-      if (field.getOptions && !field.variable_) // is dropdown and not a variable
+      if (field && field.getOptions && !field.variable_) // is dropdown and not a variable
       { 
          var options = field.getOptions(false);
       }
@@ -228,6 +232,7 @@ Blockly.Blocks['title'] = {
       {
         var options = []
       }
+      
       var ids = options.map(option => option[1]);
       for (var j =0; j<state.dropdowns[i].options.length;j++)
       {
@@ -237,7 +242,10 @@ Blockly.Blocks['title'] = {
           options.push([text,id])
         }
       }
-      field.savedOptionsSet = true;
+      if (field) // field can be temp gone if no name is set temparory
+      {
+        field.savedOptionsSet = true;
+      }
     }
   }
 
@@ -346,7 +354,7 @@ Blockly.Blocks['note'] = {
     {
       var field_name = state.dropdowns[i].field;
       var field = this.getField(field_name);
-      if (field.getOptions && !field.variable_) // is dropdown and not a variable
+      if (field && field.getOptions && !field.variable_) // is dropdown and not a variable
       { 
          var options = field.getOptions(false);
       }
@@ -354,6 +362,7 @@ Blockly.Blocks['note'] = {
       {
         var options = []
       }
+      
       var ids = options.map(option => option[1]);
       for (var j =0; j<state.dropdowns[i].options.length;j++)
       {
@@ -363,7 +372,10 @@ Blockly.Blocks['note'] = {
           options.push([text,id])
         }
       }
-      field.savedOptionsSet = true;
+      if (field) // field can be temp gone if no name is set temparory
+      {
+        field.savedOptionsSet = true;
+      }
     }
   }
 
@@ -469,7 +481,7 @@ Blockly.Blocks['order'] = {
     {
       var field_name = state.dropdowns[i].field;
       var field = this.getField(field_name);
-      if (field.getOptions && !field.variable_) // is dropdown and not a variable
+      if (field && field.getOptions && !field.variable_) // is dropdown and not a variable
       { 
          var options = field.getOptions(false);
       }
@@ -477,6 +489,7 @@ Blockly.Blocks['order'] = {
       {
         var options = []
       }
+      
       var ids = options.map(option => option[1]);
       for (var j =0; j<state.dropdowns[i].options.length;j++)
       {
@@ -486,7 +499,10 @@ Blockly.Blocks['order'] = {
           options.push([text,id])
         }
       }
-      field.savedOptionsSet = true;
+      if (field) // field can be temp gone if no name is set temparory
+      {
+        field.savedOptionsSet = true;
+      }
     }
   }
 
@@ -591,7 +607,7 @@ Blockly.Blocks['actor'] = {
     {
       var field_name = state.dropdowns[i].field;
       var field = this.getField(field_name);
-      if (field.getOptions && !field.variable_) // is dropdown and not a variable
+      if (field && field.getOptions && !field.variable_) // is dropdown and not a variable
       { 
          var options = field.getOptions(false);
       }
@@ -599,6 +615,7 @@ Blockly.Blocks['actor'] = {
       {
         var options = []
       }
+      
       var ids = options.map(option => option[1]);
       for (var j =0; j<state.dropdowns[i].options.length;j++)
       {
@@ -608,7 +625,10 @@ Blockly.Blocks['actor'] = {
           options.push([text,id])
         }
       }
-      field.savedOptionsSet = true;
+      if (field) // field can be temp gone if no name is set temparory
+      {
+        field.savedOptionsSet = true;
+      }
     }
   }
 

@@ -729,5 +729,9 @@
     "[)EpiWf-Tn(G.CyC9sWG",
     "$as!}{wWLWZg?Q}f=.{p"
   ],
-  "mergeable": true
+  "mergeable": true,
+  "editor": {
+    "editor": "factory/Factory",
+    "version": 1
+  }
 }

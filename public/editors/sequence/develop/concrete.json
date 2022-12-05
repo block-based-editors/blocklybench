@@ -232,5 +232,9 @@
   "top_blocks": [
     "/p|g~cq..fciiTd?+P1%"
   ],
-  "mergeable": true
+  "mergeable": true,
+  "editor": {
+    "name": "sequence",
+    "version": 1
+  }
 }
