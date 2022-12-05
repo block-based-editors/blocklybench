@@ -670,7 +670,7 @@ FactoryUtils.getFieldsJs_ = function(block) {
                   }
                 }
                 return options;
-            }), ` +
+            }, null, `+ comment  +' ), ' +
                 JSON.stringify(block.getFieldValue('FIELDNAME')));
           break;        
         case 'field_dropdown_statement':
