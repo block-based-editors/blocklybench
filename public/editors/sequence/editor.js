@@ -8,11 +8,34 @@ var toolbox = {
    "contents": [
     {
       "kind": "block",
-      "type": "arrow"
+      "type": "arrow", 
+      "fields": {
+      },
+      "inputs": {
+        "FROM_ACTOR" :  {
+          "block": {
+            "type": "variables_get",
+          }
+        },
+        "TO_ACTOR" :  {
+          "block": {
+            "type": "variables_get",
+          }
+        },
+      }
     },
     {
       "kind": "block",
-      "type": "note"
+      "type": "note", 
+      "fields": {
+      },
+      "inputs": {
+        "ACTOR" :  {
+          "block": {
+            "type": "variables_get",
+          }
+        },
+      }
     },
     {
       "kind": "block",
@@ -20,13 +43,17 @@ var toolbox = {
     },
     {
       "kind": "block",
-      "type": "order", 
+      "type": "order"
+    },
+    {
+      "kind": "block",
+      "type": "actor", 
       "fields": {
       },
       "inputs": {
-        "ACTORS" :  {
+        "ACTOR" :  {
           "block": {
-            "type": "actor",
+            "type": "variables_get",
           }
         },
       }
