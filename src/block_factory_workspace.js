@@ -515,12 +515,11 @@ function registerCombineBlocks() {
 
 
       var data = factory_block.toCopyData();
+      // set the name before creation, so no update is triggered
+
+      data.saveInfo.fields.NAME = getUniqueNameForBlock(factory_block.getFieldValue('NAME')+'_combi', factory_block)
       var new_block = Blockly.serialization.blocks.append(data.saveInfo, factory_workspace);
 
-      var new_name = getUniqueNameForBlock(factory_block.getFieldValue('NAME')+'_combi', new_block)
-      
-      new_block.setFieldValue(new_name, 'NAME')
-          
           var old_input = new_block.getInput('INPUTS')
           var old_input_block = new_block.getInputTargetBlock('INPUTS');
 
