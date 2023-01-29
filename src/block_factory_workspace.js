@@ -174,6 +174,48 @@ function create_new_inputs(concrete_block, previous_connection)
      
 }
 
+function registerReplaceInputText() {
+  const displayOption = {
+    displayText: function(scope) {
+      return "Replace with input text"
+    },
+    preconditionFn: function (scope) {
+      if (scope.block.type == 'field_label_serializable')
+      {
+        return 'enabled';
+      } 
+      return 'disabled';
+    },
+    callback: function (scope) {
+      var field_name = scope.block.getFieldValue('FIELDNAME')
+      var text = scope.block.getFieldValue('TEXT') 
+      const jsonText = `
+      {
+    "type": "field_input",
+    "fields": {
+      "TEXT": "`+text +`",
+      "FIELDNAME": "`+ field_name +`"
+    }
+    }
+      `
+      Blockly.Events.setGroup(true); // combine the events for undo
+      const json_block = JSON.parse(jsonText)
+      var new_block = Blockly.serialization.blocks.append(json_block, scope.block.workspace)
+      
+      var previous_block = scope.block.previousConnection.getSourceBlock()
+      previous_block.nextConnection.connect(new_block.previousConnection)
+      new_block.nextConnection.connect(scope.block.nextConnection.target)
+      scope.block.dispose(true,true)
+      Blockly.Events.setGroup(false); // stop combine the events for undo
+    },
+    scopeType: Blockly.ContextMenuRegistry.ScopeType.BLOCK,
+    id: 'replace_input_text',
+    weight: 100,
+  };
+  Blockly.ContextMenuRegistry.registry.register(displayOption);
+}
+
+
 function registerReplaceStaticText() {
   const displayOption = {
     displayText: function(scope) {
@@ -1280,6 +1322,7 @@ document.addEventListener("DOMContentLoaded", function ()
   registerReplaceDropdown()
   registerDownload()
   registerReplaceStaticText()
+  registerReplaceInputText()
   registerEditBlockType()
   registerCombineBlocks()
 //  add_concreate_load()
