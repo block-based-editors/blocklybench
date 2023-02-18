@@ -202,10 +202,26 @@ javascriptGenerator['generate_field_value_token'] = function(block) {
   code += "  code += field.getValue();\n"
   code += "}\n"
   code += "code += '" + block.getFieldValue('AFTER') + "';\n"
-  code += "var surround_block = block.getSurroundParent();\n"
-  code += "if (surround_block && surround_block.data && surround_block.data.seperator) {\n"
-  code += "  if (surround_block.data.last_seperator || block.getNextBlock()) {\n"
-  code += "    code += surround_block.data.seperator;\n"
+  code += "var surround_parent = block.getSurroundParent();\n"
+  code += "if (surround_parent) {\n"
+  code += "  var input_name = null;\n"
+  code += "  for (var i=0; i< surround_parent.inputList.length; i++)\n" 
+  code += "  {\n"
+  code += "    var input = surround_parent.inputList[i];\n"
+  code += "    if (input.type===Blockly.inputTypes.STATEMENT) {\n"
+  code += "      var target = surround_parent.getInputTargetBlock(input.name);\n"
+  code += "      if (target && target.getDescendants().includes(block)) {\n"
+  code += "        input_name = input.name;\n"
+  code += "      }\n"
+  code += "    }\n"
+  code += "  }\n" 
+  code += "  if (surround_parent.data && \n"
+  code += "      surround_parent.data.tokens && \n"
+  code += "      surround_parent.data.tokens[input_name] && \n" 
+  code += "      surround_parent.data.tokens[input_name].seperator) {\n"
+  code += "    if (surround_parent.data.tokens[input_name].seperator_on_last || block.getNextBlock()) {\n"
+  code += "      code += surround_parent.data.tokens[input_name].seperator;\n"
+  code += "    }\n"
   code += "  }\n"
   code += "}\n"
   return code;
@@ -222,9 +238,17 @@ javascriptGenerator['generate_statements_token'] = function(block) {
   // block.data is filled here and used in the generate_field_value_token, etc blocks
   // so before the statements are generated
   code += "block.data = block.data || {};\n"
-  code += "block.data.seperator = '" + block.getFieldValue('SEP') + "';\n"
-  var sep_on_last = block.getFieldValue('SEP_ON_LAST') == 'TRUE';
-  code += "block.data.last_seperator = " + sep_on_last +";\n"
+  
+  var seperator_on_last = block.getFieldValue('SEP_ON_LAST') == 'TRUE';
+  
+  code += "block.data.tokens = {};\n"
+  code += "block.data.tokens['" + statements + "'] = {} ;\n"
+  
+  code += "block.data.tokens['" + statements + "'].before = '" + block.getFieldValue('BEFORE') + "';\n"
+  code += "block.data.tokens['" + statements + "'].after = '" + block.getFieldValue('AFTER') + "';\n"
+  code += "block.data.tokens['" + statements + "'].seperator = '" + block.getFieldValue('SEP') + "';\n"
+  code += "block.data.tokens['" + statements + "'].seperator_on_last = " + seperator_on_last +";\n"
+
 
   code += "code += '" + block.getFieldValue('BEFORE') + "';\n"
   if (ident=='FALSE')
@@ -388,11 +412,27 @@ javascriptGenerator['generate_field_text_token'] = function(block) {
   }
   code += '"); code += field.getValue();\n';
   code += "code += '" + block.getFieldValue('AFTER') + "';\n"
-  
-  code += "var surround_block = block.getSurroundParent();\n"
-  code += "if (surround_block && surround_block.data && surround_block.data.seperator) {\n"
-  code += "  if (surround_block.data.last_seperator || block.getNextBlock()) {\n"
-  code += "    code += surround_block.data.seperator;\n"
+
+  code += "var surround_parent = block.getSurroundParent();\n"
+  code += "if (surround_parent) {\n"
+  code += "  var input_name = null;\n"
+  code += "  for (var i=0; i< surround_parent.inputList.length; i++)\n" 
+  code += "  {\n"
+  code += "    var input = surround_parent.inputList[i];\n"
+  code += "    if (input.type===Blockly.inputTypes.STATEMENT) {\n"
+  code += "      var target = surround_parent.getInputTargetBlock(input.name);\n"
+  code += "      if (target && target.getDescendants().includes(block)) {\n"
+  code += "        input_name = input.name;\n"
+  code += "      }\n"
+  code += "    }\n"
+  code += "  }\n" 
+  code += "  if (surround_parent.data && \n"
+  code += "      surround_parent.data.tokens && \n"
+  code += "      surround_parent.data.tokens[input_name] && \n" 
+  code += "      surround_parent.data.tokens[input_name].seperator) {\n"
+  code += "    if (surround_parent.data.tokens[input_name].seperator_on_last || block.getNextBlock()) {\n"
+  code += "      code += surround_parent.data.tokens[input_name].seperator;\n"
+  code += "    }\n"
   code += "  }\n"
   code += "}\n"
   return code;
