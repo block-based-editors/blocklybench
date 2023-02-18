@@ -144,3 +144,141 @@ Blockly.JavaScript['generate_list_length'] = function(block) {
   }
 }
 ;
+if (!Blockly.JavaScript) {
+  Blockly.JavaScript = new Blockly.Generator('JavaScript');
+  Blockly.JavaScript.ORDER_ATOMIC = 0;
+}
+
+Blockly.JavaScript.scrub_ = function(block, code, opt_thisOnly) {
+    const nextBlock = block.nextConnection && block.nextConnection.targetBlock();
+    const nextCode = opt_thisOnly ? '' : Blockly.JavaScript.blockToCode(nextBlock);
+    return code + nextCode;
+}
+
+Blockly.JavaScript['generate_field_value_token'] = function(block) {
+  var code ='';
+  code += 'code += "';
+  var field = block.getField('BEFORE');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+  code += '"\ncode += block.getFieldValue("';
+  var field = block.getField('FIELDS');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+  code += '");\ncode += "';
+  var field = block.getField('AFTER');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+  code += '"\n';
+
+  // if this block is a 'value' then code + ORDER needs to be returned
+  if(block.outputConnection) {
+    return [code, Blockly.JavaScript.ORDER_ATOMIC];
+  }
+  else // no value block
+  {
+    return code;
+  }
+}
+;
+if (!Blockly.JavaScript) {
+  Blockly.JavaScript = new Blockly.Generator('JavaScript');
+  Blockly.JavaScript.ORDER_ATOMIC = 0;
+}
+
+Blockly.JavaScript.scrub_ = function(block, code, opt_thisOnly) {
+    const nextBlock = block.nextConnection && block.nextConnection.targetBlock();
+    const nextCode = opt_thisOnly ? '' : Blockly.JavaScript.blockToCode(nextBlock);
+    return code + nextCode;
+}
+
+Blockly.JavaScript['generate_field_text_token'] = function(block) {
+  var code ='';
+  code += 'code += "';
+  var field = block.getField('BEFORE');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+  code += '"\ncode += block.getFieldText("';
+  var field = block.getField('FIELDS');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+  code += '");\ncode += "';
+  var field = block.getField('AFTER');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+  code += '"\n';
+
+  // if this block is a 'value' then code + ORDER needs to be returned
+  if(block.outputConnection) {
+    return [code, Blockly.JavaScript.ORDER_ATOMIC];
+  }
+  else // no value block
+  {
+    return code;
+  }
+}
+;
+if (!Blockly.JavaScript) {
+  Blockly.JavaScript = new Blockly.Generator('JavaScript');
+  Blockly.JavaScript.ORDER_ATOMIC = 0;
+}
+
+Blockly.JavaScript.scrub_ = function(block, code, opt_thisOnly) {
+    const nextBlock = block.nextConnection && block.nextConnection.targetBlock();
+    const nextCode = opt_thisOnly ? '' : Blockly.JavaScript.blockToCode(nextBlock);
+    return code + nextCode;
+}
+
+Blockly.JavaScript['generate_statements_token'] = function(block) {
+  var code ='';
+  code += 'code += "';
+  var field = block.getField('BEFORE');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+  code += '"\ncode += block.getFieldText("';
+  var field = block.getField('STATEMENTS');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+  code += '");\ncode += "';
+  var field = block.getField('AFTER');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+  code += '"\n';
+
+  // if this block is a 'value' then code + ORDER needs to be returned
+  if(block.outputConnection) {
+    return [code, Blockly.JavaScript.ORDER_ATOMIC];
+  }
+  else // no value block
+  {
+    return code;
+  }
+}
+;

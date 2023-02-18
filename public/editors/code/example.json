@@ -3,82 +3,286 @@
     "languageVersion": 0,
     "blocks": [
       {
-        "type": "generate_code",
-        "id": "*?5Z2kFwV@Gy9Urk[qL~",
-        "x": 109,
-        "y": 61,
+        "type": "generate_field_value_token",
+        "id": "ck82A]02fI2hI_O`V;h8",
+        "x": 184,
+        "y": 176,
         "extraState": {
           "dropdowns": [
             {
-              "field": "TYPE",
+              "field": "FIELDS",
               "options": [
                 {
-                  "text": "generate_block_type",
-                  "id": "#4OvA*:`]xIm~vMT4Mlh"
+                  "text": "AFTER",
+                  "id": "TT}Ya7wY2,N^LaTYec|x"
                 },
                 {
-                  "text": "generate_code",
-                  "id": "V9H!^_3{~CrGy7ja+eIl"
+                  "text": "AFTER",
+                  "id": "t9,j*xZ3)e6DEaTU84;r"
                 },
                 {
-                  "text": "generate_code_variable",
-                  "id": "XCzU+mHPZqX4X_DyhDXa"
+                  "text": "AFTER",
+                  "id": "zAufN*,lbv3vWDGF[.Nr"
                 },
                 {
-                  "text": "generate_comment",
-                  "id": "fvzU7gcaY2]~)82V3NN/"
+                  "text": "BEFORE",
+                  "id": "KH/3ADu*;)IgSmYM#foh"
                 },
                 {
-                  "text": "generate_field_text",
-                  "id": "poEkYGzs;l*7uGT=IM[:"
+                  "text": "BEFORE",
+                  "id": "Vhu6fBAt+K_DF:2rLG!d"
                 },
                 {
-                  "text": "generate_field_value2",
-                  "id": ")18([W*:S#Cb@T*,XXXt"
+                  "text": "BEFORE",
+                  "id": "nh-a{wk%L#S31|^kS0?{"
                 },
                 {
-                  "text": "generate_javascript",
-                  "id": "5GZ:!?w+,5Px!84;1yYa"
+                  "text": "FIELDS",
+                  "id": "BYE?D.2#i]pL@7O/FS@D"
                 },
                 {
-                  "text": "generate_list_index",
-                  "id": "]U,PmB3PNod~=2j?[]!{"
+                  "text": "FIELDS",
+                  "id": "Xj10cRN@NBRn)GU-GaF$"
                 },
                 {
-                  "text": "generate_list_length",
-                  "id": "w8^cC4IqtV55j!wCe+8H"
+                  "text": "FIELDS",
+                  "id": "vby;QyoRn~c!/kA2V+UW"
                 },
                 {
-                  "text": "generate_parent_field_value",
-                  "id": ":aPBYP/,9MaeYIUq65,8"
+                  "text": "FIELDS",
+                  "id": "vk|~2[V8C7ez!wWtBhdt"
                 },
                 {
-                  "text": "generate_statements2",
-                  "id": "8Bh0n@]:|(Fu(pc5/A/I"
+                  "text": "FIELDS",
+                  "id": "yUUNYIB|$v}T[`MDFR!C"
                 },
                 {
-                  "text": "generate_statements3",
-                  "id": "gyH3dW2_hs$+/3;rws4d"
+                  "text": "INDENT",
+                  "id": "$z^np$x:5aTf5r#(K}G@"
                 },
                 {
-                  "text": "generate_token",
-                  "id": "#r-+LmT!38fi;}SKXqC5"
+                  "text": "INDENT",
+                  "id": "Jrz~JN7i1;{o#XAll7b3"
                 },
                 {
-                  "text": "generate_token_value",
-                  "id": "|R~s7[87uvlx#tn1#WDP"
+                  "text": "JAVASCRIPT",
+                  "id": "X4?o%WT/Yp|VFADhYix4"
                 },
                 {
-                  "text": "generate_values2",
-                  "id": ":{0nD0iSF#7NmO}nXOr!"
+                  "text": "LANGUAGE",
+                  "id": "Aw_3D^G2[PFBYKv%4U-{"
+                },
+                {
+                  "text": "LANGUAGE",
+                  "id": "hV/t!sR/k!v3Td)(k)o%"
+                },
+                {
+                  "text": "SEP",
+                  "id": "Wq9q^JJe,2iJN.AKcH#W"
+                },
+                {
+                  "text": "SEP_ON_LAST",
+                  "id": "cFfSQ=q}tJR{$QP+1$o)"
+                },
+                {
+                  "text": "STATEMENTS",
+                  "id": "`GAft(}~!ob_KUTmcHS|"
+                },
+                {
+                  "text": "STATEMENTS",
+                  "id": "e^-OW:qsNd~zH8hW2Z;+"
+                },
+                {
+                  "text": "STATEMENTS",
+                  "id": "kXJu)VQLTj1GF#U0XO#:"
+                },
+                {
+                  "text": "STATEMENTS",
+                  "id": "reTLSP}dc~D;miQ%A0Jq"
+                },
+                {
+                  "text": "TOKEN",
+                  "id": ".iLI_zwq^49Oq)4|s`Qp"
+                },
+                {
+                  "text": "TYPE",
+                  "id": "(DrUJQ37s[dS-+JHT3X;"
+                },
+                {
+                  "text": "TYPE",
+                  "id": "}.S6Np{AH2P3Jvom4E,N"
+                },
+                {
+                  "text": "VALUE",
+                  "id": "x/ub%Xxs[t(hL3$sIC$!"
                 }
               ]
             }
           ]
         },
         "fields": {
-          "LANGUAGE": "YAML",
-          "TYPE": "#4OvA*:`]xIm~vMT4Mlh"
+          "BEFORE": "[",
+          "FIELDS": "TT}Ya7wY2,N^LaTYec|x",
+          "AFTER": "]"
+        }
+      },
+      {
+        "type": "generate_field_text_token",
+        "id": "OR;)k]dZp%|_JT;|Pc)J",
+        "x": 182,
+        "y": 357,
+        "extraState": {
+          "dropdowns": [
+            {
+              "field": "FIELDS",
+              "options": [
+                {
+                  "text": "AFTER",
+                  "id": "TT}Ya7wY2,N^LaTYec|x"
+                },
+                {
+                  "text": "AFTER",
+                  "id": "t9,j*xZ3)e6DEaTU84;r"
+                },
+                {
+                  "text": "AFTER",
+                  "id": "zAufN*,lbv3vWDGF[.Nr"
+                },
+                {
+                  "text": "BEFORE",
+                  "id": "KH/3ADu*;)IgSmYM#foh"
+                },
+                {
+                  "text": "BEFORE",
+                  "id": "Vhu6fBAt+K_DF:2rLG!d"
+                },
+                {
+                  "text": "BEFORE",
+                  "id": "nh-a{wk%L#S31|^kS0?{"
+                },
+                {
+                  "text": "FIELDS",
+                  "id": "BYE?D.2#i]pL@7O/FS@D"
+                },
+                {
+                  "text": "FIELDS",
+                  "id": "Xj10cRN@NBRn)GU-GaF$"
+                },
+                {
+                  "text": "FIELDS",
+                  "id": "vby;QyoRn~c!/kA2V+UW"
+                },
+                {
+                  "text": "FIELDS",
+                  "id": "vk|~2[V8C7ez!wWtBhdt"
+                },
+                {
+                  "text": "FIELDS",
+                  "id": "yUUNYIB|$v}T[`MDFR!C"
+                },
+                {
+                  "text": "INDENT",
+                  "id": "$z^np$x:5aTf5r#(K}G@"
+                },
+                {
+                  "text": "INDENT",
+                  "id": "Jrz~JN7i1;{o#XAll7b3"
+                },
+                {
+                  "text": "JAVASCRIPT",
+                  "id": "X4?o%WT/Yp|VFADhYix4"
+                },
+                {
+                  "text": "LANGUAGE",
+                  "id": "Aw_3D^G2[PFBYKv%4U-{"
+                },
+                {
+                  "text": "LANGUAGE",
+                  "id": "hV/t!sR/k!v3Td)(k)o%"
+                },
+                {
+                  "text": "SEP",
+                  "id": "Wq9q^JJe,2iJN.AKcH#W"
+                },
+                {
+                  "text": "SEP_ON_LAST",
+                  "id": "cFfSQ=q}tJR{$QP+1$o)"
+                },
+                {
+                  "text": "STATEMENTS",
+                  "id": "`GAft(}~!ob_KUTmcHS|"
+                },
+                {
+                  "text": "STATEMENTS",
+                  "id": "e^-OW:qsNd~zH8hW2Z;+"
+                },
+                {
+                  "text": "STATEMENTS",
+                  "id": "kXJu)VQLTj1GF#U0XO#:"
+                },
+                {
+                  "text": "STATEMENTS",
+                  "id": "reTLSP}dc~D;miQ%A0Jq"
+                },
+                {
+                  "text": "TOKEN",
+                  "id": ".iLI_zwq^49Oq)4|s`Qp"
+                },
+                {
+                  "text": "TYPE",
+                  "id": "(DrUJQ37s[dS-+JHT3X;"
+                },
+                {
+                  "text": "TYPE",
+                  "id": "}.S6Np{AH2P3Jvom4E,N"
+                },
+                {
+                  "text": "VALUE",
+                  "id": "x/ub%Xxs[t(hL3$sIC$!"
+                }
+              ]
+            }
+          ]
+        },
+        "fields": {
+          "BEFORE": "[",
+          "FIELDS": "TT}Ya7wY2,N^LaTYec|x",
+          "AFTER": "]"
+        }
+      },
+      {
+        "type": "generate_statements_token",
+        "id": "#1Q[|iMVlA3ka5]msmNI",
+        "x": 109,
+        "y": 248,
+        "extraState": {
+          "dropdowns": [
+            {
+              "field": "STATEMENTS",
+              "options": [
+                {
+                  "text": "CODE",
+                  "id": "Q0l;{}_yD/5d+`whl((%"
+                },
+                {
+                  "text": "CODE",
+                  "id": "hNV`zgbU3Re8Xc,Awk~("
+                },
+                {
+                  "text": "TOKEN",
+                  "id": "Yp{6h){dh,6i)T`iu;Cr"
+                }
+              ]
+            }
+          ]
+        },
+        "fields": {
+          "INDENT": true,
+          "BEFORE": "[",
+          "STATEMENTS": "Q0l;{}_yD/5d+`whl((%",
+          "SEP": ",",
+          "SEP_ON_LAST": false,
+          "AFTER": "]"
         }
       }
     ]

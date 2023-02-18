@@ -37,6 +37,10 @@ var toolbox = {
     },
     {
       "kind": "block",
+      "type": "generate_field_value_token"
+    },
+    {
+      "kind": "block",
       "type": "generate_parent_field_value"
     },
     {
@@ -45,11 +49,19 @@ var toolbox = {
     },
     {
       "kind": "block",
+      "type": "generate_field_text_token"
+    },
+    {
+      "kind": "block",
       "type": "generate_statements2"
     },
     {
       "kind": "block",
       "type": "generate_statements3"
+    },
+    {
+      "kind": "block",
+      "type": "generate_statements_token"
     },
     {
       "kind": "block",
