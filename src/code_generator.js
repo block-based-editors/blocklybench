@@ -190,6 +190,56 @@ javascriptGenerator['generate_field_value2'] = function(block) {
   return code;
 };
 
+javascriptGenerator['generate_field_value_token'] = function(block) {
+
+  var dropdown_fields = block.getField('FIELDS');
+  var code = '' 
+  code += "code += '" + block.getFieldValue('BEFORE') + "';\n"
+  code += "var field = block.getField('" + dropdown_fields.getText() +"');\n"
+  code += "if (field.getText()) {\n"
+  code += "  code += field.getText();\n"
+  code += "} else {\n"
+  code += "  code += field.getValue();\n"
+  code += "}\n"
+  code += "code += '" + block.getFieldValue('AFTER') + "';\n"
+  code += "var surround_block = block.getSurroundParent();\n"
+  code += "if (surround_block && surround_block.data && surround_block.data.seperator) {\n"
+  code += "  if (surround_block.data.last_seperator || block.getNextBlock()) {\n"
+  code += "    code += surround_block.data.seperator;\n"
+  code += "  }\n"
+  code += "}\n"
+  return code;
+};
+
+
+javascriptGenerator['generate_statements_token'] = function(block) {
+  var statements_field = block.getField('STATEMENTS');
+  var ident = block.getFieldValue('INDENT');
+  var statements = statements_field.getText();
+  
+  var language = block.getSurroundParent().getFieldValue('LANGUAGE')
+  var code = ''
+  // block.data is filled here and used in the generate_field_value_token, etc blocks
+  // so before the statements are generated
+  code += "block.data = block.data || {};\n"
+  code += "block.data.seperator = '" + block.getFieldValue('SEP') + "';\n"
+  var sep_on_last = block.getFieldValue('SEP_ON_LAST') == 'TRUE';
+  code += "block.data.last_seperator = " + sep_on_last +";\n"
+
+  code += "code += '" + block.getFieldValue('BEFORE') + "';\n"
+  if (ident=='FALSE')
+  {
+    code += "var targetBlock = block.getInputTargetBlock('" + statements + "');\n"
+    code += "code += Blockly." + language + ".blockToCode(targetBlock);\n"
+  }
+  else
+  {
+    code += "code += Blockly." + language + ".statementToCode(block, '" + statements +"');\n"
+  }
+  code += "code += '" + block.getFieldValue('AFTER') + "';\n"
+  return code;
+};
+
 javascriptGenerator['generate_statements3'] = function(block) {
   var statements_field = block.getField('STATEMENTS');
   var ident = block.getFieldValue('INDENT');
@@ -323,6 +373,28 @@ javascriptGenerator['generate_field_text'] = function(block) {
   }
   code += '"); code += field.getValue();';
 
+  return code;
+}
+
+javascriptGenerator['generate_field_text_token'] = function(block) {
+  var code ='';
+  code += "code += '" + block.getFieldValue('BEFORE') + "';\n"
+  code += 'var field = block.getField("';
+  var field = block.getField('FIELDS');
+  if (field.getText()) {
+    code += field.getText();
+  } else {
+    code += field.getValue();
+  }
+  code += '"); code += field.getValue();\n';
+  code += "code += '" + block.getFieldValue('AFTER') + "';\n"
+  
+  code += "var surround_block = block.getSurroundParent();\n"
+  code += "if (surround_block && surround_block.data && surround_block.data.seperator) {\n"
+  code += "  if (surround_block.data.last_seperator || block.getNextBlock()) {\n"
+  code += "    code += surround_block.data.seperator;\n"
+  code += "  }\n"
+  code += "}\n"
   return code;
 }
 ;

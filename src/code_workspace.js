@@ -125,7 +125,7 @@ CodeGen.init_code = function() {
        },
        {
          "kind": "block",
-         "type": "generate_field_value2"
+         "type": "generate_field_value_token"
        },
        {
          "kind": "block",
@@ -133,7 +133,7 @@ CodeGen.init_code = function() {
        },
        {
          "kind": "block",
-         "type": "generate_field_text"
+         "type": "generate_field_text_token"
        },
        {
          "kind": "block",
@@ -141,7 +141,7 @@ CodeGen.init_code = function() {
        },
        {
          "kind": "block",
-         "type": "generate_statements3"
+         "type": "generate_statements_token"
        },
        {
          "kind": "block",
