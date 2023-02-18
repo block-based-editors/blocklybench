@@ -230,7 +230,7 @@ javascriptGenerator['generate_field_value_token'] = function(block) {
 
 javascriptGenerator['generate_statements_token'] = function(block) {
   var statements_field = block.getField('STATEMENTS');
-  var ident = block.getFieldValue('INDENT');
+  var indent = block.getFieldValue('INDENT');
   var statements = statements_field.getText();
   
   var language = block.getSurroundParent().getFieldValue('LANGUAGE')
@@ -240,18 +240,19 @@ javascriptGenerator['generate_statements_token'] = function(block) {
   code += "block.data = block.data || {};\n"
   
   var seperator_on_last = block.getFieldValue('SEP_ON_LAST') == 'TRUE';
-  
-  code += "block.data.tokens = {};\n"
+  var indent_str = indent == 'TRUE';
+  code += "block.data.tokens = block.data.tokens || {};\n"
   code += "block.data.tokens['" + statements + "'] = {} ;\n"
   
   code += "block.data.tokens['" + statements + "'].before = '" + block.getFieldValue('BEFORE') + "';\n"
   code += "block.data.tokens['" + statements + "'].after = '" + block.getFieldValue('AFTER') + "';\n"
   code += "block.data.tokens['" + statements + "'].seperator = '" + block.getFieldValue('SEP') + "';\n"
   code += "block.data.tokens['" + statements + "'].seperator_on_last = " + seperator_on_last +";\n"
+  code += "block.data.tokens['" + statements + "'].indent = " + indent_str + ";\n"
 
 
   code += "code += '" + block.getFieldValue('BEFORE') + "';\n"
-  if (ident=='FALSE')
+  if (indent=='FALSE')
   {
     code += "var targetBlock = block.getInputTargetBlock('" + statements + "');\n"
     code += "code += Blockly." + language + ".blockToCode(targetBlock);\n"
