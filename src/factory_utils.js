@@ -574,7 +574,7 @@ FactoryUtils.getFieldsJs_ = function(block) {
         case 'field_checkbox':
           // Result: new Blockly.FieldCheckbox('TRUE'), 'CHECK'
           fields.push('new Blockly.FieldCheckbox(' +
-              JSON.stringify(block.getFieldValue('CHECKED')) +
+              JSON.stringify(block.getFieldValue('CHECKED')) + ', null, ' + comment +
                '), ' +
               JSON.stringify(block.getFieldValue('FIELDNAME')));
           break;
