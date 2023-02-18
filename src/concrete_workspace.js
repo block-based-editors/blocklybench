@@ -13,11 +13,12 @@ Concrete.concrete_workspace = null;
 
 function visit_block(json_block, oldValue, newValue)
 {
-
+  // make the change on this level
   if (json_block.type == oldValue)
   {
     json_block.type = newValue
   }
+  // depth first walking the tree of blocks
   if (json_block.next)
   {
     visit_block(json_block.next.block, oldValue, newValue)
@@ -43,11 +44,13 @@ function update_extra_state(json_block, oldValue, newValue)
 }
 function visit_field(json_block, block_type, oldValue, newValue)
 {
+  // make the change on this level
   if (json_block.type == block_type)
   {
     json_block.fields[newValue] = json_block.fields[oldValue]
     update_extra_state(json_block, oldValue, newValue)
   }
+  // walk the rest of the tree
   if (json_block.next)
   {
     visit_field(json_block.next.block, block_type, oldValue, newValue)
@@ -62,11 +65,13 @@ function visit_field(json_block, block_type, oldValue, newValue)
 
 function visit_input(json_block, block_type, oldValue, newValue)
 {
+  // make the change on this level
   if (json_block.type == block_type)
   {
     json_block.inputs[newValue] = json_block.inputs[oldValue]
     delete json_block.inputs[oldValue];
   }
+  // walk the rest of the tree
   if (json_block.next)
   {
     visit_input(json_block.next.block, block_type, oldValue, newValue)
@@ -108,7 +113,7 @@ Concrete.reload = function(event)
       else { // field
         if (event.name=="HUE" || event.name =="TYPE" || event.name == "TEXT")
         {
-          // ignore
+          // ignore only the representation changes, no serialization of the block
         }
         else
         {
