@@ -6,6 +6,7 @@ import * as Blockly from 'blockly';
 import FieldDate from "@blockly/field-date";
 import BlocklyStorage from './storage.js';
 import { WorkspaceSearch } from '@blockly/plugin-workspace-search';
+import { Block } from 'blockly';
 
 var Concrete = {}; // create a namespace
 
@@ -42,6 +43,19 @@ function update_extra_state(json_block, oldValue, newValue)
     }
   }
 }
+
+function fix_event_field(event, block_type, oldValue, newValue)
+{
+  var workspace = Blockly.Workspace.getById(event.workspaceId);
+  if (event.element=="field" && workspace.getBlockById(event.blockId).type == block_type)
+  {
+    if (event.name == oldValue)
+    {
+      event.name = newValue
+    }
+  }
+}
+
 function visit_field(json_block, block_type, oldValue, newValue)
 {
   // make the change on this level
@@ -62,14 +76,35 @@ function visit_field(json_block, block_type, oldValue, newValue)
     }
   }
 }
+function fix_event_input(event, block_type, oldValue, newValue)
+{
+  var workspace = Blockly.Workspace.getById(event.workspaceId);
+  var newParent = workspace.getBlockById(event.newParentId)
+  var oldParent = workspace.getBlockById(event.oldParentId)
+  if (oldParent?.type == block_type || newParent?.type == block_type)
+  {
+    if (event.newInputName == oldValue)
+    {
+      event.newInputName = newValue
+    }
+    if (event.oldInputName == oldValue)
+    {
+      event.oldInputName = newValue
+    }
+  }
+}
 
 function visit_input(json_block, block_type, oldValue, newValue)
 {
   // make the change on this level
   if (json_block.type == block_type)
   {
-    json_block.inputs[newValue] = json_block.inputs[oldValue]
-    delete json_block.inputs[oldValue];
+    if (json_block.inputs && json_block.inputs[oldValue]) // only if this input is connected
+    {
+      json_block.inputs[newValue] = json_block.inputs[oldValue]
+      delete json_block.inputs[oldValue];
+    }
+    
   }
   // walk the rest of the tree
   if (json_block.next)
@@ -89,6 +124,9 @@ function visit_input(json_block, block_type, oldValue, newValue)
 Concrete.reload = function(event)
 {
     var json_text = Blockly.serialization.workspaces.save(Concrete.concrete_workspace);
+    var undo_stack = Concrete.concrete_workspace.getUndoStack();
+    var redo_stack = Concrete.concrete_workspace.getRedoStack();
+
     /* rename the fields */
     if (event.element=="field")
     {
@@ -99,7 +137,17 @@ Concrete.reload = function(event)
         for (var i=0; i< json_text.blocks.blocks.length; i++)
         {
           visit_block(json_text.blocks.blocks[i], event.oldValue, event.newValue);
-        } 
+        }
+
+        for (var i=0; i< undo_stack.length; i++)
+        {
+          fix_event_type(undo_stack[i], event.oldValue, event.newValue);
+        }
+        for (var i=0; i< redo_stack.length; i++)
+        {
+          fix_event_type(redo_stack[i], event.oldValue, event.newValue);
+        }
+
       }
       else if (field_block.type =="input_statement") 
       {
@@ -108,6 +156,14 @@ Concrete.reload = function(event)
         for (var i=0; i< json_text.blocks.blocks.length; i++)
         {
           visit_input(json_text.blocks.blocks[i], block_type, event.oldValue, event.newValue)
+        }
+        for (var i=0; i< undo_stack.length; i++)
+        {
+          fix_event_input(undo_stack[i], block_type, event.oldValue, event.newValue);
+        }
+        for (var i=0; i< redo_stack.length; i++)
+        {
+          fix_event_input(redo_stack[i], block_type, event.oldValue, event.newValue);
         }
       }
       else { // field
@@ -123,12 +179,45 @@ Concrete.reload = function(event)
           {
             visit_field(json_text.blocks.blocks[i], block_type, event.oldValue, event.newValue)
           }
+          for (var i=0; i< undo_stack.length; i++)
+          {
+            fix_event_field(undo_stack[i], block_type, event.oldValue, event.newValue);
+          }
+          for (var i=0; i< redo_stack.length; i++)
+          {
+            fix_event_field(redo_stack[i], block_type, event.oldValue, event.newValue);
+          }
         }
       }
     }
-    Concrete.concrete_workspace.clear()
+    
+    Blockly.Events.disable();
+    Concrete.concrete_workspace.clear()  // generates delete events otherwise
+    Blockly.Events.enable();
     Blockly.serialization.workspaces.load(json_text, Concrete.concrete_workspace)
+
 }
+
+function fix_event_type(stack_event, old_type, new_type)
+{
+  if (stack_event.type == "create" )
+  {
+    if (stack_event.json.type == old_type)
+    {
+      stack_event.json.type = new_type
+    }
+  }
+  if (stack_event.type == "delete") 
+  {
+    if (stack_event.oldJson.type == old_type)
+    {
+      stack_event.oldJson.type = new_type
+    }
+    
+  }
+}
+
+
 
 Concrete.myConcreteCodeGeneration = function (event) {
   var language = document.getElementById('language').value
@@ -294,7 +383,7 @@ Concrete.init_concrete = function(toolbox)
     {  
       BlocklyStorage.restoreBlocks(this.concrete_workspace, 'concrete');
     } catch (error) {
-      console.error(error);
+      console.log(error);
     }
 
     BlocklyStorage.backupOnUnload(this.concrete_workspace, 'concrete');
