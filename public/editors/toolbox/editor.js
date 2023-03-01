@@ -57,6 +57,10 @@ var toolbox = {
       "kind": "block",
       "type": "toolbox_variable_category"
     },
+    {
+      "kind": "block",
+      "type": "toolbox_functions_category"
+    },
    ]
   },
 

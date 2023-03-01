@@ -146,11 +146,16 @@ Toolbox.init_toolbox = function() {
       {
         "kind": "block",
         "type": "toolbox_label"
-        },
-        {
+      },
+      {
        "kind": "block",
        "type": "toolbox_variable_category"
       },
+      {
+        "kind": "block",
+        "type": "toolbox_functions_category"
+       },
+       
        ]
       },
      ]
