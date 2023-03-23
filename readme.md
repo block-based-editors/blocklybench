@@ -6,6 +6,9 @@
 ## Live version
 https://motar-242711.ew.r.appspot.com/
 
+## Examples
+https://motar-242711.ew.r.appspot.com/editors/sequence/index.html Sequence editor
+
 ## How to run
 
 ```
