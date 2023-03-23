@@ -9,6 +9,9 @@ https://motar-242711.ew.r.appspot.com/
 ## Examples
 https://motar-242711.ew.r.appspot.com/editors/sequence/index.html Sequence editor
 
+
+https://motar-242711.ew.r.appspot.com/editors/svox/playground.html
+
 ## How to run
 
 ```
