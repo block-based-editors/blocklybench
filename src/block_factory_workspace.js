@@ -651,7 +651,7 @@ function saveDirectFiles()
     const butDir = document.getElementById('save_direct');
     butDir.addEventListener('click', async () => {
     var editor = get_editor()
-    var language = document.getElementById('language').value;
+    var language = get_language();
     
     var dirHandle = await get('file');
     if (dirHandle) {
@@ -690,12 +690,21 @@ function saveDirectFiles()
     })
 }
 
+function get_language() {
+  var language = document.getElementById('language').value;
+  if (language==='')
+  {
+    language='text' // add some language if empty so code generator works
+  }
+  return language
+}
+
 function loadDirectFiles()
 {
     const butDir = document.getElementById('load_direct');
     butDir.addEventListener('click', async () => {
-  var editor = get_editor()
-    var language = document.getElementById('language').value;
+    var editor = get_editor()
+    var language = get_language()
     
     var dirHandle = await get('file');
     if (dirHandle) {
@@ -778,7 +787,8 @@ function get_from_url(param)
 function saveZip()
 {
   var editor = get_editor()
-  var language = document.getElementById('language').value;
+  var language = get_language();
+
 
   var zip = new JSZip();
     //zip.file("develop/factory.json", get_json(factory_workspace));
