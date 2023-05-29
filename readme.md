@@ -8,6 +8,7 @@ https://motar-242711.ew.r.appspot.com/
 
 ## Examples
 https://motar-242711.ew.r.appspot.com/editors/sequence/index.html Sequence editor
+https://motar-242711.ew.r.appspot.com/editors/blockly_docs/editor.html Blockly block method documentation editor
 
 
 https://motar-242711.ew.r.appspot.com/editors/svox/playground.html
