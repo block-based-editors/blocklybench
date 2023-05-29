@@ -1,0 +1,378 @@
+{
+  "Y[vyHW~Tc8b;99;16|h#": {
+    "type": "toolbox_blocks",
+    "id": "Y[vyHW~Tc8b;99;16|h#",
+    "x": 52,
+    "y": 21,
+    "extraState": {
+      "dropdowns": []
+    },
+    "inputs": {
+      "LIST": {
+        "block": {
+          "id": "Vs06Ri-/,KLaQ;+3sc-]"
+        }
+      }
+    }
+  },
+  "Vs06Ri-/,KLaQ;+3sc-]": {
+    "type": "toolbox_block",
+    "id": "Vs06Ri-/,KLaQ;+3sc-]",
+    "x": 73,
+    "y": 48,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "block_type",
+              "id": "FW(DziZPj6+.-X`K1?RU"
+            },
+            {
+              "text": "input",
+              "id": "zKlu`mIK0^QC(c:k;E=z"
+            },
+            {
+              "text": "not_included",
+              "id": "$k!/8GY95%ZUX`U[tJaK"
+            },
+            {
+              "text": "other",
+              "id": "sOr|nOI]gN$l([?d`R=*"
+            },
+            {
+              "text": "other2",
+              "id": "4UBA;K)Fx5Z~Uoxj50vh"
+            },
+            {
+              "text": "surround",
+              "id": ",ctMKv~h3|)C5T?A^yb2"
+            },
+            {
+              "text": "value",
+              "id": "sz=PSD/L/Izocku~Dd,!"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "TYPE": "FW(DziZPj6+.-X`K1?RU"
+    },
+    "next": {
+      "block": {
+        "id": "tv{qZiN%p?aeIO;/ci5A"
+      }
+    }
+  },
+  "tv{qZiN%p?aeIO;/ci5A": {
+    "type": "toolbox_block",
+    "id": "tv{qZiN%p?aeIO;/ci5A",
+    "x": 73,
+    "y": 75,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "block_type",
+              "id": "FW(DziZPj6+.-X`K1?RU"
+            },
+            {
+              "text": "input",
+              "id": "zKlu`mIK0^QC(c:k;E=z"
+            },
+            {
+              "text": "not_included",
+              "id": "$k!/8GY95%ZUX`U[tJaK"
+            },
+            {
+              "text": "other",
+              "id": "sOr|nOI]gN$l([?d`R=*"
+            },
+            {
+              "text": "other2",
+              "id": "4UBA;K)Fx5Z~Uoxj50vh"
+            },
+            {
+              "text": "surround",
+              "id": ",ctMKv~h3|)C5T?A^yb2"
+            },
+            {
+              "text": "value",
+              "id": "sz=PSD/L/Izocku~Dd,!"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "TYPE": "sz=PSD/L/Izocku~Dd,!"
+    },
+    "next": {
+      "block": {
+        "id": "w_BY[%.]5/i*?WdJ%F8{"
+      }
+    }
+  },
+  "w_BY[%.]5/i*?WdJ%F8{": {
+    "type": "toolbox_block",
+    "id": "w_BY[%.]5/i*?WdJ%F8{",
+    "x": 73,
+    "y": 102,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "block_type",
+              "id": "FW(DziZPj6+.-X`K1?RU"
+            },
+            {
+              "text": "input",
+              "id": "zKlu`mIK0^QC(c:k;E=z"
+            },
+            {
+              "text": "not_included",
+              "id": "$k!/8GY95%ZUX`U[tJaK"
+            },
+            {
+              "text": "other",
+              "id": "sOr|nOI]gN$l([?d`R=*"
+            },
+            {
+              "text": "other2",
+              "id": "4UBA;K)Fx5Z~Uoxj50vh"
+            },
+            {
+              "text": "surround",
+              "id": ",ctMKv~h3|)C5T?A^yb2"
+            },
+            {
+              "text": "value",
+              "id": "sz=PSD/L/Izocku~Dd,!"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "TYPE": "sOr|nOI]gN$l([?d`R=*"
+    },
+    "next": {
+      "block": {
+        "id": "elEMUKmxfp-ll;JO~;kS"
+      }
+    }
+  },
+  "elEMUKmxfp-ll;JO~;kS": {
+    "type": "toolbox_block",
+    "id": "elEMUKmxfp-ll;JO~;kS",
+    "x": 73,
+    "y": 129,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "block_type",
+              "id": "FW(DziZPj6+.-X`K1?RU"
+            },
+            {
+              "text": "input",
+              "id": "zKlu`mIK0^QC(c:k;E=z"
+            },
+            {
+              "text": "not_included",
+              "id": "$k!/8GY95%ZUX`U[tJaK"
+            },
+            {
+              "text": "other",
+              "id": "sOr|nOI]gN$l([?d`R=*"
+            },
+            {
+              "text": "other2",
+              "id": "4UBA;K)Fx5Z~Uoxj50vh"
+            },
+            {
+              "text": "surround",
+              "id": ",ctMKv~h3|)C5T?A^yb2"
+            },
+            {
+              "text": "value",
+              "id": "sz=PSD/L/Izocku~Dd,!"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "TYPE": "$k!/8GY95%ZUX`U[tJaK"
+    },
+    "next": {
+      "block": {
+        "id": "`cL.CZS`qeEMa/5G]Ym1"
+      }
+    }
+  },
+  "`cL.CZS`qeEMa/5G]Ym1": {
+    "type": "toolbox_block",
+    "id": "`cL.CZS`qeEMa/5G]Ym1",
+    "x": 73,
+    "y": 156,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "block_type",
+              "id": "FW(DziZPj6+.-X`K1?RU"
+            },
+            {
+              "text": "input",
+              "id": "zKlu`mIK0^QC(c:k;E=z"
+            },
+            {
+              "text": "not_included",
+              "id": "$k!/8GY95%ZUX`U[tJaK"
+            },
+            {
+              "text": "other",
+              "id": "sOr|nOI]gN$l([?d`R=*"
+            },
+            {
+              "text": "other2",
+              "id": "4UBA;K)Fx5Z~Uoxj50vh"
+            },
+            {
+              "text": "surround",
+              "id": ",ctMKv~h3|)C5T?A^yb2"
+            },
+            {
+              "text": "value",
+              "id": "sz=PSD/L/Izocku~Dd,!"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "TYPE": ",ctMKv~h3|)C5T?A^yb2"
+    },
+    "next": {
+      "block": {
+        "id": "J0A6x[rf+oYgbJBe%TfW"
+      }
+    }
+  },
+  "J0A6x[rf+oYgbJBe%TfW": {
+    "type": "toolbox_block",
+    "id": "J0A6x[rf+oYgbJBe%TfW",
+    "x": 73,
+    "y": 183,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "block_type",
+              "id": "FW(DziZPj6+.-X`K1?RU"
+            },
+            {
+              "text": "input",
+              "id": "zKlu`mIK0^QC(c:k;E=z"
+            },
+            {
+              "text": "not_included",
+              "id": "$k!/8GY95%ZUX`U[tJaK"
+            },
+            {
+              "text": "other",
+              "id": "sOr|nOI]gN$l([?d`R=*"
+            },
+            {
+              "text": "other2",
+              "id": "4UBA;K)Fx5Z~Uoxj50vh"
+            },
+            {
+              "text": "surround",
+              "id": ",ctMKv~h3|)C5T?A^yb2"
+            },
+            {
+              "text": "value",
+              "id": "sz=PSD/L/Izocku~Dd,!"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "TYPE": "4UBA;K)Fx5Z~Uoxj50vh"
+    },
+    "next": {
+      "block": {
+        "id": "2M60ck+-vqL8Q8ym/GjQ"
+      }
+    }
+  },
+  "2M60ck+-vqL8Q8ym/GjQ": {
+    "type": "toolbox_block",
+    "id": "2M60ck+-vqL8Q8ym/GjQ",
+    "x": 73,
+    "y": 210,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "block_type",
+              "id": "FW(DziZPj6+.-X`K1?RU"
+            },
+            {
+              "text": "input",
+              "id": "zKlu`mIK0^QC(c:k;E=z"
+            },
+            {
+              "text": "not_included",
+              "id": "$k!/8GY95%ZUX`U[tJaK"
+            },
+            {
+              "text": "other",
+              "id": "sOr|nOI]gN$l([?d`R=*"
+            },
+            {
+              "text": "other2",
+              "id": "4UBA;K)Fx5Z~Uoxj50vh"
+            },
+            {
+              "text": "surround",
+              "id": ",ctMKv~h3|)C5T?A^yb2"
+            },
+            {
+              "text": "value",
+              "id": "sz=PSD/L/Izocku~Dd,!"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "TYPE": "zKlu`mIK0^QC(c:k;E=z"
+    }
+  },
+  "top_blocks": [
+    "Y[vyHW~Tc8b;99;16|h#"
+  ],
+  "mergeable": true,
+  "editor": {
+    "editor": "factory/Toolbox",
+    "version": 1
+  }
+}

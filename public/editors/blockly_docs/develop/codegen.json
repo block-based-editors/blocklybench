@@ -1,0 +1,76 @@
+{
+  "#dQd#`_?M-Qn=mQGJKN`": {
+    "type": "generate_code",
+    "id": "#dQd#`_?M-Qn=mQGJKN`",
+    "x": 65,
+    "y": 43,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "TYPE",
+          "options": [
+            {
+              "text": "block_type",
+              "id": "FW(DziZPj6+.-X`K1?RU"
+            },
+            {
+              "text": "input",
+              "id": "zKlu`mIK0^QC(c:k;E=z"
+            },
+            {
+              "text": "not_included",
+              "id": "$k!/8GY95%ZUX`U[tJaK"
+            },
+            {
+              "text": "other",
+              "id": "sOr|nOI]gN$l([?d`R=*"
+            },
+            {
+              "text": "other2",
+              "id": "4UBA;K)Fx5Z~Uoxj50vh"
+            },
+            {
+              "text": "surround",
+              "id": ",ctMKv~h3|)C5T?A^yb2"
+            },
+            {
+              "text": "value",
+              "id": "sz=PSD/L/Izocku~Dd,!"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "LANGUAGE": "YAML",
+      "TYPE": "FW(DziZPj6+.-X`K1?RU"
+    },
+    "inputs": {
+      "CODE": {
+        "block": {
+          "id": "3[I$x=fR2kE%|cnA6Jz8"
+        }
+      }
+    }
+  },
+  "3[I$x=fR2kE%|cnA6Jz8": {
+    "type": "generate_token",
+    "id": "3[I$x=fR2kE%|cnA6Jz8",
+    "x": 86,
+    "y": 70,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TOKEN": "...;\\n"
+    }
+  },
+  "top_blocks": [
+    "#dQd#`_?M-Qn=mQGJKN`"
+  ],
+  "mergeable": true,
+  "editor": {
+    "editor": "factory/Code",
+    "version": 1
+  }
+}
