@@ -6,7 +6,7 @@
 ## Live version
 https://motar-242711.ew.r.appspot.com/
 
-## Examples
+## Examples of saved editors created with Blocklybench
 https://motar-242711.ew.r.appspot.com/editors/sequence/index.html Sequence editor
 
 https://motar-242711.ew.r.appspot.com/editors/blockly_docs/editor.html  
@@ -14,6 +14,7 @@ Blockly block method documentation editor open [Example](https://raw.githubuserc
 
 
 https://motar-242711.ew.r.appspot.com/editors/svox/playground.html
+
 Load any of the following examples: [Vuurtoren](https://motar-242711.ew.r.appspot.com/editors/svox/develop/vuurtoren%20ijs.json) or [Apple](https://motar-242711.ew.r.appspot.com/editors/svox/develop/appel.json) or [Tree](https://motar-242711.ew.r.appspot.com/editors/svox/develop/boom.json)
 
 ## How to run
