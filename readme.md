@@ -4,7 +4,7 @@
 [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 ## Published Article 
-https://maveme.github.io/publications/2022-blocklybench/
+https://maveme.github.io/publications/2022-blocklybench/ and [presentation on YouTube](https://www.youtube.com/watch?v=dqRwtFQmOUo)
 
 ## Live version
 https://motar-242711.ew.r.appspot.com/
