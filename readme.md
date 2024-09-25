@@ -3,6 +3,9 @@
 [![DOI](https://zenodo.org/badge/523855099.svg)](https://zenodo.org/badge/latestdoi/523855099)
 [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
+## Published Article 
+https://maveme.github.io/publications/2022-blocklybench/
+
 ## Live version
 https://motar-242711.ew.r.appspot.com/
 
