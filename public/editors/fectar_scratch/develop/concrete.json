@@ -1,0 +1,284 @@
+{
+  "t)a_(K8C,0mZHZgY;nMZ": {
+    "type": "start",
+    "id": "t)a_(K8C,0mZHZgY;nMZ",
+    "x": 0,
+    "y": 0,
+    "data": {
+      "tokens": {
+        "STATEMENTS": {
+          "before": "",
+          "after": "",
+          "seperator": "",
+          "seperator_on_last": false,
+          "indent": false
+        }
+      }
+    },
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TITLE": "Move and say",
+      "DESC": "Move and say the position every time the spot is clicked"
+    },
+    "inputs": {
+      "STATEMENTS": {
+        "block": {
+          "id": "2488I?ZhryVA)H)y8+`u"
+        }
+      }
+    }
+  },
+  "2488I?ZhryVA)H)y8+`u": {
+    "type": "sayText",
+    "id": "2488I?ZhryVA)H)y8+`u",
+    "x": 21,
+    "y": 55,
+    "extraState": {
+      "dropdowns": []
+    },
+    "next": {
+      "block": {
+        "id": "5331Z=[suo,QGd([RvMa"
+      }
+    }
+  },
+  "5331Z=[suo,QGd([RvMa": {
+    "type": "onClick",
+    "id": "5331Z=[suo,QGd([RvMa",
+    "x": 21,
+    "y": 84,
+    "data": {
+      "tokens": {
+        "STATEMENTS": {
+          "before": "",
+          "after": "",
+          "seperator": "",
+          "seperator_on_last": false,
+          "indent": true
+        }
+      }
+    },
+    "extraState": {
+      "dropdowns": []
+    },
+    "inputs": {
+      "STATEMENTS": {
+        "block": {
+          "id": "|Qf%fX+(A#vI:RR$fFZ}"
+        }
+      }
+    }
+  },
+  "|Qf%fX+(A#vI:RR$fFZ}": {
+    "type": "move",
+    "id": "|Qf%fX+(A#vI:RR$fFZ}",
+    "x": 42,
+    "y": 113,
+    "extraState": {
+      "dropdowns": []
+    },
+    "inputs": {
+      "DISTANCE": {
+        "block": {
+          "id": "!OZCZ)v;lx[]8%8^k=/0"
+        }
+      },
+      "DIRECTION": {
+        "block": {
+          "id": "2.:msL#GgL;EX9IoYnmr"
+        }
+      }
+    },
+    "next": {
+      "block": {
+        "id": "Thl1ls|.ksnFb4%V,OTv"
+      }
+    }
+  },
+  "!OZCZ)v;lx[]8%8^k=/0": {
+    "type": "number",
+    "id": "!OZCZ)v;lx[]8%8^k=/0",
+    "x": 125,
+    "y": 119,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "NUM": 50
+    }
+  },
+  "2.:msL#GgL;EX9IoYnmr": {
+    "type": "presetDirections",
+    "id": "2.:msL#GgL;EX9IoYnmr",
+    "x": 260,
+    "y": 119,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "PRESET",
+          "options": [
+            {
+              "text": "random",
+              "id": "new Vector3(Math.random(), Math.random(), Math.random()).normalized"
+            },
+            {
+              "text": "camera",
+              "id": "Space.camera.forward"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "PRESET": "new Vector3(Math.random(), Math.random(), Math.random()).normalized"
+    }
+  },
+  "Thl1ls|.ksnFb4%V,OTv": {
+    "type": "saySeconds",
+    "id": "Thl1ls|.ksnFb4%V,OTv",
+    "x": 42,
+    "y": 153,
+    "extraState": {
+      "dropdowns": []
+    },
+    "inputs": {
+      "SAY": {
+        "block": {
+          "id": "uz`z~RCd|Q0;k;aIJnz4"
+        }
+      },
+      "SAYSECONDS": {
+        "block": {
+          "id": "h,*L:T?+hP)}QHm6L(H^"
+        }
+      }
+    }
+  },
+  "h,*L:T?+hP)}QHm6L(H^": {
+    "type": "number",
+    "id": "h,*L:T?+hP)}QHm6L(H^",
+    "x": 469,
+    "y": 159,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "NUM": 2
+    }
+  },
+  "uz`z~RCd|Q0;k;aIJnz4": {
+    "type": "concat",
+    "id": "uz`z~RCd|Q0;k;aIJnz4",
+    "x": 112,
+    "y": 159,
+    "extraState": {
+      "dropdowns": []
+    },
+    "inputs": {
+      "A": {
+        "block": {
+          "id": "TO[xwQf2T_CvS8yw(P6f"
+        }
+      },
+      "B": {
+        "block": {
+          "id": "WscpiIE7eETNO?KjF#v8"
+        }
+      }
+    }
+  },
+  "TO[xwQf2T_CvS8yw(P6f": {
+    "type": "string",
+    "id": "TO[xwQf2T_CvS8yw(P6f",
+    "x": 129,
+    "y": 165,
+    "extraState": {
+      "dropdowns": []
+    },
+    "fields": {
+      "TEXT": "I'm at "
+    }
+  },
+  "WscpiIE7eETNO?KjF#v8": {
+    "type": "varText",
+    "id": "WscpiIE7eETNO?KjF#v8",
+    "x": 239,
+    "y": 165,
+    "extraState": {
+      "dropdowns": [
+        {
+          "field": "VAR",
+          "options": [
+            {
+              "text": "this",
+              "id": "spot"
+            },
+            {
+              "text": "program",
+              "id": "globalSpot"
+            }
+          ]
+        },
+        {
+          "field": "VAL",
+          "options": [
+            {
+              "text": "position",
+              "id": "position.toString()"
+            },
+            {
+              "text": "rotation",
+              "id": "rotation.toString()"
+            },
+            {
+              "text": "Euler rotation",
+              "id": "rotationEuler.toString()"
+            },
+            {
+              "text": "ID",
+              "id": "id"
+            },
+            {
+              "text": "name",
+              "id": "name"
+            },
+            {
+              "text": "scale",
+              "id": "scale.toString()"
+            },
+            {
+              "text": "type",
+              "id": "type"
+            },
+            {
+              "text": "is locked to camera",
+              "id": "isAlwaysFacingCamera"
+            },
+            {
+              "text": "is paused",
+              "id": "isPausing"
+            },
+            {
+              "text": "is visible",
+              "id": "isVisible"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "VAR": "spot",
+      "VAL": "position.toString()"
+    }
+  },
+  "top_blocks": [
+    "t)a_(K8C,0mZHZgY;nMZ"
+  ],
+  "mergeable": true,
+  "editor": {
+    "name": "fectar",
+    "version": 1
+  }
+}
