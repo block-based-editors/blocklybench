@@ -22,9 +22,12 @@
     "build": "webpack"
   },
   "devDependencies": {
-    "copy-webpack-plugin": "^9.0.1",
+    "copy-webpack-plugin": "^14.0.0",
     "webpack": "^5.51.1",
     "webpack-cli": "^4.8.0",
-    "webpack-dev-server": "^4.0.0"
+    "webpack-dev-server": "^5.2.5"
+  },
+  "overrides": {
+    "follow-redirects": ">=1.15.6"
   }
 }
