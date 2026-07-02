@@ -53,5 +53,9 @@ module.exports = {
     ],
     devServer: {
         port: 3000
-    }
+    },
+    // Custom generators (Blockly.YAML, Blockly.<language>) are attached to
+    // the Blockly namespace object at runtime; webpack cannot know these
+    // exports and would emit a warning for every access.
+    ignoreWarnings: [/was not found in 'blockly'/]
 };

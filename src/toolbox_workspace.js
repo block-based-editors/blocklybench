@@ -64,7 +64,7 @@ Toolbox.myToolboxGeneration = function (event) {
 
      var toolbox_json = Blockly.utils.toolbox.convertToolboxDefToJson(toolbox)
      if (Blockly.utils.toolbox.hasCategories(toolbox_json)) {
-       if (!Concrete.concrete_workspace.toolbox_) // current workspace does not have categories
+       if (!Concrete.concrete_workspace.getToolbox()) // current workspace does not have categories
        {
        BlocklyStorage.backupBlocks_(Concrete.concrete_workspace, 'concrete');
        Concrete.concrete_workspace.dispose()
@@ -72,7 +72,7 @@ Toolbox.myToolboxGeneration = function (event) {
        Concrete.init_concrete(toolbox);
        }
      } else {
-        if (!Concrete.concrete_workspace.flyout_) {
+        if (!Concrete.concrete_workspace.getFlyout()) {
        BlocklyStorage.backupBlocks_(Concrete.concrete_workspace, 'concrete');
        Concrete.concrete_workspace.dispose()
        Concrete.concrete_workspace = null
@@ -173,7 +173,7 @@ Toolbox.init_toolbox = function() {
     horizontalLayout : false, 
     toolboxPosition : 'start', 
     css : true, 
-    media : 'https://blockly-demo.appspot.com/static/media/', 
+    media : 'media/', 
     rtl : false, 
     scrollbars : true, 
     sounds : true, 

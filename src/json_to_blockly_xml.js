@@ -55,16 +55,16 @@ function xml_find(xmlElement, nodeName)
 
 function list_value_xml(value) {
   var ret = {}
-  var xml = Blockly.utils.xml.textToDomDocument('<block type="basic_list_value"><field name="VALUE">' + value + '</field><next></next></block>')
-  ret.block = xml.childNodes[0]
+  var xml = Blockly.utils.xml.textToDom('<block type="basic_list_value"><field name="VALUE">' + value + '</field><next></next></block>')
+  ret.block = xml
   ret.next = xml_find(ret.block, 'next')
   return ret
 }
 
 function dict_xml() {
   var ret = {}
-  var xml = Blockly.utils.xml.textToDomDocument('<block type="basic_dict"> <statement name="LIST"></statement><next></next></block>')
-  ret.block = xml.childNodes[0]
+  var xml = Blockly.utils.xml.textToDom('<block type="basic_dict"> <statement name="LIST"></statement><next></next></block>')
+  ret.block = xml
   ret.statements = xml_find(ret.block,'statement')
   ret.next = xml_find(ret.block, 'next')
   
@@ -73,8 +73,8 @@ function dict_xml() {
 
 function  list_xml() {
   var ret = {}
-  var xml = Blockly.utils.xml.textToDomDocument('<block type="basic_list"> <statement name="LIST"></statement><next></next></block>')
-  ret.block = xml.childNodes[0]
+  var xml = Blockly.utils.xml.textToDom('<block type="basic_list"> <statement name="LIST"></statement><next></next></block>')
+  ret.block = xml
   ret.statements = xml_find(ret.block,'statement')
   ret.next = xml_find(ret.block, 'next')
   return ret
@@ -83,8 +83,8 @@ function  list_xml() {
 function  key_list_xml(key) {
   var ret = {}
   var block_type = get_block_type(key,"basic_key_list")
-  var xml = Blockly.utils.xml.textToDomDocument('<block type="'+block_type+'"><field name="KEY">'+key+'</field><statement name="LIST"></statement><next></next></block>')
-  ret.block = xml.childNodes[0]
+  var xml = Blockly.utils.xml.textToDom('<block type="'+block_type+'"><field name="KEY">'+key+'</field><statement name="LIST"></statement><next></next></block>')
+  ret.block = xml
   ret.statements = xml_find(ret.block,'statement')
   ret.next = xml_find(ret.block, 'next')
   return ret
@@ -108,8 +108,8 @@ function  key_dict_xml(key, key_value_list) {
   // but if specifics need to be create the info is needed
   var block_type = get_block_type(key,"basic_key_dict")
   var ret = {}
-  var xml = Blockly.utils.xml.textToDomDocument('<block type="'+block_type+'"><field name="KEY">'+key+'</field><statement name="LIST"></statement><next></next></block>')
-  ret.block = xml.childNodes[0]
+  var xml = Blockly.utils.xml.textToDom('<block type="'+block_type+'"><field name="KEY">'+key+'</field><statement name="LIST"></statement><next></next></block>')
+  ret.block = xml
   ret.statements = xml_find(ret.block,'statement')
   ret.next = xml_find(ret.block, 'next')
   return ret
@@ -137,8 +137,8 @@ function  key_value_xml(key, value) {
   
   var block_type = get_block_type(key,"basic_key_value")
   var ret = {}
-  var xml = Blockly.utils.xml.textToDomDocument('<block type="'+block_type+'"><field name="KEY">'+key +'</field><field name="VALUE">'+ value +'</field><next></next></block>')
-  ret.block = xml.childNodes[0]
+  var xml = Blockly.utils.xml.textToDom('<block type="'+block_type+'"><field name="KEY">'+key +'</field><field name="VALUE">'+ value +'</field><next></next></block>')
+  ret.block = xml
   ret.next = xml_find(ret.block, 'next')
   return ret
 }
@@ -219,12 +219,12 @@ function  list_or_dict_to_xml(data, last_block) {
 
 JsonToBlocklyXML.load = function (data) {
 
-  var root = Blockly.utils.xml.textToDomDocument('<xml xmlns="https://developers.google.com/blockly/xml"></xml>')
+  var root = Blockly.utils.xml.textToDom('<xml xmlns="https://developers.google.com/blockly/xml"></xml>')
   
-  list_or_dict_to_xml(data, root.childNodes[0])
+  list_or_dict_to_xml(data, root)
   
   
-  return root.childNodes[0] // return the node instead of the document
+  return root // textToDom already returns the root element
 }
 
 

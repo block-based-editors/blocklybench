@@ -3,7 +3,7 @@
 'use strict';
 //var Blockly = require('blockly');
 import * as Blockly from 'blockly';
-import FieldDate from "@blockly/field-date";
+import { FieldDate } from "@blockly/field-date";
 import BlocklyStorage from './storage.js';
 import { WorkspaceSearch } from '@blockly/plugin-workspace-search';
 import { Block } from 'blockly';
@@ -225,7 +225,7 @@ Concrete.myConcreteCodeGeneration = function (event) {
   if (language)
   {
   try {
-    eval('Blockly = blockly__WEBPACK_IMPORTED_MODULE_0__; code = Blockly.'+language+'.workspaceToCode(Concrete.concrete_workspace);')
+    code = Blockly[language].workspaceToCode(Concrete.concrete_workspace);
   } catch (e) {
     //console.warn("Error while creating " + language + " code", e);
     code = "Error while creating " +language + " code:" + e
@@ -301,11 +301,13 @@ function highlight_blocks_of_type(search_workspace, block_type, field_name, bloc
       blocks_to_highlight.push(block)
     }
   }
-  search_workspace.workspaceSearch.unhighlightSearchGroup_(search_workspace.getAllBlocks());
-  search_workspace.workspaceSearch.highlightSearchGroup_(blocks_to_highlight);
+  search_workspace.workspaceSearch.unhighlightSearchGroup(search_workspace.getAllBlocks());
+  search_workspace.workspaceSearch.highlightSearchGroup(blocks_to_highlight);
   // highlight only works if the search group is applied first
-  search_workspace.workspaceSearch.highlightCurrentSelection_(blocks_to_highlight[0]);
-  search_workspace.workspaceSearch.scrollToVisible_(blocks_to_highlight[0]);
+  if (blocks_to_highlight[0]) {
+    search_workspace.workspaceSearch.highlightCurrentSelection(blocks_to_highlight[0]);
+    search_workspace.centerOnBlock(blocks_to_highlight[0].id);
+  }
   return blocks_to_highlight[0]
 }
 
@@ -321,20 +323,20 @@ Concrete.select_block_type = function(block)
   
   search_workspace = getWorkspaceByName('Toolbox')
   search_workspace.workspaceSearch.searchAndHighlight(block.type, false)
-  search_workspace.workspaceSearch.inputElement_.value = block.type
+  search_workspace.workspaceSearch.inputElement.value = block.type
 
 }
 
 function clear_selection()
 {
   var search_workspace = getWorkspaceByName('Factory')
-  search_workspace.workspaceSearch.unhighlightSearchGroup_(search_workspace.getAllBlocks());
+  search_workspace.workspaceSearch.unhighlightSearchGroup(search_workspace.getAllBlocks());
   
   search_workspace = getWorkspaceByName('Code')
-  search_workspace.workspaceSearch.unhighlightSearchGroup_(search_workspace.getAllBlocks());
+  search_workspace.workspaceSearch.unhighlightSearchGroup(search_workspace.getAllBlocks());
   
   search_workspace = getWorkspaceByName('Toolbox')
-  search_workspace.workspaceSearch.unhighlightSearchGroup_(search_workspace.getAllBlocks());
+  search_workspace.workspaceSearch.unhighlightSearchGroup(search_workspace.getAllBlocks());
   
 }
 
@@ -364,7 +366,7 @@ Concrete.init_concrete = function(toolbox)
       controls: true,
       },
     css : true, 
-    media : 'https://blockly-demo.appspot.com/static/media/', 
+    media : 'media/', 
     rtl : false, 
     scrollbars : true, 
     sounds : true, 

@@ -11,7 +11,7 @@ Blockly.YAML.scrub_ = function(block, code, opt_thisOnly) {
     return code + nextCode;
 }
 
-Blockly.YAML['toolbox_block'] = function(block) {
+Blockly.YAML.forBlock['toolbox_block'] = function(block) {
   var code ='';
   if (block.getSurroundParent() && block.getSurroundParent().type!="toolbox_block_json_input") {
   code += '{\n  "kind": "block",\n  "type": "';
@@ -54,7 +54,7 @@ Blockly.YAML.scrub_ = function(block, code, opt_thisOnly) {
     return code + nextCode;
 }
 
-Blockly.YAML['toolbox_block_all'] = function(block) {
+Blockly.YAML.forBlock['toolbox_block_all'] = function(block) {
   var code ='';
   if (block.getSurroundParent() && block.getSurroundParent().type!="toolbox_block_json_input") {
   code += '{\n  "kind": "block",\n  "type": "';
@@ -78,7 +78,7 @@ Blockly.YAML['toolbox_block_all'] = function(block) {
 
   // if this block is a 'value' then code + ORDER needs to be returned
   if(block.outputConnection) {
-    return [code, Blockly.JSON.ORDER_ATOMIC];
+    return [code, Blockly.YAML.ORDER_ATOMIC];
   }
   else // no value block
   {
@@ -88,7 +88,7 @@ Blockly.YAML['toolbox_block_all'] = function(block) {
 ;
 
 
-Blockly.YAML['toolbox_block_json'] = function(block) {
+Blockly.YAML.forBlock['toolbox_block_json'] = function(block) {
   var code ='';
   if (block.getSurroundParent() && block.getSurroundParent().type!="toolbox_block_json_input") {
   code += '{\n  "kind": "block",\n  "type": \"';
@@ -142,7 +142,7 @@ Blockly.YAML.scrub_ = function(block, code, opt_thisOnly) {
     return code + nextCode;
 }
 
-Blockly.YAML['toolbox_block_json_field'] = function(block) {
+Blockly.YAML.forBlock['toolbox_block_json_field'] = function(block) {
   var code ='';
   code += '  "';
   var field = block.getField('NAME');
@@ -181,7 +181,7 @@ Blockly.YAML.scrub_ = function(block, code, opt_thisOnly) {
     return code + nextCode;
 }
 
-Blockly.YAML['toolbox_block_json_input'] = function(block) {
+Blockly.YAML.forBlock['toolbox_block_json_input'] = function(block) {
   var code ='';
   code += '  "';
   var field = block.getField('NAME');
@@ -215,7 +215,7 @@ Blockly.YAML.scrub_ = function(block, code, opt_thisOnly) {
     return code + nextCode;
 }
 
-Blockly.YAML['toolbox_variable_category'] = function(block) {
+Blockly.YAML.forBlock['toolbox_variable_category'] = function(block) {
   var code ='';
   code += '{\n   "kind": "category",\n   "name": "Variables",\n   "custom": "VARIABLE"\n},';
 
@@ -240,13 +240,13 @@ Blockly.YAML.scrub_ = function(block, code, opt_thisOnly) {
     return code + nextCode;
 }
 
-Blockly.YAML['toolbox_functions_category'] = function(block) {
+Blockly.YAML.forBlock['toolbox_functions_category'] = function(block) {
   var code ='';
   code += '{\n   "kind": "category",\n   "name": "Functions",\n   "custom": "PROCEDURE"\n},';
 
   // if this block is a 'value' then code + ORDER needs to be returned
   if(block.outputConnection) {
-    return [code, Blockly.JSON.ORDER_ATOMIC];
+    return [code, Blockly.YAML.ORDER_ATOMIC];
   }
   else // no value block
   {
@@ -266,7 +266,7 @@ Blockly.YAML.scrub_ = function(block, code, opt_thisOnly) {
 }
 
 
-Blockly.YAML['toolbox_seperator'] = function(block) {
+Blockly.YAML.forBlock['toolbox_seperator'] = function(block) {
   var code ='';
   code += '{ \n  "kind": "sep",\n  "gap": "';
   var field = block.getField('GAP');
@@ -298,7 +298,7 @@ Blockly.YAML.scrub_ = function(block, code, opt_thisOnly) {
     return code + nextCode;
 }
 
-Blockly.YAML['toolbox_label'] = function(block) {
+Blockly.YAML.forBlock['toolbox_label'] = function(block) {
   var code ='';
   code += '{ \n  "kind": "label",\n  "text": "';
   var field = block.getField('TEXT');
@@ -330,7 +330,7 @@ Blockly.YAML.scrub_ = function(block, code, opt_thisOnly) {
     return code + nextCode;
 }
 
-Blockly.YAML['toolbox_blocks'] = function(block) {
+Blockly.YAML.forBlock['toolbox_blocks'] = function(block) {
   var code ='';
   code += '{\n';
   code += ' "kind": "flyoutToolbox",\n';
@@ -359,7 +359,7 @@ Blockly.YAML.scrub_ = function(block, code, opt_thisOnly) {
     return code + nextCode;
 }
 
-Blockly.YAML['toolbox_categories'] = function(block) {
+Blockly.YAML.forBlock['toolbox_categories'] = function(block) {
   var code ='';
   code += '{\n';
   code += ' "kind": "categoryToolbox",\n';
@@ -388,7 +388,7 @@ Blockly.YAML.scrub_ = function(block, code, opt_thisOnly) {
     return code + nextCode;
 }
 
-Blockly.YAML['toolbox_category'] = function(block) {
+Blockly.YAML.forBlock['toolbox_category'] = function(block) {
   var code ='';
   code += '{\n';
   code += ' "kind": "category",\n';
