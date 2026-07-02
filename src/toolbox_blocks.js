@@ -1,4 +1,5 @@
 import * as Blockly from 'blockly';
+import { FieldColour } from '@blockly/field-colour';
 
 Blockly.Blocks['toolbox_seperator'] = {
   init: function() {
@@ -1468,7 +1469,7 @@ Blockly.Blocks['toolbox_category'] = {
     this.appendDummyInput()
         .appendField("Category")
         .appendField(new Blockly.FieldTextInput("name", null, ), "NAME")
-        .appendField(new Blockly.FieldColour("#3366ff"), "COLOUR")
+        .appendField(new FieldColour("#3366ff"), "COLOUR")
         .appendField(new Blockly.FieldCheckbox("FALSE"), "EXPAND");
     this.appendStatementInput("LIST")
         .setCheck(["block", "category"]);

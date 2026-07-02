@@ -170,7 +170,7 @@ BlocklyStorage.monitorChanges_ = function(workspace) {
  */
 BlocklyStorage.loadXml_ = function(xml, workspace) {
   try {
-    xml = Blockly.Xml.textToDom(xml);
+    xml = Blockly.utils.xml.textToDom(xml);
   } catch (e) {
     BlocklyStorage.alert(BlocklyStorage.XML_ERROR + '\nXML: ' + xml);
     return;

@@ -4,7 +4,7 @@ import * as Blockly from 'blockly';
 import {javascriptGenerator} from 'blockly/javascript';
 
 
-javascriptGenerator['generate_statements'] = function(block) {
+javascriptGenerator.forBlock['generate_statements'] = function(block) {
   var statements = block.getFieldValue('STATEMENTS');
  
   var language = block.getSurroundParent().getFieldValue('LANGUAGE')
@@ -12,14 +12,14 @@ javascriptGenerator['generate_statements'] = function(block) {
   return code;
 };
 
-javascriptGenerator['generate_values'] = function(block) {
+javascriptGenerator.forBlock['generate_values'] = function(block) {
   var value = block.getFieldValue('VALUE');
   var language = block.getSurroundParent().getFieldValue('LANGUAGE')
   var code = "code += Blockly." + language + ".valueToCode(block, '" + value +"', Blockly." +language +".ORDER_ATOMIC);\n"
   return code;
 };
 
-javascriptGenerator['generate_values2'] = function(block) {
+javascriptGenerator.forBlock['generate_values2'] = function(block) {
   var field = block.getField('VALUE');
   var value = field.getText();
   var language = block.getSurroundParent().getFieldValue('LANGUAGE')
@@ -27,14 +27,14 @@ javascriptGenerator['generate_values2'] = function(block) {
   return code;
 };
 
-javascriptGenerator['generate_token'] = function(block) {
+javascriptGenerator.forBlock['generate_token'] = function(block) {
   var text_token = block.getFieldValue('TOKEN');
   
   var code = "code += '" + text_token + "';\n"
   return code;
 };
 
-javascriptGenerator['generate_token_if_next_block'] = function(block) {
+javascriptGenerator.forBlock['generate_token_if_next_block'] = function(block) {
   var code ='';
   code += 'if(block.getNextBlock()) {code += "';
   var field = block.getField('TOKEN');
@@ -49,7 +49,7 @@ javascriptGenerator['generate_token_if_next_block'] = function(block) {
 }
 ;
 
-javascriptGenerator['generate_token_if_length'] = function(block) {
+javascriptGenerator.forBlock['generate_token_if_length'] = function(block) {
   var code ='';
   code += 'var target = block.getInputTargetBlock("';
   var field = block.getField('STATEMENTS');
@@ -83,7 +83,7 @@ javascriptGenerator['generate_token_if_length'] = function(block) {
 
   // if this block is a 'value' then code + ORDER needs to be returned
   if(block.outputConnection) {
-    return [code, Blockly.Code.ORDER_ATOMIC];
+    return [code, javascriptGenerator.ORDER_ATOMIC];
   }
   else // no value block
   {
@@ -93,7 +93,7 @@ javascriptGenerator['generate_token_if_length'] = function(block) {
 ;
 
 
-javascriptGenerator['generate_code'] = function(block) {
+javascriptGenerator.forBlock['generate_code'] = function(block) {
   var text_language = block.getFieldValue('LANGUAGE');
 
   var text_type = block.getField('TYPE').getText();
@@ -114,7 +114,7 @@ javascriptGenerator['generate_code'] = function(block) {
 
 `;
 
-  code += "Blockly." + text_language + "['" + text_type + "'] = function(block) {\n"
+  code += "Blockly." + text_language + ".forBlock['" + text_type + "'] = function(block, generator) {\n"
   code += "  var code ='';\n"; 
 
   code += statements_name + "\n";
@@ -126,10 +126,10 @@ javascriptGenerator['generate_code'] = function(block) {
   return code;
 };
 
-javascriptGenerator['generate_code_input'] = javascriptGenerator['generate_code'] 
-javascriptGenerator['generate_code_variable'] = javascriptGenerator['generate_code'] 
+javascriptGenerator.forBlock['generate_code_input'] = javascriptGenerator.forBlock['generate_code'] 
+javascriptGenerator.forBlock['generate_code_variable'] = javascriptGenerator.forBlock['generate_code'] 
 
-javascriptGenerator['generate_field_value'] = function(block) {
+javascriptGenerator.forBlock['generate_field_value'] = function(block) {
 
   var dropdown_fields = block.getFieldValue('FIELDS');
   var code = '' 
@@ -143,7 +143,7 @@ javascriptGenerator['generate_field_value'] = function(block) {
   return code;
 };
 
-javascriptGenerator['generate_indent'] = function(block) {
+javascriptGenerator.forBlock['generate_indent'] = function(block) {
   var code ='';
   code += 'Blockly.';
   code += block.getSurroundParent().getFieldValue('LANGUAGE');
@@ -168,7 +168,7 @@ javascriptGenerator['generate_indent'] = function(block) {
 ;
 
 
-javascriptGenerator['generate_block_type'] = function(block) {
+javascriptGenerator.forBlock['generate_block_type'] = function(block) {
   var code ='';
   // should be code generation time
   code += "code += '" + block.getSurroundParent().getField('TYPE').getText() + "'\n"
@@ -177,7 +177,7 @@ javascriptGenerator['generate_block_type'] = function(block) {
 ;
 
 
-javascriptGenerator['generate_field_value2'] = function(block) {
+javascriptGenerator.forBlock['generate_field_value2'] = function(block) {
 
   var dropdown_fields = block.getField('FIELDS');
   var code = '' 
@@ -190,7 +190,7 @@ javascriptGenerator['generate_field_value2'] = function(block) {
   return code;
 };
 
-javascriptGenerator['generate_field_value_token'] = function(block) {
+javascriptGenerator.forBlock['generate_field_value_token'] = function(block) {
 
   var dropdown_fields = block.getField('FIELDS');
   var code = '' 
@@ -208,7 +208,7 @@ javascriptGenerator['generate_field_value_token'] = function(block) {
   code += "  for (var i=0; i< surround_parent.inputList.length; i++)\n" 
   code += "  {\n"
   code += "    var input = surround_parent.inputList[i];\n"
-  code += "    if (input.type===Blockly.inputTypes.STATEMENT) {\n"
+  code += "    if (input.type===Blockly.inputs.inputTypes.STATEMENT) {\n"
   code += "      var target = surround_parent.getInputTargetBlock(input.name);\n"
   code += "      if (target && target.getDescendants().includes(block)) {\n"
   code += "        input_name = input.name;\n"
@@ -228,7 +228,7 @@ javascriptGenerator['generate_field_value_token'] = function(block) {
 };
 
 
-javascriptGenerator['generate_statements_token'] = function(block) {
+javascriptGenerator.forBlock['generate_statements_token'] = function(block) {
   var statements_field = block.getField('STATEMENTS');
   var indent = block.getFieldValue('INDENT');
   var statements = statements_field.getText();
@@ -265,7 +265,7 @@ javascriptGenerator['generate_statements_token'] = function(block) {
   return code;
 };
 
-javascriptGenerator['generate_statements3'] = function(block) {
+javascriptGenerator.forBlock['generate_statements3'] = function(block) {
   var statements_field = block.getField('STATEMENTS');
   var ident = block.getFieldValue('INDENT');
   var statements = statements_field.getText();
@@ -284,7 +284,7 @@ javascriptGenerator['generate_statements3'] = function(block) {
   return code;
 };
 
-javascriptGenerator['generate_statements2'] = function(block) {
+javascriptGenerator.forBlock['generate_statements2'] = function(block) {
   var statements_field = block.getField('STATEMENTS');
   var statements = statements_field.getText();
  
@@ -296,13 +296,13 @@ javascriptGenerator['generate_statements2'] = function(block) {
 
 
 
-javascriptGenerator['generate_javascript'] = function(block) {
+javascriptGenerator.forBlock['generate_javascript'] = function(block) {
   var javascript = block.getFieldValue('JAVASCRIPT');
   var code = javascript + '\n';
   return code;
 };
 
-javascriptGenerator['generate_javascript_value'] = function(block) {
+javascriptGenerator.forBlock['generate_javascript_value'] = function(block) {
   var code ='';
   var field = block.getField('JAVASCRIPT');
   if (field.getText()) {
@@ -324,14 +324,14 @@ javascriptGenerator['generate_javascript_value'] = function(block) {
 
 
 
-javascriptGenerator['generate_comment'] = function(block) {
+javascriptGenerator.forBlock['generate_comment'] = function(block) {
   var code ='';
   code += 'if (block.getCommentText()) {\n code += block.getCommentText();\n}\n';
   return code;
 }
 ;
 
-javascriptGenerator['generate_list_index'] = function(block) {
+javascriptGenerator.forBlock['generate_list_index'] = function(block) {
   var code ='';
   code += 'code += block.getSurroundParent().getDescendants().indexOf(block)-1;\n';
 
@@ -340,7 +340,7 @@ javascriptGenerator['generate_list_index'] = function(block) {
 ;
 
 
-javascriptGenerator['generate_parent_field_value'] = function(block) {
+javascriptGenerator.forBlock['generate_parent_field_value'] = function(block) {
   var code ='';
   code += 'var parent = block.getSurroundParent();\n';
   code += 'if (parent)\n{  \n  code += parent.getFieldValue("';
@@ -365,7 +365,7 @@ javascriptGenerator['generate_parent_field_value'] = function(block) {
 
 
 
-javascriptGenerator['generate_list_length'] = function(block) {
+javascriptGenerator.forBlock['generate_list_length'] = function(block) {
   var code ='';
   code += 'var target = block.getInputTargetBlock("';
   var field = block.getField('STATEMENTS');
@@ -387,7 +387,7 @@ javascriptGenerator['generate_list_length'] = function(block) {
 ;
 
 
-javascriptGenerator['generate_field_text'] = function(block) {
+javascriptGenerator.forBlock['generate_field_text'] = function(block) {
   var code ='';
   code += 'var field = block.getField("';
   var field = block.getField('FIELDS');
@@ -401,7 +401,7 @@ javascriptGenerator['generate_field_text'] = function(block) {
   return code;
 }
 
-javascriptGenerator['generate_field_text_token'] = function(block) {
+javascriptGenerator.forBlock['generate_field_text_token'] = function(block) {
   var code ='';
   code += "code += '" + block.getFieldValue('BEFORE') + "';\n"
   code += 'var field = block.getField("';
@@ -420,7 +420,7 @@ javascriptGenerator['generate_field_text_token'] = function(block) {
   code += "  for (var i=0; i< surround_parent.inputList.length; i++)\n" 
   code += "  {\n"
   code += "    var input = surround_parent.inputList[i];\n"
-  code += "    if (input.type===Blockly.inputTypes.STATEMENT) {\n"
+  code += "    if (input.type===Blockly.inputs.inputTypes.STATEMENT) {\n"
   code += "      var target = surround_parent.getInputTargetBlock(input.name);\n"
   code += "      if (target && target.getDescendants().includes(block)) {\n"
   code += "        input_name = input.name;\n"

@@ -186,7 +186,7 @@ BlocklyStorage.monitorChanges_ = function(workspace) {
  */
 BlocklyStorage.loadXml_ = function(xml, workspace) {
   try {
-    xml = Blockly.Xml.textToDom(xml);
+    xml = Blockly.utils.xml.textToDom(xml);
   } catch (e) {
     BlocklyStorage.alert(BlocklyStorage.XML_ERROR + '\\nXML: ' + xml);
     return;
@@ -233,7 +233,7 @@ var options = {
   zoom: {
     controls: true,
   },
-  media : 'https://blockly-demo.appspot.com/static/media/', 
+  media : 'https://unpkg.com/blockly@13.1.0/media/', 
   rtl : false, 
   scrollbars : true, 
   sounds : true, 
@@ -281,6 +281,10 @@ function updateDropdownRename(event)
 }
 
 var workspace;
+
+// Field plugins must be registered before blocks that use them are defined.
+if (typeof registerFieldColour === 'function') { registerFieldColour(); }
+if (typeof registerFieldAngle === 'function') { registerFieldAngle(); }
 
 function vscode_start()
 {
@@ -397,9 +401,11 @@ Editor.generate_editor_html = function(editor) {
 
 
 
-<script src="https://unpkg.com/blockly/blockly.min.js"></script>
-<script src="https://unpkg.com/@blockly/plugin-workspace-search@5.0.3/dist/index.js"></script>
-<script src="https://unpkg.com/@blockly/field-date"></script>
+<script src="https://unpkg.com/blockly@13.1.0/blockly.min.js"></script>
+<script src="https://unpkg.com/@blockly/plugin-workspace-search@13.1.0/dist/index.js"></script>
+<script src="https://unpkg.com/@blockly/field-date@13.1.0/dist/index.js"></script>
+<script src="https://unpkg.com/@blockly/field-colour@13.1.0/dist/index.js"></script>
+<script src="https://unpkg.com/@blockly/field-angle@13.1.0/dist/index.js"></script>
 <script src='./storage.js'></script>
 <script src='./blocks.js'></script>
 <script src='./generator.js'></script>

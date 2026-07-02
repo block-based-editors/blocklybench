@@ -18,7 +18,12 @@
 /**
  * Namespace for FactoryUtils.
  */
-var FactoryUtils = FactoryUtils || Object.create(null);
+import * as Blockly from 'blockly';
+import { FieldDate } from '@blockly/field-date';
+import { FieldColour } from '@blockly/field-colour';
+import { FieldAngle } from '@blockly/field-angle';
+
+var FactoryUtils = Object.create(null);
 
 /**
  * Get block definition code for the current block.
@@ -97,13 +102,13 @@ FactoryUtils.getGeneratorStub = function(block, generatorLanguage) {
         // Subclass of Blockly.FieldDropdown, must test first.
         code.push(makeVar('variable', name) +
                   " = Blockly." + language +
-                  ".variableDB_.getName(block.getFieldValue('" + name +
-                  "'), Blockly.Variables.NAME_TYPE);");
-      } else if (field instanceof Blockly.FieldAngle) {
+                  ".nameDB_.getName(block.getFieldValue('" + name +
+                  "'), Blockly.Names.NameType.VARIABLE);");
+      } else if (field instanceof FieldAngle) {
         // Subclass of Blockly.FieldTextInput, must test first.
         code.push(makeVar('angle', name) +
                   " = block.getFieldValue('" + name + "');");
-      } else if (field instanceof Blockly.FieldColour) {
+      } else if (field instanceof FieldColour) {
         code.push(makeVar('colour', name) +
                   " = block.getFieldValue('" + name + "');");
       } else if (field instanceof Blockly.FieldCheckbox) {
@@ -567,7 +572,7 @@ FactoryUtils.getFieldsJs_ = function(block) {
           break;
         case 'field_angle':
           // Result: new Blockly.FieldAngle(90), 'ANGLE'
-          fields.push('new Blockly.FieldAngle(' +
+          fields.push('new FieldAngle(' +
               Number(block.getFieldValue('ANGLE')) + '), ' +
               JSON.stringify(block.getFieldValue('FIELDNAME')));
           break;
@@ -580,7 +585,7 @@ FactoryUtils.getFieldsJs_ = function(block) {
           break;
         case 'field_colour':
           // Result: new Blockly.FieldColour('#ff0000'), 'COLOUR'
-          fields.push('new Blockly.FieldColour(' +
+          fields.push('new FieldColour(' +
               JSON.stringify(block.getFieldValue('COLOUR')) +
               '), ' +
               JSON.stringify(block.getFieldValue('FIELDNAME')));

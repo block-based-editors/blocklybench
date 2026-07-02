@@ -7,11 +7,26 @@ import * as Blockly from 'blockly';
 import { WorkspaceSearch } from '@blockly/plugin-workspace-search';
 
 // TODO extend to the generated code windows with something like: https://github.com/AlienKevin/SmartTextarea/
-import { ZoomToFitControl } from '@blockly/zoom-to-fit' 
-import FieldDate from '@blockly/field-date'
+import { ZoomToFitControl } from '@blockly/zoom-to-fit'
+import { FieldDate } from '@blockly/field-date'
+import { FieldColour, registerFieldColour } from '@blockly/field-colour';
+import { FieldAngle, registerFieldAngle } from '@blockly/field-angle';
 
 // ==== add new plugins below ====
 import { CrossTabCopyPaste } from '@blockly/plugin-cross-tab-copy-paste';
+
+// FieldColour and FieldAngle moved out of Blockly core into plugins that
+// need explicit registration of the field types.
+registerFieldColour();
+registerFieldAngle();
+
+// The generated block definitions and generator functions are eval'd as
+// plain scripts: inside eval the identifiers below are not rewritten by
+// webpack, so they resolve via the global object. Expose them once here.
+window.Blockly = Blockly;
+window.FieldDate = FieldDate;
+window.FieldColour = FieldColour;
+window.FieldAngle = FieldAngle;
 
 import JSZip from 'jszip';
 import {saveAs} from 'file-saver';
@@ -42,7 +57,7 @@ var options = {
   horizontalLayout : false, 
   toolboxPosition : 'start', 
   css : true, 
-  media : 'https://blockly-demo.appspot.com/static/media/', 
+  media : 'media/', 
   rtl : false, 
   scrollbars : true, 
 
@@ -104,8 +119,6 @@ function saveBlocks()
 function myFactoryGeneration(event) {
   var code = get_code()
   document.getElementById('factory_code').value = code;
-  code = "Blockly = blockly__WEBPACK_IMPORTED_MODULE_0__;\nvar FieldDate = _blockly_field_date__WEBPACK_IMPORTED_MODULE_3__;\n"+ code;
-  
   try {
   eval(code)
   } catch (e) {
@@ -997,7 +1010,7 @@ function load_all(name)
 function load_xml_text_to_workspace(workspace, xmlText)
 {
   workspace.clear()
-  Blockly.Xml.domToWorkspace(Blockly.Xml.textToDom(xmlText), workspace);
+  Blockly.Xml.domToWorkspace(Blockly.utils.xml.textToDom(xmlText), workspace);
 }
 
 function load_json_text_to_workspace(workspace, text)
@@ -1145,7 +1158,7 @@ function onWorkspaceKeyDown_(e) {
    * @private
    */
 function addEvent_(node, name, thisObject, func) {
-    const event = Blockly.bindEventWithChecks_(node, name, thisObject, func);
+    const event = Blockly.browserEvents.conditionalBind(node, name, thisObject, func);
     //this.boundEvents_.push(event);
   }
 

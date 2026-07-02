@@ -81,8 +81,7 @@ CodeGen.myCodeGeneration = function(event) {
   
   var code = CodeGen.get_code()
   document.getElementById('generator_code').value = code;
-  code = 'Blockly = blockly__WEBPACK_IMPORTED_MODULE_0__;\n' + code;
-  // eval the just generated code 
+  // eval the just generated code (Blockly resolves via window.Blockly)
   eval(code)
   Concrete.myConcreteCodeGeneration()
  
@@ -264,7 +263,7 @@ CodeGen.init_code = function() {
     horizontalLayout : false, 
     toolboxPosition : 'start', 
     css : true, 
-    media : 'https://blockly-demo.appspot.com/static/media/', 
+    media : 'media/', 
     rtl : false, 
     scrollbars : true, 
     sounds : true, 
