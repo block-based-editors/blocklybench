@@ -57,5 +57,7 @@ module.exports = {
     // Custom generators (Blockly.YAML, Blockly.<language>) are attached to
     // the Blockly namespace object at runtime; webpack cannot know these
     // exports and would emit a warning for every access.
-    ignoreWarnings: [/was not found in 'blockly'/]
+    ignoreWarnings: [/was not found in 'blockly'/],
+    // Blockly is one big library; code splitting is not practical here.
+    performance: { hints: false }
 };

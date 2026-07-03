@@ -21,7 +21,7 @@
     "audit": "npm audit fix",
     "update": "npm update",
     "start": "webpack-dev-server",
-    "build": "webpack"
+    "build": "webpack --mode production"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^9.0.1",
