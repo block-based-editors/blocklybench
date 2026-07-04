@@ -92,30 +92,6 @@ function get_code()
   return code;
 }
 
-var some_thing_changed = false;
-
-function logEvents(event)
-{
-  some_thing_changed = true;
-  //console.log(event)
-}
-
-function saveBlocks()
-{
-  if (some_thing_changed)
-  {
-    some_thing_changed = false;
-    if (errorHandler)
-    {
-      errorHandler.report(get_mergable_json(factory_workspace));
-      errorHandler.report(get_mergable_json(Toolbox.toolbox_workspace));
-      errorHandler.report(get_mergable_json(CodeGen.code_workspace));
-      errorHandler.report(get_mergable_json(Concrete.concrete_workspace));
-    }    
-  }
-}
-
-
 function myFactoryGeneration(event) {
   var code = get_code()
   document.getElementById('factory_code').value = code;
@@ -1277,23 +1253,6 @@ function register_workspace_serialization()
     );
 }
 
-var errorHandler = null;
-function enable_exception_logging()
-{
-  if (location.hostname === "localhost" || location.hostname === "127.0.0.1")
-  {
-
-  }
-  else
-  {
-    errorHandler = new StackdriverErrorReporter();
-    errorHandler.start({
-      key: "AIzaSyBhLrATN834bxB8yRWjTozgqMhb4BnSJ28",
-        projectId: "motar-242711",
-    
-    });
-  }
-}
 
 
 
@@ -1302,7 +1261,6 @@ function enable_exception_logging()
 document.addEventListener("DOMContentLoaded", function () 
 {
   handle_resize();
-  enable_exception_logging();
 
   factory_workspace.addChangeListener(myFactoryGeneration);
   factory_workspace.addChangeListener(updateDropdownRename);
@@ -1323,9 +1281,6 @@ document.addEventListener("DOMContentLoaded", function ()
   Concrete.init_concrete();
   
   // all blockly workspaces are initialized and restored 
-
-  // save the block to logging
-  setInterval(saveBlocks, 10000);
 
   // from now on also trigger the code and toolbox generation updates
   
@@ -1361,12 +1316,6 @@ document.addEventListener("DOMContentLoaded", function ()
 //  space_zoom_to_fit(CodeGen.code_workspace)
 //  space_zoom_to_fit(Toolbox.toolbox_workspace)
 //  space_zoom_to_fit(Concrete.concrete_workspace)
-
-  // add trigger change event to all workspaces
-  factory_workspace.addChangeListener(logEvents);
-  Toolbox.toolbox_workspace.addChangeListener(logEvents);
-  CodeGen.code_workspace.addChangeListener(logEvents);
-  Concrete.concrete_workspace.addChangeListener(logEvents);
 
 
   if (get_load())
