@@ -48,6 +48,24 @@ module.exports = {
             {
                 from: path.resolve(__dirname, './node_modules/blockly/media'),
                 to: path.resolve(__dirname, 'build/media')
+            },
+            // jQuery + jQuery UI served locally instead of from the
+            // Google CDN (only used for the draggable/resizable panes)
+            {
+                from: path.resolve(__dirname, './node_modules/jquery/dist/jquery.min.js'),
+                to: path.resolve(__dirname, 'build/vendor/jquery.min.js')
+            },
+            {
+                from: path.resolve(__dirname, './node_modules/jquery-ui/dist/jquery-ui.min.js'),
+                to: path.resolve(__dirname, 'build/vendor/jquery-ui.min.js')
+            },
+            {
+                from: path.resolve(__dirname, './node_modules/jquery-ui/dist/themes/base/jquery-ui.min.css'),
+                to: path.resolve(__dirname, 'build/vendor/themes/base/jquery-ui.min.css')
+            },
+            {
+                from: path.resolve(__dirname, './node_modules/jquery-ui/dist/themes/base/images'),
+                to: path.resolve(__dirname, 'build/vendor/themes/base/images')
             }
         ]})
     ],
