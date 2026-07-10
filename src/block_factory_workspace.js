@@ -1153,7 +1153,8 @@ function save_restore_language()
     CodeGen.select_language(selection, window.localStorage[url+'language'])      
   }
 
-   window.addEventListener('unload',
+   // 'unload' is deprecated; 'pagehide' is the recommended replacement.
+   window.addEventListener('pagehide',
       function() {
         if ('localStorage' in window) {
           var language = document.getElementById('language').value
@@ -1321,10 +1322,9 @@ document.addEventListener("DOMContentLoaded", function ()
   if (get_load())
   {
     load_editor_from_website_url()
-    // remove load from the url
-    
-    
-    window.history.pushState({}, document.title, removeParam('load', window.location.search));
+    // remove load from the url; replaceState (not pushState) so we don't
+    // add an un-interacted history entry that the browser then flags/skips.
+    window.history.replaceState({}, document.title, removeParam('load', window.location.search));
   }
   if (get_clear())
   {
@@ -1333,7 +1333,7 @@ document.addEventListener("DOMContentLoaded", function ()
     CodeGen.code_workspace.clear();
     Concrete.concrete_workspace.clear();
   }
-  window.history.pushState({}, document.title, removeParam('clear', window.location.search));
+  window.history.replaceState({}, document.title, removeParam('clear', window.location.search));
   
   const options = {
     contextMenu: true,

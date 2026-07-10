@@ -29,12 +29,14 @@ BlocklyStorage.backupBlocks_ = function(workspace, id) {
 };
 
 /**
- * Bind the localStorage backup function to the unload event.
+ * Bind the localStorage backup function to the pagehide event.
  * @param {Blockly.WorkspaceSvg=} opt_workspace Workspace.
  */
 BlocklyStorage.backupOnUnload = function(opt_workspace,id) {
   var workspace = opt_workspace || Blockly.getMainWorkspace();
-  window.addEventListener('unload',
+  // 'unload' is deprecated; 'pagehide' fires on navigation away and on
+  // bfcache eviction, and is the recommended replacement for save-on-exit.
+  window.addEventListener('pagehide',
       function() {BlocklyStorage.backupBlocks_(workspace,id);}, false);
 };
 
