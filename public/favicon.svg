@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- BlocklyBench: a Blockly statement block with a top notch and bottom tab -->
+  <path d="M6,10 H11 V13 H17 V10 H26 V25 H17 V28 H11 V25 H6 Z"
+        fill="#4C97FF" stroke="#3373CC" stroke-width="1"
+        stroke-linejoin="round"/>
+</svg>
