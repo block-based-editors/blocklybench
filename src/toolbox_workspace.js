@@ -72,14 +72,18 @@ Toolbox.myToolboxGeneration = function (event) {
        Concrete.init_concrete(toolbox);
        }
      } else {
-        if (!Concrete.concrete_workspace.getFlyout()) {
+        // Target toolbox is a flat flyout. In Blockly 13 getFlyout() also
+        // returns a category toolbox's internal flyout, so test getToolbox()
+        // instead: if the workspace is currently in category mode we must
+        // recreate it before updateToolbox() can switch to flyout mode.
+        if (Concrete.concrete_workspace.getToolbox()) {
        BlocklyStorage.backupBlocks_(Concrete.concrete_workspace, 'concrete');
        Concrete.concrete_workspace.dispose()
        Concrete.concrete_workspace = null
        Concrete.init_concrete(toolbox);
 
         }
-     
+
      }
   }
      Concrete.concrete_workspace.updateToolbox(toolbox)
